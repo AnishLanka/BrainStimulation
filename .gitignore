@@ -1,1 +1,8 @@
 .DS_Store
+
+# Firmware build output (regenerate locally; contains machine-specific paths)
+firmware/RP2040_DDS_FW/build/
+firmware/RP2040_DDS_FW/build-*/
+firmware/ESP32_S3_Brainstim_FW/build/
+firmware/ESP32_S3_Brainstim_FW/sdkconfig.old
+node_modules/

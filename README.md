@@ -13,7 +13,7 @@ Do not upload the complete release archive as one PCB.
 |--------|------------------|
 | Pythagoras Carayannopoulos (Pyth) | Boost, Howland Pump circuit design, soldering, testing |
 | Anish Lanka | Rail Splitter, Buck-Boost, Howland Pump schematic and PCB, soldering, testing |
-| Peter Zhao | Signal Generator, initial firmware, testing |
+| Peter Zhao | Signal Generator, firmware (ESP32-S3 controller, RP2040 DDS, web and Android apps), testing |
 
 ## SYSTEM OVERVIEW
 
@@ -78,10 +78,17 @@ boards/
     Shared_Power_RevC/            kicad/Peter_Work/Shared_Power_Adapter_RevC.kicad_pro
 docs/
   Prototype_Demo_2.pdf              Prototype Demo 2 presentation
+  Firmware.md                       Firmware guide (commands, protocol, pins, build)
   RevC_Release/                     System-level release documents:
                                     READ_ME_FIRST.txt, Integration_Guide.html,
                                     Wiring_Map.json, Release_Checks.json, SHA256SUMS.json,
                                     Existing_Power_Review, Legacy_Power_Assembly/
+firmware/                         Peter Zhao
+  ESP32_S3_Brainstim_FW/            ESP32-S3 main controller (ESP-IDF 5.4): BLE control,
+                                    4-channel FSM, OLED, battery/ADC; web/ BLE test UI;
+                                    mobile/ Capacitor Android app; tests/ host simulations
+  RP2040_DDS_FW/                    RP2040 DDS daughter card (Pico SDK 2.2.0): DMA-paced
+                                    SPI DAC streaming, waveform tables, I2C slave
 releases/
   StimPrototype_Prototype_Package_RevC.zip   Original Rev C archive, unmodified
 ```
@@ -89,7 +96,7 @@ releases/
 The files from the release archive have been distributed into the folders above.
 Paths inside `Integration_Guide.html`, `Release_Checks.json` and `SHA256SUMS.json`
 refer to the original archive layout — use the zip in `releases/` when you need
-those links and checksums to line up. Firmware (Peter) is not in the repo yet.
+those links and checksums to line up.
 
 ## BOARDS AND TEST STATUS (Prototype Demo 2)
 
@@ -139,6 +146,29 @@ Vout = 2 × Vdac − 3.3 V, so DAC 0 / 1.65 / 3.3 V → −3.3 / 0 / +3.3 V.
 - Firmware is now modular: TypeScript front-end web app, C back-end, Student and
   Teacher views.
 
+## FIRMWARE
+
+Written by Peter Zhao.
+
+Full documentation: [`docs/Firmware.md`](docs/Firmware.md) — architecture, BLE
+commands, I2C protocol, pin maps, safety sequencing, build/test and TODOs.
+
+Two projects that must be updated together — they share the 15-byte GET_STATUS v2
+I2C protocol. Detailed handoff: `firmware/ESP32_S3_Brainstim_FW/docs/phase1.md`.
+Keep both folders side by side: the host tests find the RP2040 code at
+`../RP2040_DDS_FW`.
+
+- **RP2040:** `cmake -S . -B build-phase1 -G Ninja -DCMAKE_BUILD_TYPE=Release`, then
+  `cmake --build build-phase1` (needs `PICO_SDK_PATH`, `PICO_TOOLCHAIN_PATH`).
+- **ESP32-S3:** `idf.py build` with ESP-IDF 5.4.
+- **Host tests:** `node tests/run_phase1.mjs` from `ESP32_S3_Brainstim_FW/`
+  (needs Node and Clang with wasm-ld).
+- Build output (`build/`, `build-*/`, `sdkconfig.old`, `node_modules/`) is
+  git-ignored. Regenerate locally.
+
+Not yet flashed or validated on hardware. The ESP32 refuses stimulation until HV
+GPIO assignments and polarity are confirmed in `main/gpio_pins.h`.
+
 ## ORDER SETTINGS
 
 2 layers; FR4; nominal 0.4 mm; 1 oz copper; ENIG; green mask; white silk;
@@ -156,9 +186,13 @@ geometry, not powered performance.
 
 1. Howland: 96 V p-p on the bench despite a working simulation — investigate.
 2. Rail Splitter: replace/verify the op amp and retest at full 79.7 V input.
-3. `boards/Rail_Splitter/AmplifierCircuit_MYCHANGES.kicad_sch` lists C1–C4 as
+3. `boards/Rail_Splitter/kicad/Anish_Work/AmplifierCircuit_MYCHANGES.kicad_sch` lists C1–C4 as
    **10 V** capacitors, but they sit on an 80 V / ±40 V rail (the presented design
    uses 100 V parts). Check which values were actually fitted.
 4. Battery, charger and protection not yet selected; runtime unknown.
 5. Do not parallel separate 3.3 V outputs. The two primary supply connectors on
    each SignalGen board are internally tied together.
+6. Firmware/hardware DAC mismatch: the RP2040 firmware drives an **AD5662**, but the
+   Signal Generator Rev C board uses a **DAC8830** with a Pico 2 W
+   (`boards/Signal_Generator/FIRMWARE_COMPATIBILITY.txt`). Confirm which DAC and
+   controller the next build targets.
