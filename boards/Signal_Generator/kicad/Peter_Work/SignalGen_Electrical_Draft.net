@@ -1,0 +1,3452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\peter\Documents\Codex\2026-10-17\this\outputs\StimPrototype_Integration\signalgen_draft\SignalGen_Electrical_Draft.kicad_sch</source>
+    <date>2026-10-17T14:25:50</date>
+    <tool>Eeschema 10.0.6</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Signal generator electrical draft - UNVALIDATED</title>
+        <company/>
+        <rev>DRAFT-B</rev>
+        <date>2026-10-17</date>
+        <source>SignalGen_Electrical_Draft.kicad_sch</source>
+        <comment number="1" value="Bench draft only; system power, rail behavior and output mute remain unvalidated"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>10uF</value>
+      <footprint>SignalGenLocal:C1_G-21_MUR</footprint>
+      <description>Description</description>
+      <fields>
+        <field name="COPYRIGHT">Copyright (C) 2025 Ultra Librarian. All rights reserved.</field>
+        <field name="MANUFACTURER_NAME">Murata</field>
+        <field name="MANUFACTURER_PART_NUMBER">GRM21BR61E106KA73L</field>
+        <field name="TYPE"/>
+        <field name="REFDES"/>
+        <field name="Footprint">SignalGenLocal:C1_G-21_MUR</field>
+        <field name="Datasheet"/>
+        <field name="Description">Description</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="GRM21BR61E106KA73L_GRM21BR61E106KA73L" description="Description"/>
+      <property name="COPYRIGHT" value="Copyright (C) 2025 Ultra Librarian. All rights reserved."/>
+      <property name="MANUFACTURER_NAME" value="Murata"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="GRM21BR61E106KA73L"/>
+      <property name="TYPE" value=""/>
+      <property name="REFDES" value=""/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*G-21_MUR*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b4ac452d-7d52-4be3-980b-036d39dd04f9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>100nF</value>
+      <footprint>SignalGenLocal:C2_CAPC1608X90N</footprint>
+      <description>Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R</description>
+      <fields>
+        <field name="MOUSER PART NUMBER">603-CC603KRX7R8BB104</field>
+        <field name="MOUSER PRICE/STOCK">https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D</field>
+        <field name="MANUFACTURER_NAME">YAGEO</field>
+        <field name="MANUFACTURER_PART_NUMBER">CC0603KRX7R8BB104</field>
+        <field name="DATASHEET LINK">https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac</field>
+        <field name="GEOMETRY.HEIGHT">0.9mm</field>
+        <field name="Footprint">SignalGenLocal:C2_CAPC1608X90N</field>
+        <field name="Datasheet"/>
+        <field name="Description">Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="CC0603KRX7R8BB104_CC0603KRX7R8BB104" description="Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R"/>
+      <property name="MOUSER PART NUMBER" value="603-CC603KRX7R8BB104"/>
+      <property name="MOUSER PRICE/STOCK" value="https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D"/>
+      <property name="MANUFACTURER_NAME" value="YAGEO"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="CC0603KRX7R8BB104"/>
+      <property name="DATASHEET LINK" value="https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac"/>
+      <property name="GEOMETRY.HEIGHT" value="0.9mm"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*CAPC1608X90N*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cd2999e2-f597-4ead-8319-5c15b2ee5620</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>100nF SYS</value>
+      <footprint>SignalGenLocal:C3_CAPC1608X90N</footprint>
+      <description>Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R</description>
+      <fields>
+        <field name="MOUSER PART NUMBER">603-CC603KRX7R8BB104</field>
+        <field name="MOUSER PRICE/STOCK">https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D</field>
+        <field name="MANUFACTURER_NAME">YAGEO</field>
+        <field name="MANUFACTURER_PART_NUMBER">CC0603KRX7R8BB104</field>
+        <field name="DATASHEET LINK">https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac</field>
+        <field name="GEOMETRY.HEIGHT">0.9mm</field>
+        <field name="Footprint">SignalGenLocal:C3_CAPC1608X90N</field>
+        <field name="Datasheet"/>
+        <field name="Description">Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="CC0603KRX7R8BB104_CC0603KRX7R8BB104" description="Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R"/>
+      <property name="MOUSER PART NUMBER" value="603-CC603KRX7R8BB104"/>
+      <property name="MOUSER PRICE/STOCK" value="https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D"/>
+      <property name="MANUFACTURER_NAME" value="YAGEO"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="CC0603KRX7R8BB104"/>
+      <property name="DATASHEET LINK" value="https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac"/>
+      <property name="GEOMETRY.HEIGHT" value="0.9mm"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*CAPC1608X90N*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ed9e202b-ef1c-49b0-9274-4da53e13bdc7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4">
+      <value>1uF</value>
+      <footprint>SignalGenLocal:C4_INDC1608X90N</footprint>
+      <description>Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R</description>
+      <fields>
+        <field name="MOUSER PART NUMBER">*</field>
+        <field name="MOUSER PRICE/STOCK">*</field>
+        <field name="MANUFACTURER_NAME">TAIYO YUDEN</field>
+        <field name="MANUFACTURER_PART_NUMBER">MBASE168SB7105KTNA18</field>
+        <field name="DATASHEET LINK">https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18</field>
+        <field name="GEOMETRY.HEIGHT">0.9mm</field>
+        <field name="Footprint">SignalGenLocal:C4_INDC1608X90N</field>
+        <field name="Datasheet"/>
+        <field name="Description">Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="MBASE168SB7105KTNA18_MBASE168SB7105KTNA18" description="Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R"/>
+      <property name="MOUSER PART NUMBER" value="*"/>
+      <property name="MOUSER PRICE/STOCK" value="*"/>
+      <property name="MANUFACTURER_NAME" value="TAIYO YUDEN"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="MBASE168SB7105KTNA18"/>
+      <property name="DATASHEET LINK" value="https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18"/>
+      <property name="GEOMETRY.HEIGHT" value="0.9mm"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*INDC1608X90N*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c0a0b250-ca31-4bed-8353-ce941f5f2eef</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C5">
+      <value>1uF</value>
+      <footprint>SignalGenLocal:C5_INDC1608X90N</footprint>
+      <description>Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R</description>
+      <fields>
+        <field name="MOUSER PART NUMBER">*</field>
+        <field name="MOUSER PRICE/STOCK">*</field>
+        <field name="MANUFACTURER_NAME">TAIYO YUDEN</field>
+        <field name="MANUFACTURER_PART_NUMBER">MBASE168SB7105KTNA18</field>
+        <field name="DATASHEET LINK">https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18</field>
+        <field name="GEOMETRY.HEIGHT">0.9mm</field>
+        <field name="Footprint">SignalGenLocal:C5_INDC1608X90N</field>
+        <field name="Datasheet"/>
+        <field name="Description">Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="MBASE168SB7105KTNA18_MBASE168SB7105KTNA18" description="Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R"/>
+      <property name="MOUSER PART NUMBER" value="*"/>
+      <property name="MOUSER PRICE/STOCK" value="*"/>
+      <property name="MANUFACTURER_NAME" value="TAIYO YUDEN"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="MBASE168SB7105KTNA18"/>
+      <property name="DATASHEET LINK" value="https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18"/>
+      <property name="GEOMETRY.HEIGHT" value="0.9mm"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*INDC1608X90N*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>314d7277-f581-44db-ac3c-ed52281ab8d9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C6">
+      <value>100nF ISO</value>
+      <footprint>SignalGenLocal:C6_CAPC1608X90N</footprint>
+      <description>Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R</description>
+      <fields>
+        <field name="MOUSER PART NUMBER">603-CC603KRX7R8BB104</field>
+        <field name="MOUSER PRICE/STOCK">https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D</field>
+        <field name="MANUFACTURER_NAME">YAGEO</field>
+        <field name="MANUFACTURER_PART_NUMBER">CC0603KRX7R8BB104</field>
+        <field name="DATASHEET LINK">https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac</field>
+        <field name="GEOMETRY.HEIGHT">0.9mm</field>
+        <field name="Footprint">SignalGenLocal:C6_CAPC1608X90N</field>
+        <field name="Datasheet"/>
+        <field name="Description">Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="CC0603KRX7R8BB104_CC0603KRX7R8BB104" description="Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R"/>
+      <property name="MOUSER PART NUMBER" value="603-CC603KRX7R8BB104"/>
+      <property name="MOUSER PRICE/STOCK" value="https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D"/>
+      <property name="MANUFACTURER_NAME" value="YAGEO"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="CC0603KRX7R8BB104"/>
+      <property name="DATASHEET LINK" value="https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac"/>
+      <property name="GEOMETRY.HEIGHT" value="0.9mm"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*CAPC1608X90N*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>80328799-d11e-449f-93df-c73e6f5e0990</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C8">
+      <value>1uF</value>
+      <footprint>SignalGenLocal:C8_INDC1608X90N</footprint>
+      <description>Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R</description>
+      <fields>
+        <field name="MOUSER PART NUMBER">*</field>
+        <field name="MOUSER PRICE/STOCK">*</field>
+        <field name="MANUFACTURER_NAME">TAIYO YUDEN</field>
+        <field name="MANUFACTURER_PART_NUMBER">MBASE168SB7105KTNA18</field>
+        <field name="DATASHEET LINK">https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18</field>
+        <field name="GEOMETRY.HEIGHT">0.9mm</field>
+        <field name="Footprint">SignalGenLocal:C8_INDC1608X90N</field>
+        <field name="Datasheet"/>
+        <field name="Description">Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="MBASE168SB7105KTNA18_MBASE168SB7105KTNA18" description="Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R"/>
+      <property name="MOUSER PART NUMBER" value="*"/>
+      <property name="MOUSER PRICE/STOCK" value="*"/>
+      <property name="MANUFACTURER_NAME" value="TAIYO YUDEN"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="MBASE168SB7105KTNA18"/>
+      <property name="DATASHEET LINK" value="https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18"/>
+      <property name="GEOMETRY.HEIGHT" value="0.9mm"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*INDC1608X90N*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f7038c6b-d00e-4e83-9eb7-4ef2c0912941</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C9">
+      <value>1uF</value>
+      <footprint>SignalGenLocal:C9_INDC1608X90N</footprint>
+      <description>Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R</description>
+      <fields>
+        <field name="MOUSER PART NUMBER">*</field>
+        <field name="MOUSER PRICE/STOCK">*</field>
+        <field name="MANUFACTURER_NAME">TAIYO YUDEN</field>
+        <field name="MANUFACTURER_PART_NUMBER">MBASE168SB7105KTNA18</field>
+        <field name="DATASHEET LINK">https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18</field>
+        <field name="GEOMETRY.HEIGHT">0.9mm</field>
+        <field name="Footprint">SignalGenLocal:C9_INDC1608X90N</field>
+        <field name="Datasheet"/>
+        <field name="Description">Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="MBASE168SB7105KTNA18_MBASE168SB7105KTNA18" description="Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R"/>
+      <property name="MOUSER PART NUMBER" value="*"/>
+      <property name="MOUSER PRICE/STOCK" value="*"/>
+      <property name="MANUFACTURER_NAME" value="TAIYO YUDEN"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="MBASE168SB7105KTNA18"/>
+      <property name="DATASHEET LINK" value="https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18"/>
+      <property name="GEOMETRY.HEIGHT" value="0.9mm"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*INDC1608X90N*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>52c66f84-9537-44a4-bc7d-5769b3430674</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C10">
+      <value>100nF</value>
+      <footprint>SignalGenLocal:C10_CAPC1608X90N</footprint>
+      <description>Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R</description>
+      <fields>
+        <field name="MOUSER PART NUMBER">603-CC603KRX7R8BB104</field>
+        <field name="MOUSER PRICE/STOCK">https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D</field>
+        <field name="MANUFACTURER_NAME">YAGEO</field>
+        <field name="MANUFACTURER_PART_NUMBER">CC0603KRX7R8BB104</field>
+        <field name="DATASHEET LINK">https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac</field>
+        <field name="GEOMETRY.HEIGHT">0.9mm</field>
+        <field name="Footprint">SignalGenLocal:C10_CAPC1608X90N</field>
+        <field name="Datasheet"/>
+        <field name="Description">Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="CC0603KRX7R8BB104_CC0603KRX7R8BB104" description="Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R"/>
+      <property name="MOUSER PART NUMBER" value="603-CC603KRX7R8BB104"/>
+      <property name="MOUSER PRICE/STOCK" value="https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D"/>
+      <property name="MANUFACTURER_NAME" value="YAGEO"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="CC0603KRX7R8BB104"/>
+      <property name="DATASHEET LINK" value="https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac"/>
+      <property name="GEOMETRY.HEIGHT" value="0.9mm"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*CAPC1608X90N*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b50eb3a5-1bc6-4e54-8e7b-f31d16584127</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C12">
+      <value>470nF</value>
+      <footprint>SignalGenLocal:C12_CAP_1608_TDK</footprint>
+      <description>CAPACITOR; SMT (0603); CERAMIC CHIP; 0.47UF; 50V; TOL=10%; TG=-55 DEGC TO +125 DEGC; TC=X7R; AUTO</description>
+      <fields>
+        <field name="COPYRIGHT">Copyright (C) 2026 Ultra Librarian. All rights reserved.</field>
+        <field name="MANUFACTURER_NAME">TDK</field>
+        <field name="MANUFACTURER_PART_NUMBER">C1608X7R1H474K080AC</field>
+        <field name="TYPE"/>
+        <field name="REFDES"/>
+        <field name="Footprint">SignalGenLocal:C12_CAP_1608_TDK</field>
+        <field name="Datasheet"/>
+        <field name="Description">CAPACITOR; SMT (0603); CERAMIC CHIP; 0.47UF; 50V; TOL=10%; TG=-55 DEGC TO +125 DEGC; TC=X7R; AUTO</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="C1608X7R1H474K080AC_C1608X7R1H474K080AC" description="CAPACITOR; SMT (0603); CERAMIC CHIP; 0.47UF; 50V; TOL=10%; TG=-55 DEGC TO +125 DEGC; TC=X7R; AUTO"/>
+      <property name="COPYRIGHT" value="Copyright (C) 2026 Ultra Librarian. All rights reserved."/>
+      <property name="MANUFACTURER_NAME" value="TDK"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="C1608X7R1H474K080AC"/>
+      <property name="TYPE" value=""/>
+      <property name="REFDES" value=""/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*CAP_1608_TDK*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>72825927-4923-48d8-b5fb-fee33bdb391d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C13">
+      <value>470nF</value>
+      <footprint>SignalGenLocal:C13_CAP_1608_TDK</footprint>
+      <description>CAPACITOR; SMT (0603); CERAMIC CHIP; 0.47UF; 50V; TOL=10%; TG=-55 DEGC TO +125 DEGC; TC=X7R; AUTO</description>
+      <fields>
+        <field name="COPYRIGHT">Copyright (C) 2026 Ultra Librarian. All rights reserved.</field>
+        <field name="MANUFACTURER_NAME">TDK</field>
+        <field name="MANUFACTURER_PART_NUMBER">C1608X7R1H474K080AC</field>
+        <field name="TYPE"/>
+        <field name="REFDES"/>
+        <field name="Footprint">SignalGenLocal:C13_CAP_1608_TDK</field>
+        <field name="Datasheet"/>
+        <field name="Description">CAPACITOR; SMT (0603); CERAMIC CHIP; 0.47UF; 50V; TOL=10%; TG=-55 DEGC TO +125 DEGC; TC=X7R; AUTO</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="C1608X7R1H474K080AC_C1608X7R1H474K080AC" description="CAPACITOR; SMT (0603); CERAMIC CHIP; 0.47UF; 50V; TOL=10%; TG=-55 DEGC TO +125 DEGC; TC=X7R; AUTO"/>
+      <property name="COPYRIGHT" value="Copyright (C) 2026 Ultra Librarian. All rights reserved."/>
+      <property name="MANUFACTURER_NAME" value="TDK"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="C1608X7R1H474K080AC"/>
+      <property name="TYPE" value=""/>
+      <property name="REFDES" value=""/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*CAP_1608_TDK*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>561b406b-9a19-49f0-b906-4b5944eee3fa</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C14">
+      <value>10uF</value>
+      <footprint>SignalGenLocal:C14_G-21_MUR</footprint>
+      <description>Description</description>
+      <fields>
+        <field name="COPYRIGHT">Copyright (C) 2025 Ultra Librarian. All rights reserved.</field>
+        <field name="MANUFACTURER_NAME">Murata</field>
+        <field name="MANUFACTURER_PART_NUMBER">GRM21BR61E106KA73L</field>
+        <field name="TYPE"/>
+        <field name="REFDES"/>
+        <field name="Footprint">SignalGenLocal:C14_G-21_MUR</field>
+        <field name="Datasheet"/>
+        <field name="Description">Description</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="GRM21BR61E106KA73L_GRM21BR61E106KA73L" description="Description"/>
+      <property name="COPYRIGHT" value="Copyright (C) 2025 Ultra Librarian. All rights reserved."/>
+      <property name="MANUFACTURER_NAME" value="Murata"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="GRM21BR61E106KA73L"/>
+      <property name="TYPE" value=""/>
+      <property name="REFDES" value=""/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*G-21_MUR*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>db18cb9f-f4cf-48d1-93f5-732eeb6555b4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C15">
+      <value>10uF</value>
+      <footprint>SignalGenLocal:C15_G-21_MUR</footprint>
+      <description>Description</description>
+      <fields>
+        <field name="COPYRIGHT">Copyright (C) 2025 Ultra Librarian. All rights reserved.</field>
+        <field name="MANUFACTURER_NAME">Murata</field>
+        <field name="MANUFACTURER_PART_NUMBER">GRM21BR61E106KA73L</field>
+        <field name="TYPE"/>
+        <field name="REFDES"/>
+        <field name="Footprint">SignalGenLocal:C15_G-21_MUR</field>
+        <field name="Datasheet"/>
+        <field name="Description">Description</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="GRM21BR61E106KA73L_GRM21BR61E106KA73L" description="Description"/>
+      <property name="COPYRIGHT" value="Copyright (C) 2025 Ultra Librarian. All rights reserved."/>
+      <property name="MANUFACTURER_NAME" value="Murata"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="GRM21BR61E106KA73L"/>
+      <property name="TYPE" value=""/>
+      <property name="REFDES" value=""/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*G-21_MUR*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>639ea5a2-c2cf-45fb-b9d1-b81c748b06a3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C17">
+      <value>100nF</value>
+      <footprint>SignalGenLocal:C17_CAPC1608X90N</footprint>
+      <description>Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R</description>
+      <fields>
+        <field name="MOUSER PART NUMBER">603-CC603KRX7R8BB104</field>
+        <field name="MOUSER PRICE/STOCK">https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D</field>
+        <field name="MANUFACTURER_NAME">YAGEO</field>
+        <field name="MANUFACTURER_PART_NUMBER">CC0603KRX7R8BB104</field>
+        <field name="DATASHEET LINK">https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac</field>
+        <field name="GEOMETRY.HEIGHT">0.9mm</field>
+        <field name="Footprint">SignalGenLocal:C17_CAPC1608X90N</field>
+        <field name="Datasheet"/>
+        <field name="Description">Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="CC0603KRX7R8BB104_CC0603KRX7R8BB104" description="Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R"/>
+      <property name="MOUSER PART NUMBER" value="603-CC603KRX7R8BB104"/>
+      <property name="MOUSER PRICE/STOCK" value="https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D"/>
+      <property name="MANUFACTURER_NAME" value="YAGEO"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="CC0603KRX7R8BB104"/>
+      <property name="DATASHEET LINK" value="https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac"/>
+      <property name="GEOMETRY.HEIGHT" value="0.9mm"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*CAPC1608X90N*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>45a1addb-fe8b-4090-bc03-15cba873a307</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C18">
+      <value>100nF</value>
+      <footprint>SignalGenLocal:C18_CAPC1608X90N</footprint>
+      <description>Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R</description>
+      <fields>
+        <field name="MOUSER PART NUMBER">603-CC603KRX7R8BB104</field>
+        <field name="MOUSER PRICE/STOCK">https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D</field>
+        <field name="MANUFACTURER_NAME">YAGEO</field>
+        <field name="MANUFACTURER_PART_NUMBER">CC0603KRX7R8BB104</field>
+        <field name="DATASHEET LINK">https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac</field>
+        <field name="GEOMETRY.HEIGHT">0.9mm</field>
+        <field name="Footprint">SignalGenLocal:C18_CAPC1608X90N</field>
+        <field name="Datasheet"/>
+        <field name="Description">Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="CC0603KRX7R8BB104_CC0603KRX7R8BB104" description="Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R"/>
+      <property name="MOUSER PART NUMBER" value="603-CC603KRX7R8BB104"/>
+      <property name="MOUSER PRICE/STOCK" value="https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D"/>
+      <property name="MANUFACTURER_NAME" value="YAGEO"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="CC0603KRX7R8BB104"/>
+      <property name="DATASHEET LINK" value="https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac"/>
+      <property name="GEOMETRY.HEIGHT" value="0.9mm"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*CAPC1608X90N*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>599adfa8-7cfd-4da2-9759-0ddc6c9cee9b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C19">
+      <value>1uF</value>
+      <footprint>SignalGenLocal:C19_INDC1608X90N</footprint>
+      <description>Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R</description>
+      <fields>
+        <field name="MOUSER PART NUMBER">*</field>
+        <field name="MOUSER PRICE/STOCK">*</field>
+        <field name="MANUFACTURER_NAME">TAIYO YUDEN</field>
+        <field name="MANUFACTURER_PART_NUMBER">MBASE168SB7105KTNA18</field>
+        <field name="DATASHEET LINK">https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18</field>
+        <field name="GEOMETRY.HEIGHT">0.9mm</field>
+        <field name="Footprint">SignalGenLocal:C19_INDC1608X90N</field>
+        <field name="Datasheet"/>
+        <field name="Description">Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="MBASE168SB7105KTNA18_MBASE168SB7105KTNA18" description="Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R"/>
+      <property name="MOUSER PART NUMBER" value="*"/>
+      <property name="MOUSER PRICE/STOCK" value="*"/>
+      <property name="MANUFACTURER_NAME" value="TAIYO YUDEN"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="MBASE168SB7105KTNA18"/>
+      <property name="DATASHEET LINK" value="https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18"/>
+      <property name="GEOMETRY.HEIGHT" value="0.9mm"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*INDC1608X90N*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>df6d4c50-326e-424f-8fc9-f94e372479d6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C20">
+      <value>1uF</value>
+      <footprint>SignalGenLocal:C20_INDC1608X90N</footprint>
+      <description>Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R</description>
+      <fields>
+        <field name="MOUSER PART NUMBER">*</field>
+        <field name="MOUSER PRICE/STOCK">*</field>
+        <field name="MANUFACTURER_NAME">TAIYO YUDEN</field>
+        <field name="MANUFACTURER_PART_NUMBER">MBASE168SB7105KTNA18</field>
+        <field name="DATASHEET LINK">https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18</field>
+        <field name="GEOMETRY.HEIGHT">0.9mm</field>
+        <field name="Footprint">SignalGenLocal:C20_INDC1608X90N</field>
+        <field name="Datasheet"/>
+        <field name="Description">Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="MBASE168SB7105KTNA18_MBASE168SB7105KTNA18" description="Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R"/>
+      <property name="MOUSER PART NUMBER" value="*"/>
+      <property name="MOUSER PRICE/STOCK" value="*"/>
+      <property name="MANUFACTURER_NAME" value="TAIYO YUDEN"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="MBASE168SB7105KTNA18"/>
+      <property name="DATASHEET LINK" value="https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18"/>
+      <property name="GEOMETRY.HEIGHT" value="0.9mm"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*INDC1608X90N*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>056d1735-95f3-4f7f-94e7-1d50296bac5a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C21">
+      <value>1uF</value>
+      <footprint>SignalGenLocal:C21_INDC1608X90N</footprint>
+      <description>Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R</description>
+      <fields>
+        <field name="MOUSER PART NUMBER">*</field>
+        <field name="MOUSER PRICE/STOCK">*</field>
+        <field name="MANUFACTURER_NAME">TAIYO YUDEN</field>
+        <field name="MANUFACTURER_PART_NUMBER">MBASE168SB7105KTNA18</field>
+        <field name="DATASHEET LINK">https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18</field>
+        <field name="GEOMETRY.HEIGHT">0.9mm</field>
+        <field name="Footprint">SignalGenLocal:C21_INDC1608X90N</field>
+        <field name="Datasheet"/>
+        <field name="Description">Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="MBASE168SB7105KTNA18_MBASE168SB7105KTNA18" description="Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R"/>
+      <property name="MOUSER PART NUMBER" value="*"/>
+      <property name="MOUSER PRICE/STOCK" value="*"/>
+      <property name="MANUFACTURER_NAME" value="TAIYO YUDEN"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="MBASE168SB7105KTNA18"/>
+      <property name="DATASHEET LINK" value="https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18"/>
+      <property name="GEOMETRY.HEIGHT" value="0.9mm"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*INDC1608X90N*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>38a56c12-7498-4eb4-93db-98cd62edab98</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C22">
+      <value>1uF</value>
+      <footprint>SignalGenLocal:C22_INDC1608X90N</footprint>
+      <description>Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R</description>
+      <fields>
+        <field name="MOUSER PART NUMBER">*</field>
+        <field name="MOUSER PRICE/STOCK">*</field>
+        <field name="MANUFACTURER_NAME">TAIYO YUDEN</field>
+        <field name="MANUFACTURER_PART_NUMBER">MBASE168SB7105KTNA18</field>
+        <field name="DATASHEET LINK">https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18</field>
+        <field name="GEOMETRY.HEIGHT">0.9mm</field>
+        <field name="Footprint">SignalGenLocal:C22_INDC1608X90N</field>
+        <field name="Datasheet"/>
+        <field name="Description">Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="MBASE168SB7105KTNA18_MBASE168SB7105KTNA18" description="Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R"/>
+      <property name="MOUSER PART NUMBER" value="*"/>
+      <property name="MOUSER PRICE/STOCK" value="*"/>
+      <property name="MANUFACTURER_NAME" value="TAIYO YUDEN"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="MBASE168SB7105KTNA18"/>
+      <property name="DATASHEET LINK" value="https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18"/>
+      <property name="GEOMETRY.HEIGHT" value="0.9mm"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*INDC1608X90N*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>45193cde-df80-47c0-981f-9879d54913aa</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C23">
+      <value>100nF</value>
+      <footprint>SignalGenLocal:C23_CAPC1608X90N</footprint>
+      <description>Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R</description>
+      <fields>
+        <field name="MOUSER PART NUMBER">603-CC603KRX7R8BB104</field>
+        <field name="MOUSER PRICE/STOCK">https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D</field>
+        <field name="MANUFACTURER_NAME">YAGEO</field>
+        <field name="MANUFACTURER_PART_NUMBER">CC0603KRX7R8BB104</field>
+        <field name="DATASHEET LINK">https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac</field>
+        <field name="GEOMETRY.HEIGHT">0.9mm</field>
+        <field name="Footprint">SignalGenLocal:C23_CAPC1608X90N</field>
+        <field name="Datasheet"/>
+        <field name="Description">Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="CC0603KRX7R8BB104_CC0603KRX7R8BB104" description="Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R"/>
+      <property name="MOUSER PART NUMBER" value="603-CC603KRX7R8BB104"/>
+      <property name="MOUSER PRICE/STOCK" value="https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D"/>
+      <property name="MANUFACTURER_NAME" value="YAGEO"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="CC0603KRX7R8BB104"/>
+      <property name="DATASHEET LINK" value="https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac"/>
+      <property name="GEOMETRY.HEIGHT" value="0.9mm"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*CAPC1608X90N*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3793a3e5-a8c1-48c0-ac14-a65d6be9e2c7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C24">
+      <value>1uF</value>
+      <footprint>SignalGenLocal:C24_INDC1608X90N</footprint>
+      <description>Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R</description>
+      <fields>
+        <field name="MOUSER PART NUMBER">*</field>
+        <field name="MOUSER PRICE/STOCK">*</field>
+        <field name="MANUFACTURER_NAME">TAIYO YUDEN</field>
+        <field name="MANUFACTURER_PART_NUMBER">MBASE168SB7105KTNA18</field>
+        <field name="DATASHEET LINK">https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18</field>
+        <field name="GEOMETRY.HEIGHT">0.9mm</field>
+        <field name="Footprint">SignalGenLocal:C24_INDC1608X90N</field>
+        <field name="Datasheet"/>
+        <field name="Description">Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="MBASE168SB7105KTNA18_MBASE168SB7105KTNA18" description="Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R"/>
+      <property name="MOUSER PART NUMBER" value="*"/>
+      <property name="MOUSER PRICE/STOCK" value="*"/>
+      <property name="MANUFACTURER_NAME" value="TAIYO YUDEN"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="MBASE168SB7105KTNA18"/>
+      <property name="DATASHEET LINK" value="https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18"/>
+      <property name="GEOMETRY.HEIGHT" value="0.9mm"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*INDC1608X90N*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f188113d-401a-4428-920a-67255f993fac</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C25">
+      <value>1uF</value>
+      <footprint>SignalGenLocal:C25_INDC1608X90N</footprint>
+      <description>Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R</description>
+      <fields>
+        <field name="MOUSER PART NUMBER">*</field>
+        <field name="MOUSER PRICE/STOCK">*</field>
+        <field name="MANUFACTURER_NAME">TAIYO YUDEN</field>
+        <field name="MANUFACTURER_PART_NUMBER">MBASE168SB7105KTNA18</field>
+        <field name="DATASHEET LINK">https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18</field>
+        <field name="GEOMETRY.HEIGHT">0.9mm</field>
+        <field name="Footprint">SignalGenLocal:C25_INDC1608X90N</field>
+        <field name="Datasheet"/>
+        <field name="Description">Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="MBASE168SB7105KTNA18_MBASE168SB7105KTNA18" description="Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R"/>
+      <property name="MOUSER PART NUMBER" value="*"/>
+      <property name="MOUSER PRICE/STOCK" value="*"/>
+      <property name="MANUFACTURER_NAME" value="TAIYO YUDEN"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="MBASE168SB7105KTNA18"/>
+      <property name="DATASHEET LINK" value="https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18"/>
+      <property name="GEOMETRY.HEIGHT" value="0.9mm"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*INDC1608X90N*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9088c548-de70-41d7-a347-87d8c2b4789d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C26">
+      <value>100nF ISO_2</value>
+      <footprint>SignalGenLocal:C26_CAPC1608X90N</footprint>
+      <description>Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R</description>
+      <fields>
+        <field name="MOUSER PART NUMBER">603-CC603KRX7R8BB104</field>
+        <field name="MOUSER PRICE/STOCK">https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D</field>
+        <field name="MANUFACTURER_NAME">YAGEO</field>
+        <field name="MANUFACTURER_PART_NUMBER">CC0603KRX7R8BB104</field>
+        <field name="DATASHEET LINK">https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac</field>
+        <field name="GEOMETRY.HEIGHT">0.9mm</field>
+        <field name="Footprint">SignalGenLocal:C26_CAPC1608X90N</field>
+        <field name="Datasheet"/>
+        <field name="Description">Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="CC0603KRX7R8BB104_CC0603KRX7R8BB104" description="Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R"/>
+      <property name="MOUSER PART NUMBER" value="603-CC603KRX7R8BB104"/>
+      <property name="MOUSER PRICE/STOCK" value="https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D"/>
+      <property name="MANUFACTURER_NAME" value="YAGEO"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="CC0603KRX7R8BB104"/>
+      <property name="DATASHEET LINK" value="https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac"/>
+      <property name="GEOMETRY.HEIGHT" value="0.9mm"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*CAPC1608X90N*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0e904abd-8a73-4086-9515-308b3c487f1f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C27">
+      <value>100nF SYS</value>
+      <footprint>SignalGenLocal:C27_CAPC1608X90N</footprint>
+      <description>Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R</description>
+      <fields>
+        <field name="MOUSER PART NUMBER">603-CC603KRX7R8BB104</field>
+        <field name="MOUSER PRICE/STOCK">https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D</field>
+        <field name="MANUFACTURER_NAME">YAGEO</field>
+        <field name="MANUFACTURER_PART_NUMBER">CC0603KRX7R8BB104</field>
+        <field name="DATASHEET LINK">https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac</field>
+        <field name="GEOMETRY.HEIGHT">0.9mm</field>
+        <field name="Footprint">SignalGenLocal:C27_CAPC1608X90N</field>
+        <field name="Datasheet"/>
+        <field name="Description">Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="CC0603KRX7R8BB104_CC0603KRX7R8BB104" description="Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R"/>
+      <property name="MOUSER PART NUMBER" value="603-CC603KRX7R8BB104"/>
+      <property name="MOUSER PRICE/STOCK" value="https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D"/>
+      <property name="MANUFACTURER_NAME" value="YAGEO"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="CC0603KRX7R8BB104"/>
+      <property name="DATASHEET LINK" value="https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac"/>
+      <property name="GEOMETRY.HEIGHT" value="0.9mm"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*CAPC1608X90N*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cba31282-8792-4580-ae8e-d8bd817e5705</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C28">
+      <value>10uF</value>
+      <footprint>SignalGenLocal:C28_G-21_MUR</footprint>
+      <description>Description</description>
+      <fields>
+        <field name="COPYRIGHT">Copyright (C) 2025 Ultra Librarian. All rights reserved.</field>
+        <field name="MANUFACTURER_NAME">Murata</field>
+        <field name="MANUFACTURER_PART_NUMBER">GRM21BR61E106KA73L</field>
+        <field name="TYPE"/>
+        <field name="REFDES"/>
+        <field name="Footprint">SignalGenLocal:C28_G-21_MUR</field>
+        <field name="Datasheet"/>
+        <field name="Description">Description</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="GRM21BR61E106KA73L_GRM21BR61E106KA73L" description="Description"/>
+      <property name="COPYRIGHT" value="Copyright (C) 2025 Ultra Librarian. All rights reserved."/>
+      <property name="MANUFACTURER_NAME" value="Murata"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="GRM21BR61E106KA73L"/>
+      <property name="TYPE" value=""/>
+      <property name="REFDES" value=""/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*G-21_MUR*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>93ab374a-1ed0-4bb2-ae85-2a4318d2a885</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C29">
+      <value>10uF</value>
+      <footprint>SignalGenLocal:C29_G-21_MUR</footprint>
+      <description>Description</description>
+      <fields>
+        <field name="COPYRIGHT">Copyright (C) 2025 Ultra Librarian. All rights reserved.</field>
+        <field name="MANUFACTURER_NAME">Murata</field>
+        <field name="MANUFACTURER_PART_NUMBER">GRM21BR61E106KA73L</field>
+        <field name="TYPE"/>
+        <field name="REFDES"/>
+        <field name="Footprint">SignalGenLocal:C29_G-21_MUR</field>
+        <field name="Datasheet"/>
+        <field name="Description">Description</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="GRM21BR61E106KA73L_GRM21BR61E106KA73L" description="Description"/>
+      <property name="COPYRIGHT" value="Copyright (C) 2025 Ultra Librarian. All rights reserved."/>
+      <property name="MANUFACTURER_NAME" value="Murata"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="GRM21BR61E106KA73L"/>
+      <property name="TYPE" value=""/>
+      <property name="REFDES" value=""/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*G-21_MUR*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3966d163-11b6-4223-8c67-249a4b6d6399</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C30">
+      <value>470nF</value>
+      <footprint>SignalGenLocal:C30_CAP_1608_TDK</footprint>
+      <description>CAPACITOR; SMT (0603); CERAMIC CHIP; 0.47UF; 50V; TOL=10%; TG=-55 DEGC TO +125 DEGC; TC=X7R; AUTO</description>
+      <fields>
+        <field name="COPYRIGHT">Copyright (C) 2026 Ultra Librarian. All rights reserved.</field>
+        <field name="MANUFACTURER_NAME">TDK</field>
+        <field name="MANUFACTURER_PART_NUMBER">C1608X7R1H474K080AC</field>
+        <field name="TYPE"/>
+        <field name="REFDES"/>
+        <field name="Footprint">SignalGenLocal:C30_CAP_1608_TDK</field>
+        <field name="Datasheet"/>
+        <field name="Description">CAPACITOR; SMT (0603); CERAMIC CHIP; 0.47UF; 50V; TOL=10%; TG=-55 DEGC TO +125 DEGC; TC=X7R; AUTO</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="C1608X7R1H474K080AC_C1608X7R1H474K080AC" description="CAPACITOR; SMT (0603); CERAMIC CHIP; 0.47UF; 50V; TOL=10%; TG=-55 DEGC TO +125 DEGC; TC=X7R; AUTO"/>
+      <property name="COPYRIGHT" value="Copyright (C) 2026 Ultra Librarian. All rights reserved."/>
+      <property name="MANUFACTURER_NAME" value="TDK"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="C1608X7R1H474K080AC"/>
+      <property name="TYPE" value=""/>
+      <property name="REFDES" value=""/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*CAP_1608_TDK*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bf05f468-66c0-4b3a-b852-6d389b220659</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C31">
+      <value>470nF</value>
+      <footprint>SignalGenLocal:C31_CAP_1608_TDK</footprint>
+      <description>CAPACITOR; SMT (0603); CERAMIC CHIP; 0.47UF; 50V; TOL=10%; TG=-55 DEGC TO +125 DEGC; TC=X7R; AUTO</description>
+      <fields>
+        <field name="COPYRIGHT">Copyright (C) 2026 Ultra Librarian. All rights reserved.</field>
+        <field name="MANUFACTURER_NAME">TDK</field>
+        <field name="MANUFACTURER_PART_NUMBER">C1608X7R1H474K080AC</field>
+        <field name="TYPE"/>
+        <field name="REFDES"/>
+        <field name="Footprint">SignalGenLocal:C31_CAP_1608_TDK</field>
+        <field name="Datasheet"/>
+        <field name="Description">CAPACITOR; SMT (0603); CERAMIC CHIP; 0.47UF; 50V; TOL=10%; TG=-55 DEGC TO +125 DEGC; TC=X7R; AUTO</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="C1608X7R1H474K080AC_C1608X7R1H474K080AC" description="CAPACITOR; SMT (0603); CERAMIC CHIP; 0.47UF; 50V; TOL=10%; TG=-55 DEGC TO +125 DEGC; TC=X7R; AUTO"/>
+      <property name="COPYRIGHT" value="Copyright (C) 2026 Ultra Librarian. All rights reserved."/>
+      <property name="MANUFACTURER_NAME" value="TDK"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="C1608X7R1H474K080AC"/>
+      <property name="TYPE" value=""/>
+      <property name="REFDES" value=""/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*CAP_1608_TDK*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>149ff159-3ff3-4e96-981e-e53f54927ca8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C33">
+      <value>100nF</value>
+      <footprint>SignalGenLocal:C33_CAPC1608X90N</footprint>
+      <description>Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R</description>
+      <fields>
+        <field name="MOUSER PART NUMBER">603-CC603KRX7R8BB104</field>
+        <field name="MOUSER PRICE/STOCK">https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D</field>
+        <field name="MANUFACTURER_NAME">YAGEO</field>
+        <field name="MANUFACTURER_PART_NUMBER">CC0603KRX7R8BB104</field>
+        <field name="DATASHEET LINK">https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac</field>
+        <field name="GEOMETRY.HEIGHT">0.9mm</field>
+        <field name="Footprint">SignalGenLocal:C33_CAPC1608X90N</field>
+        <field name="Datasheet"/>
+        <field name="Description">Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="CC0603KRX7R8BB104_CC0603KRX7R8BB104" description="Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R"/>
+      <property name="MOUSER PART NUMBER" value="603-CC603KRX7R8BB104"/>
+      <property name="MOUSER PRICE/STOCK" value="https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D"/>
+      <property name="MANUFACTURER_NAME" value="YAGEO"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="CC0603KRX7R8BB104"/>
+      <property name="DATASHEET LINK" value="https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac"/>
+      <property name="GEOMETRY.HEIGHT" value="0.9mm"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*CAPC1608X90N*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>11c54c80-5922-490f-89b1-3cffc87d24c2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C34">
+      <value>100nF</value>
+      <footprint>SignalGenLocal:C34_CAPC1608X90N</footprint>
+      <description>Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R</description>
+      <fields>
+        <field name="MOUSER PART NUMBER">603-CC603KRX7R8BB104</field>
+        <field name="MOUSER PRICE/STOCK">https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D</field>
+        <field name="MANUFACTURER_NAME">YAGEO</field>
+        <field name="MANUFACTURER_PART_NUMBER">CC0603KRX7R8BB104</field>
+        <field name="DATASHEET LINK">https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac</field>
+        <field name="GEOMETRY.HEIGHT">0.9mm</field>
+        <field name="Footprint">SignalGenLocal:C34_CAPC1608X90N</field>
+        <field name="Datasheet"/>
+        <field name="Description">Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="CC0603KRX7R8BB104_CC0603KRX7R8BB104" description="Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R"/>
+      <property name="MOUSER PART NUMBER" value="603-CC603KRX7R8BB104"/>
+      <property name="MOUSER PRICE/STOCK" value="https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D"/>
+      <property name="MANUFACTURER_NAME" value="YAGEO"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="CC0603KRX7R8BB104"/>
+      <property name="DATASHEET LINK" value="https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac"/>
+      <property name="GEOMETRY.HEIGHT" value="0.9mm"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*CAPC1608X90N*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>937b0859-3661-4451-a18d-3986c6fa1c36</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C35">
+      <value>1uF</value>
+      <footprint>SignalGenLocal:C35_INDC1608X90N</footprint>
+      <description>Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R</description>
+      <fields>
+        <field name="MOUSER PART NUMBER">*</field>
+        <field name="MOUSER PRICE/STOCK">*</field>
+        <field name="MANUFACTURER_NAME">TAIYO YUDEN</field>
+        <field name="MANUFACTURER_PART_NUMBER">MBASE168SB7105KTNA18</field>
+        <field name="DATASHEET LINK">https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18</field>
+        <field name="GEOMETRY.HEIGHT">0.9mm</field>
+        <field name="Footprint">SignalGenLocal:C35_INDC1608X90N</field>
+        <field name="Datasheet"/>
+        <field name="Description">Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="MBASE168SB7105KTNA18_MBASE168SB7105KTNA18" description="Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R"/>
+      <property name="MOUSER PART NUMBER" value="*"/>
+      <property name="MOUSER PRICE/STOCK" value="*"/>
+      <property name="MANUFACTURER_NAME" value="TAIYO YUDEN"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="MBASE168SB7105KTNA18"/>
+      <property name="DATASHEET LINK" value="https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18"/>
+      <property name="GEOMETRY.HEIGHT" value="0.9mm"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*INDC1608X90N*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5afad61b-f35e-45ef-8b97-450cdc92f2ca</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C36">
+      <value>1uF</value>
+      <footprint>SignalGenLocal:C36_INDC1608X90N</footprint>
+      <description>Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R</description>
+      <fields>
+        <field name="MOUSER PART NUMBER">*</field>
+        <field name="MOUSER PRICE/STOCK">*</field>
+        <field name="MANUFACTURER_NAME">TAIYO YUDEN</field>
+        <field name="MANUFACTURER_PART_NUMBER">MBASE168SB7105KTNA18</field>
+        <field name="DATASHEET LINK">https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18</field>
+        <field name="GEOMETRY.HEIGHT">0.9mm</field>
+        <field name="Footprint">SignalGenLocal:C36_INDC1608X90N</field>
+        <field name="Datasheet"/>
+        <field name="Description">Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="MBASE168SB7105KTNA18_MBASE168SB7105KTNA18" description="Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R"/>
+      <property name="MOUSER PART NUMBER" value="*"/>
+      <property name="MOUSER PRICE/STOCK" value="*"/>
+      <property name="MANUFACTURER_NAME" value="TAIYO YUDEN"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="MBASE168SB7105KTNA18"/>
+      <property name="DATASHEET LINK" value="https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18"/>
+      <property name="GEOMETRY.HEIGHT" value="0.9mm"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*INDC1608X90N*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c0f896bb-2870-41b3-b23e-e4b23785d6dd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C37">
+      <value>1uF</value>
+      <footprint>SignalGenLocal:C37_INDC1608X90N</footprint>
+      <description>Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R</description>
+      <fields>
+        <field name="MOUSER PART NUMBER">*</field>
+        <field name="MOUSER PRICE/STOCK">*</field>
+        <field name="MANUFACTURER_NAME">TAIYO YUDEN</field>
+        <field name="MANUFACTURER_PART_NUMBER">MBASE168SB7105KTNA18</field>
+        <field name="DATASHEET LINK">https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18</field>
+        <field name="GEOMETRY.HEIGHT">0.9mm</field>
+        <field name="Footprint">SignalGenLocal:C37_INDC1608X90N</field>
+        <field name="Datasheet"/>
+        <field name="Description">Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="MBASE168SB7105KTNA18_MBASE168SB7105KTNA18" description="Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R"/>
+      <property name="MOUSER PART NUMBER" value="*"/>
+      <property name="MOUSER PRICE/STOCK" value="*"/>
+      <property name="MANUFACTURER_NAME" value="TAIYO YUDEN"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="MBASE168SB7105KTNA18"/>
+      <property name="DATASHEET LINK" value="https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18"/>
+      <property name="GEOMETRY.HEIGHT" value="0.9mm"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*INDC1608X90N*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a4f79075-635c-41de-bcf8-8c429f7ff118</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C38">
+      <value>1uF</value>
+      <footprint>SignalGenLocal:C38_INDC1608X90N</footprint>
+      <description>Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R</description>
+      <fields>
+        <field name="MOUSER PART NUMBER">*</field>
+        <field name="MOUSER PRICE/STOCK">*</field>
+        <field name="MANUFACTURER_NAME">TAIYO YUDEN</field>
+        <field name="MANUFACTURER_PART_NUMBER">MBASE168SB7105KTNA18</field>
+        <field name="DATASHEET LINK">https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18</field>
+        <field name="GEOMETRY.HEIGHT">0.9mm</field>
+        <field name="Footprint">SignalGenLocal:C38_INDC1608X90N</field>
+        <field name="Datasheet"/>
+        <field name="Description">Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="MBASE168SB7105KTNA18_MBASE168SB7105KTNA18" description="Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R"/>
+      <property name="MOUSER PART NUMBER" value="*"/>
+      <property name="MOUSER PRICE/STOCK" value="*"/>
+      <property name="MANUFACTURER_NAME" value="TAIYO YUDEN"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="MBASE168SB7105KTNA18"/>
+      <property name="DATASHEET LINK" value="https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18"/>
+      <property name="GEOMETRY.HEIGHT" value="0.9mm"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*INDC1608X90N*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>15204959-9e90-4ed4-9769-7c42781bb410</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C39">
+      <value>10uF</value>
+      <footprint>SignalGenLocal:C39_G-21_MUR</footprint>
+      <description>Description</description>
+      <fields>
+        <field name="COPYRIGHT">Copyright (C) 2025 Ultra Librarian. All rights reserved.</field>
+        <field name="MANUFACTURER_NAME">Murata</field>
+        <field name="MANUFACTURER_PART_NUMBER">GRM21BR61E106KA73L</field>
+        <field name="TYPE"/>
+        <field name="REFDES"/>
+        <field name="Footprint">SignalGenLocal:C39_G-21_MUR</field>
+        <field name="Datasheet"/>
+        <field name="Description">Description</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="GRM21BR61E106KA73L_GRM21BR61E106KA73L" description="Description"/>
+      <property name="COPYRIGHT" value="Copyright (C) 2025 Ultra Librarian. All rights reserved."/>
+      <property name="MANUFACTURER_NAME" value="Murata"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="GRM21BR61E106KA73L"/>
+      <property name="TYPE" value=""/>
+      <property name="REFDES" value=""/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*G-21_MUR*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2ba96b66-7f95-4667-a05f-e92052c7664d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C40">
+      <value>100nF</value>
+      <footprint>SignalGenLocal:C40_CAPC1608X90N</footprint>
+      <description>Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R</description>
+      <fields>
+        <field name="MOUSER PART NUMBER">603-CC603KRX7R8BB104</field>
+        <field name="MOUSER PRICE/STOCK">https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D</field>
+        <field name="MANUFACTURER_NAME">YAGEO</field>
+        <field name="MANUFACTURER_PART_NUMBER">CC0603KRX7R8BB104</field>
+        <field name="DATASHEET LINK">https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac</field>
+        <field name="GEOMETRY.HEIGHT">0.9mm</field>
+        <field name="Footprint">SignalGenLocal:C40_CAPC1608X90N</field>
+        <field name="Datasheet"/>
+        <field name="Description">Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="CC0603KRX7R8BB104_CC0603KRX7R8BB104" description="Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R"/>
+      <property name="MOUSER PART NUMBER" value="603-CC603KRX7R8BB104"/>
+      <property name="MOUSER PRICE/STOCK" value="https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D"/>
+      <property name="MANUFACTURER_NAME" value="YAGEO"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="CC0603KRX7R8BB104"/>
+      <property name="DATASHEET LINK" value="https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac"/>
+      <property name="GEOMETRY.HEIGHT" value="0.9mm"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*CAPC1608X90N*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c6471d81-a8f6-4319-923f-a7fdc312cd82</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C41">
+      <value>22u</value>
+      <footprint>SignalGenLocal:C_1206_3216Metric</footprint>
+      <description>Draft component: 22u; Local bulk &gt;=10uF effective;22uF nominal selection pendingDC-bias verification</description>
+      <fields>
+        <field name="MOUSER PART NUMBER">*</field>
+        <field name="MOUSER PRICE/STOCK">*</field>
+        <field name="MANUFACTURER_NAME">TBD</field>
+        <field name="MANUFACTURER_PART_NUMBER">TBD - draft value/footprint only</field>
+        <field name="DATASHEET LINK"/>
+        <field name="GEOMETRY.HEIGHT"/>
+        <field name="Voltage">16V</field>
+        <field name="Dielectric">X7R/X5R</field>
+        <field name="MPN">TBD - draft value/footprint only</field>
+        <field name="Draft_Change">Local bulk &gt;=10uF effective;22uF nominal selection pendingDC-bias verification</field>
+        <field name="Footprint">SignalGenLocal:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Draft component: 22u; Local bulk &gt;=10uF effective;22uF nominal selection pendingDC-bias verification</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="MBASE168SB7105KTNA18_MBASE168SB7105KTNA18" description="Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R"/>
+      <property name="MOUSER PART NUMBER" value="*"/>
+      <property name="MOUSER PRICE/STOCK" value="*"/>
+      <property name="MANUFACTURER_NAME" value="TBD"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="TBD - draft value/footprint only"/>
+      <property name="DATASHEET LINK" value=""/>
+      <property name="GEOMETRY.HEIGHT" value=""/>
+      <property name="Voltage" value="16V"/>
+      <property name="Dielectric" value="X7R/X5R"/>
+      <property name="MPN" value="TBD - draft value/footprint only"/>
+      <property name="Draft_Change" value="Local bulk &gt;=10uF effective;22uF nominal selection pendingDC-bias verification"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*INDC1608X90N*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>338c7d8c-01cd-4ca8-b248-ec5e3090f770</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C42">
+      <value>10n</value>
+      <footprint>SignalGenLocal:C_0402_1005Metric</footprint>
+      <description>Draft component: 10n; 0402 bypass within1mm ofVISOOUT pin12</description>
+      <fields>
+        <field name="MOUSER PART NUMBER">*</field>
+        <field name="MOUSER PRICE/STOCK">*</field>
+        <field name="MANUFACTURER_NAME">TBD</field>
+        <field name="MANUFACTURER_PART_NUMBER">TBD - draft value/footprint only</field>
+        <field name="DATASHEET LINK"/>
+        <field name="GEOMETRY.HEIGHT"/>
+        <field name="Voltage">50V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="MPN">TBD - draft value/footprint only</field>
+        <field name="Draft_Change">0402 bypass within1mm ofVISOOUT pin12</field>
+        <field name="Footprint">SignalGenLocal:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Draft component: 10n; 0402 bypass within1mm ofVISOOUT pin12</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="MBASE168SB7105KTNA18_MBASE168SB7105KTNA18" description="Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R"/>
+      <property name="MOUSER PART NUMBER" value="*"/>
+      <property name="MOUSER PRICE/STOCK" value="*"/>
+      <property name="MANUFACTURER_NAME" value="TBD"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="TBD - draft value/footprint only"/>
+      <property name="DATASHEET LINK" value=""/>
+      <property name="GEOMETRY.HEIGHT" value=""/>
+      <property name="Voltage" value="50V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="MPN" value="TBD - draft value/footprint only"/>
+      <property name="Draft_Change" value="0402 bypass within1mm ofVISOOUT pin12"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*INDC1608X90N*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8bbb32ec-c958-45ea-a361-2e99273212df</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C43">
+      <value>10n</value>
+      <footprint>SignalGenLocal:C_0402_1005Metric</footprint>
+      <description>Draft component: 10n; 0402 bypass within1mm ofVDD pin9</description>
+      <fields>
+        <field name="MOUSER PART NUMBER">*</field>
+        <field name="MOUSER PRICE/STOCK">*</field>
+        <field name="MANUFACTURER_NAME">TBD</field>
+        <field name="MANUFACTURER_PART_NUMBER">TBD - draft value/footprint only</field>
+        <field name="DATASHEET LINK"/>
+        <field name="GEOMETRY.HEIGHT"/>
+        <field name="Voltage">50V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="MPN">TBD - draft value/footprint only</field>
+        <field name="Draft_Change">0402 bypass within1mm ofVDD pin9</field>
+        <field name="Footprint">SignalGenLocal:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Draft component: 10n; 0402 bypass within1mm ofVDD pin9</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="MBASE168SB7105KTNA18_MBASE168SB7105KTNA18" description="Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R"/>
+      <property name="MOUSER PART NUMBER" value="*"/>
+      <property name="MOUSER PRICE/STOCK" value="*"/>
+      <property name="MANUFACTURER_NAME" value="TBD"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="TBD - draft value/footprint only"/>
+      <property name="DATASHEET LINK" value=""/>
+      <property name="GEOMETRY.HEIGHT" value=""/>
+      <property name="Voltage" value="50V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="MPN" value="TBD - draft value/footprint only"/>
+      <property name="Draft_Change" value="0402 bypass within1mm ofVDD pin9"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*INDC1608X90N*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>59ff1353-791e-49f4-be41-0034dd18a748</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C44">
+      <value>22u</value>
+      <footprint>SignalGenLocal:C_1206_3216Metric</footprint>
+      <description>Draft component: 22u; Local bulk &gt;=10uF effective;22uF nominal selection pendingDC-bias verification</description>
+      <fields>
+        <field name="MOUSER PART NUMBER">*</field>
+        <field name="MOUSER PRICE/STOCK">*</field>
+        <field name="MANUFACTURER_NAME">TBD</field>
+        <field name="MANUFACTURER_PART_NUMBER">TBD - draft value/footprint only</field>
+        <field name="DATASHEET LINK"/>
+        <field name="GEOMETRY.HEIGHT"/>
+        <field name="Voltage">16V</field>
+        <field name="Dielectric">X7R/X5R</field>
+        <field name="MPN">TBD - draft value/footprint only</field>
+        <field name="Draft_Change">Local bulk &gt;=10uF effective;22uF nominal selection pendingDC-bias verification</field>
+        <field name="Footprint">SignalGenLocal:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Draft component: 22u; Local bulk &gt;=10uF effective;22uF nominal selection pendingDC-bias verification</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="MBASE168SB7105KTNA18_MBASE168SB7105KTNA18" description="Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R"/>
+      <property name="MOUSER PART NUMBER" value="*"/>
+      <property name="MOUSER PRICE/STOCK" value="*"/>
+      <property name="MANUFACTURER_NAME" value="TBD"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="TBD - draft value/footprint only"/>
+      <property name="DATASHEET LINK" value=""/>
+      <property name="GEOMETRY.HEIGHT" value=""/>
+      <property name="Voltage" value="16V"/>
+      <property name="Dielectric" value="X7R/X5R"/>
+      <property name="MPN" value="TBD - draft value/footprint only"/>
+      <property name="Draft_Change" value="Local bulk &gt;=10uF effective;22uF nominal selection pendingDC-bias verification"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*INDC1608X90N*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b757459d-dbfb-4f73-9c2b-ce65a6be8752</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C45">
+      <value>10n</value>
+      <footprint>SignalGenLocal:C_0402_1005Metric</footprint>
+      <description>Draft component: 10n; 0402 bypass within1mm ofVISOOUT pin12</description>
+      <fields>
+        <field name="MOUSER PART NUMBER">*</field>
+        <field name="MOUSER PRICE/STOCK">*</field>
+        <field name="MANUFACTURER_NAME">TBD</field>
+        <field name="MANUFACTURER_PART_NUMBER">TBD - draft value/footprint only</field>
+        <field name="DATASHEET LINK"/>
+        <field name="GEOMETRY.HEIGHT"/>
+        <field name="Voltage">50V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="MPN">TBD - draft value/footprint only</field>
+        <field name="Draft_Change">0402 bypass within1mm ofVISOOUT pin12</field>
+        <field name="Footprint">SignalGenLocal:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Draft component: 10n; 0402 bypass within1mm ofVISOOUT pin12</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="MBASE168SB7105KTNA18_MBASE168SB7105KTNA18" description="Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R"/>
+      <property name="MOUSER PART NUMBER" value="*"/>
+      <property name="MOUSER PRICE/STOCK" value="*"/>
+      <property name="MANUFACTURER_NAME" value="TBD"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="TBD - draft value/footprint only"/>
+      <property name="DATASHEET LINK" value=""/>
+      <property name="GEOMETRY.HEIGHT" value=""/>
+      <property name="Voltage" value="50V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="MPN" value="TBD - draft value/footprint only"/>
+      <property name="Draft_Change" value="0402 bypass within1mm ofVISOOUT pin12"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*INDC1608X90N*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7ef56fd7-9903-49a3-8d0f-2366525a60ca</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C46">
+      <value>10n</value>
+      <footprint>SignalGenLocal:C_0402_1005Metric</footprint>
+      <description>Draft component: 10n; 0402 bypass within1mm ofVDD pin9</description>
+      <fields>
+        <field name="MOUSER PART NUMBER">*</field>
+        <field name="MOUSER PRICE/STOCK">*</field>
+        <field name="MANUFACTURER_NAME">TBD</field>
+        <field name="MANUFACTURER_PART_NUMBER">TBD - draft value/footprint only</field>
+        <field name="DATASHEET LINK"/>
+        <field name="GEOMETRY.HEIGHT"/>
+        <field name="Voltage">50V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="MPN">TBD - draft value/footprint only</field>
+        <field name="Draft_Change">0402 bypass within1mm ofVDD pin9</field>
+        <field name="Footprint">SignalGenLocal:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Draft component: 10n; 0402 bypass within1mm ofVDD pin9</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="MBASE168SB7105KTNA18_MBASE168SB7105KTNA18" description="Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R"/>
+      <property name="MOUSER PART NUMBER" value="*"/>
+      <property name="MOUSER PRICE/STOCK" value="*"/>
+      <property name="MANUFACTURER_NAME" value="TBD"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="TBD - draft value/footprint only"/>
+      <property name="DATASHEET LINK" value=""/>
+      <property name="GEOMETRY.HEIGHT" value=""/>
+      <property name="Voltage" value="50V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="MPN" value="TBD - draft value/footprint only"/>
+      <property name="Draft_Change" value="0402 bypass within1mm ofVDD pin9"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*INDC1608X90N*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f24b8c97-43f3-47ee-ac41-c8b568d55e1e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>SS-107-T-1A</value>
+      <footprint>SignalGenLocal:J1_SAMTEC_SS-107-T-1A</footprint>
+      <fields>
+        <field name="MF"/>
+        <field name="PACKAGE">None</field>
+        <field name="PRICE">None</field>
+        <field name="ALTIUM_VALUE">*</field>
+        <field name="MP">SS-107-T-1A</field>
+        <field name="AVAILABILITY">Unavailable</field>
+        <field name="Footprint">SignalGenLocal:J1_SAMTEC_SS-107-T-1A</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SignalGenLocal" part="SS-107-T-1A_SS-107-T-1A" description=""/>
+      <property name="MF" value=""/>
+      <property name="PACKAGE" value="None"/>
+      <property name="PRICE" value="None"/>
+      <property name="ALTIUM_VALUE" value="*"/>
+      <property name="MP" value="SS-107-T-1A"/>
+      <property name="AVAILABILITY" value="Unavailable"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*SAMTEC_SS-107-T-1A*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ca0d5d78-bb0f-44be-94da-4d307ca2e7c7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="01"/>
+            <pin num="02"/>
+            <pin num="03"/>
+            <pin num="04"/>
+            <pin num="05"/>
+            <pin num="06"/>
+            <pin num="07"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J2">
+      <value>SS-107-T-1A</value>
+      <footprint>SignalGenLocal:J2_SAMTEC_SS-107-T-1A</footprint>
+      <fields>
+        <field name="MF"/>
+        <field name="PACKAGE">None</field>
+        <field name="PRICE">None</field>
+        <field name="ALTIUM_VALUE">*</field>
+        <field name="MP">SS-107-T-1A</field>
+        <field name="AVAILABILITY">Unavailable</field>
+        <field name="Footprint">SignalGenLocal:J2_SAMTEC_SS-107-T-1A</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SignalGenLocal" part="SS-107-T-1A_SS-107-T-1A" description=""/>
+      <property name="MF" value=""/>
+      <property name="PACKAGE" value="None"/>
+      <property name="PRICE" value="None"/>
+      <property name="ALTIUM_VALUE" value="*"/>
+      <property name="MP" value="SS-107-T-1A"/>
+      <property name="AVAILABILITY" value="Unavailable"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*SAMTEC_SS-107-T-1A*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8759279d-dda1-4f71-a5e7-8eabc9eef4a7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="01"/>
+            <pin num="02"/>
+            <pin num="03"/>
+            <pin num="04"/>
+            <pin num="05"/>
+            <pin num="06"/>
+            <pin num="07"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J3">
+      <value>1716030000</value>
+      <footprint>SignalGenLocal:J3_CONN_LM_5.080390_WED</footprint>
+      <description>Description</description>
+      <fields>
+        <field name="COPYRIGHT">Copyright (C) 2025 Ultra Librarian. All rights reserved.</field>
+        <field name="MANUFACTURER_NAME">Weidmuller</field>
+        <field name="MANUFACTURER_PART_NUMBER">1716030000</field>
+        <field name="REFDES">RefDes</field>
+        <field name="TYPE">Type</field>
+        <field name="Footprint">SignalGenLocal:J3_CONN_LM_5.080390_WED</field>
+        <field name="Datasheet"/>
+        <field name="Description">Description</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="1716030000_1716030000" description="Description"/>
+      <property name="COPYRIGHT" value="Copyright (C) 2025 Ultra Librarian. All rights reserved."/>
+      <property name="MANUFACTURER_NAME" value="Weidmuller"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="1716030000"/>
+      <property name="REFDES" value="RefDes"/>
+      <property name="TYPE" value="Type"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*CONN_LM 5.080390_WED*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f2302cd7-daae-44be-bd8e-a3eae71fe954</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J4">
+      <value>1716030000</value>
+      <footprint>SignalGenLocal:J4_CONN_LM_5.080390_WED</footprint>
+      <description>Description</description>
+      <fields>
+        <field name="COPYRIGHT">Copyright (C) 2025 Ultra Librarian. All rights reserved.</field>
+        <field name="MANUFACTURER_NAME">Weidmuller</field>
+        <field name="MANUFACTURER_PART_NUMBER">1716030000</field>
+        <field name="REFDES">RefDes</field>
+        <field name="TYPE">Type</field>
+        <field name="Footprint">SignalGenLocal:J4_CONN_LM_5.080390_WED</field>
+        <field name="Datasheet"/>
+        <field name="Description">Description</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="1716030000_1716030000" description="Description"/>
+      <property name="COPYRIGHT" value="Copyright (C) 2025 Ultra Librarian. All rights reserved."/>
+      <property name="MANUFACTURER_NAME" value="Weidmuller"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="1716030000"/>
+      <property name="REFDES" value="RefDes"/>
+      <property name="TYPE" value="Type"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*CONN_LM 5.080390_WED*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f0f4b85f-7ff3-4a30-acc9-5e89b055a88d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="PS1">
+      <value>IA0305S</value>
+      <footprint>SignalGenLocal:PS1_XP_IA0305S</footprint>
+      <description>DC DC CONVERTER +/-5V 1W</description>
+      <fields>
+        <field name="MF"/>
+        <field name="PACKAGE">None</field>
+        <field name="PRICE">None</field>
+        <field name="ALTIUM_VALUE">*</field>
+        <field name="MP">IA0305S</field>
+        <field name="AVAILABILITY">Unavailable</field>
+        <field name="Footprint">SignalGenLocal:PS1_XP_IA0305S</field>
+        <field name="Datasheet"/>
+        <field name="Description">DC DC CONVERTER +/-5V 1W</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="IA0305S_IA0305S" description="DC DC CONVERTER +/-5V 1W"/>
+      <property name="MF" value=""/>
+      <property name="PACKAGE" value="None"/>
+      <property name="PRICE" value="None"/>
+      <property name="ALTIUM_VALUE" value="*"/>
+      <property name="MP" value="IA0305S"/>
+      <property name="AVAILABILITY" value="Unavailable"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*XP_IA0305S*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>58135d3d-527d-444c-a59c-ba1fe400ca78</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="6"/>
+            <pin num="5"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="PS2">
+      <value>IA0305S</value>
+      <footprint>SignalGenLocal:PS2_XP_IA0305S</footprint>
+      <description>DC DC CONVERTER +/-5V 1W</description>
+      <fields>
+        <field name="MF"/>
+        <field name="PACKAGE">None</field>
+        <field name="PRICE">None</field>
+        <field name="ALTIUM_VALUE">*</field>
+        <field name="MP">IA0305S</field>
+        <field name="AVAILABILITY">Unavailable</field>
+        <field name="Footprint">SignalGenLocal:PS2_XP_IA0305S</field>
+        <field name="Datasheet"/>
+        <field name="Description">DC DC CONVERTER +/-5V 1W</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="IA0305S_IA0305S" description="DC DC CONVERTER +/-5V 1W"/>
+      <property name="MF" value=""/>
+      <property name="PACKAGE" value="None"/>
+      <property name="PRICE" value="None"/>
+      <property name="ALTIUM_VALUE" value="*"/>
+      <property name="MP" value="IA0305S"/>
+      <property name="AVAILABILITY" value="Unavailable"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*XP_IA0305S*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3131cd6d-6fad-4308-b16c-ebadf8684e0f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="6"/>
+            <pin num="5"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>20K</value>
+      <footprint>SignalGenLocal:R3_RC0603N_YAG</footprint>
+      <description>20k ohm, 1%, 0603 resistor; RC0603FR-0720KL</description>
+      <fields>
+        <field name="COPYRIGHT">Copyright (C) 2025 Ultra Librarian. All rights reserved.</field>
+        <field name="MANUFACTURER_NAME">Yageo</field>
+        <field name="MANUFACTURER_PART_NUMBER">RC0603FR-0720KL</field>
+        <field name="TYPE"/>
+        <field name="REFDES"/>
+        <field name="MPN">RC0603FR-0720KL</field>
+        <field name="Draft_Change">Changed from10k to20k for equal-resistor non-inverting2*DAC-VREF stage</field>
+        <field name="Footprint">SignalGenLocal:R3_RC0603N_YAG</field>
+        <field name="Datasheet"/>
+        <field name="Description">20k ohm, 1%, 0603 resistor; RC0603FR-0720KL</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="RC0603FR-0710KL_RC0603FR-0710KL" description="RES SMD 10kO 1% 1/10W 0603"/>
+      <property name="COPYRIGHT" value="Copyright (C) 2025 Ultra Librarian. All rights reserved."/>
+      <property name="MANUFACTURER_NAME" value="Yageo"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="RC0603FR-0720KL"/>
+      <property name="TYPE" value=""/>
+      <property name="REFDES" value=""/>
+      <property name="MPN" value="RC0603FR-0720KL"/>
+      <property name="Draft_Change" value="Changed from10k to20k for equal-resistor non-inverting2*DAC-VREF stage"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*RC0603N_YAG*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2604c8f7-156f-4e9e-86d5-2049f8bc09b9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R6">
+      <value>20K</value>
+      <footprint>SignalGenLocal:R6_RC0603N_YAG</footprint>
+      <description>Description</description>
+      <fields>
+        <field name="COPYRIGHT">Copyright (C) 2025 Ultra Librarian. All rights reserved.</field>
+        <field name="MANUFACTURER_NAME">Yageo</field>
+        <field name="MANUFACTURER_PART_NUMBER">RC0603FR-0720KL</field>
+        <field name="TYPE"/>
+        <field name="REFDES"/>
+        <field name="Footprint">SignalGenLocal:R6_RC0603N_YAG</field>
+        <field name="Datasheet"/>
+        <field name="Description">Description</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="RC0603FR-0720KL_RC0603FR-0720KL" description="Description"/>
+      <property name="COPYRIGHT" value="Copyright (C) 2025 Ultra Librarian. All rights reserved."/>
+      <property name="MANUFACTURER_NAME" value="Yageo"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="RC0603FR-0720KL"/>
+      <property name="TYPE" value=""/>
+      <property name="REFDES" value=""/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*RC0603N_YAG*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>83d7fbc9-c672-4465-a168-5a94f2203cf1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R11">
+      <value>20K</value>
+      <footprint>SignalGenLocal:R11_RC0603N_YAG</footprint>
+      <description>20k ohm, 1%, 0603 resistor; RC0603FR-0720KL</description>
+      <fields>
+        <field name="COPYRIGHT">Copyright (C) 2025 Ultra Librarian. All rights reserved.</field>
+        <field name="MANUFACTURER_NAME">Yageo</field>
+        <field name="MANUFACTURER_PART_NUMBER">RC0603FR-0720KL</field>
+        <field name="TYPE"/>
+        <field name="REFDES"/>
+        <field name="MPN">RC0603FR-0720KL</field>
+        <field name="Draft_Change">Changed from10k to20k for equal-resistor non-inverting2*DAC-VREF stage</field>
+        <field name="Footprint">SignalGenLocal:R11_RC0603N_YAG</field>
+        <field name="Datasheet"/>
+        <field name="Description">20k ohm, 1%, 0603 resistor; RC0603FR-0720KL</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="RC0603FR-0710KL_RC0603FR-0710KL" description="RES SMD 10kO 1% 1/10W 0603"/>
+      <property name="COPYRIGHT" value="Copyright (C) 2025 Ultra Librarian. All rights reserved."/>
+      <property name="MANUFACTURER_NAME" value="Yageo"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="RC0603FR-0720KL"/>
+      <property name="TYPE" value=""/>
+      <property name="REFDES" value=""/>
+      <property name="MPN" value="RC0603FR-0720KL"/>
+      <property name="Draft_Change" value="Changed from10k to20k for equal-resistor non-inverting2*DAC-VREF stage"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*RC0603N_YAG*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>229f2eee-a1c1-4b24-a184-8b5023f6238d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R12">
+      <value>20K</value>
+      <footprint>SignalGenLocal:R12_RC0603N_YAG</footprint>
+      <description>Description</description>
+      <fields>
+        <field name="COPYRIGHT">Copyright (C) 2025 Ultra Librarian. All rights reserved.</field>
+        <field name="MANUFACTURER_NAME">Yageo</field>
+        <field name="MANUFACTURER_PART_NUMBER">RC0603FR-0720KL</field>
+        <field name="TYPE"/>
+        <field name="REFDES"/>
+        <field name="Footprint">SignalGenLocal:R12_RC0603N_YAG</field>
+        <field name="Datasheet"/>
+        <field name="Description">Description</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="RC0603FR-0720KL_RC0603FR-0720KL" description="Description"/>
+      <property name="COPYRIGHT" value="Copyright (C) 2025 Ultra Librarian. All rights reserved."/>
+      <property name="MANUFACTURER_NAME" value="Yageo"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="RC0603FR-0720KL"/>
+      <property name="TYPE" value=""/>
+      <property name="REFDES" value=""/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*RC0603N_YAG*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ca8d49dd-a298-493d-acca-fa79a3744333</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R13">
+      <value>10K</value>
+      <footprint>SignalGenLocal:R_0603_1608Metric</footprint>
+      <description>Draft component: 10K; New EN/FLT pull-up; &gt;=5k per ISOW7741 datasheet</description>
+      <fields>
+        <field name="COPYRIGHT">Copyright (C) 2025 Ultra Librarian. All rights reserved.</field>
+        <field name="MANUFACTURER_NAME">Yageo</field>
+        <field name="MANUFACTURER_PART_NUMBER">RC0603FR-0710KL</field>
+        <field name="TYPE"/>
+        <field name="REFDES"/>
+        <field name="MPN">RC0603FR-0710KL</field>
+        <field name="Draft_Change">New EN/FLT pull-up; &gt;=5k per ISOW7741 datasheet</field>
+        <field name="Footprint">SignalGenLocal:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Draft component: 10K; New EN/FLT pull-up; &gt;=5k per ISOW7741 datasheet</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="RC0603FR-0710KL_RC0603FR-0710KL" description="RES SMD 10kO 1% 1/10W 0603"/>
+      <property name="COPYRIGHT" value="Copyright (C) 2025 Ultra Librarian. All rights reserved."/>
+      <property name="MANUFACTURER_NAME" value="Yageo"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="RC0603FR-0710KL"/>
+      <property name="TYPE" value=""/>
+      <property name="REFDES" value=""/>
+      <property name="MPN" value="RC0603FR-0710KL"/>
+      <property name="Draft_Change" value="New EN/FLT pull-up; &gt;=5k per ISOW7741 datasheet"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*RC0603N_YAG*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c1681e3c-2a54-4fa1-bb50-f3601af84c15</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R14">
+      <value>10K</value>
+      <footprint>SignalGenLocal:R_0603_1608Metric</footprint>
+      <description>Draft component: 10K; New EN/FLT pull-up; &gt;=5k per ISOW7741 datasheet</description>
+      <fields>
+        <field name="COPYRIGHT">Copyright (C) 2025 Ultra Librarian. All rights reserved.</field>
+        <field name="MANUFACTURER_NAME">Yageo</field>
+        <field name="MANUFACTURER_PART_NUMBER">RC0603FR-0710KL</field>
+        <field name="TYPE"/>
+        <field name="REFDES"/>
+        <field name="MPN">RC0603FR-0710KL</field>
+        <field name="Draft_Change">New EN/FLT pull-up; &gt;=5k per ISOW7741 datasheet</field>
+        <field name="Footprint">SignalGenLocal:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Draft component: 10K; New EN/FLT pull-up; &gt;=5k per ISOW7741 datasheet</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="RC0603FR-0710KL_RC0603FR-0710KL" description="RES SMD 10kO 1% 1/10W 0603"/>
+      <property name="COPYRIGHT" value="Copyright (C) 2025 Ultra Librarian. All rights reserved."/>
+      <property name="MANUFACTURER_NAME" value="Yageo"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="RC0603FR-0710KL"/>
+      <property name="TYPE" value=""/>
+      <property name="REFDES" value=""/>
+      <property name="MPN" value="RC0603FR-0710KL"/>
+      <property name="Draft_Change" value="New EN/FLT pull-up; &gt;=5k per ISOW7741 datasheet"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*RC0603N_YAG*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5e538c15-e271-4d52-94e5-a9b71923d46d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R15">
+      <value>0</value>
+      <footprint>SignalGenLocal:R_0603_1608Metric</footprint>
+      <description>Draft component: 0; Replaces U2/U8 LDO with a same-source direct rail link. No added regulation or ripple attenuation claimed.</description>
+      <fields>
+        <field name="COPYRIGHT">Copyright (C) 2025 Ultra Librarian. All rights reserved.</field>
+        <field name="MANUFACTURER_NAME">TBD</field>
+        <field name="MANUFACTURER_PART_NUMBER">TBD - standard 0603 zero-ohm jumper</field>
+        <field name="TYPE"/>
+        <field name="REFDES"/>
+        <field name="MPN">TBD - standard 0603 zero-ohm jumper</field>
+        <field name="Tolerance">Jumper</field>
+        <field name="Draft_Change">Replaces U2/U8 LDO with a same-source direct rail link. No added regulation or ripple attenuation claimed.</field>
+        <field name="DATASHEET LINK"/>
+        <field name="GEOMETRY.HEIGHT"/>
+        <field name="Footprint">SignalGenLocal:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Draft component: 0; Replaces U2/U8 LDO with a same-source direct rail link. No added regulation or ripple attenuation claimed.</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="RC0603FR-0710KL_RC0603FR-0710KL" description="RES SMD 10kO 1% 1/10W 0603"/>
+      <property name="COPYRIGHT" value="Copyright (C) 2025 Ultra Librarian. All rights reserved."/>
+      <property name="MANUFACTURER_NAME" value="TBD"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="TBD - standard 0603 zero-ohm jumper"/>
+      <property name="TYPE" value=""/>
+      <property name="REFDES" value=""/>
+      <property name="MPN" value="TBD - standard 0603 zero-ohm jumper"/>
+      <property name="Tolerance" value="Jumper"/>
+      <property name="Draft_Change" value="Replaces U2/U8 LDO with a same-source direct rail link. No added regulation or ripple attenuation claimed."/>
+      <property name="DATASHEET LINK" value=""/>
+      <property name="GEOMETRY.HEIGHT" value=""/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*RC0603N_YAG*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e9ecd887-9b48-497c-a4de-bebdb3b196f5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R16">
+      <value>0</value>
+      <footprint>SignalGenLocal:R_0603_1608Metric</footprint>
+      <description>Draft component: 0; Replaces U2/U8 LDO with a same-source direct rail link. No added regulation or ripple attenuation claimed.</description>
+      <fields>
+        <field name="COPYRIGHT">Copyright (C) 2025 Ultra Librarian. All rights reserved.</field>
+        <field name="MANUFACTURER_NAME">TBD</field>
+        <field name="MANUFACTURER_PART_NUMBER">TBD - standard 0603 zero-ohm jumper</field>
+        <field name="TYPE"/>
+        <field name="REFDES"/>
+        <field name="MPN">TBD - standard 0603 zero-ohm jumper</field>
+        <field name="Tolerance">Jumper</field>
+        <field name="Draft_Change">Replaces U2/U8 LDO with a same-source direct rail link. No added regulation or ripple attenuation claimed.</field>
+        <field name="DATASHEET LINK"/>
+        <field name="GEOMETRY.HEIGHT"/>
+        <field name="Footprint">SignalGenLocal:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Draft component: 0; Replaces U2/U8 LDO with a same-source direct rail link. No added regulation or ripple attenuation claimed.</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="RC0603FR-0710KL_RC0603FR-0710KL" description="RES SMD 10kO 1% 1/10W 0603"/>
+      <property name="COPYRIGHT" value="Copyright (C) 2025 Ultra Librarian. All rights reserved."/>
+      <property name="MANUFACTURER_NAME" value="TBD"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="TBD - standard 0603 zero-ohm jumper"/>
+      <property name="TYPE" value=""/>
+      <property name="REFDES" value=""/>
+      <property name="MPN" value="TBD - standard 0603 zero-ohm jumper"/>
+      <property name="Tolerance" value="Jumper"/>
+      <property name="Draft_Change" value="Replaces U2/U8 LDO with a same-source direct rail link. No added regulation or ripple attenuation claimed."/>
+      <property name="DATASHEET LINK" value=""/>
+      <property name="GEOMETRY.HEIGHT" value=""/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*RC0603N_YAG*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0d79e1ef-0128-4ebf-b753-75eead29476b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP1">
+      <value>+ISO_P5V</value>
+      <footprint>SignalGenLocal:TP1_KEYSTONE_5016</footprint>
+      <description>Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016</description>
+      <fields>
+        <field name="SNAPEDA_LINK">https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap</field>
+        <field name="PACKAGE">NON STANDARD-1 Keystone</field>
+        <field name="ALTIUM_VALUE">*</field>
+        <field name="MF">Keystone Electronics</field>
+        <field name="MP">5016</field>
+        <field name="CHECK_PRICES">https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda</field>
+        <field name="Footprint">SignalGenLocal:TP1_KEYSTONE_5016</field>
+        <field name="Datasheet"/>
+        <field name="Description">Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="5016_5016" description="Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016"/>
+      <property name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap"/>
+      <property name="PACKAGE" value="NON STANDARD-1 Keystone"/>
+      <property name="ALTIUM_VALUE" value="*"/>
+      <property name="MF" value="Keystone Electronics"/>
+      <property name="MP" value="5016"/>
+      <property name="CHECK_PRICES" value="https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*KEYSTONE_5016*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>169c3594-f4ea-4332-96c4-1a0216bd0b6b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="TP"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP2">
+      <value>-ISO_N5V</value>
+      <footprint>SignalGenLocal:TP2_KEYSTONE_5016</footprint>
+      <description>Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016</description>
+      <fields>
+        <field name="SNAPEDA_LINK">https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap</field>
+        <field name="PACKAGE">NON STANDARD-1 Keystone</field>
+        <field name="ALTIUM_VALUE">*</field>
+        <field name="MF">Keystone Electronics</field>
+        <field name="MP">5016</field>
+        <field name="CHECK_PRICES">https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda</field>
+        <field name="Footprint">SignalGenLocal:TP2_KEYSTONE_5016</field>
+        <field name="Datasheet"/>
+        <field name="Description">Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="5016_5016" description="Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016"/>
+      <property name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap"/>
+      <property name="PACKAGE" value="NON STANDARD-1 Keystone"/>
+      <property name="ALTIUM_VALUE" value="*"/>
+      <property name="MF" value="Keystone Electronics"/>
+      <property name="MP" value="5016"/>
+      <property name="CHECK_PRICES" value="https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*KEYSTONE_5016*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b63ee369-e8a6-4151-8ce1-597b954e8412</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="TP"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP3">
+      <value>ISO_GND_ISOW</value>
+      <footprint>SignalGenLocal:TP3_KEYSTONE_5016</footprint>
+      <description>Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016</description>
+      <fields>
+        <field name="SNAPEDA_LINK">https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap</field>
+        <field name="PACKAGE">NON STANDARD-1 Keystone</field>
+        <field name="ALTIUM_VALUE">*</field>
+        <field name="MF">Keystone Electronics</field>
+        <field name="MP">5016</field>
+        <field name="CHECK_PRICES">https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda</field>
+        <field name="Footprint">SignalGenLocal:TP3_KEYSTONE_5016</field>
+        <field name="Datasheet"/>
+        <field name="Description">Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="5016_5016" description="Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016"/>
+      <property name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap"/>
+      <property name="PACKAGE" value="NON STANDARD-1 Keystone"/>
+      <property name="ALTIUM_VALUE" value="*"/>
+      <property name="MF" value="Keystone Electronics"/>
+      <property name="MP" value="5016"/>
+      <property name="CHECK_PRICES" value="https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*KEYSTONE_5016*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0c5ed82a-f390-4ee1-af22-43e68873ae84</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="TP"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP6">
+      <value>Bi_PolarOut</value>
+      <footprint>SignalGenLocal:TP6_KEYSTONE_5016</footprint>
+      <description>Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016</description>
+      <fields>
+        <field name="SNAPEDA_LINK">https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap</field>
+        <field name="PACKAGE">NON STANDARD-1 Keystone</field>
+        <field name="ALTIUM_VALUE">*</field>
+        <field name="MF">Keystone Electronics</field>
+        <field name="MP">5016</field>
+        <field name="CHECK_PRICES">https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda</field>
+        <field name="Footprint">SignalGenLocal:TP6_KEYSTONE_5016</field>
+        <field name="Datasheet"/>
+        <field name="Description">Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="5016_5016" description="Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016"/>
+      <property name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap"/>
+      <property name="PACKAGE" value="NON STANDARD-1 Keystone"/>
+      <property name="ALTIUM_VALUE" value="*"/>
+      <property name="MF" value="Keystone Electronics"/>
+      <property name="MP" value="5016"/>
+      <property name="CHECK_PRICES" value="https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*KEYSTONE_5016*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1b56d760-76eb-43a1-b1e0-d2d1b7296ef5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="TP"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP7">
+      <value>VREF_BUF_TP</value>
+      <footprint>SignalGenLocal:TP7_KEYSTONE_5016</footprint>
+      <description>Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016</description>
+      <fields>
+        <field name="SNAPEDA_LINK">https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap</field>
+        <field name="PACKAGE">NON STANDARD-1 Keystone</field>
+        <field name="ALTIUM_VALUE">*</field>
+        <field name="MF">Keystone Electronics</field>
+        <field name="MP">5016</field>
+        <field name="CHECK_PRICES">https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda</field>
+        <field name="Footprint">SignalGenLocal:TP7_KEYSTONE_5016</field>
+        <field name="Datasheet"/>
+        <field name="Description">Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="5016_5016" description="Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016"/>
+      <property name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap"/>
+      <property name="PACKAGE" value="NON STANDARD-1 Keystone"/>
+      <property name="ALTIUM_VALUE" value="*"/>
+      <property name="MF" value="Keystone Electronics"/>
+      <property name="MP" value="5016"/>
+      <property name="CHECK_PRICES" value="https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*KEYSTONE_5016*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e1157fe3-ce9e-4f06-910b-a2110d40702a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="TP"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP8">
+      <value>TP_SYS_3V3</value>
+      <footprint>SignalGenLocal:TP8_KEYSTONE_5016</footprint>
+      <description>Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016</description>
+      <fields>
+        <field name="SNAPEDA_LINK">https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap</field>
+        <field name="PACKAGE">NON STANDARD-1 Keystone</field>
+        <field name="ALTIUM_VALUE">*</field>
+        <field name="MF">Keystone Electronics</field>
+        <field name="MP">5016</field>
+        <field name="CHECK_PRICES">https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda</field>
+        <field name="Footprint">SignalGenLocal:TP8_KEYSTONE_5016</field>
+        <field name="Datasheet"/>
+        <field name="Description">Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="5016_5016" description="Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016"/>
+      <property name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap"/>
+      <property name="PACKAGE" value="NON STANDARD-1 Keystone"/>
+      <property name="ALTIUM_VALUE" value="*"/>
+      <property name="MF" value="Keystone Electronics"/>
+      <property name="MP" value="5016"/>
+      <property name="CHECK_PRICES" value="https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*KEYSTONE_5016*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>65188551-1881-4750-9f9e-40c3015b9a8d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="TP"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP9">
+      <value>TP_ISO_3V3_CLEAN</value>
+      <footprint>SignalGenLocal:TP9_KEYSTONE_5016</footprint>
+      <description>Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016</description>
+      <fields>
+        <field name="SNAPEDA_LINK">https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap</field>
+        <field name="PACKAGE">NON STANDARD-1 Keystone</field>
+        <field name="ALTIUM_VALUE">*</field>
+        <field name="MF">Keystone Electronics</field>
+        <field name="MP">5016</field>
+        <field name="CHECK_PRICES">https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda</field>
+        <field name="Footprint">SignalGenLocal:TP9_KEYSTONE_5016</field>
+        <field name="Datasheet"/>
+        <field name="Description">Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="5016_5016" description="Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016"/>
+      <property name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap"/>
+      <property name="PACKAGE" value="NON STANDARD-1 Keystone"/>
+      <property name="ALTIUM_VALUE" value="*"/>
+      <property name="MF" value="Keystone Electronics"/>
+      <property name="MP" value="5016"/>
+      <property name="CHECK_PRICES" value="https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*KEYSTONE_5016*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c2571f6f-2760-4414-8ebd-3dd036e990e0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="TP"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP10">
+      <value>TP_ISO_3V3_RAW</value>
+      <footprint>SignalGenLocal:TP10_KEYSTONE_5016</footprint>
+      <description>Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016</description>
+      <fields>
+        <field name="SNAPEDA_LINK">https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap</field>
+        <field name="PACKAGE">NON STANDARD-1 Keystone</field>
+        <field name="ALTIUM_VALUE">*</field>
+        <field name="MF">Keystone Electronics</field>
+        <field name="MP">5016</field>
+        <field name="CHECK_PRICES">https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda</field>
+        <field name="Footprint">SignalGenLocal:TP10_KEYSTONE_5016</field>
+        <field name="Datasheet"/>
+        <field name="Description">Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="5016_5016" description="Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016"/>
+      <property name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap"/>
+      <property name="PACKAGE" value="NON STANDARD-1 Keystone"/>
+      <property name="ALTIUM_VALUE" value="*"/>
+      <property name="MF" value="Keystone Electronics"/>
+      <property name="MP" value="5016"/>
+      <property name="CHECK_PRICES" value="https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*KEYSTONE_5016*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f02343ab-33e5-4501-a936-5f972c3c0361</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="TP"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP11">
+      <value>TP_ISO_3V3_CLEAN_2</value>
+      <footprint>SignalGenLocal:TP11_KEYSTONE_5016</footprint>
+      <description>Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016</description>
+      <fields>
+        <field name="SNAPEDA_LINK">https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap</field>
+        <field name="PACKAGE">NON STANDARD-1 Keystone</field>
+        <field name="ALTIUM_VALUE">*</field>
+        <field name="MF">Keystone Electronics</field>
+        <field name="MP">5016</field>
+        <field name="CHECK_PRICES">https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda</field>
+        <field name="Footprint">SignalGenLocal:TP11_KEYSTONE_5016</field>
+        <field name="Datasheet"/>
+        <field name="Description">Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="5016_5016" description="Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016"/>
+      <property name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap"/>
+      <property name="PACKAGE" value="NON STANDARD-1 Keystone"/>
+      <property name="ALTIUM_VALUE" value="*"/>
+      <property name="MF" value="Keystone Electronics"/>
+      <property name="MP" value="5016"/>
+      <property name="CHECK_PRICES" value="https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*KEYSTONE_5016*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d8413c9f-093a-4312-9ef4-5d21220d1022</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="TP"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP12">
+      <value>TP_ISO_3V3_RAW_2</value>
+      <footprint>SignalGenLocal:TP12_KEYSTONE_5016</footprint>
+      <description>Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016</description>
+      <fields>
+        <field name="SNAPEDA_LINK">https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap</field>
+        <field name="PACKAGE">NON STANDARD-1 Keystone</field>
+        <field name="ALTIUM_VALUE">*</field>
+        <field name="MF">Keystone Electronics</field>
+        <field name="MP">5016</field>
+        <field name="CHECK_PRICES">https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda</field>
+        <field name="Footprint">SignalGenLocal:TP12_KEYSTONE_5016</field>
+        <field name="Datasheet"/>
+        <field name="Description">Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="5016_5016" description="Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016"/>
+      <property name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap"/>
+      <property name="PACKAGE" value="NON STANDARD-1 Keystone"/>
+      <property name="ALTIUM_VALUE" value="*"/>
+      <property name="MF" value="Keystone Electronics"/>
+      <property name="MP" value="5016"/>
+      <property name="CHECK_PRICES" value="https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*KEYSTONE_5016*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>694a23b1-c7e4-4341-b11c-42df4d934a8a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="TP"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP13">
+      <value>+ISO_P5V_2</value>
+      <footprint>SignalGenLocal:TP13_KEYSTONE_5016</footprint>
+      <description>Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016</description>
+      <fields>
+        <field name="SNAPEDA_LINK">https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap</field>
+        <field name="PACKAGE">NON STANDARD-1 Keystone</field>
+        <field name="ALTIUM_VALUE">*</field>
+        <field name="MF">Keystone Electronics</field>
+        <field name="MP">5016</field>
+        <field name="CHECK_PRICES">https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda</field>
+        <field name="Footprint">SignalGenLocal:TP13_KEYSTONE_5016</field>
+        <field name="Datasheet"/>
+        <field name="Description">Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="5016_5016" description="Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016"/>
+      <property name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap"/>
+      <property name="PACKAGE" value="NON STANDARD-1 Keystone"/>
+      <property name="ALTIUM_VALUE" value="*"/>
+      <property name="MF" value="Keystone Electronics"/>
+      <property name="MP" value="5016"/>
+      <property name="CHECK_PRICES" value="https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*KEYSTONE_5016*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>eab27173-55c5-4491-bb97-5b3b0e1c3e9a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="TP"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP14">
+      <value>-ISO_N5V_2</value>
+      <footprint>SignalGenLocal:TP14_KEYSTONE_5016</footprint>
+      <description>Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016</description>
+      <fields>
+        <field name="SNAPEDA_LINK">https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap</field>
+        <field name="PACKAGE">NON STANDARD-1 Keystone</field>
+        <field name="ALTIUM_VALUE">*</field>
+        <field name="MF">Keystone Electronics</field>
+        <field name="MP">5016</field>
+        <field name="CHECK_PRICES">https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda</field>
+        <field name="Footprint">SignalGenLocal:TP14_KEYSTONE_5016</field>
+        <field name="Datasheet"/>
+        <field name="Description">Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="5016_5016" description="Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016"/>
+      <property name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap"/>
+      <property name="PACKAGE" value="NON STANDARD-1 Keystone"/>
+      <property name="ALTIUM_VALUE" value="*"/>
+      <property name="MF" value="Keystone Electronics"/>
+      <property name="MP" value="5016"/>
+      <property name="CHECK_PRICES" value="https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*KEYSTONE_5016*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>58809662-7ebb-4dc1-97be-bfe09494f003</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="TP"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP15">
+      <value>ISO_GND_ISOW_2</value>
+      <footprint>SignalGenLocal:TP15_KEYSTONE_5016</footprint>
+      <description>Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016</description>
+      <fields>
+        <field name="SNAPEDA_LINK">https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap</field>
+        <field name="PACKAGE">NON STANDARD-1 Keystone</field>
+        <field name="ALTIUM_VALUE">*</field>
+        <field name="MF">Keystone Electronics</field>
+        <field name="MP">5016</field>
+        <field name="CHECK_PRICES">https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda</field>
+        <field name="Footprint">SignalGenLocal:TP15_KEYSTONE_5016</field>
+        <field name="Datasheet"/>
+        <field name="Description">Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="5016_5016" description="Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016"/>
+      <property name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap"/>
+      <property name="PACKAGE" value="NON STANDARD-1 Keystone"/>
+      <property name="ALTIUM_VALUE" value="*"/>
+      <property name="MF" value="Keystone Electronics"/>
+      <property name="MP" value="5016"/>
+      <property name="CHECK_PRICES" value="https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*KEYSTONE_5016*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>019209f6-7f96-47bc-b02d-1edf98940725</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="TP"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP16">
+      <value>Bi_PolarOut_2</value>
+      <footprint>SignalGenLocal:TP16_KEYSTONE_5016</footprint>
+      <description>Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016</description>
+      <fields>
+        <field name="SNAPEDA_LINK">https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap</field>
+        <field name="PACKAGE">NON STANDARD-1 Keystone</field>
+        <field name="ALTIUM_VALUE">*</field>
+        <field name="MF">Keystone Electronics</field>
+        <field name="MP">5016</field>
+        <field name="CHECK_PRICES">https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda</field>
+        <field name="Footprint">SignalGenLocal:TP16_KEYSTONE_5016</field>
+        <field name="Datasheet"/>
+        <field name="Description">Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="5016_5016" description="Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016"/>
+      <property name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap"/>
+      <property name="PACKAGE" value="NON STANDARD-1 Keystone"/>
+      <property name="ALTIUM_VALUE" value="*"/>
+      <property name="MF" value="Keystone Electronics"/>
+      <property name="MP" value="5016"/>
+      <property name="CHECK_PRICES" value="https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*KEYSTONE_5016*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c87daf66-02af-4cdb-8cd9-68ac58d8376d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="TP"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP17">
+      <value>VREF_BUF_TP_2</value>
+      <footprint>SignalGenLocal:TP17_KEYSTONE_5016</footprint>
+      <description>Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016</description>
+      <fields>
+        <field name="SNAPEDA_LINK">https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap</field>
+        <field name="PACKAGE">NON STANDARD-1 Keystone</field>
+        <field name="ALTIUM_VALUE">*</field>
+        <field name="MF">Keystone Electronics</field>
+        <field name="MP">5016</field>
+        <field name="CHECK_PRICES">https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda</field>
+        <field name="Footprint">SignalGenLocal:TP17_KEYSTONE_5016</field>
+        <field name="Datasheet"/>
+        <field name="Description">Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="5016_5016" description="Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016"/>
+      <property name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap"/>
+      <property name="PACKAGE" value="NON STANDARD-1 Keystone"/>
+      <property name="ALTIUM_VALUE" value="*"/>
+      <property name="MF" value="Keystone Electronics"/>
+      <property name="MP" value="5016"/>
+      <property name="CHECK_PRICES" value="https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*KEYSTONE_5016*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7aaf4ad5-758e-4b5e-8530-d88a430ee160</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="TP"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>ISOW7741DFM</value>
+      <footprint>SignalGenLocal:U1_SOIC20_DFM_TEX</footprint>
+      <description>Low-emissions, low-ripple, quad-channel, 3/1, reinforced digital isolator with integrated power 20-SOIC -40 to 125</description>
+      <fields>
+        <field name="COPYRIGHT">Copyright (C) 2026 Ultra Librarian. All rights reserved.</field>
+        <field name="MANUFACTURER_NAME">Texas Instruments</field>
+        <field name="MANUFACTURER_PART_NUMBER">ISOW7741DFM</field>
+        <field name="REFDES">RefDes</field>
+        <field name="TYPE">Type</field>
+        <field name="Footprint">SignalGenLocal:U1_SOIC20_DFM_TEX</field>
+        <field name="Datasheet"/>
+        <field name="Description">Low-emissions, low-ripple, quad-channel, 3/1, reinforced digital isolator with integrated power 20-SOIC -40 to 125</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="ISOW7741DFM_ISOW7741DFM" description="Low-emissions, low-ripple, quad-channel, 3/1, reinforced digital isolator with integrated power 20-SOIC -40 to 125"/>
+      <property name="COPYRIGHT" value="Copyright (C) 2026 Ultra Librarian. All rights reserved."/>
+      <property name="MANUFACTURER_NAME" value="Texas Instruments"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="ISOW7741DFM"/>
+      <property name="REFDES" value="RefDes"/>
+      <property name="TYPE" value="Type"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*SOIC20_DFM_TEX*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>895a617d-36a3-4254-b91c-991828cc1c48</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="20"/>
+            <pin num="19"/>
+            <pin num="18"/>
+            <pin num="17"/>
+            <pin num="16"/>
+            <pin num="15"/>
+            <pin num="14"/>
+            <pin num="13"/>
+            <pin num="12"/>
+            <pin num="11"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U3">
+      <value>DAC8830IBD</value>
+      <footprint>SignalGenLocal:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <datasheet>https://www.ti.com/lit/gpn/dac8830</datasheet>
+      <fields>
+        <field name="Footprint">SignalGenLocal:SOIC-8_3.9x4.9mm_P1.27mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/gpn/dac8830</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SignalGenLocal" part="2026-10-17_16-46-22_DAC8830IBD" description=""/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_keywords" value="DAC8830IBD"/>
+      <property name="ki_fp_filters" value="D0008A_N D0008A_M D0008A_L"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a50ebaee-e4c1-4747-b478-49563b61d6e9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="8"/>
+            <pin num="3"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="4"/>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="7"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U4">
+      <value>OPA2192IDGKR</value>
+      <footprint>SignalGenLocal:U4_DGK0008A_N_TEX</footprint>
+      <description>36-V, Precision, RRIO, Low Offset Voltage, Low Input Bias Current Op Amp With e-trim 8-VSSOP -40 to 125</description>
+      <fields>
+        <field name="COPYRIGHT">Copyright (C) 2025 Ultra Librarian. All rights reserved.</field>
+        <field name="MANUFACTURER_NAME">Texas Instruments</field>
+        <field name="MANUFACTURER_PART_NUMBER">OPA2192IDGKR</field>
+        <field name="REFDES">RefDes</field>
+        <field name="TYPE">Type</field>
+        <field name="Draft_Change">A buffers full VREF; B non-inverting2*DAC-VREF. Code polarity changed. Hardware mute unresolved.</field>
+        <field name="Footprint">SignalGenLocal:U4_DGK0008A_N_TEX</field>
+        <field name="Datasheet"/>
+        <field name="Description">36-V, Precision, RRIO, Low Offset Voltage, Low Input Bias Current Op Amp With e-trim 8-VSSOP -40 to 125</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="OPA2192IDGKR_OPA2192IDGKR" description="36-V, Precision, RRIO, Low Offset Voltage, Low Input Bias Current Op Amp With e-trim 8-VSSOP -40 to 125"/>
+      <property name="COPYRIGHT" value="Copyright (C) 2025 Ultra Librarian. All rights reserved."/>
+      <property name="MANUFACTURER_NAME" value="Texas Instruments"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="OPA2192IDGKR"/>
+      <property name="REFDES" value="RefDes"/>
+      <property name="TYPE" value="Type"/>
+      <property name="Draft_Change" value="A buffers full VREF; B non-inverting2*DAC-VREF. Code polarity changed. Hardware mute unresolved."/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*DGK0008A_N_TEX*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1a787f7d-cccd-4312-b9c8-7c68d276da28</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="6"/>
+            <pin num="3"/>
+            <pin num="5"/>
+            <pin num="4"/>
+            <pin num="8"/>
+            <pin num="1"/>
+            <pin num="7"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U5">
+      <value>DAC8830IBD</value>
+      <footprint>SignalGenLocal:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <datasheet>https://www.ti.com/lit/gpn/dac8830</datasheet>
+      <fields>
+        <field name="Footprint">SignalGenLocal:SOIC-8_3.9x4.9mm_P1.27mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/gpn/dac8830</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SignalGenLocal" part="2026-10-17_16-46-22_DAC8830IBD" description=""/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_keywords" value="DAC8830IBD"/>
+      <property name="ki_fp_filters" value="D0008A_N D0008A_M D0008A_L"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bb567a9d-bba6-47fd-978b-db4998b480ff</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="8"/>
+            <pin num="3"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="4"/>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="7"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U6">
+      <value>ISOW7741DFM</value>
+      <footprint>SignalGenLocal:U6_SOIC20_DFM_TEX</footprint>
+      <description>Low-emissions, low-ripple, quad-channel, 3/1, reinforced digital isolator with integrated power 20-SOIC -40 to 125</description>
+      <fields>
+        <field name="COPYRIGHT">Copyright (C) 2026 Ultra Librarian. All rights reserved.</field>
+        <field name="MANUFACTURER_NAME">Texas Instruments</field>
+        <field name="MANUFACTURER_PART_NUMBER">ISOW7741DFM</field>
+        <field name="REFDES">RefDes</field>
+        <field name="TYPE">Type</field>
+        <field name="Footprint">SignalGenLocal:U6_SOIC20_DFM_TEX</field>
+        <field name="Datasheet"/>
+        <field name="Description">Low-emissions, low-ripple, quad-channel, 3/1, reinforced digital isolator with integrated power 20-SOIC -40 to 125</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="ISOW7741DFM_ISOW7741DFM" description="Low-emissions, low-ripple, quad-channel, 3/1, reinforced digital isolator with integrated power 20-SOIC -40 to 125"/>
+      <property name="COPYRIGHT" value="Copyright (C) 2026 Ultra Librarian. All rights reserved."/>
+      <property name="MANUFACTURER_NAME" value="Texas Instruments"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="ISOW7741DFM"/>
+      <property name="REFDES" value="RefDes"/>
+      <property name="TYPE" value="Type"/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*SOIC20_DFM_TEX*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>929b23fd-5322-4691-aac5-8aa48254bf6c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="20"/>
+            <pin num="19"/>
+            <pin num="18"/>
+            <pin num="17"/>
+            <pin num="16"/>
+            <pin num="15"/>
+            <pin num="14"/>
+            <pin num="13"/>
+            <pin num="12"/>
+            <pin num="11"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U7">
+      <value>OPA2192IDGKR</value>
+      <footprint>SignalGenLocal:U7_DGK0008A_N_TEX</footprint>
+      <description>36-V, Precision, RRIO, Low Offset Voltage, Low Input Bias Current Op Amp With e-trim 8-VSSOP -40 to 125</description>
+      <fields>
+        <field name="COPYRIGHT">Copyright (C) 2025 Ultra Librarian. All rights reserved.</field>
+        <field name="MANUFACTURER_NAME">Texas Instruments</field>
+        <field name="MANUFACTURER_PART_NUMBER">OPA2192IDGKR</field>
+        <field name="REFDES">RefDes</field>
+        <field name="TYPE">Type</field>
+        <field name="Draft_Change">A buffers full VREF; B non-inverting2*DAC-VREF. Code polarity changed. Hardware mute unresolved.</field>
+        <field name="Footprint">SignalGenLocal:U7_DGK0008A_N_TEX</field>
+        <field name="Datasheet"/>
+        <field name="Description">36-V, Precision, RRIO, Low Offset Voltage, Low Input Bias Current Op Amp With e-trim 8-VSSOP -40 to 125</field>
+      </fields>
+      <libsource lib="SignalGenLocal" part="OPA2192IDGKR_OPA2192IDGKR" description="36-V, Precision, RRIO, Low Offset Voltage, Low Input Bias Current Op Amp With e-trim 8-VSSOP -40 to 125"/>
+      <property name="COPYRIGHT" value="Copyright (C) 2025 Ultra Librarian. All rights reserved."/>
+      <property name="MANUFACTURER_NAME" value="Texas Instruments"/>
+      <property name="MANUFACTURER_PART_NUMBER" value="OPA2192IDGKR"/>
+      <property name="REFDES" value="RefDes"/>
+      <property name="TYPE" value="Type"/>
+      <property name="Draft_Change" value="A buffers full VREF; B non-inverting2*DAC-VREF. Code polarity changed. Hardware mute unresolved."/>
+      <property name="Sheetname" value="SignalGen_Electrical_Draft"/>
+      <property name="Sheetfile" value="SignalGen_Electrical_Draft.kicad_sch"/>
+      <property name="ki_fp_filters" value="*DGK0008A_N_TEX*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e9c4c717-18d1-4f05-b2c0-8ead52fa0826</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="6"/>
+            <pin num="3"/>
+            <pin num="5"/>
+            <pin num="4"/>
+            <pin num="8"/>
+            <pin num="1"/>
+            <pin num="7"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="SignalGenLocal" part="1716030000_1716030000">
+      <description>Description</description>
+      <footprints>
+        <fp>*CONN_LM 5.080390_WED*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference"/>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Description</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SignalGenLocal" part="2026-10-17_16-46-22_DAC8830IBD">
+      <docs>https://www.ti.com/lit/gpn/dac8830</docs>
+      <footprints>
+        <fp>D0008A_N</fp>
+        <fp>D0008A_M</fp>
+        <fp>D0008A_L</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">DAC8830IBD</field>
+        <field name="Footprint">D0008A_N</field>
+        <field name="Datasheet">https://www.ti.com/lit/gpn/dac8830</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VOUT" type="output"/>
+        <pin num="2" name="AGND" type="power_in"/>
+        <pin num="3" name="VREF" type="input"/>
+        <pin num="4" name="CS_N" type="input"/>
+        <pin num="5" name="SCLK" type="input"/>
+        <pin num="6" name="SDI" type="input"/>
+        <pin num="7" name="DGND" type="power_in"/>
+        <pin num="8" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="SignalGenLocal" part="5016_5016">
+      <description>Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016</description>
+      <footprints>
+        <fp>*KEYSTONE_5016*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference"/>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Test Point Compact SMT Phos Bronze/Silver 1000pc Tape &amp; Reel ¦ Keystone Electronics 5016</field>
+      </fields>
+      <pins>
+        <pin num="TP" name="TP" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SignalGenLocal" part="C1608X7R1H474K080AC_C1608X7R1H474K080AC">
+      <description>CAPACITOR; SMT (0603); CERAMIC CHIP; 0.47UF; 50V; TOL=10%; TG=-55 DEGC TO +125 DEGC; TC=X7R; AUTO</description>
+      <footprints>
+        <fp>*CAP_1608_TDK*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference"/>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">CAPACITOR; SMT (0603); CERAMIC CHIP; 0.47UF; 50V; TOL=10%; TG=-55 DEGC TO +125 DEGC; TC=X7R; AUTO</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SignalGenLocal" part="CC0603KRX7R8BB104_CC0603KRX7R8BB104">
+      <description>Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R</description>
+      <footprints>
+        <fp>*CAPC1608X90N*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference"/>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SignalGenLocal" part="GRM21BR61E106KA73L_GRM21BR61E106KA73L">
+      <description>Description</description>
+      <footprints>
+        <fp>*G-21_MUR*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference"/>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Description</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SignalGenLocal" part="IA0305S_IA0305S">
+      <description>DC DC CONVERTER +/-5V 1W</description>
+      <footprints>
+        <fp>*XP_IA0305S*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">PS1</field>
+        <field name="Value">IA0305S</field>
+        <field name="Footprint">SignalGen_V5_Single_Channel-import-fps:XP_IA0305S</field>
+        <field name="Datasheet"/>
+        <field name="Description">DC DC CONVERTER +/-5V 1W</field>
+        <field name="MF"/>
+        <field name="PACKAGE">None</field>
+        <field name="PRICE">None</field>
+        <field name="ALTIUM_VALUE">*</field>
+        <field name="MP">IA0305S</field>
+        <field name="AVAILABILITY">Unavailable</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+VIN" type="input"/>
+        <pin num="2" name="-VIN" type="input"/>
+        <pin num="4" name="-VOUT" type="power_out"/>
+        <pin num="5" name="0" type="power_out"/>
+        <pin num="6" name="+VOUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="SignalGenLocal" part="ISOW7741DFM_ISOW7741DFM">
+      <description>Low-emissions, low-ripple, quad-channel, 3/1, reinforced digital isolator with integrated power 20-SOIC -40 to 125</description>
+      <footprints>
+        <fp>*SOIC20_DFM_TEX*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U6</field>
+        <field name="Value">ISOW7741DFM</field>
+        <field name="Footprint">SignalGen_V5_Single_Channel-import-fps:SOIC20_DFM_TEX</field>
+        <field name="Datasheet"/>
+        <field name="Description">Low-emissions, low-ripple, quad-channel, 3/1, reinforced digital isolator with integrated power 20-SOIC -40 to 125</field>
+        <field name="COPYRIGHT">Copyright (C) 2026 Ultra Librarian. All rights reserved.</field>
+        <field name="MANUFACTURER_NAME">Texas Instruments</field>
+        <field name="MANUFACTURER_PART_NUMBER">ISOW7741DFM</field>
+        <field name="REFDES">RefDes</field>
+        <field name="TYPE">Type</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VIO" type="power_in"/>
+        <pin num="2" name="INA" type="input"/>
+        <pin num="3" name="INB" type="input"/>
+        <pin num="4" name="INC" type="input"/>
+        <pin num="5" name="OUTD" type="output"/>
+        <pin num="6" name="GNDIO" type="power_in"/>
+        <pin num="7" name="EN_IO1" type="input"/>
+        <pin num="8" name="EN_FLT" type="bidirectional"/>
+        <pin num="9" name="VDD" type="power_in"/>
+        <pin num="10" name="GND1" type="power_in"/>
+        <pin num="11" name="GND2" type="power_in"/>
+        <pin num="12" name="VISOOUT" type="power_out"/>
+        <pin num="13" name="VSEL" type="input"/>
+        <pin num="14" name="EN_IO2" type="input"/>
+        <pin num="15" name="GISOIN" type="power_in"/>
+        <pin num="16" name="IND" type="input"/>
+        <pin num="17" name="OUTC" type="output"/>
+        <pin num="18" name="OUTB" type="output"/>
+        <pin num="19" name="OUTA" type="output"/>
+        <pin num="20" name="VISOIN" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="SignalGenLocal" part="MBASE168SB7105KTNA18_MBASE168SB7105KTNA18">
+      <description>Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R</description>
+      <footprints>
+        <fp>*INDC1608X90N*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference"/>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&amp;R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SignalGenLocal" part="OPA2192IDGKR_OPA2192IDGKR">
+      <description>36-V, Precision, RRIO, Low Offset Voltage, Low Input Bias Current Op Amp With e-trim 8-VSSOP -40 to 125</description>
+      <footprints>
+        <fp>*DGK0008A_N_TEX*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference"/>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">36-V, Precision, RRIO, Low Offset Voltage, Low Input Bias Current Op Amp With e-trim 8-VSSOP -40 to 125</field>
+      </fields>
+      <pins>
+        <pin num="1" name="OUT" type="output"/>
+        <pin num="2" name="IN-" type="input"/>
+        <pin num="3" name="IN+" type="input"/>
+        <pin num="4" name="V-" type="power_in"/>
+        <pin num="5" name="IN+" type="input"/>
+        <pin num="6" name="IN-" type="input"/>
+        <pin num="7" name="OUT" type="output"/>
+        <pin num="8" name="V+" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="SignalGenLocal" part="RC0603FR-0710KL_RC0603FR-0710KL">
+      <description>RES SMD 10kO 1% 1/10W 0603</description>
+      <footprints>
+        <fp>*RC0603N_YAG*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference"/>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">RES SMD 10kO 1% 1/10W 0603</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SignalGenLocal" part="RC0603FR-0720KL_RC0603FR-0720KL">
+      <description>Description</description>
+      <footprints>
+        <fp>*RC0603N_YAG*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference"/>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Description</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SignalGenLocal" part="SS-107-T-1A_SS-107-T-1A">
+      <footprints>
+        <fp>*SAMTEC_SS-107-T-1A*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference"/>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="01" name="01" type="passive"/>
+        <pin num="02" name="02" type="passive"/>
+        <pin num="03" name="03" type="passive"/>
+        <pin num="04" name="04" type="passive"/>
+        <pin num="05" name="05" type="passive"/>
+        <pin num="06" name="06" type="passive"/>
+        <pin num="07" name="07" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="SignalGenLocal">
+      <uri>${KIPRJMOD}/SignalGenLocal.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/BIPOLAR_OUT" class="Default">
+      <node ref="J3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R6" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP6" pin="TP" pinfunction="TP_TP" pintype="passive"/>
+      <node ref="U4" pin="7" pinfunction="OUT_7" pintype="output"/>
+    </net>
+    <net code="2" name="/BIPOLAR_OUT_2" class="Default">
+      <node ref="J4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R12" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP16" pin="TP" pinfunction="TP_TP" pintype="passive"/>
+      <node ref="U7" pin="7" pinfunction="OUT_7" pintype="output"/>
+    </net>
+    <net code="3" name="/CS_ISO" class="Default">
+      <node ref="U1" pin="17" pinfunction="OUTC_17" pintype="output"/>
+      <node ref="U3" pin="4" pinfunction="CS_N_4" pintype="input"/>
+    </net>
+    <net code="4" name="/CS_ISO_2" class="Default">
+      <node ref="U5" pin="4" pinfunction="CS_N_4" pintype="input"/>
+      <node ref="U6" pin="17" pinfunction="OUTC_17" pintype="output"/>
+    </net>
+    <net code="5" name="/DAC_OUT_UNIPOLAR" class="Default">
+      <node ref="U3" pin="1" pinfunction="VOUT_1" pintype="output"/>
+      <node ref="U4" pin="5" pinfunction="IN+_5" pintype="input"/>
+    </net>
+    <net code="6" name="/DAC_OUT_UNIPOLAR_2" class="Default">
+      <node ref="U5" pin="1" pinfunction="VOUT_1" pintype="output"/>
+      <node ref="U7" pin="5" pinfunction="IN+_5" pintype="input"/>
+    </net>
+    <net code="7" name="/FAULT_TO_PICO" class="Default">
+      <node ref="J1" pin="07" pinfunction="07_07" pintype="passive"/>
+      <node ref="R13" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="EN_FLT_8" pintype="bidirectional"/>
+    </net>
+    <net code="8" name="/FAULT_TO_PICO_2" class="Default">
+      <node ref="J2" pin="07" pinfunction="07_07" pintype="passive"/>
+      <node ref="R14" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U6" pin="8" pinfunction="EN_FLT_8" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="/IN-_B" class="Default">
+      <node ref="R3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R6" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U4" pin="6" pinfunction="IN-_6" pintype="input"/>
+    </net>
+    <net code="10" name="/IN-_B_2" class="Default">
+      <node ref="R11" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R12" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U7" pin="6" pinfunction="IN-_6" pintype="input"/>
+    </net>
+    <net code="11" name="/ISO_3V3_CLEAN" class="Default">
+      <node ref="C10" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C21" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C9" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R15" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="TP9" pin="TP" pinfunction="TP_TP" pintype="passive"/>
+      <node ref="U3" pin="3" pinfunction="VREF_3" pintype="input"/>
+      <node ref="U3" pin="8" pinfunction="VDD_8" pintype="power_in"/>
+      <node ref="U4" pin="3" pinfunction="IN+_3" pintype="input"/>
+    </net>
+    <net code="12" name="/ISO_3V3_CLEAN_2" class="Default">
+      <node ref="C22" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C23" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C38" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R16" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="TP11" pin="TP" pinfunction="TP_TP" pintype="passive"/>
+      <node ref="U5" pin="3" pinfunction="VREF_3" pintype="input"/>
+      <node ref="U5" pin="8" pinfunction="VDD_8" pintype="power_in"/>
+      <node ref="U7" pin="3" pinfunction="IN+_3" pintype="input"/>
+    </net>
+    <net code="13" name="/ISO_3V3_RAW" class="Default">
+      <node ref="C41" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C42" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C5" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C6" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C8" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R15" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP10" pin="TP" pinfunction="TP_TP" pintype="passive"/>
+      <node ref="U1" pin="12" pinfunction="VISOOUT_12" pintype="power_out"/>
+      <node ref="U1" pin="14" pinfunction="EN_IO2_14" pintype="input"/>
+      <node ref="U1" pin="20" pinfunction="VISOIN_20" pintype="power_in"/>
+    </net>
+    <net code="14" name="/ISO_3V3_RAW_2" class="Default">
+      <node ref="C25" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C26" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C36" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C44" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C45" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R16" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP12" pin="TP" pinfunction="TP_TP" pintype="passive"/>
+      <node ref="U6" pin="12" pinfunction="VISOOUT_12" pintype="power_out"/>
+      <node ref="U6" pin="14" pinfunction="EN_IO2_14" pintype="input"/>
+      <node ref="U6" pin="20" pinfunction="VISOIN_20" pintype="power_in"/>
+    </net>
+    <net code="15" name="/ISO_GND_ISOW" class="Default">
+      <node ref="C10" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C12" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C13" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C14" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C15" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C17" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C18" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C19" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C20" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C21" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C41" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C42" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C5" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C6" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C8" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C9" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J3" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="PS1" pin="5" pinfunction="0_5" pintype="power_out"/>
+      <node ref="TP3" pin="TP" pinfunction="TP_TP" pintype="passive"/>
+      <node ref="U1" pin="11" pinfunction="GND2_11" pintype="power_in"/>
+      <node ref="U1" pin="13" pinfunction="VSEL_13" pintype="input"/>
+      <node ref="U1" pin="15" pinfunction="GISOIN_15" pintype="power_in"/>
+      <node ref="U3" pin="2" pinfunction="AGND_2" pintype="power_in"/>
+      <node ref="U3" pin="7" pinfunction="DGND_7" pintype="power_in"/>
+    </net>
+    <net code="16" name="/ISO_GND_ISOW_2" class="Default">
+      <node ref="C22" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C23" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C25" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C26" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C28" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C29" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C30" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C31" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C33" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C34" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C35" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C36" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C37" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C38" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C44" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C45" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J4" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="PS2" pin="5" pinfunction="0_5" pintype="power_out"/>
+      <node ref="TP15" pin="TP" pinfunction="TP_TP" pintype="passive"/>
+      <node ref="U5" pin="2" pinfunction="AGND_2" pintype="power_in"/>
+      <node ref="U5" pin="7" pinfunction="DGND_7" pintype="power_in"/>
+      <node ref="U6" pin="11" pinfunction="GND2_11" pintype="power_in"/>
+      <node ref="U6" pin="13" pinfunction="VSEL_13" pintype="input"/>
+      <node ref="U6" pin="15" pinfunction="GISOIN_15" pintype="power_in"/>
+    </net>
+    <net code="17" name="/ISO_N5V" class="Default">
+      <node ref="C13" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C14" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C18" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C20" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="PS1" pin="4" pinfunction="-VOUT_4" pintype="power_out"/>
+      <node ref="TP2" pin="TP" pinfunction="TP_TP" pintype="passive"/>
+      <node ref="U4" pin="4" pinfunction="V-_4" pintype="power_in"/>
+    </net>
+    <net code="18" name="/ISO_N5V_2" class="Default">
+      <node ref="C28" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C31" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C33" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C37" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="PS2" pin="4" pinfunction="-VOUT_4" pintype="power_out"/>
+      <node ref="TP14" pin="TP" pinfunction="TP_TP" pintype="passive"/>
+      <node ref="U7" pin="4" pinfunction="V-_4" pintype="power_in"/>
+    </net>
+    <net code="19" name="/ISO_P5V" class="Default">
+      <node ref="C12" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C15" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C17" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C19" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="PS1" pin="6" pinfunction="+VOUT_6" pintype="power_out"/>
+      <node ref="TP1" pin="TP" pinfunction="TP_TP" pintype="passive"/>
+      <node ref="U4" pin="8" pinfunction="V+_8" pintype="power_in"/>
+    </net>
+    <net code="20" name="/ISO_P5V_2" class="Default">
+      <node ref="C29" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C30" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C34" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C35" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="PS2" pin="6" pinfunction="+VOUT_6" pintype="power_out"/>
+      <node ref="TP13" pin="TP" pinfunction="TP_TP" pintype="passive"/>
+      <node ref="U7" pin="8" pinfunction="V+_8" pintype="power_in"/>
+    </net>
+    <net code="21" name="/MOSI_ISO" class="Default">
+      <node ref="U1" pin="18" pinfunction="OUTB_18" pintype="output"/>
+      <node ref="U3" pin="6" pinfunction="SDI_6" pintype="input"/>
+    </net>
+    <net code="22" name="/MOSI_ISO_2" class="Default">
+      <node ref="U5" pin="6" pinfunction="SDI_6" pintype="input"/>
+      <node ref="U6" pin="18" pinfunction="OUTB_18" pintype="output"/>
+    </net>
+    <net code="23" name="/SCLK_ISO" class="Default">
+      <node ref="U1" pin="19" pinfunction="OUTA_19" pintype="output"/>
+      <node ref="U3" pin="5" pinfunction="SCLK_5" pintype="input"/>
+    </net>
+    <net code="24" name="/SCLK_ISO_2" class="Default">
+      <node ref="U5" pin="5" pinfunction="SCLK_5" pintype="input"/>
+      <node ref="U6" pin="19" pinfunction="OUTA_19" pintype="output"/>
+    </net>
+    <net code="25" name="/SPI_CS_SYS" class="Default">
+      <node ref="J1" pin="06" pinfunction="06_06" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="INC_4" pintype="input"/>
+    </net>
+    <net code="26" name="/SPI_CS_SYS_2" class="Default">
+      <node ref="J2" pin="06" pinfunction="06_06" pintype="passive"/>
+      <node ref="U6" pin="4" pinfunction="INC_4" pintype="input"/>
+    </net>
+    <net code="27" name="/SPI_MOSI_SYS" class="Default">
+      <node ref="J1" pin="05" pinfunction="05_05" pintype="passive"/>
+      <node ref="J2" pin="05" pinfunction="05_05" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="INB_3" pintype="input"/>
+      <node ref="U6" pin="3" pinfunction="INB_3" pintype="input"/>
+    </net>
+    <net code="28" name="/SPI_SCLK_SYS" class="Default">
+      <node ref="J1" pin="04" pinfunction="04_04" pintype="passive"/>
+      <node ref="J2" pin="04" pinfunction="04_04" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="INA_2" pintype="input"/>
+      <node ref="U6" pin="2" pinfunction="INA_2" pintype="input"/>
+    </net>
+    <net code="29" name="/SYS_3V3" class="Default">
+      <node ref="C1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C24" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C27" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C39" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C40" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C43" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C46" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J1" pin="02" pinfunction="02_02" pintype="passive"/>
+      <node ref="J2" pin="02" pinfunction="02_02" pintype="passive"/>
+      <node ref="PS1" pin="1" pinfunction="+VIN_1" pintype="input"/>
+      <node ref="PS2" pin="1" pinfunction="+VIN_1" pintype="input"/>
+      <node ref="R13" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R14" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP8" pin="TP" pinfunction="TP_TP" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="VIO_1" pintype="power_in"/>
+      <node ref="U1" pin="7" pinfunction="EN_IO1_7" pintype="input"/>
+      <node ref="U1" pin="9" pinfunction="VDD_9" pintype="power_in"/>
+      <node ref="U6" pin="1" pinfunction="VIO_1" pintype="power_in"/>
+      <node ref="U6" pin="7" pinfunction="EN_IO1_7" pintype="input"/>
+      <node ref="U6" pin="9" pinfunction="VDD_9" pintype="power_in"/>
+    </net>
+    <net code="30" name="/SYS_GND" class="Default">
+      <node ref="C1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C24" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C27" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C39" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C40" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C43" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C46" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J1" pin="03" pinfunction="03_03" pintype="passive"/>
+      <node ref="J2" pin="03" pinfunction="03_03" pintype="passive"/>
+      <node ref="PS1" pin="2" pinfunction="-VIN_2" pintype="input"/>
+      <node ref="PS2" pin="2" pinfunction="-VIN_2" pintype="input"/>
+      <node ref="U1" pin="10" pinfunction="GND1_10" pintype="power_in"/>
+      <node ref="U1" pin="6" pinfunction="GNDIO_6" pintype="power_in"/>
+      <node ref="U6" pin="10" pinfunction="GND1_10" pintype="power_in"/>
+      <node ref="U6" pin="6" pinfunction="GNDIO_6" pintype="power_in"/>
+    </net>
+    <net code="31" name="/VBUS_5V" class="Default">
+      <node ref="J1" pin="01" pinfunction="01_01" pintype="passive+no_connect"/>
+    </net>
+    <net code="32" name="/VBUS_5V_2" class="Default">
+      <node ref="J2" pin="01" pinfunction="01_01" pintype="passive+no_connect"/>
+    </net>
+    <net code="33" name="/VREF_BUF" class="Default">
+      <node ref="R3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP7" pin="TP" pinfunction="TP_TP" pintype="passive"/>
+      <node ref="U4" pin="1" pinfunction="OUT_1" pintype="output"/>
+      <node ref="U4" pin="2" pinfunction="IN-_2" pintype="input"/>
+    </net>
+    <net code="34" name="/VREF_BUF_2" class="Default">
+      <node ref="R11" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP17" pin="TP" pinfunction="TP_TP" pintype="passive"/>
+      <node ref="U7" pin="1" pinfunction="OUT_1" pintype="output"/>
+      <node ref="U7" pin="2" pinfunction="IN-_2" pintype="input"/>
+    </net>
+    <net code="35" name="unconnected-(U1-IND-Pad16)" class="Default">
+      <node ref="U1" pin="16" pinfunction="IND_16" pintype="input+no_connect"/>
+    </net>
+    <net code="36" name="unconnected-(U1-OUTD-Pad5)" class="Default">
+      <node ref="U1" pin="5" pinfunction="OUTD_5" pintype="output+no_connect"/>
+    </net>
+    <net code="37" name="unconnected-(U6-IND-Pad16)" class="Default">
+      <node ref="U6" pin="16" pinfunction="IND_16" pintype="input+no_connect"/>
+    </net>
+    <net code="38" name="unconnected-(U6-OUTD-Pad5)" class="Default">
+      <node ref="U6" pin="5" pinfunction="OUTD_5" pintype="output+no_connect"/>
+    </net>
+  </nets>
+</export>

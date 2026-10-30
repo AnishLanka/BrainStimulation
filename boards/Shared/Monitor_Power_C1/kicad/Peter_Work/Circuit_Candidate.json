@@ -1,0 +1,456 @@
+{
+  "title": "One channel isolated regulated monitor power",
+  "revision": "C1_bench_prototype",
+  "intended_use": "Dummy-load bench prototype; check the separate native and fabrication validation reports.",
+  "repeat_count": 4,
+  "parts": [
+    {
+      "ref": "J201",
+      "value": "SYSTEM_5V_INPUT",
+      "mpn": "B2P-VH(LF)(SN)",
+      "manufacturer": "JST",
+      "kind": "component",
+      "footprint_candidate": "MonitorPowerLocal:Connector_JST_JST_VH_B2P-VH_1x02_P3.96mm_Vertical",
+      "pins": {
+        "1": "SYS5V",
+        "2": "SYS_GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "notes": "Primary side only. Mate VHR-2N with SVH-41T-P1.1 contacts. Standard VH header rating is 10 A with 16 AWG wire, 250 VAC/DC; this channel branch is allocated less than 1 A. Verify crimp and pin orientation. Never join SYS_GND to MID_CH."
+    },
+    {
+      "ref": "F201",
+      "value": "2A_SLOW_125VDC",
+      "mpn": "0454002.MR",
+      "manufacturer": "Littelfuse",
+      "kind": "component",
+      "footprint_candidate": "MonitorPowerLocal:Fuse_Fuse_Littelfuse-NANO2-451_453",
+      "pins": {
+        "1": "SYS5V",
+        "2": "SYS5V_POS_FUSED"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "notes": "2 A slow fuse per TMR 3 5 V input recommendation. 125 VAC/DC, 50 A interrupt at 125 V; 300 A at 32 VDC. Nominal cold resistance 0.0625 ohm, nominal I2t 8.20 A2s. Same verified 452/454 lands. Startup coordination is still a measurement, not implied by nominal I2t."
+    },
+    {
+      "ref": "F202",
+      "value": "500mA_SLOW_125VDC",
+      "mpn": "0454.500MR",
+      "manufacturer": "Littelfuse",
+      "kind": "component",
+      "footprint_candidate": "MonitorPowerLocal:Fuse_Fuse_Littelfuse-NANO2-451_453",
+      "pins": {
+        "1": "SYS5V",
+        "2": "SYS5V_NEG_FUSED"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "notes": "500 mA slow fuse, matching the TMR 1 recommended 5 V input fuse. 125 VAC/DC, 50 A interrupt at 125 V; 300 A at 32 VDC. Nominal cold resistance 0.700 ohm; I2t 0.240 A2s is nominal, not a startup coordination guarantee. Selected footprint pads match the 452/454 recommended 1.96 x 3.15 mm lands, 2.95 mm inner gap. Use an SMD adapter for perfboard."
+    },
+    {
+      "ref": "PS201",
+      "value": "ISOLATED_REGULATED_5V_600mA",
+      "mpn": "TMR 3-0511",
+      "manufacturer": "TRACO Power",
+      "kind": "component",
+      "footprint_candidate": "MonitorPowerLocal:ProtectionLocal_TRACO_TMR3_SIP8_Single",
+      "pins": {
+        "1": "SYS_GND",
+        "2": "SYS5V_POS_FUSED",
+        "3": null,
+        "5": null,
+        "6": "P5_CH",
+        "7": "MID_CH",
+        "8": null
+      },
+      "pin_names": {
+        "1": "-VIN",
+        "2": "+VIN",
+        "3": "REMOTE",
+        "5": "NC",
+        "6": "+VOUT",
+        "7": "-VOUT",
+        "8": "NC"
+      },
+      "pin_types": {
+        "1": "power_in",
+        "2": "power_in",
+        "3": "input",
+        "5": "no_connect",
+        "6": "power_out",
+        "7": "passive",
+        "8": "no_connect"
+      },
+      "notes": "Upgraded for local Pico and ADC load. TMR 3-0511 single output: 5 V / 600 mA, 3 W, input 4.5 to 9 V. Remote pin 3 open means ON. Pin 4 is absent; physical pins 5 and 8 are NC. Pin 6 is +5, pin 7 is channel MID. Keep primary isolated. Custom footprint follows the visually checked official 15-Apr-2026 SIP8 drawing; verify a physical part before assembly."
+    },
+    {
+      "ref": "PS202",
+      "value": "ISOLATED_REGULATED_5V_200mA",
+      "mpn": "TMR 1-0511",
+      "manufacturer": "TRACO Power",
+      "kind": "component",
+      "footprint_candidate": "MonitorPowerLocal:Converter_DCDC_Converter_DCDC_TRACO_TMR-1-xxxx_Single_THT",
+      "pins": {
+        "1": "SYS_GND",
+        "2": "SYS5V_NEG_FUSED",
+        "4": "MID_CH",
+        "6": "N5_CH"
+      },
+      "pin_names": {
+        "1": "-VIN",
+        "2": "+VIN",
+        "4": "+VOUT",
+        "6": "-VOUT"
+      },
+      "pin_types": {
+        "1": "power_in",
+        "2": "power_in",
+        "4": "passive",
+        "6": "power_out"
+      },
+      "notes": "Single isolated output, NOT the dual-output part. 1 W, 5 V / 200 mA; 4.5 to 9 V at module input pins. Pins 3 and 5 are absent. Two independent output pairs are series-connected only at this channel MID. MID terminal is passive for ERC because it is the selected output reference. Body 17 x 7.62 x 11 mm; pin locations 0, 2.54, 7.62, 12.70 mm. Bench design, not a medical isolation certification."
+    },
+    {
+      "ref": "R201",
+      "value": "150R_1%_0.6W",
+      "mpn": "MRS25000C1500FRP00",
+      "manufacturer": "Vishay",
+      "kind": "component",
+      "footprint_candidate": "MonitorPowerLocal:Resistor_THT_R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "pins": {
+        "1": "P5_CH",
+        "2": "MID_CH"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "notes": "Positive TMR 3 preload. 150 ohm, 1%, 50 ppm/K, 0.6 W at 70 C. At the 4.84 V rail corner it draws at least 31.95 mA, above the 30 mA lower load-regulation test point. Body maximum 6.5 x 2.5 mm; lead pitch selected 10.16 mm. Additional to sensing-core bleeders."
+    },
+    {
+      "ref": "R202",
+      "value": "220R_1%_0.6W",
+      "mpn": "MRS25000C2200FRP00",
+      "manufacturer": "Vishay",
+      "kind": "component",
+      "footprint_candidate": "MonitorPowerLocal:Resistor_THT_R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "pins": {
+        "1": "MID_CH",
+        "2": "N5_CH"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "notes": "Standalone rail preload. 220 ohm, 1%, 50 ppm/K, 0.6 W at 70 C. Body maximum 6.5 x 2.5 mm, 0.6 mm leads; selected 10.16 mm pitch exceeds the 10 mm minimum bend spacing. This is additional to the sensing core 470 ohm bleeders. Use 220 rather than 240 ohm to remain above 20 mA at the stated low rail corner."
+    },
+    {
+      "ref": "U201",
+      "value": "MCP1702_3V3",
+      "mpn": "MCP1702-3302E/TO",
+      "manufacturer": "Microchip",
+      "kind": "component",
+      "footprint_candidate": "MonitorPowerLocal:Package_TO_SOT_THT_TO-92_Inline_Wide",
+      "pins": {
+        "1": "MID_CH",
+        "2": "P5_CH",
+        "3": "P3V3_CH"
+      },
+      "pin_names": {
+        "1": "GND",
+        "2": "VIN",
+        "3": "VOUT"
+      },
+      "pin_types": {
+        "1": "power_in",
+        "2": "power_in",
+        "3": "power_out"
+      },
+      "notes": "TO-92 pin numbering is 1 GND, 2 VIN, 3 VOUT. Wide 2.54 mm footprint requires forming the outer leads from nominal 1.27 mm spacing; support the body while forming. Budget 30 mA maximum total 3.3 V load. Include output, load and line regulation. Do not parallel existing ISOW7741 output."
+    },
+    {
+      "ref": "C201",
+      "value": "100u_16V_POLAR",
+      "mpn": "EEUFR1C101",
+      "manufacturer": "Panasonic",
+      "kind": "component",
+      "footprint_candidate": "MonitorPowerLocal:Capacitor_THT_CP_Radial_D5.0mm_P2.00mm",
+      "pins": {
+        "1": "SYS5V_POS_FUSED",
+        "2": "SYS_GND"
+      },
+      "pin_names": {
+        "1": "+",
+        "2": "-"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "notes": "FR aluminum electrolytic, 100 uF +/-20%, 16 V. D5 x H11 mm, lead spacing 2 mm, lead diameter 0.5 mm. Impedance maximum 0.300 ohm at 100 kHz and 20 C. On the negative rail the positive terminal connects to MID. Place LDO output capacitor directly beside U201. Module load remains below its 1680 uF capacitive-load rating."
+    },
+    {
+      "ref": "C206",
+      "value": "100n_50V_X7R",
+      "mpn": "885012207098",
+      "manufacturer": "Wurth Elektronik",
+      "kind": "component",
+      "footprint_candidate": "MonitorPowerLocal:Capacitor_SMD_C_0805_2012Metric",
+      "pins": {
+        "1": "SYS5V_POS_FUSED",
+        "2": "SYS_GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "notes": "100 nF +/-10%, 50 V X7R, 0805 high-frequency bypass. Bulk capacitance is supplied separately; no unprovided effective-MLCC-capacitance guarantee is assumed."
+    },
+    {
+      "ref": "C202",
+      "value": "100u_16V_POLAR",
+      "mpn": "EEUFR1C101",
+      "manufacturer": "Panasonic",
+      "kind": "component",
+      "footprint_candidate": "MonitorPowerLocal:Capacitor_THT_CP_Radial_D5.0mm_P2.00mm",
+      "pins": {
+        "1": "SYS5V_NEG_FUSED",
+        "2": "SYS_GND"
+      },
+      "pin_names": {
+        "1": "+",
+        "2": "-"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "notes": "FR aluminum electrolytic, 100 uF +/-20%, 16 V. D5 x H11 mm, lead spacing 2 mm, lead diameter 0.5 mm. Impedance maximum 0.300 ohm at 100 kHz and 20 C. On the negative rail the positive terminal connects to MID. Place LDO output capacitor directly beside U201. Module load remains below its 1680 uF capacitive-load rating."
+    },
+    {
+      "ref": "C207",
+      "value": "100n_50V_X7R",
+      "mpn": "885012207098",
+      "manufacturer": "Wurth Elektronik",
+      "kind": "component",
+      "footprint_candidate": "MonitorPowerLocal:Capacitor_SMD_C_0805_2012Metric",
+      "pins": {
+        "1": "SYS5V_NEG_FUSED",
+        "2": "SYS_GND"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "notes": "100 nF +/-10%, 50 V X7R, 0805 high-frequency bypass. Bulk capacitance is supplied separately; no unprovided effective-MLCC-capacitance guarantee is assumed."
+    },
+    {
+      "ref": "C203",
+      "value": "100u_16V_POLAR",
+      "mpn": "EEUFR1C101",
+      "manufacturer": "Panasonic",
+      "kind": "component",
+      "footprint_candidate": "MonitorPowerLocal:Capacitor_THT_CP_Radial_D5.0mm_P2.00mm",
+      "pins": {
+        "1": "P5_CH",
+        "2": "MID_CH"
+      },
+      "pin_names": {
+        "1": "+",
+        "2": "-"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "notes": "FR aluminum electrolytic, 100 uF +/-20%, 16 V. D5 x H11 mm, lead spacing 2 mm, lead diameter 0.5 mm. Impedance maximum 0.300 ohm at 100 kHz and 20 C. On the negative rail the positive terminal connects to MID. Place LDO output capacitor directly beside U201. Module load remains below its 1680 uF capacitive-load rating."
+    },
+    {
+      "ref": "C208",
+      "value": "100n_50V_X7R",
+      "mpn": "885012207098",
+      "manufacturer": "Wurth Elektronik",
+      "kind": "component",
+      "footprint_candidate": "MonitorPowerLocal:Capacitor_SMD_C_0805_2012Metric",
+      "pins": {
+        "1": "P5_CH",
+        "2": "MID_CH"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "notes": "100 nF +/-10%, 50 V X7R, 0805 high-frequency bypass. Bulk capacitance is supplied separately; no unprovided effective-MLCC-capacitance guarantee is assumed."
+    },
+    {
+      "ref": "C204",
+      "value": "100u_16V_POLAR",
+      "mpn": "EEUFR1C101",
+      "manufacturer": "Panasonic",
+      "kind": "component",
+      "footprint_candidate": "MonitorPowerLocal:Capacitor_THT_CP_Radial_D5.0mm_P2.00mm",
+      "pins": {
+        "1": "MID_CH",
+        "2": "N5_CH"
+      },
+      "pin_names": {
+        "1": "+",
+        "2": "-"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "notes": "FR aluminum electrolytic, 100 uF +/-20%, 16 V. D5 x H11 mm, lead spacing 2 mm, lead diameter 0.5 mm. Impedance maximum 0.300 ohm at 100 kHz and 20 C. On the negative rail the positive terminal connects to MID. Place LDO output capacitor directly beside U201. Module load remains below its 1680 uF capacitive-load rating."
+    },
+    {
+      "ref": "C209",
+      "value": "100n_50V_X7R",
+      "mpn": "885012207098",
+      "manufacturer": "Wurth Elektronik",
+      "kind": "component",
+      "footprint_candidate": "MonitorPowerLocal:Capacitor_SMD_C_0805_2012Metric",
+      "pins": {
+        "1": "MID_CH",
+        "2": "N5_CH"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "notes": "100 nF +/-10%, 50 V X7R, 0805 high-frequency bypass. Bulk capacitance is supplied separately; no unprovided effective-MLCC-capacitance guarantee is assumed."
+    },
+    {
+      "ref": "C205",
+      "value": "100u_16V_POLAR",
+      "mpn": "EEUFR1C101",
+      "manufacturer": "Panasonic",
+      "kind": "component",
+      "footprint_candidate": "MonitorPowerLocal:Capacitor_THT_CP_Radial_D5.0mm_P2.00mm",
+      "pins": {
+        "1": "P3V3_CH",
+        "2": "MID_CH"
+      },
+      "pin_names": {
+        "1": "+",
+        "2": "-"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "notes": "FR aluminum electrolytic, 100 uF +/-20%, 16 V. D5 x H11 mm, lead spacing 2 mm, lead diameter 0.5 mm. Impedance maximum 0.300 ohm at 100 kHz and 20 C. On the negative rail the positive terminal connects to MID. Place LDO output capacitor directly beside U201. Module load remains below its 1680 uF capacitive-load rating."
+    },
+    {
+      "ref": "C210",
+      "value": "100n_50V_X7R",
+      "mpn": "885012207098",
+      "manufacturer": "Wurth Elektronik",
+      "kind": "component",
+      "footprint_candidate": "MonitorPowerLocal:Capacitor_SMD_C_0805_2012Metric",
+      "pins": {
+        "1": "P3V3_CH",
+        "2": "MID_CH"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "notes": "100 nF +/-10%, 50 V X7R, 0805 high-frequency bypass. Bulk capacitance is supplied separately; no unprovided effective-MLCC-capacitance guarantee is assumed."
+    },
+    {
+      "ref": "J202",
+      "value": "LOCAL_MONITOR_POWER",
+      "mpn": "B4P-VH(LF)(SN)",
+      "manufacturer": "JST",
+      "kind": "component",
+      "footprint_candidate": "MonitorPowerLocal:Connector_JST_JST_VH_B4P-VH_1x04_P3.96mm_Vertical",
+      "pins": {
+        "1": "P5_CH",
+        "2": "MID_CH",
+        "3": "N5_CH",
+        "4": "P3V3_CH"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive",
+        "3": "passive",
+        "4": "passive"
+      },
+      "notes": "Output harness only for this channel. Mate VHR-4N with SVH-41T-P1.1 contacts. Pin map is the project harness convention: 1 +5, 2 MID, 3 -5, 4 +3.3. Do not attach SYS_GND or another channel MID. Do not parallel existing IA0305S or ISOW7741 supply outputs."
+    }
+  ],
+  "interface_rules": [
+    "SYS5V and SYS_GND exist on the primary side only. Each channel output MID joins that channel rail-splitter midpoint and isolated signal ground.",
+    "Positive TMR 3 PS201 pin 6 = +5 V; pin 7 = MID. Negative TMR 1 PS202 pin 4 = MID; pin 6 = -5 V. Their pinouts differ. No input-to-output copper connection.",
+    "Keep channel MIDs separate. Neither output MID nor output -5 V connects to the HV-bottom return.",
+    "Do not parallel these outputs with IA0305S, ISOW7741 or another regulator. Shared MID reference is allowed; shared output voltage rails are not.",
+    "System 5 V is externally regulated. Verify 4.5 V minimum at each module after fuse and cable drop throughout startup and operation. Use a current-limited bench supply for initial power-up.",
+    "C1 sensing power connector may be replaced by the integrated supply nets, or connected with a mapped harness; a second connector does not imply a second parallel source."
+  ],
+  "primary_sources": [
+    "https://www.tracopower.com/products/tmr3.pdf",
+    "https://www.tracopower.com/tmr1-datasheet",
+    "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP1702-Data-Sheet-DS20002008.pdf",
+    "https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1259.pdf",
+    "https://industrial.panasonic.com/ww/products/pt/aluminum-cap-lead/models/EEUFR1C101",
+    "https://www.vishay.com/docs/28724/mrs16m25.pdf",
+    "https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_452_454_datasheet.pdf.pdf",
+    "https://www.jst.com/wp-content/uploads/2025/06/eVH.pdf",
+    "https://www.we-online.com/components/products/datasheet/885012207098.pdf"
+  ]
+}

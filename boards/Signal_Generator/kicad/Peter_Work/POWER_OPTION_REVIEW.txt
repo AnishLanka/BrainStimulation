@@ -1,0 +1,21 @@
+POWER OPTION REVIEW - NOT IMPLEMENTED
+2026-10-17
+
+Candidate: replace U2/U8 with TPS7A2433DBVR and feed IN/EN from the corresponding existing IA0305S positive isolated rail.
+
+Verified facts:
+- TPS7A2433DBVR is an active TI fixed 3.3V device. The SOT-23-5 fixed pinout is 1=IN, 2=GND, 3=EN, 4=NC, 5=OUT. It matches the source TLV70233 pin functions. Input and EN operating maximum is 18V; their absolute maximum is 20V. Maximum dropout is 250mV at 200mA. Recommended output capacitor is 2.2uF nominal; stability permits 1uF under the datasheet derating assumptions.
+- With a valid isolated +5V supply this LDO would provide headroom without requiring a primary-side 5V bus.
+- IA0305S is unregulated. Its load-regulation specification applies from 20% to 100% load; no-load operation may miss specifications. The source circuit's small and asymmetric rail loads do not establish those conditions. The prospective regulator, op amp, input capacitors and startup behavior therefore still need a bounded rail envelope.
+- ISOW7741 section 11 requires VISOOUT to supply VISOIN, directly/through a ferrite or through an always-on LDO. Feeding VISOIN from the independent IA-derived rail is not supported by that guidance: loss of the feedback-supply arrangement can let VISOOUT rise to its 6V clamp. Keep VISOOUT and VISOIN linked in this design.
+- Keeping ISOW logic on RAW while supplying the DAC from the independent IA/LDO rail creates an unresolved power-sequencing case. The DAC digital-input absolute maximum is VDD+0.3V; a powered ISOW output can violate this when DAC VDD is absent. The steady-state 3.3V tolerances do not resolve startup, shutdown or one-converter failure. A series resistor alone is not proven sufficient because the DAC datasheet does not provide an injection-current operating allowance for this case.
+
+Disposition:
+This is a historical alternative review; the IA/TPS7A2433 option was not implemented. Current Draft-B instead removes U2/U8 and uses R15/R16 zero-ohm links from the existing regulated ISOW 3.3V rail to the DAC supply/reference. This resolves the original LDO dropout problem without an independent DAC power source. See POWER_RAIL_CHECK_DRAFT_B.txt for the implemented rail checks and remaining bench characterization.
+
+Official sources:
+https://www.ti.com/lit/ds/symlink/tps7a24.pdf
+https://www.ti.com/product/TPS7A24/part-details/TPS7A2433DBVR
+https://www.xppower.com/storage/portals/0/pdfs/SF_IA.pdf
+https://www.ti.com/lit/ds/symlink/isow7741.pdf
+https://www.ti.com/lit/gpn/dac8830

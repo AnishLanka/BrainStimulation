@@ -1,0 +1,212 @@
+{
+  "U4": {
+    "footprint": "U4_DGK0008A_N_TEX",
+    "orientation_deg": 0.0,
+    "pads": [
+      {
+        "pin": "1",
+        "size_mm": [
+          1.4,
+          0.45
+        ],
+        "local_xy_mm": [
+          -2.2,
+          -0.975
+        ],
+        "radius_mm": 0.05
+      },
+      {
+        "pin": "2",
+        "size_mm": [
+          1.4,
+          0.45
+        ],
+        "local_xy_mm": [
+          -2.2,
+          -0.325
+        ],
+        "radius_mm": 0.05
+      },
+      {
+        "pin": "3",
+        "size_mm": [
+          1.4,
+          0.45
+        ],
+        "local_xy_mm": [
+          -2.2,
+          0.325
+        ],
+        "radius_mm": 0.05
+      },
+      {
+        "pin": "4",
+        "size_mm": [
+          1.4,
+          0.45
+        ],
+        "local_xy_mm": [
+          -2.2,
+          0.975
+        ],
+        "radius_mm": 0.05
+      },
+      {
+        "pin": "5",
+        "size_mm": [
+          1.4,
+          0.45
+        ],
+        "local_xy_mm": [
+          2.2,
+          0.975
+        ],
+        "radius_mm": 0.05
+      },
+      {
+        "pin": "6",
+        "size_mm": [
+          1.4,
+          0.45
+        ],
+        "local_xy_mm": [
+          2.2,
+          0.325
+        ],
+        "radius_mm": 0.05
+      },
+      {
+        "pin": "7",
+        "size_mm": [
+          1.4,
+          0.45
+        ],
+        "local_xy_mm": [
+          2.2,
+          -0.325
+        ],
+        "radius_mm": 0.05
+      },
+      {
+        "pin": "8",
+        "size_mm": [
+          1.4,
+          0.45
+        ],
+        "local_xy_mm": [
+          2.2,
+          -0.975
+        ],
+        "radius_mm": 0.05
+      }
+    ]
+  },
+  "U7": {
+    "footprint": "U7_DGK0008A_N_TEX",
+    "orientation_deg": 0.0,
+    "pads": [
+      {
+        "pin": "1",
+        "size_mm": [
+          1.4,
+          0.45
+        ],
+        "local_xy_mm": [
+          -2.2,
+          -0.975
+        ],
+        "radius_mm": 0.05
+      },
+      {
+        "pin": "2",
+        "size_mm": [
+          1.4,
+          0.45
+        ],
+        "local_xy_mm": [
+          -2.2,
+          -0.325
+        ],
+        "radius_mm": 0.05
+      },
+      {
+        "pin": "3",
+        "size_mm": [
+          1.4,
+          0.45
+        ],
+        "local_xy_mm": [
+          -2.2,
+          0.325
+        ],
+        "radius_mm": 0.05
+      },
+      {
+        "pin": "4",
+        "size_mm": [
+          1.4,
+          0.45
+        ],
+        "local_xy_mm": [
+          -2.2,
+          0.975
+        ],
+        "radius_mm": 0.05
+      },
+      {
+        "pin": "5",
+        "size_mm": [
+          1.4,
+          0.45
+        ],
+        "local_xy_mm": [
+          2.2,
+          0.975
+        ],
+        "radius_mm": 0.05
+      },
+      {
+        "pin": "6",
+        "size_mm": [
+          1.4,
+          0.45
+        ],
+        "local_xy_mm": [
+          2.2,
+          0.325
+        ],
+        "radius_mm": 0.05
+      },
+      {
+        "pin": "7",
+        "size_mm": [
+          1.4,
+          0.45
+        ],
+        "local_xy_mm": [
+          2.2,
+          -0.325
+        ],
+        "radius_mm": 0.05
+      },
+      {
+        "pin": "8",
+        "size_mm": [
+          1.4,
+          0.45
+        ],
+        "local_xy_mm": [
+          2.2,
+          -0.975
+        ],
+        "radius_mm": 0.05
+      }
+    ]
+  },
+  "severity_changes": {},
+  "exclusion_changes": [
+    [],
+    []
+  ],
+  "min_clearance_mm": 0.2
+}

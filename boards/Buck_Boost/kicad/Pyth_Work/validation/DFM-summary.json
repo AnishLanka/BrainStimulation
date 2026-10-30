@@ -1,0 +1,27 @@
+{
+  "board": "C:\\Users\\peter\\Documents\\Codex\\2026-10-17\\this\\outputs\\BuckBoost_RevB\\BuckBoost_RevB.kicad_pcb",
+  "sha256": "254a79a8537299e081462e889d707ce6b0238f3eb09f3971d4ccd1216448959d",
+  "vias": 17,
+  "numbered_pads": 27,
+  "board_thickness_mm": 0.4112,
+  "min_silk_stroke_mm": 0.16,
+  "min_text_height_mm": 1.0,
+  "min_silk_mask_gap_mm": 0.324034,
+  "min_silk_drill_gap_mm": 0.296508,
+  "min_silk_annulus_gap_mm": 0.146484,
+  "min_via_pad_copper_gap_mm": 0.350005,
+  "min_via_drill_mask_gap_mm": 0.449247,
+  "min_via_copper_mask_gap_mm": 0.299284,
+  "min_mask_opening_gap_mm": 0.148405,
+  "min_mask_foreign_copper_gap_mm": 0.149504,
+  "violations": {
+    "silk_stroke_below_015": 0,
+    "text_height_below_1": 0,
+    "silk_mask_below_015": 0,
+    "silk_hole_below_015": 0,
+    "via_drill_mask_overlap": 0,
+    "via_copper_pad_overlap": 0,
+    "foreign_copper_mask_gap_below_009": 0,
+    "mask_opening_gap_below_013": 0
+  }
+}

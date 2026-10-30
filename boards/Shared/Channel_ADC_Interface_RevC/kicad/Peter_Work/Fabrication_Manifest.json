@@ -1,0 +1,28 @@
+{
+  "scope": "Bare-board dummy-load bench prototype only",
+  "pcb_sha256": "856394338fb938e03f5373823c8fe32235f669e620815f5b782545d33732f6b4",
+  "zip_sha256": "0e577e4b0d25c620e3e4b5fd1d3fb35c489a6cbdbccd10f411323d0a93831893",
+  "files": {
+    "Channel_ADC_Interface_RevC-B_Cu.gbl": "63d1f3f061a4ab31d3b51aa5fb8c74ce2734deac9d1c2e2c16e811f3e742aeb0",
+    "Channel_ADC_Interface_RevC-B_Mask.gbs": "37ad843a65b0083a61b1143b29fd76ad4df0b077e20db15324cbb4187a040847",
+    "Channel_ADC_Interface_RevC-B_Silkscreen.gbo": "829f18e34f7e58a10872af25aa0c6ccf7cfbc8774da7af4c06ea4e893041911c",
+    "Channel_ADC_Interface_RevC-Edge_Cuts.gm1": "31e11aef40d4249b408d4aea53e7277ee304fbcab66da19376864a637e7a77b6",
+    "Channel_ADC_Interface_RevC-F_Cu.gtl": "4a5c09498b0a5409fc0dc228df6dd772fafc6777299571f29938d29741a3c041",
+    "Channel_ADC_Interface_RevC-F_Mask.gts": "cc6cf12af5566279c5145991ab5306c9258d3167366fd39cde2c46f97261ec2f",
+    "Channel_ADC_Interface_RevC-F_Silkscreen.gto": "6edd3fd587f8b8dce8973e8529ea9412a979682f7f0776e7980ec778a27af92b",
+    "Channel_ADC_Interface_RevC-NPTH.drl": "90ae2891e82eeb317caee9a7bc84713f6d641479d5346e68f38c06546cc5d56d",
+    "Channel_ADC_Interface_RevC-PTH.drl": "cbccfd59928ebf0ded639a8788dbe5c220b8b311ce373dbff38a4bf2736a53f9"
+  },
+  "order_settings": {
+    "layers": 2,
+    "width_mm": 125,
+    "height_mm": 85,
+    "native_thickness_mm": 0.41116,
+    "manufacturer_thickness_option_mm": 0.4,
+    "copper_oz": 1,
+    "soldermask": "green",
+    "silkscreen": "white",
+    "assembly": "bare board only",
+    "vias": "tented both sides"
+  }
+}

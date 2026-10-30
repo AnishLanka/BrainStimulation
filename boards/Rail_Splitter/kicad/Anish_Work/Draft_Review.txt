@@ -1,0 +1,149 @@
+OPA455 RAIL-SPLITTER ELECTRICAL DRAFT 1
+2026-10-17
+
+Open RailSplitter_Electrical_Draft.kicad_pro in KiCad 10. The schematic and
+local symbol/footprint libraries are editable. The PDF and SVG show the same
+schematic. Draft_BOM.csv records proposed parts and remaining selections.
+This is an electrical development draft with a routed engineering prototype
+PCB. Bare-board bench fabrication exports are included. Powered hardware is
+not validated and is not qualified for connection to a person. PCB_Draft_Notes.txt describes the layout and its remaining limits.
+
+CHANGES FROM THE ORIGINAL RAIL-SPLITTER SCHEMATIC
+
+The original divider midpoint fed the output connector directly while the
+OPA455 output only fed its own inverting input. The draft separates the
+high-impedance divider reference, VREF_HALF, from buffered output MID.
+U1 output pin6 now drives MID through R3. Pin2 feeds back the raw amplifier
+output BEFORE R3; this deliberately leaves R3's DC voltage drop outside the
+feedback loop. There is no connection from VREF_HALF directly to MID.
+
+U1 E/D pin8 is no longer shorted to E/D_COM pin1. Its internal pullup enables
+the splitter; C5=30pF connects E/D to low-impedance HV_BOTTOM following the
+unused-enable guidance in OPA455 section7.3.4. E/D_COM, V- and exposed pad9
+connect to HV_BOTTOM. STATUS pin5 is explicitly unused. This splitter is
+always enabled when adequately powered; it does not implement an independent
+hardware fault shutdown of the stimulation output.
+
+R1/R2 become 100k, 0.1%, 0805, each rated at least0.125W and100V. Prefer a
+matched pair or suitable low-drift parts; exact resistor MPNs remain to be
+selected. At80V input each resistor sees40V and dissipates16mW, versus160mW
+in the original10k circuit. Divider total loss is32mW. Worst opposite0.1%
+resistor errors produce approximately40mV midpoint error at80V, excluding
+op-amp offset, temperature drift, leakage and loading. The reference has
+50k Thevenin impedance and must not supply external loads.
+
+C1/C2 remain100nF, now100V X7R0805. C3/C4 remain10uF nominal, now100V
+X7S1210. Proposed ceramic MPNs are recorded in the BOM; effective capacitance
+at40V must be obtained from manufacturer data before validation. C5 is30pF,
+100V C0G0603. Added C6=100nF100V directly bypasses U1's full80V supply span.
+All capacitor ratings are100V; this addresses the original10V ratings.
+At nominal conditions C1-C4 see about40V and C6 sees80V. Startup imbalance,
+faults and overshoot remain to be assessed;100V is not an overvoltage clamp.
+
+U1 uses a local DDA0008J footprint based on TI4221637/B. Signal pads are
+1.55x0.6mm on1.27mm pitch, rows5.4mm apart. Exposed copper is2.95x4.9mm,
+with2.6x3.1mm mask opening. Pad9 is HV_BOTTOM. The routed prototype includes a bottom HV_BOTTOM plane and four thermal
+vias outside the exposed solder pad. Thermal performance, insulation spacing,
+feedback routing and the assembly stencil still require engineering review.
+The connector footprints now preserve the recovered original source geometry:
+J1 input uses5.00mm pitch with1.50mm drills; J2 output uses3.50mm pitch
+with1.30mm drills. Copper pad positions and numbers were verified against the
+original PCB after applying its placement/rotation. Source part labels were
+691211720002 and691214110003 respectively; the exact purchased connector MPNs,
+mating orientation and voltage ratings still require confirmation.
+
+INTERFACE MAP - ONE ISOLATED CHANNEL
+
+J1 pin1: HV_TOP = boost80V output = J2 pin1 = Howland positive supply.
+J1 pin2: HV_BOTTOM = GAPTEC single-output pin5 = boost GND = J2 pin3
+         = Howland negative supply. HV_BOTTOM is not signal ISO_GND.
+J2 pin2: MID = buffered midpoint = Howland GND = signal ISO_GND.
+
+The labels +40/-40 refer to voltages measured against MID. HV_BOTTOM is0V
+and MID is approximately+40V when measured against boost return. The actual
+signal design's IA0305S/ISOW7741 isolated secondary grounds can reference MID
+because they float relative to GAPTEC pin5. Keep MID separate from
+HV_BOTTOM, and keep corresponding isolated references of different channels
+separate. A generic GND symbol is intentionally not used in this sheet.
+
+PROVISIONAL R3 / LOAD ASSUMPTIONS
+
+R3=49.9ohm1%,0805,at least0.125W is a starting isolation resistance, not a
+validated final value. TI describes the output-isolation topology in
+TIDU032C; OPA455 figures6-37/6-38 show25/50ohm examples for much smaller
+capacitive loads. Those examples do NOT establish stability with this draft's
+nominal20.2uF across the midpoint, external capacitance, and a real boost rail.
+
+The initial evaluation assumes one channel and up to +/-5mA midpoint
+imbalance. This is a test assumption, not a proven available output current.
+At5mA DC, R3 drops249.5mV and dissipates1.25mW. MID can therefore shift by
+about0.25V from the divider target under that imbalance. Tighter DC accuracy
+may need a properly designed dual-feedback network or different topology.
+Do not move the feedback directly after R3 without redoing loop analysis.
+
+With ideal stiff rails, nominal20.2uF and49.9ohm give about1.01ms time
+constant and158Hz pole. This elementary RC estimate is not a loop-stability
+result: real MLCC bias, rail impedance, parasitics, load current, and the
+amplifier change the response. At5mA DC midpoint load, U1 output-stage loss
+is roughly0.2W in addition to quiescent loss; verify actual junction rise.
+
+UPDATED SYSTEM POWER IMPLICATION
+
+One enabled OPA462 plus one enabled OPA455 at80V span has a typical-Iq
+planning estimate of0.512W/channel, using3.2mA/device. Add this draft's32mW
+divider:0.544W/channel before stimulation and other loads. Across four
+channels, with each confirmed200ohm preload at12V and illustrative85%
+boost/81% GAPTEC efficiencies:
+
+  per isolated12V output: 0.72 +0.544/0.85 =1.36W
+  shared3.3V current: 4*1.36/(3.3*0.81) =approximately2.04A
+
+Efficiencies and Iq here are planning assumptions/typical figures, not a
+guaranteed worst-case result. Signal generators, control, startup and output
+power are additional. Divider improvements do not make the shared TPS63001
+RevB supply adequate for the confirmed four-channel preload architecture.
+
+VALIDATION COMPLETED
+
+KiCad10.0.6 loads the editable schematic and all7 local footprint types.
+The exported netlist was compared against an independently specified exact
+pin/net map, including all nine U1 pads and both connector pinouts.
+The latest ERC report has0 errors and0 warnings; standard KiCad defaults
+still ignore the checks listed under ignored_checks in its report.
+Pad-number coverage was verified for each component against its footprint.
+PDF was rendered and visually checked after correcting label collisions.
+Validation.json records net topology, footprint pad coverage and file hashes.
+
+Still required: exact final BOM/procurement review; bias/ESR and loop modeling;
+load/line steps and phase-margin checks; startup, shutdown and loss-of-rail
+behavior; thermal test; protection/fault behavior; integrated ground/isolation
+review; final engineering review of the routed PCB, voltage spacing, thermal behavior,
+assembly and physical verification. The present PCB has0 DRC violations,
+0 unconnected items and0 schematic parity issues; see PCB_Validation.json.
+An ERC pass only confirms checked electrical-file rules, not these results.
+
+PRIMARY SOURCES
+
+OPA455: pin functions, enable guidance, capacitor-drive curves and thermal use:
+https://www.ti.com/lit/ds/symlink/opa455.pdf
+
+Output isolation resistor method, its DC error and dual-feedback alternative:
+https://www.ti.com/lit/ug/tidu032c/tidu032c.pdf
+
+TI DDA0008J land pattern4221637/B:
+https://www.ti.com/lit/pdf/pptd043
+
+OPA462 quiescent-current estimate:
+https://www.ti.com/lit/ds/symlink/opa462.pdf
+
+GAPTEC part row and single-output pinout:
+https://gaptec-electronic.com/datenblaetter/2S7BE_3U.pdf
+
+Proposed10uF100V ceramic series, with manufacturer bias-characterization tool:
+https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32EC72A106KE05-01A.pdf
+https://ds.murata.co.jp/simsurfing/mlcc.html?oripartnumbers=%5B%22GRM32EC72A106KE05K%22%5D&partnumbers=%5B%22GRM32EC72A106KE05%22%5D
+
+Standard R/C/connector/power symbols and passive footprints originate from
+the installed KiCad10 libraries. Connector footprints preserve the original
+Altium geometry. Local footprint silk was adjusted for the prototype layout.
+The OPA455 symbol and DDA0008J footprint are locally authored.

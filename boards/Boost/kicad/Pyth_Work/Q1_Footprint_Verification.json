@@ -1,0 +1,52 @@
+{
+  "part": "FDMC86240",
+  "package": "onsemi CASE511DH, IssueA, 04DEC2025",
+  "source": "https://www.onsemi.com/download/package-drawing/pdf/511dh.pdf",
+  "source_local_sha256": "96592542ee7bf6328d8d41741d0d296dfc4350329795a5f1b9ad0ff6231f72d0",
+  "orientation": "Top view: pin1 lower-left, source/gate1-4 lower row left-to-right; drain8-5 upper row left-to-right",
+  "body_mm": [
+    3.3,
+    3.3
+  ],
+  "pitch_mm": 0.65,
+  "source_gate_pads_mm": [
+    0.42,
+    0.7
+  ],
+  "source_gate_pad_y_mm": 1.4,
+  "drain_fingers_mm": [
+    0.42,
+    0.45
+  ],
+  "drain_finger_y_mm": -1.525,
+  "pad_x_positions_mm": [
+    -0.975,
+    -0.325,
+    0.325,
+    0.975
+  ],
+  "drain_common_land_mm": [
+    2.37,
+    1.7
+  ],
+  "drain_common_land_center_mm": [
+    0,
+    -0.45
+  ],
+  "drain_common_land_pin": "5, electrically common with5/6/7/8",
+  "source_to_drain_copper_gap_mm": 0.65,
+  "keepout_rectangle_mm": [
+    3.4,
+    1.7
+  ],
+  "keepout_interpretation": "Two flanks outside intended2.37mm-wide common drain; encoded onF.Cu for tracks/vias/pours; placement must also exclude unrelated pads",
+  "paste": "Engineering starting point: four1.0x0.7mm apertures,69.5% of common drain copper, plus1:1 peripheral pads; not a manufacturer stencil specification",
+  "paste_coverage_fraction": 0.6949615289153636,
+  "mask_expansion_mm": 0.05,
+  "courtyard_mm": [
+    4,
+    4
+  ],
+  "remaining": "Assembler review of paste/reflow and final PCB electrical/thermal validation; copper dimensions and physical pad mapping are verified",
+  "keepout_implementation": "Manufacturer flanks are explicit board-level rule areas in the final PCB; the local footprint has no zones to avoid KiCad serialization drift. Moving Q1 requires moving both rule areas. Copper dimensions are unchanged."
+}

@@ -1,0 +1,301 @@
+(footprint "PinHeader_1x06_P2.54mm_Vertical"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Through hole straight pin header, 1x06, 2.54mm pitch, single row")
+	(tags "Through hole pin header THT 1x06 2.54mm single row")
+	(property "Reference" "J3"
+		(at 0 -5 0)
+		(layer "F.SilkS")
+		(uuid "75345ef0-8f8f-40ae-9e48-a89926cf5e7f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "ISOLATED_CONTROL"
+		(at 0 15.08 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dcee66eb-412c-435f-a9aa-e1e8b35fd166")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b8f4c1c0-d2b2-413f-ac88-a0aaad8805e6")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5b440e4f-d733-4820-9083-70c08d5f3bc4")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "connector/pin_header_socket"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "9892d06e-4d3f-4a02-b638-8c5cb4b8cf23")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "TSW-106-07-G-S"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "e5f8b930-21f6-4981-ac54-016b8ad33b9a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Design notes" "6-position, single-row, straight through-hole, 2.54 mm pitch, 0.635 mm square post. Unshrouded and UNPOLARIZED: pin-1 marking and verified cable mapping are required; this is not a keyed connector. Official layout recommends 1.02 mm finished holes. Standard KiCad footprint has 1.00 mm holes; use 1.02 mm nominal or a documented 1.05 mm production nominal and rerun DRC/parity. Pad centers, copper pad size and routing need not change. Lead style 07: 5.84 mm post, 2.54 mm tail. J4 is optional/unconnected unless an existing documented Howland enable connection is available; do not modify the Howland board."
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "d74f31c7-f402-4b8c-8b5b-f312de91a1cd")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint candidate" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "013aa79d-0a9d-41fa-bffc-4238f8d6d5bf")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.38 -1.38)
+		(end 0 -1.38)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1fbc539b-5e74-42ba-8c48-edb984a6f53d")
+	)
+	(fp_line
+		(start -1.38 0)
+		(end -1.38 -1.38)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "309b82c5-f3b3-44bf-bc29-1e15c5c67524")
+	)
+	(fp_line
+		(start -1.38 1.27)
+		(end -1.38 14.08)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7789631c-778b-4873-a683-2e56d03d28eb")
+	)
+	(fp_line
+		(start -1.38 1.27)
+		(end 1.38 1.27)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "522aa70c-128e-4f64-aa90-9d9c08469217")
+	)
+	(fp_line
+		(start -1.38 14.08)
+		(end 1.38 14.08)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "eaa3f1c4-52ac-4d66-93a0-fb1c00ee6178")
+	)
+	(fp_line
+		(start 1.38 1.27)
+		(end 1.38 14.08)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2191113d-46ff-4ed5-99a5-2750e39dc6b2")
+	)
+	(fp_rect
+		(start -1.77 -1.77)
+		(end 1.77 14.47)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "1cc873b6-989a-48f2-8558-2b41da94b649")
+	)
+	(fp_line
+		(start -1.27 -0.635)
+		(end -0.635 -1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "bb649ad7-2b51-4ab3-a8f2-0248d8be2774")
+	)
+	(fp_line
+		(start -1.27 13.97)
+		(end -1.27 -0.635)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b3539703-cd03-466c-b022-af9f7efde78f")
+	)
+	(fp_line
+		(start -0.635 -1.27)
+		(end 1.27 -1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "cda641e8-0189-4148-910c-9e45ed45edb2")
+	)
+	(fp_line
+		(start 1.27 -1.27)
+		(end 1.27 13.97)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "fddec910-7636-41a4-a2c1-7b012f809527")
+	)
+	(fp_line
+		(start 1.27 13.97)
+		(end -1.27 13.97)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7025bec6-214d-457d-a3d6-c160a0d7f8bc")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 6.35 90)
+		(layer "F.Fab")
+		(uuid "f7511dec-d7df-4647-bacb-b7fda8379712")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.7 1.7)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(clearance 0)
+		(uuid "75ad6972-db87-44e1-b341-1cf7686dc1b8")
+	)
+	(pad "2" thru_hole circle
+		(at 0 2.54)
+		(size 1.7 1.7)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(clearance 0)
+		(uuid "71d670dd-2732-496b-9ad7-0e4364f96774")
+	)
+	(pad "3" thru_hole circle
+		(at 0 5.08)
+		(size 1.7 1.7)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(clearance 0)
+		(uuid "9b93c744-e0f2-42b5-a951-0644893c16a9")
+	)
+	(pad "4" thru_hole circle
+		(at 0 7.62)
+		(size 1.7 1.7)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(clearance 0)
+		(uuid "7ce34aaf-e59b-439d-b79a-a106838c63ac")
+	)
+	(pad "5" thru_hole circle
+		(at 0 10.16)
+		(size 1.7 1.7)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(clearance 0)
+		(uuid "0e02d59b-12f9-4e49-9053-046cdaba89db")
+	)
+	(pad "6" thru_hole circle
+		(at 0 12.7)
+		(size 1.7 1.7)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(clearance 0)
+		(uuid "df886e76-051e-43ae-9045-353d96dabf3e")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Vertical.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

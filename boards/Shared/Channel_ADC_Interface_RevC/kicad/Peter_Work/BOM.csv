@@ -1,0 +1,70 @@
+﻿Reference,Value,MPN,Footprint,Notes
+U201,OPA2320,OPA2320AID,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,Matched two-stage unity-gain Sallen-Key low-pass. Second output drives ADC charge bucket through10R. SPICE/bench settling and phase margin remain required.
+R201,2k,TNPW08052K00BEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+R202,2k,TNPW08052K00BEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+R203,470R,TNPW0805470RBEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+R204,1.47k,TNPW08051K47BEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+C201,1.2n,C0805C122F5GACTU,Capacitor_SMD:C_0805_2012Metric,"Feedback capacitor, C0G 1% candidate; match current and voltage channel parts."
+C202,1n,C0805C102F5GACTU,Capacitor_SMD:C_0805_2012Metric,"Shunt capacitor, C0G 1% candidate; same lot recommended across I/V channels."
+R205,604R,TNPW0805604RBEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+R206,604R,TNPW0805604RBEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+C203,6.8n,C0805C682F5GACTU,Capacitor_SMD:C_0805_2012Metric,"Feedback capacitor, C0G 1% candidate; match current and voltage channel parts."
+C204,1n,C0805C102F5GACTU,Capacitor_SMD:C_0805_2012Metric,"Shunt capacitor, C0G 1% candidate; same lot recommended across I/V channels."
+R207,10R,TNPW080510R0BEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+R208,10R,TNPW080510R0BEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+C205,8.2n,C0805C822F5GACTU,Capacitor_SMD:C_0805_2012Metric,"Differential ADC charge bucket, C0G 1%. Place at ADC pins. Not a substitute for the preceding anti-alias stages."
+C206,100n,C0805C104K4RACTU,Capacitor_SMD:C_0805_2012Metric,"Local amplifier bypass, X7R16V candidate."
+U202,OPA2320,OPA2320AID,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,Matched two-stage unity-gain Sallen-Key low-pass. Second output drives ADC charge bucket through10R. SPICE/bench settling and phase margin remain required.
+R209,2k,TNPW08052K00BEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+R210,2k,TNPW08052K00BEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+R211,470R,TNPW0805470RBEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+R212,1.47k,TNPW08051K47BEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+C207,1.2n,C0805C122F5GACTU,Capacitor_SMD:C_0805_2012Metric,"Feedback capacitor, C0G 1% candidate; match current and voltage channel parts."
+C208,1n,C0805C102F5GACTU,Capacitor_SMD:C_0805_2012Metric,"Shunt capacitor, C0G 1% candidate; same lot recommended across I/V channels."
+R213,604R,TNPW0805604RBEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+R214,604R,TNPW0805604RBEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+C209,6.8n,C0805C682F5GACTU,Capacitor_SMD:C_0805_2012Metric,"Feedback capacitor, C0G 1% candidate; match current and voltage channel parts."
+C210,1n,C0805C102F5GACTU,Capacitor_SMD:C_0805_2012Metric,"Shunt capacitor, C0G 1% candidate; same lot recommended across I/V channels."
+R215,10R,TNPW080510R0BEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+R216,10R,TNPW080510R0BEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+C211,8.2n,C0805C822F5GACTU,Capacitor_SMD:C_0805_2012Metric,"Differential ADC charge bucket, C0G 1%. Place at ADC pins. Not a substitute for the preceding anti-alias stages."
+C212,100n,C0805C104K4RACTU,Capacitor_SMD:C_0805_2012Metric,"Local amplifier bypass, X7R16V candidate."
+C213,22u,GRM32ER71C226KEA8L,Capacitor_SMD:C_1210_3225Metric,22uF 16V X7R 1210 reservoir. Verify effective capacitance at 2.5V remains >=10uF; manufacturer DC bias curve governs. Internal reference only: no external driver.
+C216,22u,GRM32ER71C226KEA8L,Capacitor_SMD:C_1210_3225Metric,22uF 16V X7R 1210 reservoir. Verify effective capacitance at 2.5V remains >=10uF; manufacturer DC bias curve governs. Internal reference only: no external driver.
+U204,ADS8353,ADS8353IPW,Package_SO:TSSOP-16_4.4x5mm_P0.65mm,"32-clock dual-SDO, INTERNAL 2.5V references, single-ended 0..2.5V, straight binary. Firmware writes CFR=0x8040 and reads back before readiness. Default references are OFF: no valid data until configured and settled. Do not select 2x range. Both channels sample simultaneously."
+C219,100n,C0805C104K4RACTU,Capacitor_SMD:C_0805_2012Metric,ADCAVDD bypass at pin16
+C220,22u,GRM32ER71C226KEA8L,Capacitor_SMD:C_1210_3225Metric,AVDD reservoir: verify at least10u effective at5V per ADS8353 layout guideline.
+C221,100n,C0805C104K4RACTU,Capacitor_SMD:C_0805_2012Metric,ADCDVDD bypass at pin9
+C222,22u,GRM32ER71C226KEA8L,Capacitor_SMD:C_1210_3225Metric,DVDD reservoir: verify at least10u effective at3.3V per ADS8353 layout guideline.
+R221,10k,TNPW080510K0BEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+R222,10k,TNPW080510K0BEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+R223,10k,TNPW080510K0BEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+R224,33R,TNPW080533R0BEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+R225,33R,TNPW080533R0BEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+R226,33R,TNPW080533R0BEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+R227,33R,TNPW080533R0BEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+R228,33R,TNPW080533R0BEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+U205,ISO7741F,ISO7741FDWR,Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm,"F suffix defaults outputs LOW on input-side power loss. Side1 host, side2 single channel. FAULT_CLEAR_N high means recovered fault chain, not armed. Missing channel power returns low fault status. Isolation barrier layout and assembled leakage require validation."
+R229,10k,TNPW080510K0BEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+R230,10k,TNPW080510K0BEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+R231,10k,TNPW080510K0BEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+R232,10k,TNPW080510K0BEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+R233,10k,TNPW080510K0BEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+C223,100n,C0805C104K4RACTU,Capacitor_SMD:C_0805_2012Metric,U205 side1 bypass; never connect return toMID
+C224,100n,C0805C104K4RACTU,Capacitor_SMD:C_0805_2012Metric,U205 side2 bypass
+U206,ISO7721F,ISO7721FDWR,Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm,"UART telemetry and configuration. Pinmap isDW16, notD/DWV8. F suffix gives BREAK/low on remote power loss; firmware must reject framing errors, stale sequence/CRC and missing frames. No high-speed SPI roundtrip across barrier."
+C225,100n,C0805C104K4RACTU,Capacitor_SMD:C_0805_2012Metric,U206 side1 bypass
+C226,100n,C0805C104K4RACTU,Capacitor_SMD:C_0805_2012Metric,U206 side2 bypass
+R234,10k,TNPW080510K0BEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+R235,10k,TNPW080510K0BEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+U207,Raspberry Pi Pico RP2040,SC0915,Module:RaspberryPi_Pico_Common_THT,"Local sampler module/header. Pin39 VSYS=isolated5V; on-board3V3_OUT isPICO_3V3 and must NOT parallel coreP3V3_CH. VBUS40,3V3_EN37 andADC_VREF35 unconnected. No USB/SWD/ground cable to a host during isolated operation; use isolated UART for runtime. Installed KiCad common THT footprint is the socketed prototype candidate; verify module orientation and clearance."
+U208,SN74LVC1G08,SN74LVC1G08DBVR,Package_TO_SOT_SMD:SOT-23-5,"RUN requires host permission AND sampler firmware readiness. Pull LOCAL_READY low at boot, ADC/telemetry faults. Ioff-capable inputs tolerate separate Pico/core3.3 power order. This is not a separate hardware MCU watchdog."
+R236,10k,TNPW080510K0BEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+R237,10k,TNPW080510K0BEEA,Resistor_SMD:R_0805_2012Metric,Vishay TNPW0805 0.1% resistor. Ordering resistance uses R/K decimal notation; verify purchased reel against BOM.
+C227,100n,C0805C104K4RACTU,Capacitor_SMD:C_0805_2012Metric,U208 bypass
+U209,SN74LVC2G17,SN74LVC2G17DBVR,Package_TO_SOT_SMD:SOT-23-6,Ioff-capable level buffers avoid feeding independently powered core status directly into unpowered Pico GPIO. These do not bridge isolation domains; both sides reference MID.
+C228,100n,C0805C104K4RACTU,Capacitor_SMD:C_0805_2012Metric,U209 bypass
+J201,HOST_CONTROL_TELEMETRY,TSW-108-07-G-S,Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical,"Only connector on non-isolated host side. Host signal names indicate direction at host: TX enters board, RX leaves board. Keep this connector/copper out of the channel-side isolation keepout."
+J202,CORE_ADC_CONTROL_LINK,TSW-107-07-G-D,Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical,"One isolated channel only. Pin7 unused: ADC uses internal references. CORE J3 direct controller must be disconnected when this extension drives RUN/ARM/HB. FAULT_CLEAR_N is C1 U16.6, not raw FAULT_N from old J3/J5. Requires deliberate harness adapter; do not wire by connector pin number similarity."
+R238,0.1R,WSL0805R1000FEA,Resistor_SMD:R_0805_2012Metric,ADS8353 section11:0.1–0.2ohm series resistance with reference bypass capacitor for stability. No parallel capacitor bypasses this resistor.
+R239,0.1R,WSL0805R1000FEA,Resistor_SMD:R_0805_2012Metric,ADS8353 section11:0.1–0.2ohm series resistance with reference bypass capacitor for stability. No parallel capacitor bypasses this resistor.

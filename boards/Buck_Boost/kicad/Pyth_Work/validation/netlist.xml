@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\peter\Documents\Codex\2026-10-17\this\outputs\BuckBoost_RevB\BuckBoost_RevB.kicad_sch</source>
+    <date>2026-10-17T14:01:07</date>
+    <tool>Eeschema 10.0.6</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>3.3 V battery buck-boost converter</title>
+        <company/>
+        <rev>B</rev>
+        <date>2026-10-17</date>
+        <source>BuckBoost_RevB.kicad_sch</source>
+        <comment number="1" value="Recovered source topology; revised PCB layout and L1 selection"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>10u</value>
+      <footprint>BuckBoostLocal:C1_0805</footprint>
+      <description>10 uF +/-10%, 25 V X5R ceramic 0805</description>
+      <fields>
+        <field name="Source_Altium_ID">GLQGYDRB</field>
+        <field name="Source_Comment">Capacitor 10uF +/-20% 25V 0805</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="MPN">GRM21BR61E106KA73L</field>
+        <field name="Footprint">BuckBoostLocal:C1_0805</field>
+        <field name="Datasheet"/>
+        <field name="Description">10 uF +/-10%, 25 V X5R ceramic 0805</field>
+      </fields>
+      <libsource lib="BuckBoostLocal" part="Source_C1" description="10 uF +/-10%, 25 V X5R ceramic 0805"/>
+      <property name="Source_Altium_ID" value="GLQGYDRB"/>
+      <property name="Source_Comment" value="Capacitor 10uF +/-20% 25V 0805"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="MPN" value="GRM21BR61E106KA73L"/>
+      <property name="Sheetname" value="BuckBoost_RevB"/>
+      <property name="Sheetfile" value="BuckBoost_RevB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7006e757-b3df-50d2-abf6-139eeef43de4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>10u</value>
+      <footprint>BuckBoostLocal:C1_0805</footprint>
+      <description>10 uF +/-10%, 25 V X5R ceramic 0805</description>
+      <fields>
+        <field name="Source_Altium_ID">TXVKNYKH</field>
+        <field name="Source_Comment">Capacitor 10uF +/-20% 25V 0805</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="MPN">GRM21BR61E106KA73L</field>
+        <field name="Footprint">BuckBoostLocal:C1_0805</field>
+        <field name="Datasheet"/>
+        <field name="Description">10 uF +/-10%, 25 V X5R ceramic 0805</field>
+      </fields>
+      <libsource lib="BuckBoostLocal" part="Source_C2" description="10 uF +/-10%, 25 V X5R ceramic 0805"/>
+      <property name="Source_Altium_ID" value="TXVKNYKH"/>
+      <property name="Source_Comment" value="Capacitor 10uF +/-20% 25V 0805"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="MPN" value="GRM21BR61E106KA73L"/>
+      <property name="Sheetname" value="BuckBoost_RevB"/>
+      <property name="Sheetfile" value="BuckBoost_RevB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>62f6f5b5-3a33-545a-85c1-e15754329a1a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>10u</value>
+      <footprint>BuckBoostLocal:C1_0805</footprint>
+      <description>10 uF +/-10%, 25 V X5R ceramic 0805</description>
+      <fields>
+        <field name="Source_Altium_ID">HILQCUZB</field>
+        <field name="Source_Comment">Capacitor 10uF +/-20% 25V 0805</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="MPN">GRM21BR61E106KA73L</field>
+        <field name="Footprint">BuckBoostLocal:C1_0805</field>
+        <field name="Datasheet"/>
+        <field name="Description">10 uF +/-10%, 25 V X5R ceramic 0805</field>
+      </fields>
+      <libsource lib="BuckBoostLocal" part="Source_C3" description="10 uF +/-10%, 25 V X5R ceramic 0805"/>
+      <property name="Source_Altium_ID" value="HILQCUZB"/>
+      <property name="Source_Comment" value="Capacitor 10uF +/-20% 25V 0805"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="MPN" value="GRM21BR61E106KA73L"/>
+      <property name="Sheetname" value="BuckBoost_RevB"/>
+      <property name="Sheetfile" value="BuckBoost_RevB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2f71b6d9-e734-5e37-8f35-b8efa92e3e96</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4">
+      <value>100n</value>
+      <footprint>BuckBoostLocal:C4_0805</footprint>
+      <description>100 nF +/-10%, 100 V X7R ceramic 0805</description>
+      <fields>
+        <field name="Source_Altium_ID">QHTARNXG</field>
+        <field name="Source_Comment">Capacitor 100 nF +/-10% 50 V 0805</field>
+        <field name="Manufacturer">TDK</field>
+        <field name="MPN">C2012X7R2A104K125AA</field>
+        <field name="Footprint">BuckBoostLocal:C4_0805</field>
+        <field name="Datasheet"/>
+        <field name="Description">100 nF +/-10%, 100 V X7R ceramic 0805</field>
+      </fields>
+      <libsource lib="BuckBoostLocal" part="Source_C4" description="100 nF +/-10%, 100 V X7R ceramic 0805"/>
+      <property name="Source_Altium_ID" value="QHTARNXG"/>
+      <property name="Source_Comment" value="Capacitor 100 nF +/-10% 50 V 0805"/>
+      <property name="Manufacturer" value="TDK"/>
+      <property name="MPN" value="C2012X7R2A104K125AA"/>
+      <property name="Sheetname" value="BuckBoost_RevB"/>
+      <property name="Sheetfile" value="BuckBoost_RevB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>06c65573-7308-561d-a50a-f81517d5190b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>691211720002</value>
+      <footprint>BuckBoostLocal:IN_691211720002</footprint>
+      <description>211 Series 5MM Pitch Straight, Pcb Terminal Block, Through Hole, 2 Way</description>
+      <fields>
+        <field name="Source_Altium_ID">PTCXEFSE</field>
+        <field name="Source_Comment">691211720002</field>
+        <field name="Manufacturer">Wurth Elektronik</field>
+        <field name="MPN">691211720002</field>
+        <field name="Footprint">BuckBoostLocal:IN_691211720002</field>
+        <field name="Datasheet"/>
+        <field name="Description">211 Series 5MM Pitch Straight, Pcb Terminal Block, Through Hole, 2 Way</field>
+      </fields>
+      <libsource lib="BuckBoostLocal" part="Source_IN" description="211 Series 5MM Pitch Straight, Pcb Terminal Block, Through Hole, 2 Way"/>
+      <property name="Source_Altium_ID" value="PTCXEFSE"/>
+      <property name="Source_Comment" value="691211720002"/>
+      <property name="Manufacturer" value="Wurth Elektronik"/>
+      <property name="MPN" value="691211720002"/>
+      <property name="Sheetname" value="BuckBoost_RevB"/>
+      <property name="Sheetfile" value="BuckBoost_RevB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1a241477-5e3b-59a4-996a-ba05ce1946f1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J2">
+      <value>691211720002</value>
+      <footprint>BuckBoostLocal:OUT_691211720002</footprint>
+      <description>211 Series 5MM Pitch Straight, Pcb Terminal Block, Through Hole, 2 Way</description>
+      <fields>
+        <field name="Source_Altium_ID">OZHNQVQC</field>
+        <field name="Source_Comment">691211720002</field>
+        <field name="Manufacturer">Wurth Elektronik</field>
+        <field name="MPN">691211720002</field>
+        <field name="Footprint">BuckBoostLocal:OUT_691211720002</field>
+        <field name="Datasheet"/>
+        <field name="Description">211 Series 5MM Pitch Straight, Pcb Terminal Block, Through Hole, 2 Way</field>
+      </fields>
+      <libsource lib="BuckBoostLocal" part="Source_OUT" description="211 Series 5MM Pitch Straight, Pcb Terminal Block, Through Hole, 2 Way"/>
+      <property name="Source_Altium_ID" value="OZHNQVQC"/>
+      <property name="Source_Comment" value="691211720002"/>
+      <property name="Manufacturer" value="Wurth Elektronik"/>
+      <property name="MPN" value="691211720002"/>
+      <property name="Sheetname" value="BuckBoost_RevB"/>
+      <property name="Sheetfile" value="BuckBoost_RevB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>98e324e3-64ee-5505-8c3f-37dd2d25a4eb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L1">
+      <value>2.2u</value>
+      <footprint>BuckBoostLocal:L1_2u2</footprint>
+      <description>2.2 uH +/-20% shielded power inductor; Coilcraft XFL4020-222MEC; DCR 23.5 mOhm max</description>
+      <fields>
+        <field name="Source_Altium_ID">SQQAWRQY</field>
+        <field name="Source_Comment">2.2uH</field>
+        <field name="Manufacturer">Coilcraft</field>
+        <field name="MPN">XFL4020-222MEC</field>
+        <field name="Revision_Note">Replaces conflicting source 10uH/500mA metadata; nominal schematic value retained at 2.2uH</field>
+        <field name="Manufacturer_Datasheet">https://www.coilcraft.com/getmedia/50632d43-da1b-4cdb-8ab4-3029cab51df3/xfl4020.pdf</field>
+        <field name="Footprint">BuckBoostLocal:L1_2u2</field>
+        <field name="Datasheet"/>
+        <field name="Description">2.2 uH +/-20% shielded power inductor; Coilcraft XFL4020-222MEC; DCR 23.5 mOhm max</field>
+      </fields>
+      <libsource lib="BuckBoostLocal" part="Source_L1" description="2.2 uH +/-20% shielded power inductor; Coilcraft XFL4020-222MEC; DCR 23.5 mOhm max"/>
+      <property name="Source_Altium_ID" value="SQQAWRQY"/>
+      <property name="Source_Comment" value="2.2uH"/>
+      <property name="Manufacturer" value="Coilcraft"/>
+      <property name="MPN" value="XFL4020-222MEC"/>
+      <property name="Revision_Note" value="Replaces conflicting source 10uH/500mA metadata; nominal schematic value retained at 2.2uH"/>
+      <property name="Manufacturer_Datasheet" value="https://www.coilcraft.com/getmedia/50632d43-da1b-4cdb-8ab4-3029cab51df3/xfl4020.pdf"/>
+      <property name="Sheetname" value="BuckBoost_RevB"/>
+      <property name="Sheetfile" value="BuckBoost_RevB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e4340de7-3d86-5a13-9010-d155d37a000e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>100</value>
+      <footprint>BuckBoostLocal:R1_0402</footprint>
+      <description>100 ohm +/-1%, 63 mW standard operation, 0402</description>
+      <fields>
+        <field name="Source_Altium_ID">KEEYBFBP</field>
+        <field name="Source_Comment">Resistor 100R +/-1 % 0402 63 mW</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="MPN">CRCW0402100RFKED</field>
+        <field name="Footprint">BuckBoostLocal:R1_0402</field>
+        <field name="Datasheet"/>
+        <field name="Description">100 ohm +/-1%, 63 mW standard operation, 0402</field>
+      </fields>
+      <libsource lib="BuckBoostLocal" part="Source_R1" description="100 ohm +/-1%, 63 mW standard operation, 0402"/>
+      <property name="Source_Altium_ID" value="KEEYBFBP"/>
+      <property name="Source_Comment" value="Resistor 100R +/-1 % 0402 63 mW"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="MPN" value="CRCW0402100RFKED"/>
+      <property name="Sheetname" value="BuckBoost_RevB"/>
+      <property name="Sheetfile" value="BuckBoost_RevB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fb75f36f-550d-5e06-a40a-f76f2ce2e7c3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>TPS63001DRCR</value>
+      <footprint>BuckBoostLocal:U1_TPS63001</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tps63001.pdf</datasheet>
+      <description>96% Buck-Boost Converter with 1.7A Current Switches, 3.3V fixed Output voltage in 3x3 QFN 10-VSON -40 to 125</description>
+      <fields>
+        <field name="Source_Altium_ID">CZWCTCGI</field>
+        <field name="Source_Comment">TPS63001DRCR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="MPN">TPS63001DRCR</field>
+        <field name="Footprint">BuckBoostLocal:U1_TPS63001</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps63001.pdf</field>
+        <field name="Description">96% Buck-Boost Converter with 1.7A Current Switches, 3.3V fixed Output voltage in 3x3 QFN 10-VSON -40 to 125</field>
+      </fields>
+      <libsource lib="BuckBoostLocal" part="Source_U1" description="96% Buck-Boost Converter with 1.7A Current Switches, 3.3V fixed Output voltage in 3x3 QFN 10-VSON -40 to 125"/>
+      <property name="Source_Altium_ID" value="CZWCTCGI"/>
+      <property name="Source_Comment" value="TPS63001DRCR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="MPN" value="TPS63001DRCR"/>
+      <property name="Sheetname" value="BuckBoost_RevB"/>
+      <property name="Sheetfile" value="BuckBoost_RevB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5eaf5fba-396f-5cda-9d01-a9a78a065e77</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="8"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="2"/>
+            <pin num="1"/>
+            <pin num="10"/>
+            <pin num="9"/>
+            <pin num="3"/>
+            <pin num="11"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="BuckBoostLocal" part="Source_C1">
+      <description>10 uF +/-10%, 25 V X5R ceramic 0805</description>
+      <fields>
+        <field name="Reference">C1</field>
+        <field name="Value">10u</field>
+        <field name="Footprint">BuckBoostLocal:C1_0805</field>
+        <field name="Datasheet"/>
+        <field name="Description">10 uF +/-10%, 25 V X5R ceramic 0805</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BuckBoostLocal" part="Source_C2">
+      <description>10 uF +/-10%, 25 V X5R ceramic 0805</description>
+      <fields>
+        <field name="Reference">C2</field>
+        <field name="Value">10u</field>
+        <field name="Footprint">BuckBoostLocal:C1_0805</field>
+        <field name="Datasheet"/>
+        <field name="Description">10 uF +/-10%, 25 V X5R ceramic 0805</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BuckBoostLocal" part="Source_C3">
+      <description>10 uF +/-10%, 25 V X5R ceramic 0805</description>
+      <fields>
+        <field name="Reference">C3</field>
+        <field name="Value">10u</field>
+        <field name="Footprint">BuckBoostLocal:C1_0805</field>
+        <field name="Datasheet"/>
+        <field name="Description">10 uF +/-10%, 25 V X5R ceramic 0805</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BuckBoostLocal" part="Source_C4">
+      <description>100 nF +/-10%, 100 V X7R ceramic 0805</description>
+      <fields>
+        <field name="Reference">C4</field>
+        <field name="Value">100n</field>
+        <field name="Footprint">BuckBoostLocal:C4_0805</field>
+        <field name="Datasheet"/>
+        <field name="Description">100 nF +/-10%, 100 V X7R ceramic 0805</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BuckBoostLocal" part="Source_IN">
+      <description>211 Series 5MM Pitch Straight, Pcb Terminal Block, Through Hole, 2 Way</description>
+      <fields>
+        <field name="Reference">J1</field>
+        <field name="Value">691211720002</field>
+        <field name="Footprint">BuckBoostLocal:IN_691211720002</field>
+        <field name="Datasheet"/>
+        <field name="Description">211 Series 5MM Pitch Straight, Pcb Terminal Block, Through Hole, 2 Way</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BuckBoostLocal" part="Source_L1">
+      <description>2.2 uH +/-20% shielded power inductor; Coilcraft XFL4020-222MEC; DCR 23.5 mOhm max</description>
+      <fields>
+        <field name="Reference">L1</field>
+        <field name="Value">2.2u</field>
+        <field name="Footprint">BuckBoostLocal:L1_2u2</field>
+        <field name="Datasheet"/>
+        <field name="Description">2.2 uH +/-20% shielded power inductor; Coilcraft XFL4020-222MEC; DCR 23.5 mOhm max</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BuckBoostLocal" part="Source_OUT">
+      <description>211 Series 5MM Pitch Straight, Pcb Terminal Block, Through Hole, 2 Way</description>
+      <fields>
+        <field name="Reference">J2</field>
+        <field name="Value">691211720002</field>
+        <field name="Footprint">BuckBoostLocal:OUT_691211720002</field>
+        <field name="Datasheet"/>
+        <field name="Description">211 Series 5MM Pitch Straight, Pcb Terminal Block, Through Hole, 2 Way</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BuckBoostLocal" part="Source_R1">
+      <description>100 ohm +/-1%, 63 mW standard operation, 0402</description>
+      <fields>
+        <field name="Reference">R1</field>
+        <field name="Value">100</field>
+        <field name="Footprint">BuckBoostLocal:R1_0402</field>
+        <field name="Datasheet"/>
+        <field name="Description">100 ohm +/-1%, 63 mW standard operation, 0402</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BuckBoostLocal" part="Source_U1">
+      <description>96% Buck-Boost Converter with 1.7A Current Switches, 3.3V fixed Output voltage in 3x3 QFN 10-VSON -40 to 125</description>
+      <docs>https://www.ti.com/lit/ds/symlink/tps63001.pdf</docs>
+      <fields>
+        <field name="Reference">U1</field>
+        <field name="Value">TPS63001DRCR</field>
+        <field name="Footprint">BuckBoostLocal:U1_TPS63001</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps63001.pdf</field>
+        <field name="Description">96% Buck-Boost Converter with 1.7A Current Switches, 3.3V fixed Output voltage in 3x3 QFN 10-VSON -40 to 125</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VOUT" type="power_out"/>
+        <pin num="2" name="L2" type="passive"/>
+        <pin num="3" name="PGND" type="power_in"/>
+        <pin num="4" name="L1" type="passive"/>
+        <pin num="5" name="VIN" type="power_in"/>
+        <pin num="6" name="EN" type="input"/>
+        <pin num="7" name="PS_SYNC" type="input"/>
+        <pin num="8" name="VINA" type="power_in"/>
+        <pin num="9" name="GND" type="power_in"/>
+        <pin num="10" name="FB" type="input"/>
+        <pin num="11" name="PAD" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="BuckBoostLocal">
+      <uri>${KIPRJMOD}/BuckBoostLocal.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/NetC1_1" class="Default">
+      <node ref="C1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="VIN_5" pintype="power_in"/>
+    </net>
+    <net code="2" name="/NetC2_1" class="Default">
+      <node ref="C2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="VOUT_1" pintype="power_out"/>
+      <node ref="U1" pin="10" pinfunction="FB_10" pintype="input"/>
+    </net>
+    <net code="3" name="/NetC4_1" class="Default">
+      <node ref="C4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="EN_6" pintype="input"/>
+      <node ref="U1" pin="7" pinfunction="PS_SYNC_7" pintype="input"/>
+      <node ref="U1" pin="8" pinfunction="VINA_8" pintype="power_in"/>
+    </net>
+    <net code="4" name="/NetL1_1" class="Default">
+      <node ref="L1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="L1_4" pintype="passive"/>
+    </net>
+    <net code="5" name="/NetL1_2" class="Default">
+      <node ref="L1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="L2_2" pintype="passive"/>
+    </net>
+    <net code="6" name="GND" class="Default">
+      <node ref="C1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="11" pinfunction="PAD_11" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="PGND_3" pintype="power_in"/>
+      <node ref="U1" pin="9" pinfunction="GND_9" pintype="power_in"/>
+    </net>
+  </nets>
+</export>

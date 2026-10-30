@@ -1,0 +1,19 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-17T15:53:14",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/458b5747-2e85-45a1-9187-f8f0b762d2d2",
+            "violations": []
+        }
+    ],
+    "source": "Channel_Monitor_C1.kicad_sch"
+}

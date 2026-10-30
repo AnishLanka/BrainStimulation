@@ -1,0 +1,59 @@
+{
+  "board": "Shared_Power_Adapter_RevC",
+  "status": "Independent file/geometry audit PASS; not measured circuit performance",
+  "native_copper_layers": 2,
+  "native_thickness_mm": 0.41116,
+  "gerber_job_thickness_mm": 0.4112,
+  "job_finish_metadata": "None",
+  "outline_segment_count": 4,
+  "outline_centerline_mm": [
+    105.0,
+    90.0
+  ],
+  "outline_equal_to_board": true,
+  "drills_equal_to_board_within_mm": 0.00051,
+  "drill_counts": {
+    "PTH": 71,
+    "NPTH": 0
+  },
+  "common_auxiliary_origin_mm": [
+    100.0,
+    150.0
+  ],
+  "files": {
+    "Shared_Power_Adapter_RevC-B_Cu.gbl": "d3120d5b79fb5a449631e2e06153b355d48a948698b4cd10020e4bb15dfe8811",
+    "Shared_Power_Adapter_RevC-B_Mask.gbs": "930ae4b4e6e33d634a3d97a3f490566996285e34d2f8d7bb7d970324a34cfb3c",
+    "Shared_Power_Adapter_RevC-B_Silkscreen.gbo": "a520b1405c6f6cf8b13518f7395f219c1058abae08df0fc1471f5f6613510817",
+    "Shared_Power_Adapter_RevC-Edge_Cuts.gm1": "50ad0d9f96f1b5638f23765e0a508a04116ece58da8f7aedc7a6a426a2565298",
+    "Shared_Power_Adapter_RevC-F_Cu.gtl": "d703b5ef6f3f2bf6fe1f91e91c49900a2ebd2eacfee94945d3bebf7785cea1f6",
+    "Shared_Power_Adapter_RevC-F_Mask.gts": "139fea78128863414f6c8a427839b1f933e20103e91d37082b30f3cec5e1699e",
+    "Shared_Power_Adapter_RevC-F_Silkscreen.gto": "29e8c78922a29d64c1e12be48db922a3aa4258c15f0f573490c55d5cdee76f64",
+    "Shared_Power_Adapter_RevC-job.gbrjob": "9587d8a0326990ee615d070d8831b08e60cddcb967ea6f1c9f69267712969a9b",
+    "Shared_Power_Adapter_RevC-NPTH.drl": "95cc00aac6327b69e43e09d17395454b4a780469033e03731cd0b87ba6c67bde",
+    "Shared_Power_Adapter_RevC-PTH.drl": "e11bad12a6bbfb09be2ec36ea7b531a460973c365845b5127150dacfb5519ffa"
+  },
+  "zip": {
+    "path": "C:\\Users\\peter\\Documents\\Codex\\2026-10-17\\this\\outputs\\Shared_Power_RevC_Prototype_JLCPCB.zip",
+    "file_count": 8,
+    "sha256": "cd4f2438fef2753bc611dd9e54f80feb5a61f305734327e438ed4d103eb08dc4",
+    "exact_fabrication_directory_match": true
+  },
+  "board_sha256": "cffe4fa3e631e34b5c930e2075eefe2149c586fba26e1cda877d22a6f76d18c1",
+  "fresh_native_export_matches_after_timestamp_normalization": {
+    "Shared_Power_Adapter_RevC-B_Cu.gbl": true,
+    "Shared_Power_Adapter_RevC-B_Mask.gbs": true,
+    "Shared_Power_Adapter_RevC-B_Silkscreen.gbo": true,
+    "Shared_Power_Adapter_RevC-Edge_Cuts.gm1": true,
+    "Shared_Power_Adapter_RevC-F_Cu.gtl": true,
+    "Shared_Power_Adapter_RevC-F_Mask.gts": true,
+    "Shared_Power_Adapter_RevC-F_Silkscreen.gto": true,
+    "Shared_Power_Adapter_RevC-job.gbrjob": true,
+    "Shared_Power_Adapter_RevC-NPTH.drl": true,
+    "Shared_Power_Adapter_RevC-PTH.drl": true
+  },
+  "independent_DRC_counts": {
+    "violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity": 0
+  }
+}

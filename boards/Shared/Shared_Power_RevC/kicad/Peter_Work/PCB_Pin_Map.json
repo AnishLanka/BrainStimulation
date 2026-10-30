@@ -1,0 +1,978 @@
+{
+  "C11": [
+    {
+      "number": "1",
+      "net": "/P5V_LOGIC_A",
+      "position_mm": [
+        125.525,
+        118.0
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SYS_GND",
+      "position_mm": [
+        128.475,
+        118.0
+      ]
+    }
+  ],
+  "C12": [
+    {
+      "number": "1",
+      "net": "/3V3_A",
+      "position_mm": [
+        127.525,
+        126.5
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SYS_GND",
+      "position_mm": [
+        130.475,
+        126.5
+      ]
+    }
+  ],
+  "C13": [
+    {
+      "number": "1",
+      "net": "/3V3_A",
+      "position_mm": [
+        127.525,
+        130.0
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SYS_GND",
+      "position_mm": [
+        130.475,
+        130.0
+      ]
+    }
+  ],
+  "C21": [
+    {
+      "number": "1",
+      "net": "/P5V_LOGIC_B",
+      "position_mm": [
+        164.525,
+        118.0
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SYS_GND",
+      "position_mm": [
+        167.475,
+        118.0
+      ]
+    }
+  ],
+  "C22": [
+    {
+      "number": "1",
+      "net": "/3V3_B",
+      "position_mm": [
+        166.525,
+        126.5
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SYS_GND",
+      "position_mm": [
+        169.475,
+        126.5
+      ]
+    }
+  ],
+  "C23": [
+    {
+      "number": "1",
+      "net": "/3V3_B",
+      "position_mm": [
+        166.525,
+        130.0
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SYS_GND",
+      "position_mm": [
+        169.475,
+        130.0
+      ]
+    }
+  ],
+  "C31": [
+    {
+      "number": "1",
+      "net": "/P5V_CH1",
+      "position_mm": [
+        117.95,
+        91.0
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SYS_GND",
+      "position_mm": [
+        120.9,
+        91.0
+      ]
+    }
+  ],
+  "C32": [
+    {
+      "number": "1",
+      "net": "/P5V_CH2",
+      "position_mm": [
+        142.95,
+        91.0
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SYS_GND",
+      "position_mm": [
+        145.9,
+        91.0
+      ]
+    }
+  ],
+  "C33": [
+    {
+      "number": "1",
+      "net": "/P5V_CH3",
+      "position_mm": [
+        167.95,
+        91.0
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SYS_GND",
+      "position_mm": [
+        170.9,
+        91.0
+      ]
+    }
+  ],
+  "C34": [
+    {
+      "number": "1",
+      "net": "/P5V_CH4",
+      "position_mm": [
+        192.95,
+        91.0
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SYS_GND",
+      "position_mm": [
+        195.9,
+        91.0
+      ]
+    }
+  ],
+  "F0": [
+    {
+      "number": "1",
+      "net": "/P5V_RAW",
+      "position_mm": [
+        108.0,
+        120.25
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/P5V_IN",
+      "position_mm": [
+        108.0,
+        111.75
+      ]
+    }
+  ],
+  "F1": [
+    {
+      "number": "1",
+      "net": "/P5V_IN",
+      "position_mm": [
+        117.95,
+        103.25
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/P5V_CH1",
+      "position_mm": [
+        117.95,
+        94.75
+      ]
+    }
+  ],
+  "F2": [
+    {
+      "number": "1",
+      "net": "/P5V_IN",
+      "position_mm": [
+        142.95,
+        103.25
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/P5V_CH2",
+      "position_mm": [
+        142.95,
+        94.75
+      ]
+    }
+  ],
+  "F3": [
+    {
+      "number": "1",
+      "net": "/P5V_IN",
+      "position_mm": [
+        167.95,
+        103.25
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/P5V_CH3",
+      "position_mm": [
+        167.95,
+        94.75
+      ]
+    }
+  ],
+  "F4": [
+    {
+      "number": "1",
+      "net": "/P5V_IN",
+      "position_mm": [
+        192.95,
+        103.25
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/P5V_CH4",
+      "position_mm": [
+        192.95,
+        94.75
+      ]
+    }
+  ],
+  "F5": [
+    {
+      "number": "1",
+      "net": "/P5V_IN",
+      "position_mm": [
+        191.0,
+        117.75
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/AUX5V",
+      "position_mm": [
+        191.0,
+        126.25
+      ]
+    }
+  ],
+  "F6": [
+    {
+      "number": "1",
+      "net": "/P5V_IN",
+      "position_mm": [
+        113.75,
+        116.0
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/P5V_LOGIC_A",
+      "position_mm": [
+        122.25,
+        116.0
+      ]
+    }
+  ],
+  "F7": [
+    {
+      "number": "1",
+      "net": "/P5V_IN",
+      "position_mm": [
+        152.75,
+        116.0
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/P5V_LOGIC_B",
+      "position_mm": [
+        161.25,
+        116.0
+      ]
+    }
+  ],
+  "J1": [
+    {
+      "number": "1",
+      "net": "/P5V_RAW",
+      "position_mm": [
+        108.0,
+        132.0
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SYS_GND",
+      "position_mm": [
+        111.96,
+        132.0
+      ]
+    }
+  ],
+  "J2": [
+    {
+      "number": "1",
+      "net": "/3V3_A",
+      "position_mm": [
+        127.525,
+        141.0
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SYS_GND",
+      "position_mm": [
+        131.485,
+        141.0
+      ]
+    }
+  ],
+  "J3": [
+    {
+      "number": "1",
+      "net": "/3V3_B",
+      "position_mm": [
+        166.525,
+        141.0
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SYS_GND",
+      "position_mm": [
+        170.485,
+        141.0
+      ]
+    }
+  ],
+  "J4": [
+    {
+      "number": "1",
+      "net": "/CH1_12V",
+      "position_mm": [
+        113.95,
+        66.0
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/CH1_HV_BOTTOM",
+      "position_mm": [
+        117.91,
+        66.0
+      ]
+    }
+  ],
+  "J5": [
+    {
+      "number": "1",
+      "net": "/CH2_12V",
+      "position_mm": [
+        138.95,
+        66.0
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/CH2_HV_BOTTOM",
+      "position_mm": [
+        142.91,
+        66.0
+      ]
+    }
+  ],
+  "J6": [
+    {
+      "number": "1",
+      "net": "/CH3_12V",
+      "position_mm": [
+        163.95,
+        66.0
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/CH3_HV_BOTTOM",
+      "position_mm": [
+        167.91,
+        66.0
+      ]
+    }
+  ],
+  "J7": [
+    {
+      "number": "1",
+      "net": "/CH4_12V",
+      "position_mm": [
+        188.95,
+        66.0
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/CH4_HV_BOTTOM",
+      "position_mm": [
+        192.91,
+        66.0
+      ]
+    }
+  ],
+  "J8": [
+    {
+      "number": "1",
+      "net": "/AUX5V",
+      "position_mm": [
+        191.0,
+        136.0
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SYS_GND",
+      "position_mm": [
+        194.96,
+        136.0
+      ]
+    }
+  ],
+  "L1": [
+    {
+      "number": "1",
+      "net": "/L1_A",
+      "position_mm": [
+        130.0,
+        120.815
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/L2_A",
+      "position_mm": [
+        130.0,
+        123.185
+      ]
+    }
+  ],
+  "L2": [
+    {
+      "number": "1",
+      "net": "/L1_B",
+      "position_mm": [
+        169.0,
+        120.815
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/L2_B",
+      "position_mm": [
+        169.0,
+        123.185
+      ]
+    }
+  ],
+  "PS1": [
+    {
+      "number": "1",
+      "net": "/P5V_CH1",
+      "position_mm": [
+        117.95,
+        84.75
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SYS_GND",
+      "position_mm": [
+        115.95,
+        84.75
+      ]
+    },
+    {
+      "number": "4",
+      "net": "unconnected-(PS1-CTRL-Pad4)",
+      "position_mm": [
+        111.95,
+        84.75
+      ]
+    },
+    {
+      "number": "5",
+      "net": "unconnected-(PS1-NC-Pad5)",
+      "position_mm": [
+        117.95,
+        75.25
+      ]
+    },
+    {
+      "number": "6",
+      "net": "/CH1_HV_BOTTOM",
+      "position_mm": [
+        115.95,
+        75.25
+      ]
+    },
+    {
+      "number": "7",
+      "net": "/CH1_12V",
+      "position_mm": [
+        113.95,
+        75.25
+      ]
+    }
+  ],
+  "PS2": [
+    {
+      "number": "1",
+      "net": "/P5V_CH2",
+      "position_mm": [
+        142.95,
+        84.75
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SYS_GND",
+      "position_mm": [
+        140.95,
+        84.75
+      ]
+    },
+    {
+      "number": "4",
+      "net": "unconnected-(PS2-CTRL-Pad4)",
+      "position_mm": [
+        136.95,
+        84.75
+      ]
+    },
+    {
+      "number": "5",
+      "net": "unconnected-(PS2-NC-Pad5)",
+      "position_mm": [
+        142.95,
+        75.25
+      ]
+    },
+    {
+      "number": "6",
+      "net": "/CH2_HV_BOTTOM",
+      "position_mm": [
+        140.95,
+        75.25
+      ]
+    },
+    {
+      "number": "7",
+      "net": "/CH2_12V",
+      "position_mm": [
+        138.95,
+        75.25
+      ]
+    }
+  ],
+  "PS3": [
+    {
+      "number": "1",
+      "net": "/P5V_CH3",
+      "position_mm": [
+        167.95,
+        84.75
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SYS_GND",
+      "position_mm": [
+        165.95,
+        84.75
+      ]
+    },
+    {
+      "number": "4",
+      "net": "unconnected-(PS3-CTRL-Pad4)",
+      "position_mm": [
+        161.95,
+        84.75
+      ]
+    },
+    {
+      "number": "5",
+      "net": "unconnected-(PS3-NC-Pad5)",
+      "position_mm": [
+        167.95,
+        75.25
+      ]
+    },
+    {
+      "number": "6",
+      "net": "/CH3_HV_BOTTOM",
+      "position_mm": [
+        165.95,
+        75.25
+      ]
+    },
+    {
+      "number": "7",
+      "net": "/CH3_12V",
+      "position_mm": [
+        163.95,
+        75.25
+      ]
+    }
+  ],
+  "PS4": [
+    {
+      "number": "1",
+      "net": "/P5V_CH4",
+      "position_mm": [
+        192.95,
+        84.75
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SYS_GND",
+      "position_mm": [
+        190.95,
+        84.75
+      ]
+    },
+    {
+      "number": "4",
+      "net": "unconnected-(PS4-CTRL-Pad4)",
+      "position_mm": [
+        186.95,
+        84.75
+      ]
+    },
+    {
+      "number": "5",
+      "net": "unconnected-(PS4-NC-Pad5)",
+      "position_mm": [
+        192.95,
+        75.25
+      ]
+    },
+    {
+      "number": "6",
+      "net": "/CH4_HV_BOTTOM",
+      "position_mm": [
+        190.95,
+        75.25
+      ]
+    },
+    {
+      "number": "7",
+      "net": "/CH4_12V",
+      "position_mm": [
+        188.95,
+        75.25
+      ]
+    }
+  ],
+  "R11": [
+    {
+      "number": "1",
+      "net": "/3V3_A",
+      "position_mm": [
+        121.0,
+        126.825
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/FB_A",
+      "position_mm": [
+        121.0,
+        125.175
+      ]
+    }
+  ],
+  "R12": [
+    {
+      "number": "1",
+      "net": "/FB_A",
+      "position_mm": [
+        121.0,
+        123.325
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SYS_GND",
+      "position_mm": [
+        121.0,
+        121.675
+      ]
+    }
+  ],
+  "R13": [
+    {
+      "number": "1",
+      "net": "/3V3_A",
+      "position_mm": [
+        124.0,
+        126.825
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/PG_A",
+      "position_mm": [
+        124.0,
+        125.175
+      ]
+    }
+  ],
+  "R21": [
+    {
+      "number": "1",
+      "net": "/3V3_B",
+      "position_mm": [
+        160.0,
+        126.825
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/FB_B",
+      "position_mm": [
+        160.0,
+        125.175
+      ]
+    }
+  ],
+  "R22": [
+    {
+      "number": "1",
+      "net": "/FB_B",
+      "position_mm": [
+        160.0,
+        123.325
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SYS_GND",
+      "position_mm": [
+        160.0,
+        121.675
+      ]
+    }
+  ],
+  "R23": [
+    {
+      "number": "1",
+      "net": "/3V3_B",
+      "position_mm": [
+        163.0,
+        126.825
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/PG_B",
+      "position_mm": [
+        163.0,
+        125.175
+      ]
+    }
+  ],
+  "U1": [
+    {
+      "number": "1",
+      "net": "/P5V_LOGIC_A",
+      "position_mm": [
+        125.1,
+        121.0
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/P5V_LOGIC_A",
+      "position_mm": [
+        125.1,
+        121.5
+      ]
+    },
+    {
+      "number": "3",
+      "net": "/SYS_GND",
+      "position_mm": [
+        125.1,
+        122.0
+      ]
+    },
+    {
+      "number": "4",
+      "net": "/FB_A",
+      "position_mm": [
+        125.1,
+        122.5
+      ]
+    },
+    {
+      "number": "5",
+      "net": "/PG_A",
+      "position_mm": [
+        125.1,
+        123.0
+      ]
+    },
+    {
+      "number": "6",
+      "net": "/3V3_A",
+      "position_mm": [
+        126.75,
+        123.0
+      ]
+    },
+    {
+      "number": "7",
+      "net": "/L2_A",
+      "position_mm": [
+        126.75,
+        122.5
+      ]
+    },
+    {
+      "number": "8",
+      "net": "/SYS_GND",
+      "position_mm": [
+        126.55,
+        122.0
+      ]
+    },
+    {
+      "number": "9",
+      "net": "/L1_A",
+      "position_mm": [
+        126.75,
+        121.5
+      ]
+    },
+    {
+      "number": "10",
+      "net": "/P5V_LOGIC_A",
+      "position_mm": [
+        126.75,
+        121.0
+      ]
+    }
+  ],
+  "U2": [
+    {
+      "number": "1",
+      "net": "/P5V_LOGIC_B",
+      "position_mm": [
+        164.1,
+        121.0
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/P5V_LOGIC_B",
+      "position_mm": [
+        164.1,
+        121.5
+      ]
+    },
+    {
+      "number": "3",
+      "net": "/SYS_GND",
+      "position_mm": [
+        164.1,
+        122.0
+      ]
+    },
+    {
+      "number": "4",
+      "net": "/FB_B",
+      "position_mm": [
+        164.1,
+        122.5
+      ]
+    },
+    {
+      "number": "5",
+      "net": "/PG_B",
+      "position_mm": [
+        164.1,
+        123.0
+      ]
+    },
+    {
+      "number": "6",
+      "net": "/3V3_B",
+      "position_mm": [
+        165.75,
+        123.0
+      ]
+    },
+    {
+      "number": "7",
+      "net": "/L2_B",
+      "position_mm": [
+        165.75,
+        122.5
+      ]
+    },
+    {
+      "number": "8",
+      "net": "/SYS_GND",
+      "position_mm": [
+        165.55,
+        122.0
+      ]
+    },
+    {
+      "number": "9",
+      "net": "/L1_B",
+      "position_mm": [
+        165.75,
+        121.5
+      ]
+    },
+    {
+      "number": "10",
+      "net": "/P5V_LOGIC_B",
+      "position_mm": [
+        165.75,
+        121.0
+      ]
+    }
+  ]
+}

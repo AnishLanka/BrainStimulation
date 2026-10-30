@@ -1,0 +1,48 @@
+{
+  "0": [
+    "/3V3_A",
+    "/3V3_B",
+    "/AUX5V",
+    "/FB_A",
+    "/FB_B",
+    "/L1_A",
+    "/L1_B",
+    "/L2_A",
+    "/L2_B",
+    "/P5V_CH1",
+    "/P5V_CH2",
+    "/P5V_CH3",
+    "/P5V_CH4",
+    "/P5V_IN",
+    "/P5V_LOGIC_A",
+    "/P5V_LOGIC_B",
+    "/P5V_RAW",
+    "/PG_A",
+    "/PG_B",
+    "/SYS_GND",
+    "unconnected-(PS1-CTRL-Pad4)",
+    "unconnected-(PS2-CTRL-Pad4)",
+    "unconnected-(PS3-CTRL-Pad4)",
+    "unconnected-(PS4-CTRL-Pad4)"
+  ],
+  "1": [
+    "/CH1_12V",
+    "/CH1_HV_BOTTOM",
+    "unconnected-(PS1-NC-Pad5)"
+  ],
+  "2": [
+    "/CH2_12V",
+    "/CH2_HV_BOTTOM",
+    "unconnected-(PS2-NC-Pad5)"
+  ],
+  "3": [
+    "/CH3_12V",
+    "/CH3_HV_BOTTOM",
+    "unconnected-(PS3-NC-Pad5)"
+  ],
+  "4": [
+    "/CH4_12V",
+    "/CH4_HV_BOTTOM",
+    "unconnected-(PS4-NC-Pad5)"
+  ]
+}

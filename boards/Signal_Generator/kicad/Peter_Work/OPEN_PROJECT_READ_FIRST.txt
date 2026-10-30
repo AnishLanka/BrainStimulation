@@ -1,0 +1,27 @@
+SIGNAL GENERATOR REV C — OPEN THIS COMPLETE PROJECT
+
+Extract the entire ZIP to an ordinary writable folder. Open
+SignalGen_RevC/SignalGen_Electrical_Draft.kicad_pro in KiCad 10, then open
+its PCB. Keep the schematic, project, .kicad_dru, both library tables and
+SignalGenLocal.pretty together. Do not open only the PCB from inside a ZIP.
+Close the old read-only editor before opening this extracted project.
+
+Rev C fixes U4/U7 copper pad spacing. The old 0.18 mm exception is removed;
+all normal copper uses 0.20 mm. No individual DRC exclusions or new ignored
+test categories were added. The five pre-existing default ignored categories
+remain listed in PCB_DRC.json; a zero report is scoped to the enabled tests.
+
+The original screenshot was reproduced exactly by opening the old PCB alone:
+10 clearance errors and 77 missing-library warnings. The revised complete
+project passes zone-refilled DRC, schematic parity and unconnected-item
+checks. Opening a lone PCB without its supplied library will still warn that
+the library is unavailable, even though its corrected copper passes.
+
+Use SignalGen_Prototype_RevC_JLCPCB.zip for the bare-board manufacturer upload.
+The project ZIP is for KiCad, not the manufacturer's Gerber upload form.
+Keep the original thin board: 0.4 mm nominal order thickness, two layers.
+
+Fresh DRC is required after any later edit and before exporting a new release.
+Check errors, warnings, unconnected items and schematic parity; refill zones.
+Do not suppress failures merely to obtain a zero count. File checks do not
+verify powered analog performance or suitability for connection to a person.

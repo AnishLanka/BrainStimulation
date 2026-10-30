@@ -1,0 +1,50 @@
+{
+  "status": "Planning estimates; efficiencies and startup are not measured guarantees",
+  "nominal_external_source_V": 5,
+  "source_capacity_A": 8,
+  "total_AUX_allocation_A": 4,
+  "monitor_allocation_5V_W": 15.366666666666664,
+  "monitor_budget_source_sha256": "643e9358b3996cdd14661daf5fff8d87b830461b3daeab9c2a8198509af2f46c",
+  "scenarios": [
+    {
+      "scenario": "four-channel idle illustrative",
+      "base_5V_W": 5.246666666666667,
+      "monitor_5V_W": 15.366666666666664,
+      "combined_5V_W": 20.61333333333333,
+      "combined_5V_A": 4.122666666666666,
+      "assumed_battery_conversion_efficiency": 0.9,
+      "18Wh_pack_80pct_usable_runtime_h": 0.6287192755498061,
+      "battery_nameplate_Wh_for_1h_at80pct": 28.629629629629623,
+      "battery_nameplate_Wh_for_16h_at80pct": 458.07407407407396
+    },
+    {
+      "scenario": "four-channel 5mA-peak sine illustrative",
+      "base_5V_W": 6.8444574679029495,
+      "monitor_5V_W": 15.366666666666664,
+      "combined_5V_W": 22.211124134569612,
+      "combined_5V_A": 4.442224826913923,
+      "assumed_battery_conversion_efficiency": 0.9,
+      "18Wh_pack_80pct_usable_runtime_h": 0.583491403743448,
+      "battery_nameplate_Wh_for_1h_at80pct": 30.84878352023557,
+      "battery_nameplate_Wh_for_16h_at80pct": 493.58053632376914
+    },
+    {
+      "scenario": "four-channel 5mA sustained planning",
+      "base_5V_W": 12.284404223227753,
+      "monitor_5V_W": 15.366666666666664,
+      "combined_5V_W": 27.651070889894417,
+      "combined_5V_A": 5.530214177978883,
+      "assumed_battery_conversion_efficiency": 0.85,
+      "18Wh_pack_80pct_usable_runtime_h": 0.4426591667548518,
+      "battery_nameplate_Wh_for_1h_at80pct": 40.66333954396237,
+      "battery_nameplate_Wh_for_16h_at80pct": 650.613432703398
+    }
+  ],
+  "limitations": [
+    "Source allocation is not an automatically regulated 8A PCB output rating.",
+    "The sum of all branch nameplates exceeds the source capacity; obey the combined measured budget.",
+    "No battery, charger, protection pack or measured runtime is selected in this release.",
+    "R3M and monitor modules require at least4.5V at their pins after main/branch fuse and cable losses.",
+    "AUX4A is the total four-channel allocation, not4A per monitor board."
+  ]
+}

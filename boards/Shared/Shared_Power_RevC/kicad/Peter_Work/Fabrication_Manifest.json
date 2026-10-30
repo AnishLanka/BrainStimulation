@@ -1,0 +1,17 @@
+{
+  "board_sha256": "cffe4fa3e631e34b5c930e2075eefe2149c586fba26e1cda877d22a6f76d18c1",
+  "schematic_sha256": "591ce98da1d4ccaf5d3a1477571528cf55bfb24b9e9ab0e997d4aeaa0ab0c4e7",
+  "zip": "Shared_Power_RevC_Prototype_JLCPCB.zip",
+  "zip_sha256": "cd4f2438fef2753bc611dd9e54f80feb5a61f305734327e438ed4d103eb08dc4",
+  "files": {
+    "Shared_Power_Adapter_RevC-B_Cu.gbl": "d3120d5b79fb5a449631e2e06153b355d48a948698b4cd10020e4bb15dfe8811",
+    "Shared_Power_Adapter_RevC-B_Mask.gbs": "930ae4b4e6e33d634a3d97a3f490566996285e34d2f8d7bb7d970324a34cfb3c",
+    "Shared_Power_Adapter_RevC-B_Silkscreen.gbo": "a520b1405c6f6cf8b13518f7395f219c1058abae08df0fc1471f5f6613510817",
+    "Shared_Power_Adapter_RevC-Edge_Cuts.gm1": "50ad0d9f96f1b5638f23765e0a508a04116ece58da8f7aedc7a6a426a2565298",
+    "Shared_Power_Adapter_RevC-F_Cu.gtl": "d703b5ef6f3f2bf6fe1f91e91c49900a2ebd2eacfee94945d3bebf7785cea1f6",
+    "Shared_Power_Adapter_RevC-F_Mask.gts": "139fea78128863414f6c8a427839b1f933e20103e91d37082b30f3cec5e1699e",
+    "Shared_Power_Adapter_RevC-F_Silkscreen.gto": "29e8c78922a29d64c1e12be48db922a3aa4258c15f0f573490c55d5cdee76f64",
+    "Shared_Power_Adapter_RevC-PTH.drl": "e11bad12a6bbfb09be2ec36ea7b531a460973c365845b5127150dacfb5519ffa"
+  },
+  "omissions": "Empty NPTH drill, Gerber job, BOM and placement are intentionally outside the bare-board upload ZIP."
+}

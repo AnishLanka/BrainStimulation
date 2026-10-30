@@ -1,0 +1,26 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,10.0.6*%
+%TF.CreationDate,2026-10-17T14:51:27-05:00*%
+%TF.ProjectId,RailSplitter_Electrical_Draft,5261696c-5370-46c6-9974-7465725f456c,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Profile,NP*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 10.0.6) date 2026-10-17 14:51:27*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%TA.AperFunction,Profile*%
+%ADD10C,0.050000*%
+%TD*%
+G04 APERTURE END LIST*
+D10*
+X0Y19431000D02*
+X0Y0D01*
+X0Y0D02*
+X50673000Y0D01*
+X50673000Y19431000D02*
+X0Y19431000D01*
+X50673000Y0D02*
+X50673000Y19431000D01*
+M02*

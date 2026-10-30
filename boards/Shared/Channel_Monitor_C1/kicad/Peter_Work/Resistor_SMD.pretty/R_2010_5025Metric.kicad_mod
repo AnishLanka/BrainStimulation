@@ -1,0 +1,164 @@
+(footprint "R_2010_5025Metric"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Resistor SMD 2010 (5025 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
+	(tags "resistor")
+	(property "Reference" "R36"
+		(at 0 -3 0)
+		(layer "F.SilkS")
+		(uuid "9ecb27e6-451f-4dd5-9e44-ab363b4e940c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "22.1k 1% 0.75W"
+		(at 0 2.28 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bb634ac8-023a-45c7-84d8-dacd402b253d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ec5026e2-158f-42c6-8349-7603babe62da")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d30bae22-4db1-4063-8bcc-a2a9c3a829c4")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "0e071dd4-9822-4ae4-8981-8be5a18b1c5c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "CRCW201022K1FKEF"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "66d9db86-af46-40b4-b5cf-94a6aaae0f52")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Design notes" "High voltage input fault resistor. Minimum 0.75 W rating, 200 V working-voltage candidate. +/-80 V / minimum R <=3.66 mA, <=0.293 W. Verify thermal derating and exact MPN. Do not substitute 0805/0.125 W."
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "e6a7b79b-f713-4e3a-aabf-bd75193e5c43")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint candidate" "Resistor_SMD:R_2010_5025Metric"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "c75c7935-72b4-48d8-83aa-6999caff089d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -3.18 -1.58)
+		(end 3.18 1.58)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "cd30f0db-3327-43f5-b9be-39064ca6d135")
+	)
+	(fp_rect
+		(start -2.5 -1.25)
+		(end 2.5 1.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "7125eed4-d33e-4e06-add3-bdefb2a51f5e")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "686fb586-4219-409f-a926-c8b6af988918")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -2.3125 0)
+		(size 1.225 2.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.204082)
+		(clearance 0)
+		(uuid "4e4931ae-d5d1-4460-8af6-4e88685cc82f")
+	)
+	(pad "2" smd roundrect
+		(at 2.3125 0)
+		(size 1.225 2.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.204082)
+		(clearance 0)
+		(uuid "9a1f3d8a-3912-4cc9-b94c-ba97e3631e66")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_2010_5025Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

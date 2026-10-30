@@ -1,0 +1,1282 @@
+{
+  "summary": {
+    "board": "C:\\Users\\peter\\Documents\\Codex\\2026-10-17\\this\\outputs\\BuckBoost_RevB\\BuckBoost_RevB.kicad_pcb",
+    "sha256": "254a79a8537299e081462e889d707ce6b0238f3eb09f3971d4ccd1216448959d",
+    "vias": 17,
+    "numbered_pads": 27,
+    "board_thickness_mm": 0.4112,
+    "min_silk_stroke_mm": 0.16,
+    "min_text_height_mm": 1.0,
+    "min_silk_mask_gap_mm": 0.324034,
+    "min_silk_drill_gap_mm": 0.296508,
+    "min_silk_annulus_gap_mm": 0.146484,
+    "min_via_pad_copper_gap_mm": 0.350005,
+    "min_via_drill_mask_gap_mm": 0.449247,
+    "min_via_copper_mask_gap_mm": 0.299284,
+    "min_mask_opening_gap_mm": 0.148405,
+    "min_mask_foreign_copper_gap_mm": 0.149504,
+    "violations": {
+      "silk_stroke_below_015": 0,
+      "text_height_below_1": 0,
+      "silk_mask_below_015": 0,
+      "silk_hole_below_015": 0,
+      "via_drill_mask_overlap": 0,
+      "via_copper_pad_overlap": 0,
+      "foreign_copper_mask_gap_below_009": 0,
+      "mask_opening_gap_below_013": 0
+    }
+  },
+  "vias_near_pads": [
+    {
+      "via": [
+        147.85,
+        105.45
+      ],
+      "pad": "U1.11",
+      "net": "GND",
+      "copper_gap": 0.350005,
+      "drill_to_copper_gap": 0.50006,
+      "drill_to_mask_gap": 0.449247,
+      "via_copper_to_mask_gap": 0.299284
+    },
+    {
+      "via": [
+        144.15,
+        105.45
+      ],
+      "pad": "U1.11",
+      "net": "GND",
+      "copper_gap": 0.350005,
+      "drill_to_copper_gap": 0.50006,
+      "drill_to_mask_gap": 0.449247,
+      "via_copper_to_mask_gap": 0.299284
+    },
+    {
+      "via": [
+        147.85,
+        104.85
+      ],
+      "pad": "U1.11",
+      "net": "GND",
+      "copper_gap": 0.350005,
+      "drill_to_copper_gap": 0.50006,
+      "drill_to_mask_gap": 0.449247,
+      "via_copper_to_mask_gap": 0.299284
+    },
+    {
+      "via": [
+        144.15,
+        104.85
+      ],
+      "pad": "U1.11",
+      "net": "GND",
+      "copper_gap": 0.350005,
+      "drill_to_copper_gap": 0.50006,
+      "drill_to_mask_gap": 0.449247,
+      "via_copper_to_mask_gap": 0.299284
+    },
+    {
+      "via": [
+        146.4,
+        109.9
+      ],
+      "pad": "C4.2",
+      "net": "GND",
+      "copper_gap": 0.376921,
+      "drill_to_copper_gap": 0.5278,
+      "drill_to_mask_gap": 0.477446,
+      "via_copper_to_mask_gap": 0.326568
+    },
+    {
+      "via": [
+        152.0,
+        106.8
+      ],
+      "pad": "C3.2",
+      "net": "GND",
+      "copper_gap": 0.430021,
+      "drill_to_copper_gap": 0.580077,
+      "drill_to_mask_gap": 0.530088,
+      "via_copper_to_mask_gap": 0.380034
+    },
+    {
+      "via": [
+        142.6,
+        106.8
+      ],
+      "pad": "C1.2",
+      "net": "GND",
+      "copper_gap": 0.430021,
+      "drill_to_copper_gap": 0.580077,
+      "drill_to_mask_gap": 0.530088,
+      "via_copper_to_mask_gap": 0.380034
+    },
+    {
+      "via": [
+        147.85,
+        105.45
+      ],
+      "pad": "C2.2",
+      "net": "GND",
+      "copper_gap": 0.600035,
+      "drill_to_copper_gap": 0.750091,
+      "drill_to_mask_gap": 0.700011,
+      "via_copper_to_mask_gap": 0.550048
+    },
+    {
+      "via": [
+        144.15,
+        105.45
+      ],
+      "pad": "C1.2",
+      "net": "GND",
+      "copper_gap": 0.600035,
+      "drill_to_copper_gap": 0.750091,
+      "drill_to_mask_gap": 0.700011,
+      "via_copper_to_mask_gap": 0.550048
+    },
+    {
+      "via": [
+        147.85,
+        105.45
+      ],
+      "pad": "U1.10",
+      "net": "/NetC2_1",
+      "copper_gap": 0.673002,
+      "drill_to_copper_gap": 0.82379,
+      "drill_to_mask_gap": 0.772063,
+      "via_copper_to_mask_gap": 0.621184
+    },
+    {
+      "via": [
+        144.15,
+        105.45
+      ],
+      "pad": "U1.6",
+      "net": "/NetC4_1",
+      "copper_gap": 0.673002,
+      "drill_to_copper_gap": 0.82379,
+      "drill_to_mask_gap": 0.772063,
+      "via_copper_to_mask_gap": 0.621184
+    }
+  ],
+  "mask_near_foreign_copper": [
+    {
+      "pad": "J2.1",
+      "zone": "GND",
+      "gap": 0.149504
+    },
+    {
+      "pad": "J1.1",
+      "zone": "GND",
+      "gap": 0.149504
+    },
+    {
+      "pad": "C4.1",
+      "zone": "GND",
+      "gap": 0.149596
+    },
+    {
+      "pad": "U1.1",
+      "zone": "GND",
+      "gap": 0.149779
+    },
+    {
+      "pad": "U1.2",
+      "zone": "GND",
+      "gap": 0.149779
+    },
+    {
+      "pad": "U1.4",
+      "zone": "GND",
+      "gap": 0.149779
+    },
+    {
+      "pad": "U1.5",
+      "zone": "GND",
+      "gap": 0.149779
+    },
+    {
+      "pad": "U1.6",
+      "zone": "GND",
+      "gap": 0.149779
+    },
+    {
+      "pad": "U1.7",
+      "zone": "GND",
+      "gap": 0.149779
+    },
+    {
+      "pad": "U1.8",
+      "zone": "GND",
+      "gap": 0.149779
+    },
+    {
+      "pad": "U1.10",
+      "zone": "GND",
+      "gap": 0.149779
+    },
+    {
+      "pad": "R1.1",
+      "zone": "GND",
+      "gap": 0.149779
+    },
+    {
+      "pad": "R1.2",
+      "zone": "GND",
+      "gap": 0.149779
+    },
+    {
+      "pad": "L1.1",
+      "zone": "GND",
+      "gap": 0.150511
+    },
+    {
+      "pad": "L1.2",
+      "zone": "GND",
+      "gap": 0.150511
+    },
+    {
+      "pad": "U1.11",
+      "track": "bb94d97f-9098-4f4c-b262-1abca967b863",
+      "net": "/NetC1_1",
+      "start": [
+        144.5,
+        103.6
+      ],
+      "gap": 0.166991
+    },
+    {
+      "pad": "C2.1",
+      "zone": "GND",
+      "gap": 0.170561
+    },
+    {
+      "pad": "C1.1",
+      "zone": "GND",
+      "gap": 0.170561
+    },
+    {
+      "pad": "U1.1",
+      "track": "e80c54ca-15ba-4eaa-b829-3d6d7f680019",
+      "net": "/NetL1_2",
+      "start": [
+        146.5,
+        102.95
+      ],
+      "gap": 0.185943
+    },
+    {
+      "pad": "U1.5",
+      "track": "87d34801-3626-450a-8ef9-0260fbf1719b",
+      "net": "/NetL1_1",
+      "start": [
+        145.5,
+        102.95
+      ],
+      "gap": 0.185943
+    },
+    {
+      "pad": "U1.3",
+      "track": "e80c54ca-15ba-4eaa-b829-3d6d7f680019",
+      "net": "/NetL1_2",
+      "start": [
+        146.5,
+        102.95
+      ],
+      "gap": 0.186218
+    },
+    {
+      "pad": "U1.3",
+      "track": "87d34801-3626-450a-8ef9-0260fbf1719b",
+      "net": "/NetL1_1",
+      "start": [
+        145.5,
+        102.95
+      ],
+      "gap": 0.186218
+    },
+    {
+      "pad": "U1.1",
+      "otherpad": "U1.2",
+      "net": "/NetL1_2",
+      "gap": 0.199218
+    },
+    {
+      "pad": "U1.2",
+      "otherpad": "U1.1",
+      "net": "/NetC2_1",
+      "gap": 0.199218
+    },
+    {
+      "pad": "U1.2",
+      "otherpad": "U1.3",
+      "net": "GND",
+      "gap": 0.199218
+    },
+    {
+      "pad": "U1.3",
+      "otherpad": "U1.2",
+      "net": "/NetL1_2",
+      "gap": 0.199218
+    },
+    {
+      "pad": "U1.3",
+      "otherpad": "U1.4",
+      "net": "/NetL1_1",
+      "gap": 0.199218
+    },
+    {
+      "pad": "U1.4",
+      "otherpad": "U1.3",
+      "net": "GND",
+      "gap": 0.199218
+    },
+    {
+      "pad": "U1.4",
+      "otherpad": "U1.5",
+      "net": "/NetC1_1",
+      "gap": 0.199218
+    },
+    {
+      "pad": "U1.5",
+      "otherpad": "U1.4",
+      "net": "/NetL1_1",
+      "gap": 0.199218
+    },
+    {
+      "pad": "U1.8",
+      "otherpad": "U1.9",
+      "net": "GND",
+      "gap": 0.199218
+    },
+    {
+      "pad": "U1.9",
+      "otherpad": "U1.8",
+      "net": "/NetC4_1",
+      "gap": 0.199218
+    },
+    {
+      "pad": "U1.9",
+      "otherpad": "U1.10",
+      "net": "/NetC2_1",
+      "gap": 0.199218
+    },
+    {
+      "pad": "U1.10",
+      "otherpad": "U1.9",
+      "net": "GND",
+      "gap": 0.199218
+    },
+    {
+      "pad": "U1.1",
+      "track": "ccd7a9b3-566a-4e9c-a9bd-63d02675f9c9",
+      "net": "/NetL1_2",
+      "start": [
+        146.5,
+        103.6
+      ],
+      "gap": 0.204252
+    },
+    {
+      "pad": "U1.2",
+      "track": "d0fa1f30-eb81-4453-859d-4bd605287228",
+      "net": "/NetC2_1",
+      "start": [
+        147.0,
+        103.6
+      ],
+      "gap": 0.204252
+    },
+    {
+      "pad": "U1.2",
+      "track": "920a24e3-bcf3-43b6-992c-552ddb9bc79b",
+      "net": "GND",
+      "start": [
+        146.0,
+        103.6
+      ],
+      "gap": 0.204252
+    },
+    {
+      "pad": "U1.3",
+      "track": "ccd7a9b3-566a-4e9c-a9bd-63d02675f9c9",
+      "net": "/NetL1_2",
+      "start": [
+        146.5,
+        103.6
+      ],
+      "gap": 0.204252
+    },
+    {
+      "pad": "U1.3",
+      "track": "7de478b2-7704-4dfd-a64a-a8d23296c3d4",
+      "net": "/NetL1_1",
+      "start": [
+        145.5,
+        103.6
+      ],
+      "gap": 0.204252
+    },
+    {
+      "pad": "U1.4",
+      "track": "920a24e3-bcf3-43b6-992c-552ddb9bc79b",
+      "net": "GND",
+      "start": [
+        146.0,
+        103.6
+      ],
+      "gap": 0.204252
+    },
+    {
+      "pad": "U1.4",
+      "track": "488daa1e-87fa-4a19-8eae-458d623e1468",
+      "net": "/NetC1_1",
+      "start": [
+        145.0,
+        103.6
+      ],
+      "gap": 0.204252
+    },
+    {
+      "pad": "U1.5",
+      "track": "7de478b2-7704-4dfd-a64a-a8d23296c3d4",
+      "net": "/NetL1_1",
+      "start": [
+        145.5,
+        103.6
+      ],
+      "gap": 0.204252
+    },
+    {
+      "pad": "U1.8",
+      "track": "87b2a7fb-2db4-4bac-b681-9f3d8d828df2",
+      "net": "GND",
+      "start": [
+        146.5,
+        106.4
+      ],
+      "gap": 0.204252
+    },
+    {
+      "pad": "U1.8",
+      "track": "f99e29f4-1c1c-4377-ba81-638b358e41a2",
+      "net": "GND",
+      "start": [
+        146.5,
+        106.4
+      ],
+      "gap": 0.204252
+    },
+    {
+      "pad": "U1.9",
+      "track": "4a9d002e-bbcb-49e2-b968-810bc6f8ca13",
+      "net": "/NetC2_1",
+      "start": [
+        147.0,
+        106.4
+      ],
+      "gap": 0.204252
+    },
+    {
+      "pad": "U1.9",
+      "track": "6c090d73-a6e6-4357-9616-6eb83414107b",
+      "net": "/NetC4_1",
+      "start": [
+        146.0,
+        106.95
+      ],
+      "gap": 0.204252
+    },
+    {
+      "pad": "U1.10",
+      "track": "87b2a7fb-2db4-4bac-b681-9f3d8d828df2",
+      "net": "GND",
+      "start": [
+        146.5,
+        106.4
+      ],
+      "gap": 0.204252
+    },
+    {
+      "pad": "U1.10",
+      "track": "f99e29f4-1c1c-4377-ba81-638b358e41a2",
+      "net": "GND",
+      "start": [
+        146.5,
+        106.4
+      ],
+      "gap": 0.204252
+    },
+    {
+      "pad": "U1.11",
+      "track": "2d195c67-7c3d-4756-86e8-b910cc5ea77c",
+      "net": "/NetC1_1",
+      "start": [
+        144.2,
+        103.9
+      ],
+      "gap": 0.208281
+    },
+    {
+      "pad": "U1.1",
+      "otherpad": "U1.11",
+      "net": "GND",
+      "gap": 0.224211
+    },
+    {
+      "pad": "U1.2",
+      "otherpad": "U1.11",
+      "net": "GND",
+      "gap": 0.224211
+    },
+    {
+      "pad": "U1.4",
+      "otherpad": "U1.11",
+      "net": "GND",
+      "gap": 0.224211
+    },
+    {
+      "pad": "U1.5",
+      "otherpad": "U1.11",
+      "net": "GND",
+      "gap": 0.224211
+    },
+    {
+      "pad": "U1.6",
+      "otherpad": "U1.11",
+      "net": "GND",
+      "gap": 0.224211
+    },
+    {
+      "pad": "U1.7",
+      "otherpad": "U1.11",
+      "net": "GND",
+      "gap": 0.224211
+    },
+    {
+      "pad": "U1.8",
+      "otherpad": "U1.11",
+      "net": "GND",
+      "gap": 0.224211
+    },
+    {
+      "pad": "U1.10",
+      "otherpad": "U1.11",
+      "net": "GND",
+      "gap": 0.224211
+    },
+    {
+      "pad": "U1.11",
+      "otherpad": "U1.1",
+      "net": "/NetC2_1",
+      "gap": 0.224211
+    },
+    {
+      "pad": "U1.11",
+      "otherpad": "U1.2",
+      "net": "/NetL1_2",
+      "gap": 0.224211
+    },
+    {
+      "pad": "U1.11",
+      "otherpad": "U1.4",
+      "net": "/NetL1_1",
+      "gap": 0.224211
+    },
+    {
+      "pad": "U1.11",
+      "otherpad": "U1.5",
+      "net": "/NetC1_1",
+      "gap": 0.224211
+    },
+    {
+      "pad": "U1.11",
+      "otherpad": "U1.6",
+      "net": "/NetC4_1",
+      "gap": 0.224211
+    },
+    {
+      "pad": "U1.11",
+      "otherpad": "U1.7",
+      "net": "/NetC4_1",
+      "gap": 0.224211
+    },
+    {
+      "pad": "U1.11",
+      "otherpad": "U1.8",
+      "net": "/NetC4_1",
+      "gap": 0.224211
+    },
+    {
+      "pad": "U1.11",
+      "otherpad": "U1.10",
+      "net": "/NetC2_1",
+      "gap": 0.224211
+    },
+    {
+      "pad": "U1.11",
+      "track": "4b898d7a-829c-4f71-9edb-b35315bb5cc4",
+      "net": "/NetC2_1",
+      "start": [
+        147.6,
+        103.6
+      ],
+      "gap": 0.23767
+    },
+    {
+      "pad": "U1.9",
+      "track": "588c7912-86fc-42d4-80a5-222d149e5ef2",
+      "net": "/NetC4_1",
+      "start": [
+        145.5,
+        106.95
+      ],
+      "gap": 0.279968
+    }
+  ],
+  "mask_opening_gaps": [
+    {
+      "pad1": "U1.1",
+      "pad2": "U1.2",
+      "gap": 0.148405,
+      "samenet": false
+    },
+    {
+      "pad1": "U1.2",
+      "pad2": "U1.3",
+      "gap": 0.148405,
+      "samenet": false
+    },
+    {
+      "pad1": "U1.3",
+      "pad2": "U1.4",
+      "gap": 0.148405,
+      "samenet": false
+    },
+    {
+      "pad1": "U1.4",
+      "pad2": "U1.5",
+      "gap": 0.148405,
+      "samenet": false
+    },
+    {
+      "pad1": "U1.6",
+      "pad2": "U1.7",
+      "gap": 0.148405,
+      "samenet": true
+    },
+    {
+      "pad1": "U1.7",
+      "pad2": "U1.8",
+      "gap": 0.148405,
+      "samenet": true
+    },
+    {
+      "pad1": "U1.8",
+      "pad2": "U1.9",
+      "gap": 0.148405,
+      "samenet": false
+    },
+    {
+      "pad1": "U1.9",
+      "pad2": "U1.10",
+      "gap": 0.148405,
+      "samenet": false
+    },
+    {
+      "pad1": "U1.1",
+      "pad2": "U1.11",
+      "gap": 0.173491,
+      "samenet": false
+    },
+    {
+      "pad1": "U1.2",
+      "pad2": "U1.11",
+      "gap": 0.173491,
+      "samenet": false
+    },
+    {
+      "pad1": "U1.3",
+      "pad2": "U1.11",
+      "gap": 0.173491,
+      "samenet": true
+    },
+    {
+      "pad1": "U1.4",
+      "pad2": "U1.11",
+      "gap": 0.173491,
+      "samenet": false
+    },
+    {
+      "pad1": "U1.5",
+      "pad2": "U1.11",
+      "gap": 0.173491,
+      "samenet": false
+    },
+    {
+      "pad1": "U1.6",
+      "pad2": "U1.11",
+      "gap": 0.173491,
+      "samenet": false
+    },
+    {
+      "pad1": "U1.7",
+      "pad2": "U1.11",
+      "gap": 0.173491,
+      "samenet": false
+    },
+    {
+      "pad1": "U1.8",
+      "pad2": "U1.11",
+      "gap": 0.173491,
+      "samenet": false
+    },
+    {
+      "pad1": "U1.9",
+      "pad2": "U1.11",
+      "gap": 0.173491,
+      "samenet": true
+    },
+    {
+      "pad1": "U1.10",
+      "pad2": "U1.11",
+      "gap": 0.173491,
+      "samenet": false
+    },
+    {
+      "pad1": "R1.1",
+      "pad2": "R1.2",
+      "gap": 0.300016,
+      "samenet": false
+    }
+  ],
+  "silk": [
+    {
+      "ref": "U1",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        148.15,
+        103.1
+      ]
+    },
+    {
+      "ref": "U1",
+      "type": "text",
+      "text": "U1",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        149.0,
+        108.8
+      ]
+    },
+    {
+      "ref": "C3",
+      "type": "text",
+      "text": "C3",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        152.0,
+        102.1
+      ]
+    },
+    {
+      "ref": "C2",
+      "type": "text",
+      "text": "C2",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        149.4,
+        102.1
+      ]
+    },
+    {
+      "ref": "C1",
+      "type": "text",
+      "text": "C1",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        142.6,
+        102.1
+      ]
+    },
+    {
+      "ref": "J2",
+      "type": "graphic",
+      "stroke": 0.2,
+      "xy": [
+        160.84311,
+        101.74158
+      ]
+    },
+    {
+      "ref": "J2",
+      "type": "graphic",
+      "stroke": 0.2,
+      "xy": [
+        160.84311,
+        111.74159
+      ]
+    },
+    {
+      "ref": "J2",
+      "type": "graphic",
+      "stroke": 0.2,
+      "xy": [
+        160.84311,
+        111.74159
+      ]
+    },
+    {
+      "ref": "J2",
+      "type": "graphic",
+      "stroke": 0.2,
+      "xy": [
+        162.25311,
+        112.34159
+      ]
+    },
+    {
+      "ref": "J2",
+      "type": "graphic",
+      "stroke": 0.2,
+      "xy": [
+        162.25311,
+        112.34159
+      ]
+    },
+    {
+      "ref": "J2",
+      "type": "graphic",
+      "stroke": 0.2,
+      "xy": [
+        166.08311,
+        111.74159
+      ]
+    },
+    {
+      "ref": "J2",
+      "type": "graphic",
+      "stroke": 0.2,
+      "xy": [
+        166.08311,
+        111.74159
+      ]
+    },
+    {
+      "ref": "J2",
+      "type": "graphic",
+      "stroke": 0.2,
+      "xy": [
+        170.16311,
+        112.34159
+      ]
+    },
+    {
+      "ref": "J2",
+      "type": "graphic",
+      "stroke": 0.2,
+      "xy": [
+        170.16311,
+        112.34159
+      ]
+    },
+    {
+      "ref": "J2",
+      "type": "graphic",
+      "stroke": 0.2,
+      "xy": [
+        174.02311,
+        111.74159
+      ]
+    },
+    {
+      "ref": "J2",
+      "type": "graphic",
+      "stroke": 0.2,
+      "xy": [
+        174.02311,
+        111.74159
+      ]
+    },
+    {
+      "ref": "J2",
+      "type": "graphic",
+      "stroke": 0.2,
+      "xy": [
+        174.54311,
+        111.74159
+      ]
+    },
+    {
+      "ref": "J2",
+      "type": "text",
+      "text": "J2",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        173.3,
+        98.2
+      ]
+    },
+    {
+      "ref": "R1",
+      "type": "text",
+      "text": "R1",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        143.0,
+        110.5
+      ]
+    },
+    {
+      "ref": "J1",
+      "type": "graphic",
+      "stroke": 0.2,
+      "xy": [
+        122.96709,
+        100.85258
+      ]
+    },
+    {
+      "ref": "J1",
+      "type": "graphic",
+      "stroke": 0.2,
+      "xy": [
+        122.96709,
+        110.85259
+      ]
+    },
+    {
+      "ref": "J1",
+      "type": "graphic",
+      "stroke": 0.2,
+      "xy": [
+        122.96709,
+        110.85259
+      ]
+    },
+    {
+      "ref": "J1",
+      "type": "graphic",
+      "stroke": 0.2,
+      "xy": [
+        123.36709,
+        111.45259
+      ]
+    },
+    {
+      "ref": "J1",
+      "type": "graphic",
+      "stroke": 0.2,
+      "xy": [
+        123.36709,
+        111.45259
+      ]
+    },
+    {
+      "ref": "J1",
+      "type": "graphic",
+      "stroke": 0.2,
+      "xy": [
+        127.22709,
+        110.85259
+      ]
+    },
+    {
+      "ref": "J1",
+      "type": "graphic",
+      "stroke": 0.2,
+      "xy": [
+        127.22709,
+        110.85259
+      ]
+    },
+    {
+      "ref": "J1",
+      "type": "graphic",
+      "stroke": 0.2,
+      "xy": [
+        131.27709,
+        111.45259
+      ]
+    },
+    {
+      "ref": "J1",
+      "type": "graphic",
+      "stroke": 0.2,
+      "xy": [
+        131.27709,
+        111.45259
+      ]
+    },
+    {
+      "ref": "J1",
+      "type": "graphic",
+      "stroke": 0.2,
+      "xy": [
+        135.10709,
+        110.85259
+      ]
+    },
+    {
+      "ref": "J1",
+      "type": "graphic",
+      "stroke": 0.2,
+      "xy": [
+        135.10709,
+        110.85259
+      ]
+    },
+    {
+      "ref": "J1",
+      "type": "graphic",
+      "stroke": 0.2,
+      "xy": [
+        136.66709,
+        110.85259
+      ]
+    },
+    {
+      "ref": "J1",
+      "type": "text",
+      "text": "J1",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        124.2,
+        98.2
+      ]
+    },
+    {
+      "ref": "L1",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        143.846,
+        98.246
+      ]
+    },
+    {
+      "ref": "L1",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        148.154,
+        102.554
+      ]
+    },
+    {
+      "ref": "L1",
+      "type": "text",
+      "text": "L1",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        142.6,
+        99.5
+      ]
+    },
+    {
+      "ref": "C4",
+      "type": "text",
+      "text": "C4",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        145.8,
+        111.0
+      ]
+    },
+    {
+      "ref": "board",
+      "type": "text",
+      "text": "BAT IN",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        128.199999,
+        98.2
+      ]
+    },
+    {
+      "ref": "board",
+      "type": "text",
+      "text": "VIN+",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        139.0,
+        101.8
+      ]
+    },
+    {
+      "ref": "board",
+      "type": "text",
+      "text": "GND-",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        139.0,
+        109.8
+      ]
+    },
+    {
+      "ref": "board",
+      "type": "text",
+      "text": "BUCK BOOST",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        154.2,
+        110.8
+      ]
+    },
+    {
+      "ref": "board",
+      "type": "text",
+      "text": "3V3 +",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        158.2,
+        102.1
+      ]
+    },
+    {
+      "ref": "board",
+      "type": "text",
+      "text": "GND-",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        158.2,
+        108.2
+      ]
+    },
+    {
+      "ref": "board",
+      "type": "text",
+      "text": "OUT",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        170.5,
+        98.2
+      ]
+    },
+    {
+      "ref": "board",
+      "type": "text",
+      "text": "Rev B",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        171.5,
+        100.0
+      ]
+    }
+  ],
+  "silk_mask": [
+    {
+      "silk": "L1 shape [143.846, 98.246]",
+      "pad": "L1.1",
+      "gap": 0.324034
+    },
+    {
+      "silk": "L1 shape [143.846, 98.246]",
+      "pad": "L1.2",
+      "gap": 0.324034
+    },
+    {
+      "silk": "L1 shape [148.154, 102.554]",
+      "pad": "L1.1",
+      "gap": 0.324034
+    },
+    {
+      "silk": "L1 shape [148.154, 102.554]",
+      "pad": "L1.2",
+      "gap": 0.324034
+    }
+  ],
+  "silk_holes": [
+    {
+      "silk": "C4 text C4",
+      "hole": "via [146.4, 109.9]",
+      "drillgap": 0.296508,
+      "annulusgap": 0.146484
+    },
+    {
+      "silk": "U1 text U1",
+      "hole": "via [149.4, 107.6]",
+      "drillgap": 0.434386,
+      "annulusgap": 0.284423
+    },
+    {
+      "silk": "board BUCK BOOST",
+      "hole": "via [157.0, 112.0]",
+      "drillgap": 0.525939,
+      "annulusgap": 0.375976
+    }
+  ],
+  "gerber_metadata": [
+    {
+      "file": "BuckBoost_RevB-B_Cu.gbl",
+      "function": "Copper,L2,Bot",
+      "circle_aperture_diameters_mm": [
+        0.6,
+        2.25
+      ],
+      "sha256": "1396fd8625ff54d7b04ca37141290a841a78ee1ac778dd6cf9f8e8e7575a7076"
+    },
+    {
+      "file": "BuckBoost_RevB-B_Mask.gbs",
+      "function": "Soldermask,Bot",
+      "circle_aperture_diameters_mm": [],
+      "sha256": "0659c1deaab505d7061e482d1d1deffb246c4f881dbed01eaa966b6e3816bae5"
+    },
+    {
+      "file": "BuckBoost_RevB-B_Silkscreen.gbo",
+      "function": "Legend,Bot",
+      "circle_aperture_diameters_mm": [],
+      "sha256": "0873cbd9c8d8a0f604ae616643e615f159b84f6dc58ae444344fa56b5554b2c0"
+    },
+    {
+      "file": "BuckBoost_RevB-F_Cu.gtl",
+      "function": "Copper,L1,Top",
+      "circle_aperture_diameters_mm": [
+        0.24,
+        0.3,
+        0.45,
+        0.55,
+        0.6,
+        0.7,
+        0.8,
+        1.2,
+        2.25
+      ],
+      "sha256": "2cbb9bddc09b4890030c629784d95ca2484b9dd65f0252def73bf97bf348b62d"
+    },
+    {
+      "file": "BuckBoost_RevB-F_Mask.gts",
+      "function": "Soldermask,Top",
+      "circle_aperture_diameters_mm": [],
+      "sha256": "018047756c67cf04eb818ae74c1ad2c38b9eb7bb692b586fbaff2f84578bd062"
+    },
+    {
+      "file": "BuckBoost_RevB-F_Silkscreen.gto",
+      "function": "Legend,Top",
+      "circle_aperture_diameters_mm": [
+        0.16,
+        0.2
+      ],
+      "sha256": "341b090492f72d001b1c53837489a399d9ea8241e31ee41962f3ea0da721b2f6"
+    }
+  ]
+}

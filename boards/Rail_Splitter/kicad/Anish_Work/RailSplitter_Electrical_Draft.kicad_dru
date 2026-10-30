@@ -1,0 +1,8 @@
+(version 1)
+# Provisional bench layout rules, not a qualified insulation design.
+(rule "General copper spacing" (constraint clearance (min 0.5mm)))
+# TI DDA land pattern leaves 0.45mm copper gap to the exposed pad.
+# This exception applies only between the manufacturer's U1 pads.
+(rule "U1 land pattern pad spacing"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('U1') && B.memberOfFootprint('U1')")
+  (constraint clearance (min 0.4mm)))

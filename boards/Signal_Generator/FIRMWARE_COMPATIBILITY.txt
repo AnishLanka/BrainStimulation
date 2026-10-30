@@ -1,0 +1,58 @@
+EXISTING FIRMWARE IS NOT COMPATIBLE WITH THE NEW DAC AS WRITTEN
+17 October 2026 — source inspection only; no firmware was flashed
+
+The Desktop project contains older DAC8411 firmware in both:
+  SP26_StimTheBrim_Software_Victoria_Seidel
+  SP26_Brainstim3_Pico_w_1_sig_gen_and_softKill_code_Marco_Elizondo/LUT_pico_w_1
+These are under C:/Users/peter/Desktop/455-Brain-Stim-2-main.
+Their dac8411.c and dac8411.h files were inspected without changing them.
+The corrected signal board uses DAC8830, so a PCB correction alone does not
+make those existing binaries compatible.
+
+REQUIRED SERIAL-INTERFACE CHANGE
+The old driver sends three bytes containing a DAC8411-specific code shifted
+left by six bits and configures SPI mode 1. DAC8830 accepts a 16-bit word,
+MSB first, samples on the rising SCLK edge, and updates on CS rising.
+For an idle-low clock use mode 0, with the full two-byte word held under one
+CS-low interval. Preserve the required CS lead/lag/high and data setup/hold
+timing at the DAC pins after isolation delay/skew.
+
+The old driver's intended midpoint 0x8000 becomes bytes 20 00 00. If those
+bits were received correctly by a DAC8830, its last 16 bits would be 0000,
+not midpoint. In this bipolar analog circuit that commands the negative
+endpoint. The old SPI edge configuration is an additional incompatibility.
+Do not use the old DAC8411 binary as the new board's bring-up firmware.
+
+REQUIRED SYSTEM-FIRMWARE WORK
+- Existing DAC driver provides two chip selects, GP5 and GP6, with GP2 SCLK
+  and GP3 MOSI. Four channels need four independently controlled selects.
+  The integration map keeps MCU pins symbolic until the controller wiring
+  and other GPIO uses are reconciled.
+- Establish midpoint before allowing the high-voltage output stage to run.
+  DAC power-on reset is zero code, not the bipolar circuit's zero output.
+  Software initialization does not replace a physical startup inhibit.
+- Use measured reference, offset and current gain to convert requested mA
+  to DAC amplitude. Unrestricted full scale exceeds 5 mA in this design.
+- Victoria's main.c specifies a 20-second full-amplitude ramp. A 0-to-5 mA
+  ramp over 20 s is 0.25 mA/s, exceeding the stated 0.1 mA/s limit. Marco's
+  pico_lut_test.c has a different, current-derived ramp expression; do not
+  assume all older firmware copies have the same behavior.
+- The inspected waveform.h sets 100,000 updates/s. At 30 kHz this gives
+  only 3.33 updates per cycle. That does not establish waveform quality.
+  Select sample rate, reconstruction response and allowable distortion
+  together, then measure the result. A four-channel shared SPI bus must
+  carry all channel samples plus CS gaps; DMA cannot remove wire-time limits.
+- The inspected Victoria loop performs blocking SPI writes after a timer
+  flag. It is not a completed four-channel DMA waveform engine. Its button
+  pulse helper also blocks for 10 ms; timing must be reviewed with wireless
+  handling and all normal/fault transitions included.
+- Add and test independent channel control, normal amplitude slew, fault
+  handling, output voltage/current sensing and the phone interface against
+  the final hardware. EN/FLT is not an electrode-disconnect signal.
+
+This file records integration findings, not a revised firmware release.
+Bench test the signal board on its low-voltage outputs before connecting
+the high-voltage chain. No existing code has been certified by this review.
+
+Primary interface reference: TI DAC8830 datasheet, serial interface and
+timing diagram: https://www.ti.com/lit/gpn/dac8830

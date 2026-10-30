@@ -1,0 +1,64 @@
+BOOST 79.7 V ENGINEERING BENCH PROTOTYPE - 2026-10-17
+
+Open Boost_Electrical_Draft.kicad_pro and .kicad_pcb in KiCad 10. This is the
+corrected 25-component LM5155/FDMC86240 prototype, with the accompanying final
+schematic and BOM. Bare-board Gerber/drill files are provided for a first bench
+build. Regulation, compensation, startup, efficiency, thermal rise and integrated
+loading still require powered measurements; the file checks do not establish
+those results.
+
+PRESERVED MECHANICS
+Original edge centerlines: 54.229 x 26.543 mm. Two copper layers, original native
+thickness 0.41116 mm. Original input/output connector copper, positions, rotation,
+pad numbers and drills are retained exactly. Both are 2.54 mm pitch with 1.016 mm
+drills and 1.57 mm pads. J1 pin1 is isolated 12 V input; J2 pin1 is nominal79.7 V
+output. Both pin2 terminals are HV_BOTTOM. Connector return is not MID.
+The backside has the pin/function legends; pin1 is marked on the front.
+
+PLACEMENT AND ROUTING
+L1, Q1 and D1 form the switching section. D1 is adjacent to the high-voltage
+C8 ceramic. The Q1 source current returns through R9; the sense-filter branch
+leaves the shunt's source-side pad separately through a Kelvin branch. Gate drive
+uses a short two-via back-layer path around the VCC decoupling connection. The
+bottom plane is HV_BOTTOM. U1 thermal/return vias are outside its exposed-pad
+solder opening. All vias are 0.60 mm / 0.30 mm drill and tented on both sides.
+
+General copper clearance is0.20 mm; /SW and /HV_TOP to other nets use0.50 mm.
+Copper-to-edge minimum is0.50 mm. These are explicit bench-layout constraints,
+not an insulation or end-product qualification. The high-voltage output trace
+uses the board perimeter and is separated from the feedback/compensation area.
+The controller's small-pitch lands retain their manufacturer package geometry.
+
+Q1 uses the verified onsemi CASE511DH recommended copper lands. Its two flank
+no-copper regions are board-level rule areas at local x[-1.7,-1.185] and
+[1.185,1.7], y[-1.3,0.4] relative to Q1 (145,102.5 mm). This preserves the
+manufacturer restriction while avoiding a KiCad footprint-zone serialization
+translation defect found during checks. The keepouts prohibit tracks, vias and
+pours; no unrelated pad overlaps them. Q1 pad1 is lower-left in the normal top
+view. The four-window exposed-pad paste is an engineering starting point for
+assembly review. Moving Q1 later requires moving these two board rule areas.
+
+C5 is Panasonic EEUEE2C101S: 100uF160V, 7.5 mm lead pitch. Reserve its maximum
+16.5 mm body diameter,22 mm body height and the manufacturer's vent clearance.
+The thin board needs suitable mechanical support for this large radial part.
+No mount-hole changes were introduced without a product enclosure definition.
+
+CHECKS
+PCB_DRC.json:0 violations,0 unconnected items,0 schematic parity issues.
+PCB_Validation.json independently checks all67 logical pins,25 components,
+source outline/thickness/connectors and actual mask/silk/hole geometry.
+Minimum silk-to-mask gap is0.169249 mm; minimum silk-to-drill gap is0.178527 mm.
+Via_Mask_Audit.json: every via drill is at least0.350005 mm from exposed pad
+mask; via annulus-to-mask minimum is0.200041 mm. No via-in-pad is used.
+References and legends use1.0 mm or taller text and0.16 mm strokes. Dense
+imported C5 silkscreen hatching was replaced by a clear outline and polarity.
+All local footprints match the native PCB. No individual DRC exclusions were
+added. The file report retains KiCad's default ignored check categories.
+
+ASSEMBLY / TEST
+Use the final Draft_BOM.csv and BOM_Selection_Evidence.txt, not source BOM values.
+R1=787k0.1% sets79.7 V nominal. Output capability15mA is a conditional bench
+design target, not a measured rating. Compensation and effective capacitor
+values require confirmation on hardware. Follow the integration guide for a
+current-limited, one-board-at-a-time startup and dummy-load testing. This
+prototype is not qualified for connection to a person.

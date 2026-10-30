@@ -1,0 +1,1 @@
+(fp_lib_table (version 7) (lib (name "BoostDraft") (type "KiCad") (uri "${KIPRJMOD}/BoostDraft.pretty") (options "") (descr "Draft component footprints")))

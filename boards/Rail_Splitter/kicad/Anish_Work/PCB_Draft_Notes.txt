@@ -1,0 +1,64 @@
+ROUTED RAIL-SPLITTER ENGINEERING PROTOTYPE - 2026-10-17
+
+Open RailSplitter_Electrical_Draft.kicad_pro and its .kicad_pcb in KiCad 10.
+The PCB contains all 12 components and routes the corrected schematic.
+This is an editable engineering bench prototype. Gerber and drill files are
+provided for ordering bare prototype boards; powered operation remains to be
+validated after assembly. See Fabrication_Order_Notes.txt and PCB_Validation.json.
+
+PRESERVED MECHANICS
+The outline centerline is exactly the recovered original:50.673 x19.431mm.
+The API bounding box is50.723 x19.481mm because it includes0.05mm drawing
+stroke. There are2 copper layers; design thickness is0.41116mm.
+Input and output connector copper pad shapes, sizes, positions, rotations,
+numbers and drill sizes match the original PCB exactly. J1 input is5.00mm
+pitch with1.50mm drills; J2 output is3.50mm pitch with1.30mm drills.
+Source connector labels were691211720002 and691214110003 respectively.
+Exact purchased MPNs, voltage ratings and mating orientation remain to verify.
+
+PINOUT ON THE BOARD
+J1 pin1=HV+ / HV_TOP, pin2=RETURN / HV_BOTTOM.
+J2 pin1=TOP / HV_TOP, pin2=MID, pin3=BOTTOM / HV_BOTTOM.
+The backside has readable1mm connector legends and "HV_BOTTOM IS NOT MID".
+Pin1 is marked on the front of both connectors; J1's original positive pin
+is the physically lower of its two pins in the normal top-view preview.
+Do not identify either return by connector orientation alone.
+
+ROUTING AND THERMAL PROVISION
+General copper clearance is0.50mm, minimum track width0.25mm, copper-edge
+clearance0.50mm. Explicit custom rules retain the TI DDA land pattern's
+approximately0.45mm exposed-pad gap by permitting0.40mm only between U1
+footprint pads. This is a documented package-specific constraint, not an
+insulation qualification or a global reduced-clearance rule. The bench rules
+must still be assessed against maximum fault/overshoot voltage, environment,
+assembly and the system's insulation requirements before operation beyond the controlled bench prototype.
+
+The bottom plane is HV_BOTTOM. It is the negative rail relative to MID, not
+system ground or chassis. U1 exposed pad9, E/D_COM pin1 and V- pin4 return to
+that plane. A2mm front thermal strap connects the exposed pad to four0.60mm
+vias with0.30mm drills placed outside its solder opening. These vias and all
+signal/return vias are tented on both sides. This avoids open drill holes in
+the exposed-pad solder opening; it does not establish junction temperature.
+The full-span C6 bypass now has a direct short branch from U1 V+; its return
+uses a nearby plane via. The buffer feedback connects before R3 as drafted.
+
+Silkscreen uses at least1mm text and0.16mm strokes. Short passive body marks
+were removed where their old geometry would reduce mask clearance. References
+and connector polarity remain visible. Local footprints match the PCB; copper
+lands retain the schematic package dimensions and restored connector geometry.
+
+CHECKS COMPLETED
+PCB_DRC.json:0 geometry violations,0 unconnected items,0 schematic parity issues.
+PCB_Validation.json independently compares every numbered pad/net to the
+schematic, exact source connector geometry, outline and thickness, and actual
+front/back mask-to-silk distances. The top and mirrored bottom previews show
+the same board. Local libraries are included. Default KiCad ignored checks
+remain listed in PCB_DRC.json; no specific DRC exclusions were added.
+
+REMAINING ENGINEERING WORK
+R3=49.9ohm is still provisional. Validate stability, start/stop behavior, actual
+capacitor effective values, midpoint-load imbalance, thermal rise, output faults
+and the complete power budget. At5mA imbalance R3's nominal DC drop is249.5mV.
+Confirm final BOM, connector procurement and stencil/assembly details. The
+0.41116mm design must be matched to the fabricator's thin-board process.
+The PCB and the clean file checks do not qualify connection to a person.

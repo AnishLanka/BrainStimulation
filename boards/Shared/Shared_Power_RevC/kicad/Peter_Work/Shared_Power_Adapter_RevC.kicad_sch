@@ -1,0 +1,585 @@
+(kicad_sch (version 20250114) (generator "eeschema") (uuid "3e664a81-7a62-5092-a1fe-1314a5c402b2") (paper "A3") (title_block (title "Shared regulated power adapter - bench prototype") (date "2026-10-17") (rev "C") (comment 1 "Regulated5V bench input; release requiresfreshPCB validation")) (lib_symbols (symbol "PowerCandidate:TPS63802DLAR" (pin_names (offset .7)) (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 10.62 0) (effects (font (size 1 1)) (justify left)))(property "Value" "TPS63802DLAR" (at 0 12.62 0) (effects (font (size 1 1)) (justify left)))(symbol "TPS63802DLAR_0_1" (rectangle (start -12.7 7.62) (end 12.7 -7.62) (stroke (width .254) (type default)) (fill (type background))))(symbol "TPS63802DLAR_1_1" (pin power_in line (at -17.78 5.08 0) (length 5.08) (name "VIN" (effects (font (size 0.85 0.85)))) (number "10" (effects (font (size 0.85 0.85)))))(pin input line (at -17.78 2.54 0) (length 5.08) (name "EN" (effects (font (size 0.85 0.85)))) (number "1" (effects (font (size 0.85 0.85)))))(pin input line (at -17.78 0 0) (length 5.08) (name "MODE" (effects (font (size 0.85 0.85)))) (number "2" (effects (font (size 0.85 0.85)))))(pin power_in line (at -17.78 -2.54 0) (length 5.08) (name "AGND" (effects (font (size 0.85 0.85)))) (number "3" (effects (font (size 0.85 0.85)))))(pin power_in line (at -17.78 -5.08 0) (length 5.08) (name "GND" (effects (font (size 0.85 0.85)))) (number "8" (effects (font (size 0.85 0.85)))))(pin passive line (at 17.78 5.08 180) (length 5.08) (name "L1" (effects (font (size 0.85 0.85)))) (number "9" (effects (font (size 0.85 0.85)))))(pin passive line (at 17.78 2.54 180) (length 5.08) (name "L2" (effects (font (size 0.85 0.85)))) (number "7" (effects (font (size 0.85 0.85)))))(pin power_out line (at 17.78 0 180) (length 5.08) (name "VOUT" (effects (font (size 0.85 0.85)))) (number "6" (effects (font (size 0.85 0.85)))))(pin input line (at 17.78 -2.54 180) (length 5.08) (name "FB" (effects (font (size 0.85 0.85)))) (number "4" (effects (font (size 0.85 0.85)))))(pin open_collector line (at 17.78 -5.08 180) (length 5.08) (name "PG" (effects (font (size 0.85 0.85)))) (number "5" (effects (font (size 0.85 0.85)))))))(symbol "PowerCandidate:R3M-1212S_SMD" (pin_names (offset .7)) (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 8.08 0) (effects (font (size 1 1)) (justify left)))(property "Value" "R3M-1212S_SMD" (at 0 10.08 0) (effects (font (size 1 1)) (justify left)))(symbol "R3M-1212S_SMD_0_1" (rectangle (start -13.97 5.08) (end 13.97 -5.08) (stroke (width .254) (type default)) (fill (type background))))(symbol "R3M-1212S_SMD_1_1" (pin power_in line (at -19.05 2.54 0) (length 5.08) (name "+VIN" (effects (font (size 0.85 0.85)))) (number "1" (effects (font (size 0.85 0.85)))))(pin power_in line (at -19.05 0 0) (length 5.08) (name "-VIN" (effects (font (size 0.85 0.85)))) (number "2" (effects (font (size 0.85 0.85)))))(pin input line (at -19.05 -2.54 0) (length 5.08) (name "CTRL" (effects (font (size 0.85 0.85)))) (number "4" (effects (font (size 0.85 0.85)))))(pin power_out line (at 19.05 2.54 180) (length 5.08) (name "+VOUT" (effects (font (size 0.85 0.85)))) (number "7" (effects (font (size 0.85 0.85)))))(pin power_out line (at 19.05 0 180) (length 5.08) (name "-VOUT" (effects (font (size 0.85 0.85)))) (number "6" (effects (font (size 0.85 0.85)))))(pin no_connect line (at 19.05 -2.54 180) (length 5.08) (name "NC" (effects (font (size 0.85 0.85)))) (number "5" (effects (font (size 0.85 0.85)))))))(symbol "PowerCandidate:Connector2" (pin_names (offset .7)) (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 6.81 0) (effects (font (size 1 1)) (justify left)))(property "Value" "Connector2" (at 0 8.81 0) (effects (font (size 1 1)) (justify left)))(symbol "Connector2_0_1" (rectangle (start -5.08 3.81) (end 5.08 -3.81) (stroke (width .254) (type default)) (fill (type background))))(symbol "Connector2_1_1" (pin passive line (at -10.16 1.27 0) (length 5.08) (name "1" (effects (font (size 0.85 0.85)))) (number "1" (effects (font (size 0.85 0.85)))))(pin passive line (at -10.16 -1.27 0) (length 5.08) (name "2" (effects (font (size 0.85 0.85)))) (number "2" (effects (font (size 0.85 0.85)))))))(symbol "PowerCandidate:Fuse" (pin_names (offset .7)) (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 5.54 0) (effects (font (size 1 1)) (justify left)))(property "Value" "Fuse" (at 0 7.54 0) (effects (font (size 1 1)) (justify left)))(symbol "Fuse_0_1" (rectangle (start -3.81 2.54) (end 3.81 -2.54) (stroke (width .254) (type default)) (fill (type background))))(symbol "Fuse_1_1" (pin passive line (at -8.89 0 0) (length 5.08) (name "1" (effects (font (size 0.85 0.85)))) (number "1" (effects (font (size 0.85 0.85)))))(pin passive line (at 8.89 0 180) (length 5.08) (name "2" (effects (font (size 0.85 0.85)))) (number "2" (effects (font (size 0.85 0.85)))))))(symbol "PowerCandidate:R"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "R"
+			(at 2.032 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 0 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "R res resistor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "R_0_1"
+			(rectangle
+				(start -1.016 -2.54)
+				(end 1.016 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "R_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)(symbol "PowerCandidate:C"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 0.635 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0.9652 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "cap capacitor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "C_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "C_0_1"
+			(polyline
+				(pts
+					(xy -2.032 0.762) (xy 2.032 0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.032 -0.762) (xy 2.032 -0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "C_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 2.794)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 2.794)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)(symbol "PowerCandidate:L"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "L"
+			(at -1.27 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "L"
+			(at 1.905 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "inductor choke coil reactor magnetic"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "L_0_1"
+			(arc
+				(start 0 2.54)
+				(mid 0.6323 1.905)
+				(end 0 1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 1.27)
+				(mid 0.6323 0.635)
+				(end 0 0)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 0)
+				(mid 0.6323 -0.635)
+				(end 0 -1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 -1.27)
+				(mid 0.6323 -1.905)
+				(end 0 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "L_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)(symbol "PowerCandidate:PWR_FLAG"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#FLG"
+			(at 0 1.905 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 0 3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "flag power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_0"
+			(pin power_out line
+				(at 0 0 90)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_1"
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)) (text "SHARED POWER ADAPTER - BENCH PROTOTYPE" (at 20 14 0) (effects (font (size 2.2 2.2)) (justify left top)) (uuid "f3cf85c4-8873-597d-a775-fa6f47aebe19"))(text "REGULATED 5 V BENCH INPUT - 8 A SOURCE ALLOCATION - NO BATTERY CHARGER" (at 20 21 0) (effects (font (size 1.4 1.4)) (justify left top)) (uuid "47e8cdb0-cff1-5c9c-a398-edf6c027229f"))(text "First bench use: current-limited 5 V source. Four regulated isolated 12 V outputs replace GAPTEC modules AND their 200-ohm loads.\nTwo 3.3 V banks are separate outputs. Total input power remains limited by the actual external source; never add output nameplate ratings." (at 20 28 0) (effects (font (size 1.1 1.1)) (justify left top)) (uuid "ed7bc445-60b3-51c0-8529-fa0d7e620fd2"))(symbol (lib_id "PowerCandidate:Connector2") (at 39.37 53.34 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "0ba7ec5a-2067-59db-bf4c-00a7af11aaa6")(property "Reference" "J1" (at 26.37 42.53 0) (effects (font (size 1 1)) (justify left)))(property "Value" "5 V INPUT" (at 26.37 44.83 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical" (at 39.37 53.34 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "B2P-VH" (at 39.37 53.34 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "Regulated nominal5V, never above5.25V; module pins>=4.5V after fuse/cable drops. External8A current-limited source;16AWG harness,VHR-2N housing,SVH-41T-P1.1 contacts. Source capacity is not a measured PCB rating." (at 39.37 53.34 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://www.jst-mfg.com/product/index.php?lang=2&series=262" (at 39.37 53.34 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "J1") (unit 1)))))(wire (pts (xy 29.21 52.07) (xy 21.59 52.07)) (stroke (width 0) (type default)) (uuid "7188cdf8-0da5-55c5-8917-b774187efdbb"))(label "P5V_RAW" (at 21.59 52.07 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "d07f75af-04d0-5206-9c1e-e1a1d41b3440"))(wire (pts (xy 29.21 54.61) (xy 21.59 54.61)) (stroke (width 0) (type default)) (uuid "220d4d6f-440b-5898-90e2-d0436c999553"))(label "SYS_GND" (at 21.59 54.61 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "074079f0-97d2-5db6-afef-3029d5cb6146"))(symbol (lib_id "PowerCandidate:Fuse") (at 91.44 53.34 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "8c7dd73a-fe2b-596c-8eba-51f454c1054f")(property "Reference" "F0" (at 78.44 42.53 0) (effects (font (size 1 1)) (justify left)))(property "Value" "T8A" (at 78.44 44.83 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:Fuse_Schurter_UMT250" (at 91.44 53.34 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "3403.0175.11" (at 91.44 53.34 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "Main input time-lag fuse; branch allocation applies; source current limit required." (at 91.44 53.34 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://www.schurter.com/en/datasheet/typ_UMT_250.pdf" (at 91.44 53.34 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "F0") (unit 1)))))(wire (pts (xy 82.55 53.34) (xy 74.93 53.34)) (stroke (width 0) (type default)) (uuid "b3edda76-1388-5767-beda-3beb970ef46a"))(label "P5V_RAW" (at 74.93 53.34 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "64af8cbf-c69d-51ad-ac59-2f38e594371b"))(wire (pts (xy 100.33 53.34) (xy 107.95 53.34)) (stroke (width 0) (type default)) (uuid "2f23ac88-04f3-5910-8e62-2e3399d4a9bf"))(label "P5V_IN" (at 107.95 53.34 180) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "499fef42-eadb-5ee9-abdf-df66c864df38"))(symbol (lib_id "PowerCandidate:PWR_FLAG") (at 20.32 62.23 0) (unit 1) (in_bom no) (on_board no) (dnp no) (uuid "15b06491-56da-5c95-9080-7a5e8246aa5a")(property "Reference" "#FLG0" (at 7.32 51.42 0) (effects (font (size 1 1)) (justify left) hide))(property "Value" "PWR_FLAG" (at 7.32 53.72 0) (effects (font (size 1 1)) (justify left) hide))(property "Footprint" "" (at 20.32 62.23 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "" (at 20.32 62.23 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "" (at 20.32 62.23 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "" (at 20.32 62.23 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "#FLG0") (unit 1)))))(wire (pts (xy 20.32 62.23) (xy 20.32 67.31)) (stroke (width 0) (type default)) (uuid "c412b0d0-b503-5cf9-b6a5-6749e1ee23d6"))(label "P5V_RAW" (at 20.32 67.31 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "9cf1b0c4-21ab-5807-9008-344f33099a25"))(symbol (lib_id "PowerCandidate:PWR_FLAG") (at 91.44 68.58 0) (unit 1) (in_bom no) (on_board no) (dnp no) (uuid "29b71562-7c4b-5ebf-940f-b8808f3d2922")(property "Reference" "#FLG1" (at 78.44 57.77 0) (effects (font (size 1 1)) (justify left) hide))(property "Value" "PWR_FLAG" (at 78.44 60.07 0) (effects (font (size 1 1)) (justify left) hide))(property "Footprint" "" (at 91.44 68.58 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "" (at 91.44 68.58 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "" (at 91.44 68.58 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "" (at 91.44 68.58 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "#FLG1") (unit 1)))))(wire (pts (xy 91.44 68.58) (xy 91.44 73.66)) (stroke (width 0) (type default)) (uuid "fc81355a-a63d-55f4-955c-a1db67d743ad"))(label "P5V_IN" (at 91.44 73.66 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "36344ddb-7ee4-5742-9b9d-65c4f9eae60c"))(symbol (lib_id "PowerCandidate:PWR_FLAG") (at 46.99 68.58 0) (unit 1) (in_bom no) (on_board no) (dnp no) (uuid "646a6c38-c5fd-5edf-8664-b810f2f5b607")(property "Reference" "#FLG2" (at 33.99 57.77 0) (effects (font (size 1 1)) (justify left) hide))(property "Value" "PWR_FLAG" (at 33.99 60.07 0) (effects (font (size 1 1)) (justify left) hide))(property "Footprint" "" (at 46.99 68.58 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "" (at 46.99 68.58 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "" (at 46.99 68.58 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "" (at 46.99 68.58 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "#FLG2") (unit 1)))))(wire (pts (xy 46.99 68.58) (xy 46.99 73.66)) (stroke (width 0) (type default)) (uuid "2209bdf4-83f8-5375-8ed8-58e8a7d5f75f"))(label "SYS_GND" (at 46.99 73.66 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "c4c1b832-570b-5e0c-ba2d-2e0c2735e702"))(text "INPUT RULES\nNo raw 1S cell: R3M/TMR modules need >=4.5 V at pins.\nUse current-limited regulated5V bench source, nominal8A.\nNo reverse-polarity or USB negotiation circuit is included.\nFour-channel planning draw5.53A; verify startup/cable losses.\nAll branch nameplates simultaneously exceed the source budget." (at 20 80 0) (effects (font (size 1.0 1.0)) (justify left top)) (uuid "fd96b754-a15b-57f2-b0a9-4790cb06ceea"))(symbol (lib_id "PowerCandidate:Fuse") (at 30.48 115.57 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "d29fb5e7-8ab8-59f2-a94f-ffae05849391")(property "Reference" "F6" (at 17.48 104.76 0) (effects (font (size 1 1)) (justify left)))(property "Value" "T2.5A" (at 17.48 107.06 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:Fuse_Schurter_UMT250" (at 30.48 115.57 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "3403.0170.11" (at 30.48 115.57 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "Input branch fuse,2A maximum3.3V bank allocation; startup coordination must be measured." (at 30.48 115.57 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://www.schurter.com/en/datasheet/typ_UMT_250.pdf" (at 30.48 115.57 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "F6") (unit 1)))))(wire (pts (xy 21.59 115.57) (xy 13.97 115.57)) (stroke (width 0) (type default)) (uuid "9ffff8cd-b410-5541-92e4-0b2ec8eaa092"))(label "P5V_IN" (at 13.97 115.57 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "c397229d-3ca2-5fa8-8bf2-18d57375868c"))(wire (pts (xy 39.37 115.57) (xy 46.99 115.57)) (stroke (width 0) (type default)) (uuid "9a60a9a6-fdc5-5e42-a2ce-2b13394d2cc7"))(label "P5V_LOGIC_A" (at 46.99 115.57 180) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "06258202-8e24-5913-9b5b-35b83b9b3784"))(symbol (lib_id "PowerCandidate:PWR_FLAG") (at 22.86 149.86 0) (unit 1) (in_bom no) (on_board no) (dnp no) (uuid "a53d49ac-8aab-5290-8ff0-896d5c6d2d34")(property "Reference" "#FLGL1" (at 9.86 139.05 0) (effects (font (size 1 1)) (justify left) hide))(property "Value" "PWR_FLAG" (at 9.86 141.35 0) (effects (font (size 1 1)) (justify left) hide))(property "Footprint" "" (at 22.86 149.86 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "" (at 22.86 149.86 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "" (at 22.86 149.86 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "" (at 22.86 149.86 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "#FLGL1") (unit 1)))))(wire (pts (xy 22.86 149.86) (xy 22.86 154.94)) (stroke (width 0) (type default)) (uuid "75b414ec-10e9-5507-b715-77afa05e948e"))(label "P5V_LOGIC_A" (at 22.86 154.94 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "3ff77a43-5900-5642-9b93-9c830f0dc4bf"))(symbol (lib_id "PowerCandidate:TPS63802DLAR") (at 69.85 132.08 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "45135779-fcc1-5947-b270-d17dc893edc4")(property "Reference" "U1" (at 56.85 118.73 0) (effects (font (size 1 1)) (justify left)))(property "Value" "TPS63802DLAR" (at 56.85 121.03 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:Texas_DLA0010A_TPS63802" (at 69.85 132.08 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "TPS63802DLAR" (at 69.85 132.08 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "ExactTI DLA0010A land pattern; no invented exposed pad." (at 69.85 132.08 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps63802.pdf" (at 69.85 132.08 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "U1") (unit 1)))))(wire (pts (xy 52.07 127) (xy 44.45 127)) (stroke (width 0) (type default)) (uuid "8abbdad6-7baa-57e1-b9b4-aa3435ecb3dd"))(label "P5V_LOGIC_A" (at 44.45 127 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "7acac934-329b-50f4-b9c6-72bb8db968d9"))(wire (pts (xy 52.07 129.54) (xy 44.45 129.54)) (stroke (width 0) (type default)) (uuid "7ddf9af4-bb1a-5ac9-9697-8c794a150335"))(label "P5V_LOGIC_A" (at 44.45 129.54 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "e6532b8a-34fd-53e7-94b2-3522719338ce"))(wire (pts (xy 52.07 132.08) (xy 44.45 132.08)) (stroke (width 0) (type default)) (uuid "94a0773a-55bd-5ab0-999f-b66c8b316b5c"))(label "P5V_LOGIC_A" (at 44.45 132.08 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "3a101c31-98e9-5ef4-bde1-e41de541235e"))(wire (pts (xy 52.07 134.62) (xy 44.45 134.62)) (stroke (width 0) (type default)) (uuid "f951e661-e5a0-59da-b6ce-cded6a93ec6d"))(label "SYS_GND" (at 44.45 134.62 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "b653f99a-16c0-54e9-8ff7-6779151ea9b0"))(wire (pts (xy 52.07 137.16) (xy 44.45 137.16)) (stroke (width 0) (type default)) (uuid "aa55bdfe-2041-5c6a-87a5-27be8b5c29fb"))(label "SYS_GND" (at 44.45 137.16 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "cf82c74f-25dc-51d4-9cea-56d272441725"))(wire (pts (xy 87.63 127) (xy 95.25 127)) (stroke (width 0) (type default)) (uuid "7bd72e08-e219-506b-b5c4-02e9963a30f8"))(label "L1_A" (at 95.25 127 180) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "a7435a6d-3557-58e3-b45d-21f159d529c8"))(wire (pts (xy 87.63 129.54) (xy 95.25 129.54)) (stroke (width 0) (type default)) (uuid "bba15f15-33fc-54c3-98e0-c6f1702c5ca0"))(label "L2_A" (at 95.25 129.54 180) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "14556935-b4c3-59bc-9aef-1e7faaba8bab"))(wire (pts (xy 87.63 132.08) (xy 95.25 132.08)) (stroke (width 0) (type default)) (uuid "3c84165b-3db0-5942-a969-875d5f43430d"))(label "3V3_A" (at 95.25 132.08 180) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "78c2304f-d943-52a3-a162-c3218d705352"))(wire (pts (xy 87.63 134.62) (xy 95.25 134.62)) (stroke (width 0) (type default)) (uuid "38b08b6b-aced-572f-b1cc-59c139a3b703"))(label "FB_A" (at 95.25 134.62 180) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "35165e64-27c1-542b-a3f7-937b44e798e7"))(wire (pts (xy 87.63 137.16) (xy 95.25 137.16)) (stroke (width 0) (type default)) (uuid "22df413a-0316-5f88-b7fb-2e539077107f"))(label "PG_A" (at 95.25 137.16 180) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "053a35cc-2105-5631-9197-bbed8b12f779"))(symbol (lib_id "PowerCandidate:L") (at 121.92 111.76 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "3d5b63d4-f764-58c8-adf3-6b174de55354")(property "Reference" "L1" (at 125.92 110.26 0) (effects (font (size 1 1)) (justify left)))(property "Value" "0.47uH" (at 125.92 112.56 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:L_Coilcraft_XFL4015" (at 121.92 111.76 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "XFL4015-471MEC" (at 121.92 111.76 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "Exact manufacturer lands .98x3.4mm,2.37mm center pitch." (at 121.92 111.76 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps63802.pdf" (at 121.92 111.76 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "L1") (unit 1)))))(wire (pts (xy 121.92 107.95) (xy 121.92 102.87)) (stroke (width 0) (type default)) (uuid "d360bde7-5bd6-5f06-85d4-bbe532efff42"))(label "L1_A" (at 121.92 102.87 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "38a59c40-99f5-5244-87f5-2fd9bce86b8b"))(wire (pts (xy 121.92 115.57) (xy 121.92 120.65)) (stroke (width 0) (type default)) (uuid "4f94eda4-696f-5eb8-83cc-26614d19a2f0"))(label "L2_A" (at 121.92 120.65 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "709c1bda-d601-50b0-97f4-d6b9eb19eb23"))(symbol (lib_id "PowerCandidate:C") (at 157.48 111.76 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "1ee1d99a-a971-5d79-ae8e-3a7a5c6089dc")(property "Reference" "C11" (at 161.48 110.26 0) (effects (font (size 1 1)) (justify left)))(property "Value" "22u 16V" (at 161.48 112.56 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:C_1206_3216Metric" (at 157.48 111.76 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "GRM31CR61C226KE15L" (at 157.48 111.76 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "Input; verify >=5uF effective at5.25V and temperature." (at 157.48 111.76 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://www.ti.com/lit/pdf/tidrmp4" (at 157.48 111.76 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "C11") (unit 1)))))(wire (pts (xy 157.48 107.95) (xy 157.48 102.87)) (stroke (width 0) (type default)) (uuid "9d9fc21c-c0e2-5080-80fc-508d0ae89199"))(label "P5V_LOGIC_A" (at 157.48 102.87 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "f469dfae-1e52-5546-9ecd-e469c5038f9b"))(wire (pts (xy 157.48 115.57) (xy 157.48 120.65)) (stroke (width 0) (type default)) (uuid "ed46e612-3b36-5262-a9df-1215139c4011"))(label "SYS_GND" (at 157.48 120.65 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "0074f109-74da-5080-bd4f-297dc244191d"))(symbol (lib_id "PowerCandidate:C") (at 195.58 111.76 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "b62f2072-30f5-5bde-b1ed-76bb8cb67c5f")(property "Reference" "C12" (at 199.58 110.26 0) (effects (font (size 1 1)) (justify left)))(property "Value" "22u 16V" (at 199.58 112.56 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:C_1206_3216Metric" (at 195.58 111.76 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "GRM31CR61C226KE15L" (at 195.58 111.76 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "Two parallel output caps; acceptance >=14uF effective total at 3.3V." (at 195.58 111.76 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://www.ti.com/lit/pdf/tidrmp4" (at 195.58 111.76 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "C12") (unit 1)))))(wire (pts (xy 195.58 107.95) (xy 195.58 102.87)) (stroke (width 0) (type default)) (uuid "8796bf77-1abe-5b46-8306-8dbaa6559100"))(label "3V3_A" (at 195.58 102.87 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "267aca30-78a8-5f14-b044-5808d74972f6"))(wire (pts (xy 195.58 115.57) (xy 195.58 120.65)) (stroke (width 0) (type default)) (uuid "d05c94ba-245c-530f-9364-762cc3173fe2"))(label "SYS_GND" (at 195.58 120.65 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "5ed16196-2209-5c58-b5bb-120cbf171533"))(symbol (lib_id "PowerCandidate:C") (at 232.41 111.76 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "76d18067-e0f4-5aa8-bfe8-8d087c1720eb")(property "Reference" "C13" (at 236.41 110.26 0) (effects (font (size 1 1)) (justify left)))(property "Value" "22u 16V" (at 236.41 112.56 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:C_1206_3216Metric" (at 232.41 111.76 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "GRM31CR61C226KE15L" (at 232.41 111.76 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "Two parallel output caps; acceptance >=14uF effective total at 3.3V." (at 232.41 111.76 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://www.ti.com/lit/pdf/tidrmp4" (at 232.41 111.76 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "C13") (unit 1)))))(wire (pts (xy 232.41 107.95) (xy 232.41 102.87)) (stroke (width 0) (type default)) (uuid "f30a7cdb-3ab4-59c6-8998-e36ac24a2eaa"))(label "3V3_A" (at 232.41 102.87 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "9e355384-2bb6-5ca9-bcaa-07bf644ee494"))(wire (pts (xy 232.41 115.57) (xy 232.41 120.65)) (stroke (width 0) (type default)) (uuid "5ead9a74-3a6e-52ac-8f0e-1bf8b98d6774"))(label "SYS_GND" (at 232.41 120.65 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "8bf15d2f-1ff8-5c14-810f-acbbd036527f"))(symbol (lib_id "PowerCandidate:R") (at 121.92 148.59 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "6e288546-498d-5ff4-97df-3545d6338658")(property "Reference" "R11" (at 125.92 147.09 0) (effects (font (size 1 1)) (justify left)))(property "Value" "280k 0.1%" (at 125.92 149.39 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:R_0603_1608Metric" (at 121.92 148.59 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "TNPW0603280KBEEA" (at 121.92 148.59 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "Within manufacturer0603 range<=332k; .5*(1+280/49.9)=3.30561V nominal. 25ppm/K,standardEA packaging." (at 121.92 148.59 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://www.vishay.com/docs/28758/tnpw_e3.pdf" (at 121.92 148.59 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "R11") (unit 1)))))(wire (pts (xy 121.92 144.78) (xy 121.92 139.7)) (stroke (width 0) (type default)) (uuid "42e7b294-699e-5594-9e6b-ac326f4bb6c4"))(label "3V3_A" (at 121.92 139.7 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "61a2746f-6b8e-549e-adfd-855cc4d4cd9a"))(wire (pts (xy 121.92 152.4) (xy 121.92 157.48)) (stroke (width 0) (type default)) (uuid "4b9ef476-87c3-5491-9a27-94df26392163"))(label "FB_A" (at 121.92 157.48 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "5b0f1250-f975-5483-8b2c-fed1918cea4b"))(symbol (lib_id "PowerCandidate:R") (at 157.48 148.59 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "fadb14b8-eef1-5348-9334-6930ed42a3e8")(property "Reference" "R12" (at 161.48 147.09 0) (effects (font (size 1 1)) (justify left)))(property "Value" "49.9k 0.1%" (at 161.48 149.39 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:R_0603_1608Metric" (at 157.48 148.59 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "TNPW060349K9BEEA" (at 157.48 148.59 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "Low-side divider<100k perTI;25ppm/K,standardEA packaging." (at 157.48 148.59 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://www.vishay.com/docs/28758/tnpw_e3.pdf" (at 157.48 148.59 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "R12") (unit 1)))))(wire (pts (xy 157.48 144.78) (xy 157.48 139.7)) (stroke (width 0) (type default)) (uuid "9e50f5a2-8b20-5c03-b27a-9ee8d49635eb"))(label "FB_A" (at 157.48 139.7 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "463e03b9-8d3d-5185-be7c-288d4c7cc803"))(wire (pts (xy 157.48 152.4) (xy 157.48 157.48)) (stroke (width 0) (type default)) (uuid "51820a24-ff0a-530c-bc80-3b80cb7cca94"))(label "SYS_GND" (at 157.48 157.48 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "f2a2e9bc-4beb-5ead-857b-a960e29c16c1"))(symbol (lib_id "PowerCandidate:R") (at 195.58 148.59 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "017bffaf-de5c-5d94-b178-5f80486edfe6")(property "Reference" "R13" (at 199.58 147.09 0) (effects (font (size 1 1)) (justify left)))(property "Value" "100k 1%" (at 199.58 149.39 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:R_0603_1608Metric" (at 195.58 148.59 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "CRCW0603100KFKEA" (at 195.58 148.59 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "PG pullup; output indicator only." (at 195.58 148.59 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps63802.pdf" (at 195.58 148.59 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "R13") (unit 1)))))(wire (pts (xy 195.58 144.78) (xy 195.58 139.7)) (stroke (width 0) (type default)) (uuid "a729131c-624b-502c-a016-61ad1411785f"))(label "3V3_A" (at 195.58 139.7 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "5cdd795c-0d82-5ac7-984e-a005042458c7"))(wire (pts (xy 195.58 152.4) (xy 195.58 157.48)) (stroke (width 0) (type default)) (uuid "1fb2b0b1-715e-5583-9e1a-57e7841897fc"))(label "PG_A" (at 195.58 157.48 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "6854b29f-0c14-59ff-954e-9f01a249d8b4"))(symbol (lib_id "PowerCandidate:Connector2") (at 242.57 148.59 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "9b4434da-b1b1-5b94-9731-c53ad601f636")(property "Reference" "J2" (at 229.57 137.78 0) (effects (font (size 1 1)) (justify left)))(property "Value" "3.3 V BANK A" (at 229.57 140.08 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical" (at 242.57 148.59 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "B2P-VH" (at 242.57 148.59 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "Dedicated dual-channel SignalGen supply; never parallel with other bank. Bank A design target2A, subject to source/thermal budget." (at 242.57 148.59 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "" (at 242.57 148.59 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "J2") (unit 1)))))(wire (pts (xy 232.41 147.32) (xy 224.79 147.32)) (stroke (width 0) (type default)) (uuid "108b2a00-e049-5c37-8b62-6ce7772eb0dc"))(label "3V3_A" (at 224.79 147.32 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "743f6571-99a2-5c01-bab1-d3fb7d3b05ec"))(wire (pts (xy 232.41 149.86) (xy 224.79 149.86)) (stroke (width 0) (type default)) (uuid "9f8f7591-4d65-5cc1-af91-67adfb9b716c"))(label "SYS_GND" (at 224.79 149.86 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "51dbf2de-5014-5a9d-a17e-843b29111059"))(symbol (lib_id "PowerCandidate:Fuse") (at 30.48 193.04 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "7014a396-980e-5cc5-8d65-14e02efed35e")(property "Reference" "F7" (at 17.48 182.23 0) (effects (font (size 1 1)) (justify left)))(property "Value" "T2.5A" (at 17.48 184.53 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:Fuse_Schurter_UMT250" (at 30.48 193.04 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "3403.0170.11" (at 30.48 193.04 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "Input branch fuse,2A maximum3.3V bank allocation; startup coordination must be measured." (at 30.48 193.04 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://www.schurter.com/en/datasheet/typ_UMT_250.pdf" (at 30.48 193.04 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "F7") (unit 1)))))(wire (pts (xy 21.59 193.04) (xy 13.97 193.04)) (stroke (width 0) (type default)) (uuid "b2eb8b27-aa5b-50bc-8718-c617f3601da8"))(label "P5V_IN" (at 13.97 193.04 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "a6e1765a-f3ee-59f3-9501-cd59b2b59214"))(wire (pts (xy 39.37 193.04) (xy 46.99 193.04)) (stroke (width 0) (type default)) (uuid "392e250f-65fd-5168-828b-73eb3fe1345e"))(label "P5V_LOGIC_B" (at 46.99 193.04 180) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "fb9c95d0-e237-5e81-903f-9da243ff0609"))(symbol (lib_id "PowerCandidate:PWR_FLAG") (at 22.86 228.6 0) (unit 1) (in_bom no) (on_board no) (dnp no) (uuid "a979b2d7-4b98-5105-b7ce-cd16e1a8584e")(property "Reference" "#FLGL2" (at 9.86 217.79 0) (effects (font (size 1 1)) (justify left) hide))(property "Value" "PWR_FLAG" (at 9.86 220.09 0) (effects (font (size 1 1)) (justify left) hide))(property "Footprint" "" (at 22.86 228.6 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "" (at 22.86 228.6 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "" (at 22.86 228.6 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "" (at 22.86 228.6 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "#FLGL2") (unit 1)))))(wire (pts (xy 22.86 228.6) (xy 22.86 233.68)) (stroke (width 0) (type default)) (uuid "35d1b79f-cbbd-5ffb-b83c-80a1694227f0"))(label "P5V_LOGIC_B" (at 22.86 233.68 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "f0d25d9d-6d80-587f-980e-4468c31cc1e2"))(symbol (lib_id "PowerCandidate:TPS63802DLAR") (at 69.85 209.55 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "80c99005-fd37-594c-802e-f5a206f4e0fd")(property "Reference" "U2" (at 56.85 196.2 0) (effects (font (size 1 1)) (justify left)))(property "Value" "TPS63802DLAR" (at 56.85 198.5 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:Texas_DLA0010A_TPS63802" (at 69.85 209.55 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "TPS63802DLAR" (at 69.85 209.55 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "ExactTI DLA0010A land pattern; no invented exposed pad." (at 69.85 209.55 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps63802.pdf" (at 69.85 209.55 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "U2") (unit 1)))))(wire (pts (xy 52.07 204.47) (xy 44.45 204.47)) (stroke (width 0) (type default)) (uuid "b5b0eb8a-b73a-5587-b40e-10fe53d36f0a"))(label "P5V_LOGIC_B" (at 44.45 204.47 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "4e3174d6-ce70-54c4-acd4-48d7b8d4572a"))(wire (pts (xy 52.07 207.01) (xy 44.45 207.01)) (stroke (width 0) (type default)) (uuid "302cba9f-a9cf-58f8-a901-158b47c57faa"))(label "P5V_LOGIC_B" (at 44.45 207.01 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "0819579d-da24-51dd-b540-35639577ec9f"))(wire (pts (xy 52.07 209.55) (xy 44.45 209.55)) (stroke (width 0) (type default)) (uuid "b98319b2-6d8c-5e2d-a7ef-712e353506a1"))(label "P5V_LOGIC_B" (at 44.45 209.55 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "aa486fa7-f452-5327-8a9e-b6b303fa89d2"))(wire (pts (xy 52.07 212.09) (xy 44.45 212.09)) (stroke (width 0) (type default)) (uuid "de18a2a5-003b-51c6-a6ee-e87d8a2b5bc9"))(label "SYS_GND" (at 44.45 212.09 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "eb3f4303-a9a7-547f-a1c0-bdd2325b075e"))(wire (pts (xy 52.07 214.63) (xy 44.45 214.63)) (stroke (width 0) (type default)) (uuid "f51ea627-936a-5940-b889-4b4424d059bd"))(label "SYS_GND" (at 44.45 214.63 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "5b5f174b-221c-5467-b0bf-3f1c411d313d"))(wire (pts (xy 87.63 204.47) (xy 95.25 204.47)) (stroke (width 0) (type default)) (uuid "95ef801e-337a-5f49-842f-382a9e79ab98"))(label "L1_B" (at 95.25 204.47 180) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "070621a2-1a50-5eab-b1ca-ff3716af38d8"))(wire (pts (xy 87.63 207.01) (xy 95.25 207.01)) (stroke (width 0) (type default)) (uuid "ea8ace47-ce20-5c82-aa69-7eeede5f87d0"))(label "L2_B" (at 95.25 207.01 180) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "3fce04ac-7627-5ffb-a4e9-9b15b4862264"))(wire (pts (xy 87.63 209.55) (xy 95.25 209.55)) (stroke (width 0) (type default)) (uuid "5271451a-080d-579e-8d72-e0efba9055cd"))(label "3V3_B" (at 95.25 209.55 180) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "3a17c670-da51-5a5e-a928-168f8e089bd6"))(wire (pts (xy 87.63 212.09) (xy 95.25 212.09)) (stroke (width 0) (type default)) (uuid "32a4a8ea-3de8-5b4b-9329-89e67ec9aee3"))(label "FB_B" (at 95.25 212.09 180) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "b4b17de9-6836-5ace-92f1-73723d66652f"))(wire (pts (xy 87.63 214.63) (xy 95.25 214.63)) (stroke (width 0) (type default)) (uuid "70cd4a68-e5a8-57d7-bfa9-e946205ca47f"))(label "PG_B" (at 95.25 214.63 180) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "6815a619-2f1f-5ff5-9c16-b9664e3c934a"))(symbol (lib_id "PowerCandidate:L") (at 121.92 190.5 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "79729909-7496-51a6-ab3e-2afb84c6028e")(property "Reference" "L2" (at 125.92 189 0) (effects (font (size 1 1)) (justify left)))(property "Value" "0.47uH" (at 125.92 191.3 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:L_Coilcraft_XFL4015" (at 121.92 190.5 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "XFL4015-471MEC" (at 121.92 190.5 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "Exact manufacturer lands .98x3.4mm,2.37mm center pitch." (at 121.92 190.5 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps63802.pdf" (at 121.92 190.5 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "L2") (unit 1)))))(wire (pts (xy 121.92 186.69) (xy 121.92 181.61)) (stroke (width 0) (type default)) (uuid "494ef38f-154f-5c6b-b686-6ad0fe291572"))(label "L1_B" (at 121.92 181.61 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "6d38c557-1cd0-583e-8667-3b02350f8de2"))(wire (pts (xy 121.92 194.31) (xy 121.92 199.39)) (stroke (width 0) (type default)) (uuid "b9195d58-6510-583d-accf-51a2cd9603f6"))(label "L2_B" (at 121.92 199.39 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "fe75da38-b2b8-56c8-a3af-c17e45a38167"))(symbol (lib_id "PowerCandidate:C") (at 157.48 190.5 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "df8597f0-af8d-53d3-846d-c070c7f2f338")(property "Reference" "C21" (at 161.48 189 0) (effects (font (size 1 1)) (justify left)))(property "Value" "22u 16V" (at 161.48 191.3 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:C_1206_3216Metric" (at 157.48 190.5 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "GRM31CR61C226KE15L" (at 157.48 190.5 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "Input; verify >=5uF effective at5.25V and temperature." (at 157.48 190.5 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://www.ti.com/lit/pdf/tidrmp4" (at 157.48 190.5 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "C21") (unit 1)))))(wire (pts (xy 157.48 186.69) (xy 157.48 181.61)) (stroke (width 0) (type default)) (uuid "60e82a88-280e-5684-a838-fd8ab778be86"))(label "P5V_LOGIC_B" (at 157.48 181.61 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "3d4519bc-af79-5ffd-bb9f-928ebbc409ae"))(wire (pts (xy 157.48 194.31) (xy 157.48 199.39)) (stroke (width 0) (type default)) (uuid "96ae0ee9-50c8-56ce-9106-3ece5d388400"))(label "SYS_GND" (at 157.48 199.39 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "14ecd668-e2b8-5b55-b563-a93aaa434163"))(symbol (lib_id "PowerCandidate:C") (at 195.58 190.5 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "3e277d70-793d-5bf0-a22a-e208ffb9c2de")(property "Reference" "C22" (at 199.58 189 0) (effects (font (size 1 1)) (justify left)))(property "Value" "22u 16V" (at 199.58 191.3 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:C_1206_3216Metric" (at 195.58 190.5 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "GRM31CR61C226KE15L" (at 195.58 190.5 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "Two parallel output caps; acceptance >=14uF effective total at 3.3V." (at 195.58 190.5 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://www.ti.com/lit/pdf/tidrmp4" (at 195.58 190.5 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "C22") (unit 1)))))(wire (pts (xy 195.58 186.69) (xy 195.58 181.61)) (stroke (width 0) (type default)) (uuid "6c65df23-77bb-5f9d-90fa-a38b9522012c"))(label "3V3_B" (at 195.58 181.61 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "6a5bcefe-08c5-58dd-ba75-02ab4110468d"))(wire (pts (xy 195.58 194.31) (xy 195.58 199.39)) (stroke (width 0) (type default)) (uuid "bc0f0c2f-9233-5417-8594-b8aa94efa0e9"))(label "SYS_GND" (at 195.58 199.39 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "0ca0b666-8638-5382-b573-f72e690c6bbb"))(symbol (lib_id "PowerCandidate:C") (at 232.41 190.5 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "31c1409a-abdb-5395-a30a-d1551df82f03")(property "Reference" "C23" (at 236.41 189 0) (effects (font (size 1 1)) (justify left)))(property "Value" "22u 16V" (at 236.41 191.3 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:C_1206_3216Metric" (at 232.41 190.5 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "GRM31CR61C226KE15L" (at 232.41 190.5 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "Two parallel output caps; acceptance >=14uF effective total at 3.3V." (at 232.41 190.5 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://www.ti.com/lit/pdf/tidrmp4" (at 232.41 190.5 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "C23") (unit 1)))))(wire (pts (xy 232.41 186.69) (xy 232.41 181.61)) (stroke (width 0) (type default)) (uuid "0638502d-d307-5898-acdd-abd0c1e96697"))(label "3V3_B" (at 232.41 181.61 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "60a11c9b-c234-5842-92f2-8d467237c84e"))(wire (pts (xy 232.41 194.31) (xy 232.41 199.39)) (stroke (width 0) (type default)) (uuid "61046be8-b0c8-51d2-b30d-bb386c7f3123"))(label "SYS_GND" (at 232.41 199.39 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "890268cb-e8a1-5a4d-820e-b461657a4ae5"))(symbol (lib_id "PowerCandidate:R") (at 121.92 226.06 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "52101618-3ef4-524a-94f3-dbcda4840317")(property "Reference" "R21" (at 125.92 224.56 0) (effects (font (size 1 1)) (justify left)))(property "Value" "280k 0.1%" (at 125.92 226.86 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:R_0603_1608Metric" (at 121.92 226.06 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "TNPW0603280KBEEA" (at 121.92 226.06 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "Within manufacturer0603 range<=332k; .5*(1+280/49.9)=3.30561V nominal. 25ppm/K,standardEA packaging." (at 121.92 226.06 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://www.vishay.com/docs/28758/tnpw_e3.pdf" (at 121.92 226.06 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "R21") (unit 1)))))(wire (pts (xy 121.92 222.25) (xy 121.92 217.17)) (stroke (width 0) (type default)) (uuid "d2a2bca7-8adf-56ef-9a33-49989bfb46bc"))(label "3V3_B" (at 121.92 217.17 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "50f58e6e-650e-5792-ae01-7d937c22419c"))(wire (pts (xy 121.92 229.87) (xy 121.92 234.95)) (stroke (width 0) (type default)) (uuid "dd7e452b-1ec1-5208-9402-a0d408bf45af"))(label "FB_B" (at 121.92 234.95 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "1b27521b-2dd0-5f21-84c7-33a7f11215b9"))(symbol (lib_id "PowerCandidate:R") (at 157.48 226.06 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "529445c6-40a7-5522-a233-22afc3169b09")(property "Reference" "R22" (at 161.48 224.56 0) (effects (font (size 1 1)) (justify left)))(property "Value" "49.9k 0.1%" (at 161.48 226.86 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:R_0603_1608Metric" (at 157.48 226.06 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "TNPW060349K9BEEA" (at 157.48 226.06 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "Low-side divider<100k perTI;25ppm/K,standardEA packaging." (at 157.48 226.06 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://www.vishay.com/docs/28758/tnpw_e3.pdf" (at 157.48 226.06 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "R22") (unit 1)))))(wire (pts (xy 157.48 222.25) (xy 157.48 217.17)) (stroke (width 0) (type default)) (uuid "a5d024b8-e8fa-5824-a6d8-826837418c22"))(label "FB_B" (at 157.48 217.17 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "ac64ef6c-a032-5ac5-ba5b-788533ace026"))(wire (pts (xy 157.48 229.87) (xy 157.48 234.95)) (stroke (width 0) (type default)) (uuid "6db4d7c8-8b90-56ec-9f83-39f5693c3d95"))(label "SYS_GND" (at 157.48 234.95 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "3521f474-6bfa-5bca-b982-0666fba0f2c9"))(symbol (lib_id "PowerCandidate:R") (at 195.58 226.06 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "5d4ce2eb-9b05-5200-96e2-216dca3c3d43")(property "Reference" "R23" (at 199.58 224.56 0) (effects (font (size 1 1)) (justify left)))(property "Value" "100k 1%" (at 199.58 226.86 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:R_0603_1608Metric" (at 195.58 226.06 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "CRCW0603100KFKEA" (at 195.58 226.06 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "PG pullup; output indicator only." (at 195.58 226.06 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps63802.pdf" (at 195.58 226.06 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "R23") (unit 1)))))(wire (pts (xy 195.58 222.25) (xy 195.58 217.17)) (stroke (width 0) (type default)) (uuid "cfd33043-504d-54b7-9ac2-e60e949c4370"))(label "3V3_B" (at 195.58 217.17 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "90e258c2-b10c-5330-b91e-76918b0635ff"))(wire (pts (xy 195.58 229.87) (xy 195.58 234.95)) (stroke (width 0) (type default)) (uuid "31f73ab9-5214-5947-b592-065d1bf821bf"))(label "PG_B" (at 195.58 234.95 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "b864551f-4d7d-56b4-b16d-0c0fa2eeaae2"))(symbol (lib_id "PowerCandidate:Connector2") (at 242.57 226.06 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "70859321-cf4c-5b2d-b15a-2acfbf159f94")(property "Reference" "J3" (at 229.57 215.25 0) (effects (font (size 1 1)) (justify left)))(property "Value" "3.3 V BANK B" (at 229.57 217.55 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical" (at 242.57 226.06 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "B2P-VH" (at 242.57 226.06 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "Dedicated dual-channel SignalGen supply; never parallel with other bank. Bank B design target2A, subject to source/thermal budget." (at 242.57 226.06 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "" (at 242.57 226.06 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "J3") (unit 1)))))(wire (pts (xy 232.41 224.79) (xy 224.79 224.79)) (stroke (width 0) (type default)) (uuid "f2907461-90e6-5a11-9f38-e2bfeb7754bc"))(label "3V3_B" (at 224.79 224.79 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "ff365fb0-06bc-58fc-8ce7-0b7ebb5914e8"))(wire (pts (xy 232.41 227.33) (xy 224.79 227.33)) (stroke (width 0) (type default)) (uuid "192c2d88-08d3-5a5e-b85b-266898145608"))(label "SYS_GND" (at 224.79 227.33 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "d5ec3f2e-8f4b-5122-ad20-7d14768a9dcd"))(text "3.3 V banks: fixed PWM, enabled when their input fuse is powered.\nThese supply primary-side SignalGen power; they are NOT isolated.\nTwo banks must never be connected in parallel.\nAUX feeds monitor-power boards;4A allocation total,not per channel.\nNo purchased battery or measured runtime is claimed." (at 20 258 0) (effects (font (size 1.0 1.0)) (justify left top)) (uuid "313898db-579b-599f-a693-1c9c37c5c4fe"))(symbol (lib_id "PowerCandidate:Fuse") (at 293.37 54.61 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "3eb4204b-1eb2-5c60-8b07-87c6d3b36c8b")(property "Reference" "F1" (at 280.37 43.8 0) (effects (font (size 1 1)) (justify left)))(property "Value" "T1.6A" (at 280.37 46.1 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:Fuse_Schurter_UMT250" (at 293.37 54.61 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "3403.0168.11" (at 293.37 54.61 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "RECOM recommendedT1.6A for12Vin family; exact5V startup/fault coordination remains measured acceptance." (at 293.37 54.61 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://www.schurter.com/en/datasheet/typ_UMT_250.pdf" (at 293.37 54.61 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "F1") (unit 1)))))(wire (pts (xy 284.48 54.61) (xy 276.86 54.61)) (stroke (width 0) (type default)) (uuid "a0e0cc69-6db9-5b9b-a2de-c66d2fb33b12"))(label "P5V_IN" (at 276.86 54.61 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "72ac79fd-209b-5f91-ac6a-5939903c507f"))(wire (pts (xy 302.26 54.61) (xy 309.88 54.61)) (stroke (width 0) (type default)) (uuid "17e5cb3e-7177-5ee0-80fe-c5c213b0806a"))(label "P5V_CH1" (at 309.88 54.61 180) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "888b9260-bd8b-5bf4-9d40-c8f6d057f268"))(symbol (lib_id "PowerCandidate:PWR_FLAG") (at 299.72 41.91 0) (unit 1) (in_bom no) (on_board no) (dnp no) (uuid "da831649-e072-5a4d-bcda-a481f402db10")(property "Reference" "#FLGF1" (at 286.72 31.1 0) (effects (font (size 1 1)) (justify left) hide))(property "Value" "PWR_FLAG" (at 286.72 33.4 0) (effects (font (size 1 1)) (justify left) hide))(property "Footprint" "" (at 299.72 41.91 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "" (at 299.72 41.91 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "" (at 299.72 41.91 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "" (at 299.72 41.91 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "#FLGF1") (unit 1)))))(wire (pts (xy 299.72 41.91) (xy 299.72 46.99)) (stroke (width 0) (type default)) (uuid "9fca2a4c-cfc1-57d3-9f3c-a5306f97b154"))(label "P5V_CH1" (at 299.72 46.99 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "0da8b036-3685-525b-ac81-50c55763e67e"))(symbol (lib_id "PowerCandidate:R3M-1212S_SMD") (at 341.63 67.31 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "995ec409-1507-59aa-8e0c-25d78ad2c1fc")(property "Reference" "PS1" (at 328.63 56.5 0) (effects (font (size 1 1)) (justify left)))(property "Value" "R3M-1212S/SMD" (at 328.63 58.8 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:RECOM_R3M_SMD" (at 341.63 67.31 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "R3M-1212S/SMD" (at 341.63 67.31 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "ExactECO5 manufacturer lands; no minimum load; CTRL open enables. Pin5 NC,pin6 return." (at 341.63 67.31 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://recom-power.com/pdf/Econoline/R3M.pdf" (at 341.63 67.31 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "PS1") (unit 1)))))(wire (pts (xy 322.58 64.77) (xy 314.96 64.77)) (stroke (width 0) (type default)) (uuid "b614c931-cde9-58ab-8d45-aa2ea063ae15"))(label "P5V_CH1" (at 314.96 64.77 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "990220cd-311b-5e37-a6ed-4dbef58d43aa"))(wire (pts (xy 322.58 67.31) (xy 314.96 67.31)) (stroke (width 0) (type default)) (uuid "cac08e48-c2ce-56a5-a7b4-f5226a1e8822"))(label "SYS_GND" (at 314.96 67.31 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "b9772def-f259-59ba-a800-2c3f006d9a87"))(no_connect (at 322.58 69.85) (uuid "7048f858-06c4-5424-bf73-71f21fec5dc7"))(wire (pts (xy 360.68 64.77) (xy 368.3 64.77)) (stroke (width 0) (type default)) (uuid "d54134a9-752c-5d02-a9ce-bc40be3d65e6"))(label "CH1_12V" (at 368.3 64.77 180) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "a88f322a-3d9b-5aec-a47e-3855beb4d959"))(wire (pts (xy 360.68 67.31) (xy 368.3 67.31)) (stroke (width 0) (type default)) (uuid "f49c2479-590c-5e4b-83f8-63b79b37d7b0"))(label "CH1_HV_BOTTOM" (at 368.3 67.31 180) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "86e7f87d-0a38-57cb-b477-dd1263c1374a"))(no_connect (at 360.68 69.85) (uuid "806162a8-705a-569a-9972-2f9f83a1bc4e"))(symbol (lib_id "PowerCandidate:Connector2") (at 396.24 82.55 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "47e87d70-de54-534d-a661-6517a32c97f5")(property "Reference" "J4" (at 383.24 71.74 0) (effects (font (size 1 1)) (justify left)))(property "Value" "CHANNEL 1 12 V" (at 383.24 74.04 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical" (at 396.24 82.55 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "B2P-VH" (at 396.24 82.55 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "Connect to boost IN only. Return is HV_BOTTOM, never MID; no connection across channels." (at 396.24 82.55 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "" (at 396.24 82.55 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "J4") (unit 1)))))(wire (pts (xy 386.08 81.28) (xy 378.46 81.28)) (stroke (width 0) (type default)) (uuid "6555e047-f8cb-5863-aa93-cb4d78e368e4"))(label "CH1_12V" (at 378.46 81.28 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "583307dc-cf1a-5d11-bcc3-afb2545ff4b4"))(wire (pts (xy 386.08 83.82) (xy 378.46 83.82)) (stroke (width 0) (type default)) (uuid "a54d0363-f91e-51e0-8c06-4a3cfc1883a2"))(label "CH1_HV_BOTTOM" (at 378.46 83.82 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "1621b813-bd65-5962-81d9-faedc19463fe"))(symbol (lib_id "PowerCandidate:C") (at 288.29 83.82 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "30d946eb-7bd6-5763-9800-dbdd7c3739eb")(property "Reference" "C31" (at 292.29 82.32 0) (effects (font (size 1 1)) (justify left)))(property "Value" "22u 16V" (at 292.29 84.62 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:C_1206_3216Metric" (at 288.29 83.82 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "GRM31CR61C226KE15L" (at 288.29 83.82 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "Local input bypass; EMI filter is not yet designed." (at 288.29 83.82 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://www.ti.com/lit/pdf/tidrmp4" (at 288.29 83.82 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "C31") (unit 1)))))(wire (pts (xy 288.29 80.01) (xy 288.29 74.93)) (stroke (width 0) (type default)) (uuid "bc30cb0b-79cd-5e39-b6fb-2eb6891e7b39"))(label "P5V_CH1" (at 288.29 74.93 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "2dd305ce-aa22-53df-bfde-6b7b83e378c3"))(wire (pts (xy 288.29 87.63) (xy 288.29 92.71)) (stroke (width 0) (type default)) (uuid "5d4e686a-d7e6-584a-bcae-06e84e5866e7"))(label "SYS_GND" (at 288.29 92.71 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "1e0ae49f-d05c-5e21-b6f4-27a1484fc68e"))(symbol (lib_id "PowerCandidate:Fuse") (at 293.37 110.49 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "04fb20f5-20b6-53dc-93e9-61a538d82ea2")(property "Reference" "F2" (at 280.37 99.68 0) (effects (font (size 1 1)) (justify left)))(property "Value" "T1.6A" (at 280.37 101.98 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:Fuse_Schurter_UMT250" (at 293.37 110.49 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "3403.0168.11" (at 293.37 110.49 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "RECOM recommendedT1.6A for12Vin family; exact5V startup/fault coordination remains measured acceptance." (at 293.37 110.49 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://www.schurter.com/en/datasheet/typ_UMT_250.pdf" (at 293.37 110.49 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "F2") (unit 1)))))(wire (pts (xy 284.48 110.49) (xy 276.86 110.49)) (stroke (width 0) (type default)) (uuid "cb97913a-3d7a-53fa-bd55-f908f7e836e0"))(label "P5V_IN" (at 276.86 110.49 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "f58da4c0-3e87-5ab6-b2d5-b8be4ce64169"))(wire (pts (xy 302.26 110.49) (xy 309.88 110.49)) (stroke (width 0) (type default)) (uuid "8bda7016-2eb0-5227-b6bf-cbad64fb45a7"))(label "P5V_CH2" (at 309.88 110.49 180) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "ba407897-148d-5e92-9bc0-d7fcc3ea000c"))(symbol (lib_id "PowerCandidate:PWR_FLAG") (at 299.72 97.79 0) (unit 1) (in_bom no) (on_board no) (dnp no) (uuid "b83aef62-2233-53a0-80fc-521ccd2ee84c")(property "Reference" "#FLGF2" (at 286.72 86.98 0) (effects (font (size 1 1)) (justify left) hide))(property "Value" "PWR_FLAG" (at 286.72 89.28 0) (effects (font (size 1 1)) (justify left) hide))(property "Footprint" "" (at 299.72 97.79 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "" (at 299.72 97.79 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "" (at 299.72 97.79 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "" (at 299.72 97.79 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "#FLGF2") (unit 1)))))(wire (pts (xy 299.72 97.79) (xy 299.72 102.87)) (stroke (width 0) (type default)) (uuid "2e1ed3bf-3e35-5b00-aed7-aea072f6d78c"))(label "P5V_CH2" (at 299.72 102.87 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "8b3142ff-b566-53dc-8a01-4c36545912eb"))(symbol (lib_id "PowerCandidate:R3M-1212S_SMD") (at 341.63 123.19 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "1f8d9189-b9f7-529a-96db-5f55b864df48")(property "Reference" "PS2" (at 328.63 112.38 0) (effects (font (size 1 1)) (justify left)))(property "Value" "R3M-1212S/SMD" (at 328.63 114.68 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:RECOM_R3M_SMD" (at 341.63 123.19 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "R3M-1212S/SMD" (at 341.63 123.19 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "ExactECO5 manufacturer lands; no minimum load; CTRL open enables. Pin5 NC,pin6 return." (at 341.63 123.19 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://recom-power.com/pdf/Econoline/R3M.pdf" (at 341.63 123.19 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "PS2") (unit 1)))))(wire (pts (xy 322.58 120.65) (xy 314.96 120.65)) (stroke (width 0) (type default)) (uuid "12438d82-c2bd-5771-8c5c-2e5b866bd294"))(label "P5V_CH2" (at 314.96 120.65 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "7e19a78f-9b9d-5adf-abe4-8f9929acbbfc"))(wire (pts (xy 322.58 123.19) (xy 314.96 123.19)) (stroke (width 0) (type default)) (uuid "cded3d0c-1249-586a-a457-b244d6d6be33"))(label "SYS_GND" (at 314.96 123.19 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "cd50bcf1-6b8f-58eb-a64c-9bc1bca29120"))(no_connect (at 322.58 125.73) (uuid "3a6947bb-b179-56fb-ab8a-d8f8ba1a3fee"))(wire (pts (xy 360.68 120.65) (xy 368.3 120.65)) (stroke (width 0) (type default)) (uuid "628cef97-e16f-544f-9812-b816b39831a4"))(label "CH2_12V" (at 368.3 120.65 180) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "872126ed-0068-5726-8bd1-76646c798b5f"))(wire (pts (xy 360.68 123.19) (xy 368.3 123.19)) (stroke (width 0) (type default)) (uuid "b3a4b98a-c67e-5174-bec4-67ba4bcf569d"))(label "CH2_HV_BOTTOM" (at 368.3 123.19 180) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "fa5d9604-c3f5-5d35-a24d-09a5cd6b37bc"))(no_connect (at 360.68 125.73) (uuid "502292b9-38a1-5452-b960-69c0bea6c2b0"))(symbol (lib_id "PowerCandidate:Connector2") (at 396.24 138.43 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "dd977775-4cd5-53e0-9356-a774738eebb5")(property "Reference" "J5" (at 383.24 127.62 0) (effects (font (size 1 1)) (justify left)))(property "Value" "CHANNEL 2 12 V" (at 383.24 129.92 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical" (at 396.24 138.43 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "B2P-VH" (at 396.24 138.43 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "Connect to boost IN only. Return is HV_BOTTOM, never MID; no connection across channels." (at 396.24 138.43 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "" (at 396.24 138.43 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "J5") (unit 1)))))(wire (pts (xy 386.08 137.16) (xy 378.46 137.16)) (stroke (width 0) (type default)) (uuid "90823222-1816-59d8-a3ac-33f1a5e6b4b9"))(label "CH2_12V" (at 378.46 137.16 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "6f59b2f0-60e4-5576-b3d3-7fa0562284d1"))(wire (pts (xy 386.08 139.7) (xy 378.46 139.7)) (stroke (width 0) (type default)) (uuid "9c2ada1f-99cc-57da-86ce-af7464f19459"))(label "CH2_HV_BOTTOM" (at 378.46 139.7 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "f79a0887-db68-59d0-9dc5-79f2d9eaa9ae"))(symbol (lib_id "PowerCandidate:C") (at 288.29 139.7 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "922e6fde-30a9-5b64-9331-914bb456cd0d")(property "Reference" "C32" (at 292.29 138.2 0) (effects (font (size 1 1)) (justify left)))(property "Value" "22u 16V" (at 292.29 140.5 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:C_1206_3216Metric" (at 288.29 139.7 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "GRM31CR61C226KE15L" (at 288.29 139.7 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "Local input bypass; EMI filter is not yet designed." (at 288.29 139.7 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://www.ti.com/lit/pdf/tidrmp4" (at 288.29 139.7 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "C32") (unit 1)))))(wire (pts (xy 288.29 135.89) (xy 288.29 130.81)) (stroke (width 0) (type default)) (uuid "ab172de1-f8b1-537d-961d-cdc4f78ca1ec"))(label "P5V_CH2" (at 288.29 130.81 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "8931b484-8a28-5311-b0b0-f42487336375"))(wire (pts (xy 288.29 143.51) (xy 288.29 148.59)) (stroke (width 0) (type default)) (uuid "e61a772d-d8d9-5815-a722-3eed93b56cf8"))(label "SYS_GND" (at 288.29 148.59 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "526ad581-eace-55aa-96c5-7852586e12cc"))(symbol (lib_id "PowerCandidate:Fuse") (at 293.37 166.37 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "8f55276f-431a-5bf8-8ec5-c05c27fc573b")(property "Reference" "F3" (at 280.37 155.56 0) (effects (font (size 1 1)) (justify left)))(property "Value" "T1.6A" (at 280.37 157.86 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:Fuse_Schurter_UMT250" (at 293.37 166.37 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "3403.0168.11" (at 293.37 166.37 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "RECOM recommendedT1.6A for12Vin family; exact5V startup/fault coordination remains measured acceptance." (at 293.37 166.37 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://www.schurter.com/en/datasheet/typ_UMT_250.pdf" (at 293.37 166.37 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "F3") (unit 1)))))(wire (pts (xy 284.48 166.37) (xy 276.86 166.37)) (stroke (width 0) (type default)) (uuid "76c6ca4f-2754-5ff3-be73-cc094cc57426"))(label "P5V_IN" (at 276.86 166.37 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "a706290e-d872-5dec-add2-94a353d8ac3f"))(wire (pts (xy 302.26 166.37) (xy 309.88 166.37)) (stroke (width 0) (type default)) (uuid "1f0f5f27-4945-56d0-81df-0cfcc59ba1cd"))(label "P5V_CH3" (at 309.88 166.37 180) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "70b5299b-7f2e-54a7-b44f-fcf5b3407b12"))(symbol (lib_id "PowerCandidate:PWR_FLAG") (at 299.72 153.67 0) (unit 1) (in_bom no) (on_board no) (dnp no) (uuid "b59ba3e3-4c67-56da-b388-c19f71976fb2")(property "Reference" "#FLGF3" (at 286.72 142.86 0) (effects (font (size 1 1)) (justify left) hide))(property "Value" "PWR_FLAG" (at 286.72 145.16 0) (effects (font (size 1 1)) (justify left) hide))(property "Footprint" "" (at 299.72 153.67 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "" (at 299.72 153.67 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "" (at 299.72 153.67 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "" (at 299.72 153.67 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "#FLGF3") (unit 1)))))(wire (pts (xy 299.72 153.67) (xy 299.72 158.75)) (stroke (width 0) (type default)) (uuid "d51eed14-6fe5-51ce-b660-8afcbfa2c16f"))(label "P5V_CH3" (at 299.72 158.75 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "81e07d55-6402-5f96-a249-363f4d632f19"))(symbol (lib_id "PowerCandidate:R3M-1212S_SMD") (at 341.63 179.07 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "13a1364f-56c1-513e-8e42-d8b24d3a44ee")(property "Reference" "PS3" (at 328.63 168.26 0) (effects (font (size 1 1)) (justify left)))(property "Value" "R3M-1212S/SMD" (at 328.63 170.56 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:RECOM_R3M_SMD" (at 341.63 179.07 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "R3M-1212S/SMD" (at 341.63 179.07 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "ExactECO5 manufacturer lands; no minimum load; CTRL open enables. Pin5 NC,pin6 return." (at 341.63 179.07 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://recom-power.com/pdf/Econoline/R3M.pdf" (at 341.63 179.07 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "PS3") (unit 1)))))(wire (pts (xy 322.58 176.53) (xy 314.96 176.53)) (stroke (width 0) (type default)) (uuid "9c4f17c8-bd1b-5844-84fe-c82f2cc7d773"))(label "P5V_CH3" (at 314.96 176.53 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "01b84377-9cb4-5fde-9c86-869c4244e51d"))(wire (pts (xy 322.58 179.07) (xy 314.96 179.07)) (stroke (width 0) (type default)) (uuid "9bdf936d-1d7d-5f69-b175-7b122d021ad7"))(label "SYS_GND" (at 314.96 179.07 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "8555d2c7-247f-5db5-89b3-564c3191fcbb"))(no_connect (at 322.58 181.61) (uuid "142f15c2-742e-5897-8841-c643886cb3e5"))(wire (pts (xy 360.68 176.53) (xy 368.3 176.53)) (stroke (width 0) (type default)) (uuid "cdc3d4dc-fccd-5466-a1ee-8e896c7054ae"))(label "CH3_12V" (at 368.3 176.53 180) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "10545eed-7c81-5aed-bd9a-080db965ba0e"))(wire (pts (xy 360.68 179.07) (xy 368.3 179.07)) (stroke (width 0) (type default)) (uuid "f930231d-51fd-58d7-95a5-369f7f0d70be"))(label "CH3_HV_BOTTOM" (at 368.3 179.07 180) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "99705044-bdee-5fa8-a534-338fbcd3e78e"))(no_connect (at 360.68 181.61) (uuid "996b54cd-01ce-5271-a644-41553a2dfc94"))(symbol (lib_id "PowerCandidate:Connector2") (at 396.24 194.31 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "3f15039e-52dc-5dba-b445-540f5b9a56ed")(property "Reference" "J6" (at 383.24 183.5 0) (effects (font (size 1 1)) (justify left)))(property "Value" "CHANNEL 3 12 V" (at 383.24 185.8 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical" (at 396.24 194.31 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "B2P-VH" (at 396.24 194.31 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "Connect to boost IN only. Return is HV_BOTTOM, never MID; no connection across channels." (at 396.24 194.31 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "" (at 396.24 194.31 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "J6") (unit 1)))))(wire (pts (xy 386.08 193.04) (xy 378.46 193.04)) (stroke (width 0) (type default)) (uuid "278d12f1-c022-5f71-b0d5-46d5b66beda1"))(label "CH3_12V" (at 378.46 193.04 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "17f9f88c-8119-5edb-a568-0f72cc327699"))(wire (pts (xy 386.08 195.58) (xy 378.46 195.58)) (stroke (width 0) (type default)) (uuid "6b8624fa-76d7-52d4-89ea-80307d7f8dbd"))(label "CH3_HV_BOTTOM" (at 378.46 195.58 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "5a913a54-d94b-52b8-8a00-a7e82b0143c6"))(symbol (lib_id "PowerCandidate:C") (at 288.29 195.58 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "0176d9ff-5d4d-57c5-b6f4-0c0b187cd22f")(property "Reference" "C33" (at 292.29 194.08 0) (effects (font (size 1 1)) (justify left)))(property "Value" "22u 16V" (at 292.29 196.38 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:C_1206_3216Metric" (at 288.29 195.58 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "GRM31CR61C226KE15L" (at 288.29 195.58 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "Local input bypass; EMI filter is not yet designed." (at 288.29 195.58 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://www.ti.com/lit/pdf/tidrmp4" (at 288.29 195.58 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "C33") (unit 1)))))(wire (pts (xy 288.29 191.77) (xy 288.29 186.69)) (stroke (width 0) (type default)) (uuid "d92ae989-e1ea-5362-bf3d-94c5a10c2957"))(label "P5V_CH3" (at 288.29 186.69 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "9a9a83f1-8aff-51b8-abb8-d7421caaea42"))(wire (pts (xy 288.29 199.39) (xy 288.29 204.47)) (stroke (width 0) (type default)) (uuid "3744392b-41e0-5e27-aff1-79318fb549ea"))(label "SYS_GND" (at 288.29 204.47 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "82a50074-fdee-5576-965c-35a0cc57bbaa"))(symbol (lib_id "PowerCandidate:Fuse") (at 293.37 218.44 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "9bbfb359-60a2-575f-8803-a0a138889b40")(property "Reference" "F4" (at 280.37 207.63 0) (effects (font (size 1 1)) (justify left)))(property "Value" "T1.6A" (at 280.37 209.93 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:Fuse_Schurter_UMT250" (at 293.37 218.44 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "3403.0168.11" (at 293.37 218.44 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "RECOM recommendedT1.6A for12Vin family; exact5V startup/fault coordination remains measured acceptance." (at 293.37 218.44 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://www.schurter.com/en/datasheet/typ_UMT_250.pdf" (at 293.37 218.44 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "F4") (unit 1)))))(wire (pts (xy 284.48 218.44) (xy 276.86 218.44)) (stroke (width 0) (type default)) (uuid "404b09b6-b1dc-5f3b-9676-bc270d06750a"))(label "P5V_IN" (at 276.86 218.44 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "f6d12c24-77fe-55cc-bbac-0e3691821ce0"))(wire (pts (xy 302.26 218.44) (xy 309.88 218.44)) (stroke (width 0) (type default)) (uuid "79a95102-1d27-5589-a595-9113e1ec0f35"))(label "P5V_CH4" (at 309.88 218.44 180) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "27c4ccd7-caff-5d91-9573-a89fac9ec3f5"))(symbol (lib_id "PowerCandidate:PWR_FLAG") (at 299.72 205.74 0) (unit 1) (in_bom no) (on_board no) (dnp no) (uuid "2013f2d0-1eb3-5c70-ad69-9c51b7f1edde")(property "Reference" "#FLGF4" (at 286.72 194.93 0) (effects (font (size 1 1)) (justify left) hide))(property "Value" "PWR_FLAG" (at 286.72 197.23 0) (effects (font (size 1 1)) (justify left) hide))(property "Footprint" "" (at 299.72 205.74 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "" (at 299.72 205.74 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "" (at 299.72 205.74 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "" (at 299.72 205.74 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "#FLGF4") (unit 1)))))(wire (pts (xy 299.72 205.74) (xy 299.72 210.82)) (stroke (width 0) (type default)) (uuid "57a710e5-47d2-5c67-87cb-01dc610b3db5"))(label "P5V_CH4" (at 299.72 210.82 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "d6efc114-3bfd-50a2-8293-67095b45d951"))(symbol (lib_id "PowerCandidate:R3M-1212S_SMD") (at 341.63 231.14 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "96d43471-90cb-5a9a-8754-f84ed51ca93d")(property "Reference" "PS4" (at 328.63 220.33 0) (effects (font (size 1 1)) (justify left)))(property "Value" "R3M-1212S/SMD" (at 328.63 222.63 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:RECOM_R3M_SMD" (at 341.63 231.14 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "R3M-1212S/SMD" (at 341.63 231.14 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "ExactECO5 manufacturer lands; no minimum load; CTRL open enables. Pin5 NC,pin6 return." (at 341.63 231.14 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://recom-power.com/pdf/Econoline/R3M.pdf" (at 341.63 231.14 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "PS4") (unit 1)))))(wire (pts (xy 322.58 228.6) (xy 314.96 228.6)) (stroke (width 0) (type default)) (uuid "254f6949-8ac9-5a32-86ac-e152843f5554"))(label "P5V_CH4" (at 314.96 228.6 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "b28b2abb-cdc6-5c25-a026-5cf9abeea5e6"))(wire (pts (xy 322.58 231.14) (xy 314.96 231.14)) (stroke (width 0) (type default)) (uuid "d10e9ba9-2b27-5b3f-aa96-cc41eeaa4e42"))(label "SYS_GND" (at 314.96 231.14 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "e33a08fe-b7a3-5820-8454-38f41386b58c"))(no_connect (at 322.58 233.68) (uuid "718fc252-993c-5666-936d-ba27053a76f9"))(wire (pts (xy 360.68 228.6) (xy 368.3 228.6)) (stroke (width 0) (type default)) (uuid "e15e259f-076c-5240-954f-545df8417206"))(label "CH4_12V" (at 368.3 228.6 180) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "522ef658-c386-52c0-bbbc-cbe9d8aee6c7"))(wire (pts (xy 360.68 231.14) (xy 368.3 231.14)) (stroke (width 0) (type default)) (uuid "42e28167-4304-50a8-a900-90b47a68429a"))(label "CH4_HV_BOTTOM" (at 368.3 231.14 180) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "935165fa-7d22-526b-a9e1-e55d48686acc"))(no_connect (at 360.68 233.68) (uuid "d1d7041e-2ac9-5a4c-86e1-376e9c763ede"))(symbol (lib_id "PowerCandidate:Connector2") (at 396.24 246.38 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "45c47235-89e8-5208-a4da-a8c782d5a13e")(property "Reference" "J7" (at 383.24 235.57 0) (effects (font (size 1 1)) (justify left)))(property "Value" "CHANNEL 4 12 V" (at 383.24 237.87 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical" (at 396.24 246.38 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "B2P-VH" (at 396.24 246.38 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "Connect to boost IN only. Return is HV_BOTTOM, never MID; no connection across channels." (at 396.24 246.38 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "" (at 396.24 246.38 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "J7") (unit 1)))))(wire (pts (xy 386.08 245.11) (xy 378.46 245.11)) (stroke (width 0) (type default)) (uuid "0ca20ff8-6ffd-5e57-9113-321dbb32889e"))(label "CH4_12V" (at 378.46 245.11 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "6d0f8846-e89e-511a-9e9d-5faab74aa3ce"))(wire (pts (xy 386.08 247.65) (xy 378.46 247.65)) (stroke (width 0) (type default)) (uuid "6abecc02-c1fd-5144-8a53-6d7b630abbfa"))(label "CH4_HV_BOTTOM" (at 378.46 247.65 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "c7b2b9bd-6606-529e-9d66-77ae3de3cb13"))(symbol (lib_id "PowerCandidate:C") (at 288.29 247.65 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "47bc7bb4-ad1e-5e1a-bc4b-c1ddb13c0471")(property "Reference" "C34" (at 292.29 246.15 0) (effects (font (size 1 1)) (justify left)))(property "Value" "22u 16V" (at 292.29 248.45 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:C_1206_3216Metric" (at 288.29 247.65 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "GRM31CR61C226KE15L" (at 288.29 247.65 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "Local input bypass; EMI filter is not yet designed." (at 288.29 247.65 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://www.ti.com/lit/pdf/tidrmp4" (at 288.29 247.65 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "C34") (unit 1)))))(wire (pts (xy 288.29 243.84) (xy 288.29 238.76)) (stroke (width 0) (type default)) (uuid "2ccdb422-aacb-58b9-95c5-741a8610ef5b"))(label "P5V_CH4" (at 288.29 238.76 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "12db1cc2-8d6f-508b-8b80-c77622506fbe"))(wire (pts (xy 288.29 251.46) (xy 288.29 256.54)) (stroke (width 0) (type default)) (uuid "a2472852-4c73-5921-b0da-6584747dba8a"))(label "SYS_GND" (at 288.29 256.54 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "1dffc105-4839-51fa-b92c-0f3a260e4a7f"))(text "REGULATED ISOLATION BANK\nPin7=+12 V, pin6=HV_BOTTOM, pin5=NC.\nNo 200-ohm preload. Each output remains isolated.\nR3M isolation test voltage is NOT a medical/working-voltage approval.\nNo input-output EMI capacitor is populated.\nVerify startup and fuse coordination on the assembled prototype." (at 130 50 0) (effects (font (size 1.0 1.0)) (justify left top)) (uuid "a9ee9474-5f53-5385-9bb1-20891a1caa70"))(symbol (lib_id "PowerCandidate:Fuse") (at 180.34 270.51 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "0a4fb8a7-a7cb-5d0c-832a-8160aba69968")(property "Reference" "F5" (at 167.34 259.7 0) (effects (font (size 1 1)) (justify left)))(property "Value" "T5A AUX" (at 167.34 262 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:Fuse_Schurter_UMT250" (at 180.34 270.51 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "3403.0173.11" (at 180.34 270.51 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "Four-channel monitor bank4A allocation,3.073A planning. Fuse is not an electronic current limit." (at 180.34 270.51 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "https://www.schurter.com/en/datasheet/typ_UMT_250.pdf" (at 180.34 270.51 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "F5") (unit 1)))))(wire (pts (xy 171.45 270.51) (xy 163.83 270.51)) (stroke (width 0) (type default)) (uuid "5b6d4ae1-d8e5-5564-bba5-21a1bba5ad1c"))(label "P5V_IN" (at 163.83 270.51 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "e20f5545-c77f-597d-8bea-67c16df706ad"))(wire (pts (xy 189.23 270.51) (xy 196.85 270.51)) (stroke (width 0) (type default)) (uuid "3b72c9f7-e3c6-51e4-acaf-b236c1ebb019"))(label "AUX5V" (at 196.85 270.51 180) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "bdc81f08-6bd1-5d0f-bffe-7add134ae3d9"))(symbol (lib_id "PowerCandidate:Connector2") (at 245.11 270.51 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "ccfe6301-e660-5442-8f39-42c89643f840")(property "Reference" "J8" (at 232.11 259.7 0) (effects (font (size 1 1)) (justify left)))(property "Value" "AUX5V MONITORS" (at 232.11 262 0) (effects (font (size 1 1)) (justify left)))(property "Footprint" "PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical" (at 245.11 270.51 0) (effects (font (size 1 1)) (justify left) hide))(property "MPN" "B2P-VH" (at 245.11 270.51 0) (effects (font (size 1 1)) (justify left) hide))(property "Design_Note" "4A total AUX allocation; powers all monitor powerboards from common primarySYS_GND. Verifymoduleinputs>=4.5V afterallfuses/cables." (at 245.11 270.51 0) (effects (font (size 1 1)) (justify left) hide))(property "Datasheet" "" (at 245.11 270.51 0) (effects (font (size 1 1)) (justify left) hide))(instances (project "Shared_Power_Adapter_RevC" (path "/3e664a81-7a62-5092-a1fe-1314a5c402b2" (reference "J8") (unit 1)))))(wire (pts (xy 234.95 269.24) (xy 227.33 269.24)) (stroke (width 0) (type default)) (uuid "59d805c3-28d7-5552-b2a6-ca55c2c4fbff"))(label "AUX5V" (at 227.33 269.24 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "7eef3afa-bb7a-53a8-be85-734258360d5d"))(wire (pts (xy 234.95 271.78) (xy 227.33 271.78)) (stroke (width 0) (type default)) (uuid "7c1fa6a3-4063-5895-9ba7-73642cdfb11d"))(label "SYS_GND" (at 227.33 271.78 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "2d6a622a-2ac6-5c0b-88a1-b9d718512a80")) (sheet_instances (path "/" (page "1"))) (embedded_fonts no))

@@ -1,0 +1,416 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-17T13:38:14",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "BuckBoost.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 6 [NetC4_1] of U1 on Top Layer",
+                    "pos": {
+                        "x": 144.9611,
+                        "y": 106.4036
+                    },
+                    "uuid": "b5372172-8fc5-41cb-bc7c-32d85d290a5b"
+                },
+                {
+                    "description": "Zone [NetC4_1] on Top Layer, priority 3",
+                    "pos": {
+                        "x": 146.2151,
+                        "y": 106.0196
+                    },
+                    "uuid": "89c589e2-cbd9-4146-b660-4a5a45abd5ef"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 7 [NetC4_1] of U1 on Top Layer",
+                    "pos": {
+                        "x": 145.4611,
+                        "y": 106.4036
+                    },
+                    "uuid": "a990d709-4970-4a68-8fab-4314cdea358f"
+                },
+                {
+                    "description": "Pad 6 [NetC4_1] of U1 on Top Layer",
+                    "pos": {
+                        "x": 144.9611,
+                        "y": 106.4036
+                    },
+                    "uuid": "b5372172-8fc5-41cb-bc7c-32d85d290a5b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 8 [NetC4_1] of U1 on Top Layer",
+                    "pos": {
+                        "x": 145.9611,
+                        "y": 106.4036
+                    },
+                    "uuid": "15db715a-205c-4634-b0ef-9d6fde5fd28d"
+                },
+                {
+                    "description": "Pad 7 [NetC4_1] of U1 on Top Layer",
+                    "pos": {
+                        "x": 145.4611,
+                        "y": 106.4036
+                    },
+                    "uuid": "a990d709-4970-4a68-8fab-4314cdea358f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [NetL1_2] of U1 on Top Layer",
+                    "pos": {
+                        "x": 146.4611,
+                        "y": 103.6036
+                    },
+                    "uuid": "c533ccff-704b-4ed9-a81f-9569595957c8"
+                },
+                {
+                    "description": "Zone [NetL1_2] on Top Layer, priority 6",
+                    "pos": {
+                        "x": 146.2151,
+                        "y": 103.0986
+                    },
+                    "uuid": "bf92555f-8166-4ae1-b0e9-284fff55df06"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [NetL1_1] on Top Layer, priority 5",
+                    "pos": {
+                        "x": 145.7071,
+                        "y": 103.9876
+                    },
+                    "uuid": "c890b9b8-48bb-48de-8715-07016ae938ed"
+                },
+                {
+                    "description": "Pad 4 [NetL1_1] of U1 on Top Layer",
+                    "pos": {
+                        "x": 145.4611,
+                        "y": 103.6036
+                    },
+                    "uuid": "a244bfd2-7995-4941-a268-1f97dee32c44"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [NetC1_1] on Top Layer, priority 2",
+                    "pos": {
+                        "x": 145.1991,
+                        "y": 103.16633
+                    },
+                    "uuid": "3aba8343-eb0a-436d-a770-fd0474119173"
+                },
+                {
+                    "description": "Pad 5 [NetC1_1] of U1 on Top Layer",
+                    "pos": {
+                        "x": 144.9611,
+                        "y": 103.6036
+                    },
+                    "uuid": "c9298f3b-dab0-496a-ad9c-8356a49294e6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Footprint has malformed courtyard (not a closed shape)",
+            "items": [
+                {
+                    "description": "Footprint C4",
+                    "pos": {
+                        "x": 145.7971,
+                        "y": 108.6866
+                    },
+                    "uuid": "0c70f9a0-3db2-487d-ba06-68c7c9a20ca1"
+                }
+            ],
+            "severity": "error",
+            "type": "malformed_courtyard"
+        },
+        {
+            "description": "Footprint has malformed courtyard (not a closed shape)",
+            "items": [
+                {
+                    "description": "Footprint C3",
+                    "pos": {
+                        "x": 155.6131,
+                        "y": 104.7606
+                    },
+                    "uuid": "2d879c29-647f-4044-bbb9-014f2d8ac783"
+                }
+            ],
+            "severity": "error",
+            "type": "malformed_courtyard"
+        },
+        {
+            "description": "Footprint has malformed courtyard (not a closed shape)",
+            "items": [
+                {
+                    "description": "Footprint C2",
+                    "pos": {
+                        "x": 151.6761,
+                        "y": 104.7606
+                    },
+                    "uuid": "385b1157-de06-4fdd-a09e-b2f59c541442"
+                }
+            ],
+            "severity": "error",
+            "type": "malformed_courtyard"
+        },
+        {
+            "description": "Footprint has malformed courtyard (not a closed shape)",
+            "items": [
+                {
+                    "description": "Footprint C1",
+                    "pos": {
+                        "x": 141.8971,
+                        "y": 104.6226
+                    },
+                    "uuid": "38e82176-da08-49bc-837b-a2e65a801bc8"
+                }
+            ],
+            "severity": "error",
+            "type": "malformed_courtyard"
+        },
+        {
+            "description": "Footprint has malformed courtyard (not a closed shape)",
+            "items": [
+                {
+                    "description": "Footprint R1",
+                    "pos": {
+                        "x": 141.8281,
+                        "y": 108.6866
+                    },
+                    "uuid": "b765de13-1575-44b3-adbb-a5a4f5573052"
+                }
+            ],
+            "severity": "error",
+            "type": "malformed_courtyard"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [NetC2_1] on Top Layer - Bottom Layer",
+                    "pos": {
+                        "x": 149.8981,
+                        "y": 103.3526
+                    },
+                    "uuid": "bc90df74-0652-4200-adb2-1f04da39738c"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Vault'",
+            "items": [
+                {
+                    "description": "Footprint C4",
+                    "pos": {
+                        "x": 145.7971,
+                        "y": 108.6866
+                    },
+                    "uuid": "0c70f9a0-3db2-487d-ba06-68c7c9a20ca1"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'TPS63001DRCR'",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 145.9611,
+                        "y": 105.0036
+                    },
+                    "uuid": "205a0845-9142-4681-b0dd-5064e326a5ab"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Vault'",
+            "items": [
+                {
+                    "description": "Footprint C3",
+                    "pos": {
+                        "x": 155.6131,
+                        "y": 104.7606
+                    },
+                    "uuid": "2d879c29-647f-4044-bbb9-014f2d8ac783"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Vault'",
+            "items": [
+                {
+                    "description": "Footprint C2",
+                    "pos": {
+                        "x": 151.6761,
+                        "y": 104.7606
+                    },
+                    "uuid": "385b1157-de06-4fdd-a09e-b2f59c541442"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Vault'",
+            "items": [
+                {
+                    "description": "Footprint C1",
+                    "pos": {
+                        "x": 141.8971,
+                        "y": 104.6226
+                    },
+                    "uuid": "38e82176-da08-49bc-837b-a2e65a801bc8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Vault'",
+            "items": [
+                {
+                    "description": "Footprint OUT",
+                    "pos": {
+                        "x": 167.69311,
+                        "y": 106.74159
+                    },
+                    "uuid": "88dddb84-31d4-4d50-8968-3964fd8b1716"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Vault'",
+            "items": [
+                {
+                    "description": "Footprint R1",
+                    "pos": {
+                        "x": 141.8281,
+                        "y": 108.6866
+                    },
+                    "uuid": "b765de13-1575-44b3-adbb-a5a4f5573052"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Vault'",
+            "items": [
+                {
+                    "description": "Footprint IN",
+                    "pos": {
+                        "x": 129.81709,
+                        "y": 105.85259
+                    },
+                    "uuid": "c05fc35c-2073-4731-8756-29a9b93706cb"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Vault'",
+            "items": [
+                {
+                    "description": "Footprint L1",
+                    "pos": {
+                        "x": 146.2171,
+                        "y": 100.6856
+                    },
+                    "uuid": "f8a76822-e2ab-41e9-a8d7-dc03b9e9e311"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Mirrored text on front layer",
+            "items": [
+                {
+                    "description": "Footprint text of OUT (OUT)",
+                    "pos": {
+                        "x": 167.7285,
+                        "y": 106.768061
+                    },
+                    "uuid": "aa21a469-7545-4cb8-9afa-4de5b89a1ac4"
+                }
+            ],
+            "severity": "warning",
+            "type": "mirrored_text_on_front_layer"
+        }
+    ]
+}

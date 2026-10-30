@@ -1,0 +1,404 @@
+{
+  "status": "ROUTED ENGINEERING BENCH PROTOTYPE; not a human-use or full-system release",
+  "kicad": "10.0.6",
+  "source_sha256": "ac2a854d0e43095378e9c6929e88ae375cdb818072a55b0d025f3c2d4086e9c6",
+  "schematic_sha256": "fe859df1ed76a8157c1638f06cc39075eb718d3c859b68a105a62f59de61fc05",
+  "pcb_sha256": "a0ca47e2defd2acfd99b982c89b8ac2458e4972c07420558737fded42b71e50b",
+  "footprints": 77,
+  "physical_pads": 217,
+  "connected_expected_physical_pins": 213,
+  "net_mapping_differences": [],
+  "tracks": 822,
+  "vias": 47,
+  "ground_zones": 3,
+  "keepout_areas": 1,
+  "copper_layers": 2,
+  "board_thickness_mm": 0.41116,
+  "source_connector_pad_geometry_equal": true,
+  "source_outline_equal": true,
+  "outline_centerline_mm": [
+    74.676,
+    95.902
+  ],
+  "drc_violations": 0,
+  "drc_unconnected": 0,
+  "drc_schematic_parity": 0,
+  "domain_sets_disjoint": true,
+  "pad_domain_coverage": 217,
+  "intentional_netless_pads": {
+    "U6.5": "primary",
+    "U6.16": "channel2",
+    "U1.5": "primary",
+    "U1.16": "channel1"
+  },
+  "isolation_measurements": [
+    {
+      "domains": [
+        "primary",
+        "channel1"
+      ],
+      "minimum_projected_copper_gap_mm": 3.628006,
+      "pair": [
+        {
+          "label": "B.Cu zone /SYS_GND",
+          "net": "/SYS_GND"
+        },
+        {
+          "label": "C14.1",
+          "net": "/ISO_GND_ISOW"
+        }
+      ],
+      "method": "Native KiCad effective copper-shape collision distance, binary search within 0.00001 mm; filled polygons included; all copper layers projected together."
+    },
+    {
+      "domains": [
+        "primary",
+        "channel2"
+      ],
+      "minimum_projected_copper_gap_mm": 3.628008,
+      "pair": [
+        {
+          "label": "B.Cu zone /SYS_GND",
+          "net": "/SYS_GND"
+        },
+        {
+          "label": "C28.1",
+          "net": "/ISO_GND_ISOW_2"
+        }
+      ],
+      "method": "Native KiCad effective copper-shape collision distance, binary search within 0.00001 mm; filled polygons included; all copper layers projected together."
+    },
+    {
+      "domains": [
+        "channel1",
+        "channel2"
+      ],
+      "minimum_projected_copper_gap_mm": 5.600006,
+      "pair": [
+        {
+          "label": "B.Cu zone /ISO_GND_ISOW",
+          "net": "/ISO_GND_ISOW"
+        },
+        {
+          "label": "B.Cu zone /ISO_GND_ISOW_2",
+          "net": "/ISO_GND_ISOW_2"
+        }
+      ],
+      "method": "Native KiCad effective copper-shape collision distance, binary search within 0.00001 mm; filled polygons included; all copper layers projected together."
+    }
+  ],
+  "rule_scope": "0.2mm normal copper spacing including U4/U7 TI example lands; no package clearance exception; 3.5mm minimum copper clearance between all named domains, with explicit U1/U6 NC pad membership. Separate four-mm channel keepout. Rules are provisional bench geometry, not creepage/material/working-voltage/medical isolation qualification.",
+  "assembly_labels": {
+    "silkscreen_references": {
+      "J1": [
+        115.97309999999999,
+        73.02109899999999
+      ],
+      "J2": [
+        117.49709999999999,
+        110.2321
+      ],
+      "J3": [
+        162.0151,
+        64.0884
+      ],
+      "J4": [
+        163.28889999999998,
+        146.1558
+      ],
+      "PS1": [
+        125.3731,
+        85.6756
+      ],
+      "PS2": [
+        125.3731,
+        132.67559999999997
+      ],
+      "TP1": [
+        164.525,
+        96.0
+      ],
+      "TP10": [
+        170.475,
+        71.4
+      ],
+      "TP11": [
+        180.4,
+        125.11
+      ],
+      "TP12": [
+        170.475,
+        118.4
+      ],
+      "TP13": [
+        155.475,
+        146.6
+      ],
+      "TP14": [
+        157.525,
+        139.4
+      ],
+      "TP15": [
+        141.475,
+        149.6
+      ],
+      "TP16": [
+        170.475,
+        137.6
+      ],
+      "TP17": [
+        181.0,
+        134.70999999999998
+      ],
+      "TP2": [
+        148.475,
+        94.2
+      ],
+      "TP3": [
+        141.475,
+        99.0
+      ],
+      "TP6": [
+        170.475,
+        87.0
+      ],
+      "TP7": [
+        170.475,
+        93.0
+      ],
+      "TP8": [
+        115.475,
+        93.0
+      ],
+      "TP9": [
+        179.525,
+        81.0
+      ],
+      "U1": [
+        127.7929,
+        70.6
+      ],
+      "U3": [
+        147.875,
+        71.5
+      ],
+      "U4": [
+        153.9409,
+        83.0
+      ],
+      "U5": [
+        147.875,
+        118.5
+      ],
+      "U6": [
+        127.5351,
+        117.6
+      ],
+      "U7": [
+        153.9409,
+        130.0
+      ],
+      "C1": [
+        124.4165,
+        91.0
+      ],
+      "C10": [
+        145.63,
+        75.0
+      ],
+      "C12": [
+        141.56889999999999,
+        90.5
+      ],
+      "C13": [
+        134.56889999999999,
+        90.5
+      ],
+      "C14": [
+        134.41649999999998,
+        93.5
+      ],
+      "C15": [
+        148.58350000000002,
+        91.7
+      ],
+      "C17": [
+        166.975,
+        80.3
+      ],
+      "C18": [
+        152.025,
+        85.3
+      ],
+      "C19": [
+        160.875,
+        77.80000000000001
+      ],
+      "C2": [
+        125.02499999999999,
+        94.0
+      ],
+      "C20": [
+        151.575,
+        88.0
+      ],
+      "C21": [
+        162.625,
+        72.3
+      ],
+      "C22": [
+        162.625,
+        117.5
+      ],
+      "C23": [
+        145.63,
+        122.0
+      ],
+      "C24": [
+        122.625,
+        122.80000000000001
+      ],
+      "C25": [
+        144.8,
+        116.525
+      ],
+      "C26": [
+        140.025,
+        109.5
+      ],
+      "C27": [
+        125.03,
+        125.8
+      ],
+      "C28": [
+        134.41649999999998,
+        140.5
+      ],
+      "C29": [
+        148.58350000000002,
+        138.7
+      ],
+      "C3": [
+        125.03,
+        78.8
+      ],
+      "C30": [
+        141.56889999999999,
+        137.5
+      ],
+      "C31": [
+        134.56889999999999,
+        137.5
+      ],
+      "C33": [
+        152.025,
+        132.3
+      ],
+      "C34": [
+        166.975,
+        127.3
+      ],
+      "C35": [
+        160.875,
+        124.80000000000001
+      ],
+      "C36": [
+        149.125,
+        108.70000000000002
+      ],
+      "C37": [
+        151.575,
+        135.0
+      ],
+      "C38": [
+        157.125,
+        112.30000000000001
+      ],
+      "C39": [
+        124.4165,
+        138.0
+      ],
+      "C4": [
+        122.625,
+        75.80000000000001
+      ],
+      "C40": [
+        125.02499999999999,
+        141.0
+      ],
+      "C41": [
+        139.575,
+        78.6
+      ],
+      "C42": [
+        148.0,
+        77.33
+      ],
+      "C43": [
+        131.63500000000002,
+        78.645
+      ],
+      "C44": [
+        139.575,
+        125.6
+      ],
+      "C45": [
+        148.0,
+        124.33
+      ],
+      "C46": [
+        131.63500000000002,
+        125.645
+      ],
+      "C5": [
+        146.125,
+        68.9
+      ],
+      "C6": [
+        140.025,
+        62.5
+      ],
+      "C8": [
+        149.125,
+        61.70000000000001
+      ],
+      "C9": [
+        157.125,
+        65.30000000000001
+      ],
+      "R11": [
+        168.8803,
+        132.5
+      ],
+      "R12": [
+        168.8803,
+        130.0
+      ],
+      "R13": [
+        123.39999999999999,
+        69.495
+      ],
+      "R14": [
+        125.19999999999999,
+        115.295
+      ],
+      "R15": [
+        153.405,
+        67.10000000000001
+      ],
+      "R16": [
+        153.405,
+        110.50000000000001
+      ],
+      "R3": [
+        162.1197,
+        87.3
+      ],
+      "R6": [
+        168.8803,
+        83.0
+      ]
+    },
+    "fab_only_references": []
+  }
+}

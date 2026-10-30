@@ -1,0 +1,241 @@
+(footprint "L1_2u2"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "L_Coilcraft_XxL4020 https://www.coilcraft.com/pdfs/xfl4020.pdf")
+	(tags "L Coilcraft XxL4020")
+	(property "Reference" "L1"
+		(at -3.4 -0.9 0)
+		(layer "F.SilkS")
+		(uuid "6763161a-4cfb-400e-bb32-f1e8d9a507b1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "Value" "2.2u"
+		(at 0 3 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "40bc37df-e436-49e9-823b-b9612144b7c9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dd26c8b2-657c-4c93-9160-4b7b9b44c5a3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "2.2 uH +/-20% shielded power inductor; Coilcraft XFL4020-222MEC; DCR 23.5 mOhm max"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c2513d05-e9bb-4770-a1be-9678e2b733fa")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Source_Altium_ID" "SQQAWRQY"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "edef97b3-1f8b-42f6-83fc-4ea3c9522666")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Source_Comment" "2.2uH"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "8c153328-78cc-448f-a602-05a32dd32124")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer" "Coilcraft"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "da31f4c9-45a0-48d3-ba67-f82df4a8d62d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "XFL4020-222MEC"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "8a0010bb-83d3-4432-b757-7bad034a0fec")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Revision_Note" "Replaces conflicting source 10uH/500mA metadata; nominal schematic value retained at 2.2uH"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "deda40e3-2dba-4408-b11d-f346157a752b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Datasheet" "https://www.coilcraft.com/getmedia/50632d43-da1b-4cdb-8ab4-3029cab51df3/xfl4020.pdf"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "490cfc17-455e-4f35-95f5-defa2349639f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -2.154 -2.154)
+		(end 2.154 -2.154)
+		(stroke
+			(width 0.16)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "179a692f-3a2e-44c5-afbb-cdb93357f229")
+	)
+	(fp_line
+		(start 2.154 2.154)
+		(end -2.154 2.154)
+		(stroke
+			(width 0.16)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0ae2c9ec-49fc-46ed-9a7a-732289d7bbf5")
+	)
+	(fp_rect
+		(start -2.4 -2.4)
+		(end 2.4 2.4)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "8ad40000-98eb-49d0-85b4-f544e70146ac")
+	)
+	(fp_line
+		(start -2 -2)
+		(end 2 -2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3c4850f2-4eea-458c-b9cf-84e4767814b7")
+	)
+	(fp_line
+		(start -2 2)
+		(end -2 -2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "8cd3368f-d873-4507-aecd-aff08bf86164")
+	)
+	(fp_line
+		(start 2 -2)
+		(end 2 2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1e66796b-9ba8-4fce-9613-59ec38d69f7d")
+	)
+	(fp_line
+		(start 2 2)
+		(end -2 2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3c321e9e-8dbf-4436-be40-87ca495b62c4")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "6adee1e6-acdb-4ad2-a575-4b28ea725fb0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.185 0)
+		(size 0.98 3.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(clearance 0)
+		(zone_connect 2)
+		(uuid "b460e5a7-75ab-476f-87d2-31ec43197422")
+	)
+	(pad "2" smd rect
+		(at 1.185 0)
+		(size 0.98 3.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(clearance 0)
+		(zone_connect 2)
+		(uuid "6c620fc8-7b1e-4352-9ac1-1e6ad5ab8f17")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Coilcraft_XxL4020.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

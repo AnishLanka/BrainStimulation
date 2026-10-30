@@ -1,0 +1,42 @@
+{
+  "board": "Monitor_Power_C1",
+  "status": "Independent file/geometry audit PASS; not measured circuit performance",
+  "native_copper_layers": 2,
+  "native_thickness_mm": 0.41116,
+  "gerber_job_thickness_mm": 0.4112,
+  "job_finish_metadata": "None",
+  "outline_segment_count": 4,
+  "outline_centerline_mm": [
+    100.0,
+    60.0
+  ],
+  "outline_equal_to_board": true,
+  "drills_equal_to_board_within_mm": 0.00051,
+  "drill_counts": {
+    "PTH": 40,
+    "NPTH": 4
+  },
+  "common_auxiliary_origin_mm": [
+    0.0,
+    60.0
+  ],
+  "files": {
+    "Monitor_Power_C1-B_Cu.gbl": "842648cee9e2f1dec1189cd75a50ca2e79b765db1806f7c9baa952c2b3baf2d5",
+    "Monitor_Power_C1-B_Mask.gbs": "d3b3f2ef3c4a66f128fee614134038afbc39a759f629a0d7eb6350b132020e8c",
+    "Monitor_Power_C1-B_Silkscreen.gbo": "04e42225ef03d966f6a7f4807f99a52d69ceebfec115081ea2866846fc045bc3",
+    "Monitor_Power_C1-Edge_Cuts.gm1": "2ef7b35949d147a86d42988cf4a9e4c5fe8b6ee39c0cb4424c4f9ec8d3a41e73",
+    "Monitor_Power_C1-F_Cu.gtl": "3db92da18e7cc7e7353da5baa732fc3d7112591d9569dccf025e0e07520005d7",
+    "Monitor_Power_C1-F_Mask.gts": "78d782a62038420892d4da4b1cfe63369324a47bee330dba3bf8a52e708a4b82",
+    "Monitor_Power_C1-F_Silkscreen.gto": "7da130c5ed8b821dc94a594a85ca506225e6c28a814cac3916dd7a02b948d9f3",
+    "Monitor_Power_C1-job.gbrjob": "6a70333d429a5af2764119dba2af49c4a280e094d510aa172435131f0ad47798",
+    "Monitor_Power_C1-NPTH.drl": "7d33752c98e4bc853c5286b3756442d66634add74c6a0d8813ec29fdaa432281",
+    "Monitor_Power_C1-PTH.drl": "cbb429451e2ee86733dcfc97f7124fbd7667c93f12dd2e97299f460e0039aa60"
+  },
+  "zip": {
+    "path": "C:\\Users\\peter\\Documents\\Codex\\2026-10-17\\this\\outputs\\Monitor_Power_C1_Prototype_JLCPCB.zip",
+    "file_count": 10,
+    "sha256": "06def7eab774aa9abbc523371610ca62da676a74378804473969843e10af9dae",
+    "exact_fabrication_directory_match": true
+  },
+  "board_sha256": "6df11dc536e993520866675ea80c10f3ac029d781b8046ce19df095916471e14"
+}

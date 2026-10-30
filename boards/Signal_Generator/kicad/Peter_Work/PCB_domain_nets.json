@@ -1,0 +1,46 @@
+{
+  "primary": [
+    "/FAULT_TO_PICO",
+    "/FAULT_TO_PICO_2",
+    "/SPI_CS_SYS",
+    "/SPI_CS_SYS_2",
+    "/SPI_MOSI_SYS",
+    "/SPI_SCLK_SYS",
+    "/SYS_3V3",
+    "/SYS_GND",
+    "/VBUS_5V",
+    "/VBUS_5V_2",
+    "unconnected-(U1-OUTD-Pad5)",
+    "unconnected-(U6-OUTD-Pad5)"
+  ],
+  "channel1": [
+    "/BIPOLAR_OUT",
+    "/CS_ISO",
+    "/DAC_OUT_UNIPOLAR",
+    "/IN-_B",
+    "/ISO_3V3_CLEAN",
+    "/ISO_3V3_RAW",
+    "/ISO_GND_ISOW",
+    "/ISO_N5V",
+    "/ISO_P5V",
+    "/MOSI_ISO",
+    "/SCLK_ISO",
+    "/VREF_BUF",
+    "unconnected-(U1-IND-Pad16)"
+  ],
+  "channel2": [
+    "/BIPOLAR_OUT_2",
+    "/CS_ISO_2",
+    "/DAC_OUT_UNIPOLAR_2",
+    "/IN-_B_2",
+    "/ISO_3V3_CLEAN_2",
+    "/ISO_3V3_RAW_2",
+    "/ISO_GND_ISOW_2",
+    "/ISO_N5V_2",
+    "/ISO_P5V_2",
+    "/MOSI_ISO_2",
+    "/SCLK_ISO_2",
+    "/VREF_BUF_2",
+    "unconnected-(U6-IND-Pad16)"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-17T15:41:16",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/3e664a81-7a62-5092-a1fe-1314a5c402b2",
+            "violations": []
+        }
+    ],
+    "source": "Shared_Power_Adapter_RevC.kicad_sch"
+}

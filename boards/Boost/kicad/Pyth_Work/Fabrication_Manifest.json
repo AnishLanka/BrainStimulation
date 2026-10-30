@@ -1,0 +1,17 @@
+{
+  "zip": "Boost_79V7_Prototype_JLCPCB.zip",
+  "pcb_sha256": "d329fe12e2790f448aebf86053afe83f5395b52f0572ed989d25742532b22fd3",
+  "zip_sha256": "a57f1bbe8db532cd809a71c6fceb6bb6359577f0307242ce6cf6d030aaf65682",
+  "files": {
+    "Boost_Electrical_Draft-B_Cu.gbl": "c57f860b64a578d6b2727b1b85d267b37dd90af9e5f3806cd01109a565d71beb",
+    "Boost_Electrical_Draft-B_Mask.gbs": "00e7055310820b300fbd3b93dc292cad2e7f3a95f9a91f968d4c4dc8ccff9599",
+    "Boost_Electrical_Draft-B_Silkscreen.gbo": "05812e235e9dcf0ef084e528eebbbe2b3a451e8d43dada8fcb444a30cb8a43fe",
+    "Boost_Electrical_Draft-Edge_Cuts.gm1": "ae02299d3ff2a638e3b093ffe6d52a16fe3ac4c08131a66f0d22048c62333517",
+    "Boost_Electrical_Draft-F_Cu.gtl": "853be853f9f6c6ca0f15f7671d9a80a0c981a9b448329028269e055b89b298ef",
+    "Boost_Electrical_Draft-F_Mask.gts": "eeb918be230beb6b83ce6d67f5e4c7f78df89381ccf9dae585290c58ee41bc44",
+    "Boost_Electrical_Draft-F_Silkscreen.gto": "75456690b62a3b77bece71cc0a4f702ac6a8aae1111e99ad06f3c006b06ebf13",
+    "Boost_Electrical_Draft-job.gbrjob": "cb76118f9341721be64ca512924f3580e362edb1e0275ecdb94003d36898cc97",
+    "Boost_Electrical_Draft-NPTH.drl": "4c6011395f8f1b4698e10b655617cce25c56418b6cb70b59a632b1f36f7789f0",
+    "Boost_Electrical_Draft-PTH.drl": "d14a3b2d9c0c04bf1f6dab6ffbc46c6a92bdb161af3e84a86d8201c8997940f7"
+  }
+}

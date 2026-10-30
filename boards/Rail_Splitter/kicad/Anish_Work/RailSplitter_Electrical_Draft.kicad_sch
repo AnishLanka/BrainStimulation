@@ -1,0 +1,751 @@
+(kicad_sch (version 20250114) (generator "eeschema") (uuid "f94e900f-8363-5fa1-9710-b5e29f448405") (paper "A4") (title_block (title "OPA455 buffered midpoint - electrical draft") (date "2026-10-17") (rev "DRAFT 1") (comment 1 "NOT FOR FABRICATION; stability and system power unvalidated")) (lib_symbols (symbol "RailSplitterLocal:R"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "R"
+			(at 2.032 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 0 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "R res resistor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "R_0_1"
+			(rectangle
+				(start -1.016 -2.54)
+				(end 1.016 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "R_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)(symbol "RailSplitterLocal:C"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 0.635 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0.9652 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "cap capacitor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "C_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "C_0_1"
+			(polyline
+				(pts
+					(xy -2.032 0.762) (xy 2.032 0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.032 -0.762) (xy 2.032 -0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "C_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 2.794)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 2.794)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)(symbol "RailSplitterLocal:Conn_01x02"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 0 -5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Conn_01x02_1_1"
+			(rectangle
+				(start -1.27 1.27)
+				(end 1.27 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)(symbol "RailSplitterLocal:Conn_01x03"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x03"
+			(at 0 -5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Conn_01x03_1_1"
+			(rectangle
+				(start -1.27 3.81)
+				(end 1.27 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 2.667)
+				(end 0 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 2.54 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)(symbol "RailSplitterLocal:PWR_FLAG"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#FLG"
+			(at 0 1.905 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 0 3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "flag power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_0"
+			(pin power_out line
+				(at 0 0 90)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_1"
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)(symbol "RailSplitterLocal:OPA455IDDA" (pin_names (offset 1.016)) (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 20.32 0) (effects (font (size 1.27 1.27))))(property "Value" "OPA455IDDA" (at 0 22.86 0) (effects (font (size 1.27 1.27))))(property "Footprint" "RailSplitterLocal:OPA455_DDA0008J" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa455.pdf" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (symbol "OPA455IDDA_0_1" (rectangle (start -10.16 12.7) (end 10.16 -15.24) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol "OPA455IDDA_1_1" (pin input line (at -15.24 -12.7 0) (length 5.08) (name "E/D_COM" (effects (font (size 1.016 1.016)))) (number "1" (effects (font (size 1.016 1.016)))))(pin input line (at -15.24 0 0) (length 5.08) (name "-IN" (effects (font (size 1.016 1.016)))) (number "2" (effects (font (size 1.016 1.016)))))(pin input line (at -15.24 5.08 0) (length 5.08) (name "+IN" (effects (font (size 1.016 1.016)))) (number "3" (effects (font (size 1.016 1.016)))))(pin power_in line (at 0 -17.78 90) (length 5.08) (name "V-" (effects (font (size 1.016 1.016)))) (number "4" (effects (font (size 1.016 1.016)))))(pin open_collector line (at 15.24 -7.62 180) (length 5.08) (name "STATUS" (effects (font (size 1.016 1.016)))) (number "5" (effects (font (size 1.016 1.016)))))(pin output line (at 15.24 5.08 180) (length 5.08) (name "OUT" (effects (font (size 1.016 1.016)))) (number "6" (effects (font (size 1.016 1.016)))))(pin power_in line (at 0 17.78 270) (length 5.08) (name "V+" (effects (font (size 1.016 1.016)))) (number "7" (effects (font (size 1.016 1.016)))))(pin input line (at -15.24 -7.62 0) (length 5.08) (name "E/D" (effects (font (size 1.016 1.016)))) (number "8" (effects (font (size 1.016 1.016)))))(pin passive line (at 7.62 -17.78 90) (length 5.08) (name "EP" (effects (font (size 1.016 1.016)))) (number "9" (effects (font (size 1.016 1.016)))))))) (symbol (lib_id "RailSplitterLocal:Conn_01x02") (at 35.56 25.4 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "abaf2e3a-659f-570a-882d-5327b1c2670e")(property "Reference" "J1" (at 35.56 19.05 0) (effects (font (size 1.27 1.27))))(property "Value" "80 V INPUT" (at 35.56 21.59 0) (effects (font (size 1.27 1.27))))(property "Footprint" "RailSplitterLocal:J2" (at 35.56 25.4 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "Pin1 HV_TOP; pin2 HV_BOTTOM; connector selection/rating to be confirmed" (at 35.56 25.4 0) (effects (font (size 1.27 1.27)) hide))(instances (project "RailSplitter_Electrical_Draft" (path "/f94e900f-8363-5fa1-9710-b5e29f448405" (reference "J1") (unit 1)))))(wire (pts (xy 30.48 25.4) (xy 20.32 25.4)) (stroke (width 0) (type default)) (uuid "6de141fd-02d5-5a65-a4ca-869f0a14e2aa"))(label "HV_TOP" (at 20.32 25.4 0) (effects (font (size 1.016 1.016)) (justify left bottom)) (uuid "52aab8a9-7a74-5aa9-8cd1-50b91b32d972"))(wire (pts (xy 30.48 27.94) (xy 20.32 27.94)) (stroke (width 0) (type default)) (uuid "2f13eefd-0337-5cae-98d3-202d00629235"))(label "HV_BOTTOM" (at 20.32 27.94 0) (effects (font (size 1.016 1.016)) (justify left bottom)) (uuid "2c07b06c-7a3e-5083-b58a-9afc76a9f910"))(symbol (lib_id "RailSplitterLocal:OPA455IDDA") (at 127 76.2 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "52781158-03a1-504b-a892-50cf95e4bf3f")(property "Reference" "U1" (at 140.97 53.34 0) (effects (font (size 1.27 1.27)) (justify left)))(property "Value" "OPA455IDDA" (at 140.97 55.88 0) (effects (font (size 1.27 1.27)) (justify left)))(property "Footprint" "RailSplitterLocal:OPA455_DDA0008J" (at 127 76.2 0) (effects (font (size 1.27 1.27)) hide))(property "MPN" "OPA455IDDA" (at 127 76.2 0) (effects (font (size 1.27 1.27)) hide))(property "Manufacturer" "Texas Instruments" (at 127 76.2 0) (effects (font (size 1.27 1.27)) hide))(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa455.pdf" (at 127 76.2 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "Unity-gain midpoint buffer; exposed pad9=HV_BOTTOM" (at 127 76.2 0) (effects (font (size 1.27 1.27)) hide))(instances (project "RailSplitter_Electrical_Draft" (path "/f94e900f-8363-5fa1-9710-b5e29f448405" (reference "U1") (unit 1)))))(symbol (lib_id "RailSplitterLocal:R") (at 76.2 55.88 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "b5cf1ea1-2605-5fa4-9d30-8b0a5e8ec5ac")(property "Reference" "R1" (at 80.01 54.61 0) (effects (font (size 1.27 1.27)) (justify left)))(property "Value" "100k 0.1%" (at 80.01 57.15 0) (effects (font (size 1.27 1.27)) (justify left)))(property "Footprint" "RailSplitterLocal:R0805" (at 76.2 55.88 0) (effects (font (size 1.27 1.27)) hide))(property "Rating" "0.125W minimum; 100V minimum working voltage; <=25ppm/K preferred" (at 76.2 55.88 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "Matched-divider procurement requirement; exact MPN pending" (at 76.2 55.88 0) (effects (font (size 1.27 1.27)) hide))(instances (project "RailSplitter_Electrical_Draft" (path "/f94e900f-8363-5fa1-9710-b5e29f448405" (reference "R1") (unit 1)))))(symbol (lib_id "RailSplitterLocal:R") (at 76.2 93.98 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "b64aa5f7-385b-5a32-8ef3-2b3ebacce81e")(property "Reference" "R2" (at 80.01 92.71 0) (effects (font (size 1.27 1.27)) (justify left)))(property "Value" "100k 0.1%" (at 80.01 95.25 0) (effects (font (size 1.27 1.27)) (justify left)))(property "Footprint" "RailSplitterLocal:R0805" (at 76.2 93.98 0) (effects (font (size 1.27 1.27)) hide))(property "Rating" "0.125W minimum; 100V minimum working voltage; <=25ppm/K preferred" (at 76.2 93.98 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "Matched-divider procurement requirement; exact MPN pending" (at 76.2 93.98 0) (effects (font (size 1.27 1.27)) hide))(instances (project "RailSplitter_Electrical_Draft" (path "/f94e900f-8363-5fa1-9710-b5e29f448405" (reference "R2") (unit 1)))))(symbol (lib_id "RailSplitterLocal:R") (at 165.1 71.12 90) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "c7f731f2-39f1-5c2d-afb3-d55b3ef2c1af")(property "Reference" "R3" (at 162.56 64.77 90) (effects (font (size 1.27 1.27))))(property "Value" "49R9 1%" (at 162.56 67.31 90) (effects (font (size 1.27 1.27))))(property "Footprint" "RailSplitterLocal:R0805" (at 165.1 71.12 0) (effects (font (size 1.27 1.27)) hide))(property "Rating" "0.125W minimum" (at 165.1 71.12 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "Provisional output isolation resistor; feedback taken BEFORE resistor; stability unvalidated" (at 165.1 71.12 0) (effects (font (size 1.27 1.27)) hide))(instances (project "RailSplitter_Electrical_Draft" (path "/f94e900f-8363-5fa1-9710-b5e29f448405" (reference "R3") (unit 1)))))(symbol (lib_id "RailSplitterLocal:C") (at 187.96 55.88 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "557c08a1-5b46-50a4-8675-b51827b59e88")(property "Reference" "C1" (at 191.77 54.61 0) (effects (font (size 1.27 1.27)) (justify left)))(property "Value" "100n 100V" (at 191.77 57.15 0) (effects (font (size 1.27 1.27)) (justify left)))(property "Footprint" "RailSplitterLocal:C0805" (at 187.96 55.88 0) (effects (font (size 1.27 1.27)) hide))(property "Dielectric" "X7R" (at 187.96 55.88 0) (effects (font (size 1.27 1.27)) hide))(property "MPN" "C2012X7R2A104K125AA" (at 187.96 55.88 0) (effects (font (size 1.27 1.27)) hide))(property "Manufacturer" "TDK" (at 187.96 55.88 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "C6 direct full-bus local bypass; C1/C2 half-rail bypasses" (at 187.96 55.88 0) (effects (font (size 1.27 1.27)) hide))(instances (project "RailSplitter_Electrical_Draft" (path "/f94e900f-8363-5fa1-9710-b5e29f448405" (reference "C1") (unit 1)))))(symbol (lib_id "RailSplitterLocal:C") (at 187.96 93.98 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "722b04b8-c0f9-53da-9975-93f4119cbae6")(property "Reference" "C2" (at 191.77 92.71 0) (effects (font (size 1.27 1.27)) (justify left)))(property "Value" "100n 100V" (at 191.77 95.25 0) (effects (font (size 1.27 1.27)) (justify left)))(property "Footprint" "RailSplitterLocal:C0805" (at 187.96 93.98 0) (effects (font (size 1.27 1.27)) hide))(property "Dielectric" "X7R" (at 187.96 93.98 0) (effects (font (size 1.27 1.27)) hide))(property "MPN" "C2012X7R2A104K125AA" (at 187.96 93.98 0) (effects (font (size 1.27 1.27)) hide))(property "Manufacturer" "TDK" (at 187.96 93.98 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "C6 direct full-bus local bypass; C1/C2 half-rail bypasses" (at 187.96 93.98 0) (effects (font (size 1.27 1.27)) hide))(instances (project "RailSplitter_Electrical_Draft" (path "/f94e900f-8363-5fa1-9710-b5e29f448405" (reference "C2") (unit 1)))))(symbol (lib_id "RailSplitterLocal:C") (at 48.26 76.2 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "d7bc0357-1b68-5c11-bedd-b486c32ce49d")(property "Reference" "C6" (at 52.07 74.93 0) (effects (font (size 1.27 1.27)) (justify left)))(property "Value" "100n 100V" (at 52.07 77.47 0) (effects (font (size 1.27 1.27)) (justify left)))(property "Footprint" "RailSplitterLocal:C0805" (at 48.26 76.2 0) (effects (font (size 1.27 1.27)) hide))(property "Dielectric" "X7R" (at 48.26 76.2 0) (effects (font (size 1.27 1.27)) hide))(property "MPN" "C2012X7R2A104K125AA" (at 48.26 76.2 0) (effects (font (size 1.27 1.27)) hide))(property "Manufacturer" "TDK" (at 48.26 76.2 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "C6 direct full-bus local bypass; C1/C2 half-rail bypasses" (at 48.26 76.2 0) (effects (font (size 1.27 1.27)) hide))(instances (project "RailSplitter_Electrical_Draft" (path "/f94e900f-8363-5fa1-9710-b5e29f448405" (reference "C6") (unit 1)))))(symbol (lib_id "RailSplitterLocal:C") (at 213.36 55.88 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "026d306e-67a1-5dc5-baf9-29256f7dd6d4")(property "Reference" "C3" (at 217.17 54.61 0) (effects (font (size 1.27 1.27)) (justify left)))(property "Value" "10u 100V" (at 217.17 57.15 0) (effects (font (size 1.27 1.27)) (justify left)))(property "Footprint" "RailSplitterLocal:C1210" (at 213.36 55.88 0) (effects (font (size 1.27 1.27)) hide))(property "Dielectric" "X7S" (at 213.36 55.88 0) (effects (font (size 1.27 1.27)) hide))(property "MPN" "GRM32EC72A106KE05K" (at 213.36 55.88 0) (effects (font (size 1.27 1.27)) hide))(property "Manufacturer" "Murata" (at 213.36 55.88 0) (effects (font (size 1.27 1.27)) hide))(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32EC72A106KE05-01A.pdf" (at 213.36 55.88 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "Nominal value only; DC bias reduces capacitance; verify effective C and availability before release" (at 213.36 55.88 0) (effects (font (size 1.27 1.27)) hide))(instances (project "RailSplitter_Electrical_Draft" (path "/f94e900f-8363-5fa1-9710-b5e29f448405" (reference "C3") (unit 1)))))(symbol (lib_id "RailSplitterLocal:C") (at 213.36 93.98 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "38d31ca1-2b9a-5a99-8311-a17b08c44187")(property "Reference" "C4" (at 217.17 92.71 0) (effects (font (size 1.27 1.27)) (justify left)))(property "Value" "10u 100V" (at 217.17 95.25 0) (effects (font (size 1.27 1.27)) (justify left)))(property "Footprint" "RailSplitterLocal:C1210" (at 213.36 93.98 0) (effects (font (size 1.27 1.27)) hide))(property "Dielectric" "X7S" (at 213.36 93.98 0) (effects (font (size 1.27 1.27)) hide))(property "MPN" "GRM32EC72A106KE05K" (at 213.36 93.98 0) (effects (font (size 1.27 1.27)) hide))(property "Manufacturer" "Murata" (at 213.36 93.98 0) (effects (font (size 1.27 1.27)) hide))(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32EC72A106KE05-01A.pdf" (at 213.36 93.98 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "Nominal value only; DC bias reduces capacitance; verify effective C and availability before release" (at 213.36 93.98 0) (effects (font (size 1.27 1.27)) hide))(instances (project "RailSplitter_Electrical_Draft" (path "/f94e900f-8363-5fa1-9710-b5e29f448405" (reference "C4") (unit 1)))))(symbol (lib_id "RailSplitterLocal:C") (at 93.98 91.44 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "9279774c-e3de-5f70-98ac-4430aa0ceda2")(property "Reference" "C5" (at 93.98 76.2 0) (effects (font (size 1.27 1.27))))(property "Value" "30p 100V" (at 93.98 78.74 0) (effects (font (size 1.27 1.27))))(property "Footprint" "RailSplitterLocal:C0603" (at 93.98 91.44 0) (effects (font (size 1.27 1.27)) hide))(property "Dielectric" "C0G/NP0" (at 93.98 91.44 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "E/D filtering; no DC external drive; exact MPN pending" (at 93.98 91.44 0) (effects (font (size 1.27 1.27)) hide))(instances (project "RailSplitter_Electrical_Draft" (path "/f94e900f-8363-5fa1-9710-b5e29f448405" (reference "C5") (unit 1)))))(symbol (lib_id "RailSplitterLocal:Conn_01x03") (at 256.54 71.12 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "af2d592c-444f-53ef-a6ee-cb08bd121b0b")(property "Reference" "J2" (at 256.54 59.69 0) (effects (font (size 1.27 1.27))))(property "Value" "+40 / MID / -40" (at 256.54 62.23 0) (effects (font (size 1.27 1.27))))(property "Footprint" "RailSplitterLocal:J3" (at 256.54 71.12 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "1 HV_TOP; 2 MID; 3 HV_BOTTOM. +40/-40 are relative to MID." (at 256.54 71.12 0) (effects (font (size 1.27 1.27)) hide))(instances (project "RailSplitter_Electrical_Draft" (path "/f94e900f-8363-5fa1-9710-b5e29f448405" (reference "J2") (unit 1)))))(wire (pts (xy 48.26 40.64) (xy 60.96 40.64)) (stroke (width 0) (type default)) (uuid "dfedca57-5aab-5e43-a266-4272edb6ddbc"))(wire (pts (xy 60.96 40.64) (xy 76.2 40.64)) (stroke (width 0) (type default)) (uuid "fcb0fec7-f5d3-5ae3-adaf-06c498636ba9"))(wire (pts (xy 76.2 40.64) (xy 127 40.64)) (stroke (width 0) (type default)) (uuid "daaebd14-0a53-5578-9a89-8de67d052348"))(wire (pts (xy 127 40.64) (xy 187.96 40.64)) (stroke (width 0) (type default)) (uuid "98fe4e61-e7c6-5f39-81c7-c41e21e644e5"))(wire (pts (xy 187.96 40.64) (xy 213.36 40.64)) (stroke (width 0) (type default)) (uuid "91dafb3b-a40e-523e-a54b-ccb9071a4fab"))(wire (pts (xy 48.26 111.76) (xy 60.96 111.76)) (stroke (width 0) (type default)) (uuid "336d2464-eaae-5ddb-933a-203e86f4a4ea"))(wire (pts (xy 60.96 111.76) (xy 76.2 111.76)) (stroke (width 0) (type default)) (uuid "f1bbe3f7-64bb-5a8c-a762-d8cba79b032e"))(wire (pts (xy 76.2 111.76) (xy 109.22 111.76)) (stroke (width 0) (type default)) (uuid "cf48cf86-b044-566e-a8b4-356dd53c76d4"))(wire (pts (xy 109.22 111.76) (xy 127 111.76)) (stroke (width 0) (type default)) (uuid "135d5709-6a26-59de-8631-8d2279e31361"))(wire (pts (xy 127 111.76) (xy 134.62 111.76)) (stroke (width 0) (type default)) (uuid "73965c28-39ea-5e27-b13c-b33efa0537f8"))(wire (pts (xy 134.62 111.76) (xy 187.96 111.76)) (stroke (width 0) (type default)) (uuid "ee96c9b3-d596-5c20-99d5-44964350da55"))(wire (pts (xy 187.96 111.76) (xy 213.36 111.76)) (stroke (width 0) (type default)) (uuid "0d316942-54a1-5118-ac1e-88179e8b4aef"))(junction (at 60.96 40.64) (diameter 0) (color 0 0 0 0) (uuid "d0f1c414-917b-5d5a-9114-80871e971fc0"))(junction (at 76.2 40.64) (diameter 0) (color 0 0 0 0) (uuid "fb8285e3-b2f2-53a7-9142-c6a0a6358bfa"))(junction (at 127 40.64) (diameter 0) (color 0 0 0 0) (uuid "bbfa34d4-722f-5a7a-bbdf-8572c075e410"))(junction (at 187.96 40.64) (diameter 0) (color 0 0 0 0) (uuid "8d3eab5c-5e2e-540e-a666-380156d8f627"))(junction (at 60.96 111.76) (diameter 0) (color 0 0 0 0) (uuid "54c2de6a-1d15-505d-98e2-71e096662cef"))(junction (at 76.2 111.76) (diameter 0) (color 0 0 0 0) (uuid "4dcc45c9-d154-54fb-a5a3-544d733d07c2"))(junction (at 109.22 111.76) (diameter 0) (color 0 0 0 0) (uuid "97adacd0-f39c-5e78-959b-eb554bbac06c"))(junction (at 127 111.76) (diameter 0) (color 0 0 0 0) (uuid "815ec672-0823-5689-8810-da83af289a9c"))(junction (at 134.62 111.76) (diameter 0) (color 0 0 0 0) (uuid "bf4e0749-099a-5a2b-a6c2-4c1c0387f396"))(junction (at 187.96 111.76) (diameter 0) (color 0 0 0 0) (uuid "8c893110-241b-58be-8af7-052db0120b54"))(label "HV_TOP" (at 48.26 40.64 0) (effects (font (size 1.016 1.016)) (justify left bottom)) (uuid "298c3430-1e88-51bf-8210-15e2900afb24"))(label "HV_BOTTOM" (at 48.26 111.76 0) (effects (font (size 1.016 1.016)) (justify left bottom)) (uuid "c9b6b3b1-e698-5663-b241-35c3a7d32b53"))(symbol (lib_id "RailSplitterLocal:PWR_FLAG") (at 60.96 40.64 0) (unit 1) (in_bom no) (on_board no) (dnp no) (uuid "9a8e871c-6a20-5cbb-8116-f5070388518a")(property "Reference" "#FLG01" (at 64.77 39.37 0) (effects (font (size 1.27 1.27)) (justify left) hide))(property "Value" "PWR_FLAG" (at 64.77 41.91 0) (effects (font (size 1.27 1.27)) (justify left) hide))(property "Footprint" "" (at 60.96 40.64 0) (effects (font (size 1.27 1.27)) hide))(instances (project "RailSplitter_Electrical_Draft" (path "/f94e900f-8363-5fa1-9710-b5e29f448405" (reference "#FLG01") (unit 1)))))(symbol (lib_id "RailSplitterLocal:PWR_FLAG") (at 60.96 111.76 0) (unit 1) (in_bom no) (on_board no) (dnp no) (uuid "6a1509a8-6242-5511-92fa-8b00a236737c")(property "Reference" "#FLG02" (at 64.77 110.49 0) (effects (font (size 1.27 1.27)) (justify left) hide))(property "Value" "PWR_FLAG" (at 64.77 113.03 0) (effects (font (size 1.27 1.27)) (justify left) hide))(property "Footprint" "" (at 60.96 111.76 0) (effects (font (size 1.27 1.27)) hide))(instances (project "RailSplitter_Electrical_Draft" (path "/f94e900f-8363-5fa1-9710-b5e29f448405" (reference "#FLG02") (unit 1)))))(wire (pts (xy 76.2 40.64) (xy 76.2 52.07)) (stroke (width 0) (type default)) (uuid "b88a4151-5f7f-538f-aa4c-978a86f83e00"))(wire (pts (xy 76.2 59.69) (xy 76.2 71.12)) (stroke (width 0) (type default)) (uuid "caecc5ef-d5ec-545c-ab06-c52db93a4e7d"))(wire (pts (xy 76.2 71.12) (xy 76.2 90.17)) (stroke (width 0) (type default)) (uuid "990ea3bd-7422-5184-a4ab-27f8d62373dc"))(wire (pts (xy 76.2 97.79) (xy 76.2 111.76)) (stroke (width 0) (type default)) (uuid "cff8f0b8-6c30-5470-8603-0213bf283ba7"))(wire (pts (xy 76.2 71.12) (xy 111.76 71.12)) (stroke (width 0) (type default)) (uuid "9ffba785-709c-5995-a32c-8172b54b82dd"))(junction (at 76.2 71.12) (diameter 0) (color 0 0 0 0) (uuid "3fd3f094-095b-5c52-8db1-cbadc8860116"))(label "VREF_HALF" (at 78.74 71.12 0) (effects (font (size 1.016 1.016)) (justify left bottom)) (uuid "9e7d8c3c-e70f-5a00-890c-2d6bcfda9340"))(wire (pts (xy 127 40.64) (xy 127 58.42)) (stroke (width 0) (type default)) (uuid "116c95e4-2070-59eb-ab7e-ba9e4ae85b3b"))(wire (pts (xy 127 93.98) (xy 127 111.76)) (stroke (width 0) (type default)) (uuid "54cedecd-e3cc-54af-9c56-e231678f56ab"))(wire (pts (xy 134.62 93.98) (xy 134.62 111.76)) (stroke (width 0) (type default)) (uuid "94c45405-31f5-56eb-8e9f-be3a9ddc5d92"))(wire (pts (xy 142.24 71.12) (xy 153.67 71.12)) (stroke (width 0) (type default)) (uuid "450351da-6eb8-58cd-8110-4239257a7b52"))(wire (pts (xy 153.67 71.12) (xy 161.29 71.12)) (stroke (width 0) (type default)) (uuid "241d510a-b99a-546e-a0aa-a3d01342bd20"))(junction (at 153.67 71.12) (diameter 0) (color 0 0 0 0) (uuid "d2bff04b-2698-54a3-bdcd-13edca5af91f"))(label "BUF_RAW" (at 147.32 71.12 0) (effects (font (size 1.016 1.016)) (justify left bottom)) (uuid "b724e8a1-2b53-5a67-bd09-34958fe74972"))(wire (pts (xy 111.76 76.2) (xy 104.14 76.2)) (stroke (width 0) (type default)) (uuid "8ff28545-36c7-578a-ae59-4abbe36c9dc7"))(wire (pts (xy 104.14 76.2) (xy 104.14 101.6)) (stroke (width 0) (type default)) (uuid "9a919024-416f-5c99-8622-c6159c327596"))(wire (pts (xy 104.14 101.6) (xy 153.67 101.6)) (stroke (width 0) (type default)) (uuid "6b4ccbeb-2d73-5d93-88be-c8b187152bb4"))(wire (pts (xy 153.67 101.6) (xy 153.67 71.12)) (stroke (width 0) (type default)) (uuid "c9cd056f-5bf7-5273-a276-85fc325e22fd"))(wire (pts (xy 168.91 71.12) (xy 187.96 71.12)) (stroke (width 0) (type default)) (uuid "43cfcf57-c036-5bcb-b302-0c8ec07aa4d2"))(wire (pts (xy 187.96 71.12) (xy 213.36 71.12)) (stroke (width 0) (type default)) (uuid "b096cdd0-eb74-5e09-b919-8d531e047452"))(wire (pts (xy 213.36 71.12) (xy 251.46 71.12)) (stroke (width 0) (type default)) (uuid "52c7ebc3-73a0-52cb-a417-c7ec665ef6cb"))(label "MID" (at 236.22 71.12 0) (effects (font (size 1.016 1.016)) (justify left bottom)) (uuid "9c341a04-0e9e-5fa4-84d3-9e570624954b"))(wire (pts (xy 187.96 40.64) (xy 187.96 52.07)) (stroke (width 0) (type default)) (uuid "adaa0513-e36d-5678-b55f-20c60328cbcc"))(wire (pts (xy 187.96 59.69) (xy 187.96 71.12)) (stroke (width 0) (type default)) (uuid "e0c630af-7db5-5e5a-a865-8dc5c15f046b"))(wire (pts (xy 187.96 71.12) (xy 187.96 90.17)) (stroke (width 0) (type default)) (uuid "fddf6ad6-86f1-58fa-9c3d-de0c8c3a6d0c"))(wire (pts (xy 187.96 97.79) (xy 187.96 111.76)) (stroke (width 0) (type default)) (uuid "38a8ac3a-570c-5af7-aacd-c74f67de7a5c"))(junction (at 187.96 71.12) (diameter 0) (color 0 0 0 0) (uuid "66f6eee8-3e7f-568e-b8d6-9e79b47d684e"))(wire (pts (xy 213.36 40.64) (xy 213.36 52.07)) (stroke (width 0) (type default)) (uuid "7111603d-9c4d-5382-954c-b5edbdf0371f"))(wire (pts (xy 213.36 59.69) (xy 213.36 71.12)) (stroke (width 0) (type default)) (uuid "e0433cec-ab59-52dd-888b-b353cbcaf8e4"))(wire (pts (xy 213.36 71.12) (xy 213.36 90.17)) (stroke (width 0) (type default)) (uuid "28c6aff7-fa2c-5b62-bffa-49d88e92a336"))(wire (pts (xy 213.36 97.79) (xy 213.36 111.76)) (stroke (width 0) (type default)) (uuid "a6b0dafc-4536-55da-b0a8-80f61e387c33"))(junction (at 213.36 71.12) (diameter 0) (color 0 0 0 0) (uuid "5e0510dc-6f0b-5f7d-a667-0b9cf5ad7264"))(wire (pts (xy 48.26 40.64) (xy 48.26 72.39)) (stroke (width 0) (type default)) (uuid "c0786f32-cb44-50bd-9f92-dda5a9e4e3c4"))(wire (pts (xy 48.26 80.01) (xy 48.26 111.76)) (stroke (width 0) (type default)) (uuid "0374ed0e-f5a0-50c5-aa25-dafc204582c4"))(wire (pts (xy 111.76 83.82) (xy 93.98 83.82)) (stroke (width 0) (type default)) (uuid "cb65276d-50d6-5c13-98e5-c97346e387ef"))(wire (pts (xy 93.98 83.82) (xy 93.98 87.63)) (stroke (width 0) (type default)) (uuid "7d341d89-0a47-5f2a-8897-00e83657c266"))(label "EN_INTERNAL" (at 93.98 83.82 0) (effects (font (size 1.016 1.016)) (justify left bottom)) (uuid "22f8f91f-3642-54e2-ae63-7dfd392cfc58"))(wire (pts (xy 93.98 95.25) (xy 93.98 106.68)) (stroke (width 0) (type default)) (uuid "f53f66c0-7696-593e-aef7-da326aa00aed"))(wire (pts (xy 93.98 106.68) (xy 88.9 106.68)) (stroke (width 0) (type default)) (uuid "71d42d93-5fe2-519b-8e01-564876eaa62f"))(label "HV_BOTTOM" (at 88.9 106.68 0) (effects (font (size 1.016 1.016)) (justify left bottom)) (uuid "f5a5dedd-8a42-5732-9731-5c38d6cb2146"))(wire (pts (xy 111.76 88.9) (xy 109.22 88.9)) (stroke (width 0) (type default)) (uuid "d0ff2805-f3cc-59fc-b06e-0f93a6f214a2"))(wire (pts (xy 109.22 88.9) (xy 109.22 111.76)) (stroke (width 0) (type default)) (uuid "f159c6ff-1b8b-5025-b959-18a198c65991"))(no_connect (at 142.24 83.82) (uuid "f27358e9-fceb-52ea-9d36-be25000b2dfd"))(wire (pts (xy 251.46 68.58) (xy 238.76 68.58)) (stroke (width 0) (type default)) (uuid "e147d983-5cf2-5ab3-8b33-d3942b072989"))(label "HV_TOP" (at 238.76 68.58 0) (effects (font (size 1.016 1.016)) (justify left bottom)) (uuid "019b100d-a0ac-5043-97b7-7a175008d1b7"))(wire (pts (xy 251.46 73.66) (xy 238.76 73.66)) (stroke (width 0) (type default)) (uuid "7db48d9f-1ef2-5e39-b2de-6a37c82d9625"))(label "HV_BOTTOM" (at 238.76 73.66 0) (effects (font (size 1.016 1.016)) (justify left bottom)) (uuid "3553d578-7bc6-59f1-94a2-117e27a9990b"))(text "OPA455 RAIL SPLITTER - ELECTRICAL DRAFT" (at 76.2 19.05 0) (effects (font (size 2.286 2.286)) (justify left top)) (uuid "359491bc-1fc5-550d-9e16-888498c102e8"))(text "DRAFT - NOT FOR FABRICATION / NO PCB RELEASE" (at 76.2 25.4 0) (effects (font (size 1.524 1.524)) (justify left top)) (uuid "3ca78c2a-09a1-553b-b620-6a07b4692600"))(text "80 V nominal input; nominal +/-40 V relative to buffered MID" (at 76.2 30.48 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "48bc4819-b363-5b3a-8d5b-a51bcfc5814d"))(text "J1.2 = GAPTEC pin 5 = boost GND = Howland -40 V\nJ2.2 = signal ISO_GND = Howland GND\nDo not join MID to HV_BOTTOM. Each channel stays isolated." (at 27.94 121.92 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "30d7a902-b9d2-568a-b977-4cb643cf5d13"))(text "R3 is provisional. Feedback is BEFORE R3.\n5 mA DC imbalance causes about 0.25 V midpoint shift.\nC3/C4 are nominal 10u; verify bias-dependent capacitance." (at 154.94 121.92 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "ecb7d085-f667-5fcf-ae74-395036f7053d"))(text "C5 filters the internal E/D pullup; E/D_COM ties to HV_BOTTOM.\nSTATUS is intentionally unused. EP pin 9 must solder to HV_BOTTOM.\nC6 must be directly beside U1 supply pins on the eventual PCB." (at 27.94 140.97 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "6e571a0c-3f13-5e81-af9d-c06ed8976087"))(text "Required before release: loop/step-load validation, startup and\nshutdown, load imbalance and thermal tests, protection, exact BOM,\nPCB isolation/layout review. ERC success does not validate stability." (at 154.94 140.97 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "c0b6604a-005e-5aff-ba26-fe0508dc087e"))(text "R1/R2: 16 mW each at 80 V; 32 mW total. Divider tolerance alone: +/-40 mV at MID.\nAssume one channel, +/-5 mA midpoint imbalance for initial evaluation. This is not a validated load limit." (at 27.94 161.29 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "929b6543-cae3-5835-90fe-6da16db1b5ce")) (sheet_instances (path "/" (page "1"))) (embedded_fonts no))

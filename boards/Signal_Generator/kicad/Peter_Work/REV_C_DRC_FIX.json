@@ -1,0 +1,208 @@
+{
+  "revision": "SignalGen Rev C",
+  "source": "https://www.ti.com/lit/ds/symlink/opa2192.pdf",
+  "source_location": "DGK0008A example board layout, drawing 4214862/A, 04/2023",
+  "reason": "Imported pads had 0.1928 mm spacing and depended on a 0.18 mm custom-rule exception. Corrected lands have 0.20 mm spacing at 0.65 mm pitch.",
+  "pad_centres_and_pin_numbers_unchanged": true,
+  "routing_unchanged": true,
+  "copper_clearance_mm": 0.2,
+  "clearance_exception_removed": true,
+  "specific_drc_exclusions": [],
+  "changes": [
+    {
+      "ref": "U4",
+      "pad": "1",
+      "old_size_mm": [
+        1.4478,
+        0.4572
+      ],
+      "new_size_mm": [
+        1.4,
+        0.45
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "2",
+      "old_size_mm": [
+        1.4478,
+        0.4572
+      ],
+      "new_size_mm": [
+        1.4,
+        0.45
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "3",
+      "old_size_mm": [
+        1.4478,
+        0.4572
+      ],
+      "new_size_mm": [
+        1.4,
+        0.45
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "4",
+      "old_size_mm": [
+        1.4478,
+        0.4572
+      ],
+      "new_size_mm": [
+        1.4,
+        0.45
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "5",
+      "old_size_mm": [
+        1.4478,
+        0.4572
+      ],
+      "new_size_mm": [
+        1.4,
+        0.45
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "6",
+      "old_size_mm": [
+        1.4478,
+        0.4572
+      ],
+      "new_size_mm": [
+        1.4,
+        0.45
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "7",
+      "old_size_mm": [
+        1.4478,
+        0.4572
+      ],
+      "new_size_mm": [
+        1.4,
+        0.45
+      ]
+    },
+    {
+      "ref": "U4",
+      "pad": "8",
+      "old_size_mm": [
+        1.4478,
+        0.4572
+      ],
+      "new_size_mm": [
+        1.4,
+        0.45
+      ]
+    },
+    {
+      "ref": "U7",
+      "pad": "1",
+      "old_size_mm": [
+        1.4478,
+        0.4572
+      ],
+      "new_size_mm": [
+        1.4,
+        0.45
+      ]
+    },
+    {
+      "ref": "U7",
+      "pad": "2",
+      "old_size_mm": [
+        1.4478,
+        0.4572
+      ],
+      "new_size_mm": [
+        1.4,
+        0.45
+      ]
+    },
+    {
+      "ref": "U7",
+      "pad": "3",
+      "old_size_mm": [
+        1.4478,
+        0.4572
+      ],
+      "new_size_mm": [
+        1.4,
+        0.45
+      ]
+    },
+    {
+      "ref": "U7",
+      "pad": "4",
+      "old_size_mm": [
+        1.4478,
+        0.4572
+      ],
+      "new_size_mm": [
+        1.4,
+        0.45
+      ]
+    },
+    {
+      "ref": "U7",
+      "pad": "5",
+      "old_size_mm": [
+        1.4478,
+        0.4572
+      ],
+      "new_size_mm": [
+        1.4,
+        0.45
+      ]
+    },
+    {
+      "ref": "U7",
+      "pad": "6",
+      "old_size_mm": [
+        1.4478,
+        0.4572
+      ],
+      "new_size_mm": [
+        1.4,
+        0.45
+      ]
+    },
+    {
+      "ref": "U7",
+      "pad": "7",
+      "old_size_mm": [
+        1.4478,
+        0.4572
+      ],
+      "new_size_mm": [
+        1.4,
+        0.45
+      ]
+    },
+    {
+      "ref": "U7",
+      "pad": "8",
+      "old_size_mm": [
+        1.4478,
+        0.4572
+      ],
+      "new_size_mm": [
+        1.4,
+        0.45
+      ]
+    }
+  ],
+  "before_pcb_sha256": "85689913071cab8d67b98dd10090b6dceb80093fcca993f198f9213a61552194",
+  "after_unfilled_pcb_sha256": "a0ca47e2defd2acfd99b982c89b8ac2458e4972c07420558737fded42b71e50b",
+  "validation": "Fresh zone refill and full DRC must follow this edit."
+}

@@ -1,0 +1,229 @@
+(kicad_symbol_lib (version 20251024) (generator "kicad_symbol_editor") (symbol "Source_U1" (pin_names (offset 1.016)) (in_bom yes) (on_board yes) (property "Reference" "U1" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Value" "TPS63001DRCR" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Footprint" "BuckBoostLocal:U1_TPS63001" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps63001.pdf" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "96% Buck-Boost Converter with 1.7A Current Switches, 3.3V fixed Output voltage in 3x3 QFN 10-VSON -40 to 125" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(symbol "Source_U1_0_1" (rectangle (start -12.7 -20.32) (end 12.7 20.32) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol "Source_U1_1_1" (pin power_out line (at 17.78 10.16 180) (length 5.08) (name "VOUT" (effects (font (size 1.016 1.016)))) (number "1" (effects (font (size 1.016 1.016))))) (pin passive line (at 17.78 15.24 180) (length 5.08) (name "L2" (effects (font (size 1.016 1.016)))) (number "2" (effects (font (size 1.016 1.016))))) (pin power_in line (at 17.78 -15.24 180) (length 5.08) (name "PGND" (effects (font (size 1.016 1.016)))) (number "3" (effects (font (size 1.016 1.016))))) (pin passive line (at -17.78 15.24 0) (length 5.08) (name "L1" (effects (font (size 1.016 1.016)))) (number "4" (effects (font (size 1.016 1.016))))) (pin power_in line (at -17.78 10.16 0) (length 5.08) (name "VIN" (effects (font (size 1.016 1.016)))) (number "5" (effects (font (size 1.016 1.016))))) (pin input line (at -17.78 0 0) (length 5.08) (name "EN" (effects (font (size 1.016 1.016)))) (number "6" (effects (font (size 1.016 1.016))))) (pin input line (at -17.78 -7.62 0) (length 5.08) (name "PS_SYNC" (effects (font (size 1.016 1.016)))) (number "7" (effects (font (size 1.016 1.016))))) (pin power_in line (at -17.78 5.08 0) (length 5.08) (name "VINA" (effects (font (size 1.016 1.016)))) (number "8" (effects (font (size 1.016 1.016))))) (pin power_in line (at 17.78 -10.16 180) (length 5.08) (name "GND" (effects (font (size 1.016 1.016)))) (number "9" (effects (font (size 1.016 1.016))))) (pin input line (at 17.78 0 180) (length 5.08) (name "FB" (effects (font (size 1.016 1.016)))) (number "10" (effects (font (size 1.016 1.016))))) (pin passive line (at 17.78 -17.78 180) (length 5.08) (name "PAD" (effects (font (size 1.016 1.016)))) (number "11" (effects (font (size 1.016 1.016))))))) (symbol "Source_OUT" (pin_names (offset 0) hide) (in_bom yes) (on_board yes) (property "Reference" "J2" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Value" "691211720002" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Footprint" "BuckBoostLocal:OUT_691211720002" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "211 Series 5MM Pitch Straight, Pcb Terminal Block, Through Hole, 2 Way" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(symbol "Source_OUT_0_1" (circle (center 7.62 0) (radius 0.762) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 8.158815 0.538815) (xy 7.081185 -0.538815)) (stroke (width 0.254) (type default)) (fill (type none))) (circle (center 7.62 -2.54) (radius 0.762) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 8.158815 -2.001185) (xy 7.081185 -3.078815)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 5.08 0) (xy 6.858 0)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 5.08 -2.54) (xy 6.858 -2.54)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 10.16 2.54) (xy 5.08 2.54) (xy 5.08 -5.08) (xy 10.16 -5.08) (xy 10.16 2.54)) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol "Source_OUT_1_1" (pin passive line (at 0 0 0) (length 5.08) (name "1" (effects (font (size 1.016 1.016)))) (number "1" (effects (font (size 1.016 1.016))))) (pin passive line (at 0 -2.54 0) (length 5.08) (name "2" (effects (font (size 1.016 1.016)))) (number "2" (effects (font (size 1.016 1.016))))))) (symbol "Source_IN" (pin_names (offset 0) hide) (in_bom yes) (on_board yes) (property "Reference" "J1" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Value" "691211720002" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Footprint" "BuckBoostLocal:IN_691211720002" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "211 Series 5MM Pitch Straight, Pcb Terminal Block, Through Hole, 2 Way" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(symbol "Source_IN_0_1" (circle (center -7.62 0) (radius 0.762) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy -8.158815 0.538815) (xy -7.081185 -0.538815)) (stroke (width 0.254) (type default)) (fill (type none))) (circle (center -7.62 -2.54) (radius 0.762) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy -8.158815 -2.001185) (xy -7.081185 -3.078815)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy -5.08 0) (xy -6.858 0)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy -5.08 -2.54) (xy -6.858 -2.54)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy -10.16 2.54) (xy -5.08 2.54) (xy -5.08 -5.08) (xy -10.16 -5.08) (xy -10.16 2.54)) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol "Source_IN_1_1" (pin passive line (at 0 0 180) (length 5.08) (name "1" (effects (font (size 1.016 1.016)))) (number "1" (effects (font (size 1.016 1.016))))) (pin passive line (at 0 -2.54 180) (length 5.08) (name "2" (effects (font (size 1.016 1.016)))) (number "2" (effects (font (size 1.016 1.016))))))) (symbol "Source_C1" (pin_names (offset 0) hide) (in_bom yes) (on_board yes) (property "Reference" "C1" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Value" "10u" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Footprint" "BuckBoostLocal:C1_0805" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "10 uF +/-10%, 25 V X5R ceramic 0805" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(symbol "Source_C1_0_1" (polyline (pts (xy 2.032 -4.318) (xy -2.032 -4.318)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy -2.032 -3.302) (xy 2.032 -3.302)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 0 -2.54) (xy 0 -3.302)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 0 -5.08) (xy 0 -4.318)) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol "Source_C1_1_1" (pin passive line (at 0 0 270) (length 2.54) (name "1" (effects (font (size 1.016 1.016)))) (number "1" (effects (font (size 1.016 1.016))))) (pin passive line (at 0 -7.62 90) (length 2.54) (name "2" (effects (font (size 1.016 1.016)))) (number "2" (effects (font (size 1.016 1.016))))))) (symbol "Source_R1" (pin_names (offset 0) hide) (in_bom yes) (on_board yes) (property "Reference" "R1" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Value" "100" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Footprint" "BuckBoostLocal:R1_0402" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "100 ohm +/-1%, 63 mW standard operation, 0402" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(symbol "Source_R1_0_1" (polyline (pts (xy 0 -10.16) (xy 0.762 -9.398) (xy 0 -8.636) (xy -0.762 -7.874) (xy 0.762 -6.35) (xy -0.762 -4.826) (xy 0.762 -3.302) (xy 0 -2.54)) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol "Source_R1_1_1" (pin passive line (at 0 -12.7 90) (length 2.54) (name "2" (effects (font (size 1.016 1.016)))) (number "2" (effects (font (size 1.016 1.016))))) (pin passive line (at 0 0 270) (length 2.54) (name "1" (effects (font (size 1.016 1.016)))) (number "1" (effects (font (size 1.016 1.016))))))) (symbol "Source_C4" (pin_names (offset 0) hide) (in_bom yes) (on_board yes) (property "Reference" "C4" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Value" "100n" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Footprint" "BuckBoostLocal:C4_0805" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "100 nF +/-10%, 100 V X7R ceramic 0805" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(symbol "Source_C4_0_1" (polyline (pts (xy 2.032 -4.318) (xy -2.032 -4.318)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy -2.032 -3.302) (xy 2.032 -3.302)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 0 -2.54) (xy 0 -3.302)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 0 -5.08) (xy 0 -4.318)) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol "Source_C4_1_1" (pin passive line (at 0 0 270) (length 2.54) (name "1" (effects (font (size 1.016 1.016)))) (number "1" (effects (font (size 1.016 1.016))))) (pin passive line (at 0 -7.62 90) (length 2.54) (name "2" (effects (font (size 1.016 1.016)))) (number "2" (effects (font (size 1.016 1.016))))))) (symbol "Source_C2" (pin_names (offset 0) hide) (in_bom yes) (on_board yes) (property "Reference" "C2" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Value" "10u" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Footprint" "BuckBoostLocal:C1_0805" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "10 uF +/-10%, 25 V X5R ceramic 0805" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(symbol "Source_C2_0_1" (polyline (pts (xy 2.032 -4.318) (xy -2.032 -4.318)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy -2.032 -3.302) (xy 2.032 -3.302)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 0 -2.54) (xy 0 -3.302)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 0 -5.08) (xy 0 -4.318)) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol "Source_C2_1_1" (pin passive line (at 0 0 270) (length 2.54) (name "1" (effects (font (size 1.016 1.016)))) (number "1" (effects (font (size 1.016 1.016))))) (pin passive line (at 0 -7.62 90) (length 2.54) (name "2" (effects (font (size 1.016 1.016)))) (number "2" (effects (font (size 1.016 1.016))))))) (symbol "Source_L1" (pin_names (offset 0) hide) (in_bom yes) (on_board yes) (property "Reference" "L1" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Value" "2.2u" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Footprint" "BuckBoostLocal:L1_2u2" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "2.2 uH +/-20% shielded power inductor; Coilcraft XFL4020-222MEC; DCR 23.5 mOhm max" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(symbol "Source_L1_0_1" (arc (start 1.27 0) (mid 2.54 1.27) (end 3.81 0) (stroke (width 0.254) (type default)) (fill (type none))) (arc (start 3.81 0) (mid 5.08 1.27) (end 6.35 0) (stroke (width 0.254) (type default)) (fill (type none))) (arc (start 6.35 0) (mid 7.62 1.27) (end 8.89 0) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 1.27 0) (xy 0.762 0)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 8.89 0) (xy 9.144 0)) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol "Source_L1_1_1" (pin passive line (at 0 0 0) (length 1.27) (name "1" (effects (font (size 1.016 1.016)))) (number "1" (effects (font (size 1.016 1.016))))) (pin passive line (at 10.16 0 180) (length 1.27) (name "2" (effects (font (size 1.016 1.016)))) (number "2" (effects (font (size 1.016 1.016))))))) (symbol "Source_C3" (pin_names (offset 0) hide) (in_bom yes) (on_board yes) (property "Reference" "C3" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Value" "10u" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Footprint" "BuckBoostLocal:C1_0805" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "10 uF +/-10%, 25 V X5R ceramic 0805" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(symbol "Source_C3_0_1" (polyline (pts (xy 2.032 -4.318) (xy -2.032 -4.318)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy -2.032 -3.302) (xy 2.032 -3.302)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 0 -2.54) (xy 0 -3.302)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 0 -5.08) (xy 0 -4.318)) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol "Source_C3_1_1" (pin passive line (at 0 0 270) (length 2.54) (name "1" (effects (font (size 1.016 1.016)))) (number "1" (effects (font (size 1.016 1.016))))) (pin passive line (at 0 -7.62 90) (length 2.54) (name "2" (effects (font (size 1.016 1.016)))) (number "2" (effects (font (size 1.016 1.016))))))) (symbol "GND"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#PWR"
+			(at 0 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "GND_0_1"
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "GND_1_1"
+			(pin power_in line
+				(at 0 0 270)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "PWR_FLAG"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#FLG"
+			(at 0 1.905 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 0 3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "flag power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_0"
+			(pin power_out line
+				(at 0 0 90)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_1"
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(embedded_fonts no)
+	))

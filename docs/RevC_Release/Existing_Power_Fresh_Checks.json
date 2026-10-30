@@ -1,0 +1,183 @@
+{
+  "date": "2026-10-17",
+  "scope": "Read-only fresh KiCad 10.0.6 audit; reports written only under work. No design changes.",
+  "boards": {
+    "BuckBoost_RevB": {
+      "pcb_sha256": "254a79a8537299e081462e889d707ce6b0238f3eb09f3971d4ccd1216448959d",
+      "schematic_sha256": "45cf22b41b666eab417fbd1f50fad26d274146d418607de5b40b178aec3bf241",
+      "refilled_drc": {
+        "violations": 0,
+        "unconnected_items": 0,
+        "schematic_parity": 0
+      },
+      "stored_fill_drc": {
+        "violations": 0,
+        "unconnected_items": 0,
+        "schematic_parity": 0
+      },
+      "erc_violations": 0,
+      "drc_ignored_checks": [
+        {
+          "description": "Footprint has no courtyard defined",
+          "key": "missing_courtyard"
+        },
+        {
+          "description": "Track endpoint not centered on via",
+          "key": "track_not_centered_on_via"
+        },
+        {
+          "description": "Tuning profile track geometries",
+          "key": "tuning_profile_track_geometries"
+        },
+        {
+          "description": "Footprint doesn't match symbol's footprint filters",
+          "key": "footprint_filters_mismatch"
+        },
+        {
+          "description": "Footprint component type doesn't match footprint pads",
+          "key": "footprint_type_mismatch"
+        }
+      ],
+      "erc_ignored_checks": [
+        {
+          "description": "Global label only appears once in the schematic",
+          "key": "single_global_label"
+        },
+        {
+          "description": "Four connection points are joined together",
+          "key": "four_way_junction"
+        },
+        {
+          "description": "SPICE model issue",
+          "key": "simulation_model_issue"
+        },
+        {
+          "description": "Assigned footprint doesn't match footprint filters",
+          "key": "footprint_filter"
+        }
+      ],
+      "included_severities": [
+        "error",
+        "warning"
+      ]
+    },
+    "Boost": {
+      "pcb_sha256": "d329fe12e2790f448aebf86053afe83f5395b52f0572ed989d25742532b22fd3",
+      "schematic_sha256": "c87cfdf8925d7f6cde7f6179aadf356fa0db059afd6c8dc259b58de3753ac06e",
+      "refilled_drc": {
+        "violations": 0,
+        "unconnected_items": 0,
+        "schematic_parity": 0
+      },
+      "stored_fill_drc": {
+        "violations": 0,
+        "unconnected_items": 0,
+        "schematic_parity": 0
+      },
+      "erc_violations": 0,
+      "drc_ignored_checks": [
+        {
+          "description": "Footprint has no courtyard defined",
+          "key": "missing_courtyard"
+        },
+        {
+          "description": "Track endpoint not centered on via",
+          "key": "track_not_centered_on_via"
+        },
+        {
+          "description": "Tuning profile track geometries",
+          "key": "tuning_profile_track_geometries"
+        },
+        {
+          "description": "Footprint doesn't match symbol's footprint filters",
+          "key": "footprint_filters_mismatch"
+        },
+        {
+          "description": "Footprint component type doesn't match footprint pads",
+          "key": "footprint_type_mismatch"
+        }
+      ],
+      "erc_ignored_checks": [
+        {
+          "description": "Global label only appears once in the schematic",
+          "key": "single_global_label"
+        },
+        {
+          "description": "Four connection points are joined together",
+          "key": "four_way_junction"
+        },
+        {
+          "description": "SPICE model issue",
+          "key": "simulation_model_issue"
+        },
+        {
+          "description": "Assigned footprint doesn't match footprint filters",
+          "key": "footprint_filter"
+        }
+      ],
+      "included_severities": [
+        "error",
+        "warning"
+      ]
+    },
+    "RailSplitter": {
+      "pcb_sha256": "0a6469ec5593e9f603f7f2c1237c84ea7e760c88014318f333de363a92a8864c",
+      "schematic_sha256": "5a4cd3978f102821abd12c9a39c79d70eb7aa61bcad8cb9114006187544b517c",
+      "refilled_drc": {
+        "violations": 0,
+        "unconnected_items": 0,
+        "schematic_parity": 0
+      },
+      "stored_fill_drc": {
+        "violations": 0,
+        "unconnected_items": 0,
+        "schematic_parity": 0
+      },
+      "erc_violations": 0,
+      "drc_ignored_checks": [
+        {
+          "description": "Footprint has no courtyard defined",
+          "key": "missing_courtyard"
+        },
+        {
+          "description": "Track endpoint not centered on via",
+          "key": "track_not_centered_on_via"
+        },
+        {
+          "description": "Tuning profile track geometries",
+          "key": "tuning_profile_track_geometries"
+        },
+        {
+          "description": "Footprint doesn't match symbol's footprint filters",
+          "key": "footprint_filters_mismatch"
+        },
+        {
+          "description": "Footprint component type doesn't match footprint pads",
+          "key": "footprint_type_mismatch"
+        }
+      ],
+      "erc_ignored_checks": [
+        {
+          "description": "Global label only appears once in the schematic",
+          "key": "single_global_label"
+        },
+        {
+          "description": "Four connection points are joined together",
+          "key": "four_way_junction"
+        },
+        {
+          "description": "SPICE model issue",
+          "key": "simulation_model_issue"
+        },
+        {
+          "description": "Assigned footprint doesn't match footprint filters",
+          "key": "footprint_filter"
+        }
+      ],
+      "included_severities": [
+        "error",
+        "warning"
+      ]
+    }
+  }
+}

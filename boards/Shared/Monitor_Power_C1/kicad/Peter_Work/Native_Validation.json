@@ -1,0 +1,178 @@
+{
+  "component_count": 19,
+  "connected_pin_count": 45,
+  "pin_net_mismatches": [],
+  "footprint_pin_coverage": [
+    {
+      "reference": "J201",
+      "original": "Connector_JST:JST_VH_B2P-VH_1x02_P3.96mm_Vertical",
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "F201",
+      "original": "Fuse:Fuse_Littelfuse-NANO2-451_453",
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "F202",
+      "original": "Fuse:Fuse_Littelfuse-NANO2-451_453",
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "PS201",
+      "original": "ProtectionLocal:TRACO_TMR3_SIP8_Single",
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "5",
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    {
+      "reference": "PS202",
+      "original": "Converter_DCDC:Converter_DCDC_TRACO_TMR-1-xxxx_Single_THT",
+      "pads": [
+        "1",
+        "2",
+        "4",
+        "6"
+      ]
+    },
+    {
+      "reference": "R201",
+      "original": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "R202",
+      "original": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "U201",
+      "original": "Package_TO_SOT_THT:TO-92_Inline_Wide",
+      "pads": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "reference": "C201",
+      "original": "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm",
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "C206",
+      "original": "Capacitor_SMD:C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "C202",
+      "original": "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm",
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "C207",
+      "original": "Capacitor_SMD:C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "C203",
+      "original": "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm",
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "C208",
+      "original": "Capacitor_SMD:C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "C204",
+      "original": "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm",
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "C209",
+      "original": "Capacitor_SMD:C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "C205",
+      "original": "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm",
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "C210",
+      "original": "Capacitor_SMD:C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "J202",
+      "original": "Connector_JST:JST_VH_B4P-VH_1x04_P3.96mm_Vertical",
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    }
+  ],
+  "erc_violations": [],
+  "erc_ignored_checks": [],
+  "source_sha256": "1c8f6a26a15afa08490d34671ae3e04df44a70e1641eb3a1a071acb05573491d",
+  "schematic_sha256": "0c1604a2517933593dafd627d21eae75a15cf235fbde12123cd2089fef2e8aaa",
+  "status": "ELECTRICAL_NATIVE_PASS",
+  "limitations": [
+    "Electrical native validation; PCB checks are reported separately.",
+    "No inrush, thermal, ripple or load-step measurements have been performed."
+  ]
+}

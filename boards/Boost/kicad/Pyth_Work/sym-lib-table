@@ -1,0 +1,1 @@
+(sym_lib_table (version 7) (lib (name "BoostDraftSymbols") (type "KiCad") (uri "${KIPRJMOD}/BoostDraftSymbols.kicad_sym") (options "") (descr "Boost electrical draft symbols")))

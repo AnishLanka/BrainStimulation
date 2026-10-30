@@ -1,0 +1,53 @@
+{
+  "status": "Bare-board bench prototype fabrication checks pass; powered performance unmeasured",
+  "electrical_parts": 141,
+  "board_only_supports": 4,
+  "connected_pins": 394,
+  "intentional_NC_pins": 10,
+  "source_XML_PCB_pin_mismatches": 0,
+  "value_MPN_mismatches": 0,
+  "ERC_violations": 0,
+  "DRC_violations": 0,
+  "unconnected_items": 0,
+  "schematic_parity_issues": 0,
+  "ignored_DRC_checks": 0,
+  "ignored_ERC_checks": 0,
+  "stored_fill_and_refilled_DRC": true,
+  "layers": 2,
+  "outline_mm": [
+    180,
+    145
+  ],
+  "native_thickness_mm": 0.41116,
+  "order_thickness_mm": 0.4,
+  "finish": "ENIG",
+  "tracks": 1120,
+  "vias": 127,
+  "board_sha256": "1f7298b5252813e290627964680c2acf05d32bd53b8ba58bf8af6828c3f79b51",
+  "schematic_sha256": "d4bea62a373cc4ea65d8afe03da6a2efa3e1538648146c3c8affe3dc509d7a6e",
+  "source_sha256": "ceeb3c5b97006e6744b45e7e5b00d27676339982ee4294c4eecd67a8f6a52022",
+  "project_sha256": "f4d6f763e9f6b46bedac5681be91e7a512d7032115e04551f520676f2bc14585",
+  "rules_sha256": "ced1a1f0e7a38ef8985ac90828e0f39c2722fa749d2fd902eb2ab60c54193359",
+  "physical_geometry": {
+    "silk_mask": {
+      "minimum": 0.162841,
+      "below_target": 0,
+      "target": 0.149
+    },
+    "silk_hole": {
+      "minimum": 0.171752,
+      "below_target": 0,
+      "target": 0.149
+    },
+    "via_mask": {
+      "minimum": 0.300048,
+      "below_target": 0,
+      "target": 0.149
+    },
+    "mask_web": {
+      "minimum": 0.100048,
+      "below_target": 0,
+      "target": 0.099
+    }
+  }
+}

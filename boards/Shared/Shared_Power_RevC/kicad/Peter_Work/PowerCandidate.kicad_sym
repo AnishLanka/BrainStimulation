@@ -1,0 +1,585 @@
+(kicad_symbol_lib (version 20250114) (generator "kicad_symbol_editor") (symbol "TPS63802DLAR" (pin_names (offset .7)) (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 10.62 0) (effects (font (size 1 1)) (justify left)))(property "Value" "TPS63802DLAR" (at 0 12.62 0) (effects (font (size 1 1)) (justify left)))(symbol "TPS63802DLAR_0_1" (rectangle (start -12.7 7.62) (end 12.7 -7.62) (stroke (width .254) (type default)) (fill (type background))))(symbol "TPS63802DLAR_1_1" (pin power_in line (at -17.78 5.08 0) (length 5.08) (name "VIN" (effects (font (size 0.85 0.85)))) (number "10" (effects (font (size 0.85 0.85)))))(pin input line (at -17.78 2.54 0) (length 5.08) (name "EN" (effects (font (size 0.85 0.85)))) (number "1" (effects (font (size 0.85 0.85)))))(pin input line (at -17.78 0 0) (length 5.08) (name "MODE" (effects (font (size 0.85 0.85)))) (number "2" (effects (font (size 0.85 0.85)))))(pin power_in line (at -17.78 -2.54 0) (length 5.08) (name "AGND" (effects (font (size 0.85 0.85)))) (number "3" (effects (font (size 0.85 0.85)))))(pin power_in line (at -17.78 -5.08 0) (length 5.08) (name "GND" (effects (font (size 0.85 0.85)))) (number "8" (effects (font (size 0.85 0.85)))))(pin passive line (at 17.78 5.08 180) (length 5.08) (name "L1" (effects (font (size 0.85 0.85)))) (number "9" (effects (font (size 0.85 0.85)))))(pin passive line (at 17.78 2.54 180) (length 5.08) (name "L2" (effects (font (size 0.85 0.85)))) (number "7" (effects (font (size 0.85 0.85)))))(pin power_out line (at 17.78 0 180) (length 5.08) (name "VOUT" (effects (font (size 0.85 0.85)))) (number "6" (effects (font (size 0.85 0.85)))))(pin input line (at 17.78 -2.54 180) (length 5.08) (name "FB" (effects (font (size 0.85 0.85)))) (number "4" (effects (font (size 0.85 0.85)))))(pin open_collector line (at 17.78 -5.08 180) (length 5.08) (name "PG" (effects (font (size 0.85 0.85)))) (number "5" (effects (font (size 0.85 0.85)))))))(symbol "R3M-1212S_SMD" (pin_names (offset .7)) (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 8.08 0) (effects (font (size 1 1)) (justify left)))(property "Value" "R3M-1212S_SMD" (at 0 10.08 0) (effects (font (size 1 1)) (justify left)))(symbol "R3M-1212S_SMD_0_1" (rectangle (start -13.97 5.08) (end 13.97 -5.08) (stroke (width .254) (type default)) (fill (type background))))(symbol "R3M-1212S_SMD_1_1" (pin power_in line (at -19.05 2.54 0) (length 5.08) (name "+VIN" (effects (font (size 0.85 0.85)))) (number "1" (effects (font (size 0.85 0.85)))))(pin power_in line (at -19.05 0 0) (length 5.08) (name "-VIN" (effects (font (size 0.85 0.85)))) (number "2" (effects (font (size 0.85 0.85)))))(pin input line (at -19.05 -2.54 0) (length 5.08) (name "CTRL" (effects (font (size 0.85 0.85)))) (number "4" (effects (font (size 0.85 0.85)))))(pin power_out line (at 19.05 2.54 180) (length 5.08) (name "+VOUT" (effects (font (size 0.85 0.85)))) (number "7" (effects (font (size 0.85 0.85)))))(pin power_out line (at 19.05 0 180) (length 5.08) (name "-VOUT" (effects (font (size 0.85 0.85)))) (number "6" (effects (font (size 0.85 0.85)))))(pin no_connect line (at 19.05 -2.54 180) (length 5.08) (name "NC" (effects (font (size 0.85 0.85)))) (number "5" (effects (font (size 0.85 0.85)))))))(symbol "Connector2" (pin_names (offset .7)) (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 6.81 0) (effects (font (size 1 1)) (justify left)))(property "Value" "Connector2" (at 0 8.81 0) (effects (font (size 1 1)) (justify left)))(symbol "Connector2_0_1" (rectangle (start -5.08 3.81) (end 5.08 -3.81) (stroke (width .254) (type default)) (fill (type background))))(symbol "Connector2_1_1" (pin passive line (at -10.16 1.27 0) (length 5.08) (name "1" (effects (font (size 0.85 0.85)))) (number "1" (effects (font (size 0.85 0.85)))))(pin passive line (at -10.16 -1.27 0) (length 5.08) (name "2" (effects (font (size 0.85 0.85)))) (number "2" (effects (font (size 0.85 0.85)))))))(symbol "Fuse" (pin_names (offset .7)) (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 5.54 0) (effects (font (size 1 1)) (justify left)))(property "Value" "Fuse" (at 0 7.54 0) (effects (font (size 1 1)) (justify left)))(symbol "Fuse_0_1" (rectangle (start -3.81 2.54) (end 3.81 -2.54) (stroke (width .254) (type default)) (fill (type background))))(symbol "Fuse_1_1" (pin passive line (at -8.89 0 0) (length 5.08) (name "1" (effects (font (size 0.85 0.85)))) (number "1" (effects (font (size 0.85 0.85)))))(pin passive line (at 8.89 0 180) (length 5.08) (name "2" (effects (font (size 0.85 0.85)))) (number "2" (effects (font (size 0.85 0.85)))))))(symbol "R"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "R"
+			(at 2.032 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 0 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "R res resistor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "R_0_1"
+			(rectangle
+				(start -1.016 -2.54)
+				(end 1.016 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "R_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)(symbol "C"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 0.635 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0.9652 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "cap capacitor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "C_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "C_0_1"
+			(polyline
+				(pts
+					(xy -2.032 0.762) (xy 2.032 0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.032 -0.762) (xy 2.032 -0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "C_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 2.794)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 2.794)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)(symbol "L"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "L"
+			(at -1.27 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "L"
+			(at 1.905 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "inductor choke coil reactor magnetic"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "L_0_1"
+			(arc
+				(start 0 2.54)
+				(mid 0.6323 1.905)
+				(end 0 1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 1.27)
+				(mid 0.6323 0.635)
+				(end 0 0)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 0)
+				(mid 0.6323 -0.635)
+				(end 0 -1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 -1.27)
+				(mid 0.6323 -1.905)
+				(end 0 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "L_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)(symbol "PWR_FLAG"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#FLG"
+			(at 0 1.905 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 0 3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "flag power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_0"
+			(pin power_out line
+				(at 0 0 90)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_1"
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(embedded_fonts no)
+	))

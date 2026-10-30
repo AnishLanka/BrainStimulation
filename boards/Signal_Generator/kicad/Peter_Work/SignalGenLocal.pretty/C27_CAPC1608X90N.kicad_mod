@@ -1,0 +1,223 @@
+(footprint "C27_CAPC1608X90N"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "C27"
+		(at 0 -2.37 270)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "bf8f29a5-b507-4e1c-b4ae-eede233db357")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "Value" "100nF SYS"
+		(at -2.811585 5.845584 270)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "662236dc-0621-47a9-80fa-74c382a2b090")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "84d82097-ff8b-47ee-a1bb-510161aa7532")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "af2b37df-18fe-4cad-ab64-54a3764b16f1")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MOUSER PART NUMBER" "603-CC603KRX7R8BB104"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "37211bf9-5357-421b-8490-aab32863b82c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "MOUSER PRICE/STOCK" "https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "906e1815-4512-4fdb-a53c-e99d4e68fda4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "MANUFACTURER_NAME" "YAGEO"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "7aebc820-5b33-43a4-ae43-e11265677e43")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "MANUFACTURER_PART_NUMBER" "CC0603KRX7R8BB104"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "daae8ed2-3821-4ba7-a5b6-9c2e63f62ebf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "DATASHEET LINK" "https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "86442b89-a295-43fb-b61b-59e0b3fbb9ab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "GEOMETRY.HEIGHT" "0.9mm"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "526dd50a-c6d3-44c3-867e-749d6f628771")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(sheetname "SignalGen_DualChannel")
+	(sheetfile "SignalGen_DualChannel.kicad_sch")
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.8 -0.4)
+		(end -0.8 0.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "382a21a2-c566-4fee-a418-16f1baaf5953")
+	)
+	(fp_line
+		(start -0.8 -0.4)
+		(end 0.8 -0.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "0034949b-ed05-434b-840a-41c07f706d5b")
+	)
+	(fp_line
+		(start -0.8 0.4)
+		(end 0.8 0.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "4cb85d89-21d7-4a6f-bab3-5afacfd0b491")
+	)
+	(fp_line
+		(start 0.8 -0.4)
+		(end 0.8 0.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "971064b0-5388-4110-bb37-135d622be3f2")
+	)
+	(fp_line
+		(start -1.225 -0.62)
+		(end -1.225 0.62)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "User.20")
+		(uuid "ac4562f0-1734-4838-81d2-c112c87197b0")
+	)
+	(fp_line
+		(start -1.225 -0.62)
+		(end 1.225 -0.62)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "User.20")
+		(uuid "c204f25b-53bf-4e11-8e32-a093fe0997a3")
+	)
+	(fp_line
+		(start -1.225 0.62)
+		(end 1.225 0.62)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "User.20")
+		(uuid "f08e05cf-5017-40e3-9d97-d1be26aafa62")
+	)
+	(fp_line
+		(start 1.225 -0.62)
+		(end 1.225 0.62)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "User.20")
+		(uuid "04fb87dd-16b1-48a0-9338-96ba1f32d052")
+	)
+	(pad "1" smd rect
+		(at -0.66 0 90)
+		(size 0.94 0.83)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(clearance 0)
+		(uuid "839a9f27-ed42-48a8-ab7d-790cd4e8f806")
+	)
+	(pad "2" smd rect
+		(at 0.66 0 90)
+		(size 0.94 0.83)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(clearance 0)
+		(uuid "a1574864-a7c1-4308-b13b-750e4ec3b112")
+	)
+	(embedded_fonts no)
+)

@@ -1,0 +1,134 @@
+[
+  {
+    "pin": "1",
+    "local_size": [
+      0.25,
+      0.6
+    ],
+    "rotation_degrees": 0.0,
+    "board_axis_size": [
+      0.25,
+      0.6
+    ]
+  },
+  {
+    "pin": "2",
+    "local_size": [
+      0.25,
+      0.6
+    ],
+    "rotation_degrees": 0.0,
+    "board_axis_size": [
+      0.25,
+      0.6
+    ]
+  },
+  {
+    "pin": "3",
+    "local_size": [
+      0.25,
+      0.6
+    ],
+    "rotation_degrees": 0.0,
+    "board_axis_size": [
+      0.25,
+      0.6
+    ]
+  },
+  {
+    "pin": "4",
+    "local_size": [
+      0.25,
+      0.6
+    ],
+    "rotation_degrees": 0.0,
+    "board_axis_size": [
+      0.25,
+      0.6
+    ]
+  },
+  {
+    "pin": "5",
+    "local_size": [
+      0.25,
+      0.6
+    ],
+    "rotation_degrees": 0.0,
+    "board_axis_size": [
+      0.25,
+      0.6
+    ]
+  },
+  {
+    "pin": "6",
+    "local_size": [
+      0.25,
+      0.6
+    ],
+    "rotation_degrees": 0.0,
+    "board_axis_size": [
+      0.25,
+      0.6
+    ]
+  },
+  {
+    "pin": "7",
+    "local_size": [
+      0.25,
+      0.6
+    ],
+    "rotation_degrees": 0.0,
+    "board_axis_size": [
+      0.25,
+      0.6
+    ]
+  },
+  {
+    "pin": "8",
+    "local_size": [
+      0.25,
+      0.6
+    ],
+    "rotation_degrees": 0.0,
+    "board_axis_size": [
+      0.25,
+      0.6
+    ]
+  },
+  {
+    "pin": "9",
+    "local_size": [
+      0.25,
+      0.6
+    ],
+    "rotation_degrees": 0.0,
+    "board_axis_size": [
+      0.25,
+      0.6
+    ]
+  },
+  {
+    "pin": "10",
+    "local_size": [
+      0.25,
+      0.6
+    ],
+    "rotation_degrees": 0.0,
+    "board_axis_size": [
+      0.25,
+      0.6
+    ]
+  },
+  {
+    "pin": "11",
+    "local_size": [
+      1.65,
+      2.4
+    ],
+    "rotation_degrees": 270.0,
+    "board_axis_size": [
+      2.4,
+      1.65
+    ]
+  }
+]

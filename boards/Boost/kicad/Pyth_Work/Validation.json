@@ -1,0 +1,727 @@
+{
+  "date": "2026-10-17",
+  "kicad_version": "10.0.6",
+  "status": "Electrical bench prototype; see separate PCB fabrication validation",
+  "erc_findings": 0,
+  "erc_ignored_checks": [
+    {
+      "description": "Global label only appears once in the schematic",
+      "key": "single_global_label"
+    },
+    {
+      "description": "Four connection points are joined together",
+      "key": "four_way_junction"
+    },
+    {
+      "description": "SPICE model issue",
+      "key": "simulation_model_issue"
+    },
+    {
+      "description": "Assigned footprint doesn't match footprint filters",
+      "key": "footprint_filter"
+    }
+  ],
+  "topology_check": "PASS: all source net partitions retained after reference renaming; only C8/C9 and explicit Q1 internally common pins added",
+  "source_net_count": 16,
+  "draft_net_count": 16,
+  "source_nodes": 58,
+  "draft_nodes": 67,
+  "netlist": {
+    "/COMP": [
+      [
+        "C2",
+        "1"
+      ],
+      [
+        "R8",
+        "1"
+      ],
+      [
+        "U1",
+        "6"
+      ]
+    ],
+    "/COMP_ZERO": [
+      [
+        "C3",
+        "1"
+      ],
+      [
+        "R8",
+        "2"
+      ]
+    ],
+    "/CS": [
+      [
+        "R5",
+        "1"
+      ],
+      [
+        "U1",
+        "5"
+      ]
+    ],
+    "/FB": [
+      [
+        "R1",
+        "2"
+      ],
+      [
+        "R2",
+        "1"
+      ],
+      [
+        "U1",
+        "8"
+      ]
+    ],
+    "/FREQ_SET": [
+      [
+        "R3",
+        "1"
+      ],
+      [
+        "U1",
+        "10"
+      ]
+    ],
+    "/GATE": [
+      [
+        "Q1",
+        "4"
+      ],
+      [
+        "U1",
+        "3"
+      ]
+    ],
+    "/HV_TOP": [
+      [
+        "C5",
+        "1"
+      ],
+      [
+        "C8",
+        "1"
+      ],
+      [
+        "D1",
+        "1"
+      ],
+      [
+        "J2",
+        "1"
+      ],
+      [
+        "R1",
+        "1"
+      ]
+    ],
+    "/PGOOD": [
+      [
+        "R7",
+        "1"
+      ],
+      [
+        "U1",
+        "11"
+      ]
+    ],
+    "/SENSE_FILT": [
+      [
+        "C6",
+        "1"
+      ],
+      [
+        "R4",
+        "1"
+      ],
+      [
+        "R5",
+        "2"
+      ]
+    ],
+    "/SENSE_RAW": [
+      [
+        "Q1",
+        "1"
+      ],
+      [
+        "Q1",
+        "2"
+      ],
+      [
+        "Q1",
+        "3"
+      ],
+      [
+        "R4",
+        "2"
+      ],
+      [
+        "R9",
+        "2"
+      ]
+    ],
+    "/SOFT_START": [
+      [
+        "C7",
+        "1"
+      ],
+      [
+        "U1",
+        "9"
+      ]
+    ],
+    "/SW": [
+      [
+        "D1",
+        "2"
+      ],
+      [
+        "L1",
+        "2"
+      ],
+      [
+        "Q1",
+        "5"
+      ],
+      [
+        "Q1",
+        "6"
+      ],
+      [
+        "Q1",
+        "7"
+      ],
+      [
+        "Q1",
+        "8"
+      ]
+    ],
+    "/UVLO": [
+      [
+        "R10",
+        "1"
+      ],
+      [
+        "R6",
+        "2"
+      ],
+      [
+        "U1",
+        "12"
+      ]
+    ],
+    "HV_BOTTOM": [
+      [
+        "C1",
+        "2"
+      ],
+      [
+        "C2",
+        "2"
+      ],
+      [
+        "C3",
+        "2"
+      ],
+      [
+        "C4",
+        "2"
+      ],
+      [
+        "C5",
+        "2"
+      ],
+      [
+        "C6",
+        "2"
+      ],
+      [
+        "C7",
+        "2"
+      ],
+      [
+        "C8",
+        "2"
+      ],
+      [
+        "C9",
+        "2"
+      ],
+      [
+        "J1",
+        "2"
+      ],
+      [
+        "J2",
+        "2"
+      ],
+      [
+        "R10",
+        "2"
+      ],
+      [
+        "R2",
+        "2"
+      ],
+      [
+        "R3",
+        "2"
+      ],
+      [
+        "R9",
+        "1"
+      ],
+      [
+        "U1",
+        "13"
+      ],
+      [
+        "U1",
+        "4"
+      ],
+      [
+        "U1",
+        "7"
+      ]
+    ],
+    "ISO_12V_TO_BOTTOM": [
+      [
+        "C1",
+        "1"
+      ],
+      [
+        "C9",
+        "1"
+      ],
+      [
+        "J1",
+        "1"
+      ],
+      [
+        "L1",
+        "1"
+      ],
+      [
+        "R6",
+        "1"
+      ],
+      [
+        "U1",
+        "1"
+      ]
+    ],
+    "VCC_BOOST": [
+      [
+        "C4",
+        "1"
+      ],
+      [
+        "R7",
+        "2"
+      ],
+      [
+        "U1",
+        "2"
+      ]
+    ]
+  },
+  "footprints": [
+    {
+      "reference": "C1",
+      "footprint": "BoostDraft:C0805",
+      "status": "local footprint loads; logical pins exist",
+      "required_pins": [
+        "1",
+        "2"
+      ],
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "C2",
+      "footprint": "BoostDraft:C0603",
+      "status": "local footprint loads; logical pins exist",
+      "required_pins": [
+        "1",
+        "2"
+      ],
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "C3",
+      "footprint": "BoostDraft:C0603",
+      "status": "local footprint loads; logical pins exist",
+      "required_pins": [
+        "1",
+        "2"
+      ],
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "C4",
+      "footprint": "BoostDraft:C0805",
+      "status": "local footprint loads; logical pins exist",
+      "required_pins": [
+        "1",
+        "2"
+      ],
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "C5",
+      "footprint": "BoostDraft:C_BULK",
+      "status": "local footprint loads; logical pins exist",
+      "required_pins": [
+        "1",
+        "2"
+      ],
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "C6",
+      "footprint": "BoostDraft:C0603",
+      "status": "local footprint loads; logical pins exist",
+      "required_pins": [
+        "1",
+        "2"
+      ],
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "C7",
+      "footprint": "BoostDraft:C1210",
+      "status": "local footprint loads; logical pins exist",
+      "required_pins": [
+        "1",
+        "2"
+      ],
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "C8",
+      "footprint": "BoostDraft:C0805",
+      "status": "local footprint loads; logical pins exist",
+      "required_pins": [
+        "1",
+        "2"
+      ],
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "C9",
+      "footprint": "BoostDraft:C1210",
+      "status": "local footprint loads; logical pins exist",
+      "required_pins": [
+        "1",
+        "2"
+      ],
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "D1",
+      "footprint": "BoostDraft:D_SMA",
+      "status": "local footprint loads; logical pins exist",
+      "required_pins": [
+        "1",
+        "2"
+      ],
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "J1",
+      "footprint": "BoostDraft:IN_FP-TSW-102-14-G-S-MFG",
+      "status": "local footprint loads; logical pins exist",
+      "required_pins": [
+        "1",
+        "2"
+      ],
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "J2",
+      "footprint": "BoostDraft:OUT_FP-TSW-102-14-G-S-MFG",
+      "status": "local footprint loads; logical pins exist",
+      "required_pins": [
+        "1",
+        "2"
+      ],
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "L1",
+      "footprint": "BoostDraft:L_BOURNS",
+      "status": "local footprint loads; logical pins exist",
+      "required_pins": [
+        "1",
+        "2"
+      ],
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "Q1",
+      "footprint": "BoostDraft:Q_FDMC86240_CASE511DH",
+      "status": "local footprint loads; logical pins exist",
+      "required_pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "pads": [
+        "",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    {
+      "reference": "R1",
+      "footprint": "BoostDraft:R1206",
+      "status": "local footprint loads; logical pins exist",
+      "required_pins": [
+        "1",
+        "2"
+      ],
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "R2",
+      "footprint": "BoostDraft:R0603",
+      "status": "local footprint loads; logical pins exist",
+      "required_pins": [
+        "1",
+        "2"
+      ],
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "R3",
+      "footprint": "BoostDraft:R0603",
+      "status": "local footprint loads; logical pins exist",
+      "required_pins": [
+        "1",
+        "2"
+      ],
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "R4",
+      "footprint": "BoostDraft:R0603",
+      "status": "local footprint loads; logical pins exist",
+      "required_pins": [
+        "1",
+        "2"
+      ],
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "R5",
+      "footprint": "BoostDraft:R0603",
+      "status": "local footprint loads; logical pins exist",
+      "required_pins": [
+        "1",
+        "2"
+      ],
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "R6",
+      "footprint": "BoostDraft:R0603",
+      "status": "local footprint loads; logical pins exist",
+      "required_pins": [
+        "1",
+        "2"
+      ],
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "R7",
+      "footprint": "BoostDraft:R0603",
+      "status": "local footprint loads; logical pins exist",
+      "required_pins": [
+        "1",
+        "2"
+      ],
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "R8",
+      "footprint": "BoostDraft:R0805",
+      "status": "local footprint loads; logical pins exist",
+      "required_pins": [
+        "1",
+        "2"
+      ],
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "R9",
+      "footprint": "BoostDraft:R1206",
+      "status": "local footprint loads; logical pins exist",
+      "required_pins": [
+        "1",
+        "2"
+      ],
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "R10",
+      "footprint": "BoostDraft:R0603",
+      "status": "local footprint loads; logical pins exist",
+      "required_pins": [
+        "1",
+        "2"
+      ],
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "reference": "U1",
+      "footprint": "BoostDraft:U1_DSS0012B",
+      "status": "local footprint loads; logical pins exist",
+      "required_pins": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "pads": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    }
+  ],
+  "pending_footprint": null,
+  "Q1_copper_pattern_check": "PASS: physical pads1-8, drain common land and pin1 orientation agree with CASE511DH recommended footprint; see Q1_Footprint_Verification.json",
+  "not_validated": [
+    "Regulation, current limit or efficiency by simulation or bench",
+    "Loop stability and startup with actual loads",
+    "Stencil/reflow process; capacitor effective-C and high-frequency ESR acceptance",
+    "PCB routing is covered by a separate PCB validation; thermal/isolation qualification is not established",
+    "Fault-safe shutdown/discharge or medical-device safety"
+  ],
+  "sha256": {
+    "BOM_Selection_Evidence.txt": "2c20afd97570b9591f7e3d8841dcacf83241de1dbe2ec48f1354e25b5bcfee46",
+    "BoostDraftSymbols.kicad_sym": "72c0f4f982a554345eb07455b1c5d210a1e69a588564cdbd73375506a2d8ebe8",
+    "Boost_Electrical_Draft.kicad_dru": "61639d023d75193612bd1f7ff594396e8882293b332c610c247641111aa1eb96",
+    "Boost_Electrical_Draft.kicad_pcb": "f3c8a6caa772b4440f81f5651d4fb16d0bed5c5fb96a3c75abe31474c58c7249",
+    "Boost_Electrical_Draft.kicad_prl": "7308cbee814a51fff0f9173d212bb305c9568d58c49faef8ef813a3ce7244ed3",
+    "Boost_Electrical_Draft.kicad_pro": "47238e5ad2b65a72db12d4b91cdd4f2da77d8611523fdbb333948397e41bea0a",
+    "Boost_Electrical_Draft.kicad_sch": "c87cfdf8925d7f6cde7f6179aadf356fa0db059afd6c8dc259b58de3753ac06e",
+    "Boost_Electrical_Draft.net": "e4a15545aaad89914e960ac8e0975753367e8bd4151668615255d669741a077d",
+    "Boost_Electrical_Draft.pdf": "5bb11d46d8956b30693f8af93661821418d8c2ba033ddc389f7c8df98cbbfc2b",
+    "Boost_Electrical_Draft_ERC.json": "6402ec05befbfe1e326d984ff8e8240e1978bee490ea99e5fd573bd9f152d2b8",
+    "Boost_PCB_Bottom.png": "c1bd1eaaaf938fb706a123c19931f1bd88052b841902fc3a82850de043351cca",
+    "Boost_PCB_Bottom.svg": "edb8961f8d583e25daac39ad073011c722ab48d591988a117c62908918e0ac62",
+    "Boost_PCB_Top.png": "29345f889743dd4405bef9aa6faf0219a6d549f4e09e2ead4e9735c967cc9c09",
+    "Boost_PCB_Top.svg": "15c2a6ceffeb037ae0dea52fc190173a4fc87e4eeb13ff32db857d2cef5abc67",
+    "Draft_BOM.csv": "894ae53f85e8ec8e151647830ad934203d521a06765a1223f3b2f827459ff877",
+    "fp-lib-table": "8a8ebb3520b91b113bb574574ee748c1894d6bcd69f4f42a69e927b2343209dc",
+    "Net_Name_Map.json": "2486fbe27ceef8e8618dca74afd7d8698448c42c53c82a8e3f074d6c451ced27",
+    "PCB_DRC.json": "6d329fd561846416f34a4058f70fbb874429cf9216699b5336d2d1d39201b494",
+    "PCB_Validation.json": "2a08dfa20d69e8b67022409a38f755f3e2ff89564a069dd80955d75917dd07fa",
+    "Q1_Footprint_Verification.json": "fc219f9412c3ef8a20b1e242d46ff08904f535bd5a92101a4b1a58dac0c9425b",
+    "Rail_Independent_Audit.json": "e4f0476910dc335e462870a8e4b86503db6696c48c12c02a65e0e8dc60962786",
+    "Reference_Map.json": "0b0e786434296bc6fc5e3be814b47fc07617b706dadaf1580173e956a42932d9",
+    "sym-lib-table": "f3f7b4ec2748d91e9d1b1ed43dc3a7b20bff8d433ea4c93a9ea50493cd61192b"
+  }
+}

@@ -1,0 +1,1423 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-17T15:16:20",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "SignalGen_Electrical_Draft.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1928 mm)",
+            "items": [
+                {
+                    "description": "Pad 3 [/ISO_3V3_CLEAN_2] of U7 on F.Cu",
+                    "pos": {
+                        "x": 157.3,
+                        "y": 130.325
+                    },
+                    "uuid": "b31c79f1-8024-453e-ab04-f3baa20a2f75"
+                },
+                {
+                    "description": "Pad 4 [/ISO_N5V_2] of U7 on F.Cu",
+                    "pos": {
+                        "x": 157.3,
+                        "y": 130.975
+                    },
+                    "uuid": "02b6c012-ae8b-4d00-9e39-182eca3161ba"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1928 mm)",
+            "items": [
+                {
+                    "description": "Pad 3 [/ISO_3V3_CLEAN_2] of U7 on F.Cu",
+                    "pos": {
+                        "x": 157.3,
+                        "y": 130.325
+                    },
+                    "uuid": "b31c79f1-8024-453e-ab04-f3baa20a2f75"
+                },
+                {
+                    "description": "Pad 2 [/VREF_BUF_2] of U7 on F.Cu",
+                    "pos": {
+                        "x": 157.3,
+                        "y": 129.675
+                    },
+                    "uuid": "a7c913ac-3094-4af4-ab4c-47cf55bcb67b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1928 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [/VREF_BUF] of U4 on F.Cu",
+                    "pos": {
+                        "x": 157.3,
+                        "y": 82.675
+                    },
+                    "uuid": "17e6e22b-45d5-43e3-86ac-1a901c61b032"
+                },
+                {
+                    "description": "Pad 3 [/ISO_3V3_CLEAN] of U4 on F.Cu",
+                    "pos": {
+                        "x": 157.3,
+                        "y": 83.325
+                    },
+                    "uuid": "60021487-11fc-43ed-9d44-26a121ff441e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1928 mm)",
+            "items": [
+                {
+                    "description": "Pad 6 [/IN-_B_2] of U7 on F.Cu",
+                    "pos": {
+                        "x": 161.7,
+                        "y": 130.325
+                    },
+                    "uuid": "72f40709-e2e7-4a94-9dee-d9c8c58eb656"
+                },
+                {
+                    "description": "Pad 5 [/DAC_OUT_UNIPOLAR_2] of U7 on F.Cu",
+                    "pos": {
+                        "x": 161.7,
+                        "y": 130.975
+                    },
+                    "uuid": "d25c1cea-981d-4bc0-8761-a5104ab77d3e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1928 mm)",
+            "items": [
+                {
+                    "description": "Pad 4 [/ISO_N5V] of U4 on F.Cu",
+                    "pos": {
+                        "x": 157.3,
+                        "y": 83.975
+                    },
+                    "uuid": "90905a2e-1125-43f9-937c-b785795bf693"
+                },
+                {
+                    "description": "Pad 3 [/ISO_3V3_CLEAN] of U4 on F.Cu",
+                    "pos": {
+                        "x": 157.3,
+                        "y": 83.325
+                    },
+                    "uuid": "60021487-11fc-43ed-9d44-26a121ff441e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1928 mm)",
+            "items": [
+                {
+                    "description": "Pad 6 [/IN-_B_2] of U7 on F.Cu",
+                    "pos": {
+                        "x": 161.7,
+                        "y": 130.325
+                    },
+                    "uuid": "72f40709-e2e7-4a94-9dee-d9c8c58eb656"
+                },
+                {
+                    "description": "Pad 7 [/BIPOLAR_OUT_2] of U7 on F.Cu",
+                    "pos": {
+                        "x": 161.7,
+                        "y": 129.675
+                    },
+                    "uuid": "c9efdc63-ddb9-4afa-9e27-3016ae1e0b8f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1928 mm)",
+            "items": [
+                {
+                    "description": "Pad 5 [/DAC_OUT_UNIPOLAR] of U4 on F.Cu",
+                    "pos": {
+                        "x": 161.7,
+                        "y": 83.975
+                    },
+                    "uuid": "f5bb1618-a7ea-4807-8099-8d10e95405b4"
+                },
+                {
+                    "description": "Pad 6 [/IN-_B] of U4 on F.Cu",
+                    "pos": {
+                        "x": 161.7,
+                        "y": 83.325
+                    },
+                    "uuid": "32e66a6b-ae68-4f52-aff4-af0f007a9243"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1928 mm)",
+            "items": [
+                {
+                    "description": "Pad 7 [/BIPOLAR_OUT_2] of U7 on F.Cu",
+                    "pos": {
+                        "x": 161.7,
+                        "y": 129.675
+                    },
+                    "uuid": "c9efdc63-ddb9-4afa-9e27-3016ae1e0b8f"
+                },
+                {
+                    "description": "Pad 8 [/ISO_P5V_2] of U7 on F.Cu",
+                    "pos": {
+                        "x": 161.7,
+                        "y": 129.025
+                    },
+                    "uuid": "3567e857-713a-40d1-9a9e-8fa964a26a0d"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1928 mm)",
+            "items": [
+                {
+                    "description": "Pad 7 [/BIPOLAR_OUT] of U4 on F.Cu",
+                    "pos": {
+                        "x": 161.7,
+                        "y": 82.675
+                    },
+                    "uuid": "fb40b059-2d97-4a1d-a4bc-90a89b6d6fc2"
+                },
+                {
+                    "description": "Pad 6 [/IN-_B] of U4 on F.Cu",
+                    "pos": {
+                        "x": 161.7,
+                        "y": 83.325
+                    },
+                    "uuid": "32e66a6b-ae68-4f52-aff4-af0f007a9243"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1928 mm)",
+            "items": [
+                {
+                    "description": "Pad 8 [/ISO_P5V] of U4 on F.Cu",
+                    "pos": {
+                        "x": 161.7,
+                        "y": 82.025
+                    },
+                    "uuid": "f38ade10-4034-4c1b-a601-ad099121d2b3"
+                },
+                {
+                    "description": "Pad 7 [/BIPOLAR_OUT] of U4 on F.Cu",
+                    "pos": {
+                        "x": 161.7,
+                        "y": 82.675
+                    },
+                    "uuid": "fb40b059-2d97-4a1d-a4bc-90a89b6d6fc2"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint TP11",
+                    "pos": {
+                        "x": 175.0,
+                        "y": 128.0
+                    },
+                    "uuid": "0915f538-87cf-4bdf-8c1f-dbb8c40ea613"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C46",
+                    "pos": {
+                        "x": 128.8,
+                        "y": 122.045
+                    },
+                    "uuid": "09abc4c1-b3de-44b7-ae3c-90d67d639c5f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C20",
+                    "pos": {
+                        "x": 154.7,
+                        "y": 88.0
+                    },
+                    "uuid": "0a02cdb2-4025-4b96-9574-20f02d4645a0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint TP14",
+                    "pos": {
+                        "x": 153.0,
+                        "y": 143.0
+                    },
+                    "uuid": "12673639-f592-4e56-9b4b-750231b53cdd"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C23",
+                    "pos": {
+                        "x": 148.0,
+                        "y": 122.0
+                    },
+                    "uuid": "1379b021-0cc7-4e5c-ad94-c78c1cc10d24"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C15",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 93.5
+                    },
+                    "uuid": "171d3dc6-fbaf-4c37-ada6-c2fdfcc305da"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint TP12",
+                    "pos": {
+                        "x": 175.0,
+                        "y": 122.0
+                    },
+                    "uuid": "18427003-4853-4ae7-b422-da23459b4752"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C22",
+                    "pos": {
+                        "x": 159.5,
+                        "y": 117.5
+                    },
+                    "uuid": "210ef868-6e97-4219-834f-2a5d61637ff6"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C19",
+                    "pos": {
+                        "x": 164.0,
+                        "y": 77.8
+                    },
+                    "uuid": "2a86f3dd-a70a-4973-9223-63a013cc1c0d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint TP9",
+                    "pos": {
+                        "x": 175.0,
+                        "y": 81.0
+                    },
+                    "uuid": "2fabd412-cbe3-4b49-90df-974becd9bf2e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint J2",
+                    "pos": {
+                        "x": 120.9421,
+                        "y": 102.8996
+                    },
+                    "uuid": "30deef40-b3bc-4fd9-918f-7d6bc3fc8c88"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C36",
+                    "pos": {
+                        "x": 146.0,
+                        "y": 112.3
+                    },
+                    "uuid": "33d5e29c-8b0e-4052-8008-80bbcf0d9186"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint TP3",
+                    "pos": {
+                        "x": 146.0,
+                        "y": 99.0
+                    },
+                    "uuid": "34e58876-2f3a-4f30-9b85-4ff9a92473ad"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C26",
+                    "pos": {
+                        "x": 143.0,
+                        "y": 109.5
+                    },
+                    "uuid": "35f7cb9c-d67d-4908-a05a-0fbef9f78eb8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C14",
+                    "pos": {
+                        "x": 138.0,
+                        "y": 93.5
+                    },
+                    "uuid": "427d58c9-2262-41c4-b16a-33d764c7cb13"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint U6",
+                    "pos": {
+                        "x": 135.7,
+                        "y": 117.6
+                    },
+                    "uuid": "447c8aad-dcc9-42b5-977f-fcdd9aa9d8bd"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint TP10",
+                    "pos": {
+                        "x": 175.0,
+                        "y": 75.0
+                    },
+                    "uuid": "45ac4475-a240-45e5-91ad-7ee1e6aa1e63"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C25",
+                    "pos": {
+                        "x": 143.0,
+                        "y": 119.5
+                    },
+                    "uuid": "4c1645cf-3213-4c15-ad87-1ba08e527be7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint TP6",
+                    "pos": {
+                        "x": 175.0,
+                        "y": 87.0
+                    },
+                    "uuid": "4e34213c-04e2-486e-9ec5-a94c7843e2d4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C30",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 137.5
+                    },
+                    "uuid": "4ff1f260-6f24-4489-82ee-196cdbe4761f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint TP13",
+                    "pos": {
+                        "x": 160.0,
+                        "y": 143.0
+                    },
+                    "uuid": "512fa764-7b3b-443c-a3d2-970be124afb6"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint TP2",
+                    "pos": {
+                        "x": 153.0,
+                        "y": 96.0
+                    },
+                    "uuid": "53ac7e5e-5836-4505-b359-ec65e1bb771e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint J3",
+                    "pos": {
+                        "x": 168.8211,
+                        "y": 64.2916
+                    },
+                    "uuid": "56331cba-4076-4c67-964e-e7197f0dffd0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint U5",
+                    "pos": {
+                        "x": 153.5,
+                        "y": 118.5
+                    },
+                    "uuid": "5659250c-dc98-49d8-99ab-9d3bdb4af9e9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C35",
+                    "pos": {
+                        "x": 164.0,
+                        "y": 124.8
+                    },
+                    "uuid": "578d6d48-814d-446e-83cf-b9ce2143e7d0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C31",
+                    "pos": {
+                        "x": 138.0,
+                        "y": 137.5
+                    },
+                    "uuid": "59dd7818-b6fc-4fb7-8980-ce8132dcc1e7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C34",
+                    "pos": {
+                        "x": 164.0,
+                        "y": 127.3
+                    },
+                    "uuid": "624cc412-e8c7-44ab-9a3a-7fc22b9b4511"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C9",
+                    "pos": {
+                        "x": 154.0,
+                        "y": 65.3
+                    },
+                    "uuid": "670bc9a6-18c4-4faa-adfb-e11340523cce"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C28",
+                    "pos": {
+                        "x": 138.0,
+                        "y": 140.5
+                    },
+                    "uuid": "673ac248-b9dc-4980-8908-a046f02ca6f8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint R13",
+                    "pos": {
+                        "x": 125.2,
+                        "y": 72.3
+                    },
+                    "uuid": "7616ed29-3641-464d-b1cf-5b367b904da7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C38",
+                    "pos": {
+                        "x": 154.0,
+                        "y": 112.3
+                    },
+                    "uuid": "76274a2c-7adb-41a7-8cc1-ac08738410bb"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C13",
+                    "pos": {
+                        "x": 138.0,
+                        "y": 90.5
+                    },
+                    "uuid": "76bf4ad9-3561-40e4-815d-aa5ce561dca5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint TP15",
+                    "pos": {
+                        "x": 146.0,
+                        "y": 146.0
+                    },
+                    "uuid": "827a731f-f88c-4020-b24a-82b8ae595bf6"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C41",
+                    "pos": {
+                        "x": 143.8,
+                        "y": 78.6
+                    },
+                    "uuid": "83f0b7a8-b8e5-47bb-b857-bbf4e0e47f45"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C33",
+                    "pos": {
+                        "x": 155.0,
+                        "y": 132.3
+                    },
+                    "uuid": "856546a6-d204-45fd-998d-9e19445c84e0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint PS2",
+                    "pos": {
+                        "x": 129.5781,
+                        "y": 134.1516
+                    },
+                    "uuid": "85df78a1-c32b-4376-9827-2946961c6b42"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint R16",
+                    "pos": {
+                        "x": 150.0,
+                        "y": 112.3
+                    },
+                    "uuid": "88420750-701e-4976-9700-6f64f29f6dbb"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C45",
+                    "pos": {
+                        "x": 142.6,
+                        "y": 122.045
+                    },
+                    "uuid": "88f4cb69-d7a8-414c-b552-52e64a84f85f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 135.7,
+                        "y": 70.6
+                    },
+                    "uuid": "8f9eede8-a60c-4ef3-9555-3b02d2cf72b3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C39",
+                    "pos": {
+                        "x": 128.0,
+                        "y": 138.0
+                    },
+                    "uuid": "901a2946-7133-484c-953a-e3ab4067aff0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C6",
+                    "pos": {
+                        "x": 143.0,
+                        "y": 62.5
+                    },
+                    "uuid": "93a92de3-65b2-44aa-a633-f985d21419b1"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C12",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 90.5
+                    },
+                    "uuid": "9817318f-15dd-47a8-8fca-94fdb23fb1d8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C10",
+                    "pos": {
+                        "x": 148.0,
+                        "y": 75.0
+                    },
+                    "uuid": "986c197d-bc27-4ed8-bc97-1378d697e43d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C17",
+                    "pos": {
+                        "x": 164.0,
+                        "y": 80.3
+                    },
+                    "uuid": "995bd88a-ce01-4ef4-a562-c56a5aebb96b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C44",
+                    "pos": {
+                        "x": 143.8,
+                        "y": 125.6
+                    },
+                    "uuid": "9a917d37-2d31-4189-b951-7de0e0a1b7ae"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint R6",
+                    "pos": {
+                        "x": 165.5,
+                        "y": 83.0
+                    },
+                    "uuid": "9b3564ab-51eb-4aae-9e7d-5ba0972ff312"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C3",
+                    "pos": {
+                        "x": 127.4,
+                        "y": 78.8
+                    },
+                    "uuid": "9e39e0d7-d27c-4912-9058-90bf87a726bb"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint J4",
+                    "pos": {
+                        "x": 178.2191,
+                        "y": 145.9526
+                    },
+                    "uuid": "9f3f0aaa-8554-4450-aeca-d8a1289cac6e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint TP17",
+                    "pos": {
+                        "x": 181.0,
+                        "y": 138.0
+                    },
+                    "uuid": "a2a22495-2881-4212-bdf0-7e978978282b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint R3",
+                    "pos": {
+                        "x": 165.5,
+                        "y": 85.5
+                    },
+                    "uuid": "a4513bc7-ef36-484e-b93a-8c948edd4f96"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint U4",
+                    "pos": {
+                        "x": 159.5,
+                        "y": 83.0
+                    },
+                    "uuid": "a8e613b5-7a69-4171-a696-00c1657a66dc"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C8",
+                    "pos": {
+                        "x": 146.0,
+                        "y": 65.3
+                    },
+                    "uuid": "ac438fa8-217f-45e7-948d-6a34d4fb46cf"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C29",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 140.5
+                    },
+                    "uuid": "b1bdbe05-6bbe-4c2b-9018-9d42d08041f1"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint TP8",
+                    "pos": {
+                        "x": 120.0,
+                        "y": 93.0
+                    },
+                    "uuid": "b86e98e6-6cbf-49b7-86c0-0306b1ab5526"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C40",
+                    "pos": {
+                        "x": 128.0,
+                        "y": 141.0
+                    },
+                    "uuid": "baaa46ad-7a6a-4d00-ad14-0f02764cc1b5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C37",
+                    "pos": {
+                        "x": 154.7,
+                        "y": 135.0
+                    },
+                    "uuid": "c0793e37-ef20-42e3-a325-8cf5b9ed34ad"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C4",
+                    "pos": {
+                        "x": 125.0,
+                        "y": 75.8
+                    },
+                    "uuid": "c1861da5-46e3-450c-ad89-c3d2685aade5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C2",
+                    "pos": {
+                        "x": 128.0,
+                        "y": 94.0
+                    },
+                    "uuid": "c471df2f-0055-4c92-a547-ab5e5fdaa2e3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint R12",
+                    "pos": {
+                        "x": 165.5,
+                        "y": 130.0
+                    },
+                    "uuid": "c5bea806-c660-4446-91be-729d2b7913e9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C5",
+                    "pos": {
+                        "x": 143.0,
+                        "y": 72.5
+                    },
+                    "uuid": "ce890784-c8eb-45cb-a018-689287783bdc"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint TP16",
+                    "pos": {
+                        "x": 175.0,
+                        "y": 134.0
+                    },
+                    "uuid": "cfb74737-9e4c-4dd6-81dd-ee9794c55049"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint TP1",
+                    "pos": {
+                        "x": 160.0,
+                        "y": 96.0
+                    },
+                    "uuid": "d3820647-c00d-4d99-bb7d-722b0b7f6561"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C42",
+                    "pos": {
+                        "x": 142.6,
+                        "y": 75.045
+                    },
+                    "uuid": "d3c964a9-50e9-42d4-9fe9-7b47242606be"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C21",
+                    "pos": {
+                        "x": 159.5,
+                        "y": 70.5
+                    },
+                    "uuid": "d4790553-b9cc-4a7f-a6ba-cf59c16a2180"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint U3",
+                    "pos": {
+                        "x": 153.5,
+                        "y": 71.5
+                    },
+                    "uuid": "da69d2d2-a303-4c35-b53d-f9365ce64790"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint TP7",
+                    "pos": {
+                        "x": 175.0,
+                        "y": 93.0
+                    },
+                    "uuid": "e1cb4ba5-d8b1-4284-b780-efc79b0566f3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C18",
+                    "pos": {
+                        "x": 155.0,
+                        "y": 85.3
+                    },
+                    "uuid": "e60f2824-f6e5-425b-a002-3f0943e488b4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint R15",
+                    "pos": {
+                        "x": 150.0,
+                        "y": 65.3
+                    },
+                    "uuid": "e8e1cf36-ae51-47be-a91f-3957d81b607d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C27",
+                    "pos": {
+                        "x": 127.4,
+                        "y": 125.8
+                    },
+                    "uuid": "eb5b23a3-9118-429f-9f13-1db5251a250f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C1",
+                    "pos": {
+                        "x": 128.0,
+                        "y": 91.0
+                    },
+                    "uuid": "eee447d9-a838-40ca-8c2c-4442a9bdc982"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint R14",
+                    "pos": {
+                        "x": 125.2,
+                        "y": 119.3
+                    },
+                    "uuid": "efd2134a-a844-4a44-83ff-b80721009d23"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint R11",
+                    "pos": {
+                        "x": 165.5,
+                        "y": 132.5
+                    },
+                    "uuid": "f22eea04-65e3-4ad9-810d-29f7d952a1e4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint J1",
+                    "pos": {
+                        "x": 119.4181,
+                        "y": 65.688599
+                    },
+                    "uuid": "f3ae26d5-2a4a-40da-9ee9-b06782e4cabe"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint U7",
+                    "pos": {
+                        "x": 159.5,
+                        "y": 130.0
+                    },
+                    "uuid": "f9dc14ba-53e1-493d-a436-7418ae42481f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint PS1",
+                    "pos": {
+                        "x": 129.5781,
+                        "y": 87.1516
+                    },
+                    "uuid": "fa07b097-3757-4c2f-bd3f-980305b78dc4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C24",
+                    "pos": {
+                        "x": 125.0,
+                        "y": 122.8
+                    },
+                    "uuid": "ffc3a820-8ce2-4613-b03e-699f17e78a8c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'SignalGenLocal'",
+            "items": [
+                {
+                    "description": "Footprint C43",
+                    "pos": {
+                        "x": 128.8,
+                        "y": 75.045
+                    },
+                    "uuid": "ffc51f7c-fc68-4e2b-966e-6616561e8a93"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        }
+    ]
+}

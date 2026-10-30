@@ -1,0 +1,19 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-17T15:34:12",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/ac757bb2-b6c1-4155-aa1b-bd1d9377b81c",
+            "violations": []
+        }
+    ],
+    "source": "Monitor_Power_C1.kicad_sch"
+}

@@ -1,0 +1,22 @@
+{
+  "RFBT": "R1",
+  "RFBB": "R2",
+  "RT": "R3",
+  "RFILT": "R4",
+  "RSL": "R5",
+  "RUVT": "R6",
+  "RPG": "R7",
+  "RCOMP": "R8",
+  "RS": "R9",
+  "RUVB": "R10",
+  "CIN": "C1",
+  "CHF": "C2",
+  "CCOMP": "C3",
+  "CVCC": "C4",
+  "COUT": "C5",
+  "CFILT": "C6",
+  "CSS": "C7",
+  "LM": "L1",
+  "IN": "J1",
+  "OUT": "J2"
+}

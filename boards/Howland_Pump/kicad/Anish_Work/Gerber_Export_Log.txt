@@ -1,0 +1,14 @@
+Info: X scale constrained.
+Info: Y scale constrained.
+Warning: Width correction constrained.  The width correction value must be in the range of [0.000001 mm; -0.000002 mm] for the current design rules.
+Plotted to 'C:\Users\pytha\OneDrive\Documents\BrainStimulator\BrainStimulator\HowlandPump-AnishWork\HowlandPump-AnishWork-F_Cu.gbr'.
+Plotted to 'C:\Users\pytha\OneDrive\Documents\BrainStimulator\BrainStimulator\HowlandPump-AnishWork\HowlandPump-AnishWork-B_Cu.gbr'.
+Plotted to 'C:\Users\pytha\OneDrive\Documents\BrainStimulator\BrainStimulator\HowlandPump-AnishWork\HowlandPump-AnishWork-F_Paste.gbr'.
+Plotted to 'C:\Users\pytha\OneDrive\Documents\BrainStimulator\BrainStimulator\HowlandPump-AnishWork\HowlandPump-AnishWork-B_Paste.gbr'.
+Plotted to 'C:\Users\pytha\OneDrive\Documents\BrainStimulator\BrainStimulator\HowlandPump-AnishWork\HowlandPump-AnishWork-F_Silkscreen.gbr'.
+Plotted to 'C:\Users\pytha\OneDrive\Documents\BrainStimulator\BrainStimulator\HowlandPump-AnishWork\HowlandPump-AnishWork-B_Silkscreen.gbr'.
+Plotted to 'C:\Users\pytha\OneDrive\Documents\BrainStimulator\BrainStimulator\HowlandPump-AnishWork\HowlandPump-AnishWork-F_Mask.gbr'.
+Plotted to 'C:\Users\pytha\OneDrive\Documents\BrainStimulator\BrainStimulator\HowlandPump-AnishWork\HowlandPump-AnishWork-B_Mask.gbr'.
+Plotted to 'C:\Users\pytha\OneDrive\Documents\BrainStimulator\BrainStimulator\HowlandPump-AnishWork\HowlandPump-AnishWork-Edge_Cuts.gbr'.
+Created Gerber job file 'C:\Users\pytha\OneDrive\Documents\BrainStimulator\BrainStimulator\HowlandPump-AnishWork\HowlandPump-AnishWork-job.gbrjob'.
+Info: Done.

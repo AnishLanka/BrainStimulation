@@ -1,0 +1,36 @@
+BOOST BOM SELECTION EVIDENCE — 2026-10-17
+
+All resistor and capacitor positions now have exact manufacturer part numbers in Draft_BOM.csv and the editable schematic. No footprint size or copper geometry was changed by these final selections. These are engineering procurement selections, not a claim of current distributor/JLCPCB assembly stock. Use the exact MPN or re-evaluate substitutions.
+
+C5: Panasonic EEUEE2C101S is the matching 100uF160V aluminum electrolytic. The current EE series ordering table includes the S-suffix part with nominal D16mm, H20mm, lead pitch7.5mm and lead diameter0.8mm. Body limits are D16.5mm/H22mm; pitch tolerance±0.5mm and lead diameter±0.05mm. Existing1.2mm drills fit the leads. Reserve vent clearance and mechanical support on the thin PCB. The nonsuffixed EEUEE2C101 uses different geometry and must not be substituted. Rated10000h105C,1700mArms100kHz105C,capacitance±20%. The PDF does not provide a guaranteed ESR at this converter's396kHz; measure impedance/loop behavior with the installed capacitor. Maximum specified leakage is970uA at rated160V after2min, not a measured leakage at80V. Source: Panasonic EE data sheet, revised1Sep2025, ordering row on page3 and mechanical conditions on page1:
+https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/RDF0000C1270.pdf
+
+R1/R2: Vishay TNPW1206787KBEEA / TNPW060310K0BEEA. Standard787k and10k,0.1%,25ppm/K. R1 has200V working capability and adequate power margin for about7.87mW at78.7V; the1206 size is preserved. R2 remains0603. Nominal output changes from the preliminary80.0V calculation to79.7V. TNPW e3 is the lead-free series; its part coding and size ratings were checked, rather than using the different SnPb TNPW document:
+https://www.vishay.com/docs/28758/tnpw_e3.pdf
+
+R3/R4/R5/R6/R7/R8/R10: selected Vishay CRCW e3 standard1%100ppm/K codes, in the existing0603 sizes except R8 in0805. Use the BOM's complete E96 part numbers. Conservative ordinary ratings used are0.1W75V for0603 and0.125W150V for0805. All actual resistor voltages/powers in these positions are well below those ratings under the stated10–16V input and approximately80V output operating assumptions:
+https://www.vishay.com/docs/20035/dcrcwe3.pdf
+
+R9: Panasonic ERJ8BQFR27V (also printed ERJ-8BQFR27V),0.270ohm1%,1206,0.5W at70C. Manufacturer current-sense thick-film family, with thermal derating required. The part is not the erroneous750ohm source metadata. No numerical parasitic-inductance guarantee was found; retain Kelvin sensing and check switching spikes. Even the ideal0.400A peak-current estimate implies only43mW if continuously applied; pulse/temperature behavior remains a bench check:
+https://industrial.panasonic.com/cdbs/www-data/pdf/RDN0000/AOA0000C313.pdf
+
+C1: TDK C2012X5R1H106K125AC,10uF50V10%X5R0805, increases voltage headroom without changing the0805 footprint. C2/C6: TDK C1608C0G1H680J080AA / C1608C0G1H101J080AA,68pF/100pF50V5%C0G0603. C3: TDK C1608X7R1H473K080AA,47nF50V10%X7R0603. C4: TDK C2012X7R1E225K125AB,2.2uF25V10%X7R0805. C8: TDK C2012X7T2E104K125AA,100nF250V10%X7T0805. X7T permits+22/-33% temperature change; it is deliberately identified as X7T, not X7R. These manufacturer part pages identify nominal ratings, dielectric and dimensions:
+https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X5R1H106K125AC
+https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608C0G1H680J080AA
+https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608C0G1H101J080AA
+https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H473K080AA
+https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X7R1E225K125AB
+https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X7T2E104K125AA
+
+C7: Murata GRM32ER61C476KE15L,47uF16V10%X5R1210. The10% tolerance selection matters:47uF×0.9×0.85=35.955uF before DC bias and aging, leaving only2.955uF margin above the33uF soft-start acceptance target. The target is therefore not a guaranteed minimum derived from nominal capacitance alone:
+https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER61C476KE15-01A.pdf
+
+C9: Taiyo Yuden MSAST32MAB5476MPNDT1,47uF25V20%X5R1210; the manufacturer's preferred current code corresponding to olderTMK325ABJ476MM-P. Nominal body3.2±0.3×2.5±0.3×2.5±0.3mm, compatible with the existing1210 footprint:
+https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=MSAST32MAB5476MPNDT1&u=M
+
+Effective capacitance: nominal value, voltage and size are verified selections; effective-C lower bounds at operating bias/temperature/age are NOT established. TDK detailed characteristic PDF requests returned403; Taiyo chart download was not resolved. Manufacturer characteristic curves also ordinarily represent typical data rather than lot guarantees. Therefore the following remain explicit bench/approval-spec acceptance targets: C1>=4.7uF at16V; C9>=22uF at16V; C4>=1uF at6.85V; C7>=33uF over0–1V. These are not silently claimed to be satisfied. The100nF C8 bypass has no asserted100nF minimum at80V. Initial current-limited bench evaluation may proceed with nominal selections; use measured capacitances in startup/loop analysis and adjust components if the targets are missed. This qualification does not require changing the present fabrication geometry by assertion.
+
+D1: the current manufacturer SS120 C2305 ordering table itself specifies SS120, SMA,7500/reel; older R3G-style suffixes should be matched by procurement to the current data sheet. No package change is required:
+https://services.taiwansemi.com/storage/resources/datasheet/SS120_C2305.pdf
+
+Connector geometry remains the supplied TSW-102-14-G-S header pattern. Exact mating connector, cable insulation, polarization and working-voltage suitability remain assembly/system choices. The bare-board prototype exports do not resolve those choices.

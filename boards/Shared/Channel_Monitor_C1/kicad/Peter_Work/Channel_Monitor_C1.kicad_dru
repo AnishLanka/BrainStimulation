@@ -1,0 +1,3 @@
+(version 1)
+(rule "General copper spacing" (constraint clearance (min 0.2mm)))
+(rule "HV and output copper spacing" (condition "A.NetName == '/HV_TOP' || A.NetName == '/HV_BOTTOM' || A.NetName == '/INTERNAL_P' || A.NetName == '/INTERNAL_N' || A.NetName == '/EXTERNAL_P' || A.NetName == '/EXTERNAL_N' || A.NetName == '/HVP_DIV1' || A.NetName == '/HVP_DIV2' || A.NetName == '/HVP_DIV3' || A.NetName == '/HVN_DIV1' || A.NetName == '/HVN_DIV2' || A.NetName == '/HVN_DIV3' || A.NetName == '/BALP_MID' || A.NetName == '/BALN_MID' || A.NetName == '/V_POS_MID'") (constraint clearance (min 0.6mm)))

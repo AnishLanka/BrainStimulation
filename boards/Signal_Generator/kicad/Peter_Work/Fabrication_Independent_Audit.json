@@ -1,0 +1,42 @@
+{
+  "board": "SignalGen_Electrical_Draft",
+  "status": "Independent file/geometry audit PASS; not measured circuit performance",
+  "native_copper_layers": 2,
+  "native_thickness_mm": 0.41116,
+  "gerber_job_thickness_mm": 0.4112,
+  "job_finish_metadata": "None",
+  "outline_segment_count": 4,
+  "outline_centerline_mm": [
+    74.676,
+    95.902
+  ],
+  "outline_equal_to_board": true,
+  "drills_equal_to_board_within_mm": 0.00051,
+  "drill_counts": {
+    "PTH": 77,
+    "NPTH": 0
+  },
+  "common_auxiliary_origin_mm": [
+    111.1631,
+    152.9546
+  ],
+  "files": {
+    "SignalGen_Electrical_Draft-B_Cu.gbl": "111ca97188a32271043b8d58ded69ff7498a67f0f2fc897ce701cb57200d845a",
+    "SignalGen_Electrical_Draft-B_Mask.gbs": "5c3d39bed03d076a7242733bf0b891e57577ad95aa9532424091d66d9ff950c3",
+    "SignalGen_Electrical_Draft-B_Silkscreen.gbo": "b53948dfc8982bd4e82b8d67e378d1888780c8800a1082e19ad6eef00078956d",
+    "SignalGen_Electrical_Draft-Edge_Cuts.gm1": "0a4e87f9427abce32c03ab99d1d10343c63c85c7004fa11ba5c3e09aeca759ad",
+    "SignalGen_Electrical_Draft-F_Cu.gtl": "379cd577b390c034b6976509d5a3ea25b86b3f21cff73e124f4347c88a2387bc",
+    "SignalGen_Electrical_Draft-F_Mask.gts": "4e6e8f3fcaee618bf6a5fe522684d8ac367a224313537895a59ac726f3ad3f74",
+    "SignalGen_Electrical_Draft-F_Silkscreen.gto": "00185fb34417554780cde2e99bdafbce229dc3c9d8458826b438d55abf6cef14",
+    "SignalGen_Electrical_Draft-job.gbrjob": "e99b9dda015510eeea81e0c6bbbd5afa2c0b7273a58417722e5972671e626119",
+    "SignalGen_Electrical_Draft-NPTH.drl": "88aa20b1c8ec4b4a0600f1410bc6a3e555090c960888f89e7a0741f3577876b9",
+    "SignalGen_Electrical_Draft-PTH.drl": "51e8a31094f8ca9962e8cfbdf4dc66a62d5042ada95adc62bb9a60f8dc0d9b44"
+  },
+  "zip": {
+    "path": "outputs\\SignalGen_Prototype_RevC_JLCPCB.zip",
+    "file_count": 8,
+    "sha256": "ade4c5bacc23ffcaa58d6b3949363dd5c5ea1415564093380f2e1894c6fce266",
+    "exact_fabrication_directory_match": true
+  },
+  "board_sha256": "a0ca47e2defd2acfd99b982c89b8ac2458e4972c07420558737fded42b71e50b"
+}

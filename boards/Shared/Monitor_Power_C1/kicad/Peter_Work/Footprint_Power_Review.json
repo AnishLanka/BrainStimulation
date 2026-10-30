@@ -1,0 +1,58 @@
+{
+  "custom_TMR3": {
+    "source": "https://www.tracopower.com/products/tmr3.pdf",
+    "drawing_revision": "2026-04-15",
+    "local_pdf_sha256": "de5faaedb342e76248f52eb2ef77ce5ad0f706349f8744230f25dc7e5285eb10",
+    "body_mm": [
+      21.8,
+      9.1,
+      11.2
+    ],
+    "pin_x_mm": {
+      "1": 0,
+      "2": 2.54,
+      "3": 5.08,
+      "5": 10.16,
+      "6": 12.7,
+      "7": 15.24,
+      "8": 17.78
+    },
+    "pad_mm": [
+      1.8,
+      2.8
+    ],
+    "drill_mm": 1.0,
+    "view_conversion": "Manufacturer bottom view mirrored in Y for top PCB view."
+  },
+  "copper_design": {
+    "layers": 2,
+    "thickness_mm": 0.41116,
+    "general_clearance_mm": 0.25,
+    "primary_to_channel_rule_mm": 3,
+    "smallest_trace_mm": 0.35,
+    "via_mm": [
+      0.65,
+      0.3
+    ],
+    "primary_main_trace_mm": 2,
+    "positive_input_trace_mm": 1.2,
+    "negative_input_trace_mm": 0.8,
+    "copper_weight_oz": 1
+  },
+  "power_checks": {
+    "positive_preload_max_W": 0.1792969696969697,
+    "negative_preload_max_W": 0.1251074380165289,
+    "preload_resistor_rating_W": 0.6,
+    "LDO_load_allocation_A": 0.03,
+    "LDO_static_dissipation_upper_planning_W": 0.06155269199999999,
+    "temperature_assumption_C": [
+      0,
+      50
+    ]
+  },
+  "limitations": [
+    "Module case temperature, startup, ripple and load-step response require physical measurements.",
+    "No medical isolation qualification is claimed.",
+    "Exact MPNs are specified; live stock is not asserted."
+  ]
+}

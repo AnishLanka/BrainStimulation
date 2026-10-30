@@ -1,0 +1,102 @@
+{
+  "assumptions": {
+    "temperature_C": [
+      0,
+      50
+    ],
+    "module_efficiency_planning": 0.6,
+    "efficiency_is_guaranteed": false,
+    "idle_current_is_guaranteed_max": false,
+    "idle_added_to_efficiency_budget_is_deliberately_conservative": true,
+    "transient_or_inrush_maximum_known": false,
+    "positive_module_idle_typical_A": 0.045,
+    "negative_module_idle_typical_A": 0.04
+  },
+  "per_channel": {
+    "positive_module_output_allocation_A": 0.35,
+    "negative_module_output_allocation_A": 0.06,
+    "logic_3V3_total_included_in_positive_allocation_A": 0.03,
+    "positive_allocation_breakdown_A": {
+      "core_and_bleeders": 0.04,
+      "relay": 0.025,
+      "ADC_600ksps_and_drivers": 0.045,
+      "logic_isolators_via_LDO": 0.03,
+      "Pico_and_its_digital_3V3": 0.1,
+      "added_preload": 0.036,
+      "reserve": 0.074
+    },
+    "negative_allocation_breakdown_A": {
+      "core_and_bleeders": 0.035,
+      "added_preload": 0.024,
+      "reserve": 0.001
+    },
+    "output_power_at_nominal_rails_W": 2.05,
+    "positive_module_rated_output_A": 0.6,
+    "negative_module_rated_output_A": 0.2
+  },
+  "four_channels": {
+    "module_count": 8,
+    "output_power_allocation_W": 8.2,
+    "input_current_planning_at_5V_A": 3.073333333333333,
+    "input_current_planning_at_4V5_A": 3.377037037037037,
+    "requested_AUX_allocation_A": 4.0,
+    "input_capacitance_nominal_uF": 800
+  },
+  "steady_rail_planning": {
+    "positive_magnitude_V": [
+      4.84,
+      5.16
+    ],
+    "negative_magnitude_V": [
+      4.78,
+      5.22
+    ],
+    "derivation": "For 0 to 50 C add 1% accuracy, 0.2% line, 0.5% load and 0.02%/K times 25 K. Add the full ripple allowance on either side: TMR3 50 mV, TMR1 110 mV. Steady planning only.",
+    "positive_load_regulation_test_percent": [
+      5,
+      100
+    ],
+    "negative_load_regulation_test_percent": [
+      10,
+      90
+    ],
+    "positive_transient_recovery_typical_us": 500,
+    "negative_transient_recovery_typical_us": 250,
+    "positive_transient_amplitude_guarantee_established": false,
+    "negative_deviation_25_percent_step_max": 0.05
+  },
+  "LDO": {
+    "nominal_V": 3.3,
+    "max_initial_temp_error_fraction": 0.03,
+    "max_load_error_fraction": 0.025,
+    "max_line_error_per_V": 0.003,
+    "minimum_input_for_3V3_corner_V": 4.124,
+    "rough_static_low_V": 3.1082435999999998,
+    "rough_static_high_V": 3.4917564,
+    "note": "Conservative sum of separate DC parameters is a planning estimate. Small supervisor margin and transient behavior require measurement at the actual 30 mA maximum load. Output capacitor 100 uF is intentional and is not an MLCC DC-bias estimate."
+  },
+  "limitations": [
+    "The 4 A AUX allocation applies to the specified 350/60 mA per-channel loads, not simultaneous full rated loading of every output. The Pico 100 mA reserve is an engineering allocation dependent on firmware/GPIO; measure it.",
+    "The 4.5 V current calculation is conservative budgeting only. 4.5 V at the system connector is not a valid operational lower limit once fuse drop is included.",
+    "Module efficiency, idle current and startup timing have no complete guaranteed combined worst-case budget here. Measure eight-module startup, input sag and fuse coordination.",
+    "TMR maximum 5% step deviation can cause a nuisance undervoltage trip at worst DC corner. A fault must remain latched off; do not bypass the supervisor to hide rail sag.",
+    "Positive TMR3 output rating is 600 mA; negative TMR1 rating is 200 mA. No sharing is assumed. Thermals, ripple and transients remain bench acceptance checks.",
+    "ADC and isolator circuit completion must stay within the reserved loads or revise the budget."
+  ],
+  "negative_preload": {
+    "ohm": 220,
+    "tolerance": 0.01,
+    "nominal_current_A": 0.022727272727272728,
+    "minimum_corner_current_A": 0.021512151215121515,
+    "maximum_corner_power_W": 0.1251074380165289,
+    "rated_W_at_70C": 0.6
+  },
+  "positive_preload": {
+    "ohm": 150,
+    "tolerance": 0.01,
+    "nominal_current_A": 0.03333333333333333,
+    "minimum_corner_current_A": 0.031947194719471946,
+    "maximum_corner_power_W": 0.1792969696969697,
+    "rated_W_at_70C": 0.6
+  }
+}

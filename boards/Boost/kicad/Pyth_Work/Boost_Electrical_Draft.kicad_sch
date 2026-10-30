@@ -1,0 +1,7175 @@
+(kicad_sch 
+	(version 20260306) 
+	(generator "eeschema") 
+	(generator_version "10.0") 
+	(uuid "c2843b0d-fa6a-453d-a2a4-47fcc79ad88b") 
+	(paper "A3") 
+	(lib_symbols 
+		(symbol "BoostDraftSymbols:1029c3af85768c4190bb7ad29bc67b5_1" 
+			(pin_names 
+				(hide yes)) 
+			(exclude_from_sim no) 
+			(in_bom yes) 
+			(on_board yes) 
+			(in_pos_files yes) 
+			(duplicate_pin_numbers_are_jumpers no) 
+			(property "Reference" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Value" "110k 1%" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Footprint" "BoostDraft:R0603" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Datasheet" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Description" "UVLO upper; startup 9.174V typ, fall 8.318V typ; minimum regulated input remains 10V" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(symbol "1029c3af85768c4190bb7ad29bc67b5_1_1_0" 
+				(polyline 
+					(pts 
+						(xy 5.08 0) 
+						(xy 4.318 0)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 5.08 0) 
+						(xy 5.842 1.27)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 5.842 1.27) 
+						(xy 7.112 -1.27)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 7.112 -1.27) 
+						(xy 8.382 1.27)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 8.382 1.27) 
+						(xy 9.652 -1.27)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 9.652 -1.27) 
+						(xy 10.922 1.27)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 10.922 1.27) 
+						(xy 12.192 -1.27)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 12.192 -1.27) 
+						(xy 12.7 0)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 12.7 0) 
+						(xy 13.462 0)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(pin passive line 
+					(at 0 0 0) 
+					(length 5.08) 
+					(name "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin passive line 
+					(at 17.78 0 180) 
+					(length 5.08) 
+					(name "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))))) 
+			(embedded_fonts no)) 
+		(symbol "BoostDraftSymbols:1029c3af85768c4190bb7ad29bc67b5_2" 
+			(pin_names 
+				(hide yes)) 
+			(exclude_from_sim no) 
+			(in_bom yes) 
+			(on_board yes) 
+			(in_pos_files yes) 
+			(duplicate_pin_numbers_are_jumpers no) 
+			(property "Reference" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Value" "191k 1%" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Footprint" "BoostDraft:R0805" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Datasheet" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Description" "Provisional TypeII compensation;500Hz simplified target; unvalidated" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(symbol "1029c3af85768c4190bb7ad29bc67b5_2_1_0" 
+				(polyline 
+					(pts 
+						(xy 5.08 0) 
+						(xy 4.318 0)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 5.08 0) 
+						(xy 5.842 1.27)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 5.842 1.27) 
+						(xy 7.112 -1.27)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 7.112 -1.27) 
+						(xy 8.382 1.27)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 8.382 1.27) 
+						(xy 9.652 -1.27)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 9.652 -1.27) 
+						(xy 10.922 1.27)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 10.922 1.27) 
+						(xy 12.192 -1.27)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 12.192 -1.27) 
+						(xy 12.7 0)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 12.7 0) 
+						(xy 13.462 0)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(pin passive line 
+					(at 0 0 0) 
+					(length 5.08) 
+					(name "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin passive line 
+					(at 17.78 0 180) 
+					(length 5.08) 
+					(name "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))))) 
+			(embedded_fonts no)) 
+		(symbol "BoostDraftSymbols:1029c3af85768c4190bb7ad29bc67b5_3" 
+			(pin_names 
+				(hide yes)) 
+			(exclude_from_sim no) 
+			(in_bom yes) 
+			(on_board yes) 
+			(in_pos_files yes) 
+			(duplicate_pin_numbers_are_jumpers no) 
+			(property "Reference" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Value" "10k 0.1%" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Footprint" "BoostDraft:R0603" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Datasheet" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Description" "Lower feedback;80.0V nominal setpoint; exact MPN pending" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(symbol "1029c3af85768c4190bb7ad29bc67b5_3_1_0" 
+				(polyline 
+					(pts 
+						(xy 5.08 0) 
+						(xy 4.318 0)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 5.08 0) 
+						(xy 5.842 1.27)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 5.842 1.27) 
+						(xy 7.112 -1.27)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 7.112 -1.27) 
+						(xy 8.382 1.27)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 8.382 1.27) 
+						(xy 9.652 -1.27)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 9.652 -1.27) 
+						(xy 10.922 1.27)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 10.922 1.27) 
+						(xy 12.192 -1.27)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 12.192 -1.27) 
+						(xy 12.7 0)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 12.7 0) 
+						(xy 13.462 0)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(pin passive line 
+					(at 0 0 0) 
+					(length 5.08) 
+					(name "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin passive line 
+					(at 17.78 0 180) 
+					(length 5.08) 
+					(name "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))))) 
+			(embedded_fonts no)) 
+		(symbol "BoostDraftSymbols:88c1139f9d239099ffebecbe3f7647a_1" 
+			(pin_names 
+				(hide yes)) 
+			(exclude_from_sim no) 
+			(in_bom yes) 
+			(on_board yes) 
+			(in_pos_files yes) 
+			(duplicate_pin_numbers_are_jumpers no) 
+			(property "Reference" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Value" "80V OUTPUT" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Footprint" "BoostDraft:OUT_FP-TSW-102-14-G-S-MFG" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Datasheet" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Description" "1=HV_TOP;2=HV_BOTTOM; source connector remains provisional" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(symbol "88c1139f9d239099ffebecbe3f7647a_1_1_0" 
+				(rectangle 
+					(start -10.16 5.08) 
+					(end -5.08 -10.16) 
+					(stroke 
+						(width 0) 
+						(type solid) 
+						(color 128 0 0 1)) 
+					(fill 
+						(type background))) 
+				(rectangle 
+					(start -9.144 0.762) 
+					(end -6.858 -0.762) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type outline))) 
+				(rectangle 
+					(start -9.144 -4.318) 
+					(end -6.858 -5.842) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type outline))) 
+				(polyline 
+					(pts 
+						(xy -6.858 0) 
+						(xy -5.08 0)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy -6.858 -5.08) 
+						(xy -5.08 -5.08)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(text "1" 
+					(at -6.858 3.048 0) 
+					(effects 
+						(font 
+							(size 1.27 1.27)) 
+						(justify right top))) 
+				(text "2" 
+					(at -6.858 -2.032 0) 
+					(effects 
+						(font 
+							(size 1.27 1.27)) 
+						(justify right top))) 
+				(pin passive line 
+					(at 0 0 180) 
+					(length 5.08) 
+					(name "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin passive line 
+					(at 0 -5.08 180) 
+					(length 5.08) 
+					(name "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))))) 
+			(embedded_fonts no)) 
+		(symbol "BoostDraftSymbols:CAP-NP-2" 
+			(pin_names 
+				(hide yes)) 
+			(exclude_from_sim no) 
+			(in_bom yes) 
+			(on_board yes) 
+			(in_pos_files yes) 
+			(duplicate_pin_numbers_are_jumpers no) 
+			(property "Reference" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Value" "47u 16V" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Footprint" "BoostDraft:C1210" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Datasheet" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Description" "Soft-start; effective minimum33uF over0-1V after bias,tolerance,temp; exact MPN pending" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(symbol "CAP-NP-2_1_0" 
+				(polyline 
+					(pts 
+						(xy 2.54 0) 
+						(xy 3.302 0)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 3.302 -2.032) 
+						(xy 3.302 2.032)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 4.318 2.032) 
+						(xy 4.318 -2.032)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 5.08 0) 
+						(xy 4.318 0)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(pin passive line 
+					(at 0 0 0) 
+					(length 2.54) 
+					(name "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin passive line 
+					(at 7.62 0 180) 
+					(length 2.54) 
+					(name "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))))) 
+			(embedded_fonts no)) 
+		(symbol "BoostDraftSymbols:CAP-P-2" 
+			(pin_names 
+				(hide yes)) 
+			(exclude_from_sim no) 
+			(in_bom yes) 
+			(on_board yes) 
+			(in_pos_files yes) 
+			(duplicate_pin_numbers_are_jumpers no) 
+			(property "Reference" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Value" "100u 160V" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Footprint" "BoostDraft:C_BULK" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Datasheet" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Description" "Bulk output;100uF +/-20%;ESR/ripple and exact MPN pending" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(symbol "CAP-P-2_1_0" 
+				(polyline 
+					(pts 
+						(xy -2.032 -3.302) 
+						(xy 2.032 -3.302)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy -1.587 -2.476) 
+						(xy -0.952 -2.476)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy -1.27 -2.159) 
+						(xy -1.27 -2.794)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 0 -2.54) 
+						(xy 0 -3.302)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 0 -4.318) 
+						(xy 0 -5.08)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(arc 
+					(start -2.0163 -4.8535) 
+					(mid -1.0431 -4.4542) 
+					(end 0 -4.318) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(arc 
+					(start 0 -4.318) 
+					(mid 1.0431 -4.4541) 
+					(end 2.0163 -4.8535) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(pin passive line 
+					(at 0 0 270) 
+					(length 2.54) 
+					(name "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin passive line 
+					(at 0 -7.62 90) 
+					(length 2.54) 
+					(name "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))))) 
+			(embedded_fonts no)) 
+		(symbol "BoostDraftSymbols:RES-2" 
+			(pin_names 
+				(hide yes)) 
+			(exclude_from_sim no) 
+			(in_bom yes) 
+			(on_board yes) 
+			(in_pos_files yes) 
+			(duplicate_pin_numbers_are_jumpers no) 
+			(property "Reference" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Value" "909R 1%" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Footprint" "BoostDraft:R0603" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Datasheet" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Description" "Extra slope compensation; total sense series1009ohm including R4" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(symbol "RES-2_1_0" 
+				(polyline 
+					(pts 
+						(xy 10.16 0) 
+						(xy 9.398 0.762) 
+						(xy 8.636 0) 
+						(xy 7.874 -0.762) 
+						(xy 6.35 0.762) 
+						(xy 4.826 -0.762) 
+						(xy 3.302 0.762) 
+						(xy 2.54 0)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(pin passive line 
+					(at 0 0 0) 
+					(length 2.54) 
+					(name "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin passive line 
+					(at 12.7 0 180) 
+					(length 2.54) 
+					(name "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))))) 
+			(embedded_fonts no)) 
+		(symbol "BoostDraftSymbols:1029c3af85768c4190bb7ad29bc67b5" 
+			(pin_names 
+				(hide yes)) 
+			(exclude_from_sim no) 
+			(in_bom yes) 
+			(on_board yes) 
+			(in_pos_files yes) 
+			(duplicate_pin_numbers_are_jumpers no) 
+			(property "Reference" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Value" "54.9k 1%" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Footprint" "BoostDraft:R0603" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Datasheet" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Description" "Frequency395.67kHz nominal" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(symbol "1029c3af85768c4190bb7ad29bc67b5_1_0" 
+				(polyline 
+					(pts 
+						(xy 5.08 0) 
+						(xy 4.318 0)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 5.08 0) 
+						(xy 5.842 1.27)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 5.842 1.27) 
+						(xy 7.112 -1.27)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 7.112 -1.27) 
+						(xy 8.382 1.27)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 8.382 1.27) 
+						(xy 9.652 -1.27)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 9.652 -1.27) 
+						(xy 10.922 1.27)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 10.922 1.27) 
+						(xy 12.192 -1.27)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 12.192 -1.27) 
+						(xy 12.7 0)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 12.7 0) 
+						(xy 13.462 0)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(pin passive line 
+					(at 0 0 0) 
+					(length 5.08) 
+					(name "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin passive line 
+					(at 17.78 0 180) 
+					(length 5.08) 
+					(name "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))))) 
+			(embedded_fonts no)) 
+		(symbol "BoostDraftSymbols:88c1139f9d239099ffebecbe3f7647a" 
+			(pin_names 
+				(hide yes)) 
+			(exclude_from_sim no) 
+			(in_bom yes) 
+			(on_board yes) 
+			(in_pos_files yes) 
+			(duplicate_pin_numbers_are_jumpers no) 
+			(property "Reference" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Value" "12V INPUT" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Footprint" "BoostDraft:IN_FP-TSW-102-14-G-S-MFG" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Datasheet" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Description" "1=ISO_12V_TO_BOTTOM;2=HV_BOTTOM; source connector remains provisional" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(symbol "88c1139f9d239099ffebecbe3f7647a_1_0" 
+				(rectangle 
+					(start -6.858 0.762) 
+					(end -9.144 -0.762) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type outline))) 
+				(polyline 
+					(pts 
+						(xy -6.858 0) 
+						(xy -5.08 0)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(rectangle 
+					(start -6.858 -4.318) 
+					(end -9.144 -5.842) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type outline))) 
+				(polyline 
+					(pts 
+						(xy -6.858 -5.08) 
+						(xy -5.08 -5.08)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(rectangle 
+					(start -5.08 5.08) 
+					(end -10.16 -10.16) 
+					(stroke 
+						(width 0) 
+						(type solid) 
+						(color 128 0 0 1)) 
+					(fill 
+						(type background))) 
+				(text "1" 
+					(at -6.858 3.048 0) 
+					(effects 
+						(font 
+							(size 1.27 1.27)) 
+						(justify right top))) 
+				(text "2" 
+					(at -6.858 -2.032 0) 
+					(effects 
+						(font 
+							(size 1.27 1.27)) 
+						(justify right top))) 
+				(pin passive line 
+					(at 0 0 180) 
+					(length 5.08) 
+					(name "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin passive line 
+					(at 0 -5.08 180) 
+					(length 5.08) 
+					(name "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))))) 
+			(embedded_fonts no)) 
+		(symbol "BoostDraftSymbols:ONSC-D-K1A2-2_A" 
+			(exclude_from_sim no) 
+			(in_bom yes) 
+			(on_board yes) 
+			(in_pos_files yes) 
+			(duplicate_pin_numbers_are_jumpers no) 
+			(property "Reference" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Value" "SS120 200V" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Footprint" "BoostDraft:D_SMA" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Datasheet" "https://services.taiwansemi.com/storage/resources/datasheet/SS120_C2305.pdf" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Description" "200V,1A Schottky; verify order suffix" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(symbol "ONSC-D-K1A2-2_A_1_0" 
+				(rectangle 
+					(start 10.16 0) 
+					(end 0 -5.08) 
+					(stroke 
+						(width 0.0254) 
+						(type solid) 
+						(color 128 0 0 1)) 
+					(fill 
+						(type background))) 
+				(pin passive line 
+					(at 15.24 -2.54 180) 
+					(length 5.08) 
+					(name "K" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin passive line 
+					(at -5.08 -2.54 0) 
+					(length 5.08) 
+					(name "A" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))))) 
+			(embedded_fonts no)) 
+		(symbol "BoostDraftSymbols:RES" 
+			(pin_numbers 
+				(hide yes)) 
+			(pin_names 
+				(hide yes)) 
+			(exclude_from_sim no) 
+			(in_bom yes) 
+			(on_board yes) 
+			(in_pos_files yes) 
+			(duplicate_pin_numbers_are_jumpers no) 
+			(property "Reference" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Value" "21.5k 1%" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Footprint" "BoostDraft:R0603" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Datasheet" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Description" "UVLO lower resistor" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(symbol "RES_1_0" 
+				(polyline 
+					(pts 
+						(xy 5.08 -2.54) 
+						(xy 4.064 -2.54) 
+						(xy 3.81 -3.048) 
+						(xy 3.302 -2.032) 
+						(xy 2.794 -3.048) 
+						(xy 2.286 -2.032) 
+						(xy 1.778 -3.048) 
+						(xy 1.27 -2.032) 
+						(xy 1.016 -2.54) 
+						(xy 0 -2.54)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(pin passive line 
+					(at -2.54 -2.54 0) 
+					(length 2.54) 
+					(name "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin passive line 
+					(at 7.62 -2.54 180) 
+					(length 2.54) 
+					(name "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))))) 
+			(embedded_fonts no)) 
+		(symbol "BoostDraftSymbols:b4654b650e69147ec39a6b967a45e02" 
+			(pin_names 
+				(hide yes)) 
+			(exclude_from_sim no) 
+			(in_bom yes) 
+			(on_board yes) 
+			(in_pos_files yes) 
+			(duplicate_pin_numbers_are_jumpers no) 
+			(property "Reference" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Value" "47n 50V" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Footprint" "BoostDraft:C0603" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Datasheet" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Description" "Provisional compensation zero17.7Hz" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(symbol "b4654b650e69147ec39a6b967a45e02_1_0" 
+				(polyline 
+					(pts 
+						(xy 0 -1.778) 
+						(xy 0 -1.016)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 0 -3.556) 
+						(xy 0 -3.81)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 2.54 -1.778) 
+						(xy -2.54 -1.778)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 2.54 -3.302) 
+						(xy -2.54 -3.302)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(pin passive line 
+					(at 0 0 270) 
+					(length 1.778) 
+					(name "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin passive line 
+					(at 0 -5.08 90) 
+					(length 1.524) 
+					(name "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))))) 
+			(embedded_fonts no)) 
+		(symbol "BoostDraftSymbols:12V_BAR" 
+			(power global) 
+			(exclude_from_sim no) 
+			(in_bom yes) 
+			(on_board yes) 
+			(in_pos_files yes) 
+			(duplicate_pin_numbers_are_jumpers no) 
+			(property "Reference" "#PWR" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Value" "ISO_12V_TO_BOTTOM" 
+				(at 0 -3.81 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Footprint" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Datasheet" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Description" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(symbol "12V_BAR_0_0" 
+				(polyline 
+					(pts 
+						(xy -1.27 -2.54) 
+						(xy 1.27 -2.54)) 
+					(stroke 
+						(width 0.254) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 0 0) 
+						(xy 0 -2.54)) 
+					(stroke 
+						(width 0.254) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(pin power_in line 
+					(at 0 0 0) 
+					(length 0) 
+					(hide yes) 
+					(name "ISO_12V_TO_BOTTOM" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))))) 
+			(embedded_fonts no)) 
+		(symbol "BoostDraftSymbols:GND_POWER_GROUND" 
+			(power global) 
+			(exclude_from_sim no) 
+			(in_bom yes) 
+			(on_board yes) 
+			(in_pos_files yes) 
+			(duplicate_pin_numbers_are_jumpers no) 
+			(property "Reference" "#PWR" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Value" "HV_BOTTOM" 
+				(at 0 -6.35 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Footprint" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Datasheet" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Description" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(symbol "GND_POWER_GROUND_0_0" 
+				(polyline 
+					(pts 
+						(xy -2.54 -2.54) 
+						(xy 2.54 -2.54)) 
+					(stroke 
+						(width 0.254) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy -1.778 -3.302) 
+						(xy 1.778 -3.302)) 
+					(stroke 
+						(width 0.254) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy -1.016 -4.064) 
+						(xy 1.016 -4.064)) 
+					(stroke 
+						(width 0.254) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy -0.254 -4.826) 
+						(xy 0.254 -4.826)) 
+					(stroke 
+						(width 0.254) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 0 0) 
+						(xy 0 -2.54)) 
+					(stroke 
+						(width 0.254) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(pin power_in line 
+					(at 0 0 0) 
+					(length 0) 
+					(hide yes) 
+					(name "HV_BOTTOM" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))))) 
+			(embedded_fonts no)) 
+		(symbol "BoostDraftSymbols:VCC_BAR" 
+			(power global) 
+			(exclude_from_sim no) 
+			(in_bom yes) 
+			(on_board yes) 
+			(in_pos_files yes) 
+			(duplicate_pin_numbers_are_jumpers no) 
+			(property "Reference" "#PWR" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Value" "VCC_BOOST" 
+				(at 0 -3.81 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Footprint" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Datasheet" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Description" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(symbol "VCC_BAR_0_0" 
+				(polyline 
+					(pts 
+						(xy -1.27 -2.54) 
+						(xy 1.27 -2.54)) 
+					(stroke 
+						(width 0.254) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 0 0) 
+						(xy 0 -2.54)) 
+					(stroke 
+						(width 0.254) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(pin power_in line 
+					(at 0 0 0) 
+					(length 0) 
+					(hide yes) 
+					(name "VCC_BOOST" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))))) 
+			(embedded_fonts no)) 
+		(symbol "BoostDraftSymbols:CAP-NP-2_1" 
+			(pin_names 
+				(hide yes)) 
+			(exclude_from_sim no) 
+			(in_bom yes) 
+			(on_board yes) 
+			(in_pos_files yes) 
+			(duplicate_pin_numbers_are_jumpers no) 
+			(property "Reference" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Value" "100p 50V" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Footprint" "BoostDraft:C0603" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Datasheet" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Description" "Sense filter" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(symbol "CAP-NP-2_1_1_0" 
+				(polyline 
+					(pts 
+						(xy 2.54 0) 
+						(xy 3.302 0)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 3.302 -2.032) 
+						(xy 3.302 2.032)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 4.318 2.032) 
+						(xy 4.318 -2.032)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 5.08 0) 
+						(xy 4.318 0)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(pin passive line 
+					(at 0 0 0) 
+					(length 2.54) 
+					(name "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin passive line 
+					(at 7.62 0 180) 
+					(length 2.54) 
+					(name "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))))) 
+			(embedded_fonts no)) 
+		(symbol "BoostDraftSymbols:LM5155DSSR" 
+			(exclude_from_sim no) 
+			(in_bom yes) 
+			(on_board yes) 
+			(in_pos_files yes) 
+			(duplicate_pin_numbers_are_jumpers no) 
+			(property "Reference" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Value" "LM5155DSSR" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Footprint" "BoostDraft:U1_DSS0012B" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lm5155.pdf" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Description" "Nonisolated boost controller; all grounds=HV_BOTTOM" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(symbol "LM5155DSSR_1_0" 
+				(rectangle 
+					(start 15.24 30.48) 
+					(end -15.24 -30.48) 
+					(stroke 
+						(width 0) 
+						(type solid) 
+						(color 0 0 0 1)) 
+					(fill 
+						(type background))) 
+				(pin power_in line 
+					(at -20.32 25.4 0) 
+					(length 5.08) 
+					(name "BIAS" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin power_out line 
+					(at 20.32 25.4 180) 
+					(length 5.08) 
+					(name "VCC_BOOST" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin output line 
+					(at 20.32 17.78 180) 
+					(length 5.08) 
+					(name "GATE" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "3" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin power_in line 
+					(at 20.32 -5.08 180) 
+					(length 5.08) 
+					(name "PGND" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "4" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin input line 
+					(at 20.32 5.08 180) 
+					(length 5.08) 
+					(name "CS" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "5" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin output line 
+					(at -20.32 -25.4 0) 
+					(length 5.08) 
+					(name "COMP" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "6" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin power_in line 
+					(at 20.32 -25.4 180) 
+					(length 5.08) 
+					(name "AGND" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "7" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin input line 
+					(at 20.32 -15.24 180) 
+					(length 5.08) 
+					(name "FB" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "8" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin input line 
+					(at -20.32 -15.24 0) 
+					(length 5.08) 
+					(name "SS" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "9" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin passive line 
+					(at -20.32 -5.08 0) 
+					(length 5.08) 
+					(name "RT" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "10" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin open_collector line 
+					(at -20.32 5.08 0) 
+					(length 5.08) 
+					(name "PGOOD" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "11" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin input line 
+					(at -20.32 15.24 0) 
+					(length 5.08) 
+					(name "UVLO_SYNC" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "12" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin passive line 
+					(at 20.32 -22.86 180) 
+					(length 5.08) 
+					(name "EP" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "13" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))))) 
+			(embedded_fonts no)) 
+		(symbol "BoostDraftSymbols:RES-2_1" 
+			(pin_names 
+				(hide yes)) 
+			(exclude_from_sim no) 
+			(in_bom yes) 
+			(on_board yes) 
+			(in_pos_files yes) 
+			(duplicate_pin_numbers_are_jumpers no) 
+			(property "Reference" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Value" "100R 1%" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Footprint" "BoostDraft:R0603" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Datasheet" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Description" "Current-sense filter;10ns with100pF" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(symbol "RES-2_1_1_0" 
+				(polyline 
+					(pts 
+						(xy 10.16 0) 
+						(xy 9.398 0.762) 
+						(xy 8.636 0) 
+						(xy 7.874 -0.762) 
+						(xy 6.35 0.762) 
+						(xy 4.826 -0.762) 
+						(xy 3.302 0.762) 
+						(xy 2.54 0)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(pin passive line 
+					(at 0 0 0) 
+					(length 2.54) 
+					(name "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin passive line 
+					(at 12.7 0 180) 
+					(length 2.54) 
+					(name "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))))) 
+			(embedded_fonts no)) 
+		(symbol "BoostDraftSymbols:RES_1" 
+			(pin_numbers 
+				(hide yes)) 
+			(pin_names 
+				(hide yes)) 
+			(exclude_from_sim no) 
+			(in_bom yes) 
+			(on_board yes) 
+			(in_pos_files yes) 
+			(duplicate_pin_numbers_are_jumpers no) 
+			(property "Reference" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Value" "24.9k 1%" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Footprint" "BoostDraft:R0603" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Datasheet" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Description" "LOCAL PGOOD pullup to VCC_BOOST; not3.3V logic" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(symbol "RES_1_1_0" 
+				(polyline 
+					(pts 
+						(xy 5.08 -2.54) 
+						(xy 4.064 -2.54) 
+						(xy 3.81 -3.048) 
+						(xy 3.302 -2.032) 
+						(xy 2.794 -3.048) 
+						(xy 2.286 -2.032) 
+						(xy 1.778 -3.048) 
+						(xy 1.27 -2.032) 
+						(xy 1.016 -2.54) 
+						(xy 0 -2.54)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(pin passive line 
+					(at -2.54 -2.54 0) 
+					(length 2.54) 
+					(name "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin passive line 
+					(at 7.62 -2.54 180) 
+					(length 2.54) 
+					(name "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))))) 
+			(embedded_fonts no)) 
+		(symbol "BoostDraftSymbols:RES_2" 
+			(pin_numbers 
+				(hide yes)) 
+			(pin_names 
+				(hide yes)) 
+			(exclude_from_sim no) 
+			(in_bom yes) 
+			(on_board yes) 
+			(in_pos_files yes) 
+			(duplicate_pin_numbers_are_jumpers no) 
+			(property "Reference" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Value" "790k 0.1%" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Footprint" "BoostDraft:R1206" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Datasheet" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Description" "Upper feedback;79V nominal stress; exact MPN pending" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(symbol "RES_2_1_0" 
+				(polyline 
+					(pts 
+						(xy 5.08 -2.54) 
+						(xy 4.064 -2.54) 
+						(xy 3.81 -3.048) 
+						(xy 3.302 -2.032) 
+						(xy 2.794 -3.048) 
+						(xy 2.286 -2.032) 
+						(xy 1.778 -3.048) 
+						(xy 1.27 -2.032) 
+						(xy 1.016 -2.54) 
+						(xy 0 -2.54)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(pin passive line 
+					(at -2.54 -2.54 0) 
+					(length 2.54) 
+					(name "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin passive line 
+					(at 7.62 -2.54 180) 
+					(length 2.54) 
+					(name "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))))) 
+			(embedded_fonts no)) 
+		(symbol "BoostDraftSymbols:RES_3" 
+			(pin_numbers 
+				(hide yes)) 
+			(pin_names 
+				(hide yes)) 
+			(exclude_from_sim no) 
+			(in_bom yes) 
+			(on_board yes) 
+			(in_pos_files yes) 
+			(duplicate_pin_numbers_are_jumpers no) 
+			(property "Reference" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Value" "0R270 1%" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Footprint" "BoostDraft:R1206" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Datasheet" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Description" "Peak switch current sensing; not a precision output-current limit" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(symbol "RES_3_1_0" 
+				(polyline 
+					(pts 
+						(xy 5.08 -2.54) 
+						(xy 4.064 -2.54) 
+						(xy 3.81 -3.048) 
+						(xy 3.302 -2.032) 
+						(xy 2.794 -3.048) 
+						(xy 2.286 -2.032) 
+						(xy 1.778 -3.048) 
+						(xy 1.27 -2.032) 
+						(xy 1.016 -2.54) 
+						(xy 0 -2.54)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(pin passive line 
+					(at -2.54 -2.54 0) 
+					(length 2.54) 
+					(name "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin passive line 
+					(at 7.62 -2.54 180) 
+					(length 2.54) 
+					(name "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))))) 
+			(embedded_fonts no)) 
+		(symbol "BoostDraftSymbols:SQJA70EP-T1_GE3" 
+			(pin_numbers 
+				(hide yes)) 
+			(exclude_from_sim no) 
+			(in_bom yes) 
+			(on_board yes) 
+			(in_pos_files yes) 
+			(duplicate_pin_numbers_are_jumpers no) 
+			(property "Reference" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Value" "FDMC86240" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Footprint" "BoostDraft:Q_FDMC86240_CASE511DH" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/fdmc86240-d.pdf" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Description" "S1/2/3,G4,D5/6/7/8; verified CASE511DH copper lands; EP common with D" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(symbol "SQJA70EP-T1_GE3_1_0" 
+				(polyline 
+					(pts 
+						(xy 2.54 0) 
+						(xy 4.445 0)) 
+					(stroke 
+						(width 0) 
+						(type solid) 
+						(color 0 0 0 1)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 4.445 0) 
+						(xy 4.445 5.08)) 
+					(stroke 
+						(width 0) 
+						(type solid) 
+						(color 0 0 0 1)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 5.08 4.445) 
+						(xy 6.985 4.445)) 
+					(stroke 
+						(width 0) 
+						(type solid) 
+						(color 0 0 0 1)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 5.08 1.905) 
+						(xy 5.08 3.175)) 
+					(stroke 
+						(width 0) 
+						(type solid) 
+						(color 0 0 0 1)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 5.08 0.635) 
+						(xy 6.985 0.635)) 
+					(stroke 
+						(width 0) 
+						(type solid) 
+						(color 0 0 0 1)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 5.08 0) 
+						(xy 5.08 1.27)) 
+					(stroke 
+						(width 0) 
+						(type solid) 
+						(color 0 0 0 1)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 6.35 3.175) 
+						(xy 5.08 2.54) 
+						(xy 6.35 1.905) 
+						(xy 6.35 3.175)) 
+					(stroke 
+						(width 0.0254) 
+						(type solid) 
+						(color 0 0 0 1)) 
+					(fill 
+						(type background))) 
+				(polyline 
+					(pts 
+						(xy 6.35 2.54) 
+						(xy 6.985 2.54)) 
+					(stroke 
+						(width 0) 
+						(type solid) 
+						(color 0 0 0 1)) 
+					(fill 
+						(type none))) 
+				(circle 
+					(center 6.35 2.54) 
+					(radius 3.81) 
+					(stroke 
+						(width 0) 
+						(type solid) 
+						(color 0 0 0 1)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 6.985 5.08) 
+						(xy 8.255 5.08)) 
+					(stroke 
+						(width 0) 
+						(type solid) 
+						(color 0 0 0 1)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 6.985 4.445) 
+						(xy 6.985 5.08)) 
+					(stroke 
+						(width 0) 
+						(type solid) 
+						(color 0 0 0 1)) 
+					(fill 
+						(type none))) 
+				(circle 
+					(center 6.985 0.635) 
+					(radius 0.025) 
+					(stroke 
+						(width 0.762) 
+						(type solid) 
+						(color 0 0 0 1)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 6.985 0) 
+						(xy 6.985 2.54)) 
+					(stroke 
+						(width 0) 
+						(type solid) 
+						(color 0 0 0 1)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 6.985 0) 
+						(xy 8.255 0)) 
+					(stroke 
+						(width 0) 
+						(type solid) 
+						(color 0 0 0 1)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 7.62 7.62) 
+						(xy 7.645 5.08)) 
+					(stroke 
+						(width 0) 
+						(type solid) 
+						(color 0 0 0 1)) 
+					(fill 
+						(type none))) 
+				(circle 
+					(center 7.62 5.08) 
+					(radius 0.025) 
+					(stroke 
+						(width 0.762) 
+						(type solid) 
+						(color 0 0 0 1)) 
+					(fill 
+						(type none))) 
+				(circle 
+					(center 7.62 0) 
+					(radius 0.025) 
+					(stroke 
+						(width 0.762) 
+						(type solid) 
+						(color 0 0 0 1)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 7.62 -2.54) 
+						(xy 7.62 0)) 
+					(stroke 
+						(width 0) 
+						(type solid) 
+						(color 0 0 0 1)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 8.255 3.175) 
+						(xy 8.255 5.08)) 
+					(stroke 
+						(width 0) 
+						(type solid) 
+						(color 0 0 0 1)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 8.255 0) 
+						(xy 8.255 1.905)) 
+					(stroke 
+						(width 0) 
+						(type solid) 
+						(color 0 0 0 1)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 8.89 3.175) 
+						(xy 7.62 3.175)) 
+					(stroke 
+						(width 0) 
+						(type solid) 
+						(color 0 0 0 1)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 8.89 1.905) 
+						(xy 7.62 1.905) 
+						(xy 8.255 3.175) 
+						(xy 8.89 1.905)) 
+					(stroke 
+						(width 0.0254) 
+						(type solid) 
+						(color 0 0 0 1)) 
+					(fill 
+						(type background))) 
+				(pin passive line 
+					(at 7.62 -5.08 90) 
+					(length 2.54) 
+					(name "S" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin passive line 
+					(at 0 0 0) 
+					(length 2.54) 
+					(name "G" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "4" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin passive line 
+					(at 7.62 10.16 270) 
+					(length 2.54) 
+					(name "D" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "5" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin passive line 
+					(at 7.62 -5.08 90) 
+					(length 2.54) 
+					(name "S" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) hide) 
+				(pin passive line 
+					(at 7.62 -5.08 90) 
+					(length 2.54) 
+					(name "S" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "3" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) hide) 
+				(pin passive line 
+					(at 7.62 10.16 270) 
+					(length 2.54) 
+					(name "D" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "6" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) hide) 
+				(pin passive line 
+					(at 7.62 10.16 270) 
+					(length 2.54) 
+					(name "D" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "7" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) hide) 
+				(pin passive line 
+					(at 7.62 10.16 270) 
+					(length 2.54) 
+					(name "D" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "8" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) hide)) 
+			(embedded_fonts no)) 
+		(symbol "BoostDraftSymbols:VLS6045EX-151M" 
+			(pin_numbers 
+				(hide yes)) 
+			(pin_names 
+				(hide yes)) 
+			(exclude_from_sim no) 
+			(in_bom yes) 
+			(on_board yes) 
+			(in_pos_files yes) 
+			(duplicate_pin_numbers_are_jumpers no) 
+			(property "Reference" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Value" "1mH SRR1280-102K" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Footprint" "BoostDraft:L_BOURNS" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/SRR1280.pdf" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Description" "1mH10%;DCR1.7ohm max;Irms0.68A;Isat0.80A typ at25%Ldrop" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(symbol "VLS6045EX-151M_1_0" 
+				(polyline 
+					(pts 
+						(xy -5.08 0) 
+						(xy -7.62 0)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(arc 
+					(start -5.08 0) 
+					(mid -3.81 1.27) 
+					(end -2.54 0) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(arc 
+					(start -2.54 0) 
+					(mid -1.27 1.27) 
+					(end 0 0) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(arc 
+					(start 0 0) 
+					(mid 1.27 1.27) 
+					(end 2.54 0) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(arc 
+					(start 2.54 0) 
+					(mid 3.81 1.27) 
+					(end 5.08 0) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 5.08 0) 
+						(xy 7.62 0)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(pin passive line 
+					(at -12.7 0 0) 
+					(length 5.08) 
+					(name "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin passive line 
+					(at 12.7 0 180) 
+					(length 5.08) 
+					(name "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))))) 
+			(embedded_fonts no)) 
+		(symbol "BoostDraftSymbols:b4654b650e69147ec39a6b967a45e02_1" 
+			(pin_names 
+				(hide yes)) 
+			(exclude_from_sim no) 
+			(in_bom yes) 
+			(on_board yes) 
+			(in_pos_files yes) 
+			(duplicate_pin_numbers_are_jumpers no) 
+			(property "Reference" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Value" "68p 50V" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Footprint" "BoostDraft:C0603" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Datasheet" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Description" "Provisional compensation HF pole 12.25kHz" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(symbol "b4654b650e69147ec39a6b967a45e02_1_1_0" 
+				(polyline 
+					(pts 
+						(xy 0 -1.778) 
+						(xy 0 -1.016)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 0 -3.556) 
+						(xy 0 -3.81)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 2.54 -1.778) 
+						(xy -2.54 -1.778)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy 2.54 -3.302) 
+						(xy -2.54 -3.302)) 
+					(stroke 
+						(width 0) 
+						(type solid)) 
+					(fill 
+						(type none))) 
+				(pin passive line 
+					(at 0 0 270) 
+					(length 1.778) 
+					(name "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin passive line 
+					(at 0 -5.08 90) 
+					(length 1.524) 
+					(name "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))))) 
+			(embedded_fonts no)) 
+		(symbol "BoostDraftSymbols:C" 
+			(pin_numbers 
+				(hide yes)) 
+			(pin_names 
+				(offset 0.254)) 
+			(exclude_from_sim no) 
+			(in_bom yes) 
+			(on_board yes) 
+			(in_pos_files yes) 
+			(duplicate_pin_numbers_are_jumpers no) 
+			(property "Reference" "C" 
+				(at 0.635 2.54 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)) 
+					(justify left))) 
+			(property "Value" "C" 
+				(at 0.635 -2.54 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)) 
+					(justify left))) 
+			(property "Footprint" "" 
+				(at 0.9652 -3.81 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Datasheet" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Description" "Unpolarized capacitor" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "ki_keywords" "cap capacitor" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "ki_fp_filters" "C_*" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(symbol "C_0_1" 
+				(polyline 
+					(pts 
+						(xy -2.032 0.762) 
+						(xy 2.032 0.762)) 
+					(stroke 
+						(width 0.508) 
+						(type default)) 
+					(fill 
+						(type none))) 
+				(polyline 
+					(pts 
+						(xy -2.032 -0.762) 
+						(xy 2.032 -0.762)) 
+					(stroke 
+						(width 0.508) 
+						(type default)) 
+					(fill 
+						(type none)))) 
+			(symbol "C_1_1" 
+				(pin passive line 
+					(at 0 3.81 270) 
+					(length 2.794) 
+					(name "" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27))))) 
+				(pin passive line 
+					(at 0 -3.81 90) 
+					(length 2.794) 
+					(name "" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "2" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))))) 
+			(embedded_fonts no)) 
+		(symbol "BoostDraftSymbols:PWR_FLAG" 
+			(power global) 
+			(pin_numbers 
+				(hide yes)) 
+			(pin_names 
+				(offset 0) 
+				(hide yes)) 
+			(exclude_from_sim no) 
+			(in_bom yes) 
+			(on_board yes) 
+			(in_pos_files yes) 
+			(duplicate_pin_numbers_are_jumpers no) 
+			(property "Reference" "#FLG" 
+				(at 0 1.905 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Value" "PWR_FLAG" 
+				(at 0 3.81 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Footprint" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Datasheet" "" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "Description" "Special symbol for telling ERC where power comes from" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(property "ki_keywords" "flag power" 
+				(at 0 0 0) 
+				(show_name no) 
+				(do_not_autoplace no) 
+				(hide yes) 
+				(effects 
+					(font 
+						(size 1.27 1.27)))) 
+			(symbol "PWR_FLAG_0_0" 
+				(pin power_out line 
+					(at 0 0 90) 
+					(length 0) 
+					(name "" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))) 
+					(number "1" 
+						(effects 
+							(font 
+								(size 1.27 1.27)))))) 
+			(symbol "PWR_FLAG_0_1" 
+				(polyline 
+					(pts 
+						(xy 0 0) 
+						(xy 0 1.27) 
+						(xy -1.016 1.905) 
+						(xy 0 2.54) 
+						(xy 1.016 1.905) 
+						(xy 0 1.27)) 
+					(stroke 
+						(width 0) 
+						(type default)) 
+					(fill 
+						(type none)))) 
+			(embedded_fonts no))) 
+	(junction 
+		(at 187.96 99.06) 
+		(diameter 0) 
+		(color 0 0 0 0) 
+		(uuid "01c0dc49-ef63-467f-b00c-e95e81c7af8b")) 
+	(junction 
+		(at 167.64 111.76) 
+		(diameter 0) 
+		(color 0 0 0 0) 
+		(uuid "2bd42eda-5035-423b-a262-ad0f7dd4971a")) 
+	(junction 
+		(at 187.96 60.96) 
+		(diameter 0) 
+		(color 0 0 0 0) 
+		(uuid "2d18ef04-429d-4d7e-a2c0-7097f3c209b7")) 
+	(junction 
+		(at 220.98 60.96) 
+		(diameter 0) 
+		(color 0 0 0 0) 
+		(uuid "7da0978c-c588-48e5-b776-58c2a3dd2de5")) 
+	(junction 
+		(at 60.96 91.44) 
+		(diameter 0) 
+		(color 0 0 0 0) 
+		(uuid "8429fef5-848a-4024-bf4b-f040e9d5ab58")) 
+	(junction 
+		(at 60.96 104.14) 
+		(diameter 0) 
+		(color 0 0 0 0) 
+		(uuid "b9e10162-3468-4e3f-8b3a-583197142bdf")) 
+	(junction 
+		(at 109.22 129.54) 
+		(diameter 0) 
+		(color 0 0 0 0) 
+		(uuid "c8d7fd4e-9a7b-4e2d-8225-764ef71d09b4")) 
+	(junction 
+		(at 45.72 60.96) 
+		(diameter 0) 
+		(color 0 0 0 0) 
+		(uuid "cd10d1d5-af01-4f49-8811-ffaefbaf7168")) 
+	(junction 
+		(at 60.96 60.96) 
+		(diameter 0) 
+		(color 0 0 0 0) 
+		(uuid "cdeb0a5e-6b70-4d5c-88ac-e468a383f8c7")) 
+	(junction 
+		(at 160.02 73.66) 
+		(diameter 0) 
+		(color 0 0 0 0) 
+		(uuid "d268606f-bdab-4f72-b88e-e550cd34f29d")) 
+	(junction 
+		(at 228.6 60.96) 
+		(diameter 0) 
+		(color 0 0 0 0) 
+		(uuid "dc9e8f67-dba6-4ffd-92c4-dffd5fc172c9")) 
+	(junction 
+		(at 220.98 116.84) 
+		(diameter 0) 
+		(color 0 0 0 0) 
+		(uuid "dcd1bfe0-f3d5-47af-9116-1440f0dbf217")) 
+	(junction 
+		(at 96.52 162.56) 
+		(diameter 0) 
+		(color 0 0 0 0) 
+		(uuid "e3b8f283-a9f2-4cd5-a9fe-05d33438c75e")) 
+	(junction 
+		(at 104.14 60.96) 
+		(diameter 0) 
+		(color 0 0 0 0) 
+		(uuid "f879f1b2-9be9-4e83-9918-e07bcb6669bc")) 
+	(junction 
+		(at 167.64 99.06) 
+		(diameter 0) 
+		(color 0 0 0 0) 
+		(uuid "f89b3dd7-1cb9-4888-acf0-dd5414940d8f")) 
+	(wire 
+		(pts 
+			(xy 160.02 73.66) 
+			(xy 160.02 71.12)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "001d64e6-1cfd-47d6-8999-ca9ba83f45c5")) 
+	(wire 
+		(pts 
+			(xy 33.02 58.42) 
+			(xy 33.02 60.96)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "02bad40f-b9d1-4863-a96a-ca437d2c57ae")) 
+	(wire 
+		(pts 
+			(xy 104.14 78.74) 
+			(xy 109.22 78.74)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "0430da45-07ca-4509-8413-67093f54a1c4")) 
+	(wire 
+		(pts 
+			(xy 109.22 119.38) 
+			(xy 88.9 119.38)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "062411cf-d422-453f-96ab-a0134f44259e")) 
+	(wire 
+		(pts 
+			(xy 109.22 149.86) 
+			(xy 109.22 162.56)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "0916dca0-894e-46eb-8a65-9fef4a3ad701")) 
+	(wire 
+		(pts 
+			(xy 220.98 139.7) 
+			(xy 220.98 137.16)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "0c1f5b70-a382-4759-adf1-1566fc86bd5f")) 
+	(wire 
+		(pts 
+			(xy 167.64 111.76) 
+			(xy 167.64 109.22)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "0f0bcbca-881b-4952-a9de-bad2e745e1ef")) 
+	(wire 
+		(pts 
+			(xy 109.22 129.54) 
+			(xy 109.22 144.78)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "1188a7aa-b824-4eac-9b0d-0761ac20a50f")) 
+	(wire 
+		(pts 
+			(xy 228.6 60.96) 
+			(xy 228.6 68.58)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "13572989-f314-4dfe-9b2e-23a2741a41cb")) 
+	(wire 
+		(pts 
+			(xy 45.72 60.96) 
+			(xy 60.96 60.96)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "17c96f7f-8b3e-47de-a73d-6b28953c3fbc")) 
+	(wire 
+		(pts 
+			(xy 78.74 109.22) 
+			(xy 109.22 109.22)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "19409272-c64d-4fdc-ad5f-98c1fc361234")) 
+	(wire 
+		(pts 
+			(xy 71.12 104.14) 
+			(xy 60.96 104.14)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "230e0e7b-2b46-4189-ac52-192d5e975619")) 
+	(wire 
+		(pts 
+			(xy 86.36 91.44) 
+			(xy 60.96 91.44)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "23bdd2ec-fc85-4cf4-877a-0d7751d6904f")) 
+	(wire 
+		(pts 
+			(xy 109.22 129.54) 
+			(xy 96.52 129.54)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "256e91f9-afd6-4f39-80d1-b1aa4f664662")) 
+	(wire 
+		(pts 
+			(xy 160.02 111.76) 
+			(xy 167.64 111.76)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "2cb9395c-2852-47b7-ac41-099f3fff590c")) 
+	(wire 
+		(pts 
+			(xy 149.86 86.36) 
+			(xy 180.34 86.36)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "2d491664-c77c-44d1-a141-0cee07874d8f")) 
+	(wire 
+		(pts 
+			(xy 109.22 88.9) 
+			(xy 86.36 88.9)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "2de8262a-ff8f-4477-8d3c-b988c1d11428")) 
+	(wire 
+		(pts 
+			(xy 220.98 60.96) 
+			(xy 220.98 104.14)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "2f15c76d-31c3-4e72-aff6-6c23f7545a1c")) 
+	(wire 
+		(pts 
+			(xy 160.02 73.66) 
+			(xy 162.56 73.66)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "2ffafa95-f9b6-4c87-a61a-e8503142a24a")) 
+	(wire 
+		(pts 
+			(xy 104.14 106.68) 
+			(xy 104.14 99.06)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "3557a636-c9a3-4286-97ca-0d1edf3a24fc")) 
+	(wire 
+		(pts 
+			(xy 187.96 60.96) 
+			(xy 195.58 60.96)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "4191e864-7d84-4bc3-abc8-e83f17cc15d5")) 
+	(wire 
+		(pts 
+			(xy 104.14 60.96) 
+			(xy 119.38 60.96)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "4198aba6-bcf9-4d2e-925c-3ba9a00272b5")) 
+	(wire 
+		(pts 
+			(xy 78.74 114.3) 
+			(xy 78.74 109.22)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "46af4984-a28f-4368-b7dc-678da33ee045")) 
+	(wire 
+		(pts 
+			(xy 167.64 114.3) 
+			(xy 167.64 111.76)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "48aa7b52-5a46-42c1-8012-8ea9b2ee9ee7")) 
+	(wire 
+		(pts 
+			(xy 208.28 124.46) 
+			(xy 208.28 116.84)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "49b0dbd3-3287-4720-9404-faccb07933fc")) 
+	(wire 
+		(pts 
+			(xy 149.86 78.74) 
+			(xy 160.02 78.74)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "50dda474-b465-4611-8ce6-d31845f8e920")) 
+	(wire 
+		(pts 
+			(xy 187.96 91.44) 
+			(xy 187.96 99.06)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "5a7d3d42-c22a-4975-8970-b088a89faccc")) 
+	(wire 
+		(pts 
+			(xy 60.96 60.96) 
+			(xy 60.96 71.12)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "5eb98b06-ed77-411c-8a86-581e3d3a70a7")) 
+	(wire 
+		(pts 
+			(xy 149.86 129.54) 
+			(xy 149.86 175.26)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "5f73a6a6-a440-4f15-8f3c-99bf98a4f0b2")) 
+	(wire 
+		(pts 
+			(xy 60.96 101.6) 
+			(xy 60.96 104.14)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "61a464f9-264c-472c-9b18-8e2c2dbc8735")) 
+	(wire 
+		(pts 
+			(xy 220.98 60.96) 
+			(xy 228.6 60.96)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "652f1762-1567-4cc6-b1ab-bc94706b0a78")) 
+	(wire 
+		(pts 
+			(xy 96.52 129.54) 
+			(xy 96.52 134.62)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "662e5a12-7fbf-43da-99f9-b3adb0698092")) 
+	(wire 
+		(pts 
+			(xy 60.96 88.9) 
+			(xy 60.96 91.44)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "684323ea-92b3-46cc-a474-88ab00880e61")) 
+	(wire 
+		(pts 
+			(xy 88.9 132.08) 
+			(xy 88.9 129.54)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "6f1493e0-0745-45b1-9bad-1f83c3b9667d")) 
+	(wire 
+		(pts 
+			(xy 236.22 172.72) 
+			(xy 236.22 180.34)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "7453af8f-6433-4b7e-9c2d-0659045dd5b9")) 
+	(wire 
+		(pts 
+			(xy 45.72 81.28) 
+			(xy 45.72 86.36)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "7aede100-0454-4127-a302-000c815323dc")) 
+	(wire 
+		(pts 
+			(xy 33.02 60.96) 
+			(xy 45.72 60.96)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "7bcd0040-8781-4e89-9d06-a9edc1c58e0e")) 
+	(wire 
+		(pts 
+			(xy 187.96 111.76) 
+			(xy 187.96 114.3)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "88aa899a-5cd0-4eb2-9485-b0c7079b3aeb")) 
+	(wire 
+		(pts 
+			(xy 96.52 160.02) 
+			(xy 96.52 162.56)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "88c011d5-cb68-4152-b74c-4c5715327d7b")) 
+	(wire 
+		(pts 
+			(xy 104.14 99.06) 
+			(xy 109.22 99.06)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "88e53d17-f7d3-47dd-9d6f-6f1792c6aef4")) 
+	(wire 
+		(pts 
+			(xy 88.9 119.38) 
+			(xy 88.9 121.92)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "8c822736-51d1-4d47-ba84-b4f50d65af15")) 
+	(wire 
+		(pts 
+			(xy 226.06 167.64) 
+			(xy 236.22 167.64)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "8ec84491-be97-4863-b455-f97df0a2bed9")) 
+	(wire 
+		(pts 
+			(xy 149.86 99.06) 
+			(xy 152.4 99.06)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "9187c5ec-1111-495e-8a12-d40dd0894993")) 
+	(wire 
+		(pts 
+			(xy 149.86 175.26) 
+			(xy 71.12 175.26)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "9bbdaa7d-0bca-4429-96fb-22777c1acb1f")) 
+	(wire 
+		(pts 
+			(xy 48.26 180.34) 
+			(xy 48.26 185.42)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "9bf46ba0-8e45-4201-99a6-dff8cb3e7017")) 
+	(wire 
+		(pts 
+			(xy 167.64 99.06) 
+			(xy 167.64 101.6)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "9ccd4550-3590-4e81-97ad-ec45dee7ea36")) 
+	(wire 
+		(pts 
+			(xy 149.86 119.38) 
+			(xy 160.02 119.38)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "a17c9a87-75f7-4a94-8994-0f7f9a2f0f75")) 
+	(wire 
+		(pts 
+			(xy 226.06 162.56) 
+			(xy 226.06 167.64)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "a9d02cc7-edb9-4998-a388-49ec841f81b0")) 
+	(wire 
+		(pts 
+			(xy 48.26 185.42) 
+			(xy 45.72 185.42)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "aa8b1c40-2a75-4990-b108-3dfd2c20ef28")) 
+	(wire 
+		(pts 
+			(xy 187.96 60.96) 
+			(xy 187.96 76.2)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "aae099ac-1efa-41c0-969a-3253504dc744")) 
+	(wire 
+		(pts 
+			(xy 228.6 78.74) 
+			(xy 228.6 76.2)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "ab3d1b9e-86c8-405e-8d68-c773dbe4f04e")) 
+	(wire 
+		(pts 
+			(xy 71.12 175.26) 
+			(xy 71.12 104.14)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "b0b57952-ee60-440f-8c78-33fec8246a86")) 
+	(wire 
+		(pts 
+			(xy 167.64 99.06) 
+			(xy 170.18 99.06)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "b2616ac6-2d4f-4f00-a6cd-88b69a7dd939")) 
+	(wire 
+		(pts 
+			(xy 160.02 124.46) 
+			(xy 208.28 124.46)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "b502a030-84fc-4aaf-b5b8-4f3cf3a29a74")) 
+	(wire 
+		(pts 
+			(xy 187.96 99.06) 
+			(xy 187.96 101.6)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "babc7cee-6774-494f-a1c7-2619aa1aea13")) 
+	(wire 
+		(pts 
+			(xy 93.98 106.68) 
+			(xy 104.14 106.68)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "c0edbff3-8cdd-43cc-84fc-f0e885e5a693")) 
+	(wire 
+		(pts 
+			(xy 104.14 60.96) 
+			(xy 104.14 78.74)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "c1e1b2a2-3c7c-40dd-adc2-a65f3325490d")) 
+	(wire 
+		(pts 
+			(xy 154.94 127) 
+			(xy 154.94 129.54)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "c347f171-416c-4ae1-8e0a-0ca2548f5d32")) 
+	(wire 
+		(pts 
+			(xy 144.78 60.96) 
+			(xy 187.96 60.96)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "c4be3e6f-93da-4dcd-879a-bd7fec02874b")) 
+	(wire 
+		(pts 
+			(xy 208.28 116.84) 
+			(xy 220.98 116.84)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "cfb8af5e-be74-4250-8a57-9233186a4efa")) 
+	(wire 
+		(pts 
+			(xy 165.1 99.06) 
+			(xy 167.64 99.06)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "d192712b-1a78-4803-8f84-e401401e99cf")) 
+	(wire 
+		(pts 
+			(xy 215.9 60.96) 
+			(xy 220.98 60.96)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "d1937ecc-a12f-47a5-8527-930b3792c0db")) 
+	(wire 
+		(pts 
+			(xy 182.88 99.06) 
+			(xy 187.96 99.06)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "d3031ae2-61d3-416b-aed4-2b17532b14a3")) 
+	(wire 
+		(pts 
+			(xy 170.18 73.66) 
+			(xy 172.72 73.66)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "d6bc2464-1e6f-449c-9319-7dffbccd7848")) 
+	(wire 
+		(pts 
+			(xy 160.02 119.38) 
+			(xy 160.02 124.46)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "d7592db6-8768-4e79-a40e-e720bee8c786")) 
+	(wire 
+		(pts 
+			(xy 60.96 60.96) 
+			(xy 104.14 60.96)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "e152ad02-a052-4f77-a7cf-590edabe971f")) 
+	(wire 
+		(pts 
+			(xy 220.98 116.84) 
+			(xy 220.98 119.38)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "e27bb775-f241-4a48-b647-cee1304d3c9b")) 
+	(wire 
+		(pts 
+			(xy 109.22 162.56) 
+			(xy 96.52 162.56)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "e29f8b93-fdae-4334-bb4d-be31b2050d78")) 
+	(wire 
+		(pts 
+			(xy 160.02 109.22) 
+			(xy 160.02 111.76)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "e3867e9d-a48c-4b01-9e5c-e32012f45c5b")) 
+	(wire 
+		(pts 
+			(xy 149.86 109.22) 
+			(xy 160.02 109.22)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "eb6a7c92-977f-4613-8ce9-5a608821df96")) 
+	(wire 
+		(pts 
+			(xy 96.52 152.4) 
+			(xy 96.52 154.94)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "eb6b8c88-4eba-4a90-83e1-21f2ab28fc6d")) 
+	(wire 
+		(pts 
+			(xy 220.98 114.3) 
+			(xy 220.98 116.84)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "ed4a02e7-a60b-49a6-afaa-ad6ac1b025cc")) 
+	(wire 
+		(pts 
+			(xy 160.02 78.74) 
+			(xy 160.02 73.66)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "eef5fa89-f031-4260-8ce8-728e529220e7")) 
+	(wire 
+		(pts 
+			(xy 45.72 73.66) 
+			(xy 45.72 60.96)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "f1f88ec5-0e72-43b9-bec8-4f26fc8147ca")) 
+	(wire 
+		(pts 
+			(xy 45.72 190.5) 
+			(xy 45.72 198.12)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "f2bdcd2a-a2d7-4fc4-88f2-1bd84e7f2e7f")) 
+	(wire 
+		(pts 
+			(xy 149.86 127) 
+			(xy 154.94 127)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "f8b61f3b-8b50-4af3-aa59-cc91ce472f7f")) 
+	(wire 
+		(pts 
+			(xy 86.36 88.9) 
+			(xy 86.36 91.44)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "fe481e79-c05b-481f-a933-4080dde89905")) 
+	(label "HV_TOP" 
+		(at 220.98 60.96 0) 
+		(effects 
+			(font 
+				(size 1.27 1.27)) 
+			(justify left bottom)) 
+		(uuid "0c346625-1776-4987-a149-7cd75124629b")) 
+	(label "HV_TOP" 
+		(at 226.06 162.56 0) 
+		(effects 
+			(font 
+				(size 1.27 1.27)) 
+			(justify left bottom)) 
+		(uuid "1b355636-ef49-40e8-832f-7ee30b2b798f")) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:GND_POWER_GROUND") 
+		(at 220.98 139.7 0) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "054e9e7e-5b8b-4768-ae84-0d1f6af11e54") 
+		(property "Reference" "#PWR001" 
+			(at 220.98 139.7 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) hide)) 
+		(property "Value" "HV_BOTTOM" 
+			(at 220.98 146.05 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)))) 
+		(property "Footprint" "" 
+			(at 220.98 139.7 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 220.98 139.7 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "" 
+			(at 220.98 139.7 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "" 
+			(uuid "f8cbd0f5-9850-47e6-a1d0-6e878114e5ee")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "#PWR001") 
+					(unit 1))))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:RES_2") 
+		(at 223.52 106.68 270) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "0ca5f266-45e8-438a-8d1e-857e0d67e555") 
+		(property "Reference" "R1" 
+			(at 221.742 108.966 90) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Value" "787k 0.1%" 
+			(at 221.742 111.506 90) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Footprint" "BoostDraft:R1206" 
+			(at 223.52 106.68 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "https://www.vishay.com/docs/28758/tnpw_e3.pdf" 
+			(at 223.52 106.68 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Upper feedback;78.7V nominal stress;79.7V nominal output" 
+			(at 223.52 106.68 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "2" 
+			(uuid "04c39d73-2bc2-4469-83ec-c3fd956577e8")) 
+		(pin "1" 
+			(uuid "8886772b-cfb6-4871-947b-462355937794")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "R1") 
+					(unit 1)))) 
+		(property "Function_Name" "RFBT" 
+			(at 223.52 106.68 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Rating" "1206; 200V working; at least 0.25W; 0.1%;25ppm/K" 
+			(at 223.52 106.68 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Function" "Upper feedback;78.7V nominal stress;79.7V nominal output" 
+			(at 223.52 106.68 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Manufacturer" "Vishay" 
+			(at 223.52 106.68 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "MPN" "TNPW1206787KBEEA" 
+			(at 223.52 106.68 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:VCC_BAR") 
+		(at 93.98 96.52 180) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "0fd94ef8-195e-42e0-a226-54ad9892cf3b") 
+		(property "Reference" "#PWR002" 
+			(at 93.98 96.52 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) hide)) 
+		(property "Value" "VCC_BOOST" 
+			(at 93.98 92.71 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)))) 
+		(property "Footprint" "" 
+			(at 93.98 96.52 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 93.98 96.52 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "" 
+			(at 93.98 96.52 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "" 
+			(uuid "bcc9bf58-8d62-48be-bd03-1306518b1e8b")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "#PWR002") 
+					(unit 1))))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:12V_BAR") 
+		(at 33.02 58.42 180) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "10359905-8327-4438-99ba-0f56c0a18d0e") 
+		(property "Reference" "#PWR003" 
+			(at 33.02 58.42 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) hide)) 
+		(property "Value" "ISO_12V_TO_BOTTOM" 
+			(at 33.02 54.61 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)))) 
+		(property "Footprint" "" 
+			(at 33.02 58.42 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 33.02 58.42 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "" 
+			(at 33.02 58.42 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "" 
+			(uuid "ae92acfb-25d9-43fc-97cb-13b20496df9c")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "#PWR003") 
+					(unit 1))))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:GND_POWER_GROUND") 
+		(at 78.74 132.08 0) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "217d6eba-3630-4a36-949c-365bdc7c6013") 
+		(property "Reference" "#PWR004" 
+			(at 78.74 132.08 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) hide)) 
+		(property "Value" "HV_BOTTOM" 
+			(at 78.74 138.43 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)))) 
+		(property "Footprint" "" 
+			(at 78.74 132.08 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 78.74 132.08 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "" 
+			(at 78.74 132.08 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "" 
+			(uuid "5da714d7-e1f3-42c6-9ca7-d845d7c1909a")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "#PWR004") 
+					(unit 1))))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:GND_POWER_GROUND") 
+		(at 167.64 114.3 0) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "286ed374-65b5-4372-989f-5ffcff83adc0") 
+		(property "Reference" "#PWR005" 
+			(at 167.64 114.3 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) hide)) 
+		(property "Value" "HV_BOTTOM" 
+			(at 167.64 120.65 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)))) 
+		(property "Footprint" "" 
+			(at 167.64 114.3 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 167.64 114.3 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "" 
+			(at 167.64 114.3 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "" 
+			(uuid "364c964f-b37d-4685-b9ba-ab8d07bd0922")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "#PWR005") 
+					(unit 1))))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:1029c3af85768c4190bb7ad29bc67b5_3") 
+		(at 220.98 119.38 270) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "2c89b636-f081-4d09-a66b-902fb0699b26") 
+		(property "Reference" "R2" 
+			(at 222.504 125.984 90) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Value" "10k 0.1%" 
+			(at 222.504 128.524 90) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Footprint" "BoostDraft:R0603" 
+			(at 220.98 119.38 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "https://www.vishay.com/docs/28758/tnpw_e3.pdf" 
+			(at 220.98 119.38 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Lower feedback;79.7V nominal setpoint" 
+			(at 220.98 119.38 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "1" 
+			(uuid "ad125050-503f-4598-af9b-6b1af2969c6b")) 
+		(pin "2" 
+			(uuid "6bf3ce06-0ded-4066-95c9-2e6fc4d86eae")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "R2") 
+					(unit 1)))) 
+		(property "Function_Name" "RFBB" 
+			(at 220.98 119.38 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Rating" "0603;100V working;at least0.1W;0.1%;25ppm/K" 
+			(at 220.98 119.38 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Function" "Lower feedback;79.7V nominal setpoint" 
+			(at 220.98 119.38 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Manufacturer" "Vishay" 
+			(at 220.98 119.38 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "MPN" "TNPW060310K0BEEA" 
+			(at 220.98 119.38 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:VCC_BAR") 
+		(at 160.02 71.12 180) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "2cffce19-88a8-4623-83f3-4843baf263af") 
+		(property "Reference" "#PWR006" 
+			(at 160.02 71.12 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) hide)) 
+		(property "Value" "VCC_BOOST" 
+			(at 160.02 67.31 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)))) 
+		(property "Footprint" "" 
+			(at 160.02 71.12 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 160.02 71.12 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "" 
+			(at 160.02 71.12 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "" 
+			(uuid "b227f6e8-9507-450e-975d-a6e77d8c83ed")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "#PWR006") 
+					(unit 1))))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:12V_BAR") 
+		(at 48.26 180.34 180) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "30f78144-fdcc-4f84-bb75-c3103d474d8e") 
+		(property "Reference" "#PWR007" 
+			(at 48.26 180.34 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) hide)) 
+		(property "Value" "ISO_12V_TO_BOTTOM" 
+			(at 48.26 176.53 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)))) 
+		(property "Footprint" "" 
+			(at 48.26 180.34 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 48.26 180.34 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "" 
+			(at 48.26 180.34 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "" 
+			(uuid "4f5b297c-528d-4577-b0de-0e3314050a4e")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "#PWR007") 
+					(unit 1))))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:GND_POWER_GROUND") 
+		(at 45.72 198.12 0) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "341b9dbf-57c7-49a4-b5aa-8f16bdfe4e16") 
+		(property "Reference" "#PWR008" 
+			(at 45.72 198.12 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) hide)) 
+		(property "Value" "HV_BOTTOM" 
+			(at 45.72 204.47 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)))) 
+		(property "Footprint" "" 
+			(at 45.72 198.12 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 45.72 198.12 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "" 
+			(at 45.72 198.12 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "" 
+			(uuid "fb9fea3f-91a2-45a0-9cde-3c777cdfc845")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "#PWR008") 
+					(unit 1))))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:CAP-NP-2") 
+		(at 45.72 73.66 270) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "359d1e62-b181-4eaa-993f-1372ac0d5181") 
+		(property "Reference" "C1" 
+			(at 48.006 78.486 90) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Value" "10u 50V" 
+			(at 48.006 81.026 90) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Footprint" "BoostDraft:C0805" 
+			(at 45.72 73.66 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X5R1H106K125AC" 
+			(at 45.72 73.66 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Input ceramic; effective4.7uF at16V is a bench acceptance target, not a verified manufacturer minimum" 
+			(at 45.72 73.66 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "2" 
+			(uuid "170ed989-8694-404b-a557-af29e3d48b1a")) 
+		(pin "1" 
+			(uuid "da88eaf3-6e26-4ad4-9233-aab794a61e22")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "C1") 
+					(unit 1)))) 
+		(property "Function_Name" "CIN" 
+			(at 45.72 73.66 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Dielectric" "X5R" 
+			(at 45.72 73.66 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Function" "Input ceramic; effective4.7uF at16V is a bench acceptance target, not a verified manufacturer minimum" 
+			(at 45.72 73.66 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Manufacturer" "TDK" 
+			(at 45.72 73.66 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "MPN" "C2012X5R1H106K125AC" 
+			(at 45.72 73.66 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Rating" "0805;10uF10%;50V;-55 to85C" 
+			(at 45.72 73.66 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:1029c3af85768c4190bb7ad29bc67b5") 
+		(at 78.74 114.3 270) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "391effdd-835b-4208-88b3-e57fcd02562a") 
+		(property "Reference" "R3" 
+			(at 80.264 120.904 90) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Value" "54.9k 1%" 
+			(at 80.264 123.444 90) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Footprint" "BoostDraft:R0603" 
+			(at 78.74 114.3 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf" 
+			(at 78.74 114.3 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Frequency395.67kHz nominal" 
+			(at 78.74 114.3 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "2" 
+			(uuid "7dcbf8af-9bb0-480b-9e95-d42968d66be7")) 
+		(pin "1" 
+			(uuid "fedff2cd-37d4-448a-9279-baec95e2df5e")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "R3") 
+					(unit 1)))) 
+		(property "Function_Name" "RT" 
+			(at 78.74 114.3 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Function" "Frequency395.67kHz nominal" 
+			(at 78.74 114.3 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "MPN" "CRCW060354K9FKEA" 
+			(at 78.74 114.3 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Manufacturer" "Vishay" 
+			(at 78.74 114.3 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Rating" "0603;1%;100ppm/K;0.1W;75V" 
+			(at 78.74 114.3 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:GND_POWER_GROUND") 
+		(at 96.52 162.56 0) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "3bc0d0eb-1df9-41a5-bcdc-82bef479bf38") 
+		(property "Reference" "#PWR009" 
+			(at 96.52 162.56 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) hide)) 
+		(property "Value" "HV_BOTTOM" 
+			(at 96.52 168.91 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)))) 
+		(property "Footprint" "" 
+			(at 96.52 162.56 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 96.52 162.56 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "" 
+			(at 96.52 162.56 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "" 
+			(uuid "80fdfb64-d136-4afd-b81c-9a65010e44bf")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "#PWR009") 
+					(unit 1))))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:GND_POWER_GROUND") 
+		(at 88.9 132.08 0) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "3d5ea6c7-a734-43d2-91b1-4fab570e7e71") 
+		(property "Reference" "#PWR010" 
+			(at 88.9 132.08 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) hide)) 
+		(property "Value" "HV_BOTTOM" 
+			(at 88.9 138.43 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)))) 
+		(property "Footprint" "" 
+			(at 88.9 132.08 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 88.9 132.08 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "" 
+			(at 88.9 132.08 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "" 
+			(uuid "1490ecb0-188e-43d5-8b6a-654d5cca8476")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "#PWR010") 
+					(unit 1))))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:SQJA70EP-T1_GE3") 
+		(at 180.34 86.36 0) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "3ea5de4a-5da1-4a70-98b5-a150b827a1c4") 
+		(property "Reference" "Q1" 
+			(at 190.5 81.026 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Value" "FDMC86240" 
+			(at 190.5 83.566 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Footprint" "BoostDraft:Q_FDMC86240_CASE511DH" 
+			(at 180.34 86.36 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/fdmc86240-d.pdf" 
+			(at 180.34 86.36 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "S1/2/3,G4,D5/6/7/8; verified CASE511DH copper lands; EP common with D" 
+			(at 180.34 86.36 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "2" 
+			(uuid "8516cd4e-60f3-422b-8611-456b282172bc")) 
+		(pin "5" 
+			(uuid "51c5ff09-e1c5-48cc-8d23-003be7186968")) 
+		(pin "4" 
+			(uuid "53a7840e-ee1e-4041-8544-c37e3ab919c7")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "Q1") 
+					(unit 1)))) 
+		(property "Function_Name" "Q1" 
+			(at 180.34 86.36 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "MPN" "FDMC86240" 
+			(at 180.34 86.36 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Manufacturer" "onsemi" 
+			(at 180.34 86.36 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Rating" "150V;RDS(on) 70mohm max at VGS 6V; WDFN-8 CASE511DH" 
+			(at 180.34 86.36 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Function" "S1/2/3,G4,D5/6/7/8; verified CASE511DH copper lands; EP common with D" 
+			(at 180.34 86.36 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(pin "1" 
+			(uuid "16b6fd6a-9990-452c-9fb1-fbb46702b9a7")) 
+		(pin "3" 
+			(uuid "32ec712e-bd5e-4d1d-8e5c-6c5458e0ace9")) 
+		(pin "6" 
+			(uuid "dab47261-2ea0-42b8-83f2-9ac89cf5ee5a")) 
+		(pin "7" 
+			(uuid "d3377cdf-5222-48d1-8f5c-d53859a74103")) 
+		(pin "8" 
+			(uuid "f48714a2-e591-489a-930c-f10ba752ad7f"))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:RES-2_1") 
+		(at 170.18 99.06 0) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "440ce5af-9f0a-4aab-bfd7-77fe43046761") 
+		(property "Reference" "R4" 
+			(at 172.466 98.044 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Value" "100R 1%" 
+			(at 172.466 102.616 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Footprint" "BoostDraft:R0603" 
+			(at 170.18 99.06 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf" 
+			(at 170.18 99.06 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Current-sense filter;10ns with100pF" 
+			(at 170.18 99.06 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "1" 
+			(uuid "29ed43e0-e867-458b-9868-5663f6c978ee")) 
+		(pin "2" 
+			(uuid "a831c972-61d8-428f-aef1-de126d6a4f25")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "R4") 
+					(unit 1)))) 
+		(property "Function_Name" "RFILT" 
+			(at 170.18 99.06 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Function" "Current-sense filter;10ns with100pF" 
+			(at 170.18 99.06 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "MPN" "CRCW0603100RFKEA" 
+			(at 170.18 99.06 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Manufacturer" "Vishay" 
+			(at 170.18 99.06 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Rating" "0603;1%;100ppm/K;0.1W;75V" 
+			(at 170.18 99.06 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:RES-2") 
+		(at 152.4 99.06 0) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "4a2f92c4-4074-4ebe-80f7-d0be547fb223") 
+		(property "Reference" "R5" 
+			(at 154.686 98.044 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Value" "909R 1%" 
+			(at 154.686 102.616 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Footprint" "BoostDraft:R0603" 
+			(at 152.4 99.06 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf" 
+			(at 152.4 99.06 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Extra slope compensation; total sense series1009ohm including R4" 
+			(at 152.4 99.06 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "2" 
+			(uuid "3c251b4c-5165-41a1-858a-6bb3b87435fb")) 
+		(pin "1" 
+			(uuid "b439d60a-8040-4f88-94de-835fd5ea13fd")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "R5") 
+					(unit 1)))) 
+		(property "Function_Name" "RSL" 
+			(at 152.4 99.06 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Function" "Extra slope compensation; total sense series1009ohm including R4" 
+			(at 152.4 99.06 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Rating" "0603;1%;100ppm/K;0.1W;75V" 
+			(at 152.4 99.06 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Manufacturer" "Vishay" 
+			(at 152.4 99.06 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "MPN" "CRCW0603909RFKEA" 
+			(at 152.4 99.06 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:1029c3af85768c4190bb7ad29bc67b5_1") 
+		(at 60.96 71.12 270) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "53cc576f-60af-474e-bca3-5d134ea9b951") 
+		(property "Reference" "R6" 
+			(at 62.484 77.724 90) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Value" "110k 1%" 
+			(at 62.484 80.264 90) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Footprint" "BoostDraft:R0603" 
+			(at 60.96 71.12 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf" 
+			(at 60.96 71.12 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "UVLO upper; startup 9.174V typ, fall 8.318V typ; minimum regulated input remains 10V" 
+			(at 60.96 71.12 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "1" 
+			(uuid "0c3c00a9-9457-4274-8d37-1a0ef9dbe978")) 
+		(pin "2" 
+			(uuid "092ee44c-bfbd-416b-a1a0-246a8700906c")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "R6") 
+					(unit 1)))) 
+		(property "Function_Name" "RUVT" 
+			(at 60.96 71.12 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Function" "UVLO upper; startup 9.174V typ, fall 8.318V typ; minimum regulated input remains 10V" 
+			(at 60.96 71.12 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Manufacturer" "Vishay" 
+			(at 60.96 71.12 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "MPN" "CRCW0603110KFKEA" 
+			(at 60.96 71.12 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Rating" "0603;1%;100ppm/K;0.1W;75V" 
+			(at 60.96 71.12 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:VLS6045EX-151M") 
+		(at 132.08 60.96 0) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "638c17d4-1bc6-492b-b16b-1a32011bb925") 
+		(property "Reference" "L1" 
+			(at 124.206 59.69 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Value" "1mH SRR1280-102K" 
+			(at 124.206 64.262 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Footprint" "BoostDraft:L_BOURNS" 
+			(at 132.08 60.96 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/SRR1280.pdf" 
+			(at 132.08 60.96 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "1mH10%;DCR1.7ohm max;Irms0.68A;Isat0.80A typ at25%Ldrop" 
+			(at 132.08 60.96 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "1" 
+			(uuid "01ca2131-4dd3-4fc0-b330-5471718f8ae5")) 
+		(pin "2" 
+			(uuid "82d5f468-8fab-435e-bdbd-b6049f6936c6")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "L1") 
+					(unit 1)))) 
+		(property "Function_Name" "LM" 
+			(at 132.08 60.96 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "MPN" "SRR1280-102K" 
+			(at 132.08 60.96 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Manufacturer" "Bourns" 
+			(at 132.08 60.96 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Rating" "1mH10%;DCR1.7ohm max;Irms0.68A;Isat0.80A typ at25%Ldrop" 
+			(at 132.08 60.96 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:GND_POWER_GROUND") 
+		(at 154.94 129.54 0) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "77487d14-3a39-4eab-8136-670b60efdee3") 
+		(property "Reference" "#PWR011" 
+			(at 154.94 129.54 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) hide)) 
+		(property "Value" "HV_BOTTOM" 
+			(at 154.94 135.89 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)))) 
+		(property "Footprint" "" 
+			(at 154.94 129.54 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 154.94 129.54 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "" 
+			(at 154.94 129.54 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "" 
+			(uuid "9d8afe7a-8514-42c8-8e31-43c0c2826563")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "#PWR011") 
+					(unit 1))))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:ONSC-D-K1A2-2_A") 
+		(at 200.66 58.42 0) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "77e47eeb-4d53-4ab5-a599-2a2fa77b0ab0") 
+		(property "Reference" "D1" 
+			(at 200.66 58.42 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Value" "SS120 200V" 
+			(at 200.66 66.04 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Footprint" "BoostDraft:D_SMA" 
+			(at 200.66 58.42 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "https://services.taiwansemi.com/storage/resources/datasheet/SS120_C2305.pdf" 
+			(at 200.66 58.42 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "200V,1A Schottky; verify order suffix" 
+			(at 200.66 58.42 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "1" 
+			(uuid "a8db857e-4433-430b-a2dc-2e5fe79c39ef")) 
+		(pin "2" 
+			(uuid "f6db5405-a408-415b-8be4-280581a67377")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "D1") 
+					(unit 1)))) 
+		(property "Function_Name" "D1" 
+			(at 200.66 58.42 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "MPN" "SS120" 
+			(at 200.66 58.42 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Manufacturer" "Taiwan Semiconductor" 
+			(at 200.66 58.42 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Rating" "200V,1A Schottky; verify order suffix" 
+			(at 200.66 58.42 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:RES_1") 
+		(at 91.44 104.14 90) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "7ff3ea12-4a5e-409d-9178-bcf636a71003") 
+		(property "Reference" "R7" 
+			(at 94.742 101.346 90) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify right bottom))) 
+		(property "Value" "24.9k 1%" 
+			(at 94.742 103.886 90) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify right bottom))) 
+		(property "Footprint" "BoostDraft:R0603" 
+			(at 91.44 104.14 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf" 
+			(at 91.44 104.14 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "LOCAL PGOOD pullup to VCC_BOOST; not3.3V logic" 
+			(at 91.44 104.14 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "1" 
+			(uuid "2d8421cc-e100-4d28-9577-63442c6e2451")) 
+		(pin "2" 
+			(uuid "f5c3b4dc-c61d-48f6-a2f6-411d7b8cfac8")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "R7") 
+					(unit 1)))) 
+		(property "Function_Name" "RPG" 
+			(at 91.44 104.14 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "MPN" "CRCW060324K9FKEA" 
+			(at 91.44 104.14 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Function" "LOCAL PGOOD pullup to VCC_BOOST; not3.3V logic" 
+			(at 91.44 104.14 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Manufacturer" "Vishay" 
+			(at 91.44 104.14 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Rating" "0603;1%;100ppm/K;0.1W;75V" 
+			(at 91.44 104.14 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:b4654b650e69147ec39a6b967a45e02_1") 
+		(at 109.22 144.78 0) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "9582caf0-fb82-4a65-984a-ac7ebb707f00") 
+		(property "Reference" "C2" 
+			(at 112.014 148.082 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Value" "68p 50V" 
+			(at 112.014 150.622 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Footprint" "BoostDraft:C0603" 
+			(at 109.22 144.78 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608C0G1H680J080AA" 
+			(at 109.22 144.78 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Provisional compensation HF pole; verify loop" 
+			(at 109.22 144.78 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "1" 
+			(uuid "89823fcf-36b3-4338-a2b5-11a50432860a")) 
+		(pin "2" 
+			(uuid "42ec75d4-1f97-4efe-a40d-5c7b675f98bd")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "C2") 
+					(unit 1)))) 
+		(property "Function_Name" "CHF" 
+			(at 109.22 144.78 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Dielectric" "C0G" 
+			(at 109.22 144.78 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Function" "Provisional compensation HF pole; verify loop" 
+			(at 109.22 144.78 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Manufacturer" "TDK" 
+			(at 109.22 144.78 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "MPN" "C1608C0G1H680J080AA" 
+			(at 109.22 144.78 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Rating" "0603;68pF5%;50V" 
+			(at 109.22 144.78 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:b4654b650e69147ec39a6b967a45e02") 
+		(at 96.52 154.94 0) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "a6917b1a-8c70-4547-947c-9d683b03a826") 
+		(property "Reference" "C3" 
+			(at 99.314 158.242 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Value" "47n 50V" 
+			(at 99.314 160.782 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Footprint" "BoostDraft:C0603" 
+			(at 96.52 154.94 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H473K080AA" 
+			(at 96.52 154.94 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Provisional compensation zero; verify loop" 
+			(at 96.52 154.94 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "2" 
+			(uuid "4e3cbaa3-0ce9-4cc0-96a6-8d6a6f058575")) 
+		(pin "1" 
+			(uuid "4b1a460e-a3b7-457f-86eb-d4dcf185a0c6")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "C3") 
+					(unit 1)))) 
+		(property "Function_Name" "CCOMP" 
+			(at 96.52 154.94 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Dielectric" "X7R" 
+			(at 96.52 154.94 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Function" "Provisional compensation zero; verify loop" 
+			(at 96.52 154.94 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Manufacturer" "TDK" 
+			(at 96.52 154.94 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "MPN" "C1608X7R1H473K080AA" 
+			(at 96.52 154.94 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Rating" "0603;47nF10%;50V" 
+			(at 96.52 154.94 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:1029c3af85768c4190bb7ad29bc67b5_2") 
+		(at 96.52 134.62 270) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "a7cd9349-d00e-43c0-be1e-217a8085bfa2") 
+		(property "Reference" "R8" 
+			(at 98.044 141.224 90) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Value" "191k 1%" 
+			(at 98.044 143.764 90) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Footprint" "BoostDraft:R0805" 
+			(at 96.52 134.62 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf" 
+			(at 96.52 134.62 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Provisional TypeII compensation;500Hz simplified target; unvalidated" 
+			(at 96.52 134.62 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "2" 
+			(uuid "9c1069dc-f684-40da-a42e-9bb05a6f28cb")) 
+		(pin "1" 
+			(uuid "b85acc43-9dd1-4f0f-9195-46f3f823750e")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "R8") 
+					(unit 1)))) 
+		(property "Function_Name" "RCOMP" 
+			(at 96.52 134.62 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Function" "Provisional TypeII compensation;500Hz simplified target; unvalidated" 
+			(at 96.52 134.62 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Manufacturer" "Vishay" 
+			(at 96.52 134.62 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "MPN" "CRCW0805191KFKEA" 
+			(at 96.52 134.62 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Rating" "0805;1%;100ppm/K;0.125W;150V" 
+			(at 96.52 134.62 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:88c1139f9d239099ffebecbe3f7647a_1") 
+		(at 236.22 167.64 0) 
+		(mirror y) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "ac31dbc0-2d95-4bc8-bf1c-924e3d90f6f1") 
+		(property "Reference" "J2" 
+			(at 241.046 162.56 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify right bottom))) 
+		(property "Value" "80V OUTPUT" 
+			(at 241.046 180.34 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify right bottom))) 
+		(property "Footprint" "BoostDraft:OUT_FP-TSW-102-14-G-S-MFG" 
+			(at 236.22 167.64 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 236.22 167.64 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "1=HV_TOP;2=HV_BOTTOM; source connector remains provisional" 
+			(at 236.22 167.64 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "1" 
+			(uuid "4615f945-eb07-471d-bbc6-d4a7144e308d")) 
+		(pin "2" 
+			(uuid "f9c81d9c-43a9-44a9-bf42-552d67441d4a")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "J2") 
+					(unit 1)))) 
+		(property "Function_Name" "OUT" 
+			(at 236.22 167.64 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Function" "1=HV_TOP;2=HV_BOTTOM; source connector remains provisional" 
+			(at 236.22 167.64 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:88c1139f9d239099ffebecbe3f7647a") 
+		(at 45.72 185.42 0) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "b2f740d6-424e-4853-b6d7-e457ee90c3c7") 
+		(property "Reference" "J1" 
+			(at 35.56 180.34 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Value" "12V INPUT" 
+			(at 35.56 198.12 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Footprint" "BoostDraft:IN_FP-TSW-102-14-G-S-MFG" 
+			(at 45.72 185.42 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 45.72 185.42 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "1=ISO_12V_TO_BOTTOM;2=HV_BOTTOM; source connector remains provisional" 
+			(at 45.72 185.42 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "2" 
+			(uuid "96d2f5c1-72b8-4140-8f2c-a282b417b5b5")) 
+		(pin "1" 
+			(uuid "284e7b97-cf45-491c-87bf-2cb01c20a011")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "J1") 
+					(unit 1)))) 
+		(property "Function_Name" "IN" 
+			(at 45.72 185.42 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Function" "1=ISO_12V_TO_BOTTOM;2=HV_BOTTOM; source connector remains provisional" 
+			(at 45.72 185.42 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:RES_3") 
+		(at 185.42 109.22 90) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "bda7b6fa-d4e5-418a-8ca3-25416251279f") 
+		(property "Reference" "R9" 
+			(at 188.722 106.426 90) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify right bottom))) 
+		(property "Value" "0R270 1%" 
+			(at 188.722 108.966 90) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify right bottom))) 
+		(property "Footprint" "BoostDraft:R1206" 
+			(at 185.42 109.22 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDN0000/AOA0000C313.pdf" 
+			(at 185.42 109.22 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Thick-film current-sense resistor; Kelvin routing; parasitic inductance not specified; not an output-current clamp" 
+			(at 185.42 109.22 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "2" 
+			(uuid "98fa8849-0f6c-4d9e-93b1-b14b102cdc04")) 
+		(pin "1" 
+			(uuid "07ec44d8-2c8f-4977-8bd9-89b98d38b854")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "R9") 
+					(unit 1)))) 
+		(property "Function_Name" "RS" 
+			(at 185.42 109.22 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Rating" "1206;0.270ohm1%;0.5W at70C;derate above70C" 
+			(at 185.42 109.22 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Function" "Thick-film current-sense resistor; Kelvin routing; parasitic inductance not specified; not an output-current clamp" 
+			(at 185.42 109.22 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Manufacturer" "Panasonic" 
+			(at 185.42 109.22 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "MPN" "ERJ8BQFR27V" 
+			(at 185.42 109.22 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:CAP-NP-2") 
+		(at 162.56 73.66 0) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "c5be0978-d3b6-47cb-8fb3-b07b1e5d706a") 
+		(property "Reference" "C4" 
+			(at 164.846 71.374 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Value" "2.2u 25V" 
+			(at 164.846 78.486 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Footprint" "BoostDraft:C0805" 
+			(at 162.56 73.66 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X7R1E225K125AB" 
+			(at 162.56 73.66 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "VCC bypass; effective1uF at6.85V is a bench acceptance target, not a verified manufacturer minimum" 
+			(at 162.56 73.66 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "2" 
+			(uuid "b6233cb1-97b2-4e1f-b85c-ae93679177bf")) 
+		(pin "1" 
+			(uuid "58a6d855-b649-414b-bfb1-9c683c14dae4")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "C4") 
+					(unit 1)))) 
+		(property "Function_Name" "CVCC" 
+			(at 162.56 73.66 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Dielectric" "X7R" 
+			(at 162.56 73.66 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Function" "VCC bypass; effective1uF at6.85V is a bench acceptance target, not a verified manufacturer minimum" 
+			(at 162.56 73.66 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Manufacturer" "TDK" 
+			(at 162.56 73.66 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "MPN" "C2012X7R1E225K125AB" 
+			(at 162.56 73.66 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Rating" "0805;2.2uF10%;25V" 
+			(at 162.56 73.66 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:GND_POWER_GROUND") 
+		(at 172.72 73.66 90) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "c7bc1ca5-ef4c-4db3-b40f-0d6ce3b56648") 
+		(property "Reference" "#PWR012" 
+			(at 172.72 73.66 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) hide)) 
+		(property "Value" "HV_BOTTOM" 
+			(at 179.07 73.66 90) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify right))) 
+		(property "Footprint" "" 
+			(at 172.72 73.66 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 172.72 73.66 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "" 
+			(at 172.72 73.66 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "" 
+			(uuid "724f4608-1304-4fe0-be27-01231b7e9c0f")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "#PWR012") 
+					(unit 1))))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:GND_POWER_GROUND") 
+		(at 236.22 180.34 0) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "c8a35301-f469-4eb4-9e53-1089b962da2c") 
+		(property "Reference" "#PWR013" 
+			(at 236.22 180.34 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) hide)) 
+		(property "Value" "HV_BOTTOM" 
+			(at 236.22 186.69 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)))) 
+		(property "Footprint" "" 
+			(at 236.22 180.34 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 236.22 180.34 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "" 
+			(at 236.22 180.34 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "" 
+			(uuid "39d7f414-fc29-434d-9bb9-8408b48e2ef1")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "#PWR013") 
+					(unit 1))))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:CAP-P-2") 
+		(at 228.6 68.58 0) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "ce6fbe9f-a83d-432d-9bdf-7e4ad710d136") 
+		(property "Reference" "C5" 
+			(at 230.886 73.025 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Value" "100u 160V" 
+			(at 230.886 75.565 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Footprint" "BoostDraft:C_BULK" 
+			(at 228.6 68.58 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/RDF0000C1270.pdf" 
+			(at 228.6 68.58 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Bulk output;10000h105C;1700mArms100kHz105C;maxbody16.5x22mm;verify actual HF ESR" 
+			(at 228.6 68.58 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "1" 
+			(uuid "41f87bb6-c45d-4754-9fa1-d2661fc81a6f")) 
+		(pin "2" 
+			(uuid "5c5fe542-be2c-4aa8-86ba-17832972e9c0")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "C5") 
+					(unit 1)))) 
+		(property "Function_Name" "COUT" 
+			(at 228.6 68.58 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Function" "Bulk output;10000h105C;1700mArms100kHz105C;maxbody16.5x22mm;verify actual HF ESR" 
+			(at 228.6 68.58 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Rating" "100uF20%;160V;105C;D16mm;H20mm;P7.5mm;lead0.8mm" 
+			(at 228.6 68.58 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Manufacturer" "Panasonic" 
+			(at 228.6 68.58 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "MPN" "EEUEE2C101S" 
+			(at 228.6 68.58 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Dielectric" "Aluminum electrolytic" 
+			(at 228.6 68.58 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:GND_POWER_GROUND") 
+		(at 187.96 114.3 0) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "d31bc792-df1d-41fc-8993-359aa2a99c64") 
+		(property "Reference" "#PWR014" 
+			(at 187.96 114.3 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) hide)) 
+		(property "Value" "HV_BOTTOM" 
+			(at 187.96 120.65 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)))) 
+		(property "Footprint" "" 
+			(at 187.96 114.3 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 187.96 114.3 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "" 
+			(at 187.96 114.3 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "" 
+			(uuid "e2b7ef49-eb4f-49c5-aa6d-66f6382d2652")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "#PWR014") 
+					(unit 1))))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:GND_POWER_GROUND") 
+		(at 228.6 78.74 0) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "dd45c1f1-f9e7-4912-9fbf-f091e6df7df7") 
+		(property "Reference" "#PWR015" 
+			(at 228.6 78.74 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) hide)) 
+		(property "Value" "HV_BOTTOM" 
+			(at 228.6 85.09 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)))) 
+		(property "Footprint" "" 
+			(at 228.6 78.74 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 228.6 78.74 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "" 
+			(at 228.6 78.74 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "" 
+			(uuid "da7e7524-c9e6-46c8-8a5d-eb5118aa360f")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "#PWR015") 
+					(unit 1))))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:CAP-NP-2_1") 
+		(at 167.64 101.6 270) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "de017cfc-8259-4c61-9344-5fb826a834e8") 
+		(property "Reference" "C6" 
+			(at 169.926 106.426 90) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Value" "100p 50V" 
+			(at 169.926 108.966 90) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Footprint" "BoostDraft:C0603" 
+			(at 167.64 101.6 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608C0G1H101J080AA" 
+			(at 167.64 101.6 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Current-sense filter" 
+			(at 167.64 101.6 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "2" 
+			(uuid "d16a7b4c-442f-4e76-844c-919219bb8179")) 
+		(pin "1" 
+			(uuid "749f415f-ef36-4ca5-9cae-e26dc7770a35")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "C6") 
+					(unit 1)))) 
+		(property "Function_Name" "CFILT" 
+			(at 167.64 101.6 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Dielectric" "C0G" 
+			(at 167.64 101.6 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Function" "Current-sense filter" 
+			(at 167.64 101.6 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Manufacturer" "TDK" 
+			(at 167.64 101.6 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "MPN" "C1608C0G1H101J080AA" 
+			(at 167.64 101.6 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Rating" "0603;100pF5%;50V" 
+			(at 167.64 101.6 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:GND_POWER_GROUND") 
+		(at 60.96 104.14 0) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "e1682a18-d0a0-42e7-8760-09b3fb085bea") 
+		(property "Reference" "#PWR016" 
+			(at 60.96 104.14 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) hide)) 
+		(property "Value" "HV_BOTTOM" 
+			(at 60.96 110.49 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)))) 
+		(property "Footprint" "" 
+			(at 60.96 104.14 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 60.96 104.14 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "" 
+			(at 60.96 104.14 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "" 
+			(uuid "f518d02d-45ac-4e13-a774-584d8b1c06a8")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "#PWR016") 
+					(unit 1))))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:RES") 
+		(at 63.5 93.98 270) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "e7898673-a3fe-4a51-a9f4-1ef7496b758a") 
+		(property "Reference" "R10" 
+			(at 61.722 96.266 90) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Value" "21.5k 1%" 
+			(at 61.722 98.806 90) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Footprint" "BoostDraft:R0603" 
+			(at 63.5 93.98 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf" 
+			(at 63.5 93.98 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "UVLO lower resistor" 
+			(at 63.5 93.98 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "2" 
+			(uuid "c64a57e8-9947-49c1-817d-b7d571097b6d")) 
+		(pin "1" 
+			(uuid "803197c0-f06a-4e40-b135-1496b6df54b4")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "R10") 
+					(unit 1)))) 
+		(property "Function_Name" "RUVB" 
+			(at 63.5 93.98 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Function" "UVLO lower resistor" 
+			(at 63.5 93.98 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Manufacturer" "Vishay" 
+			(at 63.5 93.98 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "MPN" "CRCW060321K5FKEA" 
+			(at 63.5 93.98 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Rating" "0603;1%;100ppm/K;0.1W;75V" 
+			(at 63.5 93.98 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:CAP-NP-2") 
+		(at 88.9 121.92 270) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "efc82f4f-bf97-49ae-8ecd-ea24f7280ab1") 
+		(property "Reference" "C7" 
+			(at 91.186 126.746 90) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Value" "47u 16V" 
+			(at 91.186 129.286 90) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Footprint" "BoostDraft:C1210" 
+			(at 88.9 121.92 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER61C476KE15-01A.pdf" 
+			(at 88.9 121.92 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Soft-start;effective33uF over0-1V is a bench acceptance target after tolerance,temp,bias,aging" 
+			(at 88.9 121.92 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "2" 
+			(uuid "a59319eb-7916-4cef-9099-453ff2ca8536")) 
+		(pin "1" 
+			(uuid "560598bd-04f5-46e9-a379-460c58921459")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "C7") 
+					(unit 1)))) 
+		(property "Function_Name" "CSS" 
+			(at 88.9 121.92 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Dielectric" "X5R" 
+			(at 88.9 121.92 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Function" "Soft-start;effective33uF over0-1V is a bench acceptance target after tolerance,temp,bias,aging" 
+			(at 88.9 121.92 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Manufacturer" "Murata" 
+			(at 88.9 121.92 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "MPN" "GRM32ER61C476KE15L" 
+			(at 88.9 121.92 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Rating" "1210;47uF10%;16V;-55 to85C" 
+			(at 88.9 121.92 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:LM5155DSSR") 
+		(at 129.54 104.14 0) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "f4b15dae-cb1b-4f06-9dfc-63ef33399e25") 
+		(property "Reference" "U1" 
+			(at 114.3 73.66 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Value" "LM5155DSSR" 
+			(at 114.3 137.16 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left bottom))) 
+		(property "Footprint" "BoostDraft:U1_DSS0012B" 
+			(at 129.54 104.14 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lm5155.pdf" 
+			(at 129.54 104.14 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Nonisolated boost controller; all grounds=HV_BOTTOM" 
+			(at 129.54 104.14 0) 
+			(hide yes) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "5" 
+			(uuid "935587d3-9ed4-4a81-8db1-96d9cfd3e76f")) 
+		(pin "3" 
+			(uuid "573cfdc5-15e2-49f6-92e3-cfe873f035ad")) 
+		(pin "10" 
+			(uuid "1b0983d8-a4c4-48fb-93bf-0e72eb9a1a3c")) 
+		(pin "9" 
+			(uuid "8373580a-d76d-403e-b0ab-18d65abb5782")) 
+		(pin "6" 
+			(uuid "90b58f8a-7bae-4f0b-8b00-99942f5ee38a")) 
+		(pin "12" 
+			(uuid "43ee4408-3f4a-4448-b36f-3150b78f07e2")) 
+		(pin "2" 
+			(uuid "ab4240b8-9ee8-4765-9fe2-a052333a081e")) 
+		(pin "7" 
+			(uuid "344f03ab-6fd1-4a1d-b533-bb682f0e3c6f")) 
+		(pin "11" 
+			(uuid "66a20755-7644-4193-ada9-c6e6c0174edd")) 
+		(pin "8" 
+			(uuid "040c4a51-fc6c-4c17-86d8-3d45a12a94e3")) 
+		(pin "4" 
+			(uuid "cbf3092a-dd62-4791-babd-5224463bf189")) 
+		(pin "13" 
+			(uuid "04c262a5-08c2-4e98-ad42-d2347e146891")) 
+		(pin "1" 
+			(uuid "905fc4b8-e9af-451d-8464-0c51f13ed743")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "U1") 
+					(unit 1)))) 
+		(property "Function_Name" "U1" 
+			(at 129.54 104.14 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "MPN" "LM5155DSSR" 
+			(at 129.54 104.14 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Manufacturer" "Texas Instruments" 
+			(at 129.54 104.14 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Function" "Nonisolated boost controller; all grounds=HV_BOTTOM" 
+			(at 129.54 104.14 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide))) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:GND_POWER_GROUND") 
+		(at 45.72 86.36 0) 
+		(unit 1) 
+		(body_style 1) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(dnp no) 
+		(uuid "fcbabab6-159c-4863-b17b-ead98296ff41") 
+		(property "Reference" "#PWR017" 
+			(at 45.72 86.36 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) hide)) 
+		(property "Value" "HV_BOTTOM" 
+			(at 45.72 92.71 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.016 1.016)))) 
+		(property "Footprint" "" 
+			(at 45.72 86.36 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 45.72 86.36 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "" 
+			(at 45.72 86.36 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(pin "" 
+			(uuid "845813be-ab8f-4951-a902-42dc0fa72f92")) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "#PWR017") 
+					(unit 1))))) 
+	(sheet_instances 
+		(path "/" 
+			(page "1"))) 
+	(embedded_fonts no) 
+	(title_block 
+		(title "12 V to 79.7 V boost — engineering bench prototype") 
+		(date "2026-10-17") 
+		(rev "DRAFT1") 
+		(comment 1 "Bench prototype - compensation and integrated loading require validation")) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:C") 
+		(at 248.92 76.2 0) 
+		(unit 1) 
+		(in_bom yes) 
+		(on_board yes) 
+		(dnp no) 
+		(uuid "1f6ccdf8-34c7-47c0-aab9-e5ffd9a60ecb") 
+		(property "Reference" "C8" 
+			(at 252.73 74.93 0) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left))) 
+		(property "Value" "100n 250V" 
+			(at 252.73 77.47 0) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left))) 
+		(property "Footprint" "BoostDraft:C0805" 
+			(at 248.92 76.2 0) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left) hide)) 
+		(property "Function" "HF output bypass; effectiveC at79.7V not guaranteed by nominal rating; verify ripple" 
+			(at 248.92 76.2 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Dielectric" "X7T (+22/-33% temp)" 
+			(at 248.92 76.2 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "C8") 
+					(unit 1)))) 
+		(property "Manufacturer" "TDK" 
+			(at 248.92 76.2 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "MPN" "C2012X7T2E104K125AA" 
+			(at 248.92 76.2 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Rating" "0805;100nF10%;250V" 
+			(at 248.92 76.2 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X7T2E104K125AA" 
+			(at 248.92 76.2 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Description" "HF output bypass; effectiveC at79.7V not guaranteed by nominal rating; verify ripple" 
+			(at 248.92 76.2 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide))) 
+	(wire 
+		(pts 
+			(xy 248.92 72.39) 
+			(xy 248.92 66.04)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "fc4c34d9-05f5-4d17-bb57-4f9e8b77accb")) 
+	(label "HV_TOP" 
+		(at 248.92 66.04 0) 
+		(effects 
+			(font 
+				(size 1.016 1.016)) 
+			(justify left bottom)) 
+		(uuid "d911efd2-f4e8-46a0-bccc-5ac68c583218")) 
+	(wire 
+		(pts 
+			(xy 248.92 80.01) 
+			(xy 248.92 86.36)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "e2a94706-4a52-4bf8-b273-c4a6a92b61db")) 
+	(label "HV_BOTTOM" 
+		(at 248.92 86.36 0) 
+		(effects 
+			(font 
+				(size 1.016 1.016)) 
+			(justify left bottom)) 
+		(uuid "d4a6fbe8-fd5d-4f7a-bfe6-5ec745ef59e2")) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:C") 
+		(at 248.92 116.84 0) 
+		(unit 1) 
+		(in_bom yes) 
+		(on_board yes) 
+		(dnp no) 
+		(uuid "c731be2f-6f7d-4ace-ab85-7e6dbf8fc1ec") 
+		(property "Reference" "C9" 
+			(at 252.73 115.57 0) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left))) 
+		(property "Value" "47u 25V" 
+			(at 252.73 118.11 0) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left))) 
+		(property "Footprint" "BoostDraft:C1210" 
+			(at 248.92 116.84 0) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left) hide)) 
+		(property "Function" "Input bulk;effective22uF at16V is a bench acceptance target, not a verified manufacturer minimum" 
+			(at 248.92 116.84 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Dielectric" "X5R" 
+			(at 248.92 116.84 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "C9") 
+					(unit 1)))) 
+		(property "Manufacturer" "Taiyo Yuden" 
+			(at 248.92 116.84 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "MPN" "MSAST32MAB5476MPNDT1" 
+			(at 248.92 116.84 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Rating" "1210;47uF20%;25V;-55 to85C" 
+			(at 248.92 116.84 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Datasheet" "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=MSAST32MAB5476MPNDT1&u=M" 
+			(at 248.92 116.84 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide)) 
+		(property "Description" "Input bulk;effective22uF at16V is a bench acceptance target, not a verified manufacturer minimum" 
+			(at 248.92 116.84 0) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) hide))) 
+	(wire 
+		(pts 
+			(xy 248.92 113.03) 
+			(xy 248.92 106.68)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "acb2492d-9892-4255-8022-1d6aca7c1cc7")) 
+	(label "ISO_12V_TO_BOTTOM" 
+		(at 248.92 106.68 0) 
+		(effects 
+			(font 
+				(size 1.016 1.016)) 
+			(justify left bottom)) 
+		(uuid "be166fab-eeea-4edf-be50-a67f45962eea")) 
+	(wire 
+		(pts 
+			(xy 248.92 120.65) 
+			(xy 248.92 127)) 
+		(stroke 
+			(width 0) 
+			(type default)) 
+		(uuid "40a2fa7a-0897-4012-9849-c357e8df14ba")) 
+	(label "HV_BOTTOM" 
+		(at 248.92 127 0) 
+		(effects 
+			(font 
+				(size 1.016 1.016)) 
+			(justify left bottom)) 
+		(uuid "6f608b78-fc55-42fe-8d19-bfd8d367f4a1")) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:PWR_FLAG") 
+		(at 248.92 147.32 0) 
+		(unit 1) 
+		(in_bom no) 
+		(on_board no) 
+		(dnp no) 
+		(uuid "635fbaf0-42ee-43a3-852c-b389f8ebd02d") 
+		(property "Reference" "#FLG01" 
+			(at 252.73 146.05 0) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left) hide)) 
+		(property "Value" "PWR_FLAG" 
+			(at 252.73 148.59 0) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left) hide)) 
+		(property "Footprint" "" 
+			(at 248.92 147.32 0) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left) hide)) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "#FLG01") 
+					(unit 1))))) 
+	(label "ISO_12V_TO_BOTTOM" 
+		(at 248.92 147.32 0) 
+		(effects 
+			(font 
+				(size 1.016 1.016)) 
+			(justify left bottom)) 
+		(uuid "38300990-231a-4975-a9f1-ec000f4f2512")) 
+	(symbol 
+		(lib_id "BoostDraftSymbols:PWR_FLAG") 
+		(at 248.92 157.48 0) 
+		(unit 1) 
+		(in_bom no) 
+		(on_board no) 
+		(dnp no) 
+		(uuid "f658a07d-792e-4b5b-9e6c-2ed5e1d4af27") 
+		(property "Reference" "#FLG02" 
+			(at 252.73 156.21 0) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left) hide)) 
+		(property "Value" "PWR_FLAG" 
+			(at 252.73 158.75 0) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left) hide)) 
+		(property "Footprint" "" 
+			(at 248.92 157.48 0) 
+			(effects 
+				(font 
+					(size 1.016 1.016)) 
+				(justify left) hide)) 
+		(instances 
+			(project "Boost_Electrical_Draft" 
+				(path "/c2843b0d-fa6a-453d-a2a4-47fcc79ad88b" 
+					(reference "#FLG02") 
+					(unit 1))))) 
+	(label "HV_BOTTOM" 
+		(at 248.92 157.48 0) 
+		(effects 
+			(font 
+				(size 1.016 1.016)) 
+			(justify left bottom)) 
+		(uuid "1ec7b2c5-661f-4e18-a2ca-75808e671304")) 
+	(text "LM5155 BOOST - ELECTRICAL DRAFT" 
+		(at 25.4 20.32 0) 
+		(effects 
+			(font 
+				(size 2.54 2.54)) 
+			(justify left top)) 
+		(uuid "c365eb32-d3de-4c1a-8fbb-b0b6dd992333")) 
+	(text "DRAFT - BENCH PROTOTYPE. 12 V isolated input / 79.7 V nominal output." 
+		(at 25.4 27.94 0) 
+		(effects 
+			(font 
+				(size 1.524 1.524)) 
+			(justify left top)) 
+		(uuid "39c4c6f5-85c8-4d48-b797-13adebd38031")) 
+	(text "Conditional bench target 15 mA. GAPTEC + 200 ohm preload cannot be assumed to support that load." 
+		(at 25.4 35.56 0) 
+		(effects 
+			(font 
+				(size 1.27 1.27)) 
+			(justify left top)) 
+		(uuid "cff058c4-a2e6-49ea-9c13-1b96c902233f")) 
+	(text "HV_BOTTOM = GAPTEC pin 5 = rail-splitter negative input. It is NOT signal ISO_GND." 
+		(at 25.4 43.18 0) 
+		(effects 
+			(font 
+				(size 1.27 1.27)) 
+			(justify left top)) 
+		(uuid "db316497-5dc5-4939-89d5-0a62af15a47a")) 
+	(text "HIGH VOLTAGE RETURN MAP\nJ1.2 and J2.2 = HV_BOTTOM.\nJ2.1 = HV_TOP.\nSignal ISO_GND connects only to\nrail-splitter MID downstream." 
+		(at 292.1 58.42 0) 
+		(effects 
+			(font 
+				(size 1.27 1.27)) 
+			(justify left top)) 
+		(uuid "66d3198d-d325-4231-8c6d-03196929ccf4")) 
+	(text "PROVISIONAL LOOP NETWORK\nR8 = 191k; C3 = 47n; C2 = 68p.\nSimplified 500 Hz crossover target.\nActual phase margin, source/load\ninteraction and ESR are unvalidated." 
+		(at 292.1 99.06 0) 
+		(effects 
+			(font 
+				(size 1.27 1.27)) 
+			(justify left top)) 
+		(uuid "6fa93266-f308-4348-ae62-f62145c1841a")) 
+	(text "SOFT START\nC7 = 47u nominal; require effective\nC >= 33u over 0-1 V. About 4 s nominal\nboost rise with 100u output bulk.\nStartup load must be controlled." 
+		(at 292.1 139.7 0) 
+		(effects 
+			(font 
+				(size 1.27 1.27)) 
+			(justify left top)) 
+		(uuid "97b5176e-8973-4ed7-a355-325475d2cea4")) 
+	(text "SAFETY / INTERFACE LIMITS\nStopping switching does not disconnect\ninput from output. 100u at 80 V stores 0.32 J.\nPGOOD pullup is local VCC (~6.85 V),\nnot a Pico or MID-referenced signal.\nNo fault-safe output disconnect here." 
+		(at 292.1 180.34 0) 
+		(effects 
+			(font 
+				(size 1.27 1.27)) 
+			(justify left top)) 
+		(uuid "19e3e6bf-d5fb-4a0e-aeb2-4392ece858a1")) 
+	(text "R1/R2 set 79.7 V. R9 = 0.270 ohm current sense replaces conflicting source metadata.\nL1 = SRR1280-102K, 1 mH. Q1 = FDMC86240, 150 V, specified at 6 V gate drive.\nExact R/C MPNs selected; effective capacitance and loop behavior require bench acceptance." 
+		(at 25.4 223.52 0) 
+		(effects 
+			(font 
+				(size 1.27 1.27)) 
+			(justify left top)) 
+		(uuid "46b2e293-93c0-482b-92d2-6f1001971cce")) 
+	(text "Before powered integration: loop model/bench steps, inrush/UVLO, efficiency and\nGAPTEC 2 W budget, switch-node peak stress/snubber, thermal behavior, discharge/protection, isolation layout." 
+		(at 25.4 246.38 0) 
+		(effects 
+			(font 
+				(size 1.27 1.27)) 
+			(justify left top)) 
+		(uuid "1547cffb-653b-4488-8cc3-28fece1bbf3d")) 
+	(label "SW" 
+		(at 187.96 60.96 0) 
+		(effects 
+			(font 
+				(size .8 .8)) 
+			(justify left bottom)) 
+		(uuid "73520263-adbf-40d8-acb5-664e90cc17b2")) 
+	(label "GATE" 
+		(at 165.1 86.36 0) 
+		(effects 
+			(font 
+				(size .8 .8)) 
+			(justify left bottom)) 
+		(uuid "7bfda689-dc45-46fe-8760-58623e6176a6")) 
+	(label "SENSE_RAW" 
+		(at 187.96 91.44 0) 
+		(effects 
+			(font 
+				(size .8 .8)) 
+			(justify left bottom)) 
+		(uuid "d7daef79-58f0-420e-a93c-cb4713117dc2")) 
+	(label "SENSE_FILT" 
+		(at 167.64 99.06 90) 
+		(effects 
+			(font 
+				(size .8 .8)) 
+			(justify left bottom)) 
+		(uuid "34a65b94-0f9d-443e-90b4-d215d5f9e4a8")) 
+	(label "CS" 
+		(at 149.86 99.06 90) 
+		(effects 
+			(font 
+				(size .8 .8)) 
+			(justify left bottom)) 
+		(uuid "0f98172c-68b3-4500-9fc1-e7d4add92a79")) 
+	(label "COMP" 
+		(at 109.22 129.54 0) 
+		(effects 
+			(font 
+				(size .8 .8)) 
+			(justify right bottom)) 
+		(uuid "a1e15896-38a8-400e-bd6a-39bccfd81f5b")) 
+	(label "FB" 
+		(at 149.86 119.38 0) 
+		(effects 
+			(font 
+				(size .8 .8)) 
+			(justify left bottom)) 
+		(uuid "9dba5de3-3cb8-44fc-b81c-e850757b073b")) 
+	(label "PGOOD" 
+		(at 109.22 99.06 0) 
+		(effects 
+			(font 
+				(size .8 .8)) 
+			(justify right bottom)) 
+		(uuid "d3a50380-832e-4b3c-be87-87944b8c99e7")) 
+	(label "FREQ_SET" 
+		(at 109.22 109.22 0) 
+		(effects 
+			(font 
+				(size .8 .8)) 
+			(justify right bottom)) 
+		(uuid "13b1272d-ab06-4563-a1a8-ab73e5db2819")) 
+	(label "SOFT_START" 
+		(at 109.22 119.38 0) 
+		(effects 
+			(font 
+				(size .8 .8)) 
+			(justify right bottom)) 
+		(uuid "6415d178-a7dd-4d8e-b535-d1a3f822309d")) 
+	(label "UVLO" 
+		(at 109.22 88.9 0) 
+		(effects 
+			(font 
+				(size .8 .8)) 
+			(justify right bottom)) 
+		(uuid "17abe190-a511-4b67-9450-8dd6e73a87d3")) 
+	(label "COMP_ZERO" 
+		(at 96.52 152.4 0) 
+		(effects 
+			(font 
+				(size .8 .8)) 
+			(justify right bottom)) 
+		(uuid "cb416d5f-a351-4393-8055-fc57b03ace32")))

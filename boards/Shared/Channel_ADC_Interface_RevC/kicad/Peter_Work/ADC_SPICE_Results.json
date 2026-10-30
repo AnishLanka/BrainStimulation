@@ -1,0 +1,42 @@
+{
+  "model": "TI OPAx320-Q1 Final 1.7 linked from OPA320 product page; family proxy for OPA2320AID. It is not a tolerance-corner certification.",
+  "ac": [
+    {
+      "frequency_Hz": 999.9999999999944,
+      "magnitude": 0.5000016521058774,
+      "gain_dB": -6.020571213308395,
+      "phase_deg": -1.563696127321406
+    },
+    {
+      "frequency_Hz": 9999.999999999915,
+      "magnitude": 0.5000756588495247,
+      "gain_dB": -6.019285683875974,
+      "phase_deg": -15.659438179546125
+    },
+    {
+      "frequency_Hz": 39810.71705534931,
+      "magnitude": 0.5005630226031544,
+      "gain_dB": -6.010824711517381,
+      "phase_deg": -63.794633679000206
+    },
+    {
+      "frequency_Hz": 301995.1720401975,
+      "magnitude": 0.005603708856614289,
+      "gain_dB": -45.03048873557135,
+      "phase_deg": 26.994145950053692
+    },
+    {
+      "frequency_Hz": 562341.3251903408,
+      "magnitude": 0.00041272426548368446,
+      "gain_dB": -67.68679993401624,
+      "phase_deg": -22.314427708869776
+    }
+  ],
+  "transient": {
+    "points": 61713,
+    "adc_input_min_V": 0.20044441938769697,
+    "adc_input_max_V": 1.8389784024651687,
+    "bounded": true
+  },
+  "limits": "Model only nominal amplifier response. ADC TINA .TSM is encrypted/binary and not executable in ngspice. Arbitrary injected 100pC kick verifies recovery qualitatively, not 16-bit ADC accuracy. Board calibration and bench measurement remain required."
+}

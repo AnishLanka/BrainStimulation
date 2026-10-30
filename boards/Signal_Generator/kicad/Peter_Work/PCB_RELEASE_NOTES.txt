@@ -1,0 +1,49 @@
+SIGNAL GENERATOR REV C — BARE-PCB BENCH PROTOTYPE
+17 October 2026
+
+Upload SignalGen_Prototype_RevC_JLCPCB.zip as one design. It has seven Gerber
+layers and one plated-hole Excellon file at the ZIP root. There are no
+non-plated holes; the empty NPTH export is omitted from the upload ZIP.
+This is a bare-PCB package. Component_Positions.csv is a placement reference,
+not an approved JLCPCB assembly order or a substitute for a reviewed BOM.
+
+ORDER SETTINGS
+2 layers; FR-4; 0.4 mm nominal thickness; 1 oz outer copper; ENIG;
+green solder mask; white silkscreen; tent vias on both sides.
+Outline centerline: 74.676 x 95.902 mm. The original native design thickness
+is 0.41116 mm; 0.4 mm is the fabricator's nominal option. Do not choose 1.6 mm.
+The Gerber job uses a stroke-inclusive bounding box and unspecified finish;
+it is retained as an engineering record outside the upload ZIP. Select the
+finish and nominal thickness explicitly in the order form.
+
+COMPLETED FILE CHECKS
+Rev C corrects all 16 U4/U7 lands to TI's 1.40 x 0.45 mm example with
+0.65 mm pitch and 0.05 mm corner radius. Adjacent copper clearance is now
+0.20 mm. The old 0.18 mm package exception was removed; no DRC exclusions
+or new ignored checks were added. Open the complete extracted .kicad_pro
+project with its local libraries; a lone PCB file omits that library context.
+
+77 components, 217 pads, 213 connected pins, 822 trace segments and 47 vias.
+Zero native DRC violations, zero unconnected items and zero schematic parity
+issues. Three separate ground planes and a channel keepout are present.
+All connector pad dimensions/drills and the outline are retained. A 1 nm
+import-rounding difference at J1 is below the 0.00001 mm comparison precision.
+Measured projected copper gaps are at least 3.628 mm primary-to-secondary
+and 5.600 mm between the two secondary domains. These are geometric checks,
+not insulation-system or medical isolation qualification.
+All 77 references are on front silkscreen; minimum text is 1.0 mm with
+0.16 mm strokes. DAC pin 1 is explicitly marked. Obstructing body-outline
+segments were removed while retaining assembly outlines on the fab layer.
+Independent Gerber geometry and every emitted drill position/diameter were
+checked against the native board. See FABRICATION_VERIFICATION.json.
+
+ASSEMBLY AND BENCH TEST
+Keep both secondary grounds separate from the primary ground and each other.
+J1/J3 form channel 1; J2/J4 form channel 2. See the integration connection map.
+The old DAC8411 firmware must be changed for DAC8830 framing and clock timing.
+Check low-voltage outputs independently before integrating the HV chain.
+Reference ripple, DC offset, IA0305S light-load rails, waveform fidelity and
+startup behavior still require real measurements. The design does not include
+the complete system's output limits, inhibit or electrode-disconnect sensing.
+This is a dummy-load development board; it is not for connection to a person.
+No JLCPCB online checker run or physical test has been claimed.

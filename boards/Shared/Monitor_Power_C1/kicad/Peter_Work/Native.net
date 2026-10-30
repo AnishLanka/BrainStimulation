@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\peter\Documents\Codex\2026-10-17\this\outputs\StimPrototype_Hardware_Revision_C\monitor_power\Monitor_Power_C1.kicad_sch</source>
+    <date>2026-10-17T15:34:09</date>
+    <tool>Eeschema 10.0.6</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>ISOLATED MONITOR POWER - BENCH PROTOTYPE</title>
+        <company/>
+        <rev>C1</rev>
+        <date>2026-10-17</date>
+        <source>Monitor_Power_C1.kicad_sch</source>
+        <comment number="1" value="One channel; repeat four times. Bench qualification required."/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C201">
+      <value>100u_16V_POLAR</value>
+      <footprint>MonitorPowerLocal:Capacitor_THT_CP_Radial_D5.0mm_P2.00mm</footprint>
+      <fields>
+        <field name="MPN">EEUFR1C101</field>
+        <field name="Design notes">FR aluminum electrolytic, 100 uF +/-20%, 16 V. D5 x H11 mm, lead spacing 2 mm, lead diameter 0.5 mm. Impedance maximum 0.300 ohm at 100 kHz and 20 C. On the negative rail the positive terminal connects to MID. Place LDO output capacitor directly beside U201. Module load remains below its 1680 uF capacitive-load rating.</field>
+        <field name="Footprint candidate">MonitorPowerLocal:Capacitor_THT_CP_Radial_D5.0mm_P2.00mm</field>
+        <field name="Footprint">MonitorPowerLocal:Capacitor_THT_CP_Radial_D5.0mm_P2.00mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MonitorPowerReview" part="Part_C201" description=""/>
+      <property name="MPN" value="EEUFR1C101"/>
+      <property name="Design notes" value="FR aluminum electrolytic, 100 uF +/-20%, 16 V. D5 x H11 mm, lead spacing 2 mm, lead diameter 0.5 mm. Impedance maximum 0.300 ohm at 100 kHz and 20 C. On the negative rail the positive terminal connects to MID. Place LDO output capacitor directly beside U201. Module load remains below its 1680 uF capacitive-load rating."/>
+      <property name="Footprint candidate" value="MonitorPowerLocal:Capacitor_THT_CP_Radial_D5.0mm_P2.00mm"/>
+      <property name="Sheetname" value="Monitor_Power_C1"/>
+      <property name="Sheetfile" value="Monitor_Power_C1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>443ccbff-e12a-4ed4-844f-511d2a522f24</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C202">
+      <value>100u_16V_POLAR</value>
+      <footprint>MonitorPowerLocal:Capacitor_THT_CP_Radial_D5.0mm_P2.00mm</footprint>
+      <fields>
+        <field name="MPN">EEUFR1C101</field>
+        <field name="Design notes">FR aluminum electrolytic, 100 uF +/-20%, 16 V. D5 x H11 mm, lead spacing 2 mm, lead diameter 0.5 mm. Impedance maximum 0.300 ohm at 100 kHz and 20 C. On the negative rail the positive terminal connects to MID. Place LDO output capacitor directly beside U201. Module load remains below its 1680 uF capacitive-load rating.</field>
+        <field name="Footprint candidate">MonitorPowerLocal:Capacitor_THT_CP_Radial_D5.0mm_P2.00mm</field>
+        <field name="Footprint">MonitorPowerLocal:Capacitor_THT_CP_Radial_D5.0mm_P2.00mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MonitorPowerReview" part="Part_C202" description=""/>
+      <property name="MPN" value="EEUFR1C101"/>
+      <property name="Design notes" value="FR aluminum electrolytic, 100 uF +/-20%, 16 V. D5 x H11 mm, lead spacing 2 mm, lead diameter 0.5 mm. Impedance maximum 0.300 ohm at 100 kHz and 20 C. On the negative rail the positive terminal connects to MID. Place LDO output capacitor directly beside U201. Module load remains below its 1680 uF capacitive-load rating."/>
+      <property name="Footprint candidate" value="MonitorPowerLocal:Capacitor_THT_CP_Radial_D5.0mm_P2.00mm"/>
+      <property name="Sheetname" value="Monitor_Power_C1"/>
+      <property name="Sheetfile" value="Monitor_Power_C1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b408cb2d-8500-4fc3-8eb3-3fae96074669</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C203">
+      <value>100u_16V_POLAR</value>
+      <footprint>MonitorPowerLocal:Capacitor_THT_CP_Radial_D5.0mm_P2.00mm</footprint>
+      <fields>
+        <field name="MPN">EEUFR1C101</field>
+        <field name="Design notes">FR aluminum electrolytic, 100 uF +/-20%, 16 V. D5 x H11 mm, lead spacing 2 mm, lead diameter 0.5 mm. Impedance maximum 0.300 ohm at 100 kHz and 20 C. On the negative rail the positive terminal connects to MID. Place LDO output capacitor directly beside U201. Module load remains below its 1680 uF capacitive-load rating.</field>
+        <field name="Footprint candidate">MonitorPowerLocal:Capacitor_THT_CP_Radial_D5.0mm_P2.00mm</field>
+        <field name="Footprint">MonitorPowerLocal:Capacitor_THT_CP_Radial_D5.0mm_P2.00mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MonitorPowerReview" part="Part_C203" description=""/>
+      <property name="MPN" value="EEUFR1C101"/>
+      <property name="Design notes" value="FR aluminum electrolytic, 100 uF +/-20%, 16 V. D5 x H11 mm, lead spacing 2 mm, lead diameter 0.5 mm. Impedance maximum 0.300 ohm at 100 kHz and 20 C. On the negative rail the positive terminal connects to MID. Place LDO output capacitor directly beside U201. Module load remains below its 1680 uF capacitive-load rating."/>
+      <property name="Footprint candidate" value="MonitorPowerLocal:Capacitor_THT_CP_Radial_D5.0mm_P2.00mm"/>
+      <property name="Sheetname" value="Monitor_Power_C1"/>
+      <property name="Sheetfile" value="Monitor_Power_C1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>473a51c6-0fa0-494f-922d-e5590d6ad0fe</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C204">
+      <value>100u_16V_POLAR</value>
+      <footprint>MonitorPowerLocal:Capacitor_THT_CP_Radial_D5.0mm_P2.00mm</footprint>
+      <fields>
+        <field name="MPN">EEUFR1C101</field>
+        <field name="Design notes">FR aluminum electrolytic, 100 uF +/-20%, 16 V. D5 x H11 mm, lead spacing 2 mm, lead diameter 0.5 mm. Impedance maximum 0.300 ohm at 100 kHz and 20 C. On the negative rail the positive terminal connects to MID. Place LDO output capacitor directly beside U201. Module load remains below its 1680 uF capacitive-load rating.</field>
+        <field name="Footprint candidate">MonitorPowerLocal:Capacitor_THT_CP_Radial_D5.0mm_P2.00mm</field>
+        <field name="Footprint">MonitorPowerLocal:Capacitor_THT_CP_Radial_D5.0mm_P2.00mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MonitorPowerReview" part="Part_C204" description=""/>
+      <property name="MPN" value="EEUFR1C101"/>
+      <property name="Design notes" value="FR aluminum electrolytic, 100 uF +/-20%, 16 V. D5 x H11 mm, lead spacing 2 mm, lead diameter 0.5 mm. Impedance maximum 0.300 ohm at 100 kHz and 20 C. On the negative rail the positive terminal connects to MID. Place LDO output capacitor directly beside U201. Module load remains below its 1680 uF capacitive-load rating."/>
+      <property name="Footprint candidate" value="MonitorPowerLocal:Capacitor_THT_CP_Radial_D5.0mm_P2.00mm"/>
+      <property name="Sheetname" value="Monitor_Power_C1"/>
+      <property name="Sheetfile" value="Monitor_Power_C1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cb80c7a7-1d4b-4465-9b13-66a2a684a8b8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C205">
+      <value>100u_16V_POLAR</value>
+      <footprint>MonitorPowerLocal:Capacitor_THT_CP_Radial_D5.0mm_P2.00mm</footprint>
+      <fields>
+        <field name="MPN">EEUFR1C101</field>
+        <field name="Design notes">FR aluminum electrolytic, 100 uF +/-20%, 16 V. D5 x H11 mm, lead spacing 2 mm, lead diameter 0.5 mm. Impedance maximum 0.300 ohm at 100 kHz and 20 C. On the negative rail the positive terminal connects to MID. Place LDO output capacitor directly beside U201. Module load remains below its 1680 uF capacitive-load rating.</field>
+        <field name="Footprint candidate">MonitorPowerLocal:Capacitor_THT_CP_Radial_D5.0mm_P2.00mm</field>
+        <field name="Footprint">MonitorPowerLocal:Capacitor_THT_CP_Radial_D5.0mm_P2.00mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MonitorPowerReview" part="Part_C205" description=""/>
+      <property name="MPN" value="EEUFR1C101"/>
+      <property name="Design notes" value="FR aluminum electrolytic, 100 uF +/-20%, 16 V. D5 x H11 mm, lead spacing 2 mm, lead diameter 0.5 mm. Impedance maximum 0.300 ohm at 100 kHz and 20 C. On the negative rail the positive terminal connects to MID. Place LDO output capacitor directly beside U201. Module load remains below its 1680 uF capacitive-load rating."/>
+      <property name="Footprint candidate" value="MonitorPowerLocal:Capacitor_THT_CP_Radial_D5.0mm_P2.00mm"/>
+      <property name="Sheetname" value="Monitor_Power_C1"/>
+      <property name="Sheetfile" value="Monitor_Power_C1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f0bb9d5c-576f-4384-ae31-7861e92b99b2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C206">
+      <value>100n_50V_X7R</value>
+      <footprint>MonitorPowerLocal:Capacitor_SMD_C_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">885012207098</field>
+        <field name="Design notes">100 nF +/-10%, 50 V X7R, 0805 high-frequency bypass. Bulk capacitance is supplied separately; no unprovided effective-MLCC-capacitance guarantee is assumed.</field>
+        <field name="Footprint candidate">MonitorPowerLocal:Capacitor_SMD_C_0805_2012Metric</field>
+        <field name="Footprint">MonitorPowerLocal:Capacitor_SMD_C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MonitorPowerReview" part="Part_C206" description=""/>
+      <property name="MPN" value="885012207098"/>
+      <property name="Design notes" value="100 nF +/-10%, 50 V X7R, 0805 high-frequency bypass. Bulk capacitance is supplied separately; no unprovided effective-MLCC-capacitance guarantee is assumed."/>
+      <property name="Footprint candidate" value="MonitorPowerLocal:Capacitor_SMD_C_0805_2012Metric"/>
+      <property name="Sheetname" value="Monitor_Power_C1"/>
+      <property name="Sheetfile" value="Monitor_Power_C1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7171a98c-23d0-49ee-a4bc-9ce7039ed0af</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C207">
+      <value>100n_50V_X7R</value>
+      <footprint>MonitorPowerLocal:Capacitor_SMD_C_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">885012207098</field>
+        <field name="Design notes">100 nF +/-10%, 50 V X7R, 0805 high-frequency bypass. Bulk capacitance is supplied separately; no unprovided effective-MLCC-capacitance guarantee is assumed.</field>
+        <field name="Footprint candidate">MonitorPowerLocal:Capacitor_SMD_C_0805_2012Metric</field>
+        <field name="Footprint">MonitorPowerLocal:Capacitor_SMD_C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MonitorPowerReview" part="Part_C207" description=""/>
+      <property name="MPN" value="885012207098"/>
+      <property name="Design notes" value="100 nF +/-10%, 50 V X7R, 0805 high-frequency bypass. Bulk capacitance is supplied separately; no unprovided effective-MLCC-capacitance guarantee is assumed."/>
+      <property name="Footprint candidate" value="MonitorPowerLocal:Capacitor_SMD_C_0805_2012Metric"/>
+      <property name="Sheetname" value="Monitor_Power_C1"/>
+      <property name="Sheetfile" value="Monitor_Power_C1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>25ef94d8-5e37-493b-85e5-b32c490d615a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C208">
+      <value>100n_50V_X7R</value>
+      <footprint>MonitorPowerLocal:Capacitor_SMD_C_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">885012207098</field>
+        <field name="Design notes">100 nF +/-10%, 50 V X7R, 0805 high-frequency bypass. Bulk capacitance is supplied separately; no unprovided effective-MLCC-capacitance guarantee is assumed.</field>
+        <field name="Footprint candidate">MonitorPowerLocal:Capacitor_SMD_C_0805_2012Metric</field>
+        <field name="Footprint">MonitorPowerLocal:Capacitor_SMD_C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MonitorPowerReview" part="Part_C208" description=""/>
+      <property name="MPN" value="885012207098"/>
+      <property name="Design notes" value="100 nF +/-10%, 50 V X7R, 0805 high-frequency bypass. Bulk capacitance is supplied separately; no unprovided effective-MLCC-capacitance guarantee is assumed."/>
+      <property name="Footprint candidate" value="MonitorPowerLocal:Capacitor_SMD_C_0805_2012Metric"/>
+      <property name="Sheetname" value="Monitor_Power_C1"/>
+      <property name="Sheetfile" value="Monitor_Power_C1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5b7287c4-f084-4605-8202-638607274336</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C209">
+      <value>100n_50V_X7R</value>
+      <footprint>MonitorPowerLocal:Capacitor_SMD_C_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">885012207098</field>
+        <field name="Design notes">100 nF +/-10%, 50 V X7R, 0805 high-frequency bypass. Bulk capacitance is supplied separately; no unprovided effective-MLCC-capacitance guarantee is assumed.</field>
+        <field name="Footprint candidate">MonitorPowerLocal:Capacitor_SMD_C_0805_2012Metric</field>
+        <field name="Footprint">MonitorPowerLocal:Capacitor_SMD_C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MonitorPowerReview" part="Part_C209" description=""/>
+      <property name="MPN" value="885012207098"/>
+      <property name="Design notes" value="100 nF +/-10%, 50 V X7R, 0805 high-frequency bypass. Bulk capacitance is supplied separately; no unprovided effective-MLCC-capacitance guarantee is assumed."/>
+      <property name="Footprint candidate" value="MonitorPowerLocal:Capacitor_SMD_C_0805_2012Metric"/>
+      <property name="Sheetname" value="Monitor_Power_C1"/>
+      <property name="Sheetfile" value="Monitor_Power_C1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>de443d22-e900-4376-b930-711cc43ce31d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C210">
+      <value>100n_50V_X7R</value>
+      <footprint>MonitorPowerLocal:Capacitor_SMD_C_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">885012207098</field>
+        <field name="Design notes">100 nF +/-10%, 50 V X7R, 0805 high-frequency bypass. Bulk capacitance is supplied separately; no unprovided effective-MLCC-capacitance guarantee is assumed.</field>
+        <field name="Footprint candidate">MonitorPowerLocal:Capacitor_SMD_C_0805_2012Metric</field>
+        <field name="Footprint">MonitorPowerLocal:Capacitor_SMD_C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MonitorPowerReview" part="Part_C210" description=""/>
+      <property name="MPN" value="885012207098"/>
+      <property name="Design notes" value="100 nF +/-10%, 50 V X7R, 0805 high-frequency bypass. Bulk capacitance is supplied separately; no unprovided effective-MLCC-capacitance guarantee is assumed."/>
+      <property name="Footprint candidate" value="MonitorPowerLocal:Capacitor_SMD_C_0805_2012Metric"/>
+      <property name="Sheetname" value="Monitor_Power_C1"/>
+      <property name="Sheetfile" value="Monitor_Power_C1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0e5f1450-46a2-40dd-b109-40589e6e4f8f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="F201">
+      <value>2A_SLOW_125VDC</value>
+      <footprint>MonitorPowerLocal:Fuse_Fuse_Littelfuse-NANO2-451_453</footprint>
+      <fields>
+        <field name="MPN">0454002.MR</field>
+        <field name="Design notes">2 A slow fuse per TMR 3 5 V input recommendation. 125 VAC/DC, 50 A interrupt at 125 V; 300 A at 32 VDC. Nominal cold resistance 0.0625 ohm, nominal I2t 8.20 A2s. Same verified 452/454 lands. Startup coordination is still a measurement, not implied by nominal I2t.</field>
+        <field name="Footprint candidate">MonitorPowerLocal:Fuse_Fuse_Littelfuse-NANO2-451_453</field>
+        <field name="Footprint">MonitorPowerLocal:Fuse_Fuse_Littelfuse-NANO2-451_453</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MonitorPowerReview" part="Part_F201" description=""/>
+      <property name="MPN" value="0454002.MR"/>
+      <property name="Design notes" value="2 A slow fuse per TMR 3 5 V input recommendation. 125 VAC/DC, 50 A interrupt at 125 V; 300 A at 32 VDC. Nominal cold resistance 0.0625 ohm, nominal I2t 8.20 A2s. Same verified 452/454 lands. Startup coordination is still a measurement, not implied by nominal I2t."/>
+      <property name="Footprint candidate" value="MonitorPowerLocal:Fuse_Fuse_Littelfuse-NANO2-451_453"/>
+      <property name="Sheetname" value="Monitor_Power_C1"/>
+      <property name="Sheetfile" value="Monitor_Power_C1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0752fe72-69d3-45a2-9bbe-23f734192b83</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="F202">
+      <value>500mA_SLOW_125VDC</value>
+      <footprint>MonitorPowerLocal:Fuse_Fuse_Littelfuse-NANO2-451_453</footprint>
+      <fields>
+        <field name="MPN">0454.500MR</field>
+        <field name="Design notes">500 mA slow fuse, matching the TMR 1 recommended 5 V input fuse. 125 VAC/DC, 50 A interrupt at 125 V; 300 A at 32 VDC. Nominal cold resistance 0.700 ohm; I2t 0.240 A2s is nominal, not a startup coordination guarantee. Selected footprint pads match the 452/454 recommended 1.96 x 3.15 mm lands, 2.95 mm inner gap. Use an SMD adapter for perfboard.</field>
+        <field name="Footprint candidate">MonitorPowerLocal:Fuse_Fuse_Littelfuse-NANO2-451_453</field>
+        <field name="Footprint">MonitorPowerLocal:Fuse_Fuse_Littelfuse-NANO2-451_453</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MonitorPowerReview" part="Part_F202" description=""/>
+      <property name="MPN" value="0454.500MR"/>
+      <property name="Design notes" value="500 mA slow fuse, matching the TMR 1 recommended 5 V input fuse. 125 VAC/DC, 50 A interrupt at 125 V; 300 A at 32 VDC. Nominal cold resistance 0.700 ohm; I2t 0.240 A2s is nominal, not a startup coordination guarantee. Selected footprint pads match the 452/454 recommended 1.96 x 3.15 mm lands, 2.95 mm inner gap. Use an SMD adapter for perfboard."/>
+      <property name="Footprint candidate" value="MonitorPowerLocal:Fuse_Fuse_Littelfuse-NANO2-451_453"/>
+      <property name="Sheetname" value="Monitor_Power_C1"/>
+      <property name="Sheetfile" value="Monitor_Power_C1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>eddced95-ac5f-4231-b1f9-e5fdcc464178</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J201">
+      <value>SYSTEM_5V_INPUT</value>
+      <footprint>MonitorPowerLocal:Connector_JST_JST_VH_B2P-VH_1x02_P3.96mm_Vertical</footprint>
+      <fields>
+        <field name="MPN">B2P-VH(LF)(SN)</field>
+        <field name="Design notes">Primary side only. Mate VHR-2N with SVH-41T-P1.1 contacts. Standard VH header rating is 10 A with 16 AWG wire, 250 VAC/DC; this channel branch is allocated less than 1 A. Verify crimp and pin orientation. Never join SYS_GND to MID_CH.</field>
+        <field name="Footprint candidate">MonitorPowerLocal:Connector_JST_JST_VH_B2P-VH_1x02_P3.96mm_Vertical</field>
+        <field name="Footprint">MonitorPowerLocal:Connector_JST_JST_VH_B2P-VH_1x02_P3.96mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MonitorPowerReview" part="Part_J201" description=""/>
+      <property name="MPN" value="B2P-VH(LF)(SN)"/>
+      <property name="Design notes" value="Primary side only. Mate VHR-2N with SVH-41T-P1.1 contacts. Standard VH header rating is 10 A with 16 AWG wire, 250 VAC/DC; this channel branch is allocated less than 1 A. Verify crimp and pin orientation. Never join SYS_GND to MID_CH."/>
+      <property name="Footprint candidate" value="MonitorPowerLocal:Connector_JST_JST_VH_B2P-VH_1x02_P3.96mm_Vertical"/>
+      <property name="Sheetname" value="Monitor_Power_C1"/>
+      <property name="Sheetfile" value="Monitor_Power_C1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0a42ae10-8e44-4804-a688-c79cf92cc8c8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J202">
+      <value>LOCAL_MONITOR_POWER</value>
+      <footprint>MonitorPowerLocal:Connector_JST_JST_VH_B4P-VH_1x04_P3.96mm_Vertical</footprint>
+      <fields>
+        <field name="MPN">B4P-VH(LF)(SN)</field>
+        <field name="Design notes">Output harness only for this channel. Mate VHR-4N with SVH-41T-P1.1 contacts. Pin map is the project harness convention: 1 +5, 2 MID, 3 -5, 4 +3.3. Do not attach SYS_GND or another channel MID. Do not parallel existing IA0305S or ISOW7741 supply outputs.</field>
+        <field name="Footprint candidate">MonitorPowerLocal:Connector_JST_JST_VH_B4P-VH_1x04_P3.96mm_Vertical</field>
+        <field name="Footprint">MonitorPowerLocal:Connector_JST_JST_VH_B4P-VH_1x04_P3.96mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MonitorPowerReview" part="Part_J202" description=""/>
+      <property name="MPN" value="B4P-VH(LF)(SN)"/>
+      <property name="Design notes" value="Output harness only for this channel. Mate VHR-4N with SVH-41T-P1.1 contacts. Pin map is the project harness convention: 1 +5, 2 MID, 3 -5, 4 +3.3. Do not attach SYS_GND or another channel MID. Do not parallel existing IA0305S or ISOW7741 supply outputs."/>
+      <property name="Footprint candidate" value="MonitorPowerLocal:Connector_JST_JST_VH_B4P-VH_1x04_P3.96mm_Vertical"/>
+      <property name="Sheetname" value="Monitor_Power_C1"/>
+      <property name="Sheetfile" value="Monitor_Power_C1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>05291ace-ce3b-48f0-b34f-8d58a020ead0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="PS201">
+      <value>ISOLATED_REGULATED_5V_600mA</value>
+      <footprint>MonitorPowerLocal:ProtectionLocal_TRACO_TMR3_SIP8_Single</footprint>
+      <fields>
+        <field name="MPN">TMR 3-0511</field>
+        <field name="Design notes">Upgraded for local Pico and ADC load. TMR 3-0511 single output: 5 V / 600 mA, 3 W, input 4.5 to 9 V. Remote pin 3 open means ON. Pin 4 is absent; physical pins 5 and 8 are NC. Pin 6 is +5, pin 7 is channel MID. Keep primary isolated. Custom footprint follows the visually checked official 15-Apr-2026 SIP8 drawing; verify a physical part before assembly.</field>
+        <field name="Footprint candidate">MonitorPowerLocal:ProtectionLocal_TRACO_TMR3_SIP8_Single</field>
+        <field name="Footprint">MonitorPowerLocal:ProtectionLocal_TRACO_TMR3_SIP8_Single</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MonitorPowerReview" part="Part_PS201" description=""/>
+      <property name="MPN" value="TMR 3-0511"/>
+      <property name="Design notes" value="Upgraded for local Pico and ADC load. TMR 3-0511 single output: 5 V / 600 mA, 3 W, input 4.5 to 9 V. Remote pin 3 open means ON. Pin 4 is absent; physical pins 5 and 8 are NC. Pin 6 is +5, pin 7 is channel MID. Keep primary isolated. Custom footprint follows the visually checked official 15-Apr-2026 SIP8 drawing; verify a physical part before assembly."/>
+      <property name="Footprint candidate" value="MonitorPowerLocal:ProtectionLocal_TRACO_TMR3_SIP8_Single"/>
+      <property name="Sheetname" value="Monitor_Power_C1"/>
+      <property name="Sheetfile" value="Monitor_Power_C1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>780144b1-5297-408a-9bf4-b6d901d84686</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="PS202">
+      <value>ISOLATED_REGULATED_5V_200mA</value>
+      <footprint>MonitorPowerLocal:Converter_DCDC_Converter_DCDC_TRACO_TMR-1-xxxx_Single_THT</footprint>
+      <fields>
+        <field name="MPN">TMR 1-0511</field>
+        <field name="Design notes">Single isolated output, NOT the dual-output part. 1 W, 5 V / 200 mA; 4.5 to 9 V at module input pins. Pins 3 and 5 are absent. Two independent output pairs are series-connected only at this channel MID. MID terminal is passive for ERC because it is the selected output reference. Body 17 x 7.62 x 11 mm; pin locations 0, 2.54, 7.62, 12.70 mm. Bench design, not a medical isolation certification.</field>
+        <field name="Footprint candidate">MonitorPowerLocal:Converter_DCDC_Converter_DCDC_TRACO_TMR-1-xxxx_Single_THT</field>
+        <field name="Footprint">MonitorPowerLocal:Converter_DCDC_Converter_DCDC_TRACO_TMR-1-xxxx_Single_THT</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MonitorPowerReview" part="Part_PS202" description=""/>
+      <property name="MPN" value="TMR 1-0511"/>
+      <property name="Design notes" value="Single isolated output, NOT the dual-output part. 1 W, 5 V / 200 mA; 4.5 to 9 V at module input pins. Pins 3 and 5 are absent. Two independent output pairs are series-connected only at this channel MID. MID terminal is passive for ERC because it is the selected output reference. Body 17 x 7.62 x 11 mm; pin locations 0, 2.54, 7.62, 12.70 mm. Bench design, not a medical isolation certification."/>
+      <property name="Footprint candidate" value="MonitorPowerLocal:Converter_DCDC_Converter_DCDC_TRACO_TMR-1-xxxx_Single_THT"/>
+      <property name="Sheetname" value="Monitor_Power_C1"/>
+      <property name="Sheetfile" value="Monitor_Power_C1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>eaf9b146-9b21-4c81-951e-184bb3762219</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R201">
+      <value>150R_1%_0.6W</value>
+      <footprint>MonitorPowerLocal:Resistor_THT_R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="MPN">MRS25000C1500FRP00</field>
+        <field name="Design notes">Positive TMR 3 preload. 150 ohm, 1%, 50 ppm/K, 0.6 W at 70 C. At the 4.84 V rail corner it draws at least 31.95 mA, above the 30 mA lower load-regulation test point. Body maximum 6.5 x 2.5 mm; lead pitch selected 10.16 mm. Additional to sensing-core bleeders.</field>
+        <field name="Footprint candidate">MonitorPowerLocal:Resistor_THT_R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Footprint">MonitorPowerLocal:Resistor_THT_R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MonitorPowerReview" part="Part_R201" description=""/>
+      <property name="MPN" value="MRS25000C1500FRP00"/>
+      <property name="Design notes" value="Positive TMR 3 preload. 150 ohm, 1%, 50 ppm/K, 0.6 W at 70 C. At the 4.84 V rail corner it draws at least 31.95 mA, above the 30 mA lower load-regulation test point. Body maximum 6.5 x 2.5 mm; lead pitch selected 10.16 mm. Additional to sensing-core bleeders."/>
+      <property name="Footprint candidate" value="MonitorPowerLocal:Resistor_THT_R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"/>
+      <property name="Sheetname" value="Monitor_Power_C1"/>
+      <property name="Sheetfile" value="Monitor_Power_C1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>516a63b4-be49-49f2-b075-bf326d7c485c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R202">
+      <value>220R_1%_0.6W</value>
+      <footprint>MonitorPowerLocal:Resistor_THT_R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="MPN">MRS25000C2200FRP00</field>
+        <field name="Design notes">Standalone rail preload. 220 ohm, 1%, 50 ppm/K, 0.6 W at 70 C. Body maximum 6.5 x 2.5 mm, 0.6 mm leads; selected 10.16 mm pitch exceeds the 10 mm minimum bend spacing. This is additional to the sensing core 470 ohm bleeders. Use 220 rather than 240 ohm to remain above 20 mA at the stated low rail corner.</field>
+        <field name="Footprint candidate">MonitorPowerLocal:Resistor_THT_R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Footprint">MonitorPowerLocal:Resistor_THT_R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MonitorPowerReview" part="Part_R202" description=""/>
+      <property name="MPN" value="MRS25000C2200FRP00"/>
+      <property name="Design notes" value="Standalone rail preload. 220 ohm, 1%, 50 ppm/K, 0.6 W at 70 C. Body maximum 6.5 x 2.5 mm, 0.6 mm leads; selected 10.16 mm pitch exceeds the 10 mm minimum bend spacing. This is additional to the sensing core 470 ohm bleeders. Use 220 rather than 240 ohm to remain above 20 mA at the stated low rail corner."/>
+      <property name="Footprint candidate" value="MonitorPowerLocal:Resistor_THT_R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"/>
+      <property name="Sheetname" value="Monitor_Power_C1"/>
+      <property name="Sheetfile" value="Monitor_Power_C1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2d1a26e6-6a88-43a9-aeee-ecf464ab098b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U201">
+      <value>MCP1702_3V3</value>
+      <footprint>MonitorPowerLocal:Package_TO_SOT_THT_TO-92_Inline_Wide</footprint>
+      <fields>
+        <field name="MPN">MCP1702-3302E/TO</field>
+        <field name="Design notes">TO-92 pin numbering is 1 GND, 2 VIN, 3 VOUT. Wide 2.54 mm footprint requires forming the outer leads from nominal 1.27 mm spacing; support the body while forming. Budget 30 mA maximum total 3.3 V load. Include output, load and line regulation. Do not parallel existing ISOW7741 output.</field>
+        <field name="Footprint candidate">MonitorPowerLocal:Package_TO_SOT_THT_TO-92_Inline_Wide</field>
+        <field name="Footprint">MonitorPowerLocal:Package_TO_SOT_THT_TO-92_Inline_Wide</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MonitorPowerReview" part="Part_U201" description=""/>
+      <property name="MPN" value="MCP1702-3302E/TO"/>
+      <property name="Design notes" value="TO-92 pin numbering is 1 GND, 2 VIN, 3 VOUT. Wide 2.54 mm footprint requires forming the outer leads from nominal 1.27 mm spacing; support the body while forming. Budget 30 mA maximum total 3.3 V load. Include output, load and line regulation. Do not parallel existing ISOW7741 output."/>
+      <property name="Footprint candidate" value="MonitorPowerLocal:Package_TO_SOT_THT_TO-92_Inline_Wide"/>
+      <property name="Sheetname" value="Monitor_Power_C1"/>
+      <property name="Sheetfile" value="Monitor_Power_C1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0590ca7f-2eb6-41aa-af48-73bfe1e57ffa</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="MonitorPowerReview" part="Part_C201">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100u_16V_POLAR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MonitorPowerReview" part="Part_C202">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100u_16V_POLAR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MonitorPowerReview" part="Part_C203">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100u_16V_POLAR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MonitorPowerReview" part="Part_C204">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100u_16V_POLAR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MonitorPowerReview" part="Part_C205">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100u_16V_POLAR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MonitorPowerReview" part="Part_C206">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100n_50V_X7R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MonitorPowerReview" part="Part_C207">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100n_50V_X7R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MonitorPowerReview" part="Part_C208">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100n_50V_X7R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MonitorPowerReview" part="Part_C209">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100n_50V_X7R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MonitorPowerReview" part="Part_C210">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100n_50V_X7R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MonitorPowerReview" part="Part_F201">
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">2A_SLOW_125VDC</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MonitorPowerReview" part="Part_F202">
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">500mA_SLOW_125VDC</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MonitorPowerReview" part="Part_J201">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">SYSTEM_5V_INPUT</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MonitorPowerReview" part="Part_J202">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">LOCAL_MONITOR_POWER</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MonitorPowerReview" part="Part_PS201">
+      <fields>
+        <field name="Reference">PS</field>
+        <field name="Value">ISOLATED_REGULATED_5V_600mA</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="-VIN" type="power_in"/>
+        <pin num="2" name="+VIN" type="power_in"/>
+        <pin num="3" name="REMOTE" type="input"/>
+        <pin num="5" name="NC" type="no_connect"/>
+        <pin num="6" name="+VOUT" type="power_out"/>
+        <pin num="7" name="-VOUT" type="passive"/>
+        <pin num="8" name="NC" type="no_connect"/>
+      </pins>
+    </libpart>
+    <libpart lib="MonitorPowerReview" part="Part_PS202">
+      <fields>
+        <field name="Reference">PS</field>
+        <field name="Value">ISOLATED_REGULATED_5V_200mA</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="-VIN" type="power_in"/>
+        <pin num="2" name="+VIN" type="power_in"/>
+        <pin num="4" name="+VOUT" type="passive"/>
+        <pin num="6" name="-VOUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="MonitorPowerReview" part="Part_R201">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">150R_1%_0.6W</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MonitorPowerReview" part="Part_R202">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">220R_1%_0.6W</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MonitorPowerReview" part="Part_U201">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP1702_3V3</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VIN" type="power_in"/>
+        <pin num="3" name="VOUT" type="power_out"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="MonitorPowerReview">
+      <uri>${KIPRJMOD}/MonitorPowerReview.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/MID_CH" class="Default">
+      <node ref="C203" pin="2" pintype="passive"/>
+      <node ref="C204" pin="1" pintype="passive"/>
+      <node ref="C205" pin="2" pintype="passive"/>
+      <node ref="C208" pin="2" pintype="passive"/>
+      <node ref="C209" pin="1" pintype="passive"/>
+      <node ref="C210" pin="2" pintype="passive"/>
+      <node ref="J202" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="PS201" pin="7" pinfunction="-VOUT_7" pintype="passive"/>
+      <node ref="PS202" pin="4" pinfunction="+VOUT_4" pintype="passive"/>
+      <node ref="R201" pin="2" pintype="passive"/>
+      <node ref="R202" pin="1" pintype="passive"/>
+      <node ref="U201" pin="1" pinfunction="GND_1" pintype="power_in"/>
+    </net>
+    <net code="2" name="/N5_CH" class="Default">
+      <node ref="C204" pin="2" pintype="passive"/>
+      <node ref="C209" pin="2" pintype="passive"/>
+      <node ref="J202" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="PS202" pin="6" pinfunction="-VOUT_6" pintype="power_out"/>
+      <node ref="R202" pin="2" pintype="passive"/>
+    </net>
+    <net code="3" name="/P3V3_CH" class="Default">
+      <node ref="C205" pin="1" pintype="passive"/>
+      <node ref="C210" pin="1" pintype="passive"/>
+      <node ref="J202" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="U201" pin="3" pinfunction="VOUT_3" pintype="power_out"/>
+    </net>
+    <net code="4" name="/P5_CH" class="Default">
+      <node ref="C203" pin="1" pintype="passive"/>
+      <node ref="C208" pin="1" pintype="passive"/>
+      <node ref="J202" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="PS201" pin="6" pinfunction="+VOUT_6" pintype="power_out"/>
+      <node ref="R201" pin="1" pintype="passive"/>
+      <node ref="U201" pin="2" pinfunction="VIN_2" pintype="power_in"/>
+    </net>
+    <net code="5" name="/SYS5V" class="Default">
+      <node ref="F201" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="F202" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J201" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="6" name="/SYS5V_NEG_FUSED" class="Default">
+      <node ref="C202" pin="1" pintype="passive"/>
+      <node ref="C207" pin="1" pintype="passive"/>
+      <node ref="F202" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="PS202" pin="2" pinfunction="+VIN_2" pintype="power_in"/>
+    </net>
+    <net code="7" name="/SYS5V_POS_FUSED" class="Default">
+      <node ref="C201" pin="1" pintype="passive"/>
+      <node ref="C206" pin="1" pintype="passive"/>
+      <node ref="F201" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="PS201" pin="2" pinfunction="+VIN_2" pintype="power_in"/>
+    </net>
+    <net code="8" name="/SYS_GND" class="Default">
+      <node ref="C201" pin="2" pintype="passive"/>
+      <node ref="C202" pin="2" pintype="passive"/>
+      <node ref="C206" pin="2" pintype="passive"/>
+      <node ref="C207" pin="2" pintype="passive"/>
+      <node ref="J201" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="PS201" pin="1" pinfunction="-VIN_1" pintype="power_in"/>
+      <node ref="PS202" pin="1" pinfunction="-VIN_1" pintype="power_in"/>
+    </net>
+    <net code="9" name="unconnected-(PS201-NC-Pad5)" class="Default">
+      <node ref="PS201" pin="5" pinfunction="NC_5" pintype="no_connect"/>
+    </net>
+    <net code="10" name="unconnected-(PS201-NC-Pad8)" class="Default">
+      <node ref="PS201" pin="8" pinfunction="NC_8" pintype="no_connect"/>
+    </net>
+    <net code="11" name="unconnected-(PS201-REMOTE-Pad3)" class="Default">
+      <node ref="PS201" pin="3" pinfunction="REMOTE_3" pintype="input+no_connect"/>
+    </net>
+  </nets>
+</export>

@@ -1,0 +1,137 @@
+(footprint "L_BOURNS"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Bourns SRR1280; primary datasheet land pattern; draft")
+	(property "Reference" "L1"
+		(at 1.5 -6.7 0)
+		(layer "F.SilkS")
+		(uuid "adc12ae1-c9e2-40c0-ae67-95b3bf65f016")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "Value" "1mH SRR1280-102K"
+		(at 0 7 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "79c82c14-411c-4e7c-90d2-dff16421ac08")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/SRR1280.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "62d76704-0f11-43af-a669-ac3f83936da4")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "1mH10%;DCR1.7ohm max;Irms0.68A;Isat0.80A typ at25%Ldrop"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4a09617a-a9ef-4a28-be6a-06e4fd663ffe")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Function_Name" "LM"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "4360a95f-2dd2-497f-9a80-7028b14cf133")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "SRR1280-102K"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "647f031e-0f55-419d-b49f-d72a6def67cd")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Manufacturer" "Bourns"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "c2183bf0-38cf-4ee4-988d-ad8770ec31a9")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Rating" "1mH10%;DCR1.7ohm max;Irms0.68A;Isat0.80A typ at25%Ldrop"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "a49caff1-fefd-4450-aa4f-79320fdc46c6")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -6.7 -6.7)
+		(end 6.7 6.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "303807a9-9c21-4641-a4ef-42fea77b7b36")
+	)
+	(fp_rect
+		(start -6.25 -6.25)
+		(end 6.25 6.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "7755d851-8ebc-4264-a810-493142acf5f1")
+	)
+	(pad "1" smd roundrect
+		(at -4.85 0)
+		(size 2.9 5.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.1)
+		(clearance 0)
+		(uuid "e2c804ef-92fc-4b60-9c25-b4b3cdfba8e6")
+	)
+	(pad "2" smd roundrect
+		(at 4.85 0)
+		(size 2.9 5.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.1)
+		(clearance 0)
+		(uuid "61ccf0bf-e5d3-4ddd-a734-33dfea446803")
+	)
+	(embedded_fonts no)
+)

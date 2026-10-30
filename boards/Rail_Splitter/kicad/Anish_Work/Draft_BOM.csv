@@ -1,0 +1,13 @@
+Reference,Value,Footprint,Manufacturer,MPN,Rating,Dielectric,Description,Datasheet
+J1,80 V INPUT,RailSplitterLocal:J2,,,,,"Pin1 HV_TOP; pin2 HV_BOTTOM. Original 691211720002 footprint geometry retained: 5.00mm pitch, 1.50mm drill. Exact purchased connector MPN/rating/mating orientation still require confirmation.",
+U1,OPA455IDDA,RailSplitterLocal:OPA455_DDA0008J,Texas Instruments,OPA455IDDA,,,Unity-gain midpoint buffer; exposed pad9=HV_BOTTOM,https://www.ti.com/lit/ds/symlink/opa455.pdf
+R1,100k 0.1%,RailSplitterLocal:R0805,,,0.125W minimum; 100V minimum working voltage; <=25ppm/K preferred,,Matched-divider procurement requirement; exact MPN pending,
+R2,100k 0.1%,RailSplitterLocal:R0805,,,0.125W minimum; 100V minimum working voltage; <=25ppm/K preferred,,Matched-divider procurement requirement; exact MPN pending,
+R3,49R9 1%,RailSplitterLocal:R0805,,,0.125W minimum,,Provisional output isolation resistor; feedback taken BEFORE resistor; stability unvalidated,
+C1,100n 100V,RailSplitterLocal:C0805,TDK,C2012X7R2A104K125AA,,X7R,C6 direct full-bus local bypass; C1/C2 half-rail bypasses,
+C2,100n 100V,RailSplitterLocal:C0805,TDK,C2012X7R2A104K125AA,,X7R,C6 direct full-bus local bypass; C1/C2 half-rail bypasses,
+C6,100n 100V,RailSplitterLocal:C0805,TDK,C2012X7R2A104K125AA,,X7R,C6 direct full-bus local bypass; C1/C2 half-rail bypasses,
+C3,10u 100V,RailSplitterLocal:C1210,Murata,GRM32EC72A106KE05K,,X7S,Nominal value only; DC bias reduces capacitance; verify effective C and availability before release,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32EC72A106KE05-01A.pdf
+C4,10u 100V,RailSplitterLocal:C1210,Murata,GRM32EC72A106KE05K,,X7S,Nominal value only; DC bias reduces capacitance; verify effective C and availability before release,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32EC72A106KE05-01A.pdf
+C5,30p 100V,RailSplitterLocal:C0603,,,,C0G/NP0,E/D filtering; no DC external drive; exact MPN pending,
+J2,+40 / MID / -40,RailSplitterLocal:J3,,,,,"1 HV_TOP; 2 MID; 3 HV_BOTTOM. Original 691214110003 footprint geometry retained: 3.50mm pitch, 1.30mm drill. Exact purchased connector MPN/rating/mating orientation still require confirmation.",

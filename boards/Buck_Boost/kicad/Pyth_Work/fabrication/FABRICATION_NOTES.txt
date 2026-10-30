@@ -1,0 +1,17 @@
+BuckBoost Rev B - revised prototype fabrication set
+Use all Rev B layers together. Do not mix with earlier exports.
+2-layer FR-4, approximately 1 oz copper each side; ENIG finish.
+Original thin design thickness retained: 0.4112 mm.
+Design stackup: 0.32 mm core + 0.0356 mm copper per side + 0.01 mm mask per side.
+JLCPCB nominal 0.4 mm option is the closest listed thickness; confirm stackup and tolerance.
+Do not substitute a thicker board. HASL is not supported by JLCPCB at 0.4 mm.
+Outline centerline: 58.928 x 17.018 mm; job size includes outline pen width.
+Copper clearance 0.20 mm; copper-to-edge clearance 0.50 mm.
+17 plated vias: 0.60 mm copper diameter, 0.30 mm drill, tented both sides.
+4 plated terminal holes: 1.50 mm drill. NPTH file intentionally empty.
+No via-in-pad filling or capping requested.
+Minimum silk stroke 0.16 mm; text height 1.0 mm.
+U1 signal pads 0.25 x 0.60 mm on 0.50 mm pitch; minimum mask web approximately 0.1484 mm.
+Gerbers, drills and placement share the lower-left outline-corner origin.
+Local DRC/ERC checks passed; JLCPCB online checker has not been rerun for this ZIP.
+See full-project README.md for BOM, assembly guidance and prototype validation.

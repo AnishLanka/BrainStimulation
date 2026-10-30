@@ -1,0 +1,27 @@
+{
+  "board": "C:\\Users\\peter\\Documents\\Codex\\2026-10-17\\this\\outputs\\StimPrototype_Hardware_Revision_C\\monitor_power\\Monitor_Power_C1.kicad_pcb",
+  "sha256": "6df11dc536e993520866675ea80c10f3ac029d781b8046ce19df095916471e14",
+  "vias": 6,
+  "numbered_pads": 48,
+  "board_thickness_mm": 0.41116,
+  "min_silk_stroke_mm": 0.16,
+  "min_text_height_mm": 1.0,
+  "min_silk_mask_gap_mm": 0.21875,
+  "min_silk_drill_gap_mm": 0.350036,
+  "min_silk_annulus_gap_mm": 0.175048,
+  "min_via_pad_copper_gap_mm": 0.450072,
+  "min_via_drill_mask_gap_mm": 0.575041,
+  "min_via_copper_mask_gap_mm": 0.400084,
+  "min_mask_opening_gap_mm": 0.300016,
+  "min_mask_foreign_copper_gap_mm": 0.249571,
+  "violations": {
+    "silk_stroke_below_015": 0,
+    "text_height_below_1": 0,
+    "silk_mask_below_015": 0,
+    "silk_hole_below_015": 0,
+    "via_drill_mask_overlap": 0,
+    "via_copper_pad_overlap": 0,
+    "foreign_copper_mask_gap_below_009": 0,
+    "mask_opening_gap_below_013": 0
+  }
+}

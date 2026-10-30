@@ -1,0 +1,19 @@
+BARE-BOARD ENGINEERING BENCH PROTOTYPE: 79.7 V boost
+
+Upload outputs/Boost_79V7_Prototype_JLCPCB.zip as one board design. The ZIP contains only the
+7 manufacturing Gerber layers, PTH/NPTH drills and the Gerber job file at its root.
+Do not combine it with another board's files. Placement.csv and Draft_BOM.csv are
+separate assembly references; this is not a turnkey assembly order package.
+
+JLCPCB order choices:2 layers; nominal0.4 mm FR-4 (original native design is
+0.41116 mm);1 oz outer copper; green solder mask; white silkscreen; ENIG finish;
+tented vias both sides. Outline centerlines are 54.229 x 26.543 mm. Confirm the
+preview's layer registration and finished board dimensions before submitting.
+Use the fabricator's available0.4 mm process/tolerance; do not silently switch
+to1.6 mm. The native files preserve the original thin-board value.
+
+Fabrication_Manifest.json records the native PCB and exact ZIP/member hashes.
+PCB_DRC.json and PCB_Validation.json document the final file checks. No order
+has been placed. These files support a bare-board bench prototype; they do not
+establish powered performance or end-product qualification. Complete BOM,
+connector mating and assembly choices before purchasing components.

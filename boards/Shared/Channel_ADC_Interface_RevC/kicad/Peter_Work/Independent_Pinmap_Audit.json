@@ -1,0 +1,12 @@
+{
+  "board": "outputs\\StimPrototype_Hardware_Revision_C\\adc_interface\\Channel_ADC_Interface_REVIEW_ONLY.kicad_pcb",
+  "source_sha256": "ea0d57f339f1cd475ae92e13e39ccc9eb720db8cb12230adc3a53302b515357b",
+  "board_sha256": "856394338fb938e03f5373823c8fe32235f669e620815f5b782545d33732f6b4",
+  "parts": 69,
+  "connected_source_pins": 226,
+  "intentional_NC_pins": 29,
+  "mismatches": [],
+  "extra_numbered_PCB_pads": [],
+  "extra_connected_PCB_pads": [],
+  "scope": "Source JSON -> exported native schematic netlist -> native PCB net assignments; physical routes separately checked with DRC."
+}

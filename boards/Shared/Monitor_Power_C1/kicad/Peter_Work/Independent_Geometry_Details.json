@@ -1,0 +1,1275 @@
+{
+  "summary": {
+    "board": "C:\\Users\\peter\\Documents\\Codex\\2026-10-17\\this\\outputs\\StimPrototype_Hardware_Revision_C\\monitor_power\\Monitor_Power_C1.kicad_pcb",
+    "sha256": "6df11dc536e993520866675ea80c10f3ac029d781b8046ce19df095916471e14",
+    "vias": 6,
+    "numbered_pads": 48,
+    "board_thickness_mm": 0.41116,
+    "min_silk_stroke_mm": 0.16,
+    "min_text_height_mm": 1.0,
+    "min_silk_mask_gap_mm": 0.21875,
+    "min_silk_drill_gap_mm": 0.350036,
+    "min_silk_annulus_gap_mm": 0.175048,
+    "min_via_pad_copper_gap_mm": 0.450072,
+    "min_via_drill_mask_gap_mm": 0.575041,
+    "min_via_copper_mask_gap_mm": 0.400084,
+    "min_mask_opening_gap_mm": 0.300016,
+    "min_mask_foreign_copper_gap_mm": 0.249571,
+    "violations": {
+      "silk_stroke_below_015": 0,
+      "text_height_below_1": 0,
+      "silk_mask_below_015": 0,
+      "silk_hole_below_015": 0,
+      "via_drill_mask_overlap": 0,
+      "via_copper_pad_overlap": 0,
+      "foreign_copper_mask_gap_below_009": 0,
+      "mask_opening_gap_below_013": 0
+    }
+  },
+  "vias_near_pads": [
+    {
+      "via": [
+        78.18,
+        23.5
+      ],
+      "pad": "C210.1",
+      "net": "/P3V3_CH",
+      "copper_gap": 0.450072,
+      "drill_to_copper_gap": 0.625028,
+      "drill_to_mask_gap": 0.575041,
+      "via_copper_to_mask_gap": 0.400084
+    }
+  ],
+  "mask_near_foreign_copper": [
+    {
+      "pad": "F202.1",
+      "zone": "/SYS_GND",
+      "gap": 0.249571
+    },
+    {
+      "pad": "F202.2",
+      "zone": "/SYS_GND",
+      "gap": 0.249571
+    },
+    {
+      "pad": "F201.1",
+      "zone": "/SYS_GND",
+      "gap": 0.249571
+    },
+    {
+      "pad": "F201.2",
+      "zone": "/SYS_GND",
+      "gap": 0.249571
+    },
+    {
+      "pad": "J202.1",
+      "zone": "/MID_CH",
+      "gap": 0.249662
+    },
+    {
+      "pad": "J202.3",
+      "zone": "/MID_CH",
+      "gap": 0.249662
+    },
+    {
+      "pad": "J202.4",
+      "zone": "/MID_CH",
+      "gap": 0.249662
+    },
+    {
+      "pad": "PS201.5",
+      "zone": "/MID_CH",
+      "gap": 0.249662
+    },
+    {
+      "pad": "PS201.6",
+      "zone": "/MID_CH",
+      "gap": 0.249662
+    },
+    {
+      "pad": "PS201.8",
+      "zone": "/MID_CH",
+      "gap": 0.249662
+    },
+    {
+      "pad": "C210.1",
+      "zone": "/MID_CH",
+      "gap": 0.249662
+    },
+    {
+      "pad": "C205.1",
+      "zone": "/MID_CH",
+      "gap": 0.249662
+    },
+    {
+      "pad": "C208.1",
+      "zone": "/MID_CH",
+      "gap": 0.249662
+    },
+    {
+      "pad": "C203.1",
+      "zone": "/MID_CH",
+      "gap": 0.249662
+    },
+    {
+      "pad": "PS201.2",
+      "zone": "/SYS_GND",
+      "gap": 0.249662
+    },
+    {
+      "pad": "C206.1",
+      "zone": "/SYS_GND",
+      "gap": 0.249662
+    },
+    {
+      "pad": "C202.1",
+      "zone": "/SYS_GND",
+      "gap": 0.249662
+    },
+    {
+      "pad": "C201.1",
+      "zone": "/SYS_GND",
+      "gap": 0.249662
+    },
+    {
+      "pad": "C207.1",
+      "zone": "/SYS_GND",
+      "gap": 0.249662
+    },
+    {
+      "pad": "J201.1",
+      "zone": "/SYS_GND",
+      "gap": 0.249662
+    },
+    {
+      "pad": "R201.1",
+      "zone": "/MID_CH",
+      "gap": 0.249754
+    },
+    {
+      "pad": "R202.2",
+      "zone": "/MID_CH",
+      "gap": 0.249754
+    },
+    {
+      "pad": "C204.2",
+      "zone": "/MID_CH",
+      "gap": 0.249754
+    },
+    {
+      "pad": "C209.2",
+      "zone": "/MID_CH",
+      "gap": 0.250487
+    },
+    {
+      "pad": "PS202.6",
+      "zone": "/MID_CH",
+      "gap": 0.250578
+    },
+    {
+      "pad": "U201.2",
+      "zone": "/MID_CH",
+      "gap": 0.250578
+    },
+    {
+      "pad": "U201.3",
+      "zone": "/MID_CH",
+      "gap": 0.250578
+    },
+    {
+      "pad": "PS202.2",
+      "zone": "/SYS_GND",
+      "gap": 0.250578
+    }
+  ],
+  "mask_opening_gaps": [
+    {
+      "pad1": "C202.1",
+      "pad2": "C202.2",
+      "gap": 0.300016,
+      "samenet": false
+    },
+    {
+      "pad1": "C201.1",
+      "pad2": "C201.2",
+      "gap": 0.300016,
+      "samenet": false
+    },
+    {
+      "pad1": "C204.1",
+      "pad2": "C204.2",
+      "gap": 0.300016,
+      "samenet": false
+    },
+    {
+      "pad1": "C205.1",
+      "pad2": "C205.2",
+      "gap": 0.300016,
+      "samenet": false
+    },
+    {
+      "pad1": "C203.1",
+      "pad2": "C203.2",
+      "gap": 0.300016,
+      "samenet": false
+    }
+  ],
+  "silk": [
+    {
+      "ref": "J202",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        82.09,
+        11.94
+      ]
+    },
+    {
+      "ref": "J202",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        82.09,
+        27.94
+      ]
+    },
+    {
+      "ref": "J202",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        86.7,
+        11.14
+      ]
+    },
+    {
+      "ref": "J202",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        87.0,
+        11.74
+      ]
+    },
+    {
+      "ref": "J202",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        87.3,
+        11.14
+      ]
+    },
+    {
+      "ref": "J202",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        89.11,
+        11.94
+      ]
+    },
+    {
+      "ref": "J202",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        89.11,
+        13.14
+      ]
+    },
+    {
+      "ref": "J202",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        89.11,
+        26.74
+      ]
+    },
+    {
+      "ref": "J202",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        89.11,
+        27.94
+      ]
+    },
+    {
+      "ref": "J202",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        90.81,
+        13.14
+      ]
+    },
+    {
+      "ref": "J202",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        90.81,
+        26.74
+      ]
+    },
+    {
+      "ref": "J202",
+      "type": "text",
+      "text": "J202",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        94.0,
+        19.0
+      ]
+    },
+    {
+      "ref": "R201",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        60.93,
+        32.75
+      ]
+    },
+    {
+      "ref": "R201",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        60.93,
+        35.25
+      ]
+    },
+    {
+      "ref": "R201",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        67.23,
+        32.75
+      ]
+    },
+    {
+      "ref": "R201",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        67.23,
+        35.25
+      ]
+    },
+    {
+      "ref": "R201",
+      "type": "text",
+      "text": "R201",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        64.0,
+        31.0
+      ]
+    },
+    {
+      "ref": "PS201",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        33.85,
+        24.35
+      ]
+    },
+    {
+      "ref": "PS201",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        34.5,
+        28.0
+      ]
+    },
+    {
+      "ref": "PS201",
+      "type": "text",
+      "text": "PS201",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        44.0,
+        36.0
+      ]
+    },
+    {
+      "ref": "PS202",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        33.33,
+        43.0
+      ]
+    },
+    {
+      "ref": "PS202",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        33.58,
+        41.38
+      ]
+    },
+    {
+      "ref": "PS202",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        33.58,
+        49.24
+      ]
+    },
+    {
+      "ref": "PS202",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        50.82,
+        41.38
+      ]
+    },
+    {
+      "ref": "PS202",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        50.82,
+        49.24
+      ]
+    },
+    {
+      "ref": "PS202",
+      "type": "text",
+      "text": "PS202",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        39.0,
+        51.0
+      ]
+    },
+    {
+      "ref": "C206",
+      "type": "text",
+      "text": "C206",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        37.0,
+        19.0
+      ]
+    },
+    {
+      "ref": "R202",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        59.93,
+        38.75
+      ]
+    },
+    {
+      "ref": "R202",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        59.93,
+        41.25
+      ]
+    },
+    {
+      "ref": "R202",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        66.23,
+        38.75
+      ]
+    },
+    {
+      "ref": "R202",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        66.23,
+        41.25
+      ]
+    },
+    {
+      "ref": "R202",
+      "type": "text",
+      "text": "R202",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        63.0,
+        37.0
+      ]
+    },
+    {
+      "ref": "C210",
+      "type": "text",
+      "text": "C210",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        79.0,
+        27.0
+      ]
+    },
+    {
+      "ref": "C202",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        26.0,
+        34.5
+      ]
+    },
+    {
+      "ref": "C202",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        26.4,
+        34.1
+      ]
+    },
+    {
+      "ref": "C202",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        30.0,
+        35.5
+      ]
+    },
+    {
+      "ref": "C202",
+      "type": "text",
+      "text": "C202",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        29.0,
+        31.0
+      ]
+    },
+    {
+      "ref": "U201",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        75.74,
+        19.85
+      ]
+    },
+    {
+      "ref": "U201",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        77.54,
+        18.0
+      ]
+    },
+    {
+      "ref": "U201",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        77.54,
+        18.0
+      ]
+    },
+    {
+      "ref": "U201",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        77.54,
+        18.0
+      ]
+    },
+    {
+      "ref": "U201",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        77.54,
+        18.0
+      ]
+    },
+    {
+      "ref": "U201",
+      "type": "text",
+      "text": "U201",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        77.0,
+        14.0
+      ]
+    },
+    {
+      "ref": "C201",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        28.0,
+        17.0
+      ]
+    },
+    {
+      "ref": "C201",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        28.4,
+        16.6
+      ]
+    },
+    {
+      "ref": "C201",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        32.0,
+        18.0
+      ]
+    },
+    {
+      "ref": "C201",
+      "type": "text",
+      "text": "C201",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        31.0,
+        22.0
+      ]
+    },
+    {
+      "ref": "C204",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        54.0,
+        49.0
+      ]
+    },
+    {
+      "ref": "C204",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        54.4,
+        48.6
+      ]
+    },
+    {
+      "ref": "C204",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        58.0,
+        50.0
+      ]
+    },
+    {
+      "ref": "C204",
+      "type": "text",
+      "text": "C204",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        57.0,
+        46.0
+      ]
+    },
+    {
+      "ref": "C209",
+      "type": "text",
+      "text": "C209",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        49.0,
+        54.0
+      ]
+    },
+    {
+      "ref": "F202",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        20.5,
+        39.05
+      ]
+    },
+    {
+      "ref": "F202",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        20.5,
+        42.95
+      ]
+    },
+    {
+      "ref": "F202",
+      "type": "text",
+      "text": "F202",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        24.0,
+        45.0
+      ]
+    },
+    {
+      "ref": "C205",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        78.0,
+        32.0
+      ]
+    },
+    {
+      "ref": "C205",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        78.4,
+        31.6
+      ]
+    },
+    {
+      "ref": "C205",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        82.0,
+        33.0
+      ]
+    },
+    {
+      "ref": "C205",
+      "type": "text",
+      "text": "C205",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        81.0,
+        37.0
+      ]
+    },
+    {
+      "ref": "C207",
+      "type": "text",
+      "text": "C207",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        35.0,
+        37.5
+      ]
+    },
+    {
+      "ref": "C208",
+      "type": "text",
+      "text": "C208",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        54.0,
+        20.8
+      ]
+    },
+    {
+      "ref": "J201",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        9.14,
+        11.7
+      ]
+    },
+    {
+      "ref": "J201",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        9.14,
+        12.3
+      ]
+    },
+    {
+      "ref": "J201",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        9.74,
+        12.0
+      ]
+    },
+    {
+      "ref": "J201",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        9.94,
+        9.89
+      ]
+    },
+    {
+      "ref": "J201",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        9.94,
+        16.91
+      ]
+    },
+    {
+      "ref": "J201",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        11.14,
+        8.19
+      ]
+    },
+    {
+      "ref": "J201",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        11.14,
+        9.89
+      ]
+    },
+    {
+      "ref": "J201",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        16.82,
+        8.19
+      ]
+    },
+    {
+      "ref": "J201",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        16.82,
+        9.89
+      ]
+    },
+    {
+      "ref": "J201",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        18.02,
+        9.89
+      ]
+    },
+    {
+      "ref": "J201",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        18.02,
+        16.91
+      ]
+    },
+    {
+      "ref": "J201",
+      "type": "text",
+      "text": "J201",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        12.0,
+        21.0
+      ]
+    },
+    {
+      "ref": "C203",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        56.0,
+        17.0
+      ]
+    },
+    {
+      "ref": "C203",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        56.4,
+        16.6
+      ]
+    },
+    {
+      "ref": "C203",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        60.0,
+        18.0
+      ]
+    },
+    {
+      "ref": "C203",
+      "type": "text",
+      "text": "C203",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        59.0,
+        14.0
+      ]
+    },
+    {
+      "ref": "F201",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        20.5,
+        12.05
+      ]
+    },
+    {
+      "ref": "F201",
+      "type": "graphic",
+      "stroke": 0.16,
+      "xy": [
+        20.5,
+        15.95
+      ]
+    },
+    {
+      "ref": "F201",
+      "type": "text",
+      "text": "F201",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        24.0,
+        10.0
+      ]
+    },
+    {
+      "ref": "board",
+      "type": "text",
+      "text": "+  1     2  -",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        14.0,
+        4.0
+      ]
+    },
+    {
+      "ref": "board",
+      "type": "text",
+      "text": "2A",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        24.0,
+        18.0
+      ]
+    },
+    {
+      "ref": "board",
+      "type": "text",
+      "text": "0.5A",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        24.0,
+        48.0
+      ]
+    },
+    {
+      "ref": "board",
+      "type": "text",
+      "text": "TMR3 5V / 600mA",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        49.0,
+        8.0
+      ]
+    },
+    {
+      "ref": "board",
+      "type": "text",
+      "text": "TMR1 -5V / 200mA",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        49.0,
+        57.0
+      ]
+    },
+    {
+      "ref": "board",
+      "type": "text",
+      "text": "DUMMY-LOAD BENCH PROTOTYPE",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        72.0,
+        54.0
+      ]
+    },
+    {
+      "ref": "board",
+      "type": "text",
+      "text": "3V3: 30mA MAX ALLOCATION",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        76.0,
+        43.5
+      ]
+    },
+    {
+      "ref": "board",
+      "type": "text",
+      "text": "J202: 1 +5 / 2 MID / 3 -5 / 4 +3V3",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        77.0,
+        57.0
+      ]
+    },
+    {
+      "ref": "board",
+      "type": "text",
+      "text": "SYS 5V IN",
+      "height": 1.1,
+      "stroke": 0.16,
+      "xy": [
+        13.0,
+        24.0
+      ]
+    },
+    {
+      "ref": "board",
+      "type": "text",
+      "text": "MID IS NOT SYS GND",
+      "height": 1.3,
+      "stroke": 0.16,
+      "xy": [
+        76.0,
+        47.0
+      ]
+    },
+    {
+      "ref": "board",
+      "type": "text",
+      "text": "MONITOR POWER C1",
+      "height": 1.4,
+      "stroke": 0.16,
+      "xy": [
+        20.0,
+        54.0
+      ]
+    },
+    {
+      "ref": "board",
+      "type": "text",
+      "text": "NO PATIENT-USE QUALIFICATION",
+      "height": 1.0,
+      "stroke": 0.16,
+      "xy": [
+        50.0,
+        57.0
+      ]
+    }
+  ],
+  "silk_mask": [
+    {
+      "silk": "U201 shape [77.54, 18.0]",
+      "pad": "U201.1",
+      "gap": 0.21875
+    },
+    {
+      "silk": "PS201 shape [34.5, 28.0]",
+      "pad": "PS201.1",
+      "gap": 0.220031
+    },
+    {
+      "silk": "U201 shape [77.54, 18.0]",
+      "pad": "U201.3",
+      "gap": 0.232787
+    },
+    {
+      "silk": "U201 shape [77.54, 18.0]",
+      "pad": "U201.1",
+      "gap": 0.242614
+    },
+    {
+      "silk": "F202 shape [20.5, 39.05]",
+      "pad": "F202.1",
+      "gap": 0.245055
+    },
+    {
+      "silk": "F202 shape [20.5, 39.05]",
+      "pad": "F202.2",
+      "gap": 0.245055
+    },
+    {
+      "silk": "F202 shape [20.5, 42.95]",
+      "pad": "F202.1",
+      "gap": 0.245055
+    },
+    {
+      "silk": "F202 shape [20.5, 42.95]",
+      "pad": "F202.2",
+      "gap": 0.245055
+    },
+    {
+      "silk": "F201 shape [20.5, 12.05]",
+      "pad": "F201.1",
+      "gap": 0.245055
+    },
+    {
+      "silk": "F201 shape [20.5, 12.05]",
+      "pad": "F201.2",
+      "gap": 0.245055
+    },
+    {
+      "silk": "F201 shape [20.5, 15.95]",
+      "pad": "F201.1",
+      "gap": 0.245055
+    },
+    {
+      "silk": "F201 shape [20.5, 15.95]",
+      "pad": "F201.2",
+      "gap": 0.245055
+    },
+    {
+      "silk": "U201 shape [77.54, 18.0]",
+      "pad": "U201.3",
+      "gap": 0.262572
+    }
+  ],
+  "silk_holes": [
+    {
+      "silk": "PS202 shape [33.58, 49.24]",
+      "hole": "via [33.0, 47.0]",
+      "drillgap": 0.350036,
+      "annulusgap": 0.175048
+    },
+    {
+      "silk": "U201 shape [77.54, 18.0]",
+      "hole": "U201.1",
+      "drillgap": 0.633239,
+      "annulusgap": 0.268737
+    },
+    {
+      "silk": "U201 shape [77.54, 18.0]",
+      "hole": "U201.3",
+      "drillgap": 0.633239,
+      "annulusgap": 0.282775
+    },
+    {
+      "silk": "U201 shape [77.54, 18.0]",
+      "hole": "U201.1",
+      "drillgap": 0.662597,
+      "annulusgap": 0.292601
+    },
+    {
+      "silk": "U201 shape [77.54, 18.0]",
+      "hole": "U201.3",
+      "drillgap": 0.662597,
+      "annulusgap": 0.312561
+    },
+    {
+      "silk": "PS201 shape [34.5, 28.0]",
+      "hole": "PS201.1",
+      "drillgap": 0.670043,
+      "annulusgap": 0.270019
+    }
+  ],
+  "gerber_metadata": [
+    {
+      "file": "Monitor_Power_C1-B_Cu.gbl",
+      "function": "Copper,L2,Bot",
+      "circle_aperture_diameters_mm": [
+        0.45,
+        0.6,
+        0.65,
+        1.5,
+        1.6,
+        2.7
+      ],
+      "sha256": "628fbbfedc8c87119602f08aaef8ef926f4e6b20eecb3d44582a36d09a6569b0"
+    },
+    {
+      "file": "Monitor_Power_C1-B_Mask.gbs",
+      "function": "Soldermask,Bot",
+      "circle_aperture_diameters_mm": [],
+      "sha256": "a9bcc67692e843393c0cbd1eece1af589146a9b4ac7eba65db25ec30ee2461ec"
+    },
+    {
+      "file": "Monitor_Power_C1-B_Silkscreen.gbo",
+      "function": "Legend,Bot",
+      "circle_aperture_diameters_mm": [
+        0.16
+      ],
+      "sha256": "2c843e788a77621d1ec96bd70a6696b80dc5a737f0539af58fa95ab89a2a1f72"
+    },
+    {
+      "file": "Monitor_Power_C1-F_Cu.gtl",
+      "function": "Copper,L1,Top",
+      "circle_aperture_diameters_mm": [
+        0.35,
+        0.45,
+        0.6,
+        0.65,
+        0.8,
+        1.0,
+        1.2,
+        1.5,
+        1.6,
+        2.0,
+        2.7
+      ],
+      "sha256": "3ef8373a07bbba4929e31d1650ce4d355ddb174afdabf0cef6a96c758d25cbfb"
+    },
+    {
+      "file": "Monitor_Power_C1-F_Mask.gts",
+      "function": "Soldermask,Top",
+      "circle_aperture_diameters_mm": [],
+      "sha256": "db16fb533856c52bf0c52a28d3c4ffa40e8d8db48a78c9cf7331f0cb07e07143"
+    },
+    {
+      "file": "Monitor_Power_C1-F_Silkscreen.gto",
+      "function": "Legend,Top",
+      "circle_aperture_diameters_mm": [
+        0.16
+      ],
+      "sha256": "2ea3a74b63bc1f41de48a751f02cfbd6ae52004cfa5fcecf388df3fca69ba0ae"
+    }
+  ]
+}

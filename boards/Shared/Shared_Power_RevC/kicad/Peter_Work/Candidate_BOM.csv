@@ -1,0 +1,41 @@
+﻿Reference,Value,MPN,Footprint,Note,Source,DNP
+J1,5 V INPUT,B2P-VH,PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical,"Regulated nominal5V, never above5.25V; module pins>=4.5V after fuse/cable drops. External8A current-limited source;16AWG harness,VHR-2N housing,SVH-41T-P1.1 contacts. Source capacity is not a measured PCB rating.",https://www.jst-mfg.com/product/index.php?lang=2&series=262,False
+F0,T8A,3403.0175.11,PowerLocal:Fuse_Schurter_UMT250,Main input time-lag fuse; branch allocation applies; source current limit required.,https://www.schurter.com/en/datasheet/typ_UMT_250.pdf,False
+F6,T2.5A,3403.0170.11,PowerLocal:Fuse_Schurter_UMT250,"Input branch fuse,2A maximum3.3V bank allocation; startup coordination must be measured.",https://www.schurter.com/en/datasheet/typ_UMT_250.pdf,False
+U1,TPS63802DLAR,TPS63802DLAR,PowerLocal:Texas_DLA0010A_TPS63802,ExactTI DLA0010A land pattern; no invented exposed pad.,https://www.ti.com/lit/ds/symlink/tps63802.pdf,False
+L1,0.47uH,XFL4015-471MEC,PowerLocal:L_Coilcraft_XFL4015,"Exact manufacturer lands .98x3.4mm,2.37mm center pitch.",https://www.ti.com/lit/ds/symlink/tps63802.pdf,False
+C11,22u 16V,GRM31CR61C226KE15L,PowerLocal:C_1206_3216Metric,Input; verify >=5uF effective at5.25V and temperature.,https://www.ti.com/lit/pdf/tidrmp4,False
+C12,22u 16V,GRM31CR61C226KE15L,PowerLocal:C_1206_3216Metric,Two parallel output caps; acceptance >=14uF effective total at 3.3V.,https://www.ti.com/lit/pdf/tidrmp4,False
+C13,22u 16V,GRM31CR61C226KE15L,PowerLocal:C_1206_3216Metric,Two parallel output caps; acceptance >=14uF effective total at 3.3V.,https://www.ti.com/lit/pdf/tidrmp4,False
+R11,280k 0.1%,TNPW0603280KBEEA,PowerLocal:R_0603_1608Metric,"Within manufacturer0603 range<=332k; .5*(1+280/49.9)=3.30561V nominal. 25ppm/K,standardEA packaging.",https://www.vishay.com/docs/28758/tnpw_e3.pdf,False
+R12,49.9k 0.1%,TNPW060349K9BEEA,PowerLocal:R_0603_1608Metric,"Low-side divider<100k perTI;25ppm/K,standardEA packaging.",https://www.vishay.com/docs/28758/tnpw_e3.pdf,False
+R13,100k 1%,CRCW0603100KFKEA,PowerLocal:R_0603_1608Metric,PG pullup; output indicator only.,https://www.ti.com/lit/ds/symlink/tps63802.pdf,False
+J2,3.3 V BANK A,B2P-VH,PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical,"Dedicated dual-channel SignalGen supply; never parallel with other bank. Bank A design target2A, subject to source/thermal budget.",,False
+F7,T2.5A,3403.0170.11,PowerLocal:Fuse_Schurter_UMT250,"Input branch fuse,2A maximum3.3V bank allocation; startup coordination must be measured.",https://www.schurter.com/en/datasheet/typ_UMT_250.pdf,False
+U2,TPS63802DLAR,TPS63802DLAR,PowerLocal:Texas_DLA0010A_TPS63802,ExactTI DLA0010A land pattern; no invented exposed pad.,https://www.ti.com/lit/ds/symlink/tps63802.pdf,False
+L2,0.47uH,XFL4015-471MEC,PowerLocal:L_Coilcraft_XFL4015,"Exact manufacturer lands .98x3.4mm,2.37mm center pitch.",https://www.ti.com/lit/ds/symlink/tps63802.pdf,False
+C21,22u 16V,GRM31CR61C226KE15L,PowerLocal:C_1206_3216Metric,Input; verify >=5uF effective at5.25V and temperature.,https://www.ti.com/lit/pdf/tidrmp4,False
+C22,22u 16V,GRM31CR61C226KE15L,PowerLocal:C_1206_3216Metric,Two parallel output caps; acceptance >=14uF effective total at 3.3V.,https://www.ti.com/lit/pdf/tidrmp4,False
+C23,22u 16V,GRM31CR61C226KE15L,PowerLocal:C_1206_3216Metric,Two parallel output caps; acceptance >=14uF effective total at 3.3V.,https://www.ti.com/lit/pdf/tidrmp4,False
+R21,280k 0.1%,TNPW0603280KBEEA,PowerLocal:R_0603_1608Metric,"Within manufacturer0603 range<=332k; .5*(1+280/49.9)=3.30561V nominal. 25ppm/K,standardEA packaging.",https://www.vishay.com/docs/28758/tnpw_e3.pdf,False
+R22,49.9k 0.1%,TNPW060349K9BEEA,PowerLocal:R_0603_1608Metric,"Low-side divider<100k perTI;25ppm/K,standardEA packaging.",https://www.vishay.com/docs/28758/tnpw_e3.pdf,False
+R23,100k 1%,CRCW0603100KFKEA,PowerLocal:R_0603_1608Metric,PG pullup; output indicator only.,https://www.ti.com/lit/ds/symlink/tps63802.pdf,False
+J3,3.3 V BANK B,B2P-VH,PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical,"Dedicated dual-channel SignalGen supply; never parallel with other bank. Bank B design target2A, subject to source/thermal budget.",,False
+F1,T1.6A,3403.0168.11,PowerLocal:Fuse_Schurter_UMT250,RECOM recommendedT1.6A for12Vin family; exact5V startup/fault coordination remains measured acceptance.,https://www.schurter.com/en/datasheet/typ_UMT_250.pdf,False
+PS1,R3M-1212S/SMD,R3M-1212S/SMD,PowerLocal:RECOM_R3M_SMD,"ExactECO5 manufacturer lands; no minimum load; CTRL open enables. Pin5 NC,pin6 return.",https://recom-power.com/pdf/Econoline/R3M.pdf,False
+J4,CHANNEL 1 12 V,B2P-VH,PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical,"Connect to boost IN only. Return is HV_BOTTOM, never MID; no connection across channels.",,False
+C31,22u 16V,GRM31CR61C226KE15L,PowerLocal:C_1206_3216Metric,Local input bypass; EMI filter is not yet designed.,https://www.ti.com/lit/pdf/tidrmp4,False
+F2,T1.6A,3403.0168.11,PowerLocal:Fuse_Schurter_UMT250,RECOM recommendedT1.6A for12Vin family; exact5V startup/fault coordination remains measured acceptance.,https://www.schurter.com/en/datasheet/typ_UMT_250.pdf,False
+PS2,R3M-1212S/SMD,R3M-1212S/SMD,PowerLocal:RECOM_R3M_SMD,"ExactECO5 manufacturer lands; no minimum load; CTRL open enables. Pin5 NC,pin6 return.",https://recom-power.com/pdf/Econoline/R3M.pdf,False
+J5,CHANNEL 2 12 V,B2P-VH,PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical,"Connect to boost IN only. Return is HV_BOTTOM, never MID; no connection across channels.",,False
+C32,22u 16V,GRM31CR61C226KE15L,PowerLocal:C_1206_3216Metric,Local input bypass; EMI filter is not yet designed.,https://www.ti.com/lit/pdf/tidrmp4,False
+F3,T1.6A,3403.0168.11,PowerLocal:Fuse_Schurter_UMT250,RECOM recommendedT1.6A for12Vin family; exact5V startup/fault coordination remains measured acceptance.,https://www.schurter.com/en/datasheet/typ_UMT_250.pdf,False
+PS3,R3M-1212S/SMD,R3M-1212S/SMD,PowerLocal:RECOM_R3M_SMD,"ExactECO5 manufacturer lands; no minimum load; CTRL open enables. Pin5 NC,pin6 return.",https://recom-power.com/pdf/Econoline/R3M.pdf,False
+J6,CHANNEL 3 12 V,B2P-VH,PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical,"Connect to boost IN only. Return is HV_BOTTOM, never MID; no connection across channels.",,False
+C33,22u 16V,GRM31CR61C226KE15L,PowerLocal:C_1206_3216Metric,Local input bypass; EMI filter is not yet designed.,https://www.ti.com/lit/pdf/tidrmp4,False
+F4,T1.6A,3403.0168.11,PowerLocal:Fuse_Schurter_UMT250,RECOM recommendedT1.6A for12Vin family; exact5V startup/fault coordination remains measured acceptance.,https://www.schurter.com/en/datasheet/typ_UMT_250.pdf,False
+PS4,R3M-1212S/SMD,R3M-1212S/SMD,PowerLocal:RECOM_R3M_SMD,"ExactECO5 manufacturer lands; no minimum load; CTRL open enables. Pin5 NC,pin6 return.",https://recom-power.com/pdf/Econoline/R3M.pdf,False
+J7,CHANNEL 4 12 V,B2P-VH,PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical,"Connect to boost IN only. Return is HV_BOTTOM, never MID; no connection across channels.",,False
+C34,22u 16V,GRM31CR61C226KE15L,PowerLocal:C_1206_3216Metric,Local input bypass; EMI filter is not yet designed.,https://www.ti.com/lit/pdf/tidrmp4,False
+F5,T5A AUX,3403.0173.11,PowerLocal:Fuse_Schurter_UMT250,"Four-channel monitor bank4A allocation,3.073A planning. Fuse is not an electronic current limit.",https://www.schurter.com/en/datasheet/typ_UMT_250.pdf,False
+J8,AUX5V MONITORS,B2P-VH,PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical,4A total AUX allocation; powers all monitor powerboards from common primarySYS_GND. Verifymoduleinputs>=4.5V afterallfuses/cables.,,False

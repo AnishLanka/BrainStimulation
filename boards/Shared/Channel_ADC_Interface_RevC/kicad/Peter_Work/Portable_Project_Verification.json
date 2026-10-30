@@ -1,0 +1,11 @@
+{
+  "native_project": "Channel_ADC_Interface_RevC",
+  "ERC_count": 0,
+  "DRC_count": 0,
+  "unconnected_count": 0,
+  "parity_count": 0,
+  "ignored_checks": [],
+  "rename_note": "Project filename and schematic instance project name renamed together; fresh ERC and schematic-parity DRC passed on this portable copy.",
+  "pcb_sha256": "856394338fb938e03f5373823c8fe32235f669e620815f5b782545d33732f6b4",
+  "schematic_sha256": "8cf3a315d0fb18a5405028efc8e0bd0ec1c44c408f07fb81c259c275f018d0e6"
+}

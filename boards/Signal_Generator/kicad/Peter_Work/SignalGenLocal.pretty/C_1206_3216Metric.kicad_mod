@@ -1,0 +1,248 @@
+(footprint "C_1206_3216Metric"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
+	(tags "capacitor")
+	(property "Reference" "C41"
+		(at -4.225 0 0)
+		(layer "F.SilkS")
+		(uuid "74cad4de-b488-43c7-b647-3b5d9bcf40f9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "Value" "22u"
+		(at 0 1.85 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "18aa12e1-87b4-433e-b744-3b05fd58b996")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f51234e9-7f2e-47d6-a3b9-bcf23ed073a3")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Draft component: 22u; Local bulk >=10uF effective;22uF nominal selection pendingDC-bias verification"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5f7774ec-3d09-4ecf-9d7b-8a06cfc3d93a")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "e9eee112-a356-444a-88cf-c99bc7e50ea8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "MOUSER PART NUMBER" "*"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ff748753-0ac7-47f2-878f-41f99dc8c447")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "MOUSER PRICE/STOCK" "*"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "f9592e2e-4463-4eaa-96c2-3ec1af9f07a8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "MANUFACTURER_NAME" "TBD"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "6b8f7561-b5af-441d-807b-5d5dd209bb3b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "MANUFACTURER_PART_NUMBER" "TBD - draft value/footprint only"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "4cbd051c-6432-4190-848b-43ac9ed11c0e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "DATASHEET LINK" ""
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "d8537c12-4e05-4490-878d-41794523a2da")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "GEOMETRY.HEIGHT" ""
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "d26cf68c-4da4-4990-9130-328685fb8509")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "Voltage" "16V"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "e5e99913-5a3b-402d-81ce-da4dc61d6f11")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "Dielectric" "X7R/X5R"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "d0b2f2c0-de6d-48bd-bc2c-c420bf51d3e0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "MPN" "TBD - draft value/footprint only"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "f297ebdd-68e0-4b05-b7a3-6ae1bed1c847")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "Draft_Change" "Local bulk >=10uF effective;22uF nominal selection pendingDC-bias verification"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "b87bd42a-9946-4045-8ddc-316130b74fd2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -2.3 -1.15)
+		(end 2.3 1.15)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "108bbca8-41c5-4ef5-8839-1a3b0c433505")
+	)
+	(fp_rect
+		(start -1.6 -0.8)
+		(end 1.6 0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "e77244e8-c7bb-4192-871f-7f368a2abbe8")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "fa660e64-ba4b-422d-a249-47b8bee40d4d")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -1.475 0)
+		(size 1.15 1.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.217391)
+		(clearance 0)
+		(uuid "14c80fc3-170a-442b-92fc-b45880f645a9")
+	)
+	(pad "2" smd roundrect
+		(at 1.475 0)
+		(size 1.15 1.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.217391)
+		(clearance 0)
+		(uuid "02baf3e6-9edd-48a1-8bc7-119ce68af435")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

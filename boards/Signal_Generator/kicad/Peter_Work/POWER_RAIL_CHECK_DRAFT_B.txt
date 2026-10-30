@@ -1,0 +1,26 @@
+DRAFT-B POWER RAIL CHECK - BENCH PROTOTYPE ONLY
+2026-10-17
+
+IMPLEMENTED
+U2/U8 removed; R15/R16 = 0 ohm connects each regulated ISOW RAW rail to its legacy CLEAN rail. VSEL remains grounded. VISOIN remains tied to VISOOUT. DAC VDD, DAC VREF, and isolator output-side logic therefore have the same source. Existing bypass capacitance is retained; no low-frequency filter attenuation is claimed for a populated zero-ohm link.
+
+STATIC MARGINS
+ISOW VISOOUT = 3.135 to 3.465 V in the 3.3V-to-3.3V operating case. DAC VDD range = 2.7 to 5.5 V: minimum-supply margin 435mV, maximum-supply margin 2.035V. VREF=VDD satisfies the reference limit.
+ISOW VOH >= VISOIN-0.3V at -2mA => >=2.835V at minimum rail. Compared with the conservative DAC VIH=2.4V, margin >=435mV. ISOW VOL <=0.3V at 2mA; compared with the stricter DAC VIL=0.6V, margin >=300mV. A 50-milliohm jumper at 60mA drops 3mV; static margin remains large. Layout/decoupling must keep transient undershoot/overshoot within component limits.
+The 0-ohm links preserve separate schematic net names; they physically connect each pair of channel rails. There is no DC connection between SYS_GND and either isolated channel ground, nor between channel grounds.
+
+ACCURACY / RIPPLE
+Nominal bipolar transfer = (2*D/65536-1)*VREF. The rail tolerance alone gives +/-5% full-scale gain variation around nominal 3.3V. Nominal bipolar code step is 100.708uV; rail limits give about 95.673 to 105.743uV per code. This is not 16-bit absolute voltage accuracy.
+ISOW specifies typical 14mV peak-to-peak ripple at 60mA with 20uF || 10nF in its 3.3V-to-3.3V case. It is not a guaranteed maximum. Added bulk capacitors need effective capacitance verified under bias; their actual ripple and reference modulation require bench measurement. The equal nominal 20k resistors are still 1% parts. Let r=Rfeedback/Rreference; opposite tolerance corners give r=0.980198 to 1.020202. At code 32768 the ideal stage output is VREF*(1-r)/2, not necessarily zero: -33.33mV to +32.67mV at 3.3V, or as much as 35mV magnitude at 3.465V. A balanced nominal 2mA/V Howland stage translates this into up to about 70uA DC, before DAC/op-amp/Howland errors. Use a precision matched ratio, calibration and direct DC measurement before claiming zero midpoint or zero-mean AC operation. The raw-rail +/-5% gain range and resistor-ratio errors also prevent a firmware code clamp alone from proving a 5mA output ceiling.
+
+IA0305S LOAD DISPOSITION
+IA0305S outputs are unregulated +/-5V nominal. XP specifies load regulation over 20-100% load and warns that no-load operation may not meet all specifications; it does not define a numerical mandatory minimum load. No arbitrary preload or zener clamp is inserted. The existing small/asymmetric amplifier load may lie below that characterization range, so measure both rails at startup, steady idle, maximum signal output and shutdown before connecting downstream hardware.
+Check actual rail envelope against OPA2192 operating/absolute limits and capacitor voltage ratings; check output swing under the actual load. If measurement or manufacturer guidance establishes a necessary preload, size it using the measured worst-case voltage and thermal derating and revisit the battery budget. Two 200-ohm loads would consume 0.25W per module at +/-5V nominal; resistor placement/rating alone would not establish a voltage clamp.
+
+LIMITS
+This change closes the structurally headroomless LDO path. It does not establish a hardware mute, physiological current limit, patient suitability, precision reference, full-system power budget, PCB isolation rating, or verified 30kHz waveform quality. The DAC powers up at code zero, which gives a nonzero bipolar command in the revised analog stage. Bench characterization must use an appropriate dummy load with the downstream output inhibited until deliberate testing.
+
+PRIMARY SOURCES
+ISOW7741, sections 7.9, 7.13 and 11: https://www.ti.com/lit/ds/symlink/isow7741.pdf
+DAC8830 electrical characteristics and absolute limits: https://www.ti.com/lit/gpn/dac8830
+IA0305S / IA series: https://www.xppower.com/storage/portals/0/pdfs/SF_IA.pdf

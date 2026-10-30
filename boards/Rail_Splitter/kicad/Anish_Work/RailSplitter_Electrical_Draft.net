@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\peter\Documents\Codex\2026-10-17\this\outputs\StimPrototype_Integration\railsplitter_draft\RailSplitter_Electrical_Draft.kicad_sch</source>
+    <date>2026-10-17T14:21:53</date>
+    <tool>Eeschema 10.0.6</tool>
+    <textvar name="DESIGN_STATUS">DRAFT - NOT FOR FABRICATION</textvar>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>OPA455 buffered midpoint - electrical draft</title>
+        <company/>
+        <rev>DRAFT 1</rev>
+        <date>2026-10-17</date>
+        <source>RailSplitter_Electrical_Draft.kicad_sch</source>
+        <comment number="1" value="NOT FOR FABRICATION; stability and system power unvalidated"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100n 100V</value>
+      <footprint>RailSplitterLocal:C0805</footprint>
+      <description>C6 direct full-bus local bypass; C1/C2 half-rail bypasses</description>
+      <fields>
+        <field name="Dielectric">X7R</field>
+        <field name="MPN">C2012X7R2A104K125AA</field>
+        <field name="Manufacturer">TDK</field>
+        <field name="Footprint">RailSplitterLocal:C0805</field>
+        <field name="Datasheet"/>
+        <field name="Description">C6 direct full-bus local bypass; C1/C2 half-rail bypasses</field>
+      </fields>
+      <libsource lib="RailSplitterLocal" part="C" description="Unpolarized capacitor"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="MPN" value="C2012X7R2A104K125AA"/>
+      <property name="Manufacturer" value="TDK"/>
+      <property name="Sheetname" value="RailSplitter_Electrical_Draft"/>
+      <property name="Sheetfile" value="RailSplitter_Electrical_Draft.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>557c08a1-5b46-50a4-8675-b51827b59e88</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>100n 100V</value>
+      <footprint>RailSplitterLocal:C0805</footprint>
+      <description>C6 direct full-bus local bypass; C1/C2 half-rail bypasses</description>
+      <fields>
+        <field name="Dielectric">X7R</field>
+        <field name="MPN">C2012X7R2A104K125AA</field>
+        <field name="Manufacturer">TDK</field>
+        <field name="Footprint">RailSplitterLocal:C0805</field>
+        <field name="Datasheet"/>
+        <field name="Description">C6 direct full-bus local bypass; C1/C2 half-rail bypasses</field>
+      </fields>
+      <libsource lib="RailSplitterLocal" part="C" description="Unpolarized capacitor"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="MPN" value="C2012X7R2A104K125AA"/>
+      <property name="Manufacturer" value="TDK"/>
+      <property name="Sheetname" value="RailSplitter_Electrical_Draft"/>
+      <property name="Sheetfile" value="RailSplitter_Electrical_Draft.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>722b04b8-c0f9-53da-9975-93f4119cbae6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>10u 100V</value>
+      <footprint>RailSplitterLocal:C1210</footprint>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32EC72A106KE05-01A.pdf</datasheet>
+      <description>Nominal value only; DC bias reduces capacitance; verify effective C and availability before release</description>
+      <fields>
+        <field name="Dielectric">X7S</field>
+        <field name="MPN">GRM32EC72A106KE05K</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="Footprint">RailSplitterLocal:C1210</field>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32EC72A106KE05-01A.pdf</field>
+        <field name="Description">Nominal value only; DC bias reduces capacitance; verify effective C and availability before release</field>
+      </fields>
+      <libsource lib="RailSplitterLocal" part="C" description="Unpolarized capacitor"/>
+      <property name="Dielectric" value="X7S"/>
+      <property name="MPN" value="GRM32EC72A106KE05K"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="Sheetname" value="RailSplitter_Electrical_Draft"/>
+      <property name="Sheetfile" value="RailSplitter_Electrical_Draft.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>026d306e-67a1-5dc5-baf9-29256f7dd6d4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4">
+      <value>10u 100V</value>
+      <footprint>RailSplitterLocal:C1210</footprint>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32EC72A106KE05-01A.pdf</datasheet>
+      <description>Nominal value only; DC bias reduces capacitance; verify effective C and availability before release</description>
+      <fields>
+        <field name="Dielectric">X7S</field>
+        <field name="MPN">GRM32EC72A106KE05K</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="Footprint">RailSplitterLocal:C1210</field>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32EC72A106KE05-01A.pdf</field>
+        <field name="Description">Nominal value only; DC bias reduces capacitance; verify effective C and availability before release</field>
+      </fields>
+      <libsource lib="RailSplitterLocal" part="C" description="Unpolarized capacitor"/>
+      <property name="Dielectric" value="X7S"/>
+      <property name="MPN" value="GRM32EC72A106KE05K"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="Sheetname" value="RailSplitter_Electrical_Draft"/>
+      <property name="Sheetfile" value="RailSplitter_Electrical_Draft.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>38d31ca1-2b9a-5a99-8311-a17b08c44187</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C5">
+      <value>30p 100V</value>
+      <footprint>RailSplitterLocal:C0603</footprint>
+      <description>E/D filtering; no DC external drive; exact MPN pending</description>
+      <fields>
+        <field name="Dielectric">C0G/NP0</field>
+        <field name="Footprint">RailSplitterLocal:C0603</field>
+        <field name="Datasheet"/>
+        <field name="Description">E/D filtering; no DC external drive; exact MPN pending</field>
+      </fields>
+      <libsource lib="RailSplitterLocal" part="C" description="Unpolarized capacitor"/>
+      <property name="Dielectric" value="C0G/NP0"/>
+      <property name="Sheetname" value="RailSplitter_Electrical_Draft"/>
+      <property name="Sheetfile" value="RailSplitter_Electrical_Draft.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9279774c-e3de-5f70-98ac-4430aa0ceda2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C6">
+      <value>100n 100V</value>
+      <footprint>RailSplitterLocal:C0805</footprint>
+      <description>C6 direct full-bus local bypass; C1/C2 half-rail bypasses</description>
+      <fields>
+        <field name="Dielectric">X7R</field>
+        <field name="MPN">C2012X7R2A104K125AA</field>
+        <field name="Manufacturer">TDK</field>
+        <field name="Footprint">RailSplitterLocal:C0805</field>
+        <field name="Datasheet"/>
+        <field name="Description">C6 direct full-bus local bypass; C1/C2 half-rail bypasses</field>
+      </fields>
+      <libsource lib="RailSplitterLocal" part="C" description="Unpolarized capacitor"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="MPN" value="C2012X7R2A104K125AA"/>
+      <property name="Manufacturer" value="TDK"/>
+      <property name="Sheetname" value="RailSplitter_Electrical_Draft"/>
+      <property name="Sheetfile" value="RailSplitter_Electrical_Draft.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d7bc0357-1b68-5c11-bedd-b486c32ce49d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>80 V INPUT</value>
+      <footprint>RailSplitterLocal:J2</footprint>
+      <description>Pin1 HV_TOP; pin2 HV_BOTTOM; connector selection/rating to be confirmed</description>
+      <fields>
+        <field name="Footprint">RailSplitterLocal:J2</field>
+        <field name="Datasheet"/>
+        <field name="Description">Pin1 HV_TOP; pin2 HV_BOTTOM; connector selection/rating to be confirmed</field>
+      </fields>
+      <libsource lib="RailSplitterLocal" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="RailSplitter_Electrical_Draft"/>
+      <property name="Sheetfile" value="RailSplitter_Electrical_Draft.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>abaf2e3a-659f-570a-882d-5327b1c2670e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J2">
+      <value>+40 / MID / -40</value>
+      <footprint>RailSplitterLocal:J3</footprint>
+      <description>1 HV_TOP; 2 MID; 3 HV_BOTTOM. +40/-40 are relative to MID.</description>
+      <fields>
+        <field name="Footprint">RailSplitterLocal:J3</field>
+        <field name="Datasheet"/>
+        <field name="Description">1 HV_TOP; 2 MID; 3 HV_BOTTOM. +40/-40 are relative to MID.</field>
+      </fields>
+      <libsource lib="RailSplitterLocal" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="RailSplitter_Electrical_Draft"/>
+      <property name="Sheetfile" value="RailSplitter_Electrical_Draft.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>af2d592c-444f-53ef-a6ee-cb08bd121b0b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>100k 0.1%</value>
+      <footprint>RailSplitterLocal:R0805</footprint>
+      <description>Matched-divider procurement requirement; exact MPN pending</description>
+      <fields>
+        <field name="Rating">0.125W minimum; 100V minimum working voltage; &lt;=25ppm/K preferred</field>
+        <field name="Footprint">RailSplitterLocal:R0805</field>
+        <field name="Datasheet"/>
+        <field name="Description">Matched-divider procurement requirement; exact MPN pending</field>
+      </fields>
+      <libsource lib="RailSplitterLocal" part="R" description="Resistor"/>
+      <property name="Rating" value="0.125W minimum; 100V minimum working voltage; &lt;=25ppm/K preferred"/>
+      <property name="Sheetname" value="RailSplitter_Electrical_Draft"/>
+      <property name="Sheetfile" value="RailSplitter_Electrical_Draft.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b5cf1ea1-2605-5fa4-9d30-8b0a5e8ec5ac</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>100k 0.1%</value>
+      <footprint>RailSplitterLocal:R0805</footprint>
+      <description>Matched-divider procurement requirement; exact MPN pending</description>
+      <fields>
+        <field name="Rating">0.125W minimum; 100V minimum working voltage; &lt;=25ppm/K preferred</field>
+        <field name="Footprint">RailSplitterLocal:R0805</field>
+        <field name="Datasheet"/>
+        <field name="Description">Matched-divider procurement requirement; exact MPN pending</field>
+      </fields>
+      <libsource lib="RailSplitterLocal" part="R" description="Resistor"/>
+      <property name="Rating" value="0.125W minimum; 100V minimum working voltage; &lt;=25ppm/K preferred"/>
+      <property name="Sheetname" value="RailSplitter_Electrical_Draft"/>
+      <property name="Sheetfile" value="RailSplitter_Electrical_Draft.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b64aa5f7-385b-5a32-8ef3-2b3ebacce81e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>49R9 1%</value>
+      <footprint>RailSplitterLocal:R0805</footprint>
+      <description>Provisional output isolation resistor; feedback taken BEFORE resistor; stability unvalidated</description>
+      <fields>
+        <field name="Rating">0.125W minimum</field>
+        <field name="Footprint">RailSplitterLocal:R0805</field>
+        <field name="Datasheet"/>
+        <field name="Description">Provisional output isolation resistor; feedback taken BEFORE resistor; stability unvalidated</field>
+      </fields>
+      <libsource lib="RailSplitterLocal" part="R" description="Resistor"/>
+      <property name="Rating" value="0.125W minimum"/>
+      <property name="Sheetname" value="RailSplitter_Electrical_Draft"/>
+      <property name="Sheetfile" value="RailSplitter_Electrical_Draft.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c7f731f2-39f1-5c2d-afb3-d55b3ef2c1af</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>OPA455IDDA</value>
+      <footprint>RailSplitterLocal:OPA455_DDA0008J</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/opa455.pdf</datasheet>
+      <description>Unity-gain midpoint buffer; exposed pad9=HV_BOTTOM</description>
+      <fields>
+        <field name="MPN">OPA455IDDA</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="Footprint">RailSplitterLocal:OPA455_DDA0008J</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/opa455.pdf</field>
+        <field name="Description">Unity-gain midpoint buffer; exposed pad9=HV_BOTTOM</field>
+      </fields>
+      <libsource lib="RailSplitterLocal" part="OPA455IDDA" description=""/>
+      <property name="MPN" value="OPA455IDDA"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="Sheetname" value="RailSplitter_Electrical_Draft"/>
+      <property name="Sheetfile" value="RailSplitter_Electrical_Draft.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>52781158-03a1-504b-a892-50cf95e4bf3f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="3"/>
+            <pin num="2"/>
+            <pin num="8"/>
+            <pin num="1"/>
+            <pin num="7"/>
+            <pin num="4"/>
+            <pin num="9"/>
+            <pin num="6"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="RailSplitterLocal" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RailSplitterLocal" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RailSplitterLocal" part="Conn_01x03">
+      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RailSplitterLocal" part="OPA455IDDA">
+      <docs>https://www.ti.com/lit/ds/symlink/opa455.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">OPA455IDDA</field>
+        <field name="Footprint">RailSplitterLocal:OPA455_DDA0008J</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/opa455.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="E/D_COM" type="input"/>
+        <pin num="2" name="-IN" type="input"/>
+        <pin num="3" name="+IN" type="input"/>
+        <pin num="4" name="V-" type="power_in"/>
+        <pin num="5" name="STATUS" type="open_collector"/>
+        <pin num="6" name="OUT" type="output"/>
+        <pin num="7" name="V+" type="power_in"/>
+        <pin num="8" name="E/D" type="input"/>
+        <pin num="9" name="EP" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RailSplitterLocal" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="RailSplitterLocal">
+      <uri>${KIPRJMOD}/RailSplitterLocal.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/BUF_RAW" class="Default">
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="-IN_2" pintype="input"/>
+      <node ref="U1" pin="6" pinfunction="OUT_6" pintype="output"/>
+    </net>
+    <net code="2" name="/EN_INTERNAL" class="Default">
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="E/D_8" pintype="input"/>
+    </net>
+    <net code="3" name="/HV_BOTTOM" class="Default">
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J2" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="E/D_COM_1" pintype="input"/>
+      <node ref="U1" pin="4" pinfunction="V-_4" pintype="power_in"/>
+      <node ref="U1" pin="9" pinfunction="EP_9" pintype="passive"/>
+    </net>
+    <net code="4" name="/HV_TOP" class="Default">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="V+_7" pintype="power_in"/>
+    </net>
+    <net code="5" name="/MID" class="Default">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+    </net>
+    <net code="6" name="/VREF_HALF" class="Default">
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="+IN_3" pintype="input"/>
+    </net>
+    <net code="7" name="unconnected-(U1-STATUS-Pad5)" class="Default">
+      <node ref="U1" pin="5" pinfunction="STATUS_5" pintype="open_collector+no_connect"/>
+    </net>
+  </nets>
+</export>

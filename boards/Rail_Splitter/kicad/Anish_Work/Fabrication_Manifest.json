@@ -1,0 +1,17 @@
+{
+  "zip": "RailSplitter_Prototype_JLCPCB.zip",
+  "pcb_sha256": "0a6469ec5593e9f603f7f2c1237c84ea7e760c88014318f333de363a92a8864c",
+  "zip_sha256": "84c1a940f85e666a7a843d404882dee26265ae9c2660a9443074799688da5c1b",
+  "files": {
+    "RailSplitter_Electrical_Draft-B_Cu.gbl": "6a15dd9c6472e3c3cf827fea967f01d64e51b15b799c40b9a0010a591c510e6a",
+    "RailSplitter_Electrical_Draft-B_Mask.gbs": "1ed2e2cfa813b7ce8553b4dec7b8d6242381f8b3ff216e364d6b1e4395b530ad",
+    "RailSplitter_Electrical_Draft-B_Silkscreen.gbo": "97cbdf714bcf164bc39dde54207097efc521787677b54b0350bd47c3c4d9787c",
+    "RailSplitter_Electrical_Draft-Edge_Cuts.gm1": "4586ed3902fac47620cb7b5e6565a2267ef3e9daffbfd31ca9d681ab01205d8a",
+    "RailSplitter_Electrical_Draft-F_Cu.gtl": "4f9771e6cb63c8cb2249fa09ca65bbb158c13cccdcb5db62519a6fe0e9b0f1c5",
+    "RailSplitter_Electrical_Draft-F_Mask.gts": "61476d4f0ffd8ba7826b9939ce55683810baa6a88447aaf3f9c34d08cc76b65e",
+    "RailSplitter_Electrical_Draft-F_Silkscreen.gto": "2eba6f22d2ddaa20fb647b02ea8f4e6c9beb71b5e09bde9ed280fba4fd3d0461",
+    "RailSplitter_Electrical_Draft-job.gbrjob": "aa24a2be9b06048ae93e6b4edf3fd85a0c8b0d2c0ff2e30a4ffb46ddab89b420",
+    "RailSplitter_Electrical_Draft-NPTH.drl": "9cb19be10f9368690a0355816c521809be6f0094b021ef27e32d9c2e02f96506",
+    "RailSplitter_Electrical_Draft-PTH.drl": "b5062823a25b63ff8c44ca1c11c8400ce9af8706e3788949bcad65319dc22ecb"
+  }
+}

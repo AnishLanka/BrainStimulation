@@ -1,0 +1,161 @@
+(footprint "C1210"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Capacitor SMD 1210 (3225 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
+	(tags "capacitor")
+	(property "Reference" "C3"
+		(at 0 -2.5 0)
+		(layer "F.SilkS")
+		(uuid "ef73e033-1b7a-46ad-974b-e623a35fef0a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "Value" "10u 100V"
+		(at 0 2.3 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9a183d1c-da33-4ff3-bf77-fb16200d5f3c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32EC72A106KE05-01A.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a3643c83-40d8-4835-8ae9-8ebe827fa4b5")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Nominal value only; DC bias reduces capacitance; verify effective C and availability before release"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cd68b8d1-3fa1-4b54-99b3-8ab4b2e84f40")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "0c403aa9-9def-4efe-a0b5-4040110b3faf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Dielectric" "X7S"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "4225acd2-4133-46b0-9d0d-106e0d8cad84")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "GRM32EC72A106KE05K"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "6ea08211-8eb5-437e-8b2a-4b69d3159d54")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Manufacturer" "Murata"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ecac4e20-1f3a-4a05-b783-b9ee9c4d6cf2")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -2.3 -1.6)
+		(end 2.3 1.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "93ac89e0-8655-413f-bf73-80b604e04f9f")
+	)
+	(fp_rect
+		(start -1.6 -1.25)
+		(end 1.6 1.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "4710cb81-8bde-4776-b487-301209d34478")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "edf1fc95-301c-40b3-9622-190c8d36346a")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -1.475 0)
+		(size 1.15 2.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.217391)
+		(clearance 0)
+		(uuid "d83600f9-8721-4226-ad45-eda710b20e3b")
+	)
+	(pad "2" smd roundrect
+		(at 1.475 0)
+		(size 1.15 2.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.217391)
+		(clearance 0)
+		(uuid "ff77e3c4-eb6e-4943-bc24-a3781ea53000")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

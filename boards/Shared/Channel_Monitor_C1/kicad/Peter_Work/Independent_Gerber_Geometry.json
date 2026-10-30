@@ -1,0 +1,285 @@
+{
+  "top": {
+    "summary": {
+      "mask_regions": 408,
+      "silk_segments": 6019,
+      "mask_web_mm": 0.100036,
+      "silk_mask_mm": 0.165343,
+      "silk_drill_mm": 0.219543,
+      "via_drill_mask_mm": 0.300048,
+      "mask_web_requirement_mm": 0.1,
+      "violations": {
+        "mask_web_below_minimum": 0,
+        "silk_mask_below_015": 0,
+        "silk_drill_below_015": 0,
+        "via_drill_mask_overlap": 0
+      }
+    },
+    "closest_mask_web": [
+      {
+        "a": 18,
+        "b": 22,
+        "gap": 0.100036
+      },
+      {
+        "a": 19,
+        "b": 23,
+        "gap": 0.100036
+      },
+      {
+        "a": 22,
+        "b": 24,
+        "gap": 0.100036
+      },
+      {
+        "a": 23,
+        "b": 25,
+        "gap": 0.100036
+      },
+      {
+        "a": 24,
+        "b": 32,
+        "gap": 0.100036
+      },
+      {
+        "a": 25,
+        "b": 33,
+        "gap": 0.100036
+      },
+      {
+        "a": 62,
+        "b": 66,
+        "gap": 0.100036
+      },
+      {
+        "a": 63,
+        "b": 67,
+        "gap": 0.100036
+      }
+    ],
+    "closest_silk_mask": [
+      {
+        "mask": 16,
+        "silk": 1103,
+        "gap": 0.165343
+      },
+      {
+        "mask": 56,
+        "silk": 1088,
+        "gap": 0.165343
+      },
+      {
+        "mask": 102,
+        "silk": 1098,
+        "gap": 0.165343
+      },
+      {
+        "mask": 104,
+        "silk": 1222,
+        "gap": 0.165343
+      },
+      {
+        "mask": 190,
+        "silk": 1093,
+        "gap": 0.165343
+      },
+      {
+        "mask": 331,
+        "silk": 1207,
+        "gap": 0.165343
+      },
+      {
+        "mask": 385,
+        "silk": 1053,
+        "gap": 0.165343
+      },
+      {
+        "mask": 387,
+        "silk": 1058,
+        "gap": 0.165343
+      }
+    ],
+    "closest_silk_drill": [
+      {
+        "hole": "via",
+        "position": [
+          144.312,
+          102.755
+        ],
+        "silk": 1099,
+        "gap": 0.219543
+      },
+      {
+        "hole": "via",
+        "position": [
+          144.312,
+          102.755
+        ],
+        "silk": 1100,
+        "gap": 0.284728
+      },
+      {
+        "hole": "via",
+        "position": [
+          144.312,
+          102.755
+        ],
+        "silk": 1101,
+        "gap": 0.325316
+      },
+      {
+        "hole": "via",
+        "position": [
+          130.048,
+          29.9017
+        ],
+        "silk": 3274,
+        "gap": 0.328674
+      },
+      {
+        "hole": "via",
+        "position": [
+          130.048,
+          29.9017
+        ],
+        "silk": 3275,
+        "gap": 0.328674
+      },
+      {
+        "hole": "via",
+        "position": [
+          30.0,
+          64.4707
+        ],
+        "silk": 2742,
+        "gap": 0.333678
+      },
+      {
+        "hole": "via",
+        "position": [
+          85.2296,
+          103.03
+        ],
+        "silk": 2109,
+        "gap": 0.360717
+      },
+      {
+        "hole": "via",
+        "position": [
+          85.2296,
+          103.03
+        ],
+        "silk": 2110,
+        "gap": 0.360717
+      }
+    ]
+  },
+  "bottom": {
+    "summary": {
+      "mask_regions": 41,
+      "silk_segments": 692,
+      "mask_web_mm": 0.744384,
+      "silk_mask_mm": null,
+      "silk_drill_mm": 0.173339,
+      "via_drill_mask_mm": null,
+      "mask_web_requirement_mm": 0.1,
+      "violations": {
+        "mask_web_below_minimum": 0,
+        "silk_mask_below_015": 0,
+        "silk_drill_below_015": 0,
+        "via_drill_mask_overlap": 0
+      }
+    },
+    "closest_mask_web": [
+      {
+        "a": 2,
+        "b": 3,
+        "gap": 0.744384
+      },
+      {
+        "a": 8,
+        "b": 9,
+        "gap": 0.744384
+      },
+      {
+        "a": 11,
+        "b": 12,
+        "gap": 0.744384
+      },
+      {
+        "a": 13,
+        "b": 14,
+        "gap": 0.744384
+      },
+      {
+        "a": 15,
+        "b": 16,
+        "gap": 0.744384
+      },
+      {
+        "a": 20,
+        "b": 22,
+        "gap": 0.744384
+      },
+      {
+        "a": 21,
+        "b": 29,
+        "gap": 0.744384
+      },
+      {
+        "a": 30,
+        "b": 31,
+        "gap": 0.744384
+      }
+    ],
+    "closest_silk_mask": [],
+    "closest_silk_drill": [
+      {
+        "hole": "via",
+        "position": [
+          142.95,
+          119.85
+        ],
+        "silk": 522,
+        "gap": 0.173339
+      },
+      {
+        "hole": "via",
+        "position": [
+          142.95,
+          119.85
+        ],
+        "silk": 523,
+        "gap": 0.42932
+      },
+      {
+        "hole": "via",
+        "position": [
+          142.95,
+          119.85
+        ],
+        "silk": 524,
+        "gap": 0.42932
+      },
+      {
+        "hole": "via",
+        "position": [
+          142.95,
+          119.85
+        ],
+        "silk": 521,
+        "gap": 0.433104
+      },
+      {
+        "hole": "via",
+        "position": [
+          142.95,
+          119.85
+        ],
+        "silk": 525,
+        "gap": 0.848083
+      }
+    ]
+  },
+  "board_sha256": "1f7298b5252813e290627964680c2acf05d32bd53b8ba58bf8af6828c3f79b51"
+}

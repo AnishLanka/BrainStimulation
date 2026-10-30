@@ -1,0 +1,41 @@
+{
+  "status": "Independent read-only circuit and connectivity audit passed; bench behavior unverified",
+  "date": "2026-10-17",
+  "parts": 12,
+  "physical_numbered_pads": 32,
+  "schematic_pin_to_pad_map_exact": true,
+  "critical_net_map": {
+    "U1.1": "HV_BOTTOM",
+    "U1.2": "BUF_RAW",
+    "U1.3": "VREF_HALF",
+    "U1.4": "HV_BOTTOM",
+    "U1.6": "BUF_RAW",
+    "U1.7": "HV_TOP",
+    "U1.8": "EN_INTERNAL",
+    "U1.9": "HV_BOTTOM",
+    "J1.1": "HV_TOP",
+    "J1.2": "HV_BOTTOM",
+    "J2.1": "HV_TOP",
+    "J2.2": "MID",
+    "J2.3": "HV_BOTTOM",
+    "R3.1": "BUF_RAW",
+    "R3.2": "MID"
+  },
+  "drc_findings": 0,
+  "unconnected_items": 0,
+  "schematic_parity_issues": 0,
+  "board_thickness_mm": 0.41116,
+  "copper_layers": 2,
+  "notes": [
+    "EP9 and E/D_COM1 correctly join V-4 at HV_BOTTOM, not MID",
+    "OPA455 feedback senses BUF_RAW before49.9ohm isolation resistor, with MID after resistor",
+    "Four split-rail capacitors load MID; isolation resistor does not establish loop stability",
+    "OPA455 E/D8 uses internal enable bias with30pF to HV_BOTTOM; STATUS5 intentionally unconnected",
+    "J1=input top/bottom;J2=top/MID/bottom; separate signal ISO_GND may join MID only",
+    "Retained0.41116mm thickness is a manufacturing and mechanical selection requiring order-time review"
+  ],
+  "sha256": {
+    "RailSplitter_Electrical_Draft.kicad_sch": "5a4cd3978f102821abd12c9a39c79d70eb7aa61bcad8cb9114006187544b517c",
+    "RailSplitter_Electrical_Draft.kicad_pcb": "92920a43045cabae431ba66518268c377bc0b9d20881874a88d96976c983e68a"
+  }
+}

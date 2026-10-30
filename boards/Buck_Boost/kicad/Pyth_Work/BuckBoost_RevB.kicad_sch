@@ -1,0 +1,229 @@
+(kicad_sch (version 20250114) (generator "eeschema") (uuid "3f372f97-8e6a-5356-a903-7eddfac3f6fb") (paper "A4") (title_block (title "3.3 V battery buck-boost converter") (date "2026-10-17") (rev "B") (comment 1 "Recovered source topology; revised PCB layout and L1 selection")) (lib_symbols (symbol "BuckBoostLocal:Source_U1" (pin_names (offset 1.016)) (in_bom yes) (on_board yes) (property "Reference" "U1" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Value" "TPS63001DRCR" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Footprint" "BuckBoostLocal:U1_TPS63001" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps63001.pdf" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "96% Buck-Boost Converter with 1.7A Current Switches, 3.3V fixed Output voltage in 3x3 QFN 10-VSON -40 to 125" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(symbol "Source_U1_0_1" (rectangle (start -12.7 -20.32) (end 12.7 20.32) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol "Source_U1_1_1" (pin power_out line (at 17.78 10.16 180) (length 5.08) (name "VOUT" (effects (font (size 1.016 1.016)))) (number "1" (effects (font (size 1.016 1.016))))) (pin passive line (at 17.78 15.24 180) (length 5.08) (name "L2" (effects (font (size 1.016 1.016)))) (number "2" (effects (font (size 1.016 1.016))))) (pin power_in line (at 17.78 -15.24 180) (length 5.08) (name "PGND" (effects (font (size 1.016 1.016)))) (number "3" (effects (font (size 1.016 1.016))))) (pin passive line (at -17.78 15.24 0) (length 5.08) (name "L1" (effects (font (size 1.016 1.016)))) (number "4" (effects (font (size 1.016 1.016))))) (pin power_in line (at -17.78 10.16 0) (length 5.08) (name "VIN" (effects (font (size 1.016 1.016)))) (number "5" (effects (font (size 1.016 1.016))))) (pin input line (at -17.78 0 0) (length 5.08) (name "EN" (effects (font (size 1.016 1.016)))) (number "6" (effects (font (size 1.016 1.016))))) (pin input line (at -17.78 -7.62 0) (length 5.08) (name "PS_SYNC" (effects (font (size 1.016 1.016)))) (number "7" (effects (font (size 1.016 1.016))))) (pin power_in line (at -17.78 5.08 0) (length 5.08) (name "VINA" (effects (font (size 1.016 1.016)))) (number "8" (effects (font (size 1.016 1.016))))) (pin power_in line (at 17.78 -10.16 180) (length 5.08) (name "GND" (effects (font (size 1.016 1.016)))) (number "9" (effects (font (size 1.016 1.016))))) (pin input line (at 17.78 0 180) (length 5.08) (name "FB" (effects (font (size 1.016 1.016)))) (number "10" (effects (font (size 1.016 1.016))))) (pin passive line (at 17.78 -17.78 180) (length 5.08) (name "PAD" (effects (font (size 1.016 1.016)))) (number "11" (effects (font (size 1.016 1.016))))))) (symbol "BuckBoostLocal:Source_OUT" (pin_names (offset 0) hide) (in_bom yes) (on_board yes) (property "Reference" "J2" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Value" "691211720002" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Footprint" "BuckBoostLocal:OUT_691211720002" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "211 Series 5MM Pitch Straight, Pcb Terminal Block, Through Hole, 2 Way" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(symbol "Source_OUT_0_1" (circle (center 7.62 0) (radius 0.762) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 8.158815 0.538815) (xy 7.081185 -0.538815)) (stroke (width 0.254) (type default)) (fill (type none))) (circle (center 7.62 -2.54) (radius 0.762) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 8.158815 -2.001185) (xy 7.081185 -3.078815)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 5.08 0) (xy 6.858 0)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 5.08 -2.54) (xy 6.858 -2.54)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 10.16 2.54) (xy 5.08 2.54) (xy 5.08 -5.08) (xy 10.16 -5.08) (xy 10.16 2.54)) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol "Source_OUT_1_1" (pin passive line (at 0 0 0) (length 5.08) (name "1" (effects (font (size 1.016 1.016)))) (number "1" (effects (font (size 1.016 1.016))))) (pin passive line (at 0 -2.54 0) (length 5.08) (name "2" (effects (font (size 1.016 1.016)))) (number "2" (effects (font (size 1.016 1.016))))))) (symbol "BuckBoostLocal:Source_IN" (pin_names (offset 0) hide) (in_bom yes) (on_board yes) (property "Reference" "J1" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Value" "691211720002" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Footprint" "BuckBoostLocal:IN_691211720002" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "211 Series 5MM Pitch Straight, Pcb Terminal Block, Through Hole, 2 Way" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(symbol "Source_IN_0_1" (circle (center -7.62 0) (radius 0.762) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy -8.158815 0.538815) (xy -7.081185 -0.538815)) (stroke (width 0.254) (type default)) (fill (type none))) (circle (center -7.62 -2.54) (radius 0.762) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy -8.158815 -2.001185) (xy -7.081185 -3.078815)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy -5.08 0) (xy -6.858 0)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy -5.08 -2.54) (xy -6.858 -2.54)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy -10.16 2.54) (xy -5.08 2.54) (xy -5.08 -5.08) (xy -10.16 -5.08) (xy -10.16 2.54)) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol "Source_IN_1_1" (pin passive line (at 0 0 180) (length 5.08) (name "1" (effects (font (size 1.016 1.016)))) (number "1" (effects (font (size 1.016 1.016))))) (pin passive line (at 0 -2.54 180) (length 5.08) (name "2" (effects (font (size 1.016 1.016)))) (number "2" (effects (font (size 1.016 1.016))))))) (symbol "BuckBoostLocal:Source_C1" (pin_names (offset 0) hide) (in_bom yes) (on_board yes) (property "Reference" "C1" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Value" "10u" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Footprint" "BuckBoostLocal:C1_0805" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "10 uF +/-10%, 25 V X5R ceramic 0805" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(symbol "Source_C1_0_1" (polyline (pts (xy 2.032 -4.318) (xy -2.032 -4.318)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy -2.032 -3.302) (xy 2.032 -3.302)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 0 -2.54) (xy 0 -3.302)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 0 -5.08) (xy 0 -4.318)) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol "Source_C1_1_1" (pin passive line (at 0 0 270) (length 2.54) (name "1" (effects (font (size 1.016 1.016)))) (number "1" (effects (font (size 1.016 1.016))))) (pin passive line (at 0 -7.62 90) (length 2.54) (name "2" (effects (font (size 1.016 1.016)))) (number "2" (effects (font (size 1.016 1.016))))))) (symbol "BuckBoostLocal:Source_R1" (pin_names (offset 0) hide) (in_bom yes) (on_board yes) (property "Reference" "R1" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Value" "100" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Footprint" "BuckBoostLocal:R1_0402" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "100 ohm +/-1%, 63 mW standard operation, 0402" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(symbol "Source_R1_0_1" (polyline (pts (xy 0 -10.16) (xy 0.762 -9.398) (xy 0 -8.636) (xy -0.762 -7.874) (xy 0.762 -6.35) (xy -0.762 -4.826) (xy 0.762 -3.302) (xy 0 -2.54)) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol "Source_R1_1_1" (pin passive line (at 0 -12.7 90) (length 2.54) (name "2" (effects (font (size 1.016 1.016)))) (number "2" (effects (font (size 1.016 1.016))))) (pin passive line (at 0 0 270) (length 2.54) (name "1" (effects (font (size 1.016 1.016)))) (number "1" (effects (font (size 1.016 1.016))))))) (symbol "BuckBoostLocal:Source_C4" (pin_names (offset 0) hide) (in_bom yes) (on_board yes) (property "Reference" "C4" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Value" "100n" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Footprint" "BuckBoostLocal:C4_0805" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "100 nF +/-10%, 100 V X7R ceramic 0805" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(symbol "Source_C4_0_1" (polyline (pts (xy 2.032 -4.318) (xy -2.032 -4.318)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy -2.032 -3.302) (xy 2.032 -3.302)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 0 -2.54) (xy 0 -3.302)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 0 -5.08) (xy 0 -4.318)) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol "Source_C4_1_1" (pin passive line (at 0 0 270) (length 2.54) (name "1" (effects (font (size 1.016 1.016)))) (number "1" (effects (font (size 1.016 1.016))))) (pin passive line (at 0 -7.62 90) (length 2.54) (name "2" (effects (font (size 1.016 1.016)))) (number "2" (effects (font (size 1.016 1.016))))))) (symbol "BuckBoostLocal:Source_C2" (pin_names (offset 0) hide) (in_bom yes) (on_board yes) (property "Reference" "C2" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Value" "10u" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Footprint" "BuckBoostLocal:C1_0805" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "10 uF +/-10%, 25 V X5R ceramic 0805" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(symbol "Source_C2_0_1" (polyline (pts (xy 2.032 -4.318) (xy -2.032 -4.318)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy -2.032 -3.302) (xy 2.032 -3.302)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 0 -2.54) (xy 0 -3.302)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 0 -5.08) (xy 0 -4.318)) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol "Source_C2_1_1" (pin passive line (at 0 0 270) (length 2.54) (name "1" (effects (font (size 1.016 1.016)))) (number "1" (effects (font (size 1.016 1.016))))) (pin passive line (at 0 -7.62 90) (length 2.54) (name "2" (effects (font (size 1.016 1.016)))) (number "2" (effects (font (size 1.016 1.016))))))) (symbol "BuckBoostLocal:Source_L1" (pin_names (offset 0) hide) (in_bom yes) (on_board yes) (property "Reference" "L1" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Value" "2.2u" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Footprint" "BuckBoostLocal:L1_2u2" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "2.2 uH +/-20% shielded power inductor; Coilcraft XFL4020-222MEC; DCR 23.5 mOhm max" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(symbol "Source_L1_0_1" (arc (start 1.27 0) (mid 2.54 1.27) (end 3.81 0) (stroke (width 0.254) (type default)) (fill (type none))) (arc (start 3.81 0) (mid 5.08 1.27) (end 6.35 0) (stroke (width 0.254) (type default)) (fill (type none))) (arc (start 6.35 0) (mid 7.62 1.27) (end 8.89 0) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 1.27 0) (xy 0.762 0)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 8.89 0) (xy 9.144 0)) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol "Source_L1_1_1" (pin passive line (at 0 0 0) (length 1.27) (name "1" (effects (font (size 1.016 1.016)))) (number "1" (effects (font (size 1.016 1.016))))) (pin passive line (at 10.16 0 180) (length 1.27) (name "2" (effects (font (size 1.016 1.016)))) (number "2" (effects (font (size 1.016 1.016))))))) (symbol "BuckBoostLocal:Source_C3" (pin_names (offset 0) hide) (in_bom yes) (on_board yes) (property "Reference" "C3" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Value" "10u" (at 0 0 0) (effects (font (size 1.27 1.27))))(property "Footprint" "BuckBoostLocal:C1_0805" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "10 uF +/-10%, 25 V X5R ceramic 0805" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))(symbol "Source_C3_0_1" (polyline (pts (xy 2.032 -4.318) (xy -2.032 -4.318)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy -2.032 -3.302) (xy 2.032 -3.302)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 0 -2.54) (xy 0 -3.302)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 0 -5.08) (xy 0 -4.318)) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol "Source_C3_1_1" (pin passive line (at 0 0 270) (length 2.54) (name "1" (effects (font (size 1.016 1.016)))) (number "1" (effects (font (size 1.016 1.016))))) (pin passive line (at 0 -7.62 90) (length 2.54) (name "2" (effects (font (size 1.016 1.016)))) (number "2" (effects (font (size 1.016 1.016))))))) (symbol "BuckBoostLocal:GND"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#PWR"
+			(at 0 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "GND_0_1"
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "GND_1_1"
+			(pin power_in line
+				(at 0 0 270)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "BuckBoostLocal:PWR_FLAG"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#FLG"
+			(at 0 1.905 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 0 3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "flag power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_0"
+			(pin power_out line
+				(at 0 0 90)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_1"
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)) (wire (pts (xy 119.38 60.96) (xy 109.22 60.96)) (stroke (width 0) (type default)) (uuid "84c81213-f8f1-56a7-b0dc-ed8f1f49f5c7")) (wire (pts (xy 109.22 60.96) (xy 109.22 45.72)) (stroke (width 0) (type default)) (uuid "4fa70f9f-5329-5bea-8e08-39dc8dd53872")) (wire (pts (xy 109.22 45.72) (xy 132.08 45.72)) (stroke (width 0) (type default)) (uuid "24a2ec9c-b6b0-5698-9a39-52bb5c2ff2f8")) (wire (pts (xy 142.24 45.72) (xy 165.1 45.72)) (stroke (width 0) (type default)) (uuid "9f7692dc-c6e5-5ba6-bade-21219a77d200")) (wire (pts (xy 165.1 45.72) (xy 165.1 60.96)) (stroke (width 0) (type default)) (uuid "5f2293e2-6588-55c8-8ac7-3ade72e03c25")) (wire (pts (xy 165.1 60.96) (xy 154.94 60.96)) (stroke (width 0) (type default)) (uuid "ad9da9dd-53cc-5588-832e-c6666e827448")) (wire (pts (xy 170.18 68.58) (xy 170.18 66.04)) (stroke (width 0) (type default)) (uuid "c19f90fd-2324-552a-bd86-393cee57da9e")) (wire (pts (xy 185.42 68.58) (xy 185.42 66.04)) (stroke (width 0) (type default)) (uuid "97c9f62b-cab3-5409-9077-6081a3b29431")) (wire (pts (xy 154.94 76.2) (xy 160.02 76.2)) (stroke (width 0) (type default)) (uuid "93c5624f-db6e-5bd6-af56-87997f0f10a1")) (wire (pts (xy 160.02 76.2) (xy 160.02 66.04)) (stroke (width 0) (type default)) (uuid "d8e11c1a-03cf-561e-b5e1-31e9ae9e7ecd")) (wire (pts (xy 154.94 86.36) (xy 172.72 86.36)) (stroke (width 0) (type default)) (uuid "22afb427-417f-56f8-8883-3f58394cc44f")) (wire (pts (xy 172.72 86.36) (xy 172.72 88.9)) (stroke (width 0) (type default)) (uuid "2b8b3153-b10a-5daa-ae64-0659e1d97a24")) (wire (pts (xy 91.44 68.58) (xy 91.44 66.04)) (stroke (width 0) (type default)) (uuid "229b4049-e5c6-52a7-81c5-4a513d0f2789")) (wire (pts (xy 119.38 71.12) (xy 116.84 71.12)) (stroke (width 0) (type default)) (uuid "feaa87d9-e674-5d77-8093-4466e7f44a99")) (wire (pts (xy 116.84 71.12) (xy 114.3 71.12)) (stroke (width 0) (type default)) (uuid "ac32584d-e839-5732-8e31-8009e374c15e")) (wire (pts (xy 114.3 71.12) (xy 114.3 83.82)) (stroke (width 0) (type default)) (uuid "20f978f8-24ea-5a0f-bc4d-97e97dfe9c40")) (wire (pts (xy 114.3 83.82) (xy 106.68 83.82)) (stroke (width 0) (type default)) (uuid "45ad8638-6879-590f-9c53-7908d60f84cd")) (wire (pts (xy 106.68 83.82) (xy 106.68 86.36)) (stroke (width 0) (type default)) (uuid "a151d3e6-2d16-5478-84a6-730ee89c109e")) (wire (pts (xy 119.38 76.2) (xy 116.84 76.2)) (stroke (width 0) (type default)) (uuid "7dbfdaf6-f7d8-5575-b510-e5b17abb4ab1")) (wire (pts (xy 116.84 76.2) (xy 116.84 71.12)) (stroke (width 0) (type default)) (uuid "21f547b3-0992-5ab5-bdf9-63196e6612a9")) (wire (pts (xy 119.38 83.82) (xy 116.84 83.82)) (stroke (width 0) (type default)) (uuid "99277479-6a43-5a12-b7c5-bc6da5ce4030")) (wire (pts (xy 116.84 83.82) (xy 116.84 76.2)) (stroke (width 0) (type default)) (uuid "0d90af11-b42d-5f5d-acfe-a712692fa616")) (wire (pts (xy 154.94 91.44) (xy 160.02 91.44)) (stroke (width 0) (type default)) (uuid "085baaf2-36c5-5490-9bb5-b3c4e5d6a873")) (wire (pts (xy 160.02 91.44) (xy 165.1 91.44)) (stroke (width 0) (type default)) (uuid "b1078ed6-1384-515e-b7d5-e3ba9d96894c")) (wire (pts (xy 165.1 91.44) (xy 165.1 93.98)) (stroke (width 0) (type default)) (uuid "85beacf6-b7c9-5a3f-954e-f4885e5813b0")) (wire (pts (xy 68.58 66.04) (xy 78.74 66.04)) (stroke (width 0) (type default)) (uuid "0b2d82d2-be1d-5f79-9e47-aeee1a16b526")) (wire (pts (xy 78.74 66.04) (xy 91.44 66.04)) (stroke (width 0) (type default)) (uuid "b2d921fa-fd6d-5836-a285-9ab55e542894")) (wire (pts (xy 91.44 66.04) (xy 106.68 66.04)) (stroke (width 0) (type default)) (uuid "4531bc74-bfde-5d18-bb97-9ead263b59ba")) (wire (pts (xy 106.68 66.04) (xy 119.38 66.04)) (stroke (width 0) (type default)) (uuid "3d4360e3-5bfb-521c-9218-8495f0adf0e8")) (wire (pts (xy 68.58 68.58) (xy 73.66 68.58)) (stroke (width 0) (type default)) (uuid "81f611d4-c087-59ac-a34d-dcd61b89c92e")) (wire (pts (xy 73.66 68.58) (xy 73.66 73.66)) (stroke (width 0) (type default)) (uuid "a48f67eb-3cf0-5703-993f-ae822d3f16d5")) (wire (pts (xy 154.94 66.04) (xy 160.02 66.04)) (stroke (width 0) (type default)) (uuid "eb75af3d-ac2d-579b-8701-5c74cf618097")) (wire (pts (xy 160.02 66.04) (xy 170.18 66.04)) (stroke (width 0) (type default)) (uuid "ebd9d10b-13c8-550d-b2eb-2d384c7dc318")) (wire (pts (xy 170.18 66.04) (xy 185.42 66.04)) (stroke (width 0) (type default)) (uuid "d59194d6-85df-566b-8899-b6a3e0770de2")) (wire (pts (xy 185.42 66.04) (xy 208.28 66.04)) (stroke (width 0) (type default)) (uuid "eaf34e17-1ce0-52a2-a31e-be9f260fd645")) (wire (pts (xy 203.2 71.12) (xy 203.2 68.58)) (stroke (width 0) (type default)) (uuid "009a24e8-8f8a-52ab-aa73-9ef64a84ec2d")) (wire (pts (xy 203.2 68.58) (xy 208.28 68.58)) (stroke (width 0) (type default)) (uuid "c9af3430-4bd8-556c-92fd-bc185d7c926c")) (wire (pts (xy 154.94 93.98) (xy 160.02 93.98)) (stroke (width 0) (type default)) (uuid "dab249e7-0802-5a36-ab92-43cdddc0b537")) (wire (pts (xy 160.02 93.98) (xy 160.02 91.44)) (stroke (width 0) (type default)) (uuid "281f1d9b-b2a1-5a9e-b8eb-a35e8b3bb738")) (wire (pts (xy 106.68 68.58) (xy 106.68 66.04)) (stroke (width 0) (type default)) (uuid "2d281d42-e15e-55e2-8106-16bc519151e4")) (wire (pts (xy 106.68 81.28) (xy 106.68 83.82)) (stroke (width 0) (type default)) (uuid "a6f2692b-c688-5d41-b277-39455d8188bc")) (junction (at 91.44 66.04) (diameter 0) (color 0 0 0 0) (uuid "4ef1648f-aef7-5b4b-9905-15015912045b")) (junction (at 106.68 83.82) (diameter 0) (color 0 0 0 0) (uuid "8ea17e80-aa7f-5bd1-93c6-72dc6b0319b4")) (junction (at 106.68 66.04) (diameter 0) (color 0 0 0 0) (uuid "adb8296d-1473-554d-bbc2-636a22b4562e")) (junction (at 116.84 76.2) (diameter 0) (color 0 0 0 0) (uuid "97a14e29-daf5-5846-ae6a-72f76bb4bcb2")) (junction (at 116.84 71.12) (diameter 0) (color 0 0 0 0) (uuid "a1994f61-34de-5ef8-8cdd-4321c5f96cfd")) (junction (at 160.02 91.44) (diameter 0) (color 0 0 0 0) (uuid "5349d56e-1aed-50fe-8f4f-0be16f0739fd")) (junction (at 160.02 66.04) (diameter 0) (color 0 0 0 0) (uuid "2dc11b8e-01c9-51ec-814e-37a7086b326f")) (junction (at 170.18 66.04) (diameter 0) (color 0 0 0 0) (uuid "96b28976-e920-5987-b1bf-840256c6a7b5")) (junction (at 185.42 66.04) (diameter 0) (color 0 0 0 0) (uuid "dcaf7ca0-4675-5365-be2e-eefddd70fb76")) (label "NetC1_1" (at 68.58 66.04 0) (effects (font (size 1.016 1.016)) (justify left bottom)) (uuid "f49e8a95-ed2c-5e44-ae22-53bf098314d5")) (label "NetC2_1" (at 175.26 66.04 0) (effects (font (size 1.016 1.016)) (justify left bottom)) (uuid "4c3bc252-da0c-54c9-acad-4fb57cea639d")) (label "NetC4_1" (at 114.3 71.12 0) (effects (font (size 1.016 1.016)) (justify left bottom)) (uuid "87204725-051c-50c4-a6d5-a6742160ec89")) (label "NetL1_1" (at 109.22 60.96 0) (effects (font (size 1.016 1.016)) (justify left bottom)) (uuid "c166618b-408a-55dc-9ce9-6648db13bd75")) (label "NetL1_2" (at 156.21 60.96 0) (effects (font (size 1.016 1.016)) (justify left bottom)) (uuid "115a2ab7-2b5a-548d-9ea4-2c6eaa543d55")) (text "3.3 V BATTERY BUCK-BOOST" (at 58.42 25.4 0) (effects (font (size 2.54 2.54)) (justify left top)) (uuid "5ff45364-7d93-5262-ad2e-f0f59841b8fa")) (text "Input: single-cell battery, 2.8-3.7 V design range    |    Output: 3.3 V regulated" (at 58.42 31.75 0) (effects (font (size 1.524 1.524)) (justify left top)) (uuid "03f54160-789b-555e-a976-658d33660771")) (text "EN and PS/SYNC are tied to VINA: always enabled, forced PWM." (at 58.42 114.3 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "d231248f-dd49-5619-9b87-ae22ac5ceb31")) (text "Reconstructed from supplied Altium schematic. Connectivity and original terminal pinout preserved." (at 58.42 119.38 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "88584ea9-800d-504d-be76-1bff1a2140f9")) (text "L1: Coilcraft XFL4020-222MEC, 2.2 uH shielded; replaces inconsistent original library selection." (at 58.42 124.46 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "9f7958de-ec76-5e0d-9d72-52727f50450b")) (text "C1/C2/C3: 10 uF nominal each; select ceramic parts with adequate effective capacitance at bias." (at 58.42 129.54 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "aef7e42e-9193-5e42-ac09-6f6471cdf956")) (text "Battery undervoltage protection and exact peak-load / ripple requirements are system-level requirements." (at 58.42 134.62 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "0c629cff-6a24-5534-9733-80a378f639f1")) (symbol (lib_id "BuckBoostLocal:Source_U1") (at 137.16 76.2 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "5eaf5fba-396f-5cda-9d01-a9a78a065e77") (property "Reference" "U1" (at 137.16 52.07 0) (effects (font (size 1.27 1.27))))(property "Value" "TPS63001DRCR" (at 137.16 54.61 0) (effects (font (size 1.27 1.27))))(property "Footprint" "BuckBoostLocal:U1_TPS63001" (at 137.16 76.2 0) (effects (font (size 1.27 1.27)) hide))(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps63001.pdf" (at 137.16 76.2 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "96% Buck-Boost Converter with 1.7A Current Switches, 3.3V fixed Output voltage in 3x3 QFN 10-VSON -40 to 125" (at 137.16 76.2 0) (effects (font (size 1.27 1.27)) hide))(property "Source_Altium_ID" "CZWCTCGI" (at 137.16 76.2 0) (effects (font (size 1.27 1.27)) hide))(property "Source_Comment" "TPS63001DRCR" (at 137.16 76.2 0) (effects (font (size 1.27 1.27)) hide))(property "Manufacturer" "Texas Instruments" (at 137.16 76.2 0) (effects (font (size 1.27 1.27)) hide))(property "MPN" "TPS63001DRCR" (at 137.16 76.2 0) (effects (font (size 1.27 1.27)) hide))(pin "1" (uuid "84ee7076-8a62-5f13-8901-a7118b11c2a2"))(pin "2" (uuid "15eb4977-8b4e-5b3d-8d33-4aacc756ad11"))(pin "3" (uuid "04bd607a-5401-51d4-9437-77e4584418b1"))(pin "4" (uuid "8578bb34-3a36-5850-b6f9-e18c27229680"))(pin "5" (uuid "dd64b257-0695-5078-913d-7d8c68332b0d"))(pin "6" (uuid "805a67f5-58ba-5f9f-8f1e-9124e4b6030a"))(pin "7" (uuid "39f1af9d-65be-5467-94cc-22b6ce8b3b7b"))(pin "8" (uuid "d0604d2f-9ed4-5aa7-83a7-d5cbcfe69694"))(pin "9" (uuid "1b82a4c8-6755-597c-8fe1-04ebd7fd9ece"))(pin "10" (uuid "fb691064-51f7-5b7a-840a-de08570a7959"))(pin "11" (uuid "5d2c1b1f-e95c-59e4-a09a-9a6a19ae608b"))(instances (project "BuckBoost_RevB" (path "/3f372f97-8e6a-5356-a903-7eddfac3f6fb" (reference "U1") (unit 1))))) (symbol (lib_id "BuckBoostLocal:Source_OUT") (at 208.28 66.04 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "98e324e3-64ee-5505-8c3f-37dd2d25a4eb") (property "Reference" "J2" (at 208.28 59.69 0) (effects (font (size 1.27 1.27))))(property "Value" "691211720002" (at 208.28 62.23 0) (effects (font (size 1.27 1.27))))(property "Footprint" "BuckBoostLocal:OUT_691211720002" (at 208.28 66.04 0) (effects (font (size 1.27 1.27)) hide))(property "Datasheet" "" (at 208.28 66.04 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "211 Series 5MM Pitch Straight, Pcb Terminal Block, Through Hole, 2 Way" (at 208.28 66.04 0) (effects (font (size 1.27 1.27)) hide))(property "Source_Altium_ID" "OZHNQVQC" (at 208.28 66.04 0) (effects (font (size 1.27 1.27)) hide))(property "Source_Comment" "691211720002" (at 208.28 66.04 0) (effects (font (size 1.27 1.27)) hide))(property "Manufacturer" "Wurth Elektronik" (at 208.28 66.04 0) (effects (font (size 1.27 1.27)) hide))(property "MPN" "691211720002" (at 208.28 66.04 0) (effects (font (size 1.27 1.27)) hide))(pin "1" (uuid "a67af9fa-c30d-5ed1-97f8-50eb886b302d"))(pin "2" (uuid "21e1c3b3-cf43-522e-a96f-bd224ac1ac63"))(instances (project "BuckBoost_RevB" (path "/3f372f97-8e6a-5356-a903-7eddfac3f6fb" (reference "J2") (unit 1))))) (symbol (lib_id "BuckBoostLocal:Source_IN") (at 68.58 66.04 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "1a241477-5e3b-59a4-996a-ba05ce1946f1") (property "Reference" "J1" (at 68.58 59.69 0) (effects (font (size 1.27 1.27))))(property "Value" "691211720002" (at 68.58 62.23 0) (effects (font (size 1.27 1.27))))(property "Footprint" "BuckBoostLocal:IN_691211720002" (at 68.58 66.04 0) (effects (font (size 1.27 1.27)) hide))(property "Datasheet" "" (at 68.58 66.04 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "211 Series 5MM Pitch Straight, Pcb Terminal Block, Through Hole, 2 Way" (at 68.58 66.04 0) (effects (font (size 1.27 1.27)) hide))(property "Source_Altium_ID" "PTCXEFSE" (at 68.58 66.04 0) (effects (font (size 1.27 1.27)) hide))(property "Source_Comment" "691211720002" (at 68.58 66.04 0) (effects (font (size 1.27 1.27)) hide))(property "Manufacturer" "Wurth Elektronik" (at 68.58 66.04 0) (effects (font (size 1.27 1.27)) hide))(property "MPN" "691211720002" (at 68.58 66.04 0) (effects (font (size 1.27 1.27)) hide))(pin "1" (uuid "4ef51f56-2d40-5cb9-a5e9-b1d39841b693"))(pin "2" (uuid "59826fd2-2173-5554-bbdc-04b3c3b45813"))(instances (project "BuckBoost_RevB" (path "/3f372f97-8e6a-5356-a903-7eddfac3f6fb" (reference "J1") (unit 1))))) (symbol (lib_id "BuckBoostLocal:Source_C1") (at 91.44 68.58 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "7006e757-b3df-50d2-abf6-139eeef43de4") (property "Reference" "C1" (at 95.25 71.755 0) (effects (font (size 1.27 1.27)) (justify left)))(property "Value" "10u" (at 95.25 74.93 0) (effects (font (size 1.27 1.27)) (justify left)))(property "Footprint" "BuckBoostLocal:C1_0805" (at 91.44 68.58 0) (effects (font (size 1.27 1.27)) hide))(property "Datasheet" "" (at 91.44 68.58 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "10 uF +/-10%, 25 V X5R ceramic 0805" (at 91.44 68.58 0) (effects (font (size 1.27 1.27)) hide))(property "Source_Altium_ID" "GLQGYDRB" (at 91.44 68.58 0) (effects (font (size 1.27 1.27)) hide))(property "Source_Comment" "Capacitor 10uF +/-20% 25V 0805" (at 91.44 68.58 0) (effects (font (size 1.27 1.27)) hide))(property "Manufacturer" "Murata" (at 91.44 68.58 0) (effects (font (size 1.27 1.27)) hide))(property "MPN" "GRM21BR61E106KA73L" (at 91.44 68.58 0) (effects (font (size 1.27 1.27)) hide))(pin "1" (uuid "03b07556-cde0-5b40-838d-ced52c0fe669"))(pin "2" (uuid "c55b3168-8665-51b8-8303-8c6736feed75"))(instances (project "BuckBoost_RevB" (path "/3f372f97-8e6a-5356-a903-7eddfac3f6fb" (reference "C1") (unit 1))))) (symbol (lib_id "BuckBoostLocal:Source_R1") (at 106.68 68.58 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "fb75f36f-550d-5e06-a40a-f76f2ce2e7c3") (property "Reference" "R1" (at 110.49 74.295 0) (effects (font (size 1.27 1.27)) (justify left)))(property "Value" "100" (at 110.49 77.47 0) (effects (font (size 1.27 1.27)) (justify left)))(property "Footprint" "BuckBoostLocal:R1_0402" (at 106.68 68.58 0) (effects (font (size 1.27 1.27)) hide))(property "Datasheet" "" (at 106.68 68.58 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "100 ohm +/-1%, 63 mW standard operation, 0402" (at 106.68 68.58 0) (effects (font (size 1.27 1.27)) hide))(property "Source_Altium_ID" "KEEYBFBP" (at 106.68 68.58 0) (effects (font (size 1.27 1.27)) hide))(property "Source_Comment" "Resistor 100R +/-1 % 0402 63 mW" (at 106.68 68.58 0) (effects (font (size 1.27 1.27)) hide))(property "Manufacturer" "Vishay" (at 106.68 68.58 0) (effects (font (size 1.27 1.27)) hide))(property "MPN" "CRCW0402100RFKED" (at 106.68 68.58 0) (effects (font (size 1.27 1.27)) hide))(pin "2" (uuid "422d23b0-8036-55c0-954d-201fc821adc9"))(pin "1" (uuid "c304065b-404f-5ba4-ad64-9efd8d15cd04"))(instances (project "BuckBoost_RevB" (path "/3f372f97-8e6a-5356-a903-7eddfac3f6fb" (reference "R1") (unit 1))))) (symbol (lib_id "BuckBoostLocal:Source_C4") (at 106.68 86.36 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "06c65573-7308-561d-a50a-f81517d5190b") (property "Reference" "C4" (at 110.49 89.535 0) (effects (font (size 1.27 1.27)) (justify left)))(property "Value" "100n" (at 110.49 92.71 0) (effects (font (size 1.27 1.27)) (justify left)))(property "Footprint" "BuckBoostLocal:C4_0805" (at 106.68 86.36 0) (effects (font (size 1.27 1.27)) hide))(property "Datasheet" "" (at 106.68 86.36 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "100 nF +/-10%, 100 V X7R ceramic 0805" (at 106.68 86.36 0) (effects (font (size 1.27 1.27)) hide))(property "Source_Altium_ID" "QHTARNXG" (at 106.68 86.36 0) (effects (font (size 1.27 1.27)) hide))(property "Source_Comment" "Capacitor 100 nF +/-10% 50 V 0805" (at 106.68 86.36 0) (effects (font (size 1.27 1.27)) hide))(property "Manufacturer" "TDK" (at 106.68 86.36 0) (effects (font (size 1.27 1.27)) hide))(property "MPN" "C2012X7R2A104K125AA" (at 106.68 86.36 0) (effects (font (size 1.27 1.27)) hide))(pin "1" (uuid "26b7a88c-3423-5b2c-ab73-1f9643f3e4a4"))(pin "2" (uuid "159f0a36-7b25-5573-a09b-90dc8edf12c8"))(instances (project "BuckBoost_RevB" (path "/3f372f97-8e6a-5356-a903-7eddfac3f6fb" (reference "C4") (unit 1))))) (symbol (lib_id "BuckBoostLocal:Source_C2") (at 170.18 68.58 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "62f6f5b5-3a33-545a-85c1-e15754329a1a") (property "Reference" "C2" (at 173.99 71.755 0) (effects (font (size 1.27 1.27)) (justify left)))(property "Value" "10u" (at 173.99 74.93 0) (effects (font (size 1.27 1.27)) (justify left)))(property "Footprint" "BuckBoostLocal:C1_0805" (at 170.18 68.58 0) (effects (font (size 1.27 1.27)) hide))(property "Datasheet" "" (at 170.18 68.58 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "10 uF +/-10%, 25 V X5R ceramic 0805" (at 170.18 68.58 0) (effects (font (size 1.27 1.27)) hide))(property "Source_Altium_ID" "TXVKNYKH" (at 170.18 68.58 0) (effects (font (size 1.27 1.27)) hide))(property "Source_Comment" "Capacitor 10uF +/-20% 25V 0805" (at 170.18 68.58 0) (effects (font (size 1.27 1.27)) hide))(property "Manufacturer" "Murata" (at 170.18 68.58 0) (effects (font (size 1.27 1.27)) hide))(property "MPN" "GRM21BR61E106KA73L" (at 170.18 68.58 0) (effects (font (size 1.27 1.27)) hide))(pin "1" (uuid "a04c75b6-3b31-50d8-a7a0-10612eea8a98"))(pin "2" (uuid "3f6acc11-1bea-52f7-9364-c6b69bb96d50"))(instances (project "BuckBoost_RevB" (path "/3f372f97-8e6a-5356-a903-7eddfac3f6fb" (reference "C2") (unit 1))))) (symbol (lib_id "BuckBoostLocal:Source_L1") (at 132.08 45.72 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "e4340de7-3d86-5a13-9010-d155d37a000e") (property "Reference" "L1" (at 137.16 41.148 0) (effects (font (size 1.27 1.27))))(property "Value" "2.2u" (at 137.16 49.53 0) (effects (font (size 1.27 1.27))))(property "Footprint" "BuckBoostLocal:L1_2u2" (at 132.08 45.72 0) (effects (font (size 1.27 1.27)) hide))(property "Datasheet" "" (at 132.08 45.72 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "2.2 uH +/-20% shielded power inductor; Coilcraft XFL4020-222MEC; DCR 23.5 mOhm max" (at 132.08 45.72 0) (effects (font (size 1.27 1.27)) hide))(property "Source_Altium_ID" "SQQAWRQY" (at 132.08 45.72 0) (effects (font (size 1.27 1.27)) hide))(property "Source_Comment" "2.2uH" (at 132.08 45.72 0) (effects (font (size 1.27 1.27)) hide))(property "Manufacturer" "Coilcraft" (at 132.08 45.72 0) (effects (font (size 1.27 1.27)) hide))(property "MPN" "XFL4020-222MEC" (at 132.08 45.72 0) (effects (font (size 1.27 1.27)) hide))(property "Revision_Note" "Replaces conflicting source 10uH/500mA metadata; nominal schematic value retained at 2.2uH" (at 132.08 45.72 0) (effects (font (size 1.27 1.27)) hide))(property "Manufacturer_Datasheet" "https://www.coilcraft.com/getmedia/50632d43-da1b-4cdb-8ab4-3029cab51df3/xfl4020.pdf" (at 132.08 45.72 0) (effects (font (size 1.27 1.27)) hide))(pin "1" (uuid "b0b85a87-b6dd-56fc-aac3-803b5dd84e42"))(pin "2" (uuid "0239aee8-fe5b-577a-88fb-1b2027a7859f"))(instances (project "BuckBoost_RevB" (path "/3f372f97-8e6a-5356-a903-7eddfac3f6fb" (reference "L1") (unit 1))))) (symbol (lib_id "BuckBoostLocal:Source_C3") (at 185.42 68.58 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "2f71b6d9-e734-5e37-8f35-b8efa92e3e96") (property "Reference" "C3" (at 189.23 71.755 0) (effects (font (size 1.27 1.27)) (justify left)))(property "Value" "10u" (at 189.23 74.93 0) (effects (font (size 1.27 1.27)) (justify left)))(property "Footprint" "BuckBoostLocal:C1_0805" (at 185.42 68.58 0) (effects (font (size 1.27 1.27)) hide))(property "Datasheet" "" (at 185.42 68.58 0) (effects (font (size 1.27 1.27)) hide))(property "Description" "10 uF +/-10%, 25 V X5R ceramic 0805" (at 185.42 68.58 0) (effects (font (size 1.27 1.27)) hide))(property "Source_Altium_ID" "HILQCUZB" (at 185.42 68.58 0) (effects (font (size 1.27 1.27)) hide))(property "Source_Comment" "Capacitor 10uF +/-20% 25V 0805" (at 185.42 68.58 0) (effects (font (size 1.27 1.27)) hide))(property "Manufacturer" "Murata" (at 185.42 68.58 0) (effects (font (size 1.27 1.27)) hide))(property "MPN" "GRM21BR61E106KA73L" (at 185.42 68.58 0) (effects (font (size 1.27 1.27)) hide))(pin "1" (uuid "1ffda6c1-2fce-5188-b2df-e7cb4a944b76"))(pin "2" (uuid "1615b146-5552-5740-8599-56377d1695be"))(instances (project "BuckBoost_RevB" (path "/3f372f97-8e6a-5356-a903-7eddfac3f6fb" (reference "C3") (unit 1))))) (symbol (lib_id "BuckBoostLocal:GND") (at 170.18 76.2 0) (unit 1) (in_bom no) (on_board no) (dnp no) (uuid "07ea0cae-33e7-570b-808f-bcd22fe2c11f") (property "Reference" "#PWR01" (at 170.18 76.2 0) (effects (font (size 1.27 1.27)) hide))(property "Value" "GND" (at 170.18 80.01 0) (effects (font (size 1.27 1.27))))(instances (project "BuckBoost_RevB" (path "/3f372f97-8e6a-5356-a903-7eddfac3f6fb" (reference "#PWR01") (unit 1))))) (symbol (lib_id "BuckBoostLocal:GND") (at 185.42 76.2 0) (unit 1) (in_bom no) (on_board no) (dnp no) (uuid "416091e5-7ec2-5764-b8f2-66df6add409c") (property "Reference" "#PWR02" (at 185.42 76.2 0) (effects (font (size 1.27 1.27)) hide))(property "Value" "GND" (at 185.42 80.01 0) (effects (font (size 1.27 1.27))))(instances (project "BuckBoost_RevB" (path "/3f372f97-8e6a-5356-a903-7eddfac3f6fb" (reference "#PWR02") (unit 1))))) (symbol (lib_id "BuckBoostLocal:GND") (at 172.72 88.9 0) (unit 1) (in_bom no) (on_board no) (dnp no) (uuid "16367dba-eb12-5ba9-810b-3db602f0c7e1") (property "Reference" "#PWR03" (at 172.72 88.9 0) (effects (font (size 1.27 1.27)) hide))(property "Value" "GND" (at 172.72 92.71 0) (effects (font (size 1.27 1.27))))(instances (project "BuckBoost_RevB" (path "/3f372f97-8e6a-5356-a903-7eddfac3f6fb" (reference "#PWR03") (unit 1))))) (symbol (lib_id "BuckBoostLocal:GND") (at 91.44 76.2 0) (unit 1) (in_bom no) (on_board no) (dnp no) (uuid "d2d39815-acdd-5fe1-9d6b-e3596a485586") (property "Reference" "#PWR04" (at 91.44 76.2 0) (effects (font (size 1.27 1.27)) hide))(property "Value" "GND" (at 91.44 80.01 0) (effects (font (size 1.27 1.27))))(instances (project "BuckBoost_RevB" (path "/3f372f97-8e6a-5356-a903-7eddfac3f6fb" (reference "#PWR04") (unit 1))))) (symbol (lib_id "BuckBoostLocal:GND") (at 106.68 93.98 0) (unit 1) (in_bom no) (on_board no) (dnp no) (uuid "9418ba97-eb25-5282-baae-372567fb8b97") (property "Reference" "#PWR05" (at 106.68 93.98 0) (effects (font (size 1.27 1.27)) hide))(property "Value" "GND" (at 106.68 97.79 0) (effects (font (size 1.27 1.27))))(instances (project "BuckBoost_RevB" (path "/3f372f97-8e6a-5356-a903-7eddfac3f6fb" (reference "#PWR05") (unit 1))))) (symbol (lib_id "BuckBoostLocal:GND") (at 165.1 93.98 0) (unit 1) (in_bom no) (on_board no) (dnp no) (uuid "db444380-bd59-5bf3-8552-bd2b5f7ee6f1") (property "Reference" "#PWR06" (at 165.1 93.98 0) (effects (font (size 1.27 1.27)) hide))(property "Value" "GND" (at 165.1 97.79 0) (effects (font (size 1.27 1.27))))(instances (project "BuckBoost_RevB" (path "/3f372f97-8e6a-5356-a903-7eddfac3f6fb" (reference "#PWR06") (unit 1))))) (symbol (lib_id "BuckBoostLocal:GND") (at 73.66 73.66 0) (unit 1) (in_bom no) (on_board no) (dnp no) (uuid "4e8dce32-468a-514b-85a1-837b85b6cf3c") (property "Reference" "#PWR07" (at 73.66 73.66 0) (effects (font (size 1.27 1.27)) hide))(property "Value" "GND" (at 73.66 77.47 0) (effects (font (size 1.27 1.27))))(instances (project "BuckBoost_RevB" (path "/3f372f97-8e6a-5356-a903-7eddfac3f6fb" (reference "#PWR07") (unit 1))))) (symbol (lib_id "BuckBoostLocal:GND") (at 203.2 71.12 0) (unit 1) (in_bom no) (on_board no) (dnp no) (uuid "17685227-523a-5070-8d24-c8f164be992f") (property "Reference" "#PWR08" (at 203.2 71.12 0) (effects (font (size 1.27 1.27)) hide))(property "Value" "GND" (at 203.2 74.93 0) (effects (font (size 1.27 1.27))))(instances (project "BuckBoost_RevB" (path "/3f372f97-8e6a-5356-a903-7eddfac3f6fb" (reference "#PWR08") (unit 1))))) (symbol (lib_id "BuckBoostLocal:PWR_FLAG") (at 78.74 66.04 0) (unit 1) (in_bom no) (on_board no) (dnp no) (uuid "406dc41d-35dd-5b31-9972-6614004d0a42") (property "Reference" "#FLG01" (at 78.74 66.04 0) (effects (font (size 1.27 1.27)) hide))(property "Value" "PWR_FLAG" (at 78.74 62.23 0) (effects (font (size 1.27 1.27)) hide))(instances (project "BuckBoost_RevB" (path "/3f372f97-8e6a-5356-a903-7eddfac3f6fb" (reference "#FLG01") (unit 1))))) (symbol (lib_id "BuckBoostLocal:PWR_FLAG") (at 73.66 68.58 0) (unit 1) (in_bom no) (on_board no) (dnp no) (uuid "d02ba097-fba5-5bab-bf98-3d5a33a24e88") (property "Reference" "#FLG02" (at 73.66 68.58 0) (effects (font (size 1.27 1.27)) hide))(property "Value" "PWR_FLAG" (at 73.66 64.77 0) (effects (font (size 1.27 1.27)) hide))(instances (project "BuckBoost_RevB" (path "/3f372f97-8e6a-5356-a903-7eddfac3f6fb" (reference "#FLG02") (unit 1))))) (symbol (lib_id "BuckBoostLocal:PWR_FLAG") (at 114.3 83.82 0) (unit 1) (in_bom no) (on_board no) (dnp no) (uuid "fbd1c384-76ff-5898-ba2d-311bdda44221") (property "Reference" "#FLG03" (at 114.3 83.82 0) (effects (font (size 1.27 1.27)) hide))(property "Value" "PWR_FLAG" (at 114.3 80.01 0) (effects (font (size 1.27 1.27)) hide))(instances (project "BuckBoost_RevB" (path "/3f372f97-8e6a-5356-a903-7eddfac3f6fb" (reference "#FLG03") (unit 1))))) (sheet_instances (path "/" (page "1"))) (embedded_fonts no))

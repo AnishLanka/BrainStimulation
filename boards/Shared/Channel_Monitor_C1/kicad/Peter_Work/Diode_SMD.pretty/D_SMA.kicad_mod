@@ -1,0 +1,274 @@
+(footprint "D_SMA"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Diode SMA (DO-214AC)")
+	(tags "Diode SMA (DO-214AC)")
+	(property "Reference" "D101"
+		(at 0 -5 0)
+		(layer "F.SilkS")
+		(uuid "62f53aa5-2032-4db0-a039-4632e760b3c0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SMAJ12A_COIL_CLAMP"
+		(at 0 2.6 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "89d6135d-d830-4f1d-ab45-fcf0d13bc54a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0d9bbea2-7d4e-4529-9041-b6141175e3e8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c422ea1b-87be-4b32-9ff4-263bb1fdfd02")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "SMAJ12A-E3/61"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ad049742-2a93-4f96-abc1-f9aa83763db3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Design notes" "Unidirectional TVS: pin 1 cathode at drain, pin 2 anode at MID. Direct drain-source clamp, not across the coil. Datasheet 25 C clamp maximum is 19.9 V at 20.1 A. Measure actual coil turn-off voltage including layout overshoot. Do not substitute a bidirectional CA part without review."
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "a167abd8-5cf1-4950-a8e3-7d342308961c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint candidate" "Diode_SMD:D_SMA"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "f3fad48f-21e7-490c-8e76-d6684e8d61da")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -3.5 -1.75)
+		(end 3.5 -1.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ee135a21-ad6d-4b05-96cc-eb5b051f332c")
+	)
+	(fp_line
+		(start -3.5 1.75)
+		(end -3.5 -1.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "88191351-75cb-4217-a288-e4db4ae6c1bb")
+	)
+	(fp_line
+		(start 3.5 -1.75)
+		(end 3.5 1.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "015abc1d-d05a-4b82-b8d4-03c601e6d007")
+	)
+	(fp_line
+		(start 3.5 1.75)
+		(end -3.5 1.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "1ae10a62-cc9b-4e83-9bdc-3659ea838399")
+	)
+	(fp_line
+		(start -2.3 1.5)
+		(end -2.3 -1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a13abb5a-94b5-4c70-9ee1-7095ad4b8a77")
+	)
+	(fp_line
+		(start -0.64944 -0.79908)
+		(end -0.64944 0.80112)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "148dfbea-211f-4a02-9fc3-8eb7cd601111")
+	)
+	(fp_line
+		(start -0.64944 0.00102)
+		(end -1.55114 0.00102)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "eac385e7-8ca5-49eb-aa37-538ccbd63715")
+	)
+	(fp_line
+		(start -0.64944 0.00102)
+		(end 0.50118 -0.79908)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "89ab82ee-1378-4c34-8573-77249c7d53ef")
+	)
+	(fp_line
+		(start -0.64944 0.00102)
+		(end 0.50118 0.75032)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "948c05d0-6db0-45e3-80ca-acf4c11266d3")
+	)
+	(fp_line
+		(start 0.50118 0.00102)
+		(end 1.4994 0.00102)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6ff139e5-8d5d-4fa6-bb50-dd1c23fffbb4")
+	)
+	(fp_line
+		(start 0.50118 0.75032)
+		(end 0.50118 -0.79908)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "830d5abb-9e47-4492-b229-1ee504c87a0a")
+	)
+	(fp_line
+		(start 2.3 -1.5)
+		(end -2.3 -1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "acfd7af1-2ee3-4856-a2a3-a0f40926526e")
+	)
+	(fp_line
+		(start 2.3 -1.5)
+		(end 2.3 1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b03d04d4-9e31-4253-a260-3aa3888c3db9")
+	)
+	(fp_line
+		(start 2.3 1.5)
+		(end -2.3 1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "de7083a6-48d1-44b5-9ee0-c40c605bf703")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -2.5 0)
+		(layer "F.Fab")
+		(uuid "f478252f-8c8f-4c46-9e98-040602b58b2e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -2 0)
+		(size 2.5 1.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.1388888889)
+		(clearance 0)
+		(uuid "1cb10f30-df8e-4739-8475-e6e085ddbfc3")
+	)
+	(pad "2" smd roundrect
+		(at 2 0)
+		(size 2.5 1.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.1388888889)
+		(clearance 0)
+		(uuid "f5d057ea-15e5-480d-a2e8-d683d9bc5be7")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMA.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

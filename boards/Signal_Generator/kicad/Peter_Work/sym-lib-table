@@ -1,0 +1,8 @@
+(sym_lib_table 
+	(version 7) 
+	(lib 
+		(name "SignalGenLocal") 
+		(type "KiCad") 
+		(uri "${KIPRJMOD}/SignalGenLocal.kicad_sym") 
+		(options "") 
+		(descr "Recovered source symbols; reviewed draft pin names")))

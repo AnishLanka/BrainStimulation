@@ -1,0 +1,1244 @@
+[
+  {
+    "reference": "C1",
+    "value": "10uF",
+    "footprint": "SignalGenLocal:C1_G-21_MUR",
+    "properties": {
+      "COPYRIGHT": "Copyright (C) 2025 Ultra Librarian. All rights reserved.",
+      "MANUFACTURER_NAME": "Murata",
+      "MANUFACTURER_PART_NUMBER": "GRM21BR61E106KA73L",
+      "TYPE": "",
+      "REFDES": "",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*G-21_MUR*"
+    }
+  },
+  {
+    "reference": "C2",
+    "value": "100nF",
+    "footprint": "SignalGenLocal:C2_CAPC1608X90N",
+    "properties": {
+      "MOUSER PART NUMBER": "603-CC603KRX7R8BB104",
+      "MOUSER PRICE/STOCK": "https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D",
+      "MANUFACTURER_NAME": "YAGEO",
+      "MANUFACTURER_PART_NUMBER": "CC0603KRX7R8BB104",
+      "DATASHEET LINK": "https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac",
+      "GEOMETRY.HEIGHT": "0.9mm",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*CAPC1608X90N*"
+    }
+  },
+  {
+    "reference": "C3",
+    "value": "100nF SYS",
+    "footprint": "SignalGenLocal:C3_CAPC1608X90N",
+    "properties": {
+      "MOUSER PART NUMBER": "603-CC603KRX7R8BB104",
+      "MOUSER PRICE/STOCK": "https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D",
+      "MANUFACTURER_NAME": "YAGEO",
+      "MANUFACTURER_PART_NUMBER": "CC0603KRX7R8BB104",
+      "DATASHEET LINK": "https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac",
+      "GEOMETRY.HEIGHT": "0.9mm",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*CAPC1608X90N*"
+    }
+  },
+  {
+    "reference": "C4",
+    "value": "1uF",
+    "footprint": "SignalGenLocal:C4_INDC1608X90N",
+    "properties": {
+      "MOUSER PART NUMBER": "*",
+      "MOUSER PRICE/STOCK": "*",
+      "MANUFACTURER_NAME": "TAIYO YUDEN",
+      "MANUFACTURER_PART_NUMBER": "MBASE168SB7105KTNA18",
+      "DATASHEET LINK": "https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18",
+      "GEOMETRY.HEIGHT": "0.9mm",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*INDC1608X90N*"
+    }
+  },
+  {
+    "reference": "C5",
+    "value": "1uF",
+    "footprint": "SignalGenLocal:C5_INDC1608X90N",
+    "properties": {
+      "MOUSER PART NUMBER": "*",
+      "MOUSER PRICE/STOCK": "*",
+      "MANUFACTURER_NAME": "TAIYO YUDEN",
+      "MANUFACTURER_PART_NUMBER": "MBASE168SB7105KTNA18",
+      "DATASHEET LINK": "https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18",
+      "GEOMETRY.HEIGHT": "0.9mm",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*INDC1608X90N*"
+    }
+  },
+  {
+    "reference": "C6",
+    "value": "100nF ISO",
+    "footprint": "SignalGenLocal:C6_CAPC1608X90N",
+    "properties": {
+      "MOUSER PART NUMBER": "603-CC603KRX7R8BB104",
+      "MOUSER PRICE/STOCK": "https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D",
+      "MANUFACTURER_NAME": "YAGEO",
+      "MANUFACTURER_PART_NUMBER": "CC0603KRX7R8BB104",
+      "DATASHEET LINK": "https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac",
+      "GEOMETRY.HEIGHT": "0.9mm",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*CAPC1608X90N*"
+    }
+  },
+  {
+    "reference": "C8",
+    "value": "1uF",
+    "footprint": "SignalGenLocal:C8_INDC1608X90N",
+    "properties": {
+      "MOUSER PART NUMBER": "*",
+      "MOUSER PRICE/STOCK": "*",
+      "MANUFACTURER_NAME": "TAIYO YUDEN",
+      "MANUFACTURER_PART_NUMBER": "MBASE168SB7105KTNA18",
+      "DATASHEET LINK": "https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18",
+      "GEOMETRY.HEIGHT": "0.9mm",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*INDC1608X90N*"
+    }
+  },
+  {
+    "reference": "C9",
+    "value": "1uF",
+    "footprint": "SignalGenLocal:C9_INDC1608X90N",
+    "properties": {
+      "MOUSER PART NUMBER": "*",
+      "MOUSER PRICE/STOCK": "*",
+      "MANUFACTURER_NAME": "TAIYO YUDEN",
+      "MANUFACTURER_PART_NUMBER": "MBASE168SB7105KTNA18",
+      "DATASHEET LINK": "https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18",
+      "GEOMETRY.HEIGHT": "0.9mm",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*INDC1608X90N*"
+    }
+  },
+  {
+    "reference": "C10",
+    "value": "100nF",
+    "footprint": "SignalGenLocal:C10_CAPC1608X90N",
+    "properties": {
+      "MOUSER PART NUMBER": "603-CC603KRX7R8BB104",
+      "MOUSER PRICE/STOCK": "https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D",
+      "MANUFACTURER_NAME": "YAGEO",
+      "MANUFACTURER_PART_NUMBER": "CC0603KRX7R8BB104",
+      "DATASHEET LINK": "https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac",
+      "GEOMETRY.HEIGHT": "0.9mm",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*CAPC1608X90N*"
+    }
+  },
+  {
+    "reference": "C12",
+    "value": "470nF",
+    "footprint": "SignalGenLocal:C12_CAP_1608_TDK",
+    "properties": {
+      "COPYRIGHT": "Copyright (C) 2026 Ultra Librarian. All rights reserved.",
+      "MANUFACTURER_NAME": "TDK",
+      "MANUFACTURER_PART_NUMBER": "C1608X7R1H474K080AC",
+      "TYPE": "",
+      "REFDES": "",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*CAP_1608_TDK*"
+    }
+  },
+  {
+    "reference": "C13",
+    "value": "470nF",
+    "footprint": "SignalGenLocal:C13_CAP_1608_TDK",
+    "properties": {
+      "COPYRIGHT": "Copyright (C) 2026 Ultra Librarian. All rights reserved.",
+      "MANUFACTURER_NAME": "TDK",
+      "MANUFACTURER_PART_NUMBER": "C1608X7R1H474K080AC",
+      "TYPE": "",
+      "REFDES": "",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*CAP_1608_TDK*"
+    }
+  },
+  {
+    "reference": "C14",
+    "value": "10uF",
+    "footprint": "SignalGenLocal:C14_G-21_MUR",
+    "properties": {
+      "COPYRIGHT": "Copyright (C) 2025 Ultra Librarian. All rights reserved.",
+      "MANUFACTURER_NAME": "Murata",
+      "MANUFACTURER_PART_NUMBER": "GRM21BR61E106KA73L",
+      "TYPE": "",
+      "REFDES": "",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*G-21_MUR*"
+    }
+  },
+  {
+    "reference": "C15",
+    "value": "10uF",
+    "footprint": "SignalGenLocal:C15_G-21_MUR",
+    "properties": {
+      "COPYRIGHT": "Copyright (C) 2025 Ultra Librarian. All rights reserved.",
+      "MANUFACTURER_NAME": "Murata",
+      "MANUFACTURER_PART_NUMBER": "GRM21BR61E106KA73L",
+      "TYPE": "",
+      "REFDES": "",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*G-21_MUR*"
+    }
+  },
+  {
+    "reference": "C17",
+    "value": "100nF",
+    "footprint": "SignalGenLocal:C17_CAPC1608X90N",
+    "properties": {
+      "MOUSER PART NUMBER": "603-CC603KRX7R8BB104",
+      "MOUSER PRICE/STOCK": "https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D",
+      "MANUFACTURER_NAME": "YAGEO",
+      "MANUFACTURER_PART_NUMBER": "CC0603KRX7R8BB104",
+      "DATASHEET LINK": "https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac",
+      "GEOMETRY.HEIGHT": "0.9mm",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*CAPC1608X90N*"
+    }
+  },
+  {
+    "reference": "C18",
+    "value": "100nF",
+    "footprint": "SignalGenLocal:C18_CAPC1608X90N",
+    "properties": {
+      "MOUSER PART NUMBER": "603-CC603KRX7R8BB104",
+      "MOUSER PRICE/STOCK": "https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D",
+      "MANUFACTURER_NAME": "YAGEO",
+      "MANUFACTURER_PART_NUMBER": "CC0603KRX7R8BB104",
+      "DATASHEET LINK": "https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac",
+      "GEOMETRY.HEIGHT": "0.9mm",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*CAPC1608X90N*"
+    }
+  },
+  {
+    "reference": "C19",
+    "value": "1uF",
+    "footprint": "SignalGenLocal:C19_INDC1608X90N",
+    "properties": {
+      "MOUSER PART NUMBER": "*",
+      "MOUSER PRICE/STOCK": "*",
+      "MANUFACTURER_NAME": "TAIYO YUDEN",
+      "MANUFACTURER_PART_NUMBER": "MBASE168SB7105KTNA18",
+      "DATASHEET LINK": "https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18",
+      "GEOMETRY.HEIGHT": "0.9mm",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*INDC1608X90N*"
+    }
+  },
+  {
+    "reference": "C20",
+    "value": "1uF",
+    "footprint": "SignalGenLocal:C20_INDC1608X90N",
+    "properties": {
+      "MOUSER PART NUMBER": "*",
+      "MOUSER PRICE/STOCK": "*",
+      "MANUFACTURER_NAME": "TAIYO YUDEN",
+      "MANUFACTURER_PART_NUMBER": "MBASE168SB7105KTNA18",
+      "DATASHEET LINK": "https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18",
+      "GEOMETRY.HEIGHT": "0.9mm",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*INDC1608X90N*"
+    }
+  },
+  {
+    "reference": "C21",
+    "value": "1uF",
+    "footprint": "SignalGenLocal:C21_INDC1608X90N",
+    "properties": {
+      "MOUSER PART NUMBER": "*",
+      "MOUSER PRICE/STOCK": "*",
+      "MANUFACTURER_NAME": "TAIYO YUDEN",
+      "MANUFACTURER_PART_NUMBER": "MBASE168SB7105KTNA18",
+      "DATASHEET LINK": "https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18",
+      "GEOMETRY.HEIGHT": "0.9mm",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*INDC1608X90N*"
+    }
+  },
+  {
+    "reference": "C22",
+    "value": "1uF",
+    "footprint": "SignalGenLocal:C22_INDC1608X90N",
+    "properties": {
+      "MOUSER PART NUMBER": "*",
+      "MOUSER PRICE/STOCK": "*",
+      "MANUFACTURER_NAME": "TAIYO YUDEN",
+      "MANUFACTURER_PART_NUMBER": "MBASE168SB7105KTNA18",
+      "DATASHEET LINK": "https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18",
+      "GEOMETRY.HEIGHT": "0.9mm",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*INDC1608X90N*"
+    }
+  },
+  {
+    "reference": "C23",
+    "value": "100nF",
+    "footprint": "SignalGenLocal:C23_CAPC1608X90N",
+    "properties": {
+      "MOUSER PART NUMBER": "603-CC603KRX7R8BB104",
+      "MOUSER PRICE/STOCK": "https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D",
+      "MANUFACTURER_NAME": "YAGEO",
+      "MANUFACTURER_PART_NUMBER": "CC0603KRX7R8BB104",
+      "DATASHEET LINK": "https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac",
+      "GEOMETRY.HEIGHT": "0.9mm",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*CAPC1608X90N*"
+    }
+  },
+  {
+    "reference": "C24",
+    "value": "1uF",
+    "footprint": "SignalGenLocal:C24_INDC1608X90N",
+    "properties": {
+      "MOUSER PART NUMBER": "*",
+      "MOUSER PRICE/STOCK": "*",
+      "MANUFACTURER_NAME": "TAIYO YUDEN",
+      "MANUFACTURER_PART_NUMBER": "MBASE168SB7105KTNA18",
+      "DATASHEET LINK": "https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18",
+      "GEOMETRY.HEIGHT": "0.9mm",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*INDC1608X90N*"
+    }
+  },
+  {
+    "reference": "C25",
+    "value": "1uF",
+    "footprint": "SignalGenLocal:C25_INDC1608X90N",
+    "properties": {
+      "MOUSER PART NUMBER": "*",
+      "MOUSER PRICE/STOCK": "*",
+      "MANUFACTURER_NAME": "TAIYO YUDEN",
+      "MANUFACTURER_PART_NUMBER": "MBASE168SB7105KTNA18",
+      "DATASHEET LINK": "https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18",
+      "GEOMETRY.HEIGHT": "0.9mm",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*INDC1608X90N*"
+    }
+  },
+  {
+    "reference": "C26",
+    "value": "100nF ISO_2",
+    "footprint": "SignalGenLocal:C26_CAPC1608X90N",
+    "properties": {
+      "MOUSER PART NUMBER": "603-CC603KRX7R8BB104",
+      "MOUSER PRICE/STOCK": "https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D",
+      "MANUFACTURER_NAME": "YAGEO",
+      "MANUFACTURER_PART_NUMBER": "CC0603KRX7R8BB104",
+      "DATASHEET LINK": "https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac",
+      "GEOMETRY.HEIGHT": "0.9mm",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*CAPC1608X90N*"
+    }
+  },
+  {
+    "reference": "C27",
+    "value": "100nF SYS",
+    "footprint": "SignalGenLocal:C27_CAPC1608X90N",
+    "properties": {
+      "MOUSER PART NUMBER": "603-CC603KRX7R8BB104",
+      "MOUSER PRICE/STOCK": "https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D",
+      "MANUFACTURER_NAME": "YAGEO",
+      "MANUFACTURER_PART_NUMBER": "CC0603KRX7R8BB104",
+      "DATASHEET LINK": "https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac",
+      "GEOMETRY.HEIGHT": "0.9mm",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*CAPC1608X90N*"
+    }
+  },
+  {
+    "reference": "C28",
+    "value": "10uF",
+    "footprint": "SignalGenLocal:C28_G-21_MUR",
+    "properties": {
+      "COPYRIGHT": "Copyright (C) 2025 Ultra Librarian. All rights reserved.",
+      "MANUFACTURER_NAME": "Murata",
+      "MANUFACTURER_PART_NUMBER": "GRM21BR61E106KA73L",
+      "TYPE": "",
+      "REFDES": "",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*G-21_MUR*"
+    }
+  },
+  {
+    "reference": "C29",
+    "value": "10uF",
+    "footprint": "SignalGenLocal:C29_G-21_MUR",
+    "properties": {
+      "COPYRIGHT": "Copyright (C) 2025 Ultra Librarian. All rights reserved.",
+      "MANUFACTURER_NAME": "Murata",
+      "MANUFACTURER_PART_NUMBER": "GRM21BR61E106KA73L",
+      "TYPE": "",
+      "REFDES": "",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*G-21_MUR*"
+    }
+  },
+  {
+    "reference": "C30",
+    "value": "470nF",
+    "footprint": "SignalGenLocal:C30_CAP_1608_TDK",
+    "properties": {
+      "COPYRIGHT": "Copyright (C) 2026 Ultra Librarian. All rights reserved.",
+      "MANUFACTURER_NAME": "TDK",
+      "MANUFACTURER_PART_NUMBER": "C1608X7R1H474K080AC",
+      "TYPE": "",
+      "REFDES": "",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*CAP_1608_TDK*"
+    }
+  },
+  {
+    "reference": "C31",
+    "value": "470nF",
+    "footprint": "SignalGenLocal:C31_CAP_1608_TDK",
+    "properties": {
+      "COPYRIGHT": "Copyright (C) 2026 Ultra Librarian. All rights reserved.",
+      "MANUFACTURER_NAME": "TDK",
+      "MANUFACTURER_PART_NUMBER": "C1608X7R1H474K080AC",
+      "TYPE": "",
+      "REFDES": "",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*CAP_1608_TDK*"
+    }
+  },
+  {
+    "reference": "C33",
+    "value": "100nF",
+    "footprint": "SignalGenLocal:C33_CAPC1608X90N",
+    "properties": {
+      "MOUSER PART NUMBER": "603-CC603KRX7R8BB104",
+      "MOUSER PRICE/STOCK": "https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D",
+      "MANUFACTURER_NAME": "YAGEO",
+      "MANUFACTURER_PART_NUMBER": "CC0603KRX7R8BB104",
+      "DATASHEET LINK": "https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac",
+      "GEOMETRY.HEIGHT": "0.9mm",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*CAPC1608X90N*"
+    }
+  },
+  {
+    "reference": "C34",
+    "value": "100nF",
+    "footprint": "SignalGenLocal:C34_CAPC1608X90N",
+    "properties": {
+      "MOUSER PART NUMBER": "603-CC603KRX7R8BB104",
+      "MOUSER PRICE/STOCK": "https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D",
+      "MANUFACTURER_NAME": "YAGEO",
+      "MANUFACTURER_PART_NUMBER": "CC0603KRX7R8BB104",
+      "DATASHEET LINK": "https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac",
+      "GEOMETRY.HEIGHT": "0.9mm",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*CAPC1608X90N*"
+    }
+  },
+  {
+    "reference": "C35",
+    "value": "1uF",
+    "footprint": "SignalGenLocal:C35_INDC1608X90N",
+    "properties": {
+      "MOUSER PART NUMBER": "*",
+      "MOUSER PRICE/STOCK": "*",
+      "MANUFACTURER_NAME": "TAIYO YUDEN",
+      "MANUFACTURER_PART_NUMBER": "MBASE168SB7105KTNA18",
+      "DATASHEET LINK": "https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18",
+      "GEOMETRY.HEIGHT": "0.9mm",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*INDC1608X90N*"
+    }
+  },
+  {
+    "reference": "C36",
+    "value": "1uF",
+    "footprint": "SignalGenLocal:C36_INDC1608X90N",
+    "properties": {
+      "MOUSER PART NUMBER": "*",
+      "MOUSER PRICE/STOCK": "*",
+      "MANUFACTURER_NAME": "TAIYO YUDEN",
+      "MANUFACTURER_PART_NUMBER": "MBASE168SB7105KTNA18",
+      "DATASHEET LINK": "https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18",
+      "GEOMETRY.HEIGHT": "0.9mm",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*INDC1608X90N*"
+    }
+  },
+  {
+    "reference": "C37",
+    "value": "1uF",
+    "footprint": "SignalGenLocal:C37_INDC1608X90N",
+    "properties": {
+      "MOUSER PART NUMBER": "*",
+      "MOUSER PRICE/STOCK": "*",
+      "MANUFACTURER_NAME": "TAIYO YUDEN",
+      "MANUFACTURER_PART_NUMBER": "MBASE168SB7105KTNA18",
+      "DATASHEET LINK": "https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18",
+      "GEOMETRY.HEIGHT": "0.9mm",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*INDC1608X90N*"
+    }
+  },
+  {
+    "reference": "C38",
+    "value": "1uF",
+    "footprint": "SignalGenLocal:C38_INDC1608X90N",
+    "properties": {
+      "MOUSER PART NUMBER": "*",
+      "MOUSER PRICE/STOCK": "*",
+      "MANUFACTURER_NAME": "TAIYO YUDEN",
+      "MANUFACTURER_PART_NUMBER": "MBASE168SB7105KTNA18",
+      "DATASHEET LINK": "https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18",
+      "GEOMETRY.HEIGHT": "0.9mm",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*INDC1608X90N*"
+    }
+  },
+  {
+    "reference": "C39",
+    "value": "10uF",
+    "footprint": "SignalGenLocal:C39_G-21_MUR",
+    "properties": {
+      "COPYRIGHT": "Copyright (C) 2025 Ultra Librarian. All rights reserved.",
+      "MANUFACTURER_NAME": "Murata",
+      "MANUFACTURER_PART_NUMBER": "GRM21BR61E106KA73L",
+      "TYPE": "",
+      "REFDES": "",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*G-21_MUR*"
+    }
+  },
+  {
+    "reference": "C40",
+    "value": "100nF",
+    "footprint": "SignalGenLocal:C40_CAPC1608X90N",
+    "properties": {
+      "MOUSER PART NUMBER": "603-CC603KRX7R8BB104",
+      "MOUSER PRICE/STOCK": "https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R8BB104?qs=AgBp2OyFlx%252B4QOgEm%2Fb3YQ%3D%3D",
+      "MANUFACTURER_NAME": "YAGEO",
+      "MANUFACTURER_PART_NUMBER": "CC0603KRX7R8BB104",
+      "DATASHEET LINK": "https://www.arrow.com/en/products/cc0603krx7r8bb104/yageo?region=nac",
+      "GEOMETRY.HEIGHT": "0.9mm",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*CAPC1608X90N*"
+    }
+  },
+  {
+    "reference": "C41",
+    "value": "22u",
+    "footprint": "SignalGenLocal:C_1206_3216Metric",
+    "properties": {
+      "MOUSER PART NUMBER": "*",
+      "MOUSER PRICE/STOCK": "*",
+      "MANUFACTURER_NAME": "TBD",
+      "MANUFACTURER_PART_NUMBER": "TBD - draft value/footprint only",
+      "DATASHEET LINK": "",
+      "GEOMETRY.HEIGHT": "",
+      "Voltage": "16V",
+      "Dielectric": "X7R/X5R",
+      "MPN": "TBD - draft value/footprint only",
+      "Draft_Change": "Local bulk >=10uF effective;22uF nominal selection pendingDC-bias verification",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*INDC1608X90N*"
+    }
+  },
+  {
+    "reference": "C42",
+    "value": "10n",
+    "footprint": "SignalGenLocal:C_0402_1005Metric",
+    "properties": {
+      "MOUSER PART NUMBER": "*",
+      "MOUSER PRICE/STOCK": "*",
+      "MANUFACTURER_NAME": "TBD",
+      "MANUFACTURER_PART_NUMBER": "TBD - draft value/footprint only",
+      "DATASHEET LINK": "",
+      "GEOMETRY.HEIGHT": "",
+      "Voltage": "50V",
+      "Dielectric": "X7R",
+      "MPN": "TBD - draft value/footprint only",
+      "Draft_Change": "0402 bypass within1mm ofVISOOUT pin12",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*INDC1608X90N*"
+    }
+  },
+  {
+    "reference": "C43",
+    "value": "10n",
+    "footprint": "SignalGenLocal:C_0402_1005Metric",
+    "properties": {
+      "MOUSER PART NUMBER": "*",
+      "MOUSER PRICE/STOCK": "*",
+      "MANUFACTURER_NAME": "TBD",
+      "MANUFACTURER_PART_NUMBER": "TBD - draft value/footprint only",
+      "DATASHEET LINK": "",
+      "GEOMETRY.HEIGHT": "",
+      "Voltage": "50V",
+      "Dielectric": "X7R",
+      "MPN": "TBD - draft value/footprint only",
+      "Draft_Change": "0402 bypass within1mm ofVDD pin9",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*INDC1608X90N*"
+    }
+  },
+  {
+    "reference": "C44",
+    "value": "22u",
+    "footprint": "SignalGenLocal:C_1206_3216Metric",
+    "properties": {
+      "MOUSER PART NUMBER": "*",
+      "MOUSER PRICE/STOCK": "*",
+      "MANUFACTURER_NAME": "TBD",
+      "MANUFACTURER_PART_NUMBER": "TBD - draft value/footprint only",
+      "DATASHEET LINK": "",
+      "GEOMETRY.HEIGHT": "",
+      "Voltage": "16V",
+      "Dielectric": "X7R/X5R",
+      "MPN": "TBD - draft value/footprint only",
+      "Draft_Change": "Local bulk >=10uF effective;22uF nominal selection pendingDC-bias verification",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*INDC1608X90N*"
+    }
+  },
+  {
+    "reference": "C45",
+    "value": "10n",
+    "footprint": "SignalGenLocal:C_0402_1005Metric",
+    "properties": {
+      "MOUSER PART NUMBER": "*",
+      "MOUSER PRICE/STOCK": "*",
+      "MANUFACTURER_NAME": "TBD",
+      "MANUFACTURER_PART_NUMBER": "TBD - draft value/footprint only",
+      "DATASHEET LINK": "",
+      "GEOMETRY.HEIGHT": "",
+      "Voltage": "50V",
+      "Dielectric": "X7R",
+      "MPN": "TBD - draft value/footprint only",
+      "Draft_Change": "0402 bypass within1mm ofVISOOUT pin12",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*INDC1608X90N*"
+    }
+  },
+  {
+    "reference": "C46",
+    "value": "10n",
+    "footprint": "SignalGenLocal:C_0402_1005Metric",
+    "properties": {
+      "MOUSER PART NUMBER": "*",
+      "MOUSER PRICE/STOCK": "*",
+      "MANUFACTURER_NAME": "TBD",
+      "MANUFACTURER_PART_NUMBER": "TBD - draft value/footprint only",
+      "DATASHEET LINK": "",
+      "GEOMETRY.HEIGHT": "",
+      "Voltage": "50V",
+      "Dielectric": "X7R",
+      "MPN": "TBD - draft value/footprint only",
+      "Draft_Change": "0402 bypass within1mm ofVDD pin9",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*INDC1608X90N*"
+    }
+  },
+  {
+    "reference": "J1",
+    "value": "SS-107-T-1A",
+    "footprint": "SignalGenLocal:J1_SAMTEC_SS-107-T-1A",
+    "properties": {
+      "MF": "",
+      "PACKAGE": "None",
+      "PRICE": "None",
+      "ALTIUM_VALUE": "*",
+      "MP": "SS-107-T-1A",
+      "AVAILABILITY": "Unavailable",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*SAMTEC_SS-107-T-1A*"
+    }
+  },
+  {
+    "reference": "J2",
+    "value": "SS-107-T-1A",
+    "footprint": "SignalGenLocal:J2_SAMTEC_SS-107-T-1A",
+    "properties": {
+      "MF": "",
+      "PACKAGE": "None",
+      "PRICE": "None",
+      "ALTIUM_VALUE": "*",
+      "MP": "SS-107-T-1A",
+      "AVAILABILITY": "Unavailable",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*SAMTEC_SS-107-T-1A*"
+    }
+  },
+  {
+    "reference": "J3",
+    "value": "1716030000",
+    "footprint": "SignalGenLocal:J3_CONN_LM_5.080390_WED",
+    "properties": {
+      "COPYRIGHT": "Copyright (C) 2025 Ultra Librarian. All rights reserved.",
+      "MANUFACTURER_NAME": "Weidmuller",
+      "MANUFACTURER_PART_NUMBER": "1716030000",
+      "REFDES": "RefDes",
+      "TYPE": "Type",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*CONN_LM 5.080390_WED*"
+    }
+  },
+  {
+    "reference": "J4",
+    "value": "1716030000",
+    "footprint": "SignalGenLocal:J4_CONN_LM_5.080390_WED",
+    "properties": {
+      "COPYRIGHT": "Copyright (C) 2025 Ultra Librarian. All rights reserved.",
+      "MANUFACTURER_NAME": "Weidmuller",
+      "MANUFACTURER_PART_NUMBER": "1716030000",
+      "REFDES": "RefDes",
+      "TYPE": "Type",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*CONN_LM 5.080390_WED*"
+    }
+  },
+  {
+    "reference": "PS1",
+    "value": "IA0305S",
+    "footprint": "SignalGenLocal:PS1_XP_IA0305S",
+    "properties": {
+      "MF": "",
+      "PACKAGE": "None",
+      "PRICE": "None",
+      "ALTIUM_VALUE": "*",
+      "MP": "IA0305S",
+      "AVAILABILITY": "Unavailable",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*XP_IA0305S*"
+    }
+  },
+  {
+    "reference": "PS2",
+    "value": "IA0305S",
+    "footprint": "SignalGenLocal:PS2_XP_IA0305S",
+    "properties": {
+      "MF": "",
+      "PACKAGE": "None",
+      "PRICE": "None",
+      "ALTIUM_VALUE": "*",
+      "MP": "IA0305S",
+      "AVAILABILITY": "Unavailable",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*XP_IA0305S*"
+    }
+  },
+  {
+    "reference": "R3",
+    "value": "20K",
+    "footprint": "SignalGenLocal:R3_RC0603N_YAG",
+    "properties": {
+      "COPYRIGHT": "Copyright (C) 2025 Ultra Librarian. All rights reserved.",
+      "MANUFACTURER_NAME": "Yageo",
+      "MANUFACTURER_PART_NUMBER": "RC0603FR-0720KL",
+      "TYPE": "",
+      "REFDES": "",
+      "MPN": "RC0603FR-0720KL",
+      "Draft_Change": "Changed from10k to20k for equal-resistor non-inverting2*DAC-VREF stage",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*RC0603N_YAG*"
+    }
+  },
+  {
+    "reference": "R6",
+    "value": "20K",
+    "footprint": "SignalGenLocal:R6_RC0603N_YAG",
+    "properties": {
+      "COPYRIGHT": "Copyright (C) 2025 Ultra Librarian. All rights reserved.",
+      "MANUFACTURER_NAME": "Yageo",
+      "MANUFACTURER_PART_NUMBER": "RC0603FR-0720KL",
+      "TYPE": "",
+      "REFDES": "",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*RC0603N_YAG*"
+    }
+  },
+  {
+    "reference": "R11",
+    "value": "20K",
+    "footprint": "SignalGenLocal:R11_RC0603N_YAG",
+    "properties": {
+      "COPYRIGHT": "Copyright (C) 2025 Ultra Librarian. All rights reserved.",
+      "MANUFACTURER_NAME": "Yageo",
+      "MANUFACTURER_PART_NUMBER": "RC0603FR-0720KL",
+      "TYPE": "",
+      "REFDES": "",
+      "MPN": "RC0603FR-0720KL",
+      "Draft_Change": "Changed from10k to20k for equal-resistor non-inverting2*DAC-VREF stage",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*RC0603N_YAG*"
+    }
+  },
+  {
+    "reference": "R12",
+    "value": "20K",
+    "footprint": "SignalGenLocal:R12_RC0603N_YAG",
+    "properties": {
+      "COPYRIGHT": "Copyright (C) 2025 Ultra Librarian. All rights reserved.",
+      "MANUFACTURER_NAME": "Yageo",
+      "MANUFACTURER_PART_NUMBER": "RC0603FR-0720KL",
+      "TYPE": "",
+      "REFDES": "",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*RC0603N_YAG*"
+    }
+  },
+  {
+    "reference": "R13",
+    "value": "10K",
+    "footprint": "SignalGenLocal:R_0603_1608Metric",
+    "properties": {
+      "COPYRIGHT": "Copyright (C) 2025 Ultra Librarian. All rights reserved.",
+      "MANUFACTURER_NAME": "Yageo",
+      "MANUFACTURER_PART_NUMBER": "RC0603FR-0710KL",
+      "TYPE": "",
+      "REFDES": "",
+      "MPN": "RC0603FR-0710KL",
+      "Draft_Change": "New EN/FLT pull-up; >=5k per ISOW7741 datasheet",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*RC0603N_YAG*"
+    }
+  },
+  {
+    "reference": "R14",
+    "value": "10K",
+    "footprint": "SignalGenLocal:R_0603_1608Metric",
+    "properties": {
+      "COPYRIGHT": "Copyright (C) 2025 Ultra Librarian. All rights reserved.",
+      "MANUFACTURER_NAME": "Yageo",
+      "MANUFACTURER_PART_NUMBER": "RC0603FR-0710KL",
+      "TYPE": "",
+      "REFDES": "",
+      "MPN": "RC0603FR-0710KL",
+      "Draft_Change": "New EN/FLT pull-up; >=5k per ISOW7741 datasheet",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*RC0603N_YAG*"
+    }
+  },
+  {
+    "reference": "R15",
+    "value": "0",
+    "footprint": "SignalGenLocal:R_0603_1608Metric",
+    "properties": {
+      "COPYRIGHT": "Copyright (C) 2025 Ultra Librarian. All rights reserved.",
+      "MANUFACTURER_NAME": "TBD",
+      "MANUFACTURER_PART_NUMBER": "TBD - standard 0603 zero-ohm jumper",
+      "TYPE": "",
+      "REFDES": "",
+      "MPN": "TBD - standard 0603 zero-ohm jumper",
+      "Tolerance": "Jumper",
+      "Draft_Change": "Replaces U2/U8 LDO with a same-source direct rail link. No added regulation or ripple attenuation claimed.",
+      "DATASHEET LINK": "",
+      "GEOMETRY.HEIGHT": "",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*RC0603N_YAG*"
+    }
+  },
+  {
+    "reference": "R16",
+    "value": "0",
+    "footprint": "SignalGenLocal:R_0603_1608Metric",
+    "properties": {
+      "COPYRIGHT": "Copyright (C) 2025 Ultra Librarian. All rights reserved.",
+      "MANUFACTURER_NAME": "TBD",
+      "MANUFACTURER_PART_NUMBER": "TBD - standard 0603 zero-ohm jumper",
+      "TYPE": "",
+      "REFDES": "",
+      "MPN": "TBD - standard 0603 zero-ohm jumper",
+      "Tolerance": "Jumper",
+      "Draft_Change": "Replaces U2/U8 LDO with a same-source direct rail link. No added regulation or ripple attenuation claimed.",
+      "DATASHEET LINK": "",
+      "GEOMETRY.HEIGHT": "",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*RC0603N_YAG*"
+    }
+  },
+  {
+    "reference": "TP1",
+    "value": "+ISO_P5V",
+    "footprint": "SignalGenLocal:TP1_KEYSTONE_5016",
+    "properties": {
+      "SNAPEDA_LINK": "https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap",
+      "PACKAGE": "NON STANDARD-1 Keystone",
+      "ALTIUM_VALUE": "*",
+      "MF": "Keystone Electronics",
+      "MP": "5016",
+      "CHECK_PRICES": "https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*KEYSTONE_5016*"
+    }
+  },
+  {
+    "reference": "TP2",
+    "value": "-ISO_N5V",
+    "footprint": "SignalGenLocal:TP2_KEYSTONE_5016",
+    "properties": {
+      "SNAPEDA_LINK": "https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap",
+      "PACKAGE": "NON STANDARD-1 Keystone",
+      "ALTIUM_VALUE": "*",
+      "MF": "Keystone Electronics",
+      "MP": "5016",
+      "CHECK_PRICES": "https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*KEYSTONE_5016*"
+    }
+  },
+  {
+    "reference": "TP3",
+    "value": "ISO_GND_ISOW",
+    "footprint": "SignalGenLocal:TP3_KEYSTONE_5016",
+    "properties": {
+      "SNAPEDA_LINK": "https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap",
+      "PACKAGE": "NON STANDARD-1 Keystone",
+      "ALTIUM_VALUE": "*",
+      "MF": "Keystone Electronics",
+      "MP": "5016",
+      "CHECK_PRICES": "https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*KEYSTONE_5016*"
+    }
+  },
+  {
+    "reference": "TP6",
+    "value": "Bi_PolarOut",
+    "footprint": "SignalGenLocal:TP6_KEYSTONE_5016",
+    "properties": {
+      "SNAPEDA_LINK": "https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap",
+      "PACKAGE": "NON STANDARD-1 Keystone",
+      "ALTIUM_VALUE": "*",
+      "MF": "Keystone Electronics",
+      "MP": "5016",
+      "CHECK_PRICES": "https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*KEYSTONE_5016*"
+    }
+  },
+  {
+    "reference": "TP7",
+    "value": "VREF_BUF_TP",
+    "footprint": "SignalGenLocal:TP7_KEYSTONE_5016",
+    "properties": {
+      "SNAPEDA_LINK": "https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap",
+      "PACKAGE": "NON STANDARD-1 Keystone",
+      "ALTIUM_VALUE": "*",
+      "MF": "Keystone Electronics",
+      "MP": "5016",
+      "CHECK_PRICES": "https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*KEYSTONE_5016*"
+    }
+  },
+  {
+    "reference": "TP8",
+    "value": "TP_SYS_3V3",
+    "footprint": "SignalGenLocal:TP8_KEYSTONE_5016",
+    "properties": {
+      "SNAPEDA_LINK": "https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap",
+      "PACKAGE": "NON STANDARD-1 Keystone",
+      "ALTIUM_VALUE": "*",
+      "MF": "Keystone Electronics",
+      "MP": "5016",
+      "CHECK_PRICES": "https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*KEYSTONE_5016*"
+    }
+  },
+  {
+    "reference": "TP9",
+    "value": "TP_ISO_3V3_CLEAN",
+    "footprint": "SignalGenLocal:TP9_KEYSTONE_5016",
+    "properties": {
+      "SNAPEDA_LINK": "https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap",
+      "PACKAGE": "NON STANDARD-1 Keystone",
+      "ALTIUM_VALUE": "*",
+      "MF": "Keystone Electronics",
+      "MP": "5016",
+      "CHECK_PRICES": "https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*KEYSTONE_5016*"
+    }
+  },
+  {
+    "reference": "TP10",
+    "value": "TP_ISO_3V3_RAW",
+    "footprint": "SignalGenLocal:TP10_KEYSTONE_5016",
+    "properties": {
+      "SNAPEDA_LINK": "https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap",
+      "PACKAGE": "NON STANDARD-1 Keystone",
+      "ALTIUM_VALUE": "*",
+      "MF": "Keystone Electronics",
+      "MP": "5016",
+      "CHECK_PRICES": "https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*KEYSTONE_5016*"
+    }
+  },
+  {
+    "reference": "TP11",
+    "value": "TP_ISO_3V3_CLEAN_2",
+    "footprint": "SignalGenLocal:TP11_KEYSTONE_5016",
+    "properties": {
+      "SNAPEDA_LINK": "https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap",
+      "PACKAGE": "NON STANDARD-1 Keystone",
+      "ALTIUM_VALUE": "*",
+      "MF": "Keystone Electronics",
+      "MP": "5016",
+      "CHECK_PRICES": "https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*KEYSTONE_5016*"
+    }
+  },
+  {
+    "reference": "TP12",
+    "value": "TP_ISO_3V3_RAW_2",
+    "footprint": "SignalGenLocal:TP12_KEYSTONE_5016",
+    "properties": {
+      "SNAPEDA_LINK": "https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap",
+      "PACKAGE": "NON STANDARD-1 Keystone",
+      "ALTIUM_VALUE": "*",
+      "MF": "Keystone Electronics",
+      "MP": "5016",
+      "CHECK_PRICES": "https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*KEYSTONE_5016*"
+    }
+  },
+  {
+    "reference": "TP13",
+    "value": "+ISO_P5V_2",
+    "footprint": "SignalGenLocal:TP13_KEYSTONE_5016",
+    "properties": {
+      "SNAPEDA_LINK": "https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap",
+      "PACKAGE": "NON STANDARD-1 Keystone",
+      "ALTIUM_VALUE": "*",
+      "MF": "Keystone Electronics",
+      "MP": "5016",
+      "CHECK_PRICES": "https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*KEYSTONE_5016*"
+    }
+  },
+  {
+    "reference": "TP14",
+    "value": "-ISO_N5V_2",
+    "footprint": "SignalGenLocal:TP14_KEYSTONE_5016",
+    "properties": {
+      "SNAPEDA_LINK": "https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap",
+      "PACKAGE": "NON STANDARD-1 Keystone",
+      "ALTIUM_VALUE": "*",
+      "MF": "Keystone Electronics",
+      "MP": "5016",
+      "CHECK_PRICES": "https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*KEYSTONE_5016*"
+    }
+  },
+  {
+    "reference": "TP15",
+    "value": "ISO_GND_ISOW_2",
+    "footprint": "SignalGenLocal:TP15_KEYSTONE_5016",
+    "properties": {
+      "SNAPEDA_LINK": "https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap",
+      "PACKAGE": "NON STANDARD-1 Keystone",
+      "ALTIUM_VALUE": "*",
+      "MF": "Keystone Electronics",
+      "MP": "5016",
+      "CHECK_PRICES": "https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*KEYSTONE_5016*"
+    }
+  },
+  {
+    "reference": "TP16",
+    "value": "Bi_PolarOut_2",
+    "footprint": "SignalGenLocal:TP16_KEYSTONE_5016",
+    "properties": {
+      "SNAPEDA_LINK": "https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap",
+      "PACKAGE": "NON STANDARD-1 Keystone",
+      "ALTIUM_VALUE": "*",
+      "MF": "Keystone Electronics",
+      "MP": "5016",
+      "CHECK_PRICES": "https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*KEYSTONE_5016*"
+    }
+  },
+  {
+    "reference": "TP17",
+    "value": "VREF_BUF_TP_2",
+    "footprint": "SignalGenLocal:TP17_KEYSTONE_5016",
+    "properties": {
+      "SNAPEDA_LINK": "https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=snap",
+      "PACKAGE": "NON STANDARD-1 Keystone",
+      "ALTIUM_VALUE": "*",
+      "MF": "Keystone Electronics",
+      "MP": "5016",
+      "CHECK_PRICES": "https://www.snapeda.com/parts/5016/Keystone/view-part/?ref=eda",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*KEYSTONE_5016*"
+    }
+  },
+  {
+    "reference": "U1",
+    "value": "ISOW7741DFM",
+    "footprint": "SignalGenLocal:U1_SOIC20_DFM_TEX",
+    "properties": {
+      "COPYRIGHT": "Copyright (C) 2026 Ultra Librarian. All rights reserved.",
+      "MANUFACTURER_NAME": "Texas Instruments",
+      "MANUFACTURER_PART_NUMBER": "ISOW7741DFM",
+      "REFDES": "RefDes",
+      "TYPE": "Type",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*SOIC20_DFM_TEX*"
+    }
+  },
+  {
+    "reference": "U3",
+    "value": "DAC8830IBD",
+    "footprint": "SignalGenLocal:SOIC-8_3.9x4.9mm_P1.27mm",
+    "properties": {
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_keywords": "DAC8830IBD",
+      "ki_fp_filters": "D0008A_N D0008A_M D0008A_L"
+    }
+  },
+  {
+    "reference": "U4",
+    "value": "OPA2192IDGKR",
+    "footprint": "SignalGenLocal:U4_DGK0008A_N_TEX",
+    "properties": {
+      "COPYRIGHT": "Copyright (C) 2025 Ultra Librarian. All rights reserved.",
+      "MANUFACTURER_NAME": "Texas Instruments",
+      "MANUFACTURER_PART_NUMBER": "OPA2192IDGKR",
+      "REFDES": "RefDes",
+      "TYPE": "Type",
+      "Draft_Change": "A buffers full VREF; B non-inverting2*DAC-VREF. Code polarity changed. Hardware mute unresolved.",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*DGK0008A_N_TEX*"
+    }
+  },
+  {
+    "reference": "U5",
+    "value": "DAC8830IBD",
+    "footprint": "SignalGenLocal:SOIC-8_3.9x4.9mm_P1.27mm",
+    "properties": {
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_keywords": "DAC8830IBD",
+      "ki_fp_filters": "D0008A_N D0008A_M D0008A_L"
+    }
+  },
+  {
+    "reference": "U6",
+    "value": "ISOW7741DFM",
+    "footprint": "SignalGenLocal:U6_SOIC20_DFM_TEX",
+    "properties": {
+      "COPYRIGHT": "Copyright (C) 2026 Ultra Librarian. All rights reserved.",
+      "MANUFACTURER_NAME": "Texas Instruments",
+      "MANUFACTURER_PART_NUMBER": "ISOW7741DFM",
+      "REFDES": "RefDes",
+      "TYPE": "Type",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*SOIC20_DFM_TEX*"
+    }
+  },
+  {
+    "reference": "U7",
+    "value": "OPA2192IDGKR",
+    "footprint": "SignalGenLocal:U7_DGK0008A_N_TEX",
+    "properties": {
+      "COPYRIGHT": "Copyright (C) 2025 Ultra Librarian. All rights reserved.",
+      "MANUFACTURER_NAME": "Texas Instruments",
+      "MANUFACTURER_PART_NUMBER": "OPA2192IDGKR",
+      "REFDES": "RefDes",
+      "TYPE": "Type",
+      "Draft_Change": "A buffers full VREF; B non-inverting2*DAC-VREF. Code polarity changed. Hardware mute unresolved.",
+      "Sheetname": "SignalGen_Electrical_Draft",
+      "Sheetfile": "SignalGen_Electrical_Draft.kicad_sch",
+      "ki_fp_filters": "*DGK0008A_N_TEX*"
+    }
+  }
+]

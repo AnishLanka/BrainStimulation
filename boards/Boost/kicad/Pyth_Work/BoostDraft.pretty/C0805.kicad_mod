@@ -1,0 +1,194 @@
+(footprint "C0805"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
+	(tags "capacitor")
+	(property "Reference" "C1"
+		(at 4.1 -0.1 0)
+		(layer "F.SilkS")
+		(uuid "5db38584-839a-4ac9-a883-e00e205f0150")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "Value" "10u 50V"
+		(at 0 1.68 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c13cb9c3-182e-41db-ae99-ccaf4420b65e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X5R1H106K125AC"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f64f661f-4aaf-45c7-bf03-77dda4a978fa")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Input ceramic; effective4.7uF at16V is a bench acceptance target, not a verified manufacturer minimum"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6ab29804-00a4-4a4b-a03c-c162dbfab73e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "2f2c0948-8c97-4e69-a724-d45aaf3a1813")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Function_Name" "CIN"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "c30f1c93-898c-4d7e-9980-ec80853f278e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Dielectric" "X5R"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "5dd6f498-0b42-4953-817d-e2703a0b1438")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Function" "Input ceramic; effective4.7uF at16V is a bench acceptance target, not a verified manufacturer minimum"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "a19bf497-f010-44ac-b2e0-fff8e73529c4")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Manufacturer" "TDK"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "5cb0724e-d1ec-45ef-a662-7b071f43bdca")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "C2012X5R1H106K125AC"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "50ec1dbc-6fd0-4e23-b4a1-221f68bef0af")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Rating" "0805;10uF10%;50V;-55 to85C"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "d5c45414-36d0-4a8b-9963-97bcd815c45b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1.7 -0.98)
+		(end 1.7 0.98)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "a083ea97-7f20-4d3e-b7c1-cf541d1e8441")
+	)
+	(fp_rect
+		(start -1 -0.625)
+		(end 1 0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "708e76c5-db62-44ff-abe2-117b54bae6fc")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "98018f1d-f170-4864-be0c-4684d3972db1")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -0.95 0)
+		(size 1 1.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(clearance 0)
+		(uuid "e797a88b-aa75-49e6-90c9-fc574d23a6e6")
+	)
+	(pad "2" smd roundrect
+		(at 0.95 0)
+		(size 1 1.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(clearance 0)
+		(uuid "ef55404b-04e4-4eb3-99b6-6fa335470ed1")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

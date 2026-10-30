@@ -1,0 +1,1480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\peter\Documents\Codex\2026-10-17\this\outputs\StimPrototype_Hardware_Revision_C\shared_power\Shared_Power_Adapter_RevC.kicad_sch</source>
+    <date>2026-10-17T15:40:46</date>
+    <tool>Eeschema 10.0.6</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Shared regulated power adapter - bench prototype</title>
+        <company/>
+        <rev>C</rev>
+        <date>2026-10-17</date>
+        <source>Shared_Power_Adapter_RevC.kicad_sch</source>
+        <comment number="1" value="Regulated5V bench input; release requiresfreshPCB validation"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C11">
+      <value>22u 16V</value>
+      <footprint>PowerLocal:C_1206_3216Metric</footprint>
+      <datasheet>https://www.ti.com/lit/pdf/tidrmp4</datasheet>
+      <fields>
+        <field name="MPN">GRM31CR61C226KE15L</field>
+        <field name="Design_Note">Input; verify &gt;=5uF effective at5.25V and temperature.</field>
+        <field name="Footprint">PowerLocal:C_1206_3216Metric</field>
+        <field name="Datasheet">https://www.ti.com/lit/pdf/tidrmp4</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM31CR61C226KE15L"/>
+      <property name="Design_Note" value="Input; verify &gt;=5uF effective at5.25V and temperature."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1ee1d99a-a971-5d79-ae8e-3a7a5c6089dc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C12">
+      <value>22u 16V</value>
+      <footprint>PowerLocal:C_1206_3216Metric</footprint>
+      <datasheet>https://www.ti.com/lit/pdf/tidrmp4</datasheet>
+      <fields>
+        <field name="MPN">GRM31CR61C226KE15L</field>
+        <field name="Design_Note">Two parallel output caps; acceptance &gt;=14uF effective total at 3.3V.</field>
+        <field name="Footprint">PowerLocal:C_1206_3216Metric</field>
+        <field name="Datasheet">https://www.ti.com/lit/pdf/tidrmp4</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM31CR61C226KE15L"/>
+      <property name="Design_Note" value="Two parallel output caps; acceptance &gt;=14uF effective total at 3.3V."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b62f2072-30f5-5bde-b1ed-76bb8cb67c5f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C13">
+      <value>22u 16V</value>
+      <footprint>PowerLocal:C_1206_3216Metric</footprint>
+      <datasheet>https://www.ti.com/lit/pdf/tidrmp4</datasheet>
+      <fields>
+        <field name="MPN">GRM31CR61C226KE15L</field>
+        <field name="Design_Note">Two parallel output caps; acceptance &gt;=14uF effective total at 3.3V.</field>
+        <field name="Footprint">PowerLocal:C_1206_3216Metric</field>
+        <field name="Datasheet">https://www.ti.com/lit/pdf/tidrmp4</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM31CR61C226KE15L"/>
+      <property name="Design_Note" value="Two parallel output caps; acceptance &gt;=14uF effective total at 3.3V."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>76d18067-e0f4-5aa8-bfe8-8d087c1720eb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C21">
+      <value>22u 16V</value>
+      <footprint>PowerLocal:C_1206_3216Metric</footprint>
+      <datasheet>https://www.ti.com/lit/pdf/tidrmp4</datasheet>
+      <fields>
+        <field name="MPN">GRM31CR61C226KE15L</field>
+        <field name="Design_Note">Input; verify &gt;=5uF effective at5.25V and temperature.</field>
+        <field name="Footprint">PowerLocal:C_1206_3216Metric</field>
+        <field name="Datasheet">https://www.ti.com/lit/pdf/tidrmp4</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM31CR61C226KE15L"/>
+      <property name="Design_Note" value="Input; verify &gt;=5uF effective at5.25V and temperature."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>df8597f0-af8d-53d3-846d-c070c7f2f338</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C22">
+      <value>22u 16V</value>
+      <footprint>PowerLocal:C_1206_3216Metric</footprint>
+      <datasheet>https://www.ti.com/lit/pdf/tidrmp4</datasheet>
+      <fields>
+        <field name="MPN">GRM31CR61C226KE15L</field>
+        <field name="Design_Note">Two parallel output caps; acceptance &gt;=14uF effective total at 3.3V.</field>
+        <field name="Footprint">PowerLocal:C_1206_3216Metric</field>
+        <field name="Datasheet">https://www.ti.com/lit/pdf/tidrmp4</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM31CR61C226KE15L"/>
+      <property name="Design_Note" value="Two parallel output caps; acceptance &gt;=14uF effective total at 3.3V."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3e277d70-793d-5bf0-a22a-e208ffb9c2de</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C23">
+      <value>22u 16V</value>
+      <footprint>PowerLocal:C_1206_3216Metric</footprint>
+      <datasheet>https://www.ti.com/lit/pdf/tidrmp4</datasheet>
+      <fields>
+        <field name="MPN">GRM31CR61C226KE15L</field>
+        <field name="Design_Note">Two parallel output caps; acceptance &gt;=14uF effective total at 3.3V.</field>
+        <field name="Footprint">PowerLocal:C_1206_3216Metric</field>
+        <field name="Datasheet">https://www.ti.com/lit/pdf/tidrmp4</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM31CR61C226KE15L"/>
+      <property name="Design_Note" value="Two parallel output caps; acceptance &gt;=14uF effective total at 3.3V."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>31c1409a-abdb-5395-a30a-d1551df82f03</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C31">
+      <value>22u 16V</value>
+      <footprint>PowerLocal:C_1206_3216Metric</footprint>
+      <datasheet>https://www.ti.com/lit/pdf/tidrmp4</datasheet>
+      <fields>
+        <field name="MPN">GRM31CR61C226KE15L</field>
+        <field name="Design_Note">Local input bypass; EMI filter is not yet designed.</field>
+        <field name="Footprint">PowerLocal:C_1206_3216Metric</field>
+        <field name="Datasheet">https://www.ti.com/lit/pdf/tidrmp4</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM31CR61C226KE15L"/>
+      <property name="Design_Note" value="Local input bypass; EMI filter is not yet designed."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>30d946eb-7bd6-5763-9800-dbdd7c3739eb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C32">
+      <value>22u 16V</value>
+      <footprint>PowerLocal:C_1206_3216Metric</footprint>
+      <datasheet>https://www.ti.com/lit/pdf/tidrmp4</datasheet>
+      <fields>
+        <field name="MPN">GRM31CR61C226KE15L</field>
+        <field name="Design_Note">Local input bypass; EMI filter is not yet designed.</field>
+        <field name="Footprint">PowerLocal:C_1206_3216Metric</field>
+        <field name="Datasheet">https://www.ti.com/lit/pdf/tidrmp4</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM31CR61C226KE15L"/>
+      <property name="Design_Note" value="Local input bypass; EMI filter is not yet designed."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>922e6fde-30a9-5b64-9331-914bb456cd0d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C33">
+      <value>22u 16V</value>
+      <footprint>PowerLocal:C_1206_3216Metric</footprint>
+      <datasheet>https://www.ti.com/lit/pdf/tidrmp4</datasheet>
+      <fields>
+        <field name="MPN">GRM31CR61C226KE15L</field>
+        <field name="Design_Note">Local input bypass; EMI filter is not yet designed.</field>
+        <field name="Footprint">PowerLocal:C_1206_3216Metric</field>
+        <field name="Datasheet">https://www.ti.com/lit/pdf/tidrmp4</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM31CR61C226KE15L"/>
+      <property name="Design_Note" value="Local input bypass; EMI filter is not yet designed."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0176d9ff-5d4d-57c5-b6f4-0c0b187cd22f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C34">
+      <value>22u 16V</value>
+      <footprint>PowerLocal:C_1206_3216Metric</footprint>
+      <datasheet>https://www.ti.com/lit/pdf/tidrmp4</datasheet>
+      <fields>
+        <field name="MPN">GRM31CR61C226KE15L</field>
+        <field name="Design_Note">Local input bypass; EMI filter is not yet designed.</field>
+        <field name="Footprint">PowerLocal:C_1206_3216Metric</field>
+        <field name="Datasheet">https://www.ti.com/lit/pdf/tidrmp4</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM31CR61C226KE15L"/>
+      <property name="Design_Note" value="Local input bypass; EMI filter is not yet designed."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>47bc7bb4-ad1e-5e1a-bc4b-c1ddb13c0471</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="F0">
+      <value>T8A</value>
+      <footprint>PowerLocal:Fuse_Schurter_UMT250</footprint>
+      <datasheet>https://www.schurter.com/en/datasheet/typ_UMT_250.pdf</datasheet>
+      <fields>
+        <field name="MPN">3403.0175.11</field>
+        <field name="Design_Note">Main input time-lag fuse; branch allocation applies; source current limit required.</field>
+        <field name="Footprint">PowerLocal:Fuse_Schurter_UMT250</field>
+        <field name="Datasheet">https://www.schurter.com/en/datasheet/typ_UMT_250.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="Fuse" description=""/>
+      <property name="MPN" value="3403.0175.11"/>
+      <property name="Design_Note" value="Main input time-lag fuse; branch allocation applies; source current limit required."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8c7dd73a-fe2b-596c-8eba-51f454c1054f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="F1">
+      <value>T1.6A</value>
+      <footprint>PowerLocal:Fuse_Schurter_UMT250</footprint>
+      <datasheet>https://www.schurter.com/en/datasheet/typ_UMT_250.pdf</datasheet>
+      <fields>
+        <field name="MPN">3403.0168.11</field>
+        <field name="Design_Note">RECOM recommendedT1.6A for12Vin family; exact5V startup/fault coordination remains measured acceptance.</field>
+        <field name="Footprint">PowerLocal:Fuse_Schurter_UMT250</field>
+        <field name="Datasheet">https://www.schurter.com/en/datasheet/typ_UMT_250.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="Fuse" description=""/>
+      <property name="MPN" value="3403.0168.11"/>
+      <property name="Design_Note" value="RECOM recommendedT1.6A for12Vin family; exact5V startup/fault coordination remains measured acceptance."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3eb4204b-1eb2-5c60-8b07-87c6d3b36c8b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="F2">
+      <value>T1.6A</value>
+      <footprint>PowerLocal:Fuse_Schurter_UMT250</footprint>
+      <datasheet>https://www.schurter.com/en/datasheet/typ_UMT_250.pdf</datasheet>
+      <fields>
+        <field name="MPN">3403.0168.11</field>
+        <field name="Design_Note">RECOM recommendedT1.6A for12Vin family; exact5V startup/fault coordination remains measured acceptance.</field>
+        <field name="Footprint">PowerLocal:Fuse_Schurter_UMT250</field>
+        <field name="Datasheet">https://www.schurter.com/en/datasheet/typ_UMT_250.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="Fuse" description=""/>
+      <property name="MPN" value="3403.0168.11"/>
+      <property name="Design_Note" value="RECOM recommendedT1.6A for12Vin family; exact5V startup/fault coordination remains measured acceptance."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>04fb20f5-20b6-53dc-93e9-61a538d82ea2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="F3">
+      <value>T1.6A</value>
+      <footprint>PowerLocal:Fuse_Schurter_UMT250</footprint>
+      <datasheet>https://www.schurter.com/en/datasheet/typ_UMT_250.pdf</datasheet>
+      <fields>
+        <field name="MPN">3403.0168.11</field>
+        <field name="Design_Note">RECOM recommendedT1.6A for12Vin family; exact5V startup/fault coordination remains measured acceptance.</field>
+        <field name="Footprint">PowerLocal:Fuse_Schurter_UMT250</field>
+        <field name="Datasheet">https://www.schurter.com/en/datasheet/typ_UMT_250.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="Fuse" description=""/>
+      <property name="MPN" value="3403.0168.11"/>
+      <property name="Design_Note" value="RECOM recommendedT1.6A for12Vin family; exact5V startup/fault coordination remains measured acceptance."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8f55276f-431a-5bf8-8ec5-c05c27fc573b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="F4">
+      <value>T1.6A</value>
+      <footprint>PowerLocal:Fuse_Schurter_UMT250</footprint>
+      <datasheet>https://www.schurter.com/en/datasheet/typ_UMT_250.pdf</datasheet>
+      <fields>
+        <field name="MPN">3403.0168.11</field>
+        <field name="Design_Note">RECOM recommendedT1.6A for12Vin family; exact5V startup/fault coordination remains measured acceptance.</field>
+        <field name="Footprint">PowerLocal:Fuse_Schurter_UMT250</field>
+        <field name="Datasheet">https://www.schurter.com/en/datasheet/typ_UMT_250.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="Fuse" description=""/>
+      <property name="MPN" value="3403.0168.11"/>
+      <property name="Design_Note" value="RECOM recommendedT1.6A for12Vin family; exact5V startup/fault coordination remains measured acceptance."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9bbfb359-60a2-575f-8803-a0a138889b40</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="F5">
+      <value>T5A AUX</value>
+      <footprint>PowerLocal:Fuse_Schurter_UMT250</footprint>
+      <datasheet>https://www.schurter.com/en/datasheet/typ_UMT_250.pdf</datasheet>
+      <fields>
+        <field name="MPN">3403.0173.11</field>
+        <field name="Design_Note">Four-channel monitor bank4A allocation,3.073A planning. Fuse is not an electronic current limit.</field>
+        <field name="Footprint">PowerLocal:Fuse_Schurter_UMT250</field>
+        <field name="Datasheet">https://www.schurter.com/en/datasheet/typ_UMT_250.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="Fuse" description=""/>
+      <property name="MPN" value="3403.0173.11"/>
+      <property name="Design_Note" value="Four-channel monitor bank4A allocation,3.073A planning. Fuse is not an electronic current limit."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0a4fb8a7-a7cb-5d0c-832a-8160aba69968</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="F6">
+      <value>T2.5A</value>
+      <footprint>PowerLocal:Fuse_Schurter_UMT250</footprint>
+      <datasheet>https://www.schurter.com/en/datasheet/typ_UMT_250.pdf</datasheet>
+      <fields>
+        <field name="MPN">3403.0170.11</field>
+        <field name="Design_Note">Input branch fuse,2A maximum3.3V bank allocation; startup coordination must be measured.</field>
+        <field name="Footprint">PowerLocal:Fuse_Schurter_UMT250</field>
+        <field name="Datasheet">https://www.schurter.com/en/datasheet/typ_UMT_250.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="Fuse" description=""/>
+      <property name="MPN" value="3403.0170.11"/>
+      <property name="Design_Note" value="Input branch fuse,2A maximum3.3V bank allocation; startup coordination must be measured."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d29fb5e7-8ab8-59f2-a94f-ffae05849391</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="F7">
+      <value>T2.5A</value>
+      <footprint>PowerLocal:Fuse_Schurter_UMT250</footprint>
+      <datasheet>https://www.schurter.com/en/datasheet/typ_UMT_250.pdf</datasheet>
+      <fields>
+        <field name="MPN">3403.0170.11</field>
+        <field name="Design_Note">Input branch fuse,2A maximum3.3V bank allocation; startup coordination must be measured.</field>
+        <field name="Footprint">PowerLocal:Fuse_Schurter_UMT250</field>
+        <field name="Datasheet">https://www.schurter.com/en/datasheet/typ_UMT_250.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="Fuse" description=""/>
+      <property name="MPN" value="3403.0170.11"/>
+      <property name="Design_Note" value="Input branch fuse,2A maximum3.3V bank allocation; startup coordination must be measured."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7014a396-980e-5cc5-8d65-14e02efed35e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>5 V INPUT</value>
+      <footprint>PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical</footprint>
+      <datasheet>https://www.jst-mfg.com/product/index.php?lang=2&amp;series=262</datasheet>
+      <fields>
+        <field name="MPN">B2P-VH</field>
+        <field name="Design_Note">Regulated nominal5V, never above5.25V; module pins&gt;=4.5V after fuse/cable drops. External8A current-limited source;16AWG harness,VHR-2N housing,SVH-41T-P1.1 contacts. Source capacity is not a measured PCB rating.</field>
+        <field name="Footprint">PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical</field>
+        <field name="Datasheet">https://www.jst-mfg.com/product/index.php?lang=2&amp;series=262</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="Connector2" description=""/>
+      <property name="MPN" value="B2P-VH"/>
+      <property name="Design_Note" value="Regulated nominal5V, never above5.25V; module pins&gt;=4.5V after fuse/cable drops. External8A current-limited source;16AWG harness,VHR-2N housing,SVH-41T-P1.1 contacts. Source capacity is not a measured PCB rating."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0ba7ec5a-2067-59db-bf4c-00a7af11aaa6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J2">
+      <value>3.3 V BANK A</value>
+      <footprint>PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical</footprint>
+      <fields>
+        <field name="MPN">B2P-VH</field>
+        <field name="Design_Note">Dedicated dual-channel SignalGen supply; never parallel with other bank. Bank A design target2A, subject to source/thermal budget.</field>
+        <field name="Footprint">PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="Connector2" description=""/>
+      <property name="MPN" value="B2P-VH"/>
+      <property name="Design_Note" value="Dedicated dual-channel SignalGen supply; never parallel with other bank. Bank A design target2A, subject to source/thermal budget."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9b4434da-b1b1-5b94-9731-c53ad601f636</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J3">
+      <value>3.3 V BANK B</value>
+      <footprint>PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical</footprint>
+      <fields>
+        <field name="MPN">B2P-VH</field>
+        <field name="Design_Note">Dedicated dual-channel SignalGen supply; never parallel with other bank. Bank B design target2A, subject to source/thermal budget.</field>
+        <field name="Footprint">PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="Connector2" description=""/>
+      <property name="MPN" value="B2P-VH"/>
+      <property name="Design_Note" value="Dedicated dual-channel SignalGen supply; never parallel with other bank. Bank B design target2A, subject to source/thermal budget."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>70859321-cf4c-5b2d-b15a-2acfbf159f94</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J4">
+      <value>CHANNEL 1 12 V</value>
+      <footprint>PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical</footprint>
+      <fields>
+        <field name="MPN">B2P-VH</field>
+        <field name="Design_Note">Connect to boost IN only. Return is HV_BOTTOM, never MID; no connection across channels.</field>
+        <field name="Footprint">PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="Connector2" description=""/>
+      <property name="MPN" value="B2P-VH"/>
+      <property name="Design_Note" value="Connect to boost IN only. Return is HV_BOTTOM, never MID; no connection across channels."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>47e87d70-de54-534d-a661-6517a32c97f5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J5">
+      <value>CHANNEL 2 12 V</value>
+      <footprint>PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical</footprint>
+      <fields>
+        <field name="MPN">B2P-VH</field>
+        <field name="Design_Note">Connect to boost IN only. Return is HV_BOTTOM, never MID; no connection across channels.</field>
+        <field name="Footprint">PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="Connector2" description=""/>
+      <property name="MPN" value="B2P-VH"/>
+      <property name="Design_Note" value="Connect to boost IN only. Return is HV_BOTTOM, never MID; no connection across channels."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dd977775-4cd5-53e0-9356-a774738eebb5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J6">
+      <value>CHANNEL 3 12 V</value>
+      <footprint>PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical</footprint>
+      <fields>
+        <field name="MPN">B2P-VH</field>
+        <field name="Design_Note">Connect to boost IN only. Return is HV_BOTTOM, never MID; no connection across channels.</field>
+        <field name="Footprint">PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="Connector2" description=""/>
+      <property name="MPN" value="B2P-VH"/>
+      <property name="Design_Note" value="Connect to boost IN only. Return is HV_BOTTOM, never MID; no connection across channels."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3f15039e-52dc-5dba-b445-540f5b9a56ed</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J7">
+      <value>CHANNEL 4 12 V</value>
+      <footprint>PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical</footprint>
+      <fields>
+        <field name="MPN">B2P-VH</field>
+        <field name="Design_Note">Connect to boost IN only. Return is HV_BOTTOM, never MID; no connection across channels.</field>
+        <field name="Footprint">PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="Connector2" description=""/>
+      <property name="MPN" value="B2P-VH"/>
+      <property name="Design_Note" value="Connect to boost IN only. Return is HV_BOTTOM, never MID; no connection across channels."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>45c47235-89e8-5208-a4da-a8c782d5a13e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J8">
+      <value>AUX5V MONITORS</value>
+      <footprint>PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical</footprint>
+      <fields>
+        <field name="MPN">B2P-VH</field>
+        <field name="Design_Note">4A total AUX allocation; powers all monitor powerboards from common primarySYS_GND. Verifymoduleinputs&gt;=4.5V afterallfuses/cables.</field>
+        <field name="Footprint">PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="Connector2" description=""/>
+      <property name="MPN" value="B2P-VH"/>
+      <property name="Design_Note" value="4A total AUX allocation; powers all monitor powerboards from common primarySYS_GND. Verifymoduleinputs&gt;=4.5V afterallfuses/cables."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ccfe6301-e660-5442-8f39-42c89643f840</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L1">
+      <value>0.47uH</value>
+      <footprint>PowerLocal:L_Coilcraft_XFL4015</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tps63802.pdf</datasheet>
+      <fields>
+        <field name="MPN">XFL4015-471MEC</field>
+        <field name="Design_Note">Exact manufacturer lands .98x3.4mm,2.37mm center pitch.</field>
+        <field name="Footprint">PowerLocal:L_Coilcraft_XFL4015</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps63802.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="L" description="Inductor"/>
+      <property name="MPN" value="XFL4015-471MEC"/>
+      <property name="Design_Note" value="Exact manufacturer lands .98x3.4mm,2.37mm center pitch."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <property name="ki_fp_filters" value="Choke_* *Coil* Inductor_* L_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3d5b63d4-f764-58c8-adf3-6b174de55354</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L2">
+      <value>0.47uH</value>
+      <footprint>PowerLocal:L_Coilcraft_XFL4015</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tps63802.pdf</datasheet>
+      <fields>
+        <field name="MPN">XFL4015-471MEC</field>
+        <field name="Design_Note">Exact manufacturer lands .98x3.4mm,2.37mm center pitch.</field>
+        <field name="Footprint">PowerLocal:L_Coilcraft_XFL4015</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps63802.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="L" description="Inductor"/>
+      <property name="MPN" value="XFL4015-471MEC"/>
+      <property name="Design_Note" value="Exact manufacturer lands .98x3.4mm,2.37mm center pitch."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <property name="ki_fp_filters" value="Choke_* *Coil* Inductor_* L_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>79729909-7496-51a6-ab3e-2afb84c6028e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="PS1">
+      <value>R3M-1212S/SMD</value>
+      <footprint>PowerLocal:RECOM_R3M_SMD</footprint>
+      <datasheet>https://recom-power.com/pdf/Econoline/R3M.pdf</datasheet>
+      <fields>
+        <field name="MPN">R3M-1212S/SMD</field>
+        <field name="Design_Note">ExactECO5 manufacturer lands; no minimum load; CTRL open enables. Pin5 NC,pin6 return.</field>
+        <field name="Footprint">PowerLocal:RECOM_R3M_SMD</field>
+        <field name="Datasheet">https://recom-power.com/pdf/Econoline/R3M.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="R3M-1212S_SMD" description=""/>
+      <property name="MPN" value="R3M-1212S/SMD"/>
+      <property name="Design_Note" value="ExactECO5 manufacturer lands; no minimum load; CTRL open enables. Pin5 NC,pin6 return."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>995ec409-1507-59aa-8e0c-25d78ad2c1fc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="7"/>
+            <pin num="6"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="PS2">
+      <value>R3M-1212S/SMD</value>
+      <footprint>PowerLocal:RECOM_R3M_SMD</footprint>
+      <datasheet>https://recom-power.com/pdf/Econoline/R3M.pdf</datasheet>
+      <fields>
+        <field name="MPN">R3M-1212S/SMD</field>
+        <field name="Design_Note">ExactECO5 manufacturer lands; no minimum load; CTRL open enables. Pin5 NC,pin6 return.</field>
+        <field name="Footprint">PowerLocal:RECOM_R3M_SMD</field>
+        <field name="Datasheet">https://recom-power.com/pdf/Econoline/R3M.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="R3M-1212S_SMD" description=""/>
+      <property name="MPN" value="R3M-1212S/SMD"/>
+      <property name="Design_Note" value="ExactECO5 manufacturer lands; no minimum load; CTRL open enables. Pin5 NC,pin6 return."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1f8d9189-b9f7-529a-96db-5f55b864df48</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="7"/>
+            <pin num="6"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="PS3">
+      <value>R3M-1212S/SMD</value>
+      <footprint>PowerLocal:RECOM_R3M_SMD</footprint>
+      <datasheet>https://recom-power.com/pdf/Econoline/R3M.pdf</datasheet>
+      <fields>
+        <field name="MPN">R3M-1212S/SMD</field>
+        <field name="Design_Note">ExactECO5 manufacturer lands; no minimum load; CTRL open enables. Pin5 NC,pin6 return.</field>
+        <field name="Footprint">PowerLocal:RECOM_R3M_SMD</field>
+        <field name="Datasheet">https://recom-power.com/pdf/Econoline/R3M.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="R3M-1212S_SMD" description=""/>
+      <property name="MPN" value="R3M-1212S/SMD"/>
+      <property name="Design_Note" value="ExactECO5 manufacturer lands; no minimum load; CTRL open enables. Pin5 NC,pin6 return."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>13a1364f-56c1-513e-8e42-d8b24d3a44ee</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="7"/>
+            <pin num="6"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="PS4">
+      <value>R3M-1212S/SMD</value>
+      <footprint>PowerLocal:RECOM_R3M_SMD</footprint>
+      <datasheet>https://recom-power.com/pdf/Econoline/R3M.pdf</datasheet>
+      <fields>
+        <field name="MPN">R3M-1212S/SMD</field>
+        <field name="Design_Note">ExactECO5 manufacturer lands; no minimum load; CTRL open enables. Pin5 NC,pin6 return.</field>
+        <field name="Footprint">PowerLocal:RECOM_R3M_SMD</field>
+        <field name="Datasheet">https://recom-power.com/pdf/Econoline/R3M.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="R3M-1212S_SMD" description=""/>
+      <property name="MPN" value="R3M-1212S/SMD"/>
+      <property name="Design_Note" value="ExactECO5 manufacturer lands; no minimum load; CTRL open enables. Pin5 NC,pin6 return."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>96d43471-90cb-5a9a-8754-f84ed51ca93d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="7"/>
+            <pin num="6"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R11">
+      <value>280k 0.1%</value>
+      <footprint>PowerLocal:R_0603_1608Metric</footprint>
+      <datasheet>https://www.vishay.com/docs/28758/tnpw_e3.pdf</datasheet>
+      <fields>
+        <field name="MPN">TNPW0603280KBEEA</field>
+        <field name="Design_Note">Within manufacturer0603 range&lt;=332k; .5*(1+280/49.9)=3.30561V nominal. 25ppm/K,standardEA packaging.</field>
+        <field name="Footprint">PowerLocal:R_0603_1608Metric</field>
+        <field name="Datasheet">https://www.vishay.com/docs/28758/tnpw_e3.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="R" description="Resistor"/>
+      <property name="MPN" value="TNPW0603280KBEEA"/>
+      <property name="Design_Note" value="Within manufacturer0603 range&lt;=332k; .5*(1+280/49.9)=3.30561V nominal. 25ppm/K,standardEA packaging."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6e288546-498d-5ff4-97df-3545d6338658</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R12">
+      <value>49.9k 0.1%</value>
+      <footprint>PowerLocal:R_0603_1608Metric</footprint>
+      <datasheet>https://www.vishay.com/docs/28758/tnpw_e3.pdf</datasheet>
+      <fields>
+        <field name="MPN">TNPW060349K9BEEA</field>
+        <field name="Design_Note">Low-side divider&lt;100k perTI;25ppm/K,standardEA packaging.</field>
+        <field name="Footprint">PowerLocal:R_0603_1608Metric</field>
+        <field name="Datasheet">https://www.vishay.com/docs/28758/tnpw_e3.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="R" description="Resistor"/>
+      <property name="MPN" value="TNPW060349K9BEEA"/>
+      <property name="Design_Note" value="Low-side divider&lt;100k perTI;25ppm/K,standardEA packaging."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fadb14b8-eef1-5348-9334-6930ed42a3e8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R13">
+      <value>100k 1%</value>
+      <footprint>PowerLocal:R_0603_1608Metric</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tps63802.pdf</datasheet>
+      <fields>
+        <field name="MPN">CRCW0603100KFKEA</field>
+        <field name="Design_Note">PG pullup; output indicator only.</field>
+        <field name="Footprint">PowerLocal:R_0603_1608Metric</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps63802.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="R" description="Resistor"/>
+      <property name="MPN" value="CRCW0603100KFKEA"/>
+      <property name="Design_Note" value="PG pullup; output indicator only."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>017bffaf-de5c-5d94-b178-5f80486edfe6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R21">
+      <value>280k 0.1%</value>
+      <footprint>PowerLocal:R_0603_1608Metric</footprint>
+      <datasheet>https://www.vishay.com/docs/28758/tnpw_e3.pdf</datasheet>
+      <fields>
+        <field name="MPN">TNPW0603280KBEEA</field>
+        <field name="Design_Note">Within manufacturer0603 range&lt;=332k; .5*(1+280/49.9)=3.30561V nominal. 25ppm/K,standardEA packaging.</field>
+        <field name="Footprint">PowerLocal:R_0603_1608Metric</field>
+        <field name="Datasheet">https://www.vishay.com/docs/28758/tnpw_e3.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="R" description="Resistor"/>
+      <property name="MPN" value="TNPW0603280KBEEA"/>
+      <property name="Design_Note" value="Within manufacturer0603 range&lt;=332k; .5*(1+280/49.9)=3.30561V nominal. 25ppm/K,standardEA packaging."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>52101618-3ef4-524a-94f3-dbcda4840317</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R22">
+      <value>49.9k 0.1%</value>
+      <footprint>PowerLocal:R_0603_1608Metric</footprint>
+      <datasheet>https://www.vishay.com/docs/28758/tnpw_e3.pdf</datasheet>
+      <fields>
+        <field name="MPN">TNPW060349K9BEEA</field>
+        <field name="Design_Note">Low-side divider&lt;100k perTI;25ppm/K,standardEA packaging.</field>
+        <field name="Footprint">PowerLocal:R_0603_1608Metric</field>
+        <field name="Datasheet">https://www.vishay.com/docs/28758/tnpw_e3.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="R" description="Resistor"/>
+      <property name="MPN" value="TNPW060349K9BEEA"/>
+      <property name="Design_Note" value="Low-side divider&lt;100k perTI;25ppm/K,standardEA packaging."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>529445c6-40a7-5522-a233-22afc3169b09</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R23">
+      <value>100k 1%</value>
+      <footprint>PowerLocal:R_0603_1608Metric</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tps63802.pdf</datasheet>
+      <fields>
+        <field name="MPN">CRCW0603100KFKEA</field>
+        <field name="Design_Note">PG pullup; output indicator only.</field>
+        <field name="Footprint">PowerLocal:R_0603_1608Metric</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps63802.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="R" description="Resistor"/>
+      <property name="MPN" value="CRCW0603100KFKEA"/>
+      <property name="Design_Note" value="PG pullup; output indicator only."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5d4ce2eb-9b05-5200-96e2-216dca3c3d43</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>TPS63802DLAR</value>
+      <footprint>PowerLocal:Texas_DLA0010A_TPS63802</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tps63802.pdf</datasheet>
+      <fields>
+        <field name="MPN">TPS63802DLAR</field>
+        <field name="Design_Note">ExactTI DLA0010A land pattern; no invented exposed pad.</field>
+        <field name="Footprint">PowerLocal:Texas_DLA0010A_TPS63802</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps63802.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="TPS63802DLAR" description=""/>
+      <property name="MPN" value="TPS63802DLAR"/>
+      <property name="Design_Note" value="ExactTI DLA0010A land pattern; no invented exposed pad."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>45135779-fcc1-5947-b270-d17dc893edc4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="10"/>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="7"/>
+            <pin num="6"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>TPS63802DLAR</value>
+      <footprint>PowerLocal:Texas_DLA0010A_TPS63802</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tps63802.pdf</datasheet>
+      <fields>
+        <field name="MPN">TPS63802DLAR</field>
+        <field name="Design_Note">ExactTI DLA0010A land pattern; no invented exposed pad.</field>
+        <field name="Footprint">PowerLocal:Texas_DLA0010A_TPS63802</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps63802.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerCandidate" part="TPS63802DLAR" description=""/>
+      <property name="MPN" value="TPS63802DLAR"/>
+      <property name="Design_Note" value="ExactTI DLA0010A land pattern; no invented exposed pad."/>
+      <property name="Sheetname" value="Shared_Power_Adapter_RevC"/>
+      <property name="Sheetfile" value="Shared_Power_Adapter_RevC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>80c99005-fd37-594c-802e-f5a206f4e0fd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="10"/>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="7"/>
+            <pin num="6"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="PowerCandidate" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="PowerCandidate" part="Connector2">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Connector2</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="PowerCandidate" part="Fuse">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Fuse</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="PowerCandidate" part="L">
+      <description>Inductor</description>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Inductor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="PowerCandidate" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="PowerCandidate" part="R3M-1212S_SMD">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">R3M-1212S_SMD</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="+VIN" type="power_in"/>
+        <pin num="2" name="-VIN" type="power_in"/>
+        <pin num="4" name="CTRL" type="input"/>
+        <pin num="5" name="NC" type="no_connect"/>
+        <pin num="6" name="-VOUT" type="power_out"/>
+        <pin num="7" name="+VOUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="PowerCandidate" part="TPS63802DLAR">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS63802DLAR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="EN" type="input"/>
+        <pin num="2" name="MODE" type="input"/>
+        <pin num="3" name="AGND" type="power_in"/>
+        <pin num="4" name="FB" type="input"/>
+        <pin num="5" name="PG" type="open_collector"/>
+        <pin num="6" name="VOUT" type="power_out"/>
+        <pin num="7" name="L2" type="passive"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="L1" type="passive"/>
+        <pin num="10" name="VIN" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="PowerCandidate">
+      <uri>${KIPRJMOD}/PowerCandidate.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/3V3_A" class="Default">
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="VOUT_6" pintype="power_out"/>
+    </net>
+    <net code="2" name="/3V3_B" class="Default">
+      <node ref="C22" pin="1" pintype="passive"/>
+      <node ref="C23" pin="1" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R21" pin="1" pintype="passive"/>
+      <node ref="R23" pin="1" pintype="passive"/>
+      <node ref="U2" pin="6" pinfunction="VOUT_6" pintype="power_out"/>
+    </net>
+    <net code="3" name="/AUX5V" class="Default">
+      <node ref="F5" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J8" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="4" name="/CH1_12V" class="Default">
+      <node ref="J4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="PS1" pin="7" pinfunction="+VOUT_7" pintype="power_out"/>
+    </net>
+    <net code="5" name="/CH1_HV_BOTTOM" class="Default">
+      <node ref="J4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="PS1" pin="6" pinfunction="-VOUT_6" pintype="power_out"/>
+    </net>
+    <net code="6" name="/CH2_12V" class="Default">
+      <node ref="J5" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="PS2" pin="7" pinfunction="+VOUT_7" pintype="power_out"/>
+    </net>
+    <net code="7" name="/CH2_HV_BOTTOM" class="Default">
+      <node ref="J5" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="PS2" pin="6" pinfunction="-VOUT_6" pintype="power_out"/>
+    </net>
+    <net code="8" name="/CH3_12V" class="Default">
+      <node ref="J6" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="PS3" pin="7" pinfunction="+VOUT_7" pintype="power_out"/>
+    </net>
+    <net code="9" name="/CH3_HV_BOTTOM" class="Default">
+      <node ref="J6" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="PS3" pin="6" pinfunction="-VOUT_6" pintype="power_out"/>
+    </net>
+    <net code="10" name="/CH4_12V" class="Default">
+      <node ref="J7" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="PS4" pin="7" pinfunction="+VOUT_7" pintype="power_out"/>
+    </net>
+    <net code="11" name="/CH4_HV_BOTTOM" class="Default">
+      <node ref="J7" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="PS4" pin="6" pinfunction="-VOUT_6" pintype="power_out"/>
+    </net>
+    <net code="12" name="/FB_A" class="Default">
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="FB_4" pintype="input"/>
+    </net>
+    <net code="13" name="/FB_B" class="Default">
+      <node ref="R21" pin="2" pintype="passive"/>
+      <node ref="R22" pin="1" pintype="passive"/>
+      <node ref="U2" pin="4" pinfunction="FB_4" pintype="input"/>
+    </net>
+    <net code="14" name="/L1_A" class="Default">
+      <node ref="L1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="9" pinfunction="L1_9" pintype="passive"/>
+    </net>
+    <net code="15" name="/L1_B" class="Default">
+      <node ref="L2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="9" pinfunction="L1_9" pintype="passive"/>
+    </net>
+    <net code="16" name="/L2_A" class="Default">
+      <node ref="L1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="L2_7" pintype="passive"/>
+    </net>
+    <net code="17" name="/L2_B" class="Default">
+      <node ref="L2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U2" pin="7" pinfunction="L2_7" pintype="passive"/>
+    </net>
+    <net code="18" name="/P5V_CH1" class="Default">
+      <node ref="C31" pin="1" pintype="passive"/>
+      <node ref="F1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="PS1" pin="1" pinfunction="+VIN_1" pintype="power_in"/>
+    </net>
+    <net code="19" name="/P5V_CH2" class="Default">
+      <node ref="C32" pin="1" pintype="passive"/>
+      <node ref="F2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="PS2" pin="1" pinfunction="+VIN_1" pintype="power_in"/>
+    </net>
+    <net code="20" name="/P5V_CH3" class="Default">
+      <node ref="C33" pin="1" pintype="passive"/>
+      <node ref="F3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="PS3" pin="1" pinfunction="+VIN_1" pintype="power_in"/>
+    </net>
+    <net code="21" name="/P5V_CH4" class="Default">
+      <node ref="C34" pin="1" pintype="passive"/>
+      <node ref="F4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="PS4" pin="1" pinfunction="+VIN_1" pintype="power_in"/>
+    </net>
+    <net code="22" name="/P5V_IN" class="Default">
+      <node ref="F0" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="F1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="F2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="F3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="F4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="F5" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="F6" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="F7" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="23" name="/P5V_LOGIC_A" class="Default">
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="F6" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="EN_1" pintype="input"/>
+      <node ref="U1" pin="10" pinfunction="VIN_10" pintype="power_in"/>
+      <node ref="U1" pin="2" pinfunction="MODE_2" pintype="input"/>
+    </net>
+    <net code="24" name="/P5V_LOGIC_B" class="Default">
+      <node ref="C21" pin="1" pintype="passive"/>
+      <node ref="F7" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="EN_1" pintype="input"/>
+      <node ref="U2" pin="10" pinfunction="VIN_10" pintype="power_in"/>
+      <node ref="U2" pin="2" pinfunction="MODE_2" pintype="input"/>
+    </net>
+    <net code="25" name="/P5V_RAW" class="Default">
+      <node ref="F0" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="26" name="/PG_A" class="Default">
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="PG_5" pintype="open_collector"/>
+    </net>
+    <net code="27" name="/PG_B" class="Default">
+      <node ref="R23" pin="2" pintype="passive"/>
+      <node ref="U2" pin="5" pinfunction="PG_5" pintype="open_collector"/>
+    </net>
+    <net code="28" name="/SYS_GND" class="Default">
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="C21" pin="2" pintype="passive"/>
+      <node ref="C22" pin="2" pintype="passive"/>
+      <node ref="C23" pin="2" pintype="passive"/>
+      <node ref="C31" pin="2" pintype="passive"/>
+      <node ref="C32" pin="2" pintype="passive"/>
+      <node ref="C33" pin="2" pintype="passive"/>
+      <node ref="C34" pin="2" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J8" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="PS1" pin="2" pinfunction="-VIN_2" pintype="power_in"/>
+      <node ref="PS2" pin="2" pinfunction="-VIN_2" pintype="power_in"/>
+      <node ref="PS3" pin="2" pinfunction="-VIN_2" pintype="power_in"/>
+      <node ref="PS4" pin="2" pinfunction="-VIN_2" pintype="power_in"/>
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="R22" pin="2" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="AGND_3" pintype="power_in"/>
+      <node ref="U1" pin="8" pinfunction="GND_8" pintype="power_in"/>
+      <node ref="U2" pin="3" pinfunction="AGND_3" pintype="power_in"/>
+      <node ref="U2" pin="8" pinfunction="GND_8" pintype="power_in"/>
+    </net>
+    <net code="29" name="unconnected-(PS1-CTRL-Pad4)" class="Default">
+      <node ref="PS1" pin="4" pinfunction="CTRL_4" pintype="input+no_connect"/>
+    </net>
+    <net code="30" name="unconnected-(PS1-NC-Pad5)" class="Default">
+      <node ref="PS1" pin="5" pinfunction="NC_5" pintype="no_connect"/>
+    </net>
+    <net code="31" name="unconnected-(PS2-CTRL-Pad4)" class="Default">
+      <node ref="PS2" pin="4" pinfunction="CTRL_4" pintype="input+no_connect"/>
+    </net>
+    <net code="32" name="unconnected-(PS2-NC-Pad5)" class="Default">
+      <node ref="PS2" pin="5" pinfunction="NC_5" pintype="no_connect"/>
+    </net>
+    <net code="33" name="unconnected-(PS3-CTRL-Pad4)" class="Default">
+      <node ref="PS3" pin="4" pinfunction="CTRL_4" pintype="input+no_connect"/>
+    </net>
+    <net code="34" name="unconnected-(PS3-NC-Pad5)" class="Default">
+      <node ref="PS3" pin="5" pinfunction="NC_5" pintype="no_connect"/>
+    </net>
+    <net code="35" name="unconnected-(PS4-CTRL-Pad4)" class="Default">
+      <node ref="PS4" pin="4" pinfunction="CTRL_4" pintype="input+no_connect"/>
+    </net>
+    <net code="36" name="unconnected-(PS4-NC-Pad5)" class="Default">
+      <node ref="PS4" pin="5" pinfunction="NC_5" pintype="no_connect"/>
+    </net>
+  </nets>
+</export>

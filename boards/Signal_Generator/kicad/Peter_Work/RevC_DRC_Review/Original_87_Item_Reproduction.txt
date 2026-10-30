@@ -1,0 +1,51 @@
+SIGNALGEN DRC DISCREPANCY — INDEPENDENT REPRODUCTION
+2026-10-17; KiCad CLI 10.0.6
+
+The reported 87-item result was reproduced exactly from the original released
+PCB. No copper, pads, schematic or output deliverables were edited for this test.
+All tests used workspace snapshots and --severity-all; full-project tests also
+enabled --schematic-parity.
+
+Original SignalGen PCB SHA256:
+85689913071cab8d67b98dd10090b6dceb80093fcca993f198f9213a61552194
+
+1. Complete project snapshot (PCB, project, custom rules, schematic,
+   fp-lib-table and local footprint library):
+   0 violations; 0 unconnected; 0 schematic parity differences.
+
+2. Exactly the same PCB copied by itself into a clean folder, with zones refilled:
+   87 violations: 10 clearance errors and 77 footprint-library warnings.
+   0 unconnected. Schematic parity was not requested because no schematic was
+   present in this deliberate standalone reproduction.
+
+   All ten errors are adjacent U4/U7 signal pads: normal clearance 0.2000 mm,
+   actual pad-edge distance 0.1928 mm.
+   All 77 warnings report the missing SignalGenLocal footprint library.
+   Report: signal_pcb_only_refilled.json
+
+3. Same standalone PCB without refilling zones:
+   172 violations: 95 clearance errors and the same 77 library warnings.
+   The extra 85 errors are zone-to-track/via gaps; the original project rules
+   filled those zones at 0.2 mm while their stored per-zone property is 0.23 mm.
+   Refilling without custom rules resolves those extra differences and produces
+   the exact screenshot count. Report: signal_pcb_only.json
+
+Cause established:
+The complete project's .kicad_dru contains a 0.18 mm pad-to-pad rule restricted
+to U4/U7. It permits the recovered source footprint's 0.1928 mm gap. The project
+also defines normal 0.2 mm and cross-domain 3.5 mm spacing. Removing project
+context removes those rules and the local-library binding. A zero result with
+the complete project therefore did not imply zero DRC for a standalone board.
+
+Requested correction is owned by the parent task: eliminate the U4/U7 special
+clearance rule by matching TI's 1.4 x 0.45 mm VSSOP land geometry, then package
+the complete native project and rerun DRC. This reproduction is a baseline,
+not validation of that subsequently modified board.
+
+Other released full projects checked freshly in the same run:
+Boost PCB SHA256 d329fe12e2790f448aebf86053afe83f5395b52f0572ed989d25742532b22fd3
+Rail PCB SHA256 0a6469ec5593e9f603f7f2c1237c84ea7e760c88014318f333de363a92a8864c
+Both: 0 violations, 0 unconnected, 0 schematic parity, no excluded violations.
+Complete machine reports and copies of the exact input files are preserved in
+this folder. Summary.json records the full-project checks and initial standalone
+check; signal_pcb_only_refilled.json records the exact screenshot reproduction.

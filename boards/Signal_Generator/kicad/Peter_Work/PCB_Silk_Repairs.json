@@ -1,0 +1,57 @@
+{
+  "removed_nonessential_silk_body_segments": [
+    {
+      "ref": "PS2",
+      "uuid": "0c6281ed-7656-4534-a8ed-5306ff7ff6ba"
+    },
+    {
+      "ref": "U3",
+      "uuid": "45c1f3fd-f4e7-44cd-ae8d-fc83129202b0"
+    },
+    {
+      "ref": "U3",
+      "uuid": "355bafaf-09cc-4eb2-b488-b4df8cd9c117"
+    },
+    {
+      "ref": "U3",
+      "uuid": "02d60aab-9caf-4dba-b1e3-4c1aa90cdeff"
+    },
+    {
+      "ref": "U3",
+      "uuid": "9c129297-b353-48b1-b23e-d66cf3f3cb47"
+    },
+    {
+      "ref": "U3",
+      "uuid": "51742734-b960-4b55-8ad9-a54e65cafc97"
+    },
+    {
+      "ref": "U1",
+      "uuid": "2babefff-2669-4dc6-b619-a6cb0364cc80"
+    },
+    {
+      "ref": "U5",
+      "uuid": "8c8d33ae-b5bd-414b-879c-a94c972f9dd1"
+    },
+    {
+      "ref": "U5",
+      "uuid": "5b6eb756-23c2-4690-ae45-f67d061ce064"
+    },
+    {
+      "ref": "U5",
+      "uuid": "3394b656-70ae-4485-b90e-f8145e2deb4f"
+    },
+    {
+      "ref": "U5",
+      "uuid": "5fe00b94-cfed-4014-94ee-c8c9814202c0"
+    },
+    {
+      "ref": "U5",
+      "uuid": "51093fdb-6165-47b0-9a41-1a6226b8a929"
+    },
+    {
+      "ref": "PS1",
+      "uuid": "4968e17b-867e-4b9f-addf-2e4d9525cf6e"
+    }
+  ],
+  "DAC_pin1_marks": "Added visible 1 below physical pin1 of each DAC"
+}

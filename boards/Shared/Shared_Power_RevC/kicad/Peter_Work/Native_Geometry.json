@@ -1,0 +1,27 @@
+{
+  "board": "C:\\Users\\peter\\Documents\\Codex\\2026-10-17\\this\\outputs\\StimPrototype_Hardware_Revision_C\\shared_power\\Shared_Power_Adapter_RevC.kicad_pcb",
+  "sha256": "cffe4fa3e631e34b5c930e2075eefe2149c586fba26e1cda877d22a6f76d18c1",
+  "vias": 55,
+  "numbered_pads": 112,
+  "board_thickness_mm": 0.41116,
+  "min_silk_stroke_mm": 0.15,
+  "min_text_height_mm": 1.0,
+  "min_silk_mask_gap_mm": 0.175048,
+  "min_silk_drill_gap_mm": 0.638854,
+  "min_silk_annulus_gap_mm": 0.488891,
+  "min_via_pad_copper_gap_mm": 0.200041,
+  "min_via_drill_mask_gap_mm": 0.300016,
+  "min_via_copper_mask_gap_mm": 0.150053,
+  "min_mask_opening_gap_mm": 0.150053,
+  "min_mask_foreign_copper_gap_mm": 0.149504,
+  "violations": {
+    "silk_stroke_below_015": 0,
+    "text_height_below_1": 0,
+    "silk_mask_below_015": 0,
+    "silk_hole_below_015": 0,
+    "via_drill_mask_overlap": 0,
+    "via_copper_pad_overlap": 0,
+    "foreign_copper_mask_gap_below_009": 0,
+    "mask_opening_gap_below_013": 0
+  }
+}

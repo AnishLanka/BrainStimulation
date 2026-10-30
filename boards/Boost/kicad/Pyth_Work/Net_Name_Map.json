@@ -1,0 +1,18 @@
+{
+  "/HV_TOP": "/HV_TOP",
+  "HV_BOTTOM": "HV_BOTTOM",
+  "ISO_12V_TO_BOTTOM": "ISO_12V_TO_BOTTOM",
+  "Net-(C3-Pad1)": "/COMP_ZERO",
+  "Net-(C6-Pad1)": "/SENSE_FILT",
+  "Net-(D1-A)": "/SW",
+  "Net-(Q1-G)": "/GATE",
+  "Net-(Q1-S-Pad1)": "/SENSE_RAW",
+  "Net-(U1-COMP)": "/COMP",
+  "Net-(U1-CS)": "/CS",
+  "Net-(U1-FB)": "/FB",
+  "Net-(U1-PGOOD)": "/PGOOD",
+  "Net-(U1-RT)": "/FREQ_SET",
+  "Net-(U1-SS)": "/SOFT_START",
+  "Net-(U1-UVLO_SYNC)": "/UVLO",
+  "VCC_BOOST": "VCC_BOOST"
+}

@@ -1,0 +1,223 @@
+(footprint "C5_INDC1608X90N"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "C5"
+		(at 3.125 -3.6 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "dfb7f2a7-90e5-4804-bcc2-8a4f57305a04")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "Value" "1uF"
+		(at -1.578985 -0.096499 270)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "8f406d57-a173-42f8-94fd-1cfe1db90c3c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "53e8c651-3ef5-428a-b332-d07c77940aa1")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&R"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8c5f7fe3-a078-4127-94e9-979afe79a058")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MOUSER PART NUMBER" "*"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "26eb121a-0c45-4234-a4b4-83455091ff35")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "MOUSER PRICE/STOCK" "*"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "090623c3-f230-4bcc-b2ac-976a4724f0b8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "MANUFACTURER_NAME" "TAIYO YUDEN"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "4a3b5105-5d11-4c8f-89fc-b2add360281a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "MANUFACTURER_PART_NUMBER" "MBASE168SB7105KTNA18"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "d0314049-cdb6-43d2-9cf8-6e5892083d46")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "DATASHEET LINK" "https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MBASE168SB7105KTNA18"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "71f3d611-15a7-4845-9813-f3bca05efaa5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "GEOMETRY.HEIGHT" "0.9mm"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "37919a19-9959-4358-a56f-583f0bb85cfb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(sheetname "SignalGen_DualChannel")
+	(sheetfile "SignalGen_DualChannel.kicad_sch")
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.8 -0.4)
+		(end -0.8 0.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "38e6bb8a-6546-4003-92f8-76e7355d81c0")
+	)
+	(fp_line
+		(start -0.8 -0.4)
+		(end 0.8 -0.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "e117b5dd-81cf-4235-9899-a3a63cf4b370")
+	)
+	(fp_line
+		(start -0.8 0.4)
+		(end 0.8 0.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "c6aab4d9-b200-48e8-8465-210f579187da")
+	)
+	(fp_line
+		(start 0.8 -0.4)
+		(end 0.8 0.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "543efab9-8dc4-48bd-b714-d5a52e4d53c3")
+	)
+	(fp_line
+		(start -1.475 -0.75)
+		(end -1.475 0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "User.20")
+		(uuid "4ceb1c3d-4e71-4cf4-bc9c-eb8b2a9e0d4c")
+	)
+	(fp_line
+		(start -1.475 -0.75)
+		(end 1.475 -0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "User.20")
+		(uuid "f4dad19a-0c9c-4b44-aba6-dd9c51b2de26")
+	)
+	(fp_line
+		(start -1.475 0.75)
+		(end 1.475 0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "User.20")
+		(uuid "f293fae1-3110-4f92-998a-e91d65d9f7a9")
+	)
+	(fp_line
+		(start 1.475 -0.75)
+		(end 1.475 0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "User.20")
+		(uuid "40d3aa83-65ba-494f-950b-f59d435b217c")
+	)
+	(pad "1" smd rect
+		(at -0.75 0)
+		(size 0.95 0.95)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(clearance 0)
+		(uuid "0d858302-e8db-4847-a897-53bdeefb96ac")
+	)
+	(pad "2" smd rect
+		(at 0.75 0)
+		(size 0.95 0.95)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(clearance 0)
+		(uuid "8e1dc67e-eab2-4abe-9e2d-ddd5f45880ab")
+	)
+	(embedded_fonts no)
+)

@@ -1,0 +1,944 @@
+{
+  "status": "BARE-BOARD ENGINEERING BENCH PROTOTYPE EXPORT; powered hardware validation pending",
+  "source_outline_exact": true,
+  "thickness_mm": 0.41116,
+  "physical_parts": 25,
+  "connected_pin_count": 67,
+  "net_map_exact": true,
+  "connector_geometry": {
+    "J1": {
+      "source": "IN",
+      "geometry": {
+        "1": [
+          [
+            124.3076,
+            95.9231
+          ],
+          [
+            1.57,
+            1.57
+          ],
+          [
+            1.02,
+            1.02
+          ],
+          1
+        ],
+        "2": [
+          [
+            124.3076,
+            98.4631
+          ],
+          [
+            1.57,
+            1.57
+          ],
+          [
+            1.02,
+            1.02
+          ],
+          0
+        ]
+      },
+      "exact_match": true
+    },
+    "J2": {
+      "source": "OUT",
+      "geometry": {
+        "1": [
+          [
+            124.8156,
+            108.8771
+          ],
+          [
+            1.57,
+            1.57
+          ],
+          [
+            1.02,
+            1.02
+          ],
+          1
+        ],
+        "2": [
+          [
+            124.8156,
+            111.4171
+          ],
+          [
+            1.57,
+            1.57
+          ],
+          [
+            1.02,
+            1.02
+          ],
+          0
+        ]
+      },
+      "exact_match": true
+    }
+  },
+  "pcb_drc_violations": 0,
+  "unconnected_items": 0,
+  "schematic_parity_issues": 0,
+  "track_and_via_counts": {
+    "PCB_TRACK": 567,
+    "PCB_VIA": 27
+  },
+  "zones": 3,
+  "mask_silk_geometry": {
+    "front": {
+      "min_silk_to_actual_mask_mm": 0.169249,
+      "min_silk_to_drill_mm": 0.178527,
+      "near_pairs": [
+        {
+          "silk": "Q1",
+          "mask": "Q1.7",
+          "gap_mm": 0.169249
+        },
+        {
+          "silk": "R8",
+          "mask": "R8.2",
+          "gap_mm": 0.223327
+        },
+        {
+          "silk": "R8",
+          "mask": "R8.1",
+          "gap_mm": 0.224425
+        },
+        {
+          "silk": "Q1",
+          "mask": "Q1.6",
+          "gap_mm": 0.235595
+        },
+        {
+          "silk": "Q1",
+          "mask": "Q1.5",
+          "gap_mm": 0.264709
+        },
+        {
+          "silk": "Q1",
+          "mask": "Q1.8",
+          "gap_mm": 0.308226
+        },
+        {
+          "silk": "J1",
+          "mask": "J1.1",
+          "gap_mm": 0.319274
+        },
+        {
+          "silk": "R5",
+          "mask": "R5.1",
+          "gap_mm": 0.339415
+        },
+        {
+          "silk": "R5",
+          "mask": "R5.2",
+          "gap_mm": 0.33972
+        },
+        {
+          "silk": "R2",
+          "mask": "R2.1",
+          "gap_mm": 0.347839
+        },
+        {
+          "silk": "R2",
+          "mask": "R2.2",
+          "gap_mm": 0.37329
+        },
+        {
+          "silk": "C3",
+          "mask": "C3.2",
+          "gap_mm": 0.447875
+        },
+        {
+          "silk": "C6",
+          "mask": "R4.2",
+          "gap_mm": 0.447875
+        },
+        {
+          "silk": "C7",
+          "mask": "C7.2",
+          "gap_mm": 0.464232
+        },
+        {
+          "silk": "C3",
+          "mask": "C3.1",
+          "gap_mm": 0.489318
+        },
+        {
+          "silk": "C2",
+          "mask": "R5.1",
+          "gap_mm": 0.558165
+        },
+        {
+          "silk": "C8",
+          "mask": "C8.2",
+          "gap_mm": 0.597839
+        },
+        {
+          "silk": "Q1",
+          "mask": "Q1.5",
+          "gap_mm": 0.619017
+        },
+        {
+          "silk": "R6",
+          "mask": "R6.2",
+          "gap_mm": 0.63922
+        },
+        {
+          "silk": "R6",
+          "mask": "R6.1",
+          "gap_mm": 0.639709
+        },
+        {
+          "silk": "1",
+          "mask": "J1.1",
+          "gap_mm": 0.655944
+        },
+        {
+          "silk": "U1",
+          "mask": "Q1.4",
+          "gap_mm": 0.666747
+        },
+        {
+          "silk": "U1",
+          "mask": "C4.2",
+          "gap_mm": 0.676879
+        },
+        {
+          "silk": "C2",
+          "mask": "R3.1",
+          "gap_mm": 0.723571
+        },
+        {
+          "silk": "R3",
+          "mask": "R3.2",
+          "gap_mm": 0.807128
+        },
+        {
+          "silk": "R7",
+          "mask": "R7.2",
+          "gap_mm": 0.808104
+        },
+        {
+          "silk": "C8",
+          "mask": "C8.1",
+          "gap_mm": 0.810362
+        },
+        {
+          "silk": "Q1",
+          "mask": "Q1.1",
+          "gap_mm": 0.81195
+        },
+        {
+          "silk": "Q1",
+          "mask": "D1.2",
+          "gap_mm": 0.822814
+        },
+        {
+          "silk": "J2",
+          "mask": "J2.1",
+          "gap_mm": 0.839537
+        },
+        {
+          "silk": "R10",
+          "mask": "R10.2",
+          "gap_mm": 0.84265
+        },
+        {
+          "silk": "R5",
+          "mask": "U1.6",
+          "gap_mm": 0.848327
+        },
+        {
+          "silk": "R2",
+          "mask": "R1.2",
+          "gap_mm": 0.86975
+        },
+        {
+          "silk": "R3",
+          "mask": "R7.2",
+          "gap_mm": 0.907714
+        },
+        {
+          "silk": "-",
+          "mask": "C5.2",
+          "gap_mm": 0.988158
+        },
+        {
+          "silk": "C9",
+          "mask": "C9.2",
+          "gap_mm": 0.989135
+        },
+        {
+          "silk": "C4",
+          "mask": "C4.1",
+          "gap_mm": 0.997862
+        },
+        {
+          "silk": "R1",
+          "mask": "R1.1",
+          "gap_mm": 1.00592
+        },
+        {
+          "silk": "C4",
+          "mask": "R9.2",
+          "gap_mm": 1.018493
+        },
+        {
+          "silk": "Q1",
+          "mask": "C4.1",
+          "gap_mm": 1.028685
+        },
+        {
+          "silk": "C9",
+          "mask": "C9.1",
+          "gap_mm": 1.033019
+        },
+        {
+          "silk": "R5",
+          "mask": "U1.13",
+          "gap_mm": 1.046569
+        },
+        {
+          "silk": "U1",
+          "mask": "U1.12",
+          "gap_mm": 1.061767
+        },
+        {
+          "silk": "C4",
+          "mask": "R9.1",
+          "gap_mm": 1.068664
+        },
+        {
+          "silk": "+",
+          "mask": "C5.1",
+          "gap_mm": 1.088073
+        },
+        {
+          "silk": "C4",
+          "mask": "C4.2",
+          "gap_mm": 1.098144
+        },
+        {
+          "silk": "C6",
+          "mask": "C6.1",
+          "gap_mm": 1.159484
+        },
+        {
+          "silk": "1",
+          "mask": "J2.1",
+          "gap_mm": 1.163939
+        },
+        {
+          "silk": "U1",
+          "mask": "U1.1",
+          "gap_mm": 1.218566
+        },
+        {
+          "silk": "R5",
+          "mask": "R4.1",
+          "gap_mm": 1.254028
+        },
+        {
+          "silk": "C6",
+          "mask": "R4.1",
+          "gap_mm": 1.300353
+        },
+        {
+          "silk": "U1",
+          "mask": "Q1.3",
+          "gap_mm": 1.310973
+        },
+        {
+          "silk": "C2",
+          "mask": "C7.1",
+          "gap_mm": 1.333434
+        },
+        {
+          "silk": "C2",
+          "mask": "C2.1",
+          "gap_mm": 1.339232
+        },
+        {
+          "silk": "C6",
+          "mask": "C3.2",
+          "gap_mm": 1.339232
+        },
+        {
+          "silk": "C2",
+          "mask": "C2.2",
+          "gap_mm": 1.340209
+        },
+        {
+          "silk": "R5",
+          "mask": "U1.5",
+          "gap_mm": 1.348327
+        },
+        {
+          "silk": "Q1",
+          "mask": "R9.2",
+          "gap_mm": 1.415038
+        },
+        {
+          "silk": "Q1",
+          "mask": "Q1.2",
+          "gap_mm": 1.441344
+        },
+        {
+          "silk": "J1",
+          "mask": "C1.1",
+          "gap_mm": 1.457885
+        },
+        {
+          "silk": "C7",
+          "mask": "R3.2",
+          "gap_mm": 1.458129
+        },
+        {
+          "silk": "U1",
+          "mask": "Q1.5",
+          "gap_mm": 1.496154
+        },
+        {
+          "silk": "D1",
+          "mask": "D1.2",
+          "gap_mm": 1.51422
+        },
+        {
+          "silk": "U1",
+          "mask": "U1.11",
+          "gap_mm": 1.524718
+        },
+        {
+          "silk": "R8",
+          "mask": "R2.2",
+          "gap_mm": 1.524779
+        },
+        {
+          "silk": "U1",
+          "mask": "U1.13",
+          "gap_mm": 1.546386
+        },
+        {
+          "silk": "R8",
+          "mask": "C3.1",
+          "gap_mm": 1.579223
+        },
+        {
+          "silk": "U1",
+          "mask": "U1.13",
+          "gap_mm": 1.629272
+        },
+        {
+          "silk": "R2",
+          "mask": "R8.1",
+          "gap_mm": 1.632201
+        },
+        {
+          "silk": "C4",
+          "mask": "U1.6",
+          "gap_mm": 1.63568
+        },
+        {
+          "silk": "C4",
+          "mask": "U1.5",
+          "gap_mm": 1.6687
+        },
+        {
+          "silk": "C6",
+          "mask": "C3.1",
+          "gap_mm": 1.683287
+        },
+        {
+          "silk": "U1",
+          "mask": "U1.2",
+          "gap_mm": 1.706054
+        },
+        {
+          "silk": "Q1",
+          "mask": "Q1.5",
+          "gap_mm": 1.718872
+        },
+        {
+          "silk": "C1",
+          "mask": "C1.2",
+          "gap_mm": 1.733153
+        },
+        {
+          "silk": "1",
+          "mask": "J1.2",
+          "gap_mm": 1.733153
+        },
+        {
+          "silk": "C3",
+          "mask": "R8.2",
+          "gap_mm": 1.744567
+        },
+        {
+          "silk": "R4",
+          "mask": "R4.2",
+          "gap_mm": 1.786132
+        },
+        {
+          "silk": "R5",
+          "mask": "U1.7",
+          "gap_mm": 1.797424
+        },
+        {
+          "silk": "C4",
+          "mask": "U1.4",
+          "gap_mm": 1.826354
+        },
+        {
+          "silk": "R5",
+          "mask": "U1.4",
+          "gap_mm": 1.848327
+        },
+        {
+          "silk": "R9",
+          "mask": "R9.2",
+          "gap_mm": 1.862853
+        },
+        {
+          "silk": "R3",
+          "mask": "C7.2",
+          "gap_mm": 1.864135
+        },
+        {
+          "silk": "D1",
+          "mask": "D1.1",
+          "gap_mm": 1.869384
+        },
+        {
+          "silk": "R4",
+          "mask": "R9.1",
+          "gap_mm": 1.876953
+        },
+        {
+          "silk": "R10",
+          "mask": "R6.2",
+          "gap_mm": 1.936034
+        },
+        {
+          "silk": "C2",
+          "mask": "U1.7",
+          "gap_mm": 1.948729
+        },
+        {
+          "silk": "U1",
+          "mask": "Q1.2",
+          "gap_mm": 1.958984
+        },
+        {
+          "silk": "R1",
+          "mask": "C7.2",
+          "gap_mm": 1.980223
+        }
+      ],
+      "near_holes": [
+        {
+          "silk": "U1",
+          "hole": "via",
+          "position_mm": [
+            146.9,
+            103.9
+          ],
+          "gap_mm": 0.178527
+        },
+        {
+          "silk": "C4",
+          "hole": "via",
+          "position_mm": [
+            145.4,
+            107.2
+          ],
+          "gap_mm": 0.277709
+        },
+        {
+          "silk": "U1",
+          "hole": "via",
+          "position_mm": [
+            147.75,
+            103.9
+          ],
+          "gap_mm": 0.459228
+        },
+        {
+          "silk": "R3",
+          "hole": "via",
+          "position_mm": [
+            154.3,
+            110.2
+          ],
+          "gap_mm": 0.558837
+        },
+        {
+          "silk": "R5",
+          "hole": "via",
+          "position_mm": [
+            146.5,
+            108.75
+          ],
+          "gap_mm": 0.573302
+        },
+        {
+          "silk": "C4",
+          "hole": "via",
+          "position_mm": [
+            146.5,
+            108.75
+          ],
+          "gap_mm": 0.60266
+        },
+        {
+          "silk": "R5",
+          "hole": "via",
+          "position_mm": [
+            148.7,
+            109.4
+          ],
+          "gap_mm": 0.742553
+        },
+        {
+          "silk": "C7",
+          "hole": "via",
+          "position_mm": [
+            154.3,
+            110.2
+          ],
+          "gap_mm": 0.786071
+        },
+        {
+          "silk": "R4",
+          "hole": "via",
+          "position_mm": [
+            141.4,
+            111.5
+          ],
+          "gap_mm": 0.799743
+        },
+        {
+          "silk": "C4",
+          "hole": "via",
+          "position_mm": [
+            144.0,
+            109.7625
+          ],
+          "gap_mm": 0.867064
+        },
+        {
+          "silk": "J1",
+          "hole": "J1.1",
+          "position_mm": [
+            124.3076,
+            95.9231
+          ],
+          "gap_mm": 0.905211
+        },
+        {
+          "silk": "C8",
+          "hole": "via",
+          "position_mm": [
+            155.6,
+            101.8
+          ],
+          "gap_mm": 0.910705
+        },
+        {
+          "silk": "C6",
+          "hole": "via",
+          "position_mm": [
+            141.4,
+            111.5
+          ],
+          "gap_mm": 0.910766
+        },
+        {
+          "silk": "1",
+          "hole": "J1.1",
+          "position_mm": [
+            124.3076,
+            95.9231
+          ],
+          "gap_mm": 0.990722
+        },
+        {
+          "silk": "Q1",
+          "hole": "via",
+          "position_mm": [
+            143.05,
+            103.25
+          ],
+          "gap_mm": 1.012877
+        },
+        {
+          "silk": "R10",
+          "hole": "via",
+          "position_mm": [
+            156.4,
+            97.2
+          ],
+          "gap_mm": 1.019347
+        },
+        {
+          "silk": "C3",
+          "hole": "via",
+          "position_mm": [
+            141.7,
+            115.5
+          ],
+          "gap_mm": 1.076659
+        },
+        {
+          "silk": "C1",
+          "hole": "via",
+          "position_mm": [
+            127.9,
+            93.2
+          ],
+          "gap_mm": 1.084838
+        },
+        {
+          "silk": "C4",
+          "hole": "via",
+          "position_mm": [
+            146.6,
+            107.2
+          ],
+          "gap_mm": 1.112792
+        },
+        {
+          "silk": "C2",
+          "hole": "via",
+          "position_mm": [
+            148.7,
+            109.4
+          ],
+          "gap_mm": 1.132079
+        },
+        {
+          "silk": "R3",
+          "hole": "via",
+          "position_mm": [
+            153.1,
+            108.55
+          ],
+          "gap_mm": 1.230956
+        },
+        {
+          "silk": "R9",
+          "hole": "via",
+          "position_mm": [
+            140.9,
+            106.8375
+          ],
+          "gap_mm": 1.30548
+        },
+        {
+          "silk": "U1",
+          "hole": "via",
+          "position_mm": [
+            150.45,
+            106.3
+          ],
+          "gap_mm": 1.314514
+        },
+        {
+          "silk": "U1",
+          "hole": "via",
+          "position_mm": [
+            148.7,
+            104.9
+          ],
+          "gap_mm": 1.315307
+        },
+        {
+          "silk": "U1",
+          "hole": "via",
+          "position_mm": [
+            148.7,
+            104.9
+          ],
+          "gap_mm": 1.343078
+        },
+        {
+          "silk": "J2",
+          "hole": "J2.1",
+          "position_mm": [
+            124.8156,
+            108.8771
+          ],
+          "gap_mm": 1.439697
+        },
+        {
+          "silk": "C4",
+          "hole": "via",
+          "position_mm": [
+            144.0,
+            110.4
+          ],
+          "gap_mm": 1.474059
+        },
+        {
+          "silk": "1",
+          "hole": "J2.1",
+          "position_mm": [
+            124.8156,
+            108.8771
+          ],
+          "gap_mm": 1.493956
+        },
+        {
+          "silk": "C8",
+          "hole": "via",
+          "position_mm": [
+            155.6,
+            101.0
+          ],
+          "gap_mm": 1.524291
+        },
+        {
+          "silk": "-",
+          "hole": "C5.2",
+          "position_mm": [
+            169.5,
+            104.5
+          ],
+          "gap_mm": 1.638976
+        },
+        {
+          "silk": "C6",
+          "hole": "via",
+          "position_mm": [
+            141.7,
+            115.5
+          ],
+          "gap_mm": 1.719787
+        },
+        {
+          "silk": "+",
+          "hole": "C5.1",
+          "position_mm": [
+            162.0,
+            104.5
+          ],
+          "gap_mm": 1.738891
+        },
+        {
+          "silk": "R2",
+          "hole": "via",
+          "position_mm": [
+            150.8,
+            114.65
+          ],
+          "gap_mm": 1.80432
+        },
+        {
+          "silk": "R2",
+          "hole": "via",
+          "position_mm": [
+            149.7,
+            114.65
+          ],
+          "gap_mm": 1.805175
+        },
+        {
+          "silk": "R5",
+          "hole": "via",
+          "position_mm": [
+            146.35,
+            112.65
+          ],
+          "gap_mm": 1.86621
+        }
+      ]
+    },
+    "back": {
+      "min_silk_to_actual_mask_mm": 1.56195,
+      "min_silk_to_drill_mm": 0.972289,
+      "near_pairs": [
+        {
+          "silk": "J2: 1 79V7+ / 2 RETURN",
+          "mask": "J2.2",
+          "gap_mm": 1.56195
+        }
+      ],
+      "near_holes": [
+        {
+          "silk": "J2: 1 79V7+ / 2 RETURN",
+          "hole": "via",
+          "position_mm": [
+            146.35,
+            112.65
+          ],
+          "gap_mm": 0.972289
+        },
+        {
+          "silk": "J2: 1 79V7+ / 2 RETURN",
+          "hole": "via",
+          "position_mm": [
+            141.7,
+            115.5
+          ],
+          "gap_mm": 1.082824
+        },
+        {
+          "silk": "J2: 1 79V7+ / 2 RETURN",
+          "hole": "via",
+          "position_mm": [
+            141.4,
+            111.5
+          ],
+          "gap_mm": 1.562805
+        },
+        {
+          "silk": "J2: 1 79V7+ / 2 RETURN",
+          "hole": "J2.2",
+          "position_mm": [
+            124.8156,
+            111.4171
+          ],
+          "gap_mm": 1.837645
+        }
+      ]
+    }
+  },
+  "sha256": {
+    "Boost_Electrical_Draft.kicad_pcb": "d329fe12e2790f448aebf86053afe83f5395b52f0572ed989d25742532b22fd3",
+    "Boost_Electrical_Draft.kicad_pro": "47238e5ad2b65a72db12d4b91cdd4f2da77d8611523fdbb333948397e41bea0a",
+    "Boost_Electrical_Draft.kicad_dru": "61639d023d75193612bd1f7ff594396e8882293b332c610c247641111aa1eb96",
+    "PCB_DRC.json": "9e592c8e8d00246e44708f020d02a2b15884c4d26402bae7bba17b018d770cfb",
+    "Boost_Electrical_Draft.kicad_sch": "c87cfdf8925d7f6cde7f6179aadf356fa0db059afd6c8dc259b58de3753ac06e",
+    "Boost_Electrical_Draft.net": "e4a15545aaad89914e960ac8e0975753367e8bd4151668615255d669741a077d",
+    "Fabrication_Manifest.json": "8439e07738fd2c88426533ed1114f4b2e82267ac4cce8523686ebba0f7459249"
+  },
+  "fabrication_zip": "Boost_79V7_Prototype_JLCPCB.zip",
+  "manufacturing_outline_mm": [
+    54.229,
+    26.543
+  ],
+  "nominal_order_thickness_mm": 0.4,
+  "local_footprint_sha256": {
+    "C0603.kicad_mod": "8a9ce268c5ad78534e4cce11e0f67c6c749ccbc9aee6531716b5adb22659074a",
+    "C0805.kicad_mod": "d5fd94d8b4ae0ed87a6e958dc793d9303cada1668572d07090a8ec3ca8c7ebc6",
+    "C1210.kicad_mod": "98a36d3fc171e876e4960363fad69b1bda1e2f55b5ee94b222a8bdd956ad4ea9",
+    "C_BULK.kicad_mod": "e71d424ce5c73adf6b18c8e483c66cd75200b08b545dc60144a6d277c9cae109",
+    "D_SMA.kicad_mod": "3c7dfabe8ef8bceb7d59ee54690982b68240dfaa2387eb36f17e4b9404bd4b9e",
+    "IN_FP-TSW-102-14-G-S-MFG.kicad_mod": "611982c12a9e9f6791e663e064fed2d6eaf7844de76659b5598206df0a4566bc",
+    "L_BOURNS.kicad_mod": "31c6d81f1072f693118fce8d223dfa663f6eb6b6f34c04f88654050d704973d1",
+    "OUT_FP-TSW-102-14-G-S-MFG.kicad_mod": "65458b02c74f68a87598ce81fdcd6135274fdd1dc9a6d50d94bdf6e6803113d1",
+    "Q_FDMC86240_CASE511DH.kicad_mod": "a15e31695ee5cf4186b0433c87c133cf3a4b96b42e5219e3ba39716478bc2543",
+    "R0603.kicad_mod": "533054fdca5ba5d75e23d9c29b30742f2180393b70e81858d3c0e03a324ad36d",
+    "R0805.kicad_mod": "4e7e976aa82f41c6f7eca7c2b6c75f7ff054971065cbde6755c784d9efec2992",
+    "R1206.kicad_mod": "e4301e50cc84c62ce54a35ab0488942d3e150830d4b0c2f930f147ad9b0f1b0f",
+    "U1_DSS0012B.kicad_mod": "b60db5f46509b7f652c9a35b02c6fe4b7583671db0fffb66feedf951e497363b"
+  },
+  "minimum_via_drill_to_mask_mm": 0.350005,
+  "minimum_via_annulus_to_mask_mm": 0.200041,
+  "q1_keepouts": "Two explicit board-level manufacturer flank rule areas; see PCB_Draft_Notes.txt",
+  "copper_zones": 1,
+  "rule_areas": 2
+}

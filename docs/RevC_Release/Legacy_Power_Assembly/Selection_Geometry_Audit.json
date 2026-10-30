@@ -1,0 +1,392 @@
+{
+  "RailSplitter": {
+    "native_files_unchanged": true,
+    "native_sha256": {
+      "outputs\\StimPrototype_Integration\\railsplitter_draft\\RailSplitter_Electrical_Draft.kicad_pcb": "0a6469ec5593e9f603f7f2c1237c84ea7e760c88014318f333de363a92a8864c",
+      "outputs\\StimPrototype_Integration\\railsplitter_draft\\RailSplitter_Electrical_Draft.kicad_sch": "5a4cd3978f102821abd12c9a39c79d70eb7aa61bcad8cb9114006187544b517c"
+    },
+    "native_thickness_mm": 0.41116,
+    "selected_geometry": {
+      "R3": {
+        "MPN": "CRCW080549R9FKEA",
+        "footprint": "R0805",
+        "pads": [
+          {
+            "number": "1",
+            "position_mm": [
+              140.9125,
+              106.0
+            ],
+            "size_mm": [
+              1.025,
+              1.4
+            ],
+            "drill_mm": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "number": "2",
+            "position_mm": [
+              139.0875,
+              106.0
+            ],
+            "size_mm": [
+              1.025,
+              1.4
+            ],
+            "drill_mm": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "pad_pair_center_distances_mm": [
+          1.825
+        ]
+      },
+      "J1": {
+        "MPN": "691211720002",
+        "footprint": "J2",
+        "pads": [
+          {
+            "number": "1",
+            "position_mm": [
+              164.42459,
+              108.20209
+            ],
+            "size_mm": [
+              2.25,
+              2.25
+            ],
+            "drill_mm": [
+              1.5,
+              1.5
+            ]
+          },
+          {
+            "number": "2",
+            "position_mm": [
+              164.42459,
+              103.2021
+            ],
+            "size_mm": [
+              2.25,
+              2.25
+            ],
+            "drill_mm": [
+              1.5,
+              1.5
+            ]
+          }
+        ],
+        "pad_pair_center_distances_mm": [
+          4.99999
+        ]
+      },
+      "R1": {
+        "MPN": "TNPW0805100KBEEA",
+        "footprint": "R0805",
+        "pads": [
+          {
+            "number": "1",
+            "position_mm": [
+              156.0,
+              107.1875
+            ],
+            "size_mm": [
+              1.025,
+              1.4
+            ],
+            "drill_mm": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "number": "2",
+            "position_mm": [
+              156.0,
+              109.0125
+            ],
+            "size_mm": [
+              1.025,
+              1.4
+            ],
+            "drill_mm": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "pad_pair_center_distances_mm": [
+          1.825
+        ]
+      },
+      "J2": {
+        "MPN": "691214110003",
+        "footprint": "J3",
+        "pads": [
+          {
+            "number": "1",
+            "position_mm": [
+              127.2286,
+              103.0911
+            ],
+            "size_mm": [
+              1.95,
+              1.95
+            ],
+            "drill_mm": [
+              1.3,
+              1.3
+            ]
+          },
+          {
+            "number": "2",
+            "position_mm": [
+              127.2286,
+              106.5911
+            ],
+            "size_mm": [
+              1.95,
+              1.95
+            ],
+            "drill_mm": [
+              1.3,
+              1.3
+            ]
+          },
+          {
+            "number": "3",
+            "position_mm": [
+              127.2286,
+              110.0911
+            ],
+            "size_mm": [
+              1.95,
+              1.95
+            ],
+            "drill_mm": [
+              1.3,
+              1.3
+            ]
+          }
+        ],
+        "pad_pair_center_distances_mm": [
+          3.5,
+          7.0,
+          3.5
+        ]
+      },
+      "C5": {
+        "MPN": "C0603C300J1GACTU",
+        "footprint": "C0603",
+        "pads": [
+          {
+            "number": "1",
+            "position_mm": [
+              150.525,
+              99.5
+            ],
+            "size_mm": [
+              0.9,
+              0.95
+            ],
+            "drill_mm": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "number": "2",
+            "position_mm": [
+              152.075,
+              99.5
+            ],
+            "size_mm": [
+              0.9,
+              0.95
+            ],
+            "drill_mm": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "pad_pair_center_distances_mm": [
+          1.55
+        ]
+      },
+      "R2": {
+        "MPN": "TNPW0805100KBEEA",
+        "footprint": "R0805",
+        "pads": [
+          {
+            "number": "1",
+            "position_mm": [
+              156.0,
+              110.8875
+            ],
+            "size_mm": [
+              1.025,
+              1.4
+            ],
+            "drill_mm": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "number": "2",
+            "position_mm": [
+              156.0,
+              112.7125
+            ],
+            "size_mm": [
+              1.025,
+              1.4
+            ],
+            "drill_mm": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "pad_pair_center_distances_mm": [
+          1.825
+        ]
+      }
+    },
+    "BOM_rows": 12
+  },
+  "Boost": {
+    "native_files_unchanged": true,
+    "native_sha256": {
+      "outputs\\StimPrototype_Integration\\boost_draft\\Boost_Electrical_Draft.kicad_pcb": "d329fe12e2790f448aebf86053afe83f5395b52f0572ed989d25742532b22fd3",
+      "outputs\\StimPrototype_Integration\\boost_draft\\Boost_Electrical_Draft.kicad_sch": "c87cfdf8925d7f6cde7f6179aadf356fa0db059afd6c8dc259b58de3753ac06e"
+    },
+    "native_thickness_mm": 0.41116,
+    "selected_geometry": {
+      "J2": {
+        "MPN": "TSW-102-14-G-S",
+        "footprint": "OUT_FP-TSW-102-14-G-S-MFG",
+        "pads": [
+          {
+            "number": "1",
+            "position_mm": [
+              124.8156,
+              108.8771
+            ],
+            "size_mm": [
+              1.57,
+              1.57
+            ],
+            "drill_mm": [
+              1.02,
+              1.02
+            ]
+          },
+          {
+            "number": "2",
+            "position_mm": [
+              124.8156,
+              111.4171
+            ],
+            "size_mm": [
+              1.57,
+              1.57
+            ],
+            "drill_mm": [
+              1.02,
+              1.02
+            ]
+          }
+        ],
+        "pad_pair_center_distances_mm": [
+          2.54
+        ]
+      },
+      "J1": {
+        "MPN": "TSW-102-14-G-S",
+        "footprint": "IN_FP-TSW-102-14-G-S-MFG",
+        "pads": [
+          {
+            "number": "1",
+            "position_mm": [
+              124.3076,
+              95.9231
+            ],
+            "size_mm": [
+              1.57,
+              1.57
+            ],
+            "drill_mm": [
+              1.02,
+              1.02
+            ]
+          },
+          {
+            "number": "2",
+            "position_mm": [
+              124.3076,
+              98.4631
+            ],
+            "size_mm": [
+              1.57,
+              1.57
+            ],
+            "drill_mm": [
+              1.02,
+              1.02
+            ]
+          }
+        ],
+        "pad_pair_center_distances_mm": [
+          2.54
+        ]
+      },
+      "D1": {
+        "MPN": "SS120",
+        "footprint": "D_SMA",
+        "pads": [
+          {
+            "number": "1",
+            "position_mm": [
+              150.5,
+              97.5
+            ],
+            "size_mm": [
+              2.5,
+              1.8
+            ],
+            "drill_mm": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "number": "2",
+            "position_mm": [
+              146.5,
+              97.5
+            ],
+            "size_mm": [
+              2.5,
+              1.8
+            ],
+            "drill_mm": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "pad_pair_center_distances_mm": [
+          4.0
+        ]
+      }
+    },
+    "BOM_rows": 25
+  }
+}

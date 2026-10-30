@@ -1,0 +1,282 @@
+{
+  "C1": [
+    {
+      "number": "1",
+      "net": "/HV_TOP",
+      "position_mm": [
+        138.05,
+        100.5
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/MID",
+      "position_mm": [
+        139.95,
+        100.5
+      ]
+    }
+  ],
+  "C2": [
+    {
+      "number": "1",
+      "net": "/MID",
+      "position_mm": [
+        138.05,
+        111.0
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/HV_BOTTOM",
+      "position_mm": [
+        139.95,
+        111.0
+      ]
+    }
+  ],
+  "C3": [
+    {
+      "number": "1",
+      "net": "/HV_TOP",
+      "position_mm": [
+        132.525,
+        100.5
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/MID",
+      "position_mm": [
+        135.475,
+        100.5
+      ]
+    }
+  ],
+  "C4": [
+    {
+      "number": "1",
+      "net": "/MID",
+      "position_mm": [
+        132.525,
+        111.0
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/HV_BOTTOM",
+      "position_mm": [
+        135.475,
+        111.0
+      ]
+    }
+  ],
+  "C5": [
+    {
+      "number": "1",
+      "net": "/EN_INTERNAL",
+      "position_mm": [
+        150.525,
+        99.5
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/HV_BOTTOM",
+      "position_mm": [
+        152.075,
+        99.5
+      ]
+    }
+  ],
+  "C6": [
+    {
+      "number": "1",
+      "net": "/HV_TOP",
+      "position_mm": [
+        152.05,
+        102.2
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/HV_BOTTOM",
+      "position_mm": [
+        153.95,
+        102.2
+      ]
+    }
+  ],
+  "J1": [
+    {
+      "number": "1",
+      "net": "/HV_TOP",
+      "position_mm": [
+        164.42459,
+        108.20209
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/HV_BOTTOM",
+      "position_mm": [
+        164.42459,
+        103.2021
+      ]
+    }
+  ],
+  "J2": [
+    {
+      "number": "1",
+      "net": "/HV_TOP",
+      "position_mm": [
+        127.2286,
+        103.0911
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/MID",
+      "position_mm": [
+        127.2286,
+        106.5911
+      ]
+    },
+    {
+      "number": "3",
+      "net": "/HV_BOTTOM",
+      "position_mm": [
+        127.2286,
+        110.0911
+      ]
+    }
+  ],
+  "R1": [
+    {
+      "number": "1",
+      "net": "/HV_TOP",
+      "position_mm": [
+        156.0,
+        107.1875
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/VREF_HALF",
+      "position_mm": [
+        156.0,
+        109.0125
+      ]
+    }
+  ],
+  "R2": [
+    {
+      "number": "1",
+      "net": "/VREF_HALF",
+      "position_mm": [
+        156.0,
+        110.8875
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/HV_BOTTOM",
+      "position_mm": [
+        156.0,
+        112.7125
+      ]
+    }
+  ],
+  "R3": [
+    {
+      "number": "1",
+      "net": "/BUF_RAW",
+      "position_mm": [
+        140.9125,
+        106.0
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/MID",
+      "position_mm": [
+        139.0875,
+        106.0
+      ]
+    }
+  ],
+  "U1": [
+    {
+      "number": "1",
+      "net": "/HV_BOTTOM",
+      "position_mm": [
+        144.3,
+        103.095
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/BUF_RAW",
+      "position_mm": [
+        144.3,
+        104.365
+      ]
+    },
+    {
+      "number": "3",
+      "net": "/VREF_HALF",
+      "position_mm": [
+        144.3,
+        105.635
+      ]
+    },
+    {
+      "number": "4",
+      "net": "/HV_BOTTOM",
+      "position_mm": [
+        144.3,
+        106.905
+      ]
+    },
+    {
+      "number": "5",
+      "net": "unconnected-(U1-STATUS-Pad5)",
+      "position_mm": [
+        149.7,
+        106.905
+      ]
+    },
+    {
+      "number": "6",
+      "net": "/BUF_RAW",
+      "position_mm": [
+        149.7,
+        105.635
+      ]
+    },
+    {
+      "number": "7",
+      "net": "/HV_TOP",
+      "position_mm": [
+        149.7,
+        104.365
+      ]
+    },
+    {
+      "number": "8",
+      "net": "/EN_INTERNAL",
+      "position_mm": [
+        149.7,
+        103.095
+      ]
+    },
+    {
+      "number": "9",
+      "net": "/HV_BOTTOM",
+      "position_mm": [
+        147.0,
+        105.0
+      ]
+    }
+  ]
+}

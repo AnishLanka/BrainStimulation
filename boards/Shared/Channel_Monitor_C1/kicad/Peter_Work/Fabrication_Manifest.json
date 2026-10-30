@@ -1,0 +1,19 @@
+{
+  "board_sha256": "1f7298b5252813e290627964680c2acf05d32bd53b8ba58bf8af6828c3f79b51",
+  "schematic_sha256": "d4bea62a373cc4ea65d8afe03da6a2efa3e1538648146c3c8affe3dc509d7a6e",
+  "zip": "Channel_Monitor_C1_Prototype_JLCPCB.zip",
+  "zip_sha256": "ad50cbb960b60c19867582f1f6387c7dc8e99e3e681a30c7a6b3dd058b59569a",
+  "files": {
+    "Channel_Monitor_C1-B_Cu.gbl": "c035d7f2e402b80cdaad924c8ab7201dc210402c2ebe48699a20926b9bcf108c",
+    "Channel_Monitor_C1-B_Mask.gbs": "c56e50ce44d67b1191b08d397493d6efc1184d95af9c2d1512baa2a506c3abcc",
+    "Channel_Monitor_C1-B_Silkscreen.gbo": "c778990f9517daf093c675a63dfde687f691ff6c63cc8a8402af9f24ec68fbe3",
+    "Channel_Monitor_C1-Edge_Cuts.gm1": "718168c6396117f1ce627ed6034dd248baa0d32d9cb78c59bb1ccba2802639be",
+    "Channel_Monitor_C1-F_Cu.gtl": "fc6abfad17afe3b6b6654d45319e74e35e203e0f932d550ed324067e3ff0b2dc",
+    "Channel_Monitor_C1-F_Mask.gts": "8b4f565cd553d79fc24d4cc3fecccc09b58acccc14dfdf20553fa0afa8047ff9",
+    "Channel_Monitor_C1-F_Silkscreen.gto": "50cad75a9d24a1c2fcc199df7f3845b271f42ff859f0bb94eb5354078be7f963",
+    "Channel_Monitor_C1-job.gbrjob": "49f0d5ef636cd5d86bcfe08acfa2e8370db69f4398a230015fb73dad610e0e8f",
+    "Channel_Monitor_C1-NPTH.drl": "727025166a10f16d7f018093516797993399d142756fe625d34074565aa41793",
+    "Channel_Monitor_C1-PTH.drl": "c06524f01585cc07db506721e93747390068caba0541c5cddd8ce6b9b5158673"
+  },
+  "scope": "Bare PCB; no assembly order and no physical qualification"
+}

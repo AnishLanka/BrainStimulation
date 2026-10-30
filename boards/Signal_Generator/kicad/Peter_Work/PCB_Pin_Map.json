@@ -1,0 +1,1892 @@
+{
+  "C1": [
+    {
+      "number": "1",
+      "net": "/SYS_3V3",
+      "position_mm": [
+        126.857,
+        91.0
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SYS_GND",
+      "position_mm": [
+        129.143,
+        91.0
+      ]
+    }
+  ],
+  "C2": [
+    {
+      "number": "1",
+      "net": "/SYS_3V3",
+      "position_mm": [
+        127.34,
+        94.0
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SYS_GND",
+      "position_mm": [
+        128.66,
+        94.0
+      ]
+    }
+  ],
+  "C3": [
+    {
+      "number": "1",
+      "net": "/SYS_GND",
+      "position_mm": [
+        127.4,
+        79.46
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SYS_3V3",
+      "position_mm": [
+        127.4,
+        78.14
+      ]
+    }
+  ],
+  "C4": [
+    {
+      "number": "1",
+      "net": "/SYS_GND",
+      "position_mm": [
+        125.0,
+        76.55
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SYS_3V3",
+      "position_mm": [
+        125.0,
+        75.05
+      ]
+    }
+  ],
+  "C5": [
+    {
+      "number": "1",
+      "net": "/ISO_3V3_RAW",
+      "position_mm": [
+        142.25,
+        72.5
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_GND_ISOW",
+      "position_mm": [
+        143.75,
+        72.5
+      ]
+    }
+  ],
+  "C6": [
+    {
+      "number": "1",
+      "net": "/ISO_GND_ISOW",
+      "position_mm": [
+        143.66,
+        62.5
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_3V3_RAW",
+      "position_mm": [
+        142.34,
+        62.5
+      ]
+    }
+  ],
+  "C8": [
+    {
+      "number": "1",
+      "net": "/ISO_GND_ISOW",
+      "position_mm": [
+        146.75,
+        65.3
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_3V3_RAW",
+      "position_mm": [
+        145.25,
+        65.3
+      ]
+    }
+  ],
+  "C9": [
+    {
+      "number": "1",
+      "net": "/ISO_GND_ISOW",
+      "position_mm": [
+        154.75,
+        65.3
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_3V3_CLEAN",
+      "position_mm": [
+        153.25,
+        65.3
+      ]
+    }
+  ],
+  "C10": [
+    {
+      "number": "1",
+      "net": "/ISO_GND_ISOW",
+      "position_mm": [
+        148.0,
+        75.66
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_3V3_CLEAN",
+      "position_mm": [
+        148.0,
+        74.34
+      ]
+    }
+  ],
+  "C12": [
+    {
+      "number": "1",
+      "net": "/ISO_GND_ISOW",
+      "position_mm": [
+        143.857,
+        90.5
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_P5V",
+      "position_mm": [
+        146.143,
+        90.5
+      ]
+    }
+  ],
+  "C13": [
+    {
+      "number": "1",
+      "net": "/ISO_GND_ISOW",
+      "position_mm": [
+        136.857,
+        90.5
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_N5V",
+      "position_mm": [
+        139.143,
+        90.5
+      ]
+    }
+  ],
+  "C14": [
+    {
+      "number": "1",
+      "net": "/ISO_GND_ISOW",
+      "position_mm": [
+        136.857,
+        93.5
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_N5V",
+      "position_mm": [
+        139.143,
+        93.5
+      ]
+    }
+  ],
+  "C15": [
+    {
+      "number": "1",
+      "net": "/ISO_GND_ISOW",
+      "position_mm": [
+        143.857,
+        93.5
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_P5V",
+      "position_mm": [
+        146.143,
+        93.5
+      ]
+    }
+  ],
+  "C17": [
+    {
+      "number": "1",
+      "net": "/ISO_P5V",
+      "position_mm": [
+        163.33999,
+        80.3
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_GND_ISOW",
+      "position_mm": [
+        164.66,
+        80.3
+      ]
+    }
+  ],
+  "C18": [
+    {
+      "number": "1",
+      "net": "/ISO_GND_ISOW",
+      "position_mm": [
+        154.34,
+        85.3
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_N5V",
+      "position_mm": [
+        155.66,
+        85.3
+      ]
+    }
+  ],
+  "C19": [
+    {
+      "number": "1",
+      "net": "/ISO_P5V",
+      "position_mm": [
+        163.25,
+        77.8
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_GND_ISOW",
+      "position_mm": [
+        164.75,
+        77.8
+      ]
+    }
+  ],
+  "C20": [
+    {
+      "number": "1",
+      "net": "/ISO_GND_ISOW",
+      "position_mm": [
+        153.95,
+        88.0
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_N5V",
+      "position_mm": [
+        155.45,
+        88.0
+      ]
+    }
+  ],
+  "C21": [
+    {
+      "number": "1",
+      "net": "/ISO_GND_ISOW",
+      "position_mm": [
+        160.25,
+        70.5
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_3V3_CLEAN",
+      "position_mm": [
+        158.75,
+        70.5
+      ]
+    }
+  ],
+  "C22": [
+    {
+      "number": "1",
+      "net": "/ISO_GND_ISOW_2",
+      "position_mm": [
+        160.25,
+        117.5
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_3V3_CLEAN_2",
+      "position_mm": [
+        158.75,
+        117.5
+      ]
+    }
+  ],
+  "C23": [
+    {
+      "number": "1",
+      "net": "/ISO_GND_ISOW_2",
+      "position_mm": [
+        148.0,
+        122.66
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_3V3_CLEAN_2",
+      "position_mm": [
+        148.0,
+        121.34
+      ]
+    }
+  ],
+  "C24": [
+    {
+      "number": "1",
+      "net": "/SYS_GND",
+      "position_mm": [
+        125.0,
+        123.55
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SYS_3V3",
+      "position_mm": [
+        125.0,
+        122.05
+      ]
+    }
+  ],
+  "C25": [
+    {
+      "number": "1",
+      "net": "/ISO_3V3_RAW_2",
+      "position_mm": [
+        142.25,
+        119.5
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_GND_ISOW_2",
+      "position_mm": [
+        143.75,
+        119.5
+      ]
+    }
+  ],
+  "C26": [
+    {
+      "number": "1",
+      "net": "/ISO_GND_ISOW_2",
+      "position_mm": [
+        143.66,
+        109.5
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_3V3_RAW_2",
+      "position_mm": [
+        142.34,
+        109.5
+      ]
+    }
+  ],
+  "C27": [
+    {
+      "number": "1",
+      "net": "/SYS_GND",
+      "position_mm": [
+        127.4,
+        126.46
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SYS_3V3",
+      "position_mm": [
+        127.4,
+        125.14
+      ]
+    }
+  ],
+  "C28": [
+    {
+      "number": "1",
+      "net": "/ISO_GND_ISOW_2",
+      "position_mm": [
+        136.857,
+        140.5
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_N5V_2",
+      "position_mm": [
+        139.143,
+        140.5
+      ]
+    }
+  ],
+  "C29": [
+    {
+      "number": "1",
+      "net": "/ISO_GND_ISOW_2",
+      "position_mm": [
+        143.857,
+        140.5
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_P5V_2",
+      "position_mm": [
+        146.143,
+        140.5
+      ]
+    }
+  ],
+  "C30": [
+    {
+      "number": "1",
+      "net": "/ISO_GND_ISOW_2",
+      "position_mm": [
+        143.857,
+        137.5
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_P5V_2",
+      "position_mm": [
+        146.143,
+        137.5
+      ]
+    }
+  ],
+  "C31": [
+    {
+      "number": "1",
+      "net": "/ISO_GND_ISOW_2",
+      "position_mm": [
+        136.857,
+        137.5
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_N5V_2",
+      "position_mm": [
+        139.143,
+        137.5
+      ]
+    }
+  ],
+  "C33": [
+    {
+      "number": "1",
+      "net": "/ISO_GND_ISOW_2",
+      "position_mm": [
+        154.34,
+        132.3
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_N5V_2",
+      "position_mm": [
+        155.66,
+        132.3
+      ]
+    }
+  ],
+  "C34": [
+    {
+      "number": "1",
+      "net": "/ISO_P5V_2",
+      "position_mm": [
+        163.34,
+        127.3
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_GND_ISOW_2",
+      "position_mm": [
+        164.66,
+        127.3
+      ]
+    }
+  ],
+  "C35": [
+    {
+      "number": "1",
+      "net": "/ISO_P5V_2",
+      "position_mm": [
+        163.25,
+        124.8
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_GND_ISOW_2",
+      "position_mm": [
+        164.75,
+        124.8
+      ]
+    }
+  ],
+  "C36": [
+    {
+      "number": "1",
+      "net": "/ISO_GND_ISOW_2",
+      "position_mm": [
+        146.75,
+        112.3
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_3V3_RAW_2",
+      "position_mm": [
+        145.25,
+        112.3
+      ]
+    }
+  ],
+  "C37": [
+    {
+      "number": "1",
+      "net": "/ISO_GND_ISOW_2",
+      "position_mm": [
+        153.95,
+        135.0
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_N5V_2",
+      "position_mm": [
+        155.45,
+        135.0
+      ]
+    }
+  ],
+  "C38": [
+    {
+      "number": "1",
+      "net": "/ISO_GND_ISOW_2",
+      "position_mm": [
+        154.75,
+        112.3
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_3V3_CLEAN_2",
+      "position_mm": [
+        153.25,
+        112.3
+      ]
+    }
+  ],
+  "C39": [
+    {
+      "number": "1",
+      "net": "/SYS_3V3",
+      "position_mm": [
+        126.857,
+        138.0
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SYS_GND",
+      "position_mm": [
+        129.143,
+        138.0
+      ]
+    }
+  ],
+  "C40": [
+    {
+      "number": "1",
+      "net": "/SYS_3V3",
+      "position_mm": [
+        127.34,
+        141.0
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SYS_GND",
+      "position_mm": [
+        128.66,
+        141.0
+      ]
+    }
+  ],
+  "C41": [
+    {
+      "number": "1",
+      "net": "/ISO_3V3_RAW",
+      "position_mm": [
+        142.325,
+        78.6
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_GND_ISOW",
+      "position_mm": [
+        145.275,
+        78.6
+      ]
+    }
+  ],
+  "C42": [
+    {
+      "number": "1",
+      "net": "/ISO_3V3_RAW",
+      "position_mm": [
+        142.12,
+        75.045
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_GND_ISOW",
+      "position_mm": [
+        143.08,
+        75.045
+      ]
+    }
+  ],
+  "C43": [
+    {
+      "number": "1",
+      "net": "/SYS_3V3",
+      "position_mm": [
+        129.28,
+        75.045
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SYS_GND",
+      "position_mm": [
+        128.32,
+        75.045
+      ]
+    }
+  ],
+  "C44": [
+    {
+      "number": "1",
+      "net": "/ISO_3V3_RAW_2",
+      "position_mm": [
+        142.325,
+        125.6
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_GND_ISOW_2",
+      "position_mm": [
+        145.275,
+        125.6
+      ]
+    }
+  ],
+  "C45": [
+    {
+      "number": "1",
+      "net": "/ISO_3V3_RAW_2",
+      "position_mm": [
+        142.12,
+        122.045
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_GND_ISOW_2",
+      "position_mm": [
+        143.08,
+        122.045
+      ]
+    }
+  ],
+  "C46": [
+    {
+      "number": "1",
+      "net": "/SYS_3V3",
+      "position_mm": [
+        129.28,
+        122.045
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SYS_GND",
+      "position_mm": [
+        128.32,
+        122.045
+      ]
+    }
+  ],
+  "J1": [
+    {
+      "number": "01",
+      "net": "/VBUS_5V",
+      "position_mm": [
+        119.4181,
+        65.688599
+      ]
+    },
+    {
+      "number": "02",
+      "net": "/SYS_3V3",
+      "position_mm": [
+        119.4181,
+        68.228599
+      ]
+    },
+    {
+      "number": "03",
+      "net": "/SYS_GND",
+      "position_mm": [
+        119.4181,
+        70.768599
+      ]
+    },
+    {
+      "number": "04",
+      "net": "/SPI_SCLK_SYS",
+      "position_mm": [
+        119.4181,
+        73.308599
+      ]
+    },
+    {
+      "number": "05",
+      "net": "/SPI_MOSI_SYS",
+      "position_mm": [
+        119.4181,
+        75.848599
+      ]
+    },
+    {
+      "number": "06",
+      "net": "/SPI_CS_SYS",
+      "position_mm": [
+        119.4181,
+        78.388599
+      ]
+    },
+    {
+      "number": "07",
+      "net": "/FAULT_TO_PICO",
+      "position_mm": [
+        119.4181,
+        80.928599
+      ]
+    }
+  ],
+  "J2": [
+    {
+      "number": "01",
+      "net": "/VBUS_5V_2",
+      "position_mm": [
+        120.9421,
+        102.8996
+      ]
+    },
+    {
+      "number": "02",
+      "net": "/SYS_3V3",
+      "position_mm": [
+        120.9421,
+        105.4396
+      ]
+    },
+    {
+      "number": "03",
+      "net": "/SYS_GND",
+      "position_mm": [
+        120.9421,
+        107.9796
+      ]
+    },
+    {
+      "number": "04",
+      "net": "/SPI_SCLK_SYS",
+      "position_mm": [
+        120.9421,
+        110.5196
+      ]
+    },
+    {
+      "number": "05",
+      "net": "/SPI_MOSI_SYS",
+      "position_mm": [
+        120.9421,
+        113.0596
+      ]
+    },
+    {
+      "number": "06",
+      "net": "/SPI_CS_SYS_2",
+      "position_mm": [
+        120.9421,
+        115.5996
+      ]
+    },
+    {
+      "number": "07",
+      "net": "/FAULT_TO_PICO_2",
+      "position_mm": [
+        120.9421,
+        118.1396
+      ]
+    }
+  ],
+  "J3": [
+    {
+      "number": "1",
+      "net": "/BIPOLAR_OUT",
+      "position_mm": [
+        168.8211,
+        64.2916
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_3V3_CLEAN",
+      "position_mm": [
+        173.9011,
+        64.2916
+      ]
+    },
+    {
+      "number": "3",
+      "net": "/ISO_GND_ISOW",
+      "position_mm": [
+        178.9811,
+        64.2916
+      ]
+    }
+  ],
+  "J4": [
+    {
+      "number": "1",
+      "net": "/BIPOLAR_OUT_2",
+      "position_mm": [
+        178.2191,
+        145.9526
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_3V3_CLEAN_2",
+      "position_mm": [
+        173.1391,
+        145.9526
+      ]
+    },
+    {
+      "number": "3",
+      "net": "/ISO_GND_ISOW_2",
+      "position_mm": [
+        168.0591,
+        145.9526
+      ]
+    }
+  ],
+  "PS1": [
+    {
+      "number": "1",
+      "net": "/SYS_3V3",
+      "position_mm": [
+        129.5781,
+        87.1516
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SYS_GND",
+      "position_mm": [
+        132.1181,
+        87.1516
+      ]
+    },
+    {
+      "number": "4",
+      "net": "/ISO_N5V",
+      "position_mm": [
+        137.1981,
+        87.1516
+      ]
+    },
+    {
+      "number": "5",
+      "net": "/ISO_GND_ISOW",
+      "position_mm": [
+        139.7381,
+        87.1516
+      ]
+    },
+    {
+      "number": "6",
+      "net": "/ISO_P5V",
+      "position_mm": [
+        142.2781,
+        87.1516
+      ]
+    }
+  ],
+  "PS2": [
+    {
+      "number": "1",
+      "net": "/SYS_3V3",
+      "position_mm": [
+        129.5781,
+        134.1516
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SYS_GND",
+      "position_mm": [
+        132.1181,
+        134.1516
+      ]
+    },
+    {
+      "number": "4",
+      "net": "/ISO_N5V_2",
+      "position_mm": [
+        137.1981,
+        134.1516
+      ]
+    },
+    {
+      "number": "5",
+      "net": "/ISO_GND_ISOW_2",
+      "position_mm": [
+        139.7381,
+        134.1516
+      ]
+    },
+    {
+      "number": "6",
+      "net": "/ISO_P5V_2",
+      "position_mm": [
+        142.2781,
+        134.1516
+      ]
+    }
+  ],
+  "R3": [
+    {
+      "number": "1",
+      "net": "/VREF_BUF",
+      "position_mm": [
+        164.484,
+        85.5
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/IN-_B",
+      "position_mm": [
+        166.516,
+        85.5
+      ]
+    }
+  ],
+  "R6": [
+    {
+      "number": "1",
+      "net": "/BIPOLAR_OUT",
+      "position_mm": [
+        164.484,
+        83.0
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/IN-_B",
+      "position_mm": [
+        166.516,
+        83.0
+      ]
+    }
+  ],
+  "R11": [
+    {
+      "number": "1",
+      "net": "/VREF_BUF_2",
+      "position_mm": [
+        164.484,
+        132.5
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/IN-_B_2",
+      "position_mm": [
+        166.516,
+        132.5
+      ]
+    }
+  ],
+  "R12": [
+    {
+      "number": "1",
+      "net": "/BIPOLAR_OUT_2",
+      "position_mm": [
+        164.484,
+        130.0
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/IN-_B_2",
+      "position_mm": [
+        166.516,
+        130.0
+      ]
+    }
+  ],
+  "R13": [
+    {
+      "number": "1",
+      "net": "/SYS_3V3",
+      "position_mm": [
+        125.2,
+        73.125
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/FAULT_TO_PICO",
+      "position_mm": [
+        125.2,
+        71.475
+      ]
+    }
+  ],
+  "R14": [
+    {
+      "number": "1",
+      "net": "/SYS_3V3",
+      "position_mm": [
+        125.2,
+        120.125
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/FAULT_TO_PICO_2",
+      "position_mm": [
+        125.2,
+        118.475
+      ]
+    }
+  ],
+  "R15": [
+    {
+      "number": "1",
+      "net": "/ISO_3V3_RAW",
+      "position_mm": [
+        149.175,
+        65.3
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_3V3_CLEAN",
+      "position_mm": [
+        150.825,
+        65.3
+      ]
+    }
+  ],
+  "R16": [
+    {
+      "number": "1",
+      "net": "/ISO_3V3_RAW_2",
+      "position_mm": [
+        149.175,
+        112.3
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_3V3_CLEAN_2",
+      "position_mm": [
+        150.825,
+        112.3
+      ]
+    }
+  ],
+  "TP1": [
+    {
+      "number": "TP",
+      "net": "/ISO_P5V",
+      "position_mm": [
+        160.0,
+        96.0
+      ]
+    }
+  ],
+  "TP2": [
+    {
+      "number": "TP",
+      "net": "/ISO_N5V",
+      "position_mm": [
+        153.0,
+        96.0
+      ]
+    }
+  ],
+  "TP3": [
+    {
+      "number": "TP",
+      "net": "/ISO_GND_ISOW",
+      "position_mm": [
+        146.0,
+        99.0
+      ]
+    }
+  ],
+  "TP6": [
+    {
+      "number": "TP",
+      "net": "/BIPOLAR_OUT",
+      "position_mm": [
+        175.0,
+        87.0
+      ]
+    }
+  ],
+  "TP7": [
+    {
+      "number": "TP",
+      "net": "/VREF_BUF",
+      "position_mm": [
+        175.0,
+        93.0
+      ]
+    }
+  ],
+  "TP8": [
+    {
+      "number": "TP",
+      "net": "/SYS_3V3",
+      "position_mm": [
+        120.0,
+        93.0
+      ]
+    }
+  ],
+  "TP9": [
+    {
+      "number": "TP",
+      "net": "/ISO_3V3_CLEAN",
+      "position_mm": [
+        175.0,
+        81.0
+      ]
+    }
+  ],
+  "TP10": [
+    {
+      "number": "TP",
+      "net": "/ISO_3V3_RAW",
+      "position_mm": [
+        175.0,
+        75.0
+      ]
+    }
+  ],
+  "TP11": [
+    {
+      "number": "TP",
+      "net": "/ISO_3V3_CLEAN_2",
+      "position_mm": [
+        175.0,
+        128.0
+      ]
+    }
+  ],
+  "TP12": [
+    {
+      "number": "TP",
+      "net": "/ISO_3V3_RAW_2",
+      "position_mm": [
+        175.0,
+        122.0
+      ]
+    }
+  ],
+  "TP13": [
+    {
+      "number": "TP",
+      "net": "/ISO_P5V_2",
+      "position_mm": [
+        160.0,
+        143.0
+      ]
+    }
+  ],
+  "TP14": [
+    {
+      "number": "TP",
+      "net": "/ISO_N5V_2",
+      "position_mm": [
+        153.0,
+        143.0
+      ]
+    }
+  ],
+  "TP15": [
+    {
+      "number": "TP",
+      "net": "/ISO_GND_ISOW_2",
+      "position_mm": [
+        146.0,
+        146.0
+      ]
+    }
+  ],
+  "TP16": [
+    {
+      "number": "TP",
+      "net": "/BIPOLAR_OUT_2",
+      "position_mm": [
+        175.0,
+        134.0
+      ]
+    }
+  ],
+  "TP17": [
+    {
+      "number": "TP",
+      "net": "/VREF_BUF_2",
+      "position_mm": [
+        181.0,
+        138.0
+      ]
+    }
+  ],
+  "U1": [
+    {
+      "number": "1",
+      "net": "/SYS_3V3",
+      "position_mm": [
+        130.8486,
+        64.885
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SPI_SCLK_SYS",
+      "position_mm": [
+        130.8486,
+        66.155
+      ]
+    },
+    {
+      "number": "3",
+      "net": "/SPI_MOSI_SYS",
+      "position_mm": [
+        130.8486,
+        67.425
+      ]
+    },
+    {
+      "number": "4",
+      "net": "/SPI_CS_SYS",
+      "position_mm": [
+        130.8486,
+        68.695
+      ]
+    },
+    {
+      "number": "5",
+      "net": "",
+      "position_mm": [
+        130.8486,
+        69.965
+      ]
+    },
+    {
+      "number": "6",
+      "net": "/SYS_GND",
+      "position_mm": [
+        130.8486,
+        71.235
+      ]
+    },
+    {
+      "number": "7",
+      "net": "/SYS_3V3",
+      "position_mm": [
+        130.8486,
+        72.505
+      ]
+    },
+    {
+      "number": "8",
+      "net": "/FAULT_TO_PICO",
+      "position_mm": [
+        130.8486,
+        73.775
+      ]
+    },
+    {
+      "number": "9",
+      "net": "/SYS_3V3",
+      "position_mm": [
+        130.8486,
+        75.045
+      ]
+    },
+    {
+      "number": "10",
+      "net": "/SYS_GND",
+      "position_mm": [
+        130.8486,
+        76.315
+      ]
+    },
+    {
+      "number": "11",
+      "net": "/ISO_GND_ISOW",
+      "position_mm": [
+        140.5514,
+        76.315
+      ]
+    },
+    {
+      "number": "12",
+      "net": "/ISO_3V3_RAW",
+      "position_mm": [
+        140.5514,
+        75.045
+      ]
+    },
+    {
+      "number": "13",
+      "net": "/ISO_GND_ISOW",
+      "position_mm": [
+        140.5514,
+        73.775
+      ]
+    },
+    {
+      "number": "14",
+      "net": "/ISO_3V3_RAW",
+      "position_mm": [
+        140.5514,
+        72.505
+      ]
+    },
+    {
+      "number": "15",
+      "net": "/ISO_GND_ISOW",
+      "position_mm": [
+        140.5514,
+        71.235
+      ]
+    },
+    {
+      "number": "16",
+      "net": "",
+      "position_mm": [
+        140.5514,
+        69.965
+      ]
+    },
+    {
+      "number": "17",
+      "net": "/CS_ISO",
+      "position_mm": [
+        140.5514,
+        68.695
+      ]
+    },
+    {
+      "number": "18",
+      "net": "/MOSI_ISO",
+      "position_mm": [
+        140.5514,
+        67.425
+      ]
+    },
+    {
+      "number": "19",
+      "net": "/SCLK_ISO",
+      "position_mm": [
+        140.5514,
+        66.155
+      ]
+    },
+    {
+      "number": "20",
+      "net": "/ISO_3V3_RAW",
+      "position_mm": [
+        140.5514,
+        64.885
+      ]
+    }
+  ],
+  "U3": [
+    {
+      "number": "1",
+      "net": "/DAC_OUT_UNIPOLAR",
+      "position_mm": [
+        155.975,
+        73.405
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_GND_ISOW",
+      "position_mm": [
+        155.975,
+        72.135
+      ]
+    },
+    {
+      "number": "3",
+      "net": "/ISO_3V3_CLEAN",
+      "position_mm": [
+        155.975,
+        70.865
+      ]
+    },
+    {
+      "number": "4",
+      "net": "/CS_ISO",
+      "position_mm": [
+        155.975,
+        69.595
+      ]
+    },
+    {
+      "number": "5",
+      "net": "/SCLK_ISO",
+      "position_mm": [
+        151.025,
+        69.595
+      ]
+    },
+    {
+      "number": "6",
+      "net": "/MOSI_ISO",
+      "position_mm": [
+        151.025,
+        70.865
+      ]
+    },
+    {
+      "number": "7",
+      "net": "/ISO_GND_ISOW",
+      "position_mm": [
+        151.025,
+        72.135
+      ]
+    },
+    {
+      "number": "8",
+      "net": "/ISO_3V3_CLEAN",
+      "position_mm": [
+        151.025,
+        73.405
+      ]
+    }
+  ],
+  "U4": [
+    {
+      "number": "1",
+      "net": "/VREF_BUF",
+      "position_mm": [
+        157.3,
+        82.025
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/VREF_BUF",
+      "position_mm": [
+        157.3,
+        82.675
+      ]
+    },
+    {
+      "number": "3",
+      "net": "/ISO_3V3_CLEAN",
+      "position_mm": [
+        157.3,
+        83.325
+      ]
+    },
+    {
+      "number": "4",
+      "net": "/ISO_N5V",
+      "position_mm": [
+        157.3,
+        83.975
+      ]
+    },
+    {
+      "number": "5",
+      "net": "/DAC_OUT_UNIPOLAR",
+      "position_mm": [
+        161.7,
+        83.975
+      ]
+    },
+    {
+      "number": "6",
+      "net": "/IN-_B",
+      "position_mm": [
+        161.7,
+        83.325
+      ]
+    },
+    {
+      "number": "7",
+      "net": "/BIPOLAR_OUT",
+      "position_mm": [
+        161.7,
+        82.675
+      ]
+    },
+    {
+      "number": "8",
+      "net": "/ISO_P5V",
+      "position_mm": [
+        161.7,
+        82.025
+      ]
+    }
+  ],
+  "U5": [
+    {
+      "number": "1",
+      "net": "/DAC_OUT_UNIPOLAR_2",
+      "position_mm": [
+        155.975,
+        120.405
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/ISO_GND_ISOW_2",
+      "position_mm": [
+        155.975,
+        119.135
+      ]
+    },
+    {
+      "number": "3",
+      "net": "/ISO_3V3_CLEAN_2",
+      "position_mm": [
+        155.975,
+        117.865
+      ]
+    },
+    {
+      "number": "4",
+      "net": "/CS_ISO_2",
+      "position_mm": [
+        155.975,
+        116.595
+      ]
+    },
+    {
+      "number": "5",
+      "net": "/SCLK_ISO_2",
+      "position_mm": [
+        151.025,
+        116.595
+      ]
+    },
+    {
+      "number": "6",
+      "net": "/MOSI_ISO_2",
+      "position_mm": [
+        151.025,
+        117.865
+      ]
+    },
+    {
+      "number": "7",
+      "net": "/ISO_GND_ISOW_2",
+      "position_mm": [
+        151.025,
+        119.135
+      ]
+    },
+    {
+      "number": "8",
+      "net": "/ISO_3V3_CLEAN_2",
+      "position_mm": [
+        151.025,
+        120.405
+      ]
+    }
+  ],
+  "U6": [
+    {
+      "number": "1",
+      "net": "/SYS_3V3",
+      "position_mm": [
+        130.8486,
+        111.885
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/SPI_SCLK_SYS",
+      "position_mm": [
+        130.8486,
+        113.155
+      ]
+    },
+    {
+      "number": "3",
+      "net": "/SPI_MOSI_SYS",
+      "position_mm": [
+        130.8486,
+        114.425
+      ]
+    },
+    {
+      "number": "4",
+      "net": "/SPI_CS_SYS_2",
+      "position_mm": [
+        130.8486,
+        115.695
+      ]
+    },
+    {
+      "number": "5",
+      "net": "",
+      "position_mm": [
+        130.8486,
+        116.965
+      ]
+    },
+    {
+      "number": "6",
+      "net": "/SYS_GND",
+      "position_mm": [
+        130.8486,
+        118.235
+      ]
+    },
+    {
+      "number": "7",
+      "net": "/SYS_3V3",
+      "position_mm": [
+        130.8486,
+        119.505
+      ]
+    },
+    {
+      "number": "8",
+      "net": "/FAULT_TO_PICO_2",
+      "position_mm": [
+        130.8486,
+        120.775
+      ]
+    },
+    {
+      "number": "9",
+      "net": "/SYS_3V3",
+      "position_mm": [
+        130.8486,
+        122.045
+      ]
+    },
+    {
+      "number": "10",
+      "net": "/SYS_GND",
+      "position_mm": [
+        130.8486,
+        123.315
+      ]
+    },
+    {
+      "number": "11",
+      "net": "/ISO_GND_ISOW_2",
+      "position_mm": [
+        140.5514,
+        123.315
+      ]
+    },
+    {
+      "number": "12",
+      "net": "/ISO_3V3_RAW_2",
+      "position_mm": [
+        140.5514,
+        122.045
+      ]
+    },
+    {
+      "number": "13",
+      "net": "/ISO_GND_ISOW_2",
+      "position_mm": [
+        140.5514,
+        120.775
+      ]
+    },
+    {
+      "number": "14",
+      "net": "/ISO_3V3_RAW_2",
+      "position_mm": [
+        140.5514,
+        119.505
+      ]
+    },
+    {
+      "number": "15",
+      "net": "/ISO_GND_ISOW_2",
+      "position_mm": [
+        140.5514,
+        118.235
+      ]
+    },
+    {
+      "number": "16",
+      "net": "",
+      "position_mm": [
+        140.5514,
+        116.965
+      ]
+    },
+    {
+      "number": "17",
+      "net": "/CS_ISO_2",
+      "position_mm": [
+        140.5514,
+        115.695
+      ]
+    },
+    {
+      "number": "18",
+      "net": "/MOSI_ISO_2",
+      "position_mm": [
+        140.5514,
+        114.425
+      ]
+    },
+    {
+      "number": "19",
+      "net": "/SCLK_ISO_2",
+      "position_mm": [
+        140.5514,
+        113.155
+      ]
+    },
+    {
+      "number": "20",
+      "net": "/ISO_3V3_RAW_2",
+      "position_mm": [
+        140.5514,
+        111.885
+      ]
+    }
+  ],
+  "U7": [
+    {
+      "number": "1",
+      "net": "/VREF_BUF_2",
+      "position_mm": [
+        157.3,
+        129.025
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/VREF_BUF_2",
+      "position_mm": [
+        157.3,
+        129.675
+      ]
+    },
+    {
+      "number": "3",
+      "net": "/ISO_3V3_CLEAN_2",
+      "position_mm": [
+        157.3,
+        130.325
+      ]
+    },
+    {
+      "number": "4",
+      "net": "/ISO_N5V_2",
+      "position_mm": [
+        157.3,
+        130.975
+      ]
+    },
+    {
+      "number": "5",
+      "net": "/DAC_OUT_UNIPOLAR_2",
+      "position_mm": [
+        161.7,
+        130.975
+      ]
+    },
+    {
+      "number": "6",
+      "net": "/IN-_B_2",
+      "position_mm": [
+        161.7,
+        130.325
+      ]
+    },
+    {
+      "number": "7",
+      "net": "/BIPOLAR_OUT_2",
+      "position_mm": [
+        161.7,
+        129.675
+      ]
+    },
+    {
+      "number": "8",
+      "net": "/ISO_P5V_2",
+      "position_mm": [
+        161.7,
+        129.025
+      ]
+    }
+  ]
+}

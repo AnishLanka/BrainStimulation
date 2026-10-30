@@ -1,0 +1,5 @@
+(version 1)
+# Functional bench isolation clearance, not a medical insulation qualification.
+(rule "Primary to channel copper separation"
+ (condition "(A.NetName == '/SYS_GND' || A.NetName == '/SYS5V' || A.NetName == '/SYS5V_POS_FUSED' || A.NetName == '/SYS5V_NEG_FUSED' || A.NetName == 'unconnected-(PS201-REMOTE-Pad3)') && (B.NetName == '/MID_CH' || B.NetName == '/P5_CH' || B.NetName == '/N5_CH' || B.NetName == '/P3V3_CH')")
+ (constraint clearance (min 3mm)))

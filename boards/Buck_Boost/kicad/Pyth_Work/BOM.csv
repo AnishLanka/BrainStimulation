@@ -1,0 +1,10 @@
+﻿Reference,Quantity,Value,Manufacturer,MPN,Footprint,Specification,Datasheet
+C1,1,10u,Murata,GRM21BR61E106KA73L,BuckBoostLocal:C1_0805,10 uF +/-10%; X5R; 25 V; 0805; verify effective capacitance at operating bias,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR61E106KA73-01A.pdf
+C2,1,10u,Murata,GRM21BR61E106KA73L,BuckBoostLocal:C1_0805,10 uF +/-10%; X5R; 25 V; 0805; verify effective capacitance at operating bias,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR61E106KA73-01A.pdf
+C3,1,10u,Murata,GRM21BR61E106KA73L,BuckBoostLocal:C1_0805,10 uF +/-10%; X5R; 25 V; 0805; verify effective capacitance at operating bias,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR61E106KA73-01A.pdf
+C4,1,100n,TDK,C2012X7R2A104K125AA,BuckBoostLocal:C4_0805,100 nF +/-10%; X7R; 100 V; 0805; increased voltage rating from source50 V,https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X7R2A104K125AA
+J1,1,691211720002,Wurth Elektronik,691211720002,BuckBoostLocal:IN_691211720002,"Source terminal block retained; 2 positions; 5 mm pitch; pin1 positive, pin2 GND",
+J2,1,691211720002,Wurth Elektronik,691211720002,BuckBoostLocal:OUT_691211720002,"Source terminal block retained; 2 positions; 5 mm pitch; pin1 positive, pin2 GND",
+L1,1,2.2u,Coilcraft,XFL4020-222MEC,BuckBoostLocal:L1_2u2,2.2 uH +/-20%; shielded; DCR 23.5 mOhm max; Isat 3.1 A at 10% loss,https://www.coilcraft.com/getmedia/50632d43-da1b-4cdb-8ab4-3029cab51df3/xfl4020.pdf
+R1,1,100,Vishay,CRCW0402100RFKED,BuckBoostLocal:R1_0402,100 ohm +/-1%; 0402; 63 mW standard operation,https://www.vishay.com/docs/20035/dcrcwe3.pdf
+U1,1,TPS63001DRCR,Texas Instruments,TPS63001DRCR,BuckBoostLocal:U1_TPS63001,Fixed 3.3 V buck-boost regulator; VSON-10 exposed pad,https://www.ti.com/lit/ds/symlink/tps63001.pdf

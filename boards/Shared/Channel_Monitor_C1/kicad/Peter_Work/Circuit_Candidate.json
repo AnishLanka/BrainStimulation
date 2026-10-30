@@ -1,0 +1,4084 @@
+{
+  "title": "Per-channel monitor, rail window, near-zero arm qualification and fault latch candidate",
+  "revision": "C1_review_only",
+  "date": "2026-10-17",
+  "frequency_requirement_hz": [
+    0.5,
+    40000
+  ],
+  "not_fabrication_release": true,
+  "parts": [
+    {
+      "ref": "U1",
+      "value": "OPA2192",
+      "mpn": "OPA2192ID",
+      "footprint_candidate": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+      "pins": {
+        "1": "RETURN_BUF",
+        "2": "RETURN_BUF",
+        "3": "RETURN_PROTECTED",
+        "4": "N5_CH",
+        "5": "BIAS_DIV",
+        "6": "BIAS_2V048",
+        "7": "BIAS_2V048",
+        "8": "P5_CH"
+      },
+      "notes": "Dual regulated +/-5 V supply. A buffers protected load return; B buffers half-reference. Input protection is specified for bounded +/-80 V fault injection, not arbitrary surges.",
+      "kind": "component",
+      "pin_names": {
+        "1": "OUTA",
+        "2": "INA-",
+        "3": "INA+",
+        "4": "V-",
+        "5": "INB+",
+        "6": "INB-",
+        "7": "OUTB",
+        "8": "V+"
+      },
+      "pin_types": {
+        "1": "output",
+        "2": "input",
+        "3": "input",
+        "4": "power_in",
+        "5": "input",
+        "6": "input",
+        "7": "output",
+        "8": "power_in"
+      }
+    },
+    {
+      "ref": "U2",
+      "value": "OPA2192",
+      "mpn": "OPA2192ID",
+      "footprint_candidate": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+      "pins": {
+        "1": "I_MON",
+        "2": "I_MINUS",
+        "3": "I_PLUS",
+        "4": "MID_CH",
+        "5": "V_PLUS",
+        "6": "V_MINUS",
+        "7": "V_MON",
+        "8": "P5_CH"
+      },
+      "notes": "Single 5 V supply. A current difference gain3.24; B voltage difference gain1/20.",
+      "kind": "component",
+      "pin_names": {
+        "1": "OUTA",
+        "2": "INA-",
+        "3": "INA+",
+        "4": "V-",
+        "5": "INB+",
+        "6": "INB-",
+        "7": "OUTB",
+        "8": "V+"
+      },
+      "pin_types": {
+        "1": "output",
+        "2": "input",
+        "3": "input",
+        "4": "power_in",
+        "5": "input",
+        "6": "input",
+        "7": "output",
+        "8": "power_in"
+      }
+    },
+    {
+      "ref": "U3",
+      "value": "REF5040A",
+      "mpn": "REF5040AID",
+      "footprint_candidate": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+      "pins": {
+        "1": null,
+        "2": "P5_CH",
+        "3": null,
+        "4": "MID_CH",
+        "5": "REF_NR",
+        "6": "REF_4V096",
+        "7": null,
+        "8": null
+      },
+      "notes": "Standard grade0.1%,8ppm/C. Pins1/8DNC;3TEMP unused;7NC.",
+      "kind": "component",
+      "pin_names": {
+        "1": "DNC",
+        "2": "VIN",
+        "3": "TEMP",
+        "4": "GND",
+        "5": "TRIM/NR",
+        "6": "VOUT",
+        "7": "NC",
+        "8": "DNC"
+      },
+      "pin_types": {
+        "1": "no_connect",
+        "2": "power_in",
+        "3": "output",
+        "4": "power_in",
+        "5": "passive",
+        "6": "power_out",
+        "7": "no_connect",
+        "8": "no_connect"
+      }
+    },
+    {
+      "ref": "U4",
+      "value": "TLV1704",
+      "mpn": "TLV1704IPWR",
+      "footprint_candidate": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
+      "pins": {
+        "1": "FAULT_N",
+        "2": "FAULT_N",
+        "3": "P5_CH",
+        "4": "I_LOW",
+        "5": "I_MON",
+        "6": "I_MON",
+        "7": "I_HIGH",
+        "8": "V_LOW",
+        "9": "V_MON",
+        "10": "V_MON",
+        "11": "V_HIGH",
+        "12": "MID_CH",
+        "13": "FAULT_N",
+        "14": "FAULT_N"
+      },
+      "notes": "All four open-collector outputs wired together. Each comparator is high-impedance in its acceptable window.",
+      "kind": "component",
+      "pin_names": {
+        "1": "OUT2",
+        "2": "OUT1",
+        "3": "V+",
+        "4": "IN1-",
+        "5": "IN1+",
+        "6": "IN2-",
+        "7": "IN2+",
+        "8": "IN3-",
+        "9": "IN3+",
+        "10": "IN4-",
+        "11": "IN4+",
+        "12": "V-",
+        "13": "OUT4",
+        "14": "OUT3"
+      },
+      "pin_types": {
+        "1": "open_collector",
+        "2": "open_collector",
+        "3": "power_in",
+        "4": "input",
+        "5": "input",
+        "6": "input",
+        "7": "input",
+        "8": "input",
+        "9": "input",
+        "10": "input",
+        "11": "input",
+        "12": "power_in",
+        "13": "open_collector",
+        "14": "open_collector"
+      }
+    },
+    {
+      "ref": "U5",
+      "value": "SN74LVC1G74",
+      "mpn": "SN74LVC1G74DCUR",
+      "footprint_candidate": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
+      "pins": {
+        "1": "ARM_EDGE",
+        "2": "ZERO_ARM_OK",
+        "3": "INHIBITED",
+        "4": "MID_CH",
+        "5": "ARMED",
+        "6": "FAULT_CLEAR_N",
+        "7": "P3V3_CH",
+        "8": "P3V3_CH"
+      },
+      "notes": "Pin 5 Q, pin 3 inverted Q. D samples qualified near-zero command at rising ARM_EDGE only. Conditioned asynchronous clear is FAULT_CLEAR_N. Hold ARM low through faults; allow at least 1 us after clear recovery before a new rising edge. No automatic rearm.",
+      "kind": "component",
+      "pin_names": {
+        "1": "CLK",
+        "2": "D",
+        "3": "~Q",
+        "4": "GND",
+        "5": "Q",
+        "6": "~CLR",
+        "7": "~PRE",
+        "8": "VCC"
+      },
+      "pin_types": {
+        "1": "input",
+        "2": "input",
+        "3": "output",
+        "4": "power_in",
+        "5": "output",
+        "6": "input",
+        "7": "input",
+        "8": "power_in"
+      }
+    },
+    {
+      "ref": "U6",
+      "value": "TPS3808G33",
+      "mpn": "TPS3808G33DBVR",
+      "footprint_candidate": "Package_TO_SOT_SMD:SOT-23-6",
+      "pins": {
+        "1": "FAULT_N",
+        "2": "MID_CH",
+        "3": "P3V3_CH",
+        "4": null,
+        "5": "P3V3_CH",
+        "6": "P3V3_CH"
+      },
+      "notes": "3.3V supervisor3.07Vnom; CTopen20msreset release.",
+      "kind": "component",
+      "pin_names": {
+        "1": "~RESET",
+        "2": "GND",
+        "3": "~MR",
+        "4": "CT",
+        "5": "SENSE",
+        "6": "VDD"
+      },
+      "pin_types": {
+        "1": "open_collector",
+        "2": "power_in",
+        "3": "input",
+        "4": "passive",
+        "5": "input",
+        "6": "power_in"
+      }
+    },
+    {
+      "ref": "U7",
+      "value": "TPS3808G50",
+      "mpn": "TPS3808G50DBVR",
+      "footprint_candidate": "Package_TO_SOT_SMD:SOT-23-6",
+      "pins": {
+        "1": "FAULT_N",
+        "2": "MID_CH",
+        "3": "P3V3_CH",
+        "4": null,
+        "5": "P5_CH",
+        "6": "P3V3_CH"
+      },
+      "notes": "Monitors+5V at4.65Vnom; powered3.3V. CTopen20ms.",
+      "kind": "component",
+      "pin_names": {
+        "1": "~RESET",
+        "2": "GND",
+        "3": "~MR",
+        "4": "CT",
+        "5": "SENSE",
+        "6": "VDD"
+      },
+      "pin_types": {
+        "1": "open_collector",
+        "2": "power_in",
+        "3": "input",
+        "4": "passive",
+        "5": "input",
+        "6": "power_in"
+      }
+    },
+    {
+      "ref": "U8",
+      "value": "TLV1702",
+      "mpn": "TLV1702IDGKR",
+      "footprint_candidate": "Package_SO:VSSOP-8_3x3mm_P0.65mm",
+      "pins": {
+        "1": "FAULT_N",
+        "2": "N5_SENSE",
+        "3": "N5_HIGH",
+        "4": "MID_CH",
+        "5": "N5_SENSE",
+        "6": "N5_LOW",
+        "7": "FAULT_N",
+        "8": "P5_CH"
+      },
+      "notes": "Negative rail window approximate-5.503V to-4.671V. Precision tolerances/offset must be included in regulator choice.",
+      "kind": "component",
+      "pin_names": {
+        "1": "OUT1",
+        "2": "IN1-",
+        "3": "IN1+",
+        "4": "V-",
+        "5": "IN2+",
+        "6": "IN2-",
+        "7": "OUT2",
+        "8": "V+"
+      },
+      "pin_types": {
+        "1": "open_collector",
+        "2": "input",
+        "3": "input",
+        "4": "power_in",
+        "5": "input",
+        "6": "input",
+        "7": "open_collector",
+        "8": "power_in"
+      }
+    },
+    {
+      "ref": "U9",
+      "value": "TPS3808G01",
+      "mpn": "TPS3808G01DBVR",
+      "footprint_candidate": "Package_TO_SOT_SMD:SOT-23-6",
+      "pins": {
+        "1": "FAULT_N",
+        "2": "MID_CH",
+        "3": "P3V3_CH",
+        "4": null,
+        "5": "REF_SENSE",
+        "6": "P3V3_CH"
+      },
+      "notes": "Reference undervoltage nominal3.997V; CTopen20ms. Does not detect reference overvoltage.",
+      "kind": "component",
+      "pin_names": {
+        "1": "~RESET",
+        "2": "GND",
+        "3": "~MR",
+        "4": "CT",
+        "5": "SENSE",
+        "6": "VDD"
+      },
+      "pin_types": {
+        "1": "open_collector",
+        "2": "power_in",
+        "3": "input",
+        "4": "passive",
+        "5": "input",
+        "6": "power_in"
+      }
+    },
+    {
+      "ref": "U10",
+      "value": "TPS3431",
+      "mpn": "TPS3431SDRBR",
+      "footprint_candidate": "Package_DFN_QFN:Texas_DRB0008A",
+      "pins": {
+        "1": "P3V3_CH",
+        "2": "CWD",
+        "3": "RUN_REQUEST",
+        "4": "MID_CH",
+        "5": "P3V3_CH",
+        "6": "HEARTBEAT",
+        "7": "FAULT_N",
+        "8": "FAULT_N",
+        "9": "MID_CH"
+      },
+      "notes": "WDO and ENOUT wired together. SET1high,CWD10ktoVDD ->170/200/230ms. EPpin9 is schematic convention; verify package pad geometry.",
+      "kind": "component",
+      "pin_names": {
+        "1": "VDD",
+        "2": "CWD",
+        "3": "EN",
+        "4": "GND",
+        "5": "SET1",
+        "6": "WDI",
+        "7": "~WDO",
+        "8": "ENOUT",
+        "9": "EP"
+      },
+      "pin_types": {
+        "1": "power_in",
+        "2": "passive",
+        "3": "input",
+        "4": "power_in",
+        "5": "input",
+        "6": "input",
+        "7": "open_collector",
+        "8": "open_collector",
+        "9": "power_in"
+      }
+    },
+    {
+      "ref": "R1",
+      "value": "100R 0.1%",
+      "mpn": "TNPW1206100RBEEA",
+      "footprint_candidate": "Resistor_SMD:R_1206_3216Metric",
+      "pins": {
+        "1": "INTERNAL_N",
+        "2": "MID_CH"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R2",
+      "value": "20k",
+      "mpn": "TNPW080520K0BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "REF_4V096",
+        "2": "BIAS_DIV"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R3",
+      "value": "20k",
+      "mpn": "TNPW080520K0BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "BIAS_DIV",
+        "2": "MID_CH"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R4",
+      "value": "10k",
+      "mpn": "TNPW080510K0BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "RETURN_BUF",
+        "2": "I_PLUS"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R5",
+      "value": "32.4k",
+      "mpn": "TNPW080532K4BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "BIAS_2V048",
+        "2": "I_PLUS"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R6",
+      "value": "10k",
+      "mpn": "TNPW080510K0BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "MID_CH",
+        "2": "I_MINUS"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R7",
+      "value": "32.4k",
+      "mpn": "TNPW080532K4BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "I_MON",
+        "2": "I_MINUS"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R8",
+      "value": "499k",
+      "mpn": "TNPW0805499KBEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "INTERNAL_P",
+        "2": "V_POS_MID"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R9",
+      "value": "499k",
+      "mpn": "TNPW0805499KBEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "V_POS_MID",
+        "2": "V_PLUS"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R10",
+      "value": "49.9k",
+      "mpn": "TNPW080549K9BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "BIAS_2V048",
+        "2": "V_PLUS"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R11",
+      "value": "499k",
+      "mpn": "TNPW0805499KBEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "RETURN_BUF",
+        "2": "V_NEG_MID"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R12",
+      "value": "499k",
+      "mpn": "TNPW0805499KBEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "V_NEG_MID",
+        "2": "V_MINUS"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R13",
+      "value": "49.9k",
+      "mpn": "TNPW080549K9BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "V_MON",
+        "2": "V_MINUS"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R14",
+      "value": "5.11k",
+      "mpn": "TNPW08055K11BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "MID_CH",
+        "2": "I_LOW"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R15",
+      "value": "93.1k",
+      "mpn": "TNPW080593K1BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "I_LOW",
+        "2": "I_HIGH"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R16",
+      "value": "5.11k",
+      "mpn": "TNPW08055K11BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "I_HIGH",
+        "2": "REF_4V096"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R17",
+      "value": "15.6k",
+      "mpn": "TNPW080515K6BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "MID_CH",
+        "2": "V_LOW"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R18",
+      "value": "71.5k",
+      "mpn": "TNPW080571K5BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "V_LOW",
+        "2": "V_HIGH"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R19",
+      "value": "15.6k",
+      "mpn": "TNPW080515K6BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "V_HIGH",
+        "2": "REF_4V096"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R20",
+      "value": "10k",
+      "mpn": "TNPW080510K0BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "P3V3_CH",
+        "2": "FAULT_N"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R21",
+      "value": "10k",
+      "mpn": "TNPW080510K0BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "ARM_EDGE",
+        "2": "MID_CH"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R22",
+      "value": "10k",
+      "mpn": "TNPW080510K0BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "RUN_REQUEST",
+        "2": "MID_CH"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R23",
+      "value": "10k",
+      "mpn": "TNPW080510K0BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "HEARTBEAT",
+        "2": "MID_CH"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R24",
+      "value": "10k",
+      "mpn": "TNPW080510K0BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "P3V3_CH",
+        "2": "CWD"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R25",
+      "value": "1k",
+      "mpn": "TNPW08051K00BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "AMP_ARMED",
+        "2": "OPA_ENABLE"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R26",
+      "value": "10k",
+      "mpn": "TNPW080510K0BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "OPA_ENABLE",
+        "2": "MID_CH"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R27",
+      "value": "100k",
+      "mpn": "TNPW0805100KBEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "REF_4V096",
+        "2": "N5_SENSE"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R28",
+      "value": "200k",
+      "mpn": "TNPW0805200KBEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "N5_SENSE",
+        "2": "N5_CH"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R29",
+      "value": "24.9k",
+      "mpn": "TNPW080524K9BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "REF_4V096",
+        "2": "N5_HIGH"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R30",
+      "value": "10k",
+      "mpn": "TNPW080510K0BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "N5_HIGH",
+        "2": "MID_CH"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R31",
+      "value": "35.7k",
+      "mpn": "TNPW080535K7BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "REF_4V096",
+        "2": "N5_LOW"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R32",
+      "value": "10k",
+      "mpn": "TNPW080510K0BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "N5_LOW",
+        "2": "MID_CH"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R33",
+      "value": "88.7k",
+      "mpn": "TNPW080588K7BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "REF_4V096",
+        "2": "REF_SENSE"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R34",
+      "value": "10k",
+      "mpn": "TNPW080510K0BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "REF_SENSE",
+        "2": "MID_CH"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R35",
+      "value": "10k",
+      "mpn": "TNPW080510K0BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "ARMED",
+        "2": "MID_CH"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "C1",
+      "value": "100n",
+      "mpn": "885012207098",
+      "footprint_candidate": "Capacitor_SMD:C_0805_2012Metric",
+      "pins": {
+        "1": "P5_CH",
+        "2": "MID_CH"
+      },
+      "notes": "100 nF, +/-10%, 50 V, X7R, 0805 (2.0 x 1.25 mm). Nominal rating does not constitute a guaranteed biased capacitance.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Wurth Elektronik",
+      "sources": [
+        "https://www.we-online.com/components/products/datasheet/885012207098.pdf"
+      ]
+    },
+    {
+      "ref": "C2",
+      "value": "100n",
+      "mpn": "885012207098",
+      "footprint_candidate": "Capacitor_SMD:C_0805_2012Metric",
+      "pins": {
+        "1": "N5_CH",
+        "2": "MID_CH"
+      },
+      "notes": "100 nF, +/-10%, 50 V, X7R, 0805 (2.0 x 1.25 mm). Nominal rating does not constitute a guaranteed biased capacitance.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Wurth Elektronik",
+      "sources": [
+        "https://www.we-online.com/components/products/datasheet/885012207098.pdf"
+      ]
+    },
+    {
+      "ref": "C3",
+      "value": "100n",
+      "mpn": "885012207098",
+      "footprint_candidate": "Capacitor_SMD:C_0805_2012Metric",
+      "pins": {
+        "1": "P5_CH",
+        "2": "MID_CH"
+      },
+      "notes": "100 nF, +/-10%, 50 V, X7R, 0805 (2.0 x 1.25 mm). Nominal rating does not constitute a guaranteed biased capacitance.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Wurth Elektronik",
+      "sources": [
+        "https://www.we-online.com/components/products/datasheet/885012207098.pdf"
+      ]
+    },
+    {
+      "ref": "C4",
+      "value": "100n",
+      "mpn": "885012207098",
+      "footprint_candidate": "Capacitor_SMD:C_0805_2012Metric",
+      "pins": {
+        "1": "P5_CH",
+        "2": "MID_CH"
+      },
+      "notes": "100 nF, +/-10%, 50 V, X7R, 0805 (2.0 x 1.25 mm). Nominal rating does not constitute a guaranteed biased capacitance.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Wurth Elektronik",
+      "sources": [
+        "https://www.we-online.com/components/products/datasheet/885012207098.pdf"
+      ]
+    },
+    {
+      "ref": "C5",
+      "value": "100n",
+      "mpn": "885012207098",
+      "footprint_candidate": "Capacitor_SMD:C_0805_2012Metric",
+      "pins": {
+        "1": "P3V3_CH",
+        "2": "MID_CH"
+      },
+      "notes": "100 nF, +/-10%, 50 V, X7R, 0805 (2.0 x 1.25 mm). Nominal rating does not constitute a guaranteed biased capacitance.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Wurth Elektronik",
+      "sources": [
+        "https://www.we-online.com/components/products/datasheet/885012207098.pdf"
+      ]
+    },
+    {
+      "ref": "C6",
+      "value": "100n",
+      "mpn": "885012207098",
+      "footprint_candidate": "Capacitor_SMD:C_0805_2012Metric",
+      "pins": {
+        "1": "P3V3_CH",
+        "2": "MID_CH"
+      },
+      "notes": "100 nF, +/-10%, 50 V, X7R, 0805 (2.0 x 1.25 mm). Nominal rating does not constitute a guaranteed biased capacitance.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Wurth Elektronik",
+      "sources": [
+        "https://www.we-online.com/components/products/datasheet/885012207098.pdf"
+      ]
+    },
+    {
+      "ref": "C7",
+      "value": "100n",
+      "mpn": "885012207098",
+      "footprint_candidate": "Capacitor_SMD:C_0805_2012Metric",
+      "pins": {
+        "1": "P3V3_CH",
+        "2": "MID_CH"
+      },
+      "notes": "100 nF, +/-10%, 50 V, X7R, 0805 (2.0 x 1.25 mm). Nominal rating does not constitute a guaranteed biased capacitance.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Wurth Elektronik",
+      "sources": [
+        "https://www.we-online.com/components/products/datasheet/885012207098.pdf"
+      ]
+    },
+    {
+      "ref": "C8",
+      "value": "100n",
+      "mpn": "885012207098",
+      "footprint_candidate": "Capacitor_SMD:C_0805_2012Metric",
+      "pins": {
+        "1": "P5_CH",
+        "2": "MID_CH"
+      },
+      "notes": "100 nF, +/-10%, 50 V, X7R, 0805 (2.0 x 1.25 mm). Nominal rating does not constitute a guaranteed biased capacitance.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Wurth Elektronik",
+      "sources": [
+        "https://www.we-online.com/components/products/datasheet/885012207098.pdf"
+      ]
+    },
+    {
+      "ref": "C9",
+      "value": "100n",
+      "mpn": "885012207098",
+      "footprint_candidate": "Capacitor_SMD:C_0805_2012Metric",
+      "pins": {
+        "1": "P3V3_CH",
+        "2": "MID_CH"
+      },
+      "notes": "100 nF, +/-10%, 50 V, X7R, 0805 (2.0 x 1.25 mm). Nominal rating does not constitute a guaranteed biased capacitance.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Wurth Elektronik",
+      "sources": [
+        "https://www.we-online.com/components/products/datasheet/885012207098.pdf"
+      ]
+    },
+    {
+      "ref": "C10",
+      "value": "100n",
+      "mpn": "885012207098",
+      "footprint_candidate": "Capacitor_SMD:C_0805_2012Metric",
+      "pins": {
+        "1": "P3V3_CH",
+        "2": "MID_CH"
+      },
+      "notes": "100 nF, +/-10%, 50 V, X7R, 0805 (2.0 x 1.25 mm). Nominal rating does not constitute a guaranteed biased capacitance.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Wurth Elektronik",
+      "sources": [
+        "https://www.we-online.com/components/products/datasheet/885012207098.pdf"
+      ]
+    },
+    {
+      "ref": "C11",
+      "value": "1u",
+      "mpn": "885012207078",
+      "footprint_candidate": "Capacitor_SMD:C_0805_2012Metric",
+      "pins": {
+        "1": "P5_CH",
+        "2": "MID_CH"
+      },
+      "notes": "1 uF, +/-10%, 25 V, X7R, 0805 (2.0 x 1.25 mm). Nominal rating does not constitute a guaranteed biased capacitance.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Wurth Elektronik",
+      "sources": [
+        "https://www.we-online.com/components/products/datasheet/885012207078.pdf"
+      ]
+    },
+    {
+      "ref": "C12",
+      "value": "1u",
+      "mpn": "885012207078",
+      "footprint_candidate": "Capacitor_SMD:C_0805_2012Metric",
+      "pins": {
+        "1": "REF_NR",
+        "2": "MID_CH"
+      },
+      "notes": "1 uF, +/-10%, 25 V, X7R, 0805 (2.0 x 1.25 mm). Nominal rating does not constitute a guaranteed biased capacitance.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Wurth Elektronik",
+      "sources": [
+        "https://www.we-online.com/components/products/datasheet/885012207078.pdf"
+      ]
+    },
+    {
+      "ref": "C13",
+      "value": "22u 25V X5R",
+      "mpn": "C2012X5R1E226M125AC",
+      "footprint_candidate": "Capacitor_SMD:C_0805_2012Metric",
+      "pins": {
+        "1": "REF_4V096",
+        "2": "MID_CH"
+      },
+      "notes": "Increase nominal output capacitance from 10 to 22 uF in the same 0805 footprint. 22 uF +/-20%, 25 V, X5R, 2.0 x 1.25 x 1.25 mm. REF5040A permits 1-50 uF output capacitance; even +20% tolerance and +15% temperature change give 30.36 uF nominal upper estimate. Effective capacitance at 4.096 V is NOT guaranteed here. Manufacturer characterization data are typical; qualify reference noise/transients on the assembled board. X5R rating limits this component to +85 C. No footprint, pad or net change.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "TDK",
+      "sources": [
+        "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X5R1E226M125AC",
+        "https://www.ti.com/lit/ds/symlink/ref50.pdf"
+      ]
+    },
+    {
+      "ref": "J1",
+      "value": "ISOLATED_LOCAL_POWER",
+      "mpn": "TSW-104-07-G-S",
+      "footprint_candidate": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+      "pins": {
+        "1": "P5_CH",
+        "2": "MID_CH",
+        "3": "N5_CH",
+        "4": "P3V3_CH"
+      },
+      "notes": "4-position, single-row, straight through-hole, 2.54 mm pitch, 0.635 mm square post. Unshrouded and UNPOLARIZED: pin-1 marking and verified cable mapping are required; this is not a keyed connector. Official layout recommends 1.02 mm finished holes. Standard KiCad footprint has 1.00 mm holes; use 1.02 mm nominal or a documented 1.05 mm production nominal and rerun DRC/parity. Pad centers, copper pad size and routing need not change. Lead style 07: 5.84 mm post, 2.54 mm tail. J4 is optional/unconnected unless an existing documented Howland enable connection is available; do not modify the Howland board.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive",
+        "3": "passive",
+        "4": "passive"
+      },
+      "manufacturer": "Samtec",
+      "recommended_drill_mm": 1.02,
+      "sources": [
+        "https://www.samtec.com/products/tsw-104-07-g-s",
+        "https://suddendocs.samtec.com/prints/tsw-xxx-xx-x-x-xx-xxx-footprint.pdf",
+        "https://suddendocs.samtec.com/prints/tsw-xxx-xx-xxx-x-xx-xxx-mkt.pdf"
+      ]
+    },
+    {
+      "ref": "J2",
+      "value": "HOWLAND_OUTPUT_INPUT",
+      "mpn": "TSW-102-07-G-S",
+      "footprint_candidate": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "pins": {
+        "1": "INTERNAL_P",
+        "2": "MID_CH"
+      },
+      "notes": "2-position, single-row, straight through-hole, 2.54 mm pitch, 0.635 mm square post. Unshrouded and UNPOLARIZED: pin-1 marking and verified cable mapping are required; this is not a keyed connector. Official layout recommends 1.02 mm finished holes. Standard KiCad footprint has 1.00 mm holes; use 1.02 mm nominal or a documented 1.05 mm production nominal and rerun DRC/parity. Pad centers, copper pad size and routing need not change. Lead style 07: 5.84 mm post, 2.54 mm tail. J4 is optional/unconnected unless an existing documented Howland enable connection is available; do not modify the Howland board.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Samtec",
+      "recommended_drill_mm": 1.02,
+      "sources": [
+        "https://www.samtec.com/products/tsw-102-07-g-s",
+        "https://suddendocs.samtec.com/prints/tsw-xxx-xx-x-x-xx-xxx-footprint.pdf",
+        "https://suddendocs.samtec.com/prints/tsw-xxx-xx-xxx-x-xx-xxx-mkt.pdf"
+      ]
+    },
+    {
+      "ref": "J3",
+      "value": "ISOLATED_CONTROL",
+      "mpn": "TSW-106-07-G-S",
+      "footprint_candidate": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
+      "pins": {
+        "1": "MID_CH",
+        "2": "RUN_REQUEST",
+        "3": "ARM_EDGE",
+        "4": "HEARTBEAT",
+        "5": "FAULT_N",
+        "6": "INHIBITED"
+      },
+      "notes": "6-position, single-row, straight through-hole, 2.54 mm pitch, 0.635 mm square post. Unshrouded and UNPOLARIZED: pin-1 marking and verified cable mapping are required; this is not a keyed connector. Official layout recommends 1.02 mm finished holes. Standard KiCad footprint has 1.00 mm holes; use 1.02 mm nominal or a documented 1.05 mm production nominal and rerun DRC/parity. Pad centers, copper pad size and routing need not change. Lead style 07: 5.84 mm post, 2.54 mm tail. J4 is optional/unconnected unless an existing documented Howland enable connection is available; do not modify the Howland board.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive",
+        "3": "passive",
+        "4": "passive",
+        "5": "passive",
+        "6": "passive"
+      },
+      "manufacturer": "Samtec",
+      "recommended_drill_mm": 1.02,
+      "sources": [
+        "https://www.samtec.com/products/tsw-106-07-g-s",
+        "https://suddendocs.samtec.com/prints/tsw-xxx-xx-x-x-xx-xxx-footprint.pdf",
+        "https://suddendocs.samtec.com/prints/tsw-xxx-xx-xxx-x-xx-xxx-mkt.pdf"
+      ]
+    },
+    {
+      "ref": "J4",
+      "value": "HOWLAND_ENABLE",
+      "mpn": "TSW-102-07-G-S",
+      "footprint_candidate": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "pins": {
+        "1": "OPA_ENABLE",
+        "2": "MID_CH"
+      },
+      "notes": "2-position, single-row, straight through-hole, 2.54 mm pitch, 0.635 mm square post. Unshrouded and UNPOLARIZED: pin-1 marking and verified cable mapping are required; this is not a keyed connector. Official layout recommends 1.02 mm finished holes. Standard KiCad footprint has 1.00 mm holes; use 1.02 mm nominal or a documented 1.05 mm production nominal and rerun DRC/parity. Pad centers, copper pad size and routing need not change. Lead style 07: 5.84 mm post, 2.54 mm tail. J4 is optional/unconnected unless an existing documented Howland enable connection is available; do not modify the Howland board.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Samtec",
+      "recommended_drill_mm": 1.02,
+      "sources": [
+        "https://www.samtec.com/products/tsw-102-07-g-s",
+        "https://suddendocs.samtec.com/prints/tsw-xxx-xx-x-x-xx-xxx-footprint.pdf",
+        "https://suddendocs.samtec.com/prints/tsw-xxx-xx-xxx-x-xx-xxx-mkt.pdf"
+      ]
+    },
+    {
+      "ref": "J5",
+      "value": "SIMULTANEOUS_ADC_MODULE",
+      "mpn": "TSW-107-07-G-S",
+      "footprint_candidate": "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical",
+      "pins": {
+        "1": "MID_CH",
+        "2": "I_MON",
+        "3": "V_MON",
+        "4": "REF_4V096",
+        "5": "P5_CH",
+        "6": "P3V3_CH",
+        "7": "FAULT_N"
+      },
+      "notes": "7-position, single-row, straight through-hole, 2.54 mm pitch, 0.635 mm square post. Unshrouded and UNPOLARIZED: pin-1 marking and verified cable mapping are required; this is not a keyed connector. Official layout recommends 1.02 mm finished holes. Standard KiCad footprint has 1.00 mm holes; use 1.02 mm nominal or a documented 1.05 mm production nominal and rerun DRC/parity. Pad centers, copper pad size and routing need not change. Lead style 07: 5.84 mm post, 2.54 mm tail. J4 is optional/unconnected unless an existing documented Howland enable connection is available; do not modify the Howland board.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive",
+        "3": "passive",
+        "4": "passive",
+        "5": "passive",
+        "6": "passive",
+        "7": "passive"
+      },
+      "manufacturer": "Samtec",
+      "recommended_drill_mm": 1.02,
+      "sources": [
+        "https://www.samtec.com/products/tsw-107-07-g-s",
+        "https://suddendocs.samtec.com/prints/tsw-xxx-xx-x-x-xx-xxx-footprint.pdf",
+        "https://suddendocs.samtec.com/prints/tsw-xxx-xx-xxx-x-xx-xxx-mkt.pdf"
+      ]
+    },
+    {
+      "ref": "J6",
+      "value": "FAULT_STATUS",
+      "mpn": "TSW-103-07-G-S",
+      "footprint_candidate": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+      "pins": {
+        "1": "FAULT_CLEAR_N",
+        "2": "MID_CH",
+        "3": "P3V3_CH"
+      },
+      "notes": "3-position, single-row, straight through-hole, 2.54 mm pitch, 0.635 mm square post. Unshrouded and UNPOLARIZED: pin-1 marking and verified cable mapping are required; this is not a keyed connector. Official layout recommends 1.02 mm finished holes. Standard KiCad footprint has 1.00 mm holes; use 1.02 mm nominal or a documented 1.05 mm production nominal and rerun DRC/parity. Pad centers, copper pad size and routing need not change. Lead style 07: 5.84 mm post, 2.54 mm tail. J4 is optional/unconnected unless an existing documented Howland enable connection is available; do not modify the Howland board. J6.1 is conditioned FAULT_CLEAR_N, J6.2 MID, J6.3 P3V3; do not substitute raw FAULT_N.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive",
+        "3": "passive"
+      },
+      "manufacturer": "Samtec",
+      "recommended_drill_mm": 1.02,
+      "sources": [
+        "https://www.samtec.com/products/tsw-103-07-g-s",
+        "https://suddendocs.samtec.com/prints/tsw-xxx-xx-x-x-xx-xxx-footprint.pdf",
+        "https://suddendocs.samtec.com/prints/tsw-xxx-xx-xxx-x-xx-xxx-mkt.pdf"
+      ]
+    },
+    {
+      "ref": "TP1",
+      "value": "I_MON",
+      "mpn": "PCB_FEATURE_NO_COMPONENT",
+      "footprint_candidate": "TestPoint:TestPoint_Pad_D1.0mm",
+      "pins": {
+        "1": "I_MON"
+      },
+      "notes": "Existing 1 mm exposed copper test pad is a PCB feature. No soldered test-point component or purchase MPN is required.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1"
+      },
+      "pin_types": {
+        "1": "passive"
+      },
+      "manufacturer": "PCB fabrication",
+      "exclude_from_assembly_bom": true,
+      "sources": []
+    },
+    {
+      "ref": "TP2",
+      "value": "V_MON",
+      "mpn": "PCB_FEATURE_NO_COMPONENT",
+      "footprint_candidate": "TestPoint:TestPoint_Pad_D1.0mm",
+      "pins": {
+        "1": "V_MON"
+      },
+      "notes": "Existing 1 mm exposed copper test pad is a PCB feature. No soldered test-point component or purchase MPN is required.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1"
+      },
+      "pin_types": {
+        "1": "passive"
+      },
+      "manufacturer": "PCB fabrication",
+      "exclude_from_assembly_bom": true,
+      "sources": []
+    },
+    {
+      "ref": "TP3",
+      "value": "FAULT_N",
+      "mpn": "PCB_FEATURE_NO_COMPONENT",
+      "footprint_candidate": "TestPoint:TestPoint_Pad_D1.0mm",
+      "pins": {
+        "1": "FAULT_N"
+      },
+      "notes": "Existing 1 mm exposed copper test pad is a PCB feature. No soldered test-point component or purchase MPN is required.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1"
+      },
+      "pin_types": {
+        "1": "passive"
+      },
+      "manufacturer": "PCB fabrication",
+      "exclude_from_assembly_bom": true,
+      "sources": []
+    },
+    {
+      "ref": "TP4",
+      "value": "BIAS_2V048",
+      "mpn": "PCB_FEATURE_NO_COMPONENT",
+      "footprint_candidate": "TestPoint:TestPoint_Pad_D1.0mm",
+      "pins": {
+        "1": "BIAS_2V048"
+      },
+      "notes": "Existing 1 mm exposed copper test pad is a PCB feature. No soldered test-point component or purchase MPN is required.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1"
+      },
+      "pin_types": {
+        "1": "passive"
+      },
+      "manufacturer": "PCB fabrication",
+      "exclude_from_assembly_bom": true,
+      "sources": []
+    },
+    {
+      "ref": "R36",
+      "value": "22.1k 1% 0.75W",
+      "mpn": "CRCW201022K1FKEF",
+      "footprint_candidate": "Resistor_SMD:R_2010_5025Metric",
+      "pins": {
+        "1": "INTERNAL_N",
+        "2": "RETURN_PROTECTED"
+      },
+      "notes": "High voltage input fault resistor. Minimum 0.75 W rating, 200 V working-voltage candidate. +/-80 V / minimum R <=3.66 mA, <=0.293 W. Verify thermal derating and exact MPN. Do not substitute 0805/0.125 W.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      }
+    },
+    {
+      "ref": "D1",
+      "value": "BAV199",
+      "mpn": "BAV199,215",
+      "footprint_candidate": "Package_TO_SOT_SMD:SOT-23",
+      "pins": {
+        "1": "N_CLAMP",
+        "2": "P_CLAMP",
+        "3": "RETURN_PROTECTED"
+      },
+      "notes": "Low leakage double series diode. Pin 1 A1, pin 2 K2, pin 3 K1/A2. Clamp references sit about +/-1 V inside the +/-5 V rails.",
+      "kind": "component",
+      "pin_names": {
+        "1": "A1",
+        "2": "K2",
+        "3": "K1_A2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive",
+        "3": "passive"
+      }
+    },
+    {
+      "ref": "R37",
+      "value": "1k",
+      "mpn": "TNPW08051K00BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "P5_CH",
+        "2": "P_CLAMP"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R38",
+      "value": "249R",
+      "mpn": "TNPW0805249RBEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "P_CLAMP",
+        "2": "MID_CH"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R39",
+      "value": "1k",
+      "mpn": "TNPW08051K00BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "N_CLAMP",
+        "2": "N5_CH"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R40",
+      "value": "249R",
+      "mpn": "TNPW0805249RBEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "MID_CH",
+        "2": "N_CLAMP"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R41",
+      "value": "470R 1% 0.25W",
+      "mpn": "CRCW1206470RFKEA",
+      "footprint_candidate": "Resistor_SMD:R_1206_3216Metric",
+      "pins": {
+        "1": "P5_CH",
+        "2": "MID_CH"
+      },
+      "notes": "Rail bleeder/defined back-power load. 53.2 mW at 5 V. 5 mA bounded total fault injection yields <=2.374 V across maximum R; insufficient to pass +5 V power good. Not a substitute for surge absorption or arbitrary regulator failure protection.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      }
+    },
+    {
+      "ref": "R42",
+      "value": "470R 1% 0.25W",
+      "mpn": "CRCW1206470RFKEA",
+      "footprint_candidate": "Resistor_SMD:R_1206_3216Metric",
+      "pins": {
+        "1": "MID_CH",
+        "2": "N5_CH"
+      },
+      "notes": "Rail bleeder/defined back-power load. 53.2 mW at 5 V. 5 mA bounded total fault injection yields <=2.374 V across maximum R; insufficient to pass +5 V power good. Not a substitute for surge absorption or arbitrary regulator failure protection.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      }
+    },
+    {
+      "ref": "U11",
+      "value": "TLV1704",
+      "mpn": "TLV1704IPWR",
+      "footprint_candidate": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
+      "pins": {
+        "1": "FAULT_N",
+        "2": "FAULT_N",
+        "3": "P5_CH",
+        "4": "HVP_LOW",
+        "5": "HVP_SENSE",
+        "6": "HVP_SENSE",
+        "7": "HVP_HIGH",
+        "8": "HVN_LOW",
+        "9": "HVN_SENSE",
+        "10": "HVN_SENSE",
+        "11": "HVN_HIGH",
+        "12": "MID_CH",
+        "13": "FAULT_N",
+        "14": "FAULT_N"
+      },
+      "notes": "Independent positive and negative HV rail windows relative to channel MID. All outputs fault outside window.",
+      "kind": "component",
+      "pin_names": {
+        "1": "OUT2",
+        "2": "OUT1",
+        "3": "V+",
+        "4": "IN1-",
+        "5": "IN1+",
+        "6": "IN2-",
+        "7": "IN2+",
+        "8": "IN3-",
+        "9": "IN3+",
+        "10": "IN4-",
+        "11": "IN4+",
+        "12": "V-",
+        "13": "OUT4",
+        "14": "OUT3"
+      },
+      "pin_types": {
+        "1": "open_collector",
+        "2": "open_collector",
+        "3": "power_in",
+        "4": "input",
+        "5": "input",
+        "6": "input",
+        "7": "input",
+        "8": "input",
+        "9": "input",
+        "10": "input",
+        "11": "input",
+        "12": "power_in",
+        "13": "open_collector",
+        "14": "open_collector"
+      }
+    },
+    {
+      "ref": "R43",
+      "value": "499k",
+      "mpn": "TNPW0805499KBEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "HV_TOP",
+        "2": "HVP_DIV1"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R44",
+      "value": "499k",
+      "mpn": "TNPW0805499KBEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "HVP_DIV1",
+        "2": "HVP_DIV2"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R45",
+      "value": "499k",
+      "mpn": "TNPW0805499KBEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "HVP_DIV2",
+        "2": "HVP_DIV3"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R46",
+      "value": "499k",
+      "mpn": "TNPW0805499KBEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "HVP_DIV3",
+        "2": "HVP_SENSE"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R47",
+      "value": "49.9k",
+      "mpn": "TNPW080549K9BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "BIAS_2V048",
+        "2": "HVP_SENSE"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R48",
+      "value": "499k",
+      "mpn": "TNPW0805499KBEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "HV_BOTTOM",
+        "2": "HVN_DIV1"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R49",
+      "value": "499k",
+      "mpn": "TNPW0805499KBEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "HVN_DIV1",
+        "2": "HVN_DIV2"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R50",
+      "value": "499k",
+      "mpn": "TNPW0805499KBEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "HVN_DIV2",
+        "2": "HVN_DIV3"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R51",
+      "value": "499k",
+      "mpn": "TNPW0805499KBEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "HVN_DIV3",
+        "2": "HVN_SENSE"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R52",
+      "value": "49.9k",
+      "mpn": "TNPW080549K9BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "BIAS_2V048",
+        "2": "HVN_SENSE"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R53",
+      "value": "4.42k",
+      "mpn": "TNPW08054K42BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "REF_4V096",
+        "2": "HVP_LOW"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R54",
+      "value": "10k",
+      "mpn": "TNPW080510K0BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "HVP_LOW",
+        "2": "MID_CH"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R55",
+      "value": "3.24k",
+      "mpn": "TNPW08053K24BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "REF_4V096",
+        "2": "HVP_HIGH"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R56",
+      "value": "10k",
+      "mpn": "TNPW080510K0BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "HVP_HIGH",
+        "2": "MID_CH"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R57",
+      "value": "35.7k",
+      "mpn": "TNPW080535K7BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "REF_4V096",
+        "2": "HVN_LOW"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R58",
+      "value": "10k",
+      "mpn": "TNPW080510K0BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "HVN_LOW",
+        "2": "MID_CH"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R59",
+      "value": "25.5k",
+      "mpn": "TNPW080525K5BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "REF_4V096",
+        "2": "HVN_HIGH"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R60",
+      "value": "10k",
+      "mpn": "TNPW080510K0BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "HVN_HIGH",
+        "2": "MID_CH"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "U12",
+      "value": "TLV1702",
+      "mpn": "TLV1702IDGKR",
+      "footprint_candidate": "Package_SO:VSSOP-8_3x3mm_P0.65mm",
+      "pins": {
+        "1": "FAULT_N",
+        "2": "MID_BAL_LOW",
+        "3": "MID_BAL_SENSE",
+        "4": "MID_CH",
+        "5": "MID_BAL_HIGH",
+        "6": "MID_BAL_SENSE",
+        "7": "FAULT_N",
+        "8": "P5_CH"
+      },
+      "notes": "Checks HV_TOP + HV_BOTTOM balance relative to local MID, nominal sum window about -3.92 to +4.096 V. This detects gross midpoint shift; tolerances and comparator offset expand thresholds.",
+      "kind": "component",
+      "pin_names": {
+        "1": "OUT1",
+        "2": "IN1-",
+        "3": "IN1+",
+        "4": "V-",
+        "5": "IN2+",
+        "6": "IN2-",
+        "7": "OUT2",
+        "8": "V+"
+      },
+      "pin_types": {
+        "1": "open_collector",
+        "2": "input",
+        "3": "input",
+        "4": "power_in",
+        "5": "input",
+        "6": "input",
+        "7": "open_collector",
+        "8": "power_in"
+      }
+    },
+    {
+      "ref": "R61",
+      "value": "499k",
+      "mpn": "TNPW0805499KBEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "HV_TOP",
+        "2": "BALP_MID"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R62",
+      "value": "499k",
+      "mpn": "TNPW0805499KBEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "BALP_MID",
+        "2": "MID_BAL_SENSE"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R63",
+      "value": "499k",
+      "mpn": "TNPW0805499KBEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "HV_BOTTOM",
+        "2": "BALN_MID"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R64",
+      "value": "499k",
+      "mpn": "TNPW0805499KBEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "BALN_MID",
+        "2": "MID_BAL_SENSE"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R65",
+      "value": "10k",
+      "mpn": "TNPW080510K0BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "BIAS_2V048",
+        "2": "MID_BAL_SENSE"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R66",
+      "value": "10.8k",
+      "mpn": "TNPW080510K8BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "REF_4V096",
+        "2": "MID_BAL_LOW"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R67",
+      "value": "10k",
+      "mpn": "TNPW080510K0BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "MID_BAL_LOW",
+        "2": "MID_CH"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R68",
+      "value": "10k",
+      "mpn": "TNPW080510K0BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "REF_4V096",
+        "2": "MID_BAL_HIGH"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R69",
+      "value": "10k",
+      "mpn": "TNPW080510K0BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "MID_BAL_HIGH",
+        "2": "MID_CH"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "U13",
+      "value": "TLV1702",
+      "mpn": "TLV1702IDGKR",
+      "footprint_candidate": "Package_SO:VSSOP-8_3x3mm_P0.65mm",
+      "pins": {
+        "1": "ZERO_RAW",
+        "2": "CMD_LOW",
+        "3": "CMD_SENSE",
+        "4": "MID_CH",
+        "5": "CMD_HIGH",
+        "6": "CMD_SENSE",
+        "7": "ZERO_RAW",
+        "8": "P5_CH"
+      },
+      "notes": "Near-zero command window. Outputs pull ZERO_RAW low outside the window; this qualifies arming only and does not continuously inhibit an armed waveform.",
+      "kind": "component",
+      "pin_names": {
+        "1": "OUT1",
+        "2": "IN1-",
+        "3": "IN1+",
+        "4": "V-",
+        "5": "IN2+",
+        "6": "IN2-",
+        "7": "OUT2",
+        "8": "V+"
+      },
+      "pin_types": {
+        "1": "open_collector",
+        "2": "input",
+        "3": "input",
+        "4": "power_in",
+        "5": "input",
+        "6": "input",
+        "7": "open_collector",
+        "8": "power_in"
+      }
+    },
+    {
+      "ref": "R70",
+      "value": "300k",
+      "mpn": "TNPW0805300KBEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "CMD_FROM_SIGNAL",
+        "2": "CMD_SENSE"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R71",
+      "value": "100k",
+      "mpn": "TNPW0805100KBEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "BIAS_2V048",
+        "2": "CMD_SENSE"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R72",
+      "value": "16.9k",
+      "mpn": "TNPW080516K9BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "REF_4V096",
+        "2": "CMD_LOW"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R73",
+      "value": "10k",
+      "mpn": "TNPW080510K0BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "CMD_LOW",
+        "2": "MID_CH"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R74",
+      "value": "16.5k",
+      "mpn": "TNPW080516K5BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "REF_4V096",
+        "2": "CMD_HIGH"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R75",
+      "value": "10k",
+      "mpn": "TNPW080510K0BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "CMD_HIGH",
+        "2": "MID_CH"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R76",
+      "value": "10k",
+      "mpn": "TNPW080510K0BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "P3V3_CH",
+        "2": "ZERO_RAW"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "U14",
+      "value": "TPS3808G01",
+      "mpn": "TPS3808G01DBVR",
+      "footprint_candidate": "Package_TO_SOT_SMD:SOT-23-6",
+      "pins": {
+        "1": "ZERO_QUAL_N",
+        "2": "MID_CH",
+        "3": "ZERO_RAW",
+        "4": "ZERO_CT",
+        "5": "P3V3_CH",
+        "6": "P3V3_CH"
+      },
+      "notes": "TPS3808G01 command qualification timer. CT connected to VDD through 49.9k gives 180/300/420 ms release delay after ZERO_RAW rises. MR going low resets immediately; no passive diode residual/stale RC permission. SENSE directly monitors VDD >0.405 V; separate G33 supervisor enforces valid logic supply.",
+      "kind": "component",
+      "pin_names": {
+        "1": "~RESET",
+        "2": "GND",
+        "3": "~MR",
+        "4": "CT",
+        "5": "SENSE",
+        "6": "VDD"
+      },
+      "pin_types": {
+        "1": "open_collector",
+        "2": "power_in",
+        "3": "input",
+        "4": "passive",
+        "5": "input",
+        "6": "power_in"
+      }
+    },
+    {
+      "ref": "U15",
+      "value": "TPS3808G01",
+      "mpn": "TPS3808G01DBVR",
+      "footprint_candidate": "Package_TO_SOT_SMD:SOT-23-6",
+      "pins": {
+        "1": "FAULT_COND_N",
+        "2": "MID_CH",
+        "3": "FAULT_N",
+        "4": null,
+        "5": "P3V3_CH",
+        "6": "P3V3_CH"
+      },
+      "notes": "Condition wired comparator fault into a guaranteed low logic level. MR VIL=0.3VDD accommodates TLV170x low output <=0.9 V only while valid 3.3 V rail is above supervisor threshold. Output asserts after MR propagation, nominal 150 ns, then releases 12..28 ms after raw fault clears. No guaranteed maximum fault latency is claimed.",
+      "kind": "component",
+      "pin_names": {
+        "1": "~RESET",
+        "2": "GND",
+        "3": "~MR",
+        "4": "CT",
+        "5": "SENSE",
+        "6": "VDD"
+      },
+      "pin_types": {
+        "1": "open_collector",
+        "2": "power_in",
+        "3": "input",
+        "4": "passive",
+        "5": "input",
+        "6": "power_in"
+      }
+    },
+    {
+      "ref": "U16",
+      "value": "SN74LVC2G17",
+      "mpn": "SN74LVC2G17DBVR",
+      "footprint_candidate": "Package_TO_SOT_SMD:SOT-23-6",
+      "pins": {
+        "1": "FAULT_COND_N",
+        "2": "MID_CH",
+        "3": "ZERO_QUAL_N",
+        "4": "ZERO_ARM_OK",
+        "5": "P3V3_CH",
+        "6": "FAULT_CLEAR_N"
+      },
+      "notes": "Schmitt buffers clean the two open-drain supervisor output edges before LVC latch inputs. Partial-power-down Ioff prevents output back-drive.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1A",
+        "2": "GND",
+        "3": "2A",
+        "4": "2Y",
+        "5": "VCC",
+        "6": "1Y"
+      },
+      "pin_types": {
+        "1": "input",
+        "2": "power_in",
+        "3": "input",
+        "4": "output",
+        "5": "power_in",
+        "6": "output"
+      }
+    },
+    {
+      "ref": "R77",
+      "value": "10k",
+      "mpn": "TNPW080510K0BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "P3V3_CH",
+        "2": "ZERO_QUAL_N"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R78",
+      "value": "10k",
+      "mpn": "TNPW080510K0BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "P3V3_CH",
+        "2": "FAULT_COND_N"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R79",
+      "value": "49.9k",
+      "mpn": "TNPW080549K9BEEA",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "P3V3_CH",
+        "2": "ZERO_CT"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "C14",
+      "value": "100n",
+      "mpn": "885012207098",
+      "footprint_candidate": "Capacitor_SMD:C_0805_2012Metric",
+      "pins": {
+        "1": "P5_CH",
+        "2": "MID_CH"
+      },
+      "notes": "100 nF, +/-10%, 50 V, X7R, 0805 (2.0 x 1.25 mm). Nominal rating does not constitute a guaranteed biased capacitance.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Wurth Elektronik",
+      "sources": [
+        "https://www.we-online.com/components/products/datasheet/885012207098.pdf"
+      ]
+    },
+    {
+      "ref": "C15",
+      "value": "100n",
+      "mpn": "885012207098",
+      "footprint_candidate": "Capacitor_SMD:C_0805_2012Metric",
+      "pins": {
+        "1": "P5_CH",
+        "2": "MID_CH"
+      },
+      "notes": "100 nF, +/-10%, 50 V, X7R, 0805 (2.0 x 1.25 mm). Nominal rating does not constitute a guaranteed biased capacitance.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Wurth Elektronik",
+      "sources": [
+        "https://www.we-online.com/components/products/datasheet/885012207098.pdf"
+      ]
+    },
+    {
+      "ref": "C16",
+      "value": "100n",
+      "mpn": "885012207098",
+      "footprint_candidate": "Capacitor_SMD:C_0805_2012Metric",
+      "pins": {
+        "1": "P5_CH",
+        "2": "MID_CH"
+      },
+      "notes": "100 nF, +/-10%, 50 V, X7R, 0805 (2.0 x 1.25 mm). Nominal rating does not constitute a guaranteed biased capacitance.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Wurth Elektronik",
+      "sources": [
+        "https://www.we-online.com/components/products/datasheet/885012207098.pdf"
+      ]
+    },
+    {
+      "ref": "C17",
+      "value": "100n",
+      "mpn": "885012207098",
+      "footprint_candidate": "Capacitor_SMD:C_0805_2012Metric",
+      "pins": {
+        "1": "P3V3_CH",
+        "2": "MID_CH"
+      },
+      "notes": "100 nF, +/-10%, 50 V, X7R, 0805 (2.0 x 1.25 mm). Nominal rating does not constitute a guaranteed biased capacitance.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Wurth Elektronik",
+      "sources": [
+        "https://www.we-online.com/components/products/datasheet/885012207098.pdf"
+      ]
+    },
+    {
+      "ref": "C18",
+      "value": "100n",
+      "mpn": "885012207098",
+      "footprint_candidate": "Capacitor_SMD:C_0805_2012Metric",
+      "pins": {
+        "1": "P3V3_CH",
+        "2": "MID_CH"
+      },
+      "notes": "100 nF, +/-10%, 50 V, X7R, 0805 (2.0 x 1.25 mm). Nominal rating does not constitute a guaranteed biased capacitance.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Wurth Elektronik",
+      "sources": [
+        "https://www.we-online.com/components/products/datasheet/885012207098.pdf"
+      ]
+    },
+    {
+      "ref": "C19",
+      "value": "100n",
+      "mpn": "885012207098",
+      "footprint_candidate": "Capacitor_SMD:C_0805_2012Metric",
+      "pins": {
+        "1": "P3V3_CH",
+        "2": "MID_CH"
+      },
+      "notes": "100 nF, +/-10%, 50 V, X7R, 0805 (2.0 x 1.25 mm). Nominal rating does not constitute a guaranteed biased capacitance.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Wurth Elektronik",
+      "sources": [
+        "https://www.we-online.com/components/products/datasheet/885012207098.pdf"
+      ]
+    },
+    {
+      "ref": "J7",
+      "value": "HV_RAIL_MONITOR",
+      "mpn": "TSW-103-07-G-S",
+      "footprint_candidate": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+      "pins": {
+        "1": "HV_TOP",
+        "2": "MID_CH",
+        "3": "HV_BOTTOM"
+      },
+      "notes": "3-position, single-row, straight through-hole, 2.54 mm pitch, 0.635 mm square post. Unshrouded and UNPOLARIZED: pin-1 marking and verified cable mapping are required; this is not a keyed connector. Official layout recommends 1.02 mm finished holes. Standard KiCad footprint has 1.00 mm holes; use 1.02 mm nominal or a documented 1.05 mm production nominal and rerun DRC/parity. Pad centers, copper pad size and routing need not change. Lead style 07: 5.84 mm post, 2.54 mm tail. J4 is optional/unconnected unless an existing documented Howland enable connection is available; do not modify the Howland board.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2",
+        "3": "3"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive",
+        "3": "passive"
+      },
+      "manufacturer": "Samtec",
+      "recommended_drill_mm": 1.02,
+      "sources": [
+        "https://www.samtec.com/products/tsw-103-07-g-s",
+        "https://suddendocs.samtec.com/prints/tsw-xxx-xx-x-x-xx-xxx-footprint.pdf",
+        "https://suddendocs.samtec.com/prints/tsw-xxx-xx-xxx-x-xx-xxx-mkt.pdf"
+      ]
+    },
+    {
+      "ref": "J8",
+      "value": "COMMAND_MONITOR",
+      "mpn": "TSW-102-07-G-S",
+      "footprint_candidate": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "pins": {
+        "1": "CMD_FROM_SIGNAL",
+        "2": "MID_CH"
+      },
+      "notes": "2-position, single-row, straight through-hole, 2.54 mm pitch, 0.635 mm square post. Unshrouded and UNPOLARIZED: pin-1 marking and verified cable mapping are required; this is not a keyed connector. Official layout recommends 1.02 mm finished holes. Standard KiCad footprint has 1.00 mm holes; use 1.02 mm nominal or a documented 1.05 mm production nominal and rerun DRC/parity. Pad centers, copper pad size and routing need not change. Lead style 07: 5.84 mm post, 2.54 mm tail. J4 is optional/unconnected unless an existing documented Howland enable connection is available; do not modify the Howland board.",
+      "kind": "component",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Samtec",
+      "recommended_drill_mm": 1.02,
+      "sources": [
+        "https://www.samtec.com/products/tsw-102-07-g-s",
+        "https://suddendocs.samtec.com/prints/tsw-xxx-xx-x-x-xx-xxx-footprint.pdf",
+        "https://suddendocs.samtec.com/prints/tsw-xxx-xx-xxx-x-xx-xxx-mkt.pdf"
+      ]
+    },
+    {
+      "ref": "K101",
+      "value": "DPST_NO_5V",
+      "mpn": "104-2-A-5/2",
+      "manufacturer": "Pickering",
+      "kind": "component",
+      "footprint_candidate": "ProtectionLocal:Pickering104_Package4_6Pin_P5.08",
+      "pins": {
+        "1": "INTERNAL_P",
+        "2": "INTERNAL_N",
+        "3": "P5_CH",
+        "4": "COIL_LOW",
+        "5": "EXTERNAL_N",
+        "6": "EXTERNAL_P"
+      },
+      "notes": "Verified against Pickering Issue 4.1, May 2025, page 7, Package Type 4: contacts 1-6 and 2-5; coil 3-4. No D suffix means no internal diode. Body 29 x 6.22 x 12.5 mm; six inline pins at 5.08 mm pitch; leads 0.5 x 0.25 mm. Local footprint uses selected 0.9 mm finished holes and 1.8 mm pads. All sensing connects to the INTERNAL_P and INTERNAL_N nets.",
+      "pin_names": {
+        "1": "CONTACT_A_IN",
+        "2": "CONTACT_B_IN",
+        "3": "COIL+",
+        "4": "COIL-",
+        "5": "CONTACT_B_OUT",
+        "6": "CONTACT_A_OUT"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive",
+        "3": "passive",
+        "4": "passive",
+        "5": "passive",
+        "6": "passive"
+      }
+    },
+    {
+      "ref": "Q101",
+      "value": "AO3400A",
+      "mpn": "AO3400A",
+      "manufacturer": "Alpha & Omega Semiconductor",
+      "kind": "component",
+      "footprint_candidate": "Package_TO_SOT_SMD:SOT-23",
+      "pins": {
+        "1": "COIL_GATE",
+        "2": "MID_CH",
+        "3": "COIL_LOW"
+      },
+      "notes": "30 V N-channel MOSFET; maximum RDS(on) 48 milliohms at VGS=2.5 V and 25 C. Direct 3.3 V logic coil drive. Never connect this transistor to the HV rails.",
+      "pin_names": {
+        "1": "G",
+        "2": "S",
+        "3": "D"
+      },
+      "pin_types": {
+        "1": "input",
+        "2": "passive",
+        "3": "passive"
+      }
+    },
+    {
+      "ref": "D101",
+      "value": "SMAJ12A_COIL_CLAMP",
+      "mpn": "SMAJ12A-E3/61",
+      "manufacturer": "Vishay",
+      "kind": "component",
+      "footprint_candidate": "Diode_SMD:D_SMA",
+      "pins": {
+        "1": "COIL_LOW",
+        "2": "MID_CH"
+      },
+      "notes": "Unidirectional TVS: pin 1 cathode at drain, pin 2 anode at MID. Direct drain-source clamp, not across the coil. Datasheet 25 C clamp maximum is 19.9 V at 20.1 A. Measure actual coil turn-off voltage including layout overshoot. Do not substitute a bidirectional CA part without review.",
+      "pin_names": {
+        "1": "K",
+        "2": "A"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      }
+    },
+    {
+      "ref": "R101",
+      "value": "100R",
+      "mpn": "TNPW0805100RBEEA",
+      "kind": "component",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "ARMED",
+        "2": "COIL_GATE"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "R102",
+      "value": "10k",
+      "mpn": "TNPW080510K0BEEA",
+      "kind": "component",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "COIL_GATE",
+        "2": "MID_CH"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "U101",
+      "value": "TPS3808G01",
+      "mpn": "TPS3808G01DBVR",
+      "kind": "component",
+      "footprint_candidate": "Package_TO_SOT_SMD:SOT-23-6",
+      "pins": {
+        "1": "RELAY_DELAY_N",
+        "2": "MID_CH",
+        "3": "ARMED",
+        "4": null,
+        "5": "P3V3_CH",
+        "6": "P3V3_CH"
+      },
+      "notes": "MR=ARMED; CT open; RESET release delay 12/20/28 ms minimum/typical/maximum over datasheet conditions. SENSE connected to 3.3 V, above the 0.405 V threshold. The core separately supervises the actual 3.3 V undervoltage threshold. This RESET output is not connected to FAULT_N.",
+      "pin_names": {
+        "1": "RESET_N",
+        "2": "GND",
+        "3": "MR_N",
+        "4": "CT",
+        "5": "SENSE",
+        "6": "VDD"
+      },
+      "pin_types": {
+        "1": "open_collector",
+        "2": "power_in",
+        "3": "input",
+        "4": "passive",
+        "5": "input",
+        "6": "power_in"
+      }
+    },
+    {
+      "ref": "R103",
+      "value": "10k",
+      "mpn": "TNPW080510K0BEEA",
+      "kind": "component",
+      "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+      "pins": {
+        "1": "P3V3_CH",
+        "2": "RELAY_DELAY_N"
+      },
+      "notes": "Manufacturer resistance code uses R/K/M decimal notation; B=0.1%, E=25 ppm/K, EA=tape packaging. Electrical value and footprint unchanged. TNPW0805 0.1%/25 ppm range includes 499 kohm (up to 1 Mohm).",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Vishay",
+      "sources": [
+        "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+      ]
+    },
+    {
+      "ref": "U102",
+      "value": "SN74LVC1G08",
+      "mpn": "SN74LVC1G08DBVR",
+      "kind": "component",
+      "footprint_candidate": "Package_TO_SOT_SMD:SOT-23-5",
+      "pins": {
+        "1": "ARMED",
+        "2": "RELAY_SETTLED",
+        "3": "MID_CH",
+        "4": "AMP_ARMED",
+        "5": "P3V3_CH"
+      },
+      "notes": "AND gate. ARMED low directly inhibits the amplifier without waiting for the delay IC. Output connects through existing R25 to OPA_ENABLE.",
+      "pin_names": {
+        "1": "A",
+        "2": "B",
+        "3": "GND",
+        "4": "Y",
+        "5": "VCC"
+      },
+      "pin_types": {
+        "1": "input",
+        "2": "input",
+        "3": "power_in",
+        "4": "output",
+        "5": "power_in"
+      }
+    },
+    {
+      "ref": "C101",
+      "value": "100n50V",
+      "mpn": "885012207098",
+      "kind": "component",
+      "footprint_candidate": "Capacitor_SMD:C_0805_2012Metric",
+      "pins": {
+        "1": "P3V3_CH",
+        "2": "MID_CH"
+      },
+      "notes": "Local U101 bypass. Nominal 100 nF; no guaranteed effective capacitance under all conditions is claimed.",
+      "manufacturer": "Wurth Elektronik",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      }
+    },
+    {
+      "ref": "C102",
+      "value": "100n50V",
+      "mpn": "885012207098",
+      "kind": "component",
+      "footprint_candidate": "Capacitor_SMD:C_0805_2012Metric",
+      "pins": {
+        "1": "P3V3_CH",
+        "2": "MID_CH"
+      },
+      "notes": "Local U102 bypass. Nominal 100 nF; no guaranteed effective capacitance under all conditions is claimed.",
+      "manufacturer": "Wurth Elektronik",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      }
+    },
+    {
+      "ref": "C103",
+      "value": "1u25V",
+      "mpn": "885382207003",
+      "kind": "component",
+      "footprint_candidate": "Capacitor_SMD:C_0805_2012Metric",
+      "pins": {
+        "1": "P5_CH",
+        "2": "MID_CH"
+      },
+      "notes": "Local coil-supply bypass. Route coil return separately from Kelvin MID paths. The regulated source must support the coil step; nominal 1 uF is not a supply hold-up guarantee.",
+      "manufacturer": "Wurth Elektronik",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      }
+    },
+    {
+      "ref": "J101",
+      "value": "EXTERNAL_DUMMY_LOAD",
+      "mpn": "TSW-102-07-G-S",
+      "kind": "component",
+      "footprint_candidate": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "pins": {
+        "1": "EXTERNAL_P",
+        "2": "EXTERNAL_N"
+      },
+      "notes": "2-position, single-row, straight through-hole, 2.54 mm pitch, 0.635 mm square post. Unshrouded and UNPOLARIZED: pin-1 marking and verified cable mapping are required; this is not a keyed connector. Official layout recommends 1.02 mm finished holes. Standard KiCad footprint has 1.00 mm holes; use 1.02 mm nominal or a documented 1.05 mm production nominal and rerun DRC/parity. Pad centers, copper pad size and routing need not change. Lead style 07: 5.84 mm post, 2.54 mm tail. J4 is optional/unconnected unless an existing documented Howland enable connection is available; do not modify the Howland board.",
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "manufacturer": "Samtec",
+      "recommended_drill_mm": 1.02,
+      "sources": [
+        "https://www.samtec.com/products/tsw-102-07-g-s",
+        "https://suddendocs.samtec.com/prints/tsw-xxx-xx-x-x-xx-xxx-footprint.pdf",
+        "https://suddendocs.samtec.com/prints/tsw-xxx-xx-xxx-x-xx-xxx-mkt.pdf"
+      ]
+    },
+    {
+      "ref": "U103",
+      "value": "SN74LVC1G17",
+      "mpn": "SN74LVC1G17DBVR",
+      "manufacturer": "Texas Instruments",
+      "kind": "component",
+      "footprint_candidate": "Package_TO_SOT_SMD:SOT-23-5",
+      "pins": {
+        "1": null,
+        "2": "RELAY_DELAY_N",
+        "3": "MID_CH",
+        "4": "RELAY_SETTLED",
+        "5": "P3V3_CH"
+      },
+      "pin_names": {
+        "1": "NC",
+        "2": "A",
+        "3": "GND",
+        "4": "Y",
+        "5": "VCC"
+      },
+      "pin_types": {
+        "1": "no_connect",
+        "2": "input",
+        "3": "power_in",
+        "4": "output",
+        "5": "power_in"
+      },
+      "notes": "Schmitt buffer cleans the open-drain delay output before the standard CMOS AND input. Pinout verified against TI Rev Y, October 2025, DBV package."
+    },
+    {
+      "ref": "C104",
+      "value": "100n50V",
+      "mpn": "885012207098",
+      "manufacturer": "Wurth Elektronik",
+      "kind": "component",
+      "footprint_candidate": "Capacitor_SMD:C_0805_2012Metric",
+      "pins": {
+        "1": "P3V3_CH",
+        "2": "MID_CH"
+      },
+      "pin_names": {
+        "1": "1",
+        "2": "2"
+      },
+      "pin_types": {
+        "1": "passive",
+        "2": "passive"
+      },
+      "notes": "Local U103 bypass."
+    }
+  ],
+  "primary_sources": [
+    "https://www.ti.com/lit/ds/symlink/opa2192.pdf",
+    "https://www.ti.com/lit/ds/symlink/ref50.pdf",
+    "https://www.ti.com/lit/ds/symlink/tlv1704.pdf",
+    "https://www.ti.com/lit/ds/symlink/sn74lvc1g74.pdf",
+    "https://www.ti.com/lit/ds/symlink/tps3808.pdf",
+    "https://www.ti.com/lit/ds/symlink/tps3431.pdf",
+    "https://www.ti.com/lit/ds/symlink/ads8353.pdf",
+    "https://assets.nexperia.com/documents/data-sheet/BAV199.pdf",
+    "https://www.ti.com/lit/ds/symlink/sn74lvc2g17.pdf",
+    "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+  ],
+  "equations": {
+    "I_MON_V": "2.048 + 324*I_load_A, neglecting protection leakage/RC and amplifier errors",
+    "V_MON_V": "2.048 + (V_INTERNAL_P-V_INTERNAL_N)/20, neglecting protected return buffer error",
+    "ADC_current_lsb_A": 1.9290123456790125e-07,
+    "ADC_voltage_lsb_V": 0.00125,
+    "HVP_SENSE_V": "(HV_TOP + 40*BIAS_2V048)/41",
+    "HVN_SENSE_V": "(HV_BOTTOM + 40*BIAS_2V048)/41",
+    "MID_BAL_SENSE_V": "(HV_TOP + HV_BOTTOM + 99.8*BIAS_2V048)/101.8",
+    "CMD_SENSE_V": "CMD_FROM_SIGNAL/4 + 0.75*BIAS_2V048"
+  },
+  "mandatory_open_items": [
+    "Final two-pole normally-open actuator and enable sequencing come from separate actuator extension; all sensing taps remain on its internal side.",
+    "Voltage fault threshold is about 28.52 V nominal; comparator/latch/actuator latency means this does not guarantee an instantaneous 30 V port maximum.",
+    "ADC input drivers, anti-alias filter, simultaneous sampling and isolated telemetry are a separate module described in ADC_INTERFACE.txt.",
+    "Regulated isolated +/-5 V and 3.3 V supply implementation, startup order, rail absorption and power budget need integrated validation.",
+    "Connector and capacitor exact MPNs, physical ordered-board pad mapping, footprints, layout and DRC/ERC are not a fabrication release.",
+    "Reference overvoltage, positive LV overvoltage, stuck sensors, disconnected monitor cables and all combinations of faults are not fully covered.",
+    "Input protection analysis assumes bounded +/-80 V sources and intact MID/bleeders; perform powered and unpowered injection tests. It is not a general single-fault certification."
+  ],
+  "current_scope": "Nominal 0-5 mA Howland operation; additional guaranteed 5 mA limiter excluded by user. 5.70 mA nominal window is gross fault monitoring only.",
+  "extensions": [
+    {
+      "title": "Per-channel default-off DPST disconnect and delayed amplifier enable",
+      "revision": "C1_review_only_final",
+      "not_fabrication_release": true,
+      "scope": "The user excludes an additional independent 5 mA limiter. This block disconnects and sequences amplifier enable. It does not impose instantaneous current or voltage limits.",
+      "existing_core_changes": [
+        {
+          "ref": "R25",
+          "pin": "1",
+          "old_net": "ARMED",
+          "new_net": "AMP_ARMED",
+          "reason": "Amplifier enable waits for relay operating delay; fault ARM low has direct combinational disable path."
+        }
+      ],
+      "parts": [
+        {
+          "ref": "K101",
+          "value": "DPST_NO_5V",
+          "mpn": "104-2-A-5/2",
+          "manufacturer": "Pickering",
+          "kind": "component",
+          "footprint_candidate": "ProtectionLocal:Pickering104_Package4_6Pin_P5.08",
+          "pins": {
+            "1": "INTERNAL_P",
+            "2": "INTERNAL_N",
+            "3": "P5_CH",
+            "4": "COIL_LOW",
+            "5": "EXTERNAL_N",
+            "6": "EXTERNAL_P"
+          },
+          "notes": "Verified against Pickering Issue 4.1, May 2025, page 7, Package Type 4: contacts 1-6 and 2-5; coil 3-4. No D suffix means no internal diode. Body 29 x 6.22 x 12.5 mm; six inline pins at 5.08 mm pitch; leads 0.5 x 0.25 mm. Local footprint uses selected 0.9 mm finished holes and 1.8 mm pads. All sensing connects to the INTERNAL_P and INTERNAL_N nets.",
+          "pin_names": {
+            "1": "CONTACT_A_IN",
+            "2": "CONTACT_B_IN",
+            "3": "COIL+",
+            "4": "COIL-",
+            "5": "CONTACT_B_OUT",
+            "6": "CONTACT_A_OUT"
+          },
+          "pin_types": {
+            "1": "passive",
+            "2": "passive",
+            "3": "passive",
+            "4": "passive",
+            "5": "passive",
+            "6": "passive"
+          }
+        },
+        {
+          "ref": "Q101",
+          "value": "AO3400A",
+          "mpn": "AO3400A",
+          "manufacturer": "Alpha & Omega Semiconductor",
+          "kind": "component",
+          "footprint_candidate": "Package_TO_SOT_SMD:SOT-23",
+          "pins": {
+            "1": "COIL_GATE",
+            "2": "MID_CH",
+            "3": "COIL_LOW"
+          },
+          "notes": "30 V N-channel MOSFET; maximum RDS(on) 48 milliohms at VGS=2.5 V and 25 C. Direct 3.3 V logic coil drive. Never connect this transistor to the HV rails.",
+          "pin_names": {
+            "1": "G",
+            "2": "S",
+            "3": "D"
+          },
+          "pin_types": {
+            "1": "input",
+            "2": "passive",
+            "3": "passive"
+          }
+        },
+        {
+          "ref": "D101",
+          "value": "SMAJ12A_COIL_CLAMP",
+          "mpn": "SMAJ12A-E3/61",
+          "manufacturer": "Vishay",
+          "kind": "component",
+          "footprint_candidate": "Diode_SMD:D_SMA",
+          "pins": {
+            "1": "COIL_LOW",
+            "2": "MID_CH"
+          },
+          "notes": "Unidirectional TVS: pin 1 cathode at drain, pin 2 anode at MID. Direct drain-source clamp, not across the coil. Datasheet 25 C clamp maximum is 19.9 V at 20.1 A. Measure actual coil turn-off voltage including layout overshoot. Do not substitute a bidirectional CA part without review.",
+          "pin_names": {
+            "1": "K",
+            "2": "A"
+          },
+          "pin_types": {
+            "1": "passive",
+            "2": "passive"
+          }
+        },
+        {
+          "ref": "R101",
+          "value": "100R",
+          "mpn": "TNPW0805100RBEEA",
+          "kind": "component",
+          "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+          "pins": {
+            "1": "ARMED",
+            "2": "COIL_GATE"
+          },
+          "notes": "Gate series damping.",
+          "pin_names": {
+            "1": "1",
+            "2": "2"
+          },
+          "pin_types": {
+            "1": "passive",
+            "2": "passive"
+          }
+        },
+        {
+          "ref": "R102",
+          "value": "10k",
+          "mpn": "TNPW08051002BEEA",
+          "kind": "component",
+          "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+          "pins": {
+            "1": "COIL_GATE",
+            "2": "MID_CH"
+          },
+          "notes": "Default off when the latch or its supply is unpowered. A 10 microampere leakage allowance develops only 0.1 V.",
+          "pin_names": {
+            "1": "1",
+            "2": "2"
+          },
+          "pin_types": {
+            "1": "passive",
+            "2": "passive"
+          }
+        },
+        {
+          "ref": "U101",
+          "value": "TPS3808G01",
+          "mpn": "TPS3808G01DBVR",
+          "kind": "component",
+          "footprint_candidate": "Package_TO_SOT_SMD:SOT-23-6",
+          "pins": {
+            "1": "RELAY_DELAY_N",
+            "2": "MID_CH",
+            "3": "ARMED",
+            "4": null,
+            "5": "P3V3_CH",
+            "6": "P3V3_CH"
+          },
+          "notes": "MR=ARMED; CT open; RESET release delay 12/20/28 ms minimum/typical/maximum over datasheet conditions. SENSE connected to 3.3 V, above the 0.405 V threshold. The core separately supervises the actual 3.3 V undervoltage threshold. This RESET output is not connected to FAULT_N.",
+          "pin_names": {
+            "1": "RESET_N",
+            "2": "GND",
+            "3": "MR_N",
+            "4": "CT",
+            "5": "SENSE",
+            "6": "VDD"
+          },
+          "pin_types": {
+            "1": "open_collector",
+            "2": "power_in",
+            "3": "input",
+            "4": "passive",
+            "5": "input",
+            "6": "power_in"
+          }
+        },
+        {
+          "ref": "R103",
+          "value": "10k",
+          "mpn": "TNPW08051002BEEA",
+          "kind": "component",
+          "footprint_candidate": "Resistor_SMD:R_0805_2012Metric",
+          "pins": {
+            "1": "P3V3_CH",
+            "2": "RELAY_DELAY_N"
+          },
+          "notes": "Pull-up for the open-drain delay output.",
+          "pin_names": {
+            "1": "1",
+            "2": "2"
+          },
+          "pin_types": {
+            "1": "passive",
+            "2": "passive"
+          }
+        },
+        {
+          "ref": "U102",
+          "value": "SN74LVC1G08",
+          "mpn": "SN74LVC1G08DBVR",
+          "kind": "component",
+          "footprint_candidate": "Package_TO_SOT_SMD:SOT-23-5",
+          "pins": {
+            "1": "ARMED",
+            "2": "RELAY_SETTLED",
+            "3": "MID_CH",
+            "4": "AMP_ARMED",
+            "5": "P3V3_CH"
+          },
+          "notes": "AND gate. ARMED low directly inhibits the amplifier without waiting for the delay IC. Output connects through existing R25 to OPA_ENABLE.",
+          "pin_names": {
+            "1": "A",
+            "2": "B",
+            "3": "GND",
+            "4": "Y",
+            "5": "VCC"
+          },
+          "pin_types": {
+            "1": "input",
+            "2": "input",
+            "3": "power_in",
+            "4": "output",
+            "5": "power_in"
+          }
+        },
+        {
+          "ref": "C101",
+          "value": "100n50V",
+          "mpn": "885012207098",
+          "kind": "component",
+          "footprint_candidate": "Capacitor_SMD:C_0805_2012Metric",
+          "pins": {
+            "1": "P3V3_CH",
+            "2": "MID_CH"
+          },
+          "notes": "Local U101 bypass. Nominal 100 nF; no guaranteed effective capacitance under all conditions is claimed.",
+          "manufacturer": "Wurth Elektronik",
+          "pin_names": {
+            "1": "1",
+            "2": "2"
+          },
+          "pin_types": {
+            "1": "passive",
+            "2": "passive"
+          }
+        },
+        {
+          "ref": "C102",
+          "value": "100n50V",
+          "mpn": "885012207098",
+          "kind": "component",
+          "footprint_candidate": "Capacitor_SMD:C_0805_2012Metric",
+          "pins": {
+            "1": "P3V3_CH",
+            "2": "MID_CH"
+          },
+          "notes": "Local U102 bypass. Nominal 100 nF; no guaranteed effective capacitance under all conditions is claimed.",
+          "manufacturer": "Wurth Elektronik",
+          "pin_names": {
+            "1": "1",
+            "2": "2"
+          },
+          "pin_types": {
+            "1": "passive",
+            "2": "passive"
+          }
+        },
+        {
+          "ref": "C103",
+          "value": "1u25V",
+          "mpn": "885382207003",
+          "kind": "component",
+          "footprint_candidate": "Capacitor_SMD:C_0805_2012Metric",
+          "pins": {
+            "1": "P5_CH",
+            "2": "MID_CH"
+          },
+          "notes": "Local coil-supply bypass. Route coil return separately from Kelvin MID paths. The regulated source must support the coil step; nominal 1 uF is not a supply hold-up guarantee.",
+          "manufacturer": "Wurth Elektronik",
+          "pin_names": {
+            "1": "1",
+            "2": "2"
+          },
+          "pin_types": {
+            "1": "passive",
+            "2": "passive"
+          }
+        },
+        {
+          "ref": "J101",
+          "value": "EXTERNAL_DUMMY_LOAD",
+          "mpn": "TBD_KEYED_1x02",
+          "kind": "component",
+          "footprint_candidate": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+          "pins": {
+            "1": "EXTERNAL_P",
+            "2": "EXTERNAL_N"
+          },
+          "notes": "Both external load leads disconnect. No MID or system-ground pin. No external sensing wire may bypass the relay. Connector selection remains a harness choice.",
+          "pin_names": {
+            "1": "1",
+            "2": "2"
+          },
+          "pin_types": {
+            "1": "passive",
+            "2": "passive"
+          }
+        },
+        {
+          "ref": "U103",
+          "value": "SN74LVC1G17",
+          "mpn": "SN74LVC1G17DBVR",
+          "manufacturer": "Texas Instruments",
+          "kind": "component",
+          "footprint_candidate": "Package_TO_SOT_SMD:SOT-23-5",
+          "pins": {
+            "1": null,
+            "2": "RELAY_DELAY_N",
+            "3": "MID_CH",
+            "4": "RELAY_SETTLED",
+            "5": "P3V3_CH"
+          },
+          "pin_names": {
+            "1": "NC",
+            "2": "A",
+            "3": "GND",
+            "4": "Y",
+            "5": "VCC"
+          },
+          "pin_types": {
+            "1": "no_connect",
+            "2": "input",
+            "3": "power_in",
+            "4": "output",
+            "5": "power_in"
+          },
+          "notes": "Schmitt buffer cleans the open-drain delay output before the standard CMOS AND input. Pinout verified against TI Rev Y, October 2025, DBV package."
+        },
+        {
+          "ref": "C104",
+          "value": "100n50V",
+          "mpn": "885012207098",
+          "manufacturer": "Wurth Elektronik",
+          "kind": "component",
+          "footprint_candidate": "Capacitor_SMD:C_0805_2012Metric",
+          "pins": {
+            "1": "P3V3_CH",
+            "2": "MID_CH"
+          },
+          "pin_names": {
+            "1": "1",
+            "2": "2"
+          },
+          "pin_types": {
+            "1": "passive",
+            "2": "passive"
+          },
+          "notes": "Local U103 bypass."
+        }
+      ],
+      "sequence": [
+        "FAULT_N low clears ARMED. The coil deenergizes and the AND gate forces AMP_ARMED low.",
+        "An explicit ARM edge after the core is healthy sets ARMED. The coil energizes immediately; AMP_ARMED remains low.",
+        "After a 12 to 28 ms delay, AMP_ARMED goes high. Relay operate time including bounce is 1 ms maximum under the manufacturer's stated conditions.",
+        "C1 qualifies a near-zero command when the ARM edge is accepted. Keep command zero throughout the 12 to 28 ms relay-settle delay and until amplifier enable. There is no independent continuous zero-command hold throughout this interval.",
+        "A new fault drives AMP_ARMED low without the turn-on delay. OPA462 disable is 4 microseconds typical. Actual relay release and coil-clamp transients require measurement."
+      ],
+      "validation_remaining": [
+        "Verify coil operate/release at actual regulated 5 V and temperature. The manufacturer's operate-time conditions must hold before comparing the 1 ms maximum to the 12 ms minimum delay.",
+        "Measure COIL_LOW peak below 26 V and actual relay release. No relay inductance or guaranteed TVS energy has been assumed. Keep the TVS, MOSFET and coil-return loop short.",
+        "Confirm OPA462 pin 1 COM connects to channel MID, as drawn in the supplied schematic. Do not rewire an existing correct connection. Confirm the ordered PCB by continuity.",
+        "Place a 10 kilohm E/D pulldown at the amplifier itself so detaching its enable wire forces off.",
+        "Open relay contacts do not discharge external stored charge. Any external bleeder changes the waveform and current budget and must be specified separately.",
+        "No additional 5 mA current limiter or 30 V physical clamp is implemented by this block.",
+        "Relay hole diameter and pad dimensions are selected manufacturing dimensions, not a manufacturer-specified land pattern. Verify the footprint print against an actual relay before assembly."
+      ],
+      "sources": [
+        "https://www.pickeringrelay.com/pdfs/104-high-voltage-sil-reed-relays.pdf",
+        "https://www.aosmd.com/res/data_sheets/AO3400A.pdf",
+        "https://www.vishay.com/doc?88390=",
+        "https://www.ti.com/lit/ds/symlink/tps3808.pdf",
+        "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf",
+        "https://www.we-online.com/components/products/datasheet/885012207098.pdf",
+        "https://www.we-online.com/components/products/datasheet/885382207003.pdf",
+        "https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf"
+      ]
+    }
+  ]
+}

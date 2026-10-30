@@ -1,0 +1,34 @@
+{
+  "status": "DUMMY_LOAD_BENCH_PROTOTYPE",
+  "parts": 73,
+  "connected_pins": 226,
+  "intentional_NC_pins": 29,
+  "pin_net_mismatches": [],
+  "tracks": 590,
+  "vias": 23,
+  "layers": 2,
+  "thickness_mm": 0.41116,
+  "outline_mm": [
+    125,
+    85
+  ],
+  "ERC_count": 0,
+  "DRC_count": 0,
+  "unconnected_count": 0,
+  "parity_count": 0,
+  "minimum_host_channel_projected_copper_gap_mm": 4.316202,
+  "minimum_gap_pair": [
+    {
+      "label": "filled ground plane",
+      "net": "/HOST_GND"
+    },
+    {
+      "label": "PCB_TRACK",
+      "net": "/HEARTBEAT"
+    }
+  ],
+  "minimum_gap_method": "Native KiCad copper shape collision search including named NC pads, tracks, vias and filled zones. All layers projected together; this is a geometry check, not assembled isolation certification.",
+  "PCB_sha256": "856394338fb938e03f5373823c8fe32235f669e620815f5b782545d33732f6b4",
+  "schematic_sha256": "cdc29b1aa7c227b3bba176e44244ce3acc5d21bf1011e8444cb3a313dfd377c4",
+  "source_sha256": "ea0d57f339f1cd475ae92e13e39ccc9eb720db8cb12230adc3a53302b515357b"
+}

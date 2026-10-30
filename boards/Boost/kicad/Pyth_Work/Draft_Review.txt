@@ -1,0 +1,42 @@
+BOOST ELECTRICAL BENCH PROTOTYPE — 2026-10-17
+
+Editable correction of the supplied LM5155 circuit: nominal12V to79.7V, conditional15mA bench target. The schematic is electrically frozen for the accompanying routed engineering prototype. PCB/Gerber validation is documented separately by the layout package. No converter performance, full-system operation or human-use suitability is established by an ERC/DRC pass.
+
+J1 replaces IN: pin1=ISO_12V_TO_BOTTOM; pin2=HV_BOTTOM. J2 replaces OUT: pin1=HV_TOP; pin2=HV_BOTTOM. GAPTEC2S7BE_0312S3U pin7 goes toJ1.1 and pin5 toJ1.2; pin6 is not a single-output connection. HV_BOTTOM is the boost return and rail-splitter negative input/Howland negative rail. HV_TOP is approximately79.7V above that return. Rail-splitter MID is the Howland/signal isolated ground and must not be tied to HV_BOTTOM. Channels remain separate isolated domains. PGOOD uses local VCC_BOOST near6.85V relative to HV_BOTTOM, so it is not a Pico3.3V or MID-referenced interface.
+
+The exact R/C part selections and primary evidence are in Draft_BOM.csv and BOM_Selection_Evidence.txt. All component footprints remain unchanged from the frozen electrical draft. R1=787k0.1% andR2=10k0.1% set79.7V nominal; reference/resistor corners give78.747–80.656V before temperature, load regulation, ripple and transients. R1 is a200V-rated1206 part. C5 is PanasonicEEUEE2C101S100uF160V105C,D16/P7.5/H20,maxbody16.5×22mm. Its lead fit is verified; high-frequency ESR/impedance remains a measurement condition. C1 is10u50V0805, C8 is100n250VX7T0805. Every resistor/capacitor has an exact MPN, but MLCC effective capacitances remain explicitly conditional; nominal ratings alone do not establish the calculations' assumed minima.
+
+R9=0.270ohm1% PanasonicERJ8BQFR27V replaces conflicting source metadata. R4=100ohm,R5=909ohm,C6=100pF; both resistors participate in slope compensation, so total series resistance is1009ohm. The filter time constant is10ns. R3=54.9k gives395.7kHz nominal. L1=BournsSRR1280-102K1mH10%,1.7ohm maximumDCR,0.68Arms,0.8A typical saturation at25%L drop. Rated/typical magnetics data are not a guaranteed inductance curve for this converter.
+
+Q1=onsemiFDMC86240,150V,maximum70mohm at6V gate drive. Physical sourcepins1/2/3,gate4,drain5/6/7/8 and common drain land are explicitly represented. The CASE511DH manufacturer copper pattern was checked:0.42×0.70mm source/gate lands at0.65mm pitch,0.42×0.45mm drain fingers and2.37×1.70mm common drain land. Side keepouts must remain at localx[-1.7,-1.185] and[1.185,1.7],y[-1.3,0.4]. DFM normalized their KiCad placement representation. Paste apertures are an engineering starting point, requiring assembler review. D1=Taiwan SemiconductorSS120200V1ASMA. These selections increase voltage margin; switch peaks and thermal performance are unmeasured.
+
+Design_Calculations.json records the proposed equations and assumptions. The10–16V input window is a controlled bench assumption, not a guaranteed range of the unregulated GAPTEC output. The module's input±10% specification does not specify its output envelope. Verify actual startup/light-load/loaded voltage.
+
+With0.72mH assumed minimum inductance,±15% frequency allowance,diode0.9V and stated resistor/slope endpoint allowances, required slope including20% design margin is16.26kV/s; analyzed available slope is21.01kV/s,ratio1.29. The fixed ramp is nominal and endpoint data are not guaranteed at thisRT, so this is a conditional margin check. Peak switch current is0.275A nominal at12V,0.215A for the stated high-duty corner, and0.400A in the zero-duty upper estimate before delays/overshoot. The10V ripple corner is37mApp. An assumed75% efficiency produces an18.3mA output-capacity estimate; this is neither a verified rating nor a precision output-current limit. LM5155 has no LM51551 hiccup mode, and the diode input-to-output path bypasses current limiting.
+
+C7=47uF16V10% with33uF effective acceptance target gives about3.99s commanded12V→79.7V rise. Nominal100uF charging requires1.70mA. The stated126.2uF bus-equivalent/11uA SS/33uF effectiveCSS/high-output corner requires3.39mA in addition to running load. Replace these assumptions with measured capacitances and actual downstream startup loading. Soft start does not limit initial diode charging from0V toward the input. R6=110k/R10=21.5k set9.17V nominal startup,8.32V fall; rising reference/resistor corners give8.57–9.80V. Operation below10V, although hysteresis permits it, is unvalidated.
+
+R8=191k,C3=47n,C2=68p are the provisional TypeII compensation network, with17.7Hz zero and12.25kHz pole. The simplified design targets500Hz crossover; at10V/15mA the estimatedRHP zero is13.0kHz. Real C5ESR, extra slope, discontinuous/light-load operation, active OPA455MID,OPA462 load and GAPTEC output impedance alter loop behavior. Measure loop gain or well-instrumented load/line steps, startup, shutdown and input interaction with final components. No phase/gain margin has been measured.
+
+UsingQ1's15nC maximum10V test charge as a planning budget gives5.94mA gate-drive current,0.071W bias allocation at12V,or0.109W at16V/high-frequency allowance. This is not total converter loss. A constant-Coss point estimate suggests another0.10–0.13W, but Coss varies with voltage and this is not an energy-loss bound. MeasureVCC/gate droop, switch ringing and temperatures. No85% efficiency claim is made.
+
+The confirmed200ohm preload dissipates0.72W at exactly12V, leaving at most1.28W of the GAPTEC2W output for boost input. A15mA×79.7V load alone requires93.40% conversion efficiency; the15mA bench target must not be advertised as a verified GAPTEC-powered rating. Illustrative75%/85% efficiencies allow12.05/13.65mA respectively. Actual preload power rises with output-voltage squared. Keep the confirmed preload baseline until module loading/regulation/startup are measured.
+
+For system planning at80V, oneOPA462 plus oneOPA455 at3.2mA typical each uses0.512W; the100k+100k midpoint divider adds0.032W. Using3.7mA each gives0.624W with divider. The conservative additional full-bus allocation80V×mean|Iout| gives0.255W for5mApeak sine or0.400W for5mA square/DC, with no capacitor-bypass credit. This implies roughly10–13mA bus draw before remaining loads and leaves narrow module margin. It is a power-budget inference, not a time-domain result. Four nominal200ohm preloads alone require2.88W,or0.873A ideal at3.3V; the existing sharedTPS63001 .8A design is insufficient before all other loads.
+
+Stopping switching leaves diode pass-through. C5 alone stores0.318J at79.7V. The797k feedback path gives79.7s nominal discharge time constant without other loads. Output disconnection, hardware discharge, fault handling and sequencing remain system design/validation tasks. The prototype does not establish safe-off behavior.
+
+Completed electrical checks: KiCad10.0.6 exports schematic/PDF/SVG/XML; ERC0;16net partitions/67nodes match source connectivity after reference mapping plus C8/C9 and explicit internally common Q1 pins. Twelve anonymous nets received explicit local labels; Net_Name_Map.json records the change and an exact partition comparison confirmed no topology change. All assigned footprints load with required pads. The rendered schematic was visually checked. PCB routing/DRC/fabrication checks are separate artifacts; these electrical checks do not prove regulation, stability, efficiency or insulation qualification.
+
+Independent rail audit: Rail_Independent_Audit.json records read-only verification of all32pad/pin mappings, criticalOPA455/EP/enable/MID topology,2layers and0.41116mm thickness. IndependentKiCadDRC returned0violations,0unconnected,0parity issues. Feedback correctly sensesBUF_RAW before49.9ohm;MID sits after it. Nominal20.2uF midpoint loading and49.9ohm require bench stability/load-step confirmation; at5mA DC the resistor alone drops0.2495V. Rail capacitors are100V, but actualbus/transient stress and thermal performance remain unmeasured. No new topology blocker was found.
+
+Primary design sources:
+https://www.ti.com/lit/ds/symlink/lm5155.pdf
+https://www.ti.com/mx/lit/pdf/snva824
+https://www.onsemi.com/download/data-sheet/pdf/fdmc86240-d.pdf
+https://www.onsemi.com/download/package-drawing/pdf/511dh.pdf
+https://www.bourns.com/docs/Product-Datasheets/SRR1280.pdf
+https://services.taiwansemi.com/storage/resources/datasheet/SS120_C2305.pdf
+https://gaptec-electronic.com/datenblaetter/2S7BE_3U.pdf
+https://www.ti.com/lit/ds/symlink/opa455.pdf
+https://www.ti.com/lit/ds/symlink/opa462.pdf

@@ -1,0 +1,161 @@
+(footprint "C0805"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
+	(tags "capacitor")
+	(property "Reference" "C1"
+		(at 0 -2 0)
+		(layer "F.SilkS")
+		(uuid "23830300-b960-4192-a760-62e2aa09ada6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "Value" "100n 100V"
+		(at 0 1.68 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "881ffff9-f686-447b-8a8f-5fb1e7a0be85")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c69c3eb8-785d-4375-8a93-c416517d021f")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "C6 direct full-bus local bypass; C1/C2 half-rail bypasses"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d201d0df-7124-43ef-bcd1-8e40237dac3e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "5c60799a-5ea4-44e4-8e69-5cd159e71cf2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Dielectric" "X7R"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "767530b1-23b1-4366-b982-b4710b74e925")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "C2012X7R2A104K125AA"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "9bd2d792-42c3-47c5-875a-dc0be27fadd4")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Manufacturer" "TDK"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "3996f783-f266-4bd2-bdc2-d8f4374ece1d")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1.7 -0.98)
+		(end 1.7 0.98)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "b79a7285-7342-4763-9e1c-a2e64c241157")
+	)
+	(fp_rect
+		(start -1 -0.625)
+		(end 1 0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "69dbc3b2-fa6e-427d-ad07-eace352e157f")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "4a6842b0-0437-4273-b57b-cab542954da7")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -0.95 0)
+		(size 1 1.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(clearance 0)
+		(uuid "ed43333e-863c-437d-944a-30c78574ed5a")
+	)
+	(pad "2" smd roundrect
+		(at 0.95 0)
+		(size 1 1.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(clearance 0)
+		(uuid "874070f8-6523-4921-89d7-e2cdb965c66a")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

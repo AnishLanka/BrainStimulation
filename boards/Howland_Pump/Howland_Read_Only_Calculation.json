@@ -1,0 +1,343 @@
+{
+  "scope": "Original C:/Users/peter/Downloads/HowlandPump-AnishWork.kicad_sch, freshly exported; unchanged.",
+  "source_sha256": "0afacd19144895e19be0b6325c56c05c6384847d03a774d3cd594d9f049bfffa",
+  "values": {
+    "C1": "30pF",
+    "C2": "100nF",
+    "C3": "100nF",
+    "J1": "Conn_01x03",
+    "J2": "Conn_01x02",
+    "R1": "100K",
+    "R2": "9.1K",
+    "R4": "200",
+    "R5": "100K",
+    "R6": "100K",
+    "R7": "9.1K",
+    "R8": "9.1K",
+    "R9": "9.1K",
+    "R10": "9.1K",
+    "R11": "20K",
+    "R12": "30K",
+    "R13": "300",
+    "Rload1": "2K",
+    "U1": "OPA462IDDA"
+  },
+  "nets": {
+    "+40": [
+      [
+        "C2",
+        "1",
+        null
+      ],
+      [
+        "J1",
+        "1",
+        "Pin_1_1"
+      ],
+      [
+        "U1",
+        "7",
+        "V+_7"
+      ]
+    ],
+    "-40": [
+      [
+        "C3",
+        "2",
+        null
+      ],
+      [
+        "J1",
+        "3",
+        "Pin_3_3"
+      ],
+      [
+        "U1",
+        "4",
+        "V-_4"
+      ],
+      [
+        "U1",
+        "9",
+        "PowerPAD_9"
+      ]
+    ],
+    "GND": [
+      [
+        "C1",
+        "2",
+        null
+      ],
+      [
+        "C2",
+        "2",
+        null
+      ],
+      [
+        "C3",
+        "1",
+        null
+      ],
+      [
+        "J1",
+        "2",
+        "Pin_2_2"
+      ],
+      [
+        "J2",
+        "2",
+        "Pin_2_2"
+      ],
+      [
+        "R6",
+        "1",
+        null
+      ],
+      [
+        "Rload1",
+        "1",
+        null
+      ],
+      [
+        "U1",
+        "1",
+        "E_D_Com_1"
+      ]
+    ],
+    "Net-(J2-Pin_1)": [
+      [
+        "J2",
+        "1",
+        "Pin_1_1"
+      ],
+      [
+        "R1",
+        "1",
+        null
+      ]
+    ],
+    "Net-(R2-Pad1)": [
+      [
+        "R2",
+        "1",
+        null
+      ],
+      [
+        "R7",
+        "2",
+        null
+      ]
+    ],
+    "Net-(R2-Pad2)": [
+      [
+        "R2",
+        "2",
+        null
+      ],
+      [
+        "R4",
+        "1",
+        null
+      ],
+      [
+        "Rload1",
+        "2",
+        null
+      ]
+    ],
+    "Net-(R7-Pad1)": [
+      [
+        "R7",
+        "1",
+        null
+      ],
+      [
+        "R8",
+        "2",
+        null
+      ]
+    ],
+    "Net-(R8-Pad1)": [
+      [
+        "R8",
+        "1",
+        null
+      ],
+      [
+        "R9",
+        "2",
+        null
+      ]
+    ],
+    "Net-(R10-Pad1)": [
+      [
+        "R10",
+        "1",
+        null
+      ],
+      [
+        "R11",
+        "2",
+        null
+      ]
+    ],
+    "Net-(R10-Pad2)": [
+      [
+        "R10",
+        "2",
+        null
+      ],
+      [
+        "R9",
+        "1",
+        null
+      ]
+    ],
+    "Net-(R11-Pad1)": [
+      [
+        "R11",
+        "1",
+        null
+      ],
+      [
+        "R12",
+        "2",
+        null
+      ]
+    ],
+    "Net-(R13-Pad1)": [
+      [
+        "R13",
+        "1",
+        null
+      ],
+      [
+        "R4",
+        "2",
+        null
+      ]
+    ],
+    "Net-(U1-+IN)": [
+      [
+        "R1",
+        "2",
+        null
+      ],
+      [
+        "R12",
+        "1",
+        null
+      ],
+      [
+        "U1",
+        "3",
+        "+IN_3"
+      ]
+    ],
+    "Net-(U1--IN)": [
+      [
+        "R5",
+        "1",
+        null
+      ],
+      [
+        "R6",
+        "2",
+        null
+      ],
+      [
+        "U1",
+        "2",
+        "-IN_2"
+      ]
+    ],
+    "Net-(U1-E_D)": [
+      [
+        "C1",
+        "1",
+        null
+      ],
+      [
+        "U1",
+        "8",
+        "E_D_8"
+      ]
+    ],
+    "Net-(U1-OUT)": [
+      [
+        "R13",
+        "2",
+        null
+      ],
+      [
+        "R5",
+        "2",
+        null
+      ],
+      [
+        "U1",
+        "6",
+        "OUT_6"
+      ]
+    ],
+    "unconnected-(U1-Status_Flag-Pad5)": [
+      [
+        "U1",
+        "5",
+        "Status_Flag_5"
+      ]
+    ]
+  },
+  "pinout_primary_source": "https://www.ti.com/lit/ds/symlink/opa462.pdf",
+  "ideal_linear_model": {
+    "assumptions": [
+      "Infinite op-amp gain and input impedance, linear unsaturated low-frequency operation, exact nominal resistors.",
+      "Iload includes all current leaving the output node into onboard and external loads; it excludes current into the positive-feedback chain."
+    ],
+    "Vin_to_noninverting_R_ohm": 100000.0,
+    "positive_feedback_R_ohm": 95500.0,
+    "output_sense_R_ohm": 500.0,
+    "negative_feedback_gain": 2.0,
+    "noninverting_voltage_equation": "Vp=(Rb*Vin+Ra*Vload)/(Ra+Rb)",
+    "opamp_output_equation": "Vo=2*Vp",
+    "load_current_equation": "Iload=(Vo-Vload)/Rs-(Vload-Vp)/Rb = g*Vin+h*Vload",
+    "g_A_per_V": 0.001959079283887468,
+    "h_A_per_V": 4.092071611253197e-05,
+    "incremental_output_resistance_ohm": -24437.499999999996,
+    "balanced_condition": "Ra=Rb+Rs",
+    "condition_actual_difference_ohm": 4000.0,
+    "load_dependence_examples_mA_per_V": {
+      "0": 1.959079283887468,
+      "500": 2.0,
+      "1000": 2.0426666666666664,
+      "2000": 2.1337047353760443,
+      "5000": 2.463022508038585,
+      "10000": 3.3160173160173163
+    }
+  },
+  "unchanged_onboard_load_and_monitor_example": {
+    "external_port_V": 30.0,
+    "external_current_A": 0.005,
+    "monitor_return_shunt_ohm": 100.0,
+    "internal_P_to_MID_V": 30.5,
+    "onboard_2k_current_A": 0.01525,
+    "required_OPA_output_V": 40.67819843342036,
+    "positive_rail_V": 40.0,
+    "finding": "Required amplifier voltage exceeds +40 V even with ideal zero headroom. Simultaneous 30 V/5 mA external operation is unavailable if the onboard 2 kohm load remains fitted in this topology.",
+    "qualification": "Calculation does not establish the actual ordered PCB population. No Howland board/BOM alteration is requested or performed."
+  },
+  "slew_rate": {
+    "official_datasheet_typical_V_per_us": 32.0,
+    "guaranteed_minimum_provided": false,
+    "port_sine_40kHz_30Vpeak_required_V_per_us": 7.5398223686155035
+  },
+  "assembly_clarification": {
+    "Rload1_population": "DNP; user confirmed schematic test placeholder will not be populated",
+    "external_dummy_load_ohm": [
+      2000,
+      5000
+    ],
+    "parallel_load_headroom_finding_applies_to_intended_assembly": false,
+    "note": "Hypothetical fitted-load calculation retained as conditional evidence, withdrawn as a current assembly concern. No Howland design changes."
+  }
+}

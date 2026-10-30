@@ -1,0 +1,25 @@
+Drill report for SignalGen_Electrical_Draft.kicad_pcb
+Created on 2026-10-17T14:53:26
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'SignalGen_Electrical_Draft-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.300mm  0.0118"  (47 holes))
+    T2  0.720mm  0.0283"  (10 holes))
+    T3  1.016mm  0.0400"  (14 holes))
+    T4  1.397mm  0.0550"  (6 holes))
+
+    Total plated holes count 77
+
+
+Drill file 'SignalGen_Electrical_Draft-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0

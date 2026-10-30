@@ -1,0 +1,1333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\peter\Documents\Codex\2026-10-17\this\outputs\StimPrototype_Integration\boost_draft\Boost_Electrical_Draft.kicad_sch</source>
+    <date>2026-10-17T14:52:01</date>
+    <tool>Eeschema 10.0.6</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>12 V to 79.7 V boost — engineering bench prototype</title>
+        <company/>
+        <rev>DRAFT1</rev>
+        <date>2026-10-17</date>
+        <source>Boost_Electrical_Draft.kicad_sch</source>
+        <comment number="1" value="Bench prototype - compensation and integrated loading require validation"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>10u 50V</value>
+      <footprint>BoostDraft:C0805</footprint>
+      <datasheet>https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X5R1H106K125AC</datasheet>
+      <description>Input ceramic; effective4.7uF at16V is a bench acceptance target, not a verified manufacturer minimum</description>
+      <fields>
+        <field name="Function_Name">CIN</field>
+        <field name="Dielectric">X5R</field>
+        <field name="Function">Input ceramic; effective4.7uF at16V is a bench acceptance target, not a verified manufacturer minimum</field>
+        <field name="Manufacturer">TDK</field>
+        <field name="MPN">C2012X5R1H106K125AC</field>
+        <field name="Rating">0805;10uF10%;50V;-55 to85C</field>
+        <field name="Footprint">BoostDraft:C0805</field>
+        <field name="Datasheet">https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X5R1H106K125AC</field>
+        <field name="Description">Input ceramic; effective4.7uF at16V is a bench acceptance target, not a verified manufacturer minimum</field>
+      </fields>
+      <libsource lib="BoostDraftSymbols" part="CAP-NP-2" description="Soft-start; effective minimum33uF over0-1V after bias,tolerance,temp; exact MPN pending"/>
+      <property name="Function_Name" value="CIN"/>
+      <property name="Dielectric" value="X5R"/>
+      <property name="Function" value="Input ceramic; effective4.7uF at16V is a bench acceptance target, not a verified manufacturer minimum"/>
+      <property name="Manufacturer" value="TDK"/>
+      <property name="MPN" value="C2012X5R1H106K125AC"/>
+      <property name="Rating" value="0805;10uF10%;50V;-55 to85C"/>
+      <property name="Sheetname" value="Boost_Electrical_Draft"/>
+      <property name="Sheetfile" value="Boost_Electrical_Draft.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>359d1e62-b181-4eaa-993f-1372ac0d5181</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>68p 50V</value>
+      <footprint>BoostDraft:C0603</footprint>
+      <datasheet>https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608C0G1H680J080AA</datasheet>
+      <description>Provisional compensation HF pole; verify loop</description>
+      <fields>
+        <field name="Function_Name">CHF</field>
+        <field name="Dielectric">C0G</field>
+        <field name="Function">Provisional compensation HF pole; verify loop</field>
+        <field name="Manufacturer">TDK</field>
+        <field name="MPN">C1608C0G1H680J080AA</field>
+        <field name="Rating">0603;68pF5%;50V</field>
+        <field name="Footprint">BoostDraft:C0603</field>
+        <field name="Datasheet">https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608C0G1H680J080AA</field>
+        <field name="Description">Provisional compensation HF pole; verify loop</field>
+      </fields>
+      <libsource lib="BoostDraftSymbols" part="b4654b650e69147ec39a6b967a45e02_1" description="Provisional compensation HF pole 12.25kHz"/>
+      <property name="Function_Name" value="CHF"/>
+      <property name="Dielectric" value="C0G"/>
+      <property name="Function" value="Provisional compensation HF pole; verify loop"/>
+      <property name="Manufacturer" value="TDK"/>
+      <property name="MPN" value="C1608C0G1H680J080AA"/>
+      <property name="Rating" value="0603;68pF5%;50V"/>
+      <property name="Sheetname" value="Boost_Electrical_Draft"/>
+      <property name="Sheetfile" value="Boost_Electrical_Draft.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9582caf0-fb82-4a65-984a-ac7ebb707f00</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>47n 50V</value>
+      <footprint>BoostDraft:C0603</footprint>
+      <datasheet>https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H473K080AA</datasheet>
+      <description>Provisional compensation zero; verify loop</description>
+      <fields>
+        <field name="Function_Name">CCOMP</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Function">Provisional compensation zero; verify loop</field>
+        <field name="Manufacturer">TDK</field>
+        <field name="MPN">C1608X7R1H473K080AA</field>
+        <field name="Rating">0603;47nF10%;50V</field>
+        <field name="Footprint">BoostDraft:C0603</field>
+        <field name="Datasheet">https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H473K080AA</field>
+        <field name="Description">Provisional compensation zero; verify loop</field>
+      </fields>
+      <libsource lib="BoostDraftSymbols" part="b4654b650e69147ec39a6b967a45e02" description="Provisional compensation zero17.7Hz"/>
+      <property name="Function_Name" value="CCOMP"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Function" value="Provisional compensation zero; verify loop"/>
+      <property name="Manufacturer" value="TDK"/>
+      <property name="MPN" value="C1608X7R1H473K080AA"/>
+      <property name="Rating" value="0603;47nF10%;50V"/>
+      <property name="Sheetname" value="Boost_Electrical_Draft"/>
+      <property name="Sheetfile" value="Boost_Electrical_Draft.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a6917b1a-8c70-4547-947c-9d683b03a826</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4">
+      <value>2.2u 25V</value>
+      <footprint>BoostDraft:C0805</footprint>
+      <datasheet>https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X7R1E225K125AB</datasheet>
+      <description>VCC bypass; effective1uF at6.85V is a bench acceptance target, not a verified manufacturer minimum</description>
+      <fields>
+        <field name="Function_Name">CVCC</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Function">VCC bypass; effective1uF at6.85V is a bench acceptance target, not a verified manufacturer minimum</field>
+        <field name="Manufacturer">TDK</field>
+        <field name="MPN">C2012X7R1E225K125AB</field>
+        <field name="Rating">0805;2.2uF10%;25V</field>
+        <field name="Footprint">BoostDraft:C0805</field>
+        <field name="Datasheet">https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X7R1E225K125AB</field>
+        <field name="Description">VCC bypass; effective1uF at6.85V is a bench acceptance target, not a verified manufacturer minimum</field>
+      </fields>
+      <libsource lib="BoostDraftSymbols" part="CAP-NP-2" description="Soft-start; effective minimum33uF over0-1V after bias,tolerance,temp; exact MPN pending"/>
+      <property name="Function_Name" value="CVCC"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Function" value="VCC bypass; effective1uF at6.85V is a bench acceptance target, not a verified manufacturer minimum"/>
+      <property name="Manufacturer" value="TDK"/>
+      <property name="MPN" value="C2012X7R1E225K125AB"/>
+      <property name="Rating" value="0805;2.2uF10%;25V"/>
+      <property name="Sheetname" value="Boost_Electrical_Draft"/>
+      <property name="Sheetfile" value="Boost_Electrical_Draft.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c5be0978-d3b6-47cb-8fb3-b07b1e5d706a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C5">
+      <value>100u 160V</value>
+      <footprint>BoostDraft:C_BULK</footprint>
+      <datasheet>https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/RDF0000C1270.pdf</datasheet>
+      <description>Bulk output;10000h105C;1700mArms100kHz105C;maxbody16.5x22mm;verify actual HF ESR</description>
+      <fields>
+        <field name="Function_Name">COUT</field>
+        <field name="Function">Bulk output;10000h105C;1700mArms100kHz105C;maxbody16.5x22mm;verify actual HF ESR</field>
+        <field name="Rating">100uF20%;160V;105C;D16mm;H20mm;P7.5mm;lead0.8mm</field>
+        <field name="Manufacturer">Panasonic</field>
+        <field name="MPN">EEUEE2C101S</field>
+        <field name="Dielectric">Aluminum electrolytic</field>
+        <field name="Footprint">BoostDraft:C_BULK</field>
+        <field name="Datasheet">https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/RDF0000C1270.pdf</field>
+        <field name="Description">Bulk output;10000h105C;1700mArms100kHz105C;maxbody16.5x22mm;verify actual HF ESR</field>
+      </fields>
+      <libsource lib="BoostDraftSymbols" part="CAP-P-2" description="Bulk output;100uF +/-20%;ESR/ripple and exact MPN pending"/>
+      <property name="Function_Name" value="COUT"/>
+      <property name="Function" value="Bulk output;10000h105C;1700mArms100kHz105C;maxbody16.5x22mm;verify actual HF ESR"/>
+      <property name="Rating" value="100uF20%;160V;105C;D16mm;H20mm;P7.5mm;lead0.8mm"/>
+      <property name="Manufacturer" value="Panasonic"/>
+      <property name="MPN" value="EEUEE2C101S"/>
+      <property name="Dielectric" value="Aluminum electrolytic"/>
+      <property name="Sheetname" value="Boost_Electrical_Draft"/>
+      <property name="Sheetfile" value="Boost_Electrical_Draft.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ce6fbe9f-a83d-432d-9bdf-7e4ad710d136</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C6">
+      <value>100p 50V</value>
+      <footprint>BoostDraft:C0603</footprint>
+      <datasheet>https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608C0G1H101J080AA</datasheet>
+      <description>Current-sense filter</description>
+      <fields>
+        <field name="Function_Name">CFILT</field>
+        <field name="Dielectric">C0G</field>
+        <field name="Function">Current-sense filter</field>
+        <field name="Manufacturer">TDK</field>
+        <field name="MPN">C1608C0G1H101J080AA</field>
+        <field name="Rating">0603;100pF5%;50V</field>
+        <field name="Footprint">BoostDraft:C0603</field>
+        <field name="Datasheet">https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608C0G1H101J080AA</field>
+        <field name="Description">Current-sense filter</field>
+      </fields>
+      <libsource lib="BoostDraftSymbols" part="CAP-NP-2_1" description="Sense filter"/>
+      <property name="Function_Name" value="CFILT"/>
+      <property name="Dielectric" value="C0G"/>
+      <property name="Function" value="Current-sense filter"/>
+      <property name="Manufacturer" value="TDK"/>
+      <property name="MPN" value="C1608C0G1H101J080AA"/>
+      <property name="Rating" value="0603;100pF5%;50V"/>
+      <property name="Sheetname" value="Boost_Electrical_Draft"/>
+      <property name="Sheetfile" value="Boost_Electrical_Draft.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>de017cfc-8259-4c61-9344-5fb826a834e8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C7">
+      <value>47u 16V</value>
+      <footprint>BoostDraft:C1210</footprint>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER61C476KE15-01A.pdf</datasheet>
+      <description>Soft-start;effective33uF over0-1V is a bench acceptance target after tolerance,temp,bias,aging</description>
+      <fields>
+        <field name="Function_Name">CSS</field>
+        <field name="Dielectric">X5R</field>
+        <field name="Function">Soft-start;effective33uF over0-1V is a bench acceptance target after tolerance,temp,bias,aging</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="MPN">GRM32ER61C476KE15L</field>
+        <field name="Rating">1210;47uF10%;16V;-55 to85C</field>
+        <field name="Footprint">BoostDraft:C1210</field>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER61C476KE15-01A.pdf</field>
+        <field name="Description">Soft-start;effective33uF over0-1V is a bench acceptance target after tolerance,temp,bias,aging</field>
+      </fields>
+      <libsource lib="BoostDraftSymbols" part="CAP-NP-2" description="Soft-start; effective minimum33uF over0-1V after bias,tolerance,temp; exact MPN pending"/>
+      <property name="Function_Name" value="CSS"/>
+      <property name="Dielectric" value="X5R"/>
+      <property name="Function" value="Soft-start;effective33uF over0-1V is a bench acceptance target after tolerance,temp,bias,aging"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="MPN" value="GRM32ER61C476KE15L"/>
+      <property name="Rating" value="1210;47uF10%;16V;-55 to85C"/>
+      <property name="Sheetname" value="Boost_Electrical_Draft"/>
+      <property name="Sheetfile" value="Boost_Electrical_Draft.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>efc82f4f-bf97-49ae-8ecd-ea24f7280ab1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C8">
+      <value>100n 250V</value>
+      <footprint>BoostDraft:C0805</footprint>
+      <datasheet>https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X7T2E104K125AA</datasheet>
+      <description>HF output bypass; effectiveC at79.7V not guaranteed by nominal rating; verify ripple</description>
+      <fields>
+        <field name="Function">HF output bypass; effectiveC at79.7V not guaranteed by nominal rating; verify ripple</field>
+        <field name="Dielectric">X7T (+22/-33% temp)</field>
+        <field name="Manufacturer">TDK</field>
+        <field name="MPN">C2012X7T2E104K125AA</field>
+        <field name="Rating">0805;100nF10%;250V</field>
+        <field name="Footprint">BoostDraft:C0805</field>
+        <field name="Datasheet">https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X7T2E104K125AA</field>
+        <field name="Description">HF output bypass; effectiveC at79.7V not guaranteed by nominal rating; verify ripple</field>
+      </fields>
+      <libsource lib="BoostDraftSymbols" part="C" description="Unpolarized capacitor"/>
+      <property name="Function" value="HF output bypass; effectiveC at79.7V not guaranteed by nominal rating; verify ripple"/>
+      <property name="Dielectric" value="X7T (+22/-33% temp)"/>
+      <property name="Manufacturer" value="TDK"/>
+      <property name="MPN" value="C2012X7T2E104K125AA"/>
+      <property name="Rating" value="0805;100nF10%;250V"/>
+      <property name="Sheetname" value="Boost_Electrical_Draft"/>
+      <property name="Sheetfile" value="Boost_Electrical_Draft.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1f6ccdf8-34c7-47c0-aab9-e5ffd9a60ecb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C9">
+      <value>47u 25V</value>
+      <footprint>BoostDraft:C1210</footprint>
+      <datasheet>https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=MSAST32MAB5476MPNDT1&amp;u=M</datasheet>
+      <description>Input bulk;effective22uF at16V is a bench acceptance target, not a verified manufacturer minimum</description>
+      <fields>
+        <field name="Function">Input bulk;effective22uF at16V is a bench acceptance target, not a verified manufacturer minimum</field>
+        <field name="Dielectric">X5R</field>
+        <field name="Manufacturer">Taiyo Yuden</field>
+        <field name="MPN">MSAST32MAB5476MPNDT1</field>
+        <field name="Rating">1210;47uF20%;25V;-55 to85C</field>
+        <field name="Footprint">BoostDraft:C1210</field>
+        <field name="Datasheet">https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=MSAST32MAB5476MPNDT1&amp;u=M</field>
+        <field name="Description">Input bulk;effective22uF at16V is a bench acceptance target, not a verified manufacturer minimum</field>
+      </fields>
+      <libsource lib="BoostDraftSymbols" part="C" description="Unpolarized capacitor"/>
+      <property name="Function" value="Input bulk;effective22uF at16V is a bench acceptance target, not a verified manufacturer minimum"/>
+      <property name="Dielectric" value="X5R"/>
+      <property name="Manufacturer" value="Taiyo Yuden"/>
+      <property name="MPN" value="MSAST32MAB5476MPNDT1"/>
+      <property name="Rating" value="1210;47uF20%;25V;-55 to85C"/>
+      <property name="Sheetname" value="Boost_Electrical_Draft"/>
+      <property name="Sheetfile" value="Boost_Electrical_Draft.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c731be2f-6f7d-4ace-ab85-7e6dbf8fc1ec</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D1">
+      <value>SS120 200V</value>
+      <footprint>BoostDraft:D_SMA</footprint>
+      <datasheet>https://services.taiwansemi.com/storage/resources/datasheet/SS120_C2305.pdf</datasheet>
+      <description>200V,1A Schottky; verify order suffix</description>
+      <fields>
+        <field name="Function_Name">D1</field>
+        <field name="MPN">SS120</field>
+        <field name="Manufacturer">Taiwan Semiconductor</field>
+        <field name="Rating">200V,1A Schottky; verify order suffix</field>
+        <field name="Footprint">BoostDraft:D_SMA</field>
+        <field name="Datasheet">https://services.taiwansemi.com/storage/resources/datasheet/SS120_C2305.pdf</field>
+        <field name="Description">200V,1A Schottky; verify order suffix</field>
+      </fields>
+      <libsource lib="BoostDraftSymbols" part="ONSC-D-K1A2-2_A" description="200V,1A Schottky; verify order suffix"/>
+      <property name="Function_Name" value="D1"/>
+      <property name="MPN" value="SS120"/>
+      <property name="Manufacturer" value="Taiwan Semiconductor"/>
+      <property name="Rating" value="200V,1A Schottky; verify order suffix"/>
+      <property name="Sheetname" value="Boost_Electrical_Draft"/>
+      <property name="Sheetfile" value="Boost_Electrical_Draft.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>77e47eeb-4d53-4ab5-a599-2a2fa77b0ab0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>12V INPUT</value>
+      <footprint>BoostDraft:IN_FP-TSW-102-14-G-S-MFG</footprint>
+      <description>1=ISO_12V_TO_BOTTOM;2=HV_BOTTOM; source connector remains provisional</description>
+      <fields>
+        <field name="Function_Name">IN</field>
+        <field name="Function">1=ISO_12V_TO_BOTTOM;2=HV_BOTTOM; source connector remains provisional</field>
+        <field name="Footprint">BoostDraft:IN_FP-TSW-102-14-G-S-MFG</field>
+        <field name="Datasheet"/>
+        <field name="Description">1=ISO_12V_TO_BOTTOM;2=HV_BOTTOM; source connector remains provisional</field>
+      </fields>
+      <libsource lib="BoostDraftSymbols" part="88c1139f9d239099ffebecbe3f7647a" description="1=ISO_12V_TO_BOTTOM;2=HV_BOTTOM; source connector remains provisional"/>
+      <property name="Function_Name" value="IN"/>
+      <property name="Function" value="1=ISO_12V_TO_BOTTOM;2=HV_BOTTOM; source connector remains provisional"/>
+      <property name="Sheetname" value="Boost_Electrical_Draft"/>
+      <property name="Sheetfile" value="Boost_Electrical_Draft.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b2f740d6-424e-4853-b6d7-e457ee90c3c7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J2">
+      <value>80V OUTPUT</value>
+      <footprint>BoostDraft:OUT_FP-TSW-102-14-G-S-MFG</footprint>
+      <description>1=HV_TOP;2=HV_BOTTOM; source connector remains provisional</description>
+      <fields>
+        <field name="Function_Name">OUT</field>
+        <field name="Function">1=HV_TOP;2=HV_BOTTOM; source connector remains provisional</field>
+        <field name="Footprint">BoostDraft:OUT_FP-TSW-102-14-G-S-MFG</field>
+        <field name="Datasheet"/>
+        <field name="Description">1=HV_TOP;2=HV_BOTTOM; source connector remains provisional</field>
+      </fields>
+      <libsource lib="BoostDraftSymbols" part="88c1139f9d239099ffebecbe3f7647a_1" description="1=HV_TOP;2=HV_BOTTOM; source connector remains provisional"/>
+      <property name="Function_Name" value="OUT"/>
+      <property name="Function" value="1=HV_TOP;2=HV_BOTTOM; source connector remains provisional"/>
+      <property name="Sheetname" value="Boost_Electrical_Draft"/>
+      <property name="Sheetfile" value="Boost_Electrical_Draft.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ac31dbc0-2d95-4bc8-bf1c-924e3d90f6f1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L1">
+      <value>1mH SRR1280-102K</value>
+      <footprint>BoostDraft:L_BOURNS</footprint>
+      <datasheet>https://www.bourns.com/docs/Product-Datasheets/SRR1280.pdf</datasheet>
+      <description>1mH10%;DCR1.7ohm max;Irms0.68A;Isat0.80A typ at25%Ldrop</description>
+      <fields>
+        <field name="Function_Name">LM</field>
+        <field name="MPN">SRR1280-102K</field>
+        <field name="Manufacturer">Bourns</field>
+        <field name="Rating">1mH10%;DCR1.7ohm max;Irms0.68A;Isat0.80A typ at25%Ldrop</field>
+        <field name="Footprint">BoostDraft:L_BOURNS</field>
+        <field name="Datasheet">https://www.bourns.com/docs/Product-Datasheets/SRR1280.pdf</field>
+        <field name="Description">1mH10%;DCR1.7ohm max;Irms0.68A;Isat0.80A typ at25%Ldrop</field>
+      </fields>
+      <libsource lib="BoostDraftSymbols" part="VLS6045EX-151M" description="1mH10%;DCR1.7ohm max;Irms0.68A;Isat0.80A typ at25%Ldrop"/>
+      <property name="Function_Name" value="LM"/>
+      <property name="MPN" value="SRR1280-102K"/>
+      <property name="Manufacturer" value="Bourns"/>
+      <property name="Rating" value="1mH10%;DCR1.7ohm max;Irms0.68A;Isat0.80A typ at25%Ldrop"/>
+      <property name="Sheetname" value="Boost_Electrical_Draft"/>
+      <property name="Sheetfile" value="Boost_Electrical_Draft.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>638c17d4-1bc6-492b-b16b-1a32011bb925</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q1">
+      <value>FDMC86240</value>
+      <footprint>BoostDraft:Q_FDMC86240_CASE511DH</footprint>
+      <datasheet>https://www.onsemi.com/download/data-sheet/pdf/fdmc86240-d.pdf</datasheet>
+      <description>S1/2/3,G4,D5/6/7/8; verified CASE511DH copper lands; EP common with D</description>
+      <fields>
+        <field name="Function_Name">Q1</field>
+        <field name="MPN">FDMC86240</field>
+        <field name="Manufacturer">onsemi</field>
+        <field name="Rating">150V;RDS(on) 70mohm max at VGS 6V; WDFN-8 CASE511DH</field>
+        <field name="Function">S1/2/3,G4,D5/6/7/8; verified CASE511DH copper lands; EP common with D</field>
+        <field name="Footprint">BoostDraft:Q_FDMC86240_CASE511DH</field>
+        <field name="Datasheet">https://www.onsemi.com/download/data-sheet/pdf/fdmc86240-d.pdf</field>
+        <field name="Description">S1/2/3,G4,D5/6/7/8; verified CASE511DH copper lands; EP common with D</field>
+      </fields>
+      <libsource lib="BoostDraftSymbols" part="SQJA70EP-T1_GE3" description="S1/2/3,G4,D5/6/7/8; verified CASE511DH copper lands; EP common with D"/>
+      <property name="Function_Name" value="Q1"/>
+      <property name="MPN" value="FDMC86240"/>
+      <property name="Manufacturer" value="onsemi"/>
+      <property name="Rating" value="150V;RDS(on) 70mohm max at VGS 6V; WDFN-8 CASE511DH"/>
+      <property name="Function" value="S1/2/3,G4,D5/6/7/8; verified CASE511DH copper lands; EP common with D"/>
+      <property name="Sheetname" value="Boost_Electrical_Draft"/>
+      <property name="Sheetfile" value="Boost_Electrical_Draft.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3ea5de4a-5da1-4a70-98b5-a150b827a1c4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>787k 0.1%</value>
+      <footprint>BoostDraft:R1206</footprint>
+      <datasheet>https://www.vishay.com/docs/28758/tnpw_e3.pdf</datasheet>
+      <description>Upper feedback;78.7V nominal stress;79.7V nominal output</description>
+      <fields>
+        <field name="Function_Name">RFBT</field>
+        <field name="Rating">1206; 200V working; at least 0.25W; 0.1%;25ppm/K</field>
+        <field name="Function">Upper feedback;78.7V nominal stress;79.7V nominal output</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="MPN">TNPW1206787KBEEA</field>
+        <field name="Footprint">BoostDraft:R1206</field>
+        <field name="Datasheet">https://www.vishay.com/docs/28758/tnpw_e3.pdf</field>
+        <field name="Description">Upper feedback;78.7V nominal stress;79.7V nominal output</field>
+      </fields>
+      <libsource lib="BoostDraftSymbols" part="RES_2" description="Upper feedback;79V nominal stress; exact MPN pending"/>
+      <property name="Function_Name" value="RFBT"/>
+      <property name="Rating" value="1206; 200V working; at least 0.25W; 0.1%;25ppm/K"/>
+      <property name="Function" value="Upper feedback;78.7V nominal stress;79.7V nominal output"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="MPN" value="TNPW1206787KBEEA"/>
+      <property name="Sheetname" value="Boost_Electrical_Draft"/>
+      <property name="Sheetfile" value="Boost_Electrical_Draft.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0ca5f266-45e8-438a-8d1e-857e0d67e555</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>10k 0.1%</value>
+      <footprint>BoostDraft:R0603</footprint>
+      <datasheet>https://www.vishay.com/docs/28758/tnpw_e3.pdf</datasheet>
+      <description>Lower feedback;79.7V nominal setpoint</description>
+      <fields>
+        <field name="Function_Name">RFBB</field>
+        <field name="Rating">0603;100V working;at least0.1W;0.1%;25ppm/K</field>
+        <field name="Function">Lower feedback;79.7V nominal setpoint</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="MPN">TNPW060310K0BEEA</field>
+        <field name="Footprint">BoostDraft:R0603</field>
+        <field name="Datasheet">https://www.vishay.com/docs/28758/tnpw_e3.pdf</field>
+        <field name="Description">Lower feedback;79.7V nominal setpoint</field>
+      </fields>
+      <libsource lib="BoostDraftSymbols" part="1029c3af85768c4190bb7ad29bc67b5_3" description="Lower feedback;80.0V nominal setpoint; exact MPN pending"/>
+      <property name="Function_Name" value="RFBB"/>
+      <property name="Rating" value="0603;100V working;at least0.1W;0.1%;25ppm/K"/>
+      <property name="Function" value="Lower feedback;79.7V nominal setpoint"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="MPN" value="TNPW060310K0BEEA"/>
+      <property name="Sheetname" value="Boost_Electrical_Draft"/>
+      <property name="Sheetfile" value="Boost_Electrical_Draft.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2c89b636-f081-4d09-a66b-902fb0699b26</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>54.9k 1%</value>
+      <footprint>BoostDraft:R0603</footprint>
+      <datasheet>https://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <description>Frequency395.67kHz nominal</description>
+      <fields>
+        <field name="Function_Name">RT</field>
+        <field name="Function">Frequency395.67kHz nominal</field>
+        <field name="MPN">CRCW060354K9FKEA</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="Rating">0603;1%;100ppm/K;0.1W;75V</field>
+        <field name="Footprint">BoostDraft:R0603</field>
+        <field name="Datasheet">https://www.vishay.com/docs/20035/dcrcwe3.pdf</field>
+        <field name="Description">Frequency395.67kHz nominal</field>
+      </fields>
+      <libsource lib="BoostDraftSymbols" part="1029c3af85768c4190bb7ad29bc67b5" description="Frequency395.67kHz nominal"/>
+      <property name="Function_Name" value="RT"/>
+      <property name="Function" value="Frequency395.67kHz nominal"/>
+      <property name="MPN" value="CRCW060354K9FKEA"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="Rating" value="0603;1%;100ppm/K;0.1W;75V"/>
+      <property name="Sheetname" value="Boost_Electrical_Draft"/>
+      <property name="Sheetfile" value="Boost_Electrical_Draft.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>391effdd-835b-4208-88b3-e57fcd02562a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>100R 1%</value>
+      <footprint>BoostDraft:R0603</footprint>
+      <datasheet>https://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <description>Current-sense filter;10ns with100pF</description>
+      <fields>
+        <field name="Function_Name">RFILT</field>
+        <field name="Function">Current-sense filter;10ns with100pF</field>
+        <field name="MPN">CRCW0603100RFKEA</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="Rating">0603;1%;100ppm/K;0.1W;75V</field>
+        <field name="Footprint">BoostDraft:R0603</field>
+        <field name="Datasheet">https://www.vishay.com/docs/20035/dcrcwe3.pdf</field>
+        <field name="Description">Current-sense filter;10ns with100pF</field>
+      </fields>
+      <libsource lib="BoostDraftSymbols" part="RES-2_1" description="Current-sense filter;10ns with100pF"/>
+      <property name="Function_Name" value="RFILT"/>
+      <property name="Function" value="Current-sense filter;10ns with100pF"/>
+      <property name="MPN" value="CRCW0603100RFKEA"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="Rating" value="0603;1%;100ppm/K;0.1W;75V"/>
+      <property name="Sheetname" value="Boost_Electrical_Draft"/>
+      <property name="Sheetfile" value="Boost_Electrical_Draft.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>440ce5af-9f0a-4aab-bfd7-77fe43046761</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R5">
+      <value>909R 1%</value>
+      <footprint>BoostDraft:R0603</footprint>
+      <datasheet>https://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <description>Extra slope compensation; total sense series1009ohm including R4</description>
+      <fields>
+        <field name="Function_Name">RSL</field>
+        <field name="Function">Extra slope compensation; total sense series1009ohm including R4</field>
+        <field name="Rating">0603;1%;100ppm/K;0.1W;75V</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="MPN">CRCW0603909RFKEA</field>
+        <field name="Footprint">BoostDraft:R0603</field>
+        <field name="Datasheet">https://www.vishay.com/docs/20035/dcrcwe3.pdf</field>
+        <field name="Description">Extra slope compensation; total sense series1009ohm including R4</field>
+      </fields>
+      <libsource lib="BoostDraftSymbols" part="RES-2" description="Extra slope compensation; total sense series1009ohm including R4"/>
+      <property name="Function_Name" value="RSL"/>
+      <property name="Function" value="Extra slope compensation; total sense series1009ohm including R4"/>
+      <property name="Rating" value="0603;1%;100ppm/K;0.1W;75V"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="MPN" value="CRCW0603909RFKEA"/>
+      <property name="Sheetname" value="Boost_Electrical_Draft"/>
+      <property name="Sheetfile" value="Boost_Electrical_Draft.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4a2f92c4-4074-4ebe-80f7-d0be547fb223</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R6">
+      <value>110k 1%</value>
+      <footprint>BoostDraft:R0603</footprint>
+      <datasheet>https://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <description>UVLO upper; startup 9.174V typ, fall 8.318V typ; minimum regulated input remains 10V</description>
+      <fields>
+        <field name="Function_Name">RUVT</field>
+        <field name="Function">UVLO upper; startup 9.174V typ, fall 8.318V typ; minimum regulated input remains 10V</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="MPN">CRCW0603110KFKEA</field>
+        <field name="Rating">0603;1%;100ppm/K;0.1W;75V</field>
+        <field name="Footprint">BoostDraft:R0603</field>
+        <field name="Datasheet">https://www.vishay.com/docs/20035/dcrcwe3.pdf</field>
+        <field name="Description">UVLO upper; startup 9.174V typ, fall 8.318V typ; minimum regulated input remains 10V</field>
+      </fields>
+      <libsource lib="BoostDraftSymbols" part="1029c3af85768c4190bb7ad29bc67b5_1" description="UVLO upper; startup 9.174V typ, fall 8.318V typ; minimum regulated input remains 10V"/>
+      <property name="Function_Name" value="RUVT"/>
+      <property name="Function" value="UVLO upper; startup 9.174V typ, fall 8.318V typ; minimum regulated input remains 10V"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="MPN" value="CRCW0603110KFKEA"/>
+      <property name="Rating" value="0603;1%;100ppm/K;0.1W;75V"/>
+      <property name="Sheetname" value="Boost_Electrical_Draft"/>
+      <property name="Sheetfile" value="Boost_Electrical_Draft.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>53cc576f-60af-474e-bca3-5d134ea9b951</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R7">
+      <value>24.9k 1%</value>
+      <footprint>BoostDraft:R0603</footprint>
+      <datasheet>https://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <description>LOCAL PGOOD pullup to VCC_BOOST; not3.3V logic</description>
+      <fields>
+        <field name="Function_Name">RPG</field>
+        <field name="MPN">CRCW060324K9FKEA</field>
+        <field name="Function">LOCAL PGOOD pullup to VCC_BOOST; not3.3V logic</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="Rating">0603;1%;100ppm/K;0.1W;75V</field>
+        <field name="Footprint">BoostDraft:R0603</field>
+        <field name="Datasheet">https://www.vishay.com/docs/20035/dcrcwe3.pdf</field>
+        <field name="Description">LOCAL PGOOD pullup to VCC_BOOST; not3.3V logic</field>
+      </fields>
+      <libsource lib="BoostDraftSymbols" part="RES_1" description="LOCAL PGOOD pullup to VCC_BOOST; not3.3V logic"/>
+      <property name="Function_Name" value="RPG"/>
+      <property name="MPN" value="CRCW060324K9FKEA"/>
+      <property name="Function" value="LOCAL PGOOD pullup to VCC_BOOST; not3.3V logic"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="Rating" value="0603;1%;100ppm/K;0.1W;75V"/>
+      <property name="Sheetname" value="Boost_Electrical_Draft"/>
+      <property name="Sheetfile" value="Boost_Electrical_Draft.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7ff3ea12-4a5e-409d-9178-bcf636a71003</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R8">
+      <value>191k 1%</value>
+      <footprint>BoostDraft:R0805</footprint>
+      <datasheet>https://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <description>Provisional TypeII compensation;500Hz simplified target; unvalidated</description>
+      <fields>
+        <field name="Function_Name">RCOMP</field>
+        <field name="Function">Provisional TypeII compensation;500Hz simplified target; unvalidated</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="MPN">CRCW0805191KFKEA</field>
+        <field name="Rating">0805;1%;100ppm/K;0.125W;150V</field>
+        <field name="Footprint">BoostDraft:R0805</field>
+        <field name="Datasheet">https://www.vishay.com/docs/20035/dcrcwe3.pdf</field>
+        <field name="Description">Provisional TypeII compensation;500Hz simplified target; unvalidated</field>
+      </fields>
+      <libsource lib="BoostDraftSymbols" part="1029c3af85768c4190bb7ad29bc67b5_2" description="Provisional TypeII compensation;500Hz simplified target; unvalidated"/>
+      <property name="Function_Name" value="RCOMP"/>
+      <property name="Function" value="Provisional TypeII compensation;500Hz simplified target; unvalidated"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="MPN" value="CRCW0805191KFKEA"/>
+      <property name="Rating" value="0805;1%;100ppm/K;0.125W;150V"/>
+      <property name="Sheetname" value="Boost_Electrical_Draft"/>
+      <property name="Sheetfile" value="Boost_Electrical_Draft.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a7cd9349-d00e-43c0-be1e-217a8085bfa2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R9">
+      <value>0R270 1%</value>
+      <footprint>BoostDraft:R1206</footprint>
+      <datasheet>https://industrial.panasonic.com/cdbs/www-data/pdf/RDN0000/AOA0000C313.pdf</datasheet>
+      <description>Thick-film current-sense resistor; Kelvin routing; parasitic inductance not specified; not an output-current clamp</description>
+      <fields>
+        <field name="Function_Name">RS</field>
+        <field name="Rating">1206;0.270ohm1%;0.5W at70C;derate above70C</field>
+        <field name="Function">Thick-film current-sense resistor; Kelvin routing; parasitic inductance not specified; not an output-current clamp</field>
+        <field name="Manufacturer">Panasonic</field>
+        <field name="MPN">ERJ8BQFR27V</field>
+        <field name="Footprint">BoostDraft:R1206</field>
+        <field name="Datasheet">https://industrial.panasonic.com/cdbs/www-data/pdf/RDN0000/AOA0000C313.pdf</field>
+        <field name="Description">Thick-film current-sense resistor; Kelvin routing; parasitic inductance not specified; not an output-current clamp</field>
+      </fields>
+      <libsource lib="BoostDraftSymbols" part="RES_3" description="Peak switch current sensing; not a precision output-current limit"/>
+      <property name="Function_Name" value="RS"/>
+      <property name="Rating" value="1206;0.270ohm1%;0.5W at70C;derate above70C"/>
+      <property name="Function" value="Thick-film current-sense resistor; Kelvin routing; parasitic inductance not specified; not an output-current clamp"/>
+      <property name="Manufacturer" value="Panasonic"/>
+      <property name="MPN" value="ERJ8BQFR27V"/>
+      <property name="Sheetname" value="Boost_Electrical_Draft"/>
+      <property name="Sheetfile" value="Boost_Electrical_Draft.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bda7b6fa-d4e5-418a-8ca3-25416251279f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R10">
+      <value>21.5k 1%</value>
+      <footprint>BoostDraft:R0603</footprint>
+      <datasheet>https://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <description>UVLO lower resistor</description>
+      <fields>
+        <field name="Function_Name">RUVB</field>
+        <field name="Function">UVLO lower resistor</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="MPN">CRCW060321K5FKEA</field>
+        <field name="Rating">0603;1%;100ppm/K;0.1W;75V</field>
+        <field name="Footprint">BoostDraft:R0603</field>
+        <field name="Datasheet">https://www.vishay.com/docs/20035/dcrcwe3.pdf</field>
+        <field name="Description">UVLO lower resistor</field>
+      </fields>
+      <libsource lib="BoostDraftSymbols" part="RES" description="UVLO lower resistor"/>
+      <property name="Function_Name" value="RUVB"/>
+      <property name="Function" value="UVLO lower resistor"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="MPN" value="CRCW060321K5FKEA"/>
+      <property name="Rating" value="0603;1%;100ppm/K;0.1W;75V"/>
+      <property name="Sheetname" value="Boost_Electrical_Draft"/>
+      <property name="Sheetfile" value="Boost_Electrical_Draft.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e7898673-a3fe-4a51-a9f4-1ef7496b758a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>LM5155DSSR</value>
+      <footprint>BoostDraft:U1_DSS0012B</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/lm5155.pdf</datasheet>
+      <description>Nonisolated boost controller; all grounds=HV_BOTTOM</description>
+      <fields>
+        <field name="Function_Name">U1</field>
+        <field name="MPN">LM5155DSSR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="Function">Nonisolated boost controller; all grounds=HV_BOTTOM</field>
+        <field name="Footprint">BoostDraft:U1_DSS0012B</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/lm5155.pdf</field>
+        <field name="Description">Nonisolated boost controller; all grounds=HV_BOTTOM</field>
+      </fields>
+      <libsource lib="BoostDraftSymbols" part="LM5155DSSR" description="Nonisolated boost controller; all grounds=HV_BOTTOM"/>
+      <property name="Function_Name" value="U1"/>
+      <property name="MPN" value="LM5155DSSR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="Function" value="Nonisolated boost controller; all grounds=HV_BOTTOM"/>
+      <property name="Sheetname" value="Boost_Electrical_Draft"/>
+      <property name="Sheetfile" value="Boost_Electrical_Draft.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f4b15dae-cb1b-4f06-9dfc-63ef33399e25</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="12"/>
+            <pin num="11"/>
+            <pin num="10"/>
+            <pin num="9"/>
+            <pin num="6"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="5"/>
+            <pin num="4"/>
+            <pin num="8"/>
+            <pin num="13"/>
+            <pin num="7"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="BoostDraftSymbols" part="1029c3af85768c4190bb7ad29bc67b5">
+      <description>Frequency395.67kHz nominal</description>
+      <fields>
+        <field name="Reference"/>
+        <field name="Value">54.9k 1%</field>
+        <field name="Footprint">BoostDraft:R0603</field>
+        <field name="Datasheet"/>
+        <field name="Description">Frequency395.67kHz nominal</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BoostDraftSymbols" part="1029c3af85768c4190bb7ad29bc67b5_1">
+      <description>UVLO upper; startup 9.174V typ, fall 8.318V typ; minimum regulated input remains 10V</description>
+      <fields>
+        <field name="Reference"/>
+        <field name="Value">110k 1%</field>
+        <field name="Footprint">BoostDraft:R0603</field>
+        <field name="Datasheet"/>
+        <field name="Description">UVLO upper; startup 9.174V typ, fall 8.318V typ; minimum regulated input remains 10V</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BoostDraftSymbols" part="1029c3af85768c4190bb7ad29bc67b5_2">
+      <description>Provisional TypeII compensation;500Hz simplified target; unvalidated</description>
+      <fields>
+        <field name="Reference"/>
+        <field name="Value">191k 1%</field>
+        <field name="Footprint">BoostDraft:R0805</field>
+        <field name="Datasheet"/>
+        <field name="Description">Provisional TypeII compensation;500Hz simplified target; unvalidated</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BoostDraftSymbols" part="1029c3af85768c4190bb7ad29bc67b5_3">
+      <description>Lower feedback;80.0V nominal setpoint; exact MPN pending</description>
+      <fields>
+        <field name="Reference"/>
+        <field name="Value">10k 0.1%</field>
+        <field name="Footprint">BoostDraft:R0603</field>
+        <field name="Datasheet"/>
+        <field name="Description">Lower feedback;80.0V nominal setpoint; exact MPN pending</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BoostDraftSymbols" part="88c1139f9d239099ffebecbe3f7647a">
+      <description>1=ISO_12V_TO_BOTTOM;2=HV_BOTTOM; source connector remains provisional</description>
+      <fields>
+        <field name="Reference"/>
+        <field name="Value">12V INPUT</field>
+        <field name="Footprint">BoostDraft:IN_FP-TSW-102-14-G-S-MFG</field>
+        <field name="Datasheet"/>
+        <field name="Description">1=ISO_12V_TO_BOTTOM;2=HV_BOTTOM; source connector remains provisional</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BoostDraftSymbols" part="88c1139f9d239099ffebecbe3f7647a_1">
+      <description>1=HV_TOP;2=HV_BOTTOM; source connector remains provisional</description>
+      <fields>
+        <field name="Reference"/>
+        <field name="Value">80V OUTPUT</field>
+        <field name="Footprint">BoostDraft:OUT_FP-TSW-102-14-G-S-MFG</field>
+        <field name="Datasheet"/>
+        <field name="Description">1=HV_TOP;2=HV_BOTTOM; source connector remains provisional</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BoostDraftSymbols" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BoostDraftSymbols" part="CAP-NP-2">
+      <description>Soft-start; effective minimum33uF over0-1V after bias,tolerance,temp; exact MPN pending</description>
+      <fields>
+        <field name="Reference"/>
+        <field name="Value">47u 16V</field>
+        <field name="Footprint">BoostDraft:C1210</field>
+        <field name="Datasheet"/>
+        <field name="Description">Soft-start; effective minimum33uF over0-1V after bias,tolerance,temp; exact MPN pending</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BoostDraftSymbols" part="CAP-NP-2_1">
+      <description>Sense filter</description>
+      <fields>
+        <field name="Reference"/>
+        <field name="Value">100p 50V</field>
+        <field name="Footprint">BoostDraft:C0603</field>
+        <field name="Datasheet"/>
+        <field name="Description">Sense filter</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BoostDraftSymbols" part="CAP-P-2">
+      <description>Bulk output;100uF +/-20%;ESR/ripple and exact MPN pending</description>
+      <fields>
+        <field name="Reference"/>
+        <field name="Value">100u 160V</field>
+        <field name="Footprint">BoostDraft:C_BULK</field>
+        <field name="Datasheet"/>
+        <field name="Description">Bulk output;100uF +/-20%;ESR/ripple and exact MPN pending</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BoostDraftSymbols" part="LM5155DSSR">
+      <description>Nonisolated boost controller; all grounds=HV_BOTTOM</description>
+      <docs>https://www.ti.com/lit/ds/symlink/lm5155.pdf</docs>
+      <fields>
+        <field name="Reference"/>
+        <field name="Value">LM5155DSSR</field>
+        <field name="Footprint">BoostDraft:U1_DSS0012B</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/lm5155.pdf</field>
+        <field name="Description">Nonisolated boost controller; all grounds=HV_BOTTOM</field>
+      </fields>
+      <pins>
+        <pin num="1" name="BIAS" type="power_in"/>
+        <pin num="2" name="VCC_BOOST" type="power_out"/>
+        <pin num="3" name="GATE" type="output"/>
+        <pin num="4" name="PGND" type="power_in"/>
+        <pin num="5" name="CS" type="input"/>
+        <pin num="6" name="COMP" type="output"/>
+        <pin num="7" name="AGND" type="power_in"/>
+        <pin num="8" name="FB" type="input"/>
+        <pin num="9" name="SS" type="input"/>
+        <pin num="10" name="RT" type="passive"/>
+        <pin num="11" name="PGOOD" type="open_collector"/>
+        <pin num="12" name="UVLO_SYNC" type="input"/>
+        <pin num="13" name="EP" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BoostDraftSymbols" part="ONSC-D-K1A2-2_A">
+      <description>200V,1A Schottky; verify order suffix</description>
+      <docs>https://services.taiwansemi.com/storage/resources/datasheet/SS120_C2305.pdf</docs>
+      <fields>
+        <field name="Reference"/>
+        <field name="Value">SS120 200V</field>
+        <field name="Footprint">BoostDraft:D_SMA</field>
+        <field name="Datasheet">https://services.taiwansemi.com/storage/resources/datasheet/SS120_C2305.pdf</field>
+        <field name="Description">200V,1A Schottky; verify order suffix</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BoostDraftSymbols" part="RES">
+      <description>UVLO lower resistor</description>
+      <fields>
+        <field name="Reference"/>
+        <field name="Value">21.5k 1%</field>
+        <field name="Footprint">BoostDraft:R0603</field>
+        <field name="Datasheet"/>
+        <field name="Description">UVLO lower resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BoostDraftSymbols" part="RES-2">
+      <description>Extra slope compensation; total sense series1009ohm including R4</description>
+      <fields>
+        <field name="Reference"/>
+        <field name="Value">909R 1%</field>
+        <field name="Footprint">BoostDraft:R0603</field>
+        <field name="Datasheet"/>
+        <field name="Description">Extra slope compensation; total sense series1009ohm including R4</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BoostDraftSymbols" part="RES-2_1">
+      <description>Current-sense filter;10ns with100pF</description>
+      <fields>
+        <field name="Reference"/>
+        <field name="Value">100R 1%</field>
+        <field name="Footprint">BoostDraft:R0603</field>
+        <field name="Datasheet"/>
+        <field name="Description">Current-sense filter;10ns with100pF</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BoostDraftSymbols" part="RES_1">
+      <description>LOCAL PGOOD pullup to VCC_BOOST; not3.3V logic</description>
+      <fields>
+        <field name="Reference"/>
+        <field name="Value">24.9k 1%</field>
+        <field name="Footprint">BoostDraft:R0603</field>
+        <field name="Datasheet"/>
+        <field name="Description">LOCAL PGOOD pullup to VCC_BOOST; not3.3V logic</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BoostDraftSymbols" part="RES_2">
+      <description>Upper feedback;79V nominal stress; exact MPN pending</description>
+      <fields>
+        <field name="Reference"/>
+        <field name="Value">790k 0.1%</field>
+        <field name="Footprint">BoostDraft:R1206</field>
+        <field name="Datasheet"/>
+        <field name="Description">Upper feedback;79V nominal stress; exact MPN pending</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BoostDraftSymbols" part="RES_3">
+      <description>Peak switch current sensing; not a precision output-current limit</description>
+      <fields>
+        <field name="Reference"/>
+        <field name="Value">0R270 1%</field>
+        <field name="Footprint">BoostDraft:R1206</field>
+        <field name="Datasheet"/>
+        <field name="Description">Peak switch current sensing; not a precision output-current limit</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BoostDraftSymbols" part="SQJA70EP-T1_GE3">
+      <description>S1/2/3,G4,D5/6/7/8; verified CASE511DH copper lands; EP common with D</description>
+      <docs>https://www.onsemi.com/download/data-sheet/pdf/fdmc86240-d.pdf</docs>
+      <fields>
+        <field name="Reference"/>
+        <field name="Value">FDMC86240</field>
+        <field name="Footprint">BoostDraft:Q_FDMC86240_CASE511DH</field>
+        <field name="Datasheet">https://www.onsemi.com/download/data-sheet/pdf/fdmc86240-d.pdf</field>
+        <field name="Description">S1/2/3,G4,D5/6/7/8; verified CASE511DH copper lands; EP common with D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="S" type="passive"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+        <pin num="4" name="G" type="passive"/>
+        <pin num="5" name="D" type="passive"/>
+        <pin num="6" name="D" type="passive"/>
+        <pin num="7" name="D" type="passive"/>
+        <pin num="8" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BoostDraftSymbols" part="VLS6045EX-151M">
+      <description>1mH10%;DCR1.7ohm max;Irms0.68A;Isat0.80A typ at25%Ldrop</description>
+      <docs>https://www.bourns.com/docs/Product-Datasheets/SRR1280.pdf</docs>
+      <fields>
+        <field name="Reference"/>
+        <field name="Value">1mH SRR1280-102K</field>
+        <field name="Footprint">BoostDraft:L_BOURNS</field>
+        <field name="Datasheet">https://www.bourns.com/docs/Product-Datasheets/SRR1280.pdf</field>
+        <field name="Description">1mH10%;DCR1.7ohm max;Irms0.68A;Isat0.80A typ at25%Ldrop</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BoostDraftSymbols" part="b4654b650e69147ec39a6b967a45e02">
+      <description>Provisional compensation zero17.7Hz</description>
+      <fields>
+        <field name="Reference"/>
+        <field name="Value">47n 50V</field>
+        <field name="Footprint">BoostDraft:C0603</field>
+        <field name="Datasheet"/>
+        <field name="Description">Provisional compensation zero17.7Hz</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BoostDraftSymbols" part="b4654b650e69147ec39a6b967a45e02_1">
+      <description>Provisional compensation HF pole 12.25kHz</description>
+      <fields>
+        <field name="Reference"/>
+        <field name="Value">68p 50V</field>
+        <field name="Footprint">BoostDraft:C0603</field>
+        <field name="Datasheet"/>
+        <field name="Description">Provisional compensation HF pole 12.25kHz</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="BoostDraftSymbols">
+      <uri>${KIPRJMOD}/BoostDraftSymbols.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/COMP" class="Default">
+      <node ref="C2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R8" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="COMP_6" pintype="output"/>
+    </net>
+    <net code="2" name="/COMP_ZERO" class="Default">
+      <node ref="C3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R8" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="3" name="/CS" class="Default">
+      <node ref="R5" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="CS_5" pintype="input"/>
+    </net>
+    <net code="4" name="/FB" class="Default">
+      <node ref="R1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="FB_8" pintype="input"/>
+    </net>
+    <net code="5" name="/FREQ_SET" class="Default">
+      <node ref="R3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="RT_10" pintype="passive"/>
+    </net>
+    <net code="6" name="/GATE" class="Default">
+      <node ref="Q1" pin="4" pinfunction="G_4" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="GATE_3" pintype="output"/>
+    </net>
+    <net code="7" name="/HV_TOP" class="Default">
+      <node ref="C5" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R1" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="8" name="/PGOOD" class="Default">
+      <node ref="R7" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="11" pinfunction="PGOOD_11" pintype="open_collector"/>
+    </net>
+    <net code="9" name="/SENSE_FILT" class="Default">
+      <node ref="C6" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R5" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="10" name="/SENSE_RAW" class="Default">
+      <node ref="Q1" pin="1" pinfunction="S_1" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="S_3" pintype="passive"/>
+      <node ref="R4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R9" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="11" name="/SOFT_START" class="Default">
+      <node ref="C7" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="9" pinfunction="SS_9" pintype="input"/>
+    </net>
+    <net code="12" name="/SW" class="Default">
+      <node ref="D1" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="L1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="Q1" pin="5" pinfunction="D_5" pintype="passive"/>
+      <node ref="Q1" pin="6" pinfunction="D_6" pintype="passive"/>
+      <node ref="Q1" pin="7" pinfunction="D_7" pintype="passive"/>
+      <node ref="Q1" pin="8" pinfunction="D_8" pintype="passive"/>
+    </net>
+    <net code="13" name="/UVLO" class="Default">
+      <node ref="R10" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R6" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="12" pinfunction="UVLO_SYNC_12" pintype="input"/>
+    </net>
+    <net code="14" name="HV_BOTTOM" class="Default">
+      <node ref="C1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C5" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C6" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C7" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R10" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R9" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="EP_13" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="PGND_4" pintype="power_in"/>
+      <node ref="U1" pin="7" pinfunction="AGND_7" pintype="power_in"/>
+    </net>
+    <net code="15" name="ISO_12V_TO_BOTTOM" class="Default">
+      <node ref="C1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="L1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R6" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="BIAS_1" pintype="power_in"/>
+    </net>
+    <net code="16" name="VCC_BOOST" class="Default">
+      <node ref="C4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R7" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="VCC_BOOST_2" pintype="power_out"/>
+    </net>
+  </nets>
+</export>

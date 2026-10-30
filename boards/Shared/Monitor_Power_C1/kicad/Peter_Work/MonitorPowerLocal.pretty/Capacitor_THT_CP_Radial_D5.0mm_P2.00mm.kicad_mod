@@ -1,0 +1,218 @@
+(footprint "Capacitor_THT_CP_Radial_D5.0mm_P2.00mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "CP, Radial series, Radial, pin pitch=2.00mm, diameter=5mm, height=7mm, Electrolytic Capacitor")
+	(tags "CP Radial series Radial pin pitch 2.00mm diameter 5mm height 7mm Electrolytic Capacitor")
+	(property "Reference" "C202"
+		(at 0 -4.5 0)
+		(layer "F.SilkS")
+		(uuid "ae839da8-5949-4887-8094-a6fe214f54a3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "Value" "100u_16V_POLAR"
+		(at 1 3.75 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6ef39961-5b75-4f56-8a70-12bea9abe0ac")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b1e37d65-fecd-4ff8-9f72-f06133abe8d4")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "58fba3ab-b717-4604-bb8f-6619ce2d6e4c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "capacitor/THT/other"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "440a16ce-a21b-4cee-a20b-c599de307a88")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "EEUFR1C101"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ec2466b4-d42c-4f56-b15e-7769db63f1d8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Design notes" "FR aluminum electrolytic, 100 uF +/-20%, 16 V. D5 x H11 mm, lead spacing 2 mm, lead diameter 0.5 mm. Impedance maximum 0.300 ohm at 100 kHz and 20 C. On the negative rail the positive terminal connects to MID. Place LDO output capacitor directly beside U201. Module load remains below its 1680 uF capacitive-load rating."
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "9a2f69a5-fcb3-4e14-a2e5-84bc6f0254fc")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint candidate" "MonitorPowerLocal:Capacitor_THT_CP_Radial_D5.0mm_P2.00mm"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "a65c8708-d3b7-4567-abf5-50eb50da7262")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -3 -1)
+		(end -2.2 -1)
+		(stroke
+			(width 0.16)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "7d8869ef-4e24-47d1-b625-67ca9d39b7c1")
+	)
+	(fp_line
+		(start -2.6 -1.4)
+		(end -2.6 -0.6)
+		(stroke
+			(width 0.16)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "4c7e777d-dbc7-4a0e-bfd4-9929c8d56ef8")
+	)
+	(fp_circle
+		(center 1 0)
+		(end 3.65 0)
+		(stroke
+			(width 0.16)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "dbef34d4-e7ad-4de9-8fea-5fb3c14740fa")
+	)
+	(fp_circle
+		(center 1 0)
+		(end 3.75 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "29c2912b-f718-4b5a-8281-091843d84693")
+	)
+	(fp_line
+		(start -1.133605 -1.0875)
+		(end -0.633605 -1.0875)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7a9be735-a4e9-40e4-ab13-59cb5ed2ff73")
+	)
+	(fp_line
+		(start -0.883605 -1.3375)
+		(end -0.883605 -0.8375)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "55f32322-7a53-46c4-850c-2841f2cab1fa")
+	)
+	(fp_circle
+		(center 1 0)
+		(end 3.5 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "cbc262b4-2fc8-419e-bb96-680dd641e820")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 1 0 0)
+		(layer "F.Fab")
+		(uuid "9389b41f-de8f-47a8-a143-5be872696d84")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole roundrect
+		(at 0 0)
+		(size 1.6 1.6)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.15625)
+		(clearance 0)
+		(uuid "4641518d-fc8c-43ea-8a6f-a6126e937fc8")
+	)
+	(pad "2" thru_hole circle
+		(at 2 0)
+		(size 1.6 1.6)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(clearance 0)
+		(uuid "372c9806-aa24-4d1e-b0d1-fc48481d02fd")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/CP_Radial_D5.0mm_P2.00mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

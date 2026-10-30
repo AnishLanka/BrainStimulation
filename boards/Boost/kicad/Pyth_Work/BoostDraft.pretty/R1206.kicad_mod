@@ -1,0 +1,183 @@
+(footprint "R1206"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Resistor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
+	(tags "resistor")
+	(property "Reference" "R1"
+		(at -3.9 -0.2 180)
+		(layer "F.SilkS")
+		(uuid "7fbf07bd-08dc-434b-a34d-4543fbef8198")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "Value" "787k 0.1%"
+		(at 0 1.83 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "257a0e06-5181-42dc-ae4b-8948cbddd41d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "32e0199d-00a0-4453-b457-5257beff7837")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Upper feedback;78.7V nominal stress;79.7V nominal output"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "99276baa-4392-46cb-97a9-888761fb0f98")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "fb334f90-d687-4dd2-b534-778aaa0b7a07")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Function_Name" "RFBT"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "842f0b08-6a62-44c5-a86f-215f50a94bab")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Rating" "1206; 200V working; at least 0.25W; 0.1%;25ppm/K"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "263b2141-a133-49b9-832e-750fc9949b79")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Function" "Upper feedback;78.7V nominal stress;79.7V nominal output"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "7d550886-c9a3-45d6-a864-67227782c9c2")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Manufacturer" "Vishay"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "05636113-a453-4453-a0e8-f9e092631797")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "TNPW1206787KBEEA"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "20bb89a6-7df6-4169-98ef-0b6b969ab471")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -2.28 -1.13)
+		(end 2.28 1.13)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "f68fee0c-607d-4ff1-ab13-408cf73f2eda")
+	)
+	(fp_rect
+		(start -1.6 -0.8)
+		(end 1.6 0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "f7e7bc05-c5ac-4a44-96da-ce594b388d63")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "0f93dfcd-d157-4983-8a12-6af0579ecfe7")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -1.4625 0)
+		(size 1.125 1.75)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.222222)
+		(clearance 0)
+		(uuid "0ca8b88a-0018-49af-a192-194d174551e7")
+	)
+	(pad "2" smd roundrect
+		(at 1.4625 0)
+		(size 1.125 1.75)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.222222)
+		(clearance 0)
+		(uuid "6885a117-fd0e-4013-b7c5-8927fd98d964")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

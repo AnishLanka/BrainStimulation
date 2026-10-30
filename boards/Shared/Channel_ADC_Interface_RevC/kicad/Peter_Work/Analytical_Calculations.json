@@ -1,0 +1,68 @@
+{
+  "parts": 69,
+  "filter_stages": [
+    {
+      "f0_Hz": 98835.32026063727,
+      "Q": 0.5477225575051661
+    },
+    {
+      "f0_Hz": 101048.2360542048,
+      "Q": 1.3038404810405297
+    }
+  ],
+  "ideal_response": [
+    {
+      "frequency_Hz": 0.5,
+      "magnitude": 0.5000000000000442,
+      "gain_dB": -6.020599913278857,
+      "phase_deg": -0.0007761600000027724
+    },
+    {
+      "frequency_Hz": 1000,
+      "magnitude": 0.5000001763430366,
+      "gain_dB": -6.020596849887855,
+      "phase_deg": -1.5523421804441355
+    },
+    {
+      "frequency_Hz": 10000,
+      "magnitude": 0.5000147037585546,
+      "gain_dB": -6.020344486587198,
+      "phase_deg": -15.545459348383707
+    },
+    {
+      "frequency_Hz": 40000,
+      "magnitude": 0.49949423639587304,
+      "gain_dB": -6.029390373621225,
+      "phase_deg": -63.62499894965977
+    },
+    {
+      "frequency_Hz": 300000,
+      "magnitude": 0.00592347859237484,
+      "gain_dB": -44.54846353515837,
+      "phase_deg": 33.07629852812876
+    },
+    {
+      "frequency_Hz": 560000,
+      "magnitude": 0.00044017535507483684,
+      "gain_dB": -67.12748553527307,
+      "phase_deg": -3.4494788509532435
+    }
+  ],
+  "adc_acquisition_ns_at20MHz": 920,
+  "charge_bucket_time_constant_ns": 164.0,
+  "raw_payload_bytes_per_second": 2400000,
+  "samples_per_40kHz_cycle": 15,
+  "uart_1Mbaud_8N1_max_payload_bytes_per_second": 100000,
+  "reference_input_RC_s": null,
+  "analog_typical_power_W": 0.07150000000000001,
+  "warning": "Ideal transfer functions omit finite amplifier gain, ADC kickback, tolerances and core return-sense phase. Acquisition time is not evidence of16-bit settling. Pico/isolator/logic power must be added to listed analogue estimate.",
+  "reference_mode": "internal2.5V",
+  "reference_startup_ms_datasheet_typical": 8,
+  "firmware_wait_after_ref_selection_ms": 50,
+  "adc_current_LSB_uA": 0.23547513985339505,
+  "adc_voltage_LSB_mV": 1.52587890625,
+  "analogue_max_static_5V_mA": 16.8,
+  "allocation_5V_mA": 145,
+  "allocation_breakdown": "45mA analogue reserve +100mA Pico/local digital. Not a guaranteed firmware-independent peak.",
+  "reference_reservoir_series_resistance_ohm": 0.1
+}

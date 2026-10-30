@@ -1,0 +1,1 @@
+(sym_lib_table (version 7) (lib (name "MonitorReview") (type "KiCad") (uri "${KIPRJMOD}/MonitorReview.kicad_sym") (options "") (descr "Pin-mapped electrical review symbols")))

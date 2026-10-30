@@ -1,0 +1,283 @@
+(footprint "Q_FDMC86240_CASE511DH"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "onsemi FDMC86240 CASE511DH IssueA /98AON13625G; primary recommended copper land pattern; four-window 69.5% EP paste is engineering choice")
+	(tags "FDMC86240 Power33 WDFN-8 511DH")
+	(property "Reference" "Q1"
+		(at 0 -2.6 0)
+		(layer "F.SilkS")
+		(uuid "f9818135-5dd2-4aef-be58-6dee4763509d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "Value" "FDMC86240"
+		(at 0 2.6 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c436ac3e-55ab-4250-97d8-01ca545971b5")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/fdmc86240-d.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8382092a-9dc9-4544-b58d-58e4210f78f2")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "S1/2/3,G4,D5/6/7/8; verified CASE511DH copper lands; EP common with D"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dd0341fe-f616-439a-8832-e48e82bb229a")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Function_Name" "Q1"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "9b974176-320e-4141-b367-5d0d9ba607c9")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "FDMC86240"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "a4e73928-9b0a-478d-bdee-276046dfadaa")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Manufacturer" "onsemi"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "a89a2e53-ac24-4465-9600-73264ee3bffb")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Rating" "150V;RDS(on) 70mohm max at VGS 6V; WDFN-8 CASE511DH"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "afd6b4f8-9b68-4d7a-9b83-731e3046bd8b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Function" "S1/2/3,G4,D5/6/7/8; verified CASE511DH copper lands; EP common with D"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "9ba464ce-6434-4629-bb0f-074518103c69")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_circle
+		(center -2.2 2.1)
+		(end -2.07 2.1)
+		(stroke
+			(width 0.16)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "b0c13e13-a7f2-4438-a06b-4392fab2e900")
+	)
+	(fp_rect
+		(start -2 -2)
+		(end 2 2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "21eaebe5-23c1-429b-bef6-d16d5b789a95")
+	)
+	(fp_line
+		(start -1.65 -1.65)
+		(end 1.65 -1.65)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f229d3cd-6920-4855-887a-a91542953509")
+	)
+	(fp_line
+		(start -1.65 1.25)
+		(end -1.65 -1.65)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d50ef84d-50f2-45ad-bbc9-47fa94097396")
+	)
+	(fp_line
+		(start -1.25 1.65)
+		(end -1.65 1.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4faafa5a-789a-4955-8b1b-ccdc01f9ad06")
+	)
+	(fp_line
+		(start 1.65 -1.65)
+		(end 1.65 1.65)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2d48eebd-069e-4daf-883d-6292cf3c89c6")
+	)
+	(fp_line
+		(start 1.65 1.65)
+		(end -1.25 1.65)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7861cd4d-d9f4-4f21-bdef-b6fd433163de")
+	)
+	(pad "" smd rect
+		(at -0.6 -0.875)
+		(size 1 0.7)
+		(layers "F.Paste")
+		(clearance 0)
+		(uuid "9ba47797-f3ac-45e3-a462-868f5f30fa66")
+	)
+	(pad "" smd rect
+		(at -0.6 -0.025)
+		(size 1 0.7)
+		(layers "F.Paste")
+		(clearance 0)
+		(uuid "9445cd38-a1af-44d7-ab9d-13a302495870")
+	)
+	(pad "" smd rect
+		(at 0.6 -0.875)
+		(size 1 0.7)
+		(layers "F.Paste")
+		(clearance 0)
+		(uuid "1bedbc8f-55f8-4f79-8951-ed467849c61f")
+	)
+	(pad "" smd rect
+		(at 0.6 -0.025)
+		(size 1 0.7)
+		(layers "F.Paste")
+		(clearance 0)
+		(uuid "c14ae0b4-c3b3-4e62-8df5-b5a19f571a36")
+	)
+	(pad "1" smd rect
+		(at -0.975 1.4)
+		(size 0.42 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(clearance 0)
+		(uuid "5944e4bb-63c9-451a-b294-73d8607a3766")
+	)
+	(pad "2" smd rect
+		(at -0.325 1.4)
+		(size 0.42 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(clearance 0)
+		(uuid "ed8a5e04-6544-4c87-85de-ff38c03df033")
+	)
+	(pad "3" smd rect
+		(at 0.325 1.4)
+		(size 0.42 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(clearance 0)
+		(uuid "399378f6-5868-4cfb-88df-176bbff4106b")
+	)
+	(pad "4" smd rect
+		(at 0.975 1.4)
+		(size 0.42 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(clearance 0)
+		(uuid "aab50971-737d-4011-bc74-b734dc34dc23")
+	)
+	(pad "5" smd rect
+		(at 0 -0.45)
+		(size 2.37 1.7)
+		(layers "F.Cu" "F.Mask")
+		(solder_mask_margin 0.05)
+		(clearance 0)
+		(uuid "2a2d092a-7540-4f59-8eeb-3032416bf16e")
+	)
+	(pad "5" smd rect
+		(at 0.975 -1.525)
+		(size 0.42 0.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(clearance 0)
+		(uuid "f24d3f9c-53a8-4a29-b2aa-c526b30ba495")
+	)
+	(pad "6" smd rect
+		(at 0.325 -1.525)
+		(size 0.42 0.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(clearance 0)
+		(uuid "9b60f8a7-212f-4781-90e2-81dfc437dfdf")
+	)
+	(pad "7" smd rect
+		(at -0.325 -1.525)
+		(size 0.42 0.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(clearance 0)
+		(uuid "b58e90ee-634e-415a-9d80-ec0e648672e7")
+	)
+	(pad "8" smd rect
+		(at -0.975 -1.525)
+		(size 0.42 0.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(clearance 0)
+		(uuid "29ea416f-a1fb-48ba-850c-53c088c8d0d8")
+	)
+	(embedded_fonts no)
+)

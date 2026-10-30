@@ -1,0 +1,185 @@
+{
+  "date": "2026-10-17",
+  "KiCad": "10.0.6",
+  "scope": "Bare-board dummy-load bench prototypes; no powered measurements",
+  "packaged_native_DRC": [
+    {
+      "board": "Shared power",
+      "native_file": "StimPrototype_Hardware_Revision_C/shared_power/Shared_Power_Adapter_RevC.kicad_pcb",
+      "pcb_sha256": "cffe4fa3e631e34b5c930e2075eefe2149c586fba26e1cda877d22a6f76d18c1",
+      "schematic_sha256": "591ce98da1d4ccaf5d3a1477571528cf55bfb24b9e9ab0e997d4aeaa0ab0c4e7",
+      "DRC_findings": 0,
+      "unconnected_items": 0,
+      "schematic_parity_issues": 0,
+      "ignored_categories": [],
+      "report": "Release_Validation/Shared_power_DRC.json"
+    },
+    {
+      "board": "Monitor power",
+      "native_file": "StimPrototype_Hardware_Revision_C/monitor_power/Monitor_Power_C1.kicad_pcb",
+      "pcb_sha256": "6df11dc536e993520866675ea80c10f3ac029d781b8046ce19df095916471e14",
+      "schematic_sha256": "0c1604a2517933593dafd627d21eae75a15cf235fbde12123cd2089fef2e8aaa",
+      "DRC_findings": 0,
+      "unconnected_items": 0,
+      "schematic_parity_issues": 0,
+      "ignored_categories": [],
+      "report": "Release_Validation/Monitor_power_DRC.json"
+    },
+    {
+      "board": "Monitor core",
+      "native_file": "StimPrototype_Hardware_Revision_C/monitor_core/Channel_Monitor_C1.kicad_pcb",
+      "pcb_sha256": "1f7298b5252813e290627964680c2acf05d32bd53b8ba58bf8af6828c3f79b51",
+      "schematic_sha256": "d4bea62a373cc4ea65d8afe03da6a2efa3e1538648146c3c8affe3dc509d7a6e",
+      "DRC_findings": 0,
+      "unconnected_items": 0,
+      "schematic_parity_issues": 0,
+      "ignored_categories": [],
+      "report": "Release_Validation/Monitor_core_DRC.json"
+    },
+    {
+      "board": "ADC",
+      "native_file": "StimPrototype_Hardware_Revision_C/adc_interface/Channel_ADC_Interface_RevC.kicad_pcb",
+      "pcb_sha256": "856394338fb938e03f5373823c8fe32235f669e620815f5b782545d33732f6b4",
+      "schematic_sha256": "8cf3a315d0fb18a5405028efc8e0bd0ec1c44c408f07fb81c259c275f018d0e6",
+      "DRC_findings": 0,
+      "unconnected_items": 0,
+      "schematic_parity_issues": 0,
+      "ignored_categories": [],
+      "report": "Release_Validation/ADC_DRC.json"
+    },
+    {
+      "board": "BuckBoost RevB",
+      "native_file": "BuckBoost_RevB/BuckBoost_RevB.kicad_pcb",
+      "pcb_sha256": "254a79a8537299e081462e889d707ce6b0238f3eb09f3971d4ccd1216448959d",
+      "schematic_sha256": "45cf22b41b666eab417fbd1f50fad26d274146d418607de5b40b178aec3bf241",
+      "DRC_findings": 0,
+      "unconnected_items": 0,
+      "schematic_parity_issues": 0,
+      "ignored_categories": [
+        {
+          "description": "Footprint has no courtyard defined",
+          "key": "missing_courtyard"
+        },
+        {
+          "description": "Track endpoint not centered on via",
+          "key": "track_not_centered_on_via"
+        },
+        {
+          "description": "Tuning profile track geometries",
+          "key": "tuning_profile_track_geometries"
+        },
+        {
+          "description": "Footprint doesn't match symbol's footprint filters",
+          "key": "footprint_filters_mismatch"
+        },
+        {
+          "description": "Footprint component type doesn't match footprint pads",
+          "key": "footprint_type_mismatch"
+        }
+      ],
+      "report": "Release_Validation/BuckBoost_RevB_DRC.json"
+    },
+    {
+      "board": "Boost",
+      "native_file": "StimPrototype_Integration/boost_draft/Boost_Electrical_Draft.kicad_pcb",
+      "pcb_sha256": "d329fe12e2790f448aebf86053afe83f5395b52f0572ed989d25742532b22fd3",
+      "schematic_sha256": "c87cfdf8925d7f6cde7f6179aadf356fa0db059afd6c8dc259b58de3753ac06e",
+      "DRC_findings": 0,
+      "unconnected_items": 0,
+      "schematic_parity_issues": 0,
+      "ignored_categories": [
+        {
+          "description": "Footprint has no courtyard defined",
+          "key": "missing_courtyard"
+        },
+        {
+          "description": "Track endpoint not centered on via",
+          "key": "track_not_centered_on_via"
+        },
+        {
+          "description": "Tuning profile track geometries",
+          "key": "tuning_profile_track_geometries"
+        },
+        {
+          "description": "Footprint doesn't match symbol's footprint filters",
+          "key": "footprint_filters_mismatch"
+        },
+        {
+          "description": "Footprint component type doesn't match footprint pads",
+          "key": "footprint_type_mismatch"
+        }
+      ],
+      "report": "Release_Validation/Boost_DRC.json"
+    },
+    {
+      "board": "Rail splitter",
+      "native_file": "StimPrototype_Integration/railsplitter_draft/RailSplitter_Electrical_Draft.kicad_pcb",
+      "pcb_sha256": "0a6469ec5593e9f603f7f2c1237c84ea7e760c88014318f333de363a92a8864c",
+      "schematic_sha256": "5a4cd3978f102821abd12c9a39c79d70eb7aa61bcad8cb9114006187544b517c",
+      "DRC_findings": 0,
+      "unconnected_items": 0,
+      "schematic_parity_issues": 0,
+      "ignored_categories": [
+        {
+          "description": "Footprint has no courtyard defined",
+          "key": "missing_courtyard"
+        },
+        {
+          "description": "Track endpoint not centered on via",
+          "key": "track_not_centered_on_via"
+        },
+        {
+          "description": "Tuning profile track geometries",
+          "key": "tuning_profile_track_geometries"
+        },
+        {
+          "description": "Footprint doesn't match symbol's footprint filters",
+          "key": "footprint_filters_mismatch"
+        },
+        {
+          "description": "Footprint component type doesn't match footprint pads",
+          "key": "footprint_type_mismatch"
+        }
+      ],
+      "report": "Release_Validation/Rail_splitter_DRC.json"
+    },
+    {
+      "board": "SignalGen RevC",
+      "native_file": "StimPrototype_Integration/signalgen_draft/SignalGen_Electrical_Draft.kicad_pcb",
+      "pcb_sha256": "a0ca47e2defd2acfd99b982c89b8ac2458e4972c07420558737fded42b71e50b",
+      "schematic_sha256": "fe859df1ed76a8157c1638f06cc39075eb718d3c859b68a105a62f59de61fc05",
+      "DRC_findings": 0,
+      "unconnected_items": 0,
+      "schematic_parity_issues": 0,
+      "ignored_categories": [
+        {
+          "description": "Footprint has no courtyard defined",
+          "key": "missing_courtyard"
+        },
+        {
+          "description": "Track endpoint not centered on via",
+          "key": "track_not_centered_on_via"
+        },
+        {
+          "description": "Tuning profile track geometries",
+          "key": "tuning_profile_track_geometries"
+        },
+        {
+          "description": "Footprint doesn't match symbol's footprint filters",
+          "key": "footprint_filters_mismatch"
+        },
+        {
+          "description": "Footprint component type doesn't match footprint pads",
+          "key": "footprint_type_mismatch"
+        }
+      ],
+      "report": "Release_Validation/SignalGen_RevC_DRC.json"
+    }
+  ],
+  "guide_links_checked": 21,
+  "missing_guide_links": [],
+  "new_boards_ignored_DRC_categories": 0,
+  "legacy_project_ignored_categories": "Listed explicitly for each older project; not newly suppressed",
+  "frozen_user_boards": "Howland unchanged and excluded from modifications; SignalGen PCB/ZIP unchanged",
+  "all_files_match_checked_sources": true
+}

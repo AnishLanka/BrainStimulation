@@ -1,0 +1,25 @@
+PRIMARY REFERENCES AND IMPLEMENTATION
+TI TPS63802 RevD, pin functions/application and DLA0010A land pattern page36:
+https://www.ti.com/lit/ds/symlink/tps63802.pdf
+RECOM R3M ECO5 recommended footprint and single-output pin map:
+https://recom-power.com/pdf/Econoline/R3M.pdf
+Coilcraft XFL4015, document769-2 Rev03/10/26, recommended pad .98x3.40mm
+and2.37mm center pitch. Local drawing hash is in Footprint_Verification.json.
+https://www.coilcraft.com/en-us/products/power/shielded-inductors/molded-inductor/xfl/xfl4015/
+Schurter UMT250: selected3403.0175.11(T8A),3403.0168.11(T1.6A),
+3403.0170.11(T2.5A),3403.0173.11(T5A). Lands2x3.75mm,8.5mm center pitch.
+https://www.schurter.com/en/datasheet/typ_UMT_250.pdf
+JST VH standard header10A rating uses16AWG; choose appropriate crimp tooling.
+https://www.jst-mfg.com/product/index.php?lang=2&series=262
+Vishay TNPW e3 Rev10-Apr-2026:0603 resistance range ends332k; EA is standard
+packaging, B tolerance0.1%, E TCR25ppm/K.280k and49.9k are supported E96 values.
+https://www.vishay.com/docs/28758/tnpw_e3.pdf
+
+The four isolated modules have no minimum-load requirement, eliminating the
+old2.88W total200-ohm preloads. Their83% efficiency is at nominal input/full
+load; no guaranteed5V/light-load efficiency is asserted. The scenario budget
+uses stated65-75% estimates for them and60% for the monitor module bank.
+The two logic banks follow the0.47uH TI application with short switch loops,
+local input/output ceramics, a quiet left-side feedback divider and separate
+outputs. Both are fixed-PWM enabled when powered. No patient signal, HV stage,
+battery charger or raw-cell protection circuitry is placed on this board.

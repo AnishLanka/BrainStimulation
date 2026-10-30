@@ -1,0 +1,152 @@
+{
+  "Texas_DLA0010A_TPS63802": {
+    "expected_copper_pad_geometry_number_x_y_w_h_mm": [
+      [
+        1,
+        -0.9,
+        -1.0,
+        0.6,
+        0.25
+      ],
+      [
+        2,
+        -0.9,
+        -0.5,
+        0.6,
+        0.25
+      ],
+      [
+        3,
+        -0.9,
+        0.0,
+        0.6,
+        0.25
+      ],
+      [
+        4,
+        -0.9,
+        0.5,
+        0.6,
+        0.25
+      ],
+      [
+        5,
+        -0.9,
+        1.0,
+        0.6,
+        0.25
+      ],
+      [
+        6,
+        0.75,
+        1.0,
+        0.9,
+        0.25
+      ],
+      [
+        7,
+        0.75,
+        0.5,
+        0.9,
+        0.25
+      ],
+      [
+        8,
+        0.55,
+        0,
+        1.3,
+        0.25
+      ],
+      [
+        9,
+        0.75,
+        -0.5,
+        0.9,
+        0.25
+      ],
+      [
+        10,
+        0.75,
+        -1.0,
+        0.9,
+        0.25
+      ]
+    ],
+    "reloaded_native_match": true,
+    "file_sha256": "af401c311a367794787d18e5255a569ec42ee6339176d6deacae2372e53f72bf"
+  },
+  "L_Coilcraft_XFL4015": {
+    "expected_copper_pad_geometry_number_x_y_w_h_mm": [
+      [
+        1,
+        -1.185,
+        0,
+        0.98,
+        3.4
+      ],
+      [
+        2,
+        1.185,
+        0,
+        0.98,
+        3.4
+      ]
+    ],
+    "reloaded_native_match": true,
+    "file_sha256": "a2c03fed1c3ab882f8db26db8ba8366bf7b166281d4b0aebb738c913842245af"
+  },
+  "RECOM_R3M_SMD": {
+    "expected_copper_pad_geometry_number_x_y_w_h_mm": [
+      [
+        1,
+        -4.75,
+        2.95,
+        5.7,
+        1.4
+      ],
+      [
+        2,
+        -4.75,
+        0.95,
+        5.7,
+        1.4
+      ],
+      [
+        4,
+        -4.75,
+        -3.05,
+        5.7,
+        1.4
+      ],
+      [
+        5,
+        4.75,
+        2.95,
+        5.7,
+        1.4
+      ],
+      [
+        6,
+        4.75,
+        0.95,
+        5.7,
+        1.4
+      ],
+      [
+        7,
+        4.75,
+        -1.05,
+        5.7,
+        1.4
+      ]
+    ],
+    "reloaded_native_match": true,
+    "file_sha256": "80bf1ef9fa290aa40ca01eba8f872916b7cf9e517e1aa50c4c900a9d2f21e8de"
+  },
+  "source_pdf_sha256": {
+    "tps63802.pdf": "be07deca1231c5493957bc64c2dc1cad5543bff330e49ae41caf3286fd80dca6",
+    "R3M.pdf": "0b216c47b85f345740a6498a5e88f4f8c71d15c50172bbc022784614badaedcd",
+    "xfl4015.pdf": "6535ab70d0ef65ba03d4b0800e206fc7867f26464e2d9dfd5dd931a2bcb0c7c1"
+  },
+  "status": "Manufacturer land-pattern geometry implemented and reloaded; final PCB DRC still required."
+}

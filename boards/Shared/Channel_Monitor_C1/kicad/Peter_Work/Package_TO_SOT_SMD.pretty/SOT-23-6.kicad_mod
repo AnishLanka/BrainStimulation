@@ -1,0 +1,306 @@
+(footprint "SOT-23-6"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "SOT, 6 Pin (JEDEC MO-178 Var AB https://www.jedec.org/document_search?search_api_views_fulltext=MO-178)")
+	(tags "SOT TO_SOT_SMD")
+	(property "Reference" "U14"
+		(at 0 -5 0)
+		(layer "F.SilkS")
+		(uuid "af73a7d7-db8e-4966-96f0-734884bc9ab1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TPS3808G01"
+		(at 0 2.4 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c5343ee1-9d67-4daa-8159-36d2646ac059")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "10a969e7-ecac-4a2d-92fb-a663f0a35782")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5491ebcb-3db3-44ca-96fa-60ee81c212a4")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "package/gullwing"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "c4ec24fd-e468-49b4-a90c-468daca56d6c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "TPS3808G01DBVR"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "34eeadbd-7e91-47dc-bd9c-df8d0c39ac2c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Design notes" "TPS3808G01 command qualification timer. CT connected to VDD through 49.9k gives 180/300/420 ms release delay after ZERO_RAW rises. MR going low resets immediately; no passive diode residual/stale RC permission. SENSE directly monitors VDD >0.405 V; separate G33 supervisor enforces valid logic supply."
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "a4f86847-36be-48f7-a10d-4b16f294aa77")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint candidate" "Package_TO_SOT_SMD:SOT-23-6"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "cedec6cf-1870-46b0-b507-81270b370f89")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -2.05 -1.5)
+		(end -1.05 -1.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "c6bb1b50-e42d-4e94-88b2-43a642a4f149")
+	)
+	(fp_line
+		(start -2.05 1.5)
+		(end -2.05 -1.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "2716dd9d-bfa0-4149-9b63-a6d2d6630375")
+	)
+	(fp_line
+		(start -1.05 -1.7)
+		(end 1.05 -1.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "21c25125-5c23-4956-b923-83fca2a2f657")
+	)
+	(fp_line
+		(start -1.05 -1.5)
+		(end -1.05 -1.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "305ef4ce-213a-4980-8198-1d58c401a23e")
+	)
+	(fp_line
+		(start -1.05 1.5)
+		(end -2.05 1.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "bd335a10-e616-40f6-b157-5462acd7e5df")
+	)
+	(fp_line
+		(start -1.05 1.7)
+		(end -1.05 1.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "2ae68f54-f4cb-4b27-9b31-40386f4cd40f")
+	)
+	(fp_line
+		(start 1.05 -1.7)
+		(end 1.05 -1.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "07a1a3d4-4b27-4596-8317-6869ce9d6970")
+	)
+	(fp_line
+		(start 1.05 -1.5)
+		(end 2.05 -1.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "8dafc7c4-eab3-467f-b70b-63f49796eea4")
+	)
+	(fp_line
+		(start 1.05 1.5)
+		(end 1.05 1.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "15df99a1-7398-45d1-98ff-077cf48291a0")
+	)
+	(fp_line
+		(start 1.05 1.7)
+		(end -1.05 1.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "5f319dcd-88d9-494c-acfb-ab3e8cb778b2")
+	)
+	(fp_line
+		(start 2.05 -1.5)
+		(end 2.05 1.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "66ee8ee6-0aff-47b6-8bba-312542bd04f3")
+	)
+	(fp_line
+		(start 2.05 1.5)
+		(end 1.05 1.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "2138a907-cbd6-4bb6-b5bc-ad5d2eb3bcd8")
+	)
+	(fp_poly
+		(pts
+			(xy -0.4 -1.45) (xy 0.8 -1.45) (xy 0.8 1.45) (xy -0.8 1.45) (xy -0.8 -1.05)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "4e63a07f-b504-4f46-8641-ec418ca1f1a8")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 90)
+		(layer "F.Fab")
+		(uuid "43a57e09-0181-4d5d-9525-059b82b69c8a")
+		(effects
+			(font
+				(size 0.72 0.72)
+				(thickness 0.11)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -1.1375 -0.95)
+		(size 1.325 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(clearance 0)
+		(uuid "a0fab759-57cc-4919-a210-e8fc061d4b72")
+	)
+	(pad "2" smd roundrect
+		(at -1.1375 0)
+		(size 1.325 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(clearance 0)
+		(uuid "60882d21-673b-436b-acae-aa89dd7a5632")
+	)
+	(pad "3" smd roundrect
+		(at -1.1375 0.95)
+		(size 1.325 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(clearance 0)
+		(uuid "d709c738-633a-4cee-b848-d0ec673db65a")
+	)
+	(pad "4" smd roundrect
+		(at 1.1375 0.95)
+		(size 1.325 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(clearance 0)
+		(uuid "cab0b789-1652-44e1-91cb-61126e0b3719")
+	)
+	(pad "5" smd roundrect
+		(at 1.1375 0)
+		(size 1.325 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(clearance 0)
+		(uuid "8b07f5b2-88e9-4570-8348-ad5bc0109a67")
+	)
+	(pad "6" smd roundrect
+		(at 1.1375 -0.95)
+		(size 1.325 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(clearance 0)
+		(uuid "9ec7f88a-d7c1-4641-ad5d-b6c9a3eefbb0")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,0 +1,893 @@
+[
+  {
+    "via": [
+      154.35,
+      112.8
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "C7.2",
+    "padnet": "HV_BOTTOM",
+    "drill_to_mask_mm": 0.350005,
+    "annulus_to_mask_mm": 0.200041
+  },
+  {
+    "via": [
+      127.9,
+      93.2
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "C1.2",
+    "padnet": "HV_BOTTOM",
+    "drill_to_mask_mm": 0.350005,
+    "annulus_to_mask_mm": 0.200041
+  },
+  {
+    "via": [
+      150.45,
+      106.3
+    ],
+    "net": "/PGOOD",
+    "pad": "U1.11",
+    "padnet": "/PGOOD",
+    "drill_to_mask_mm": 0.350463,
+    "annulus_to_mask_mm": 0.200407
+  },
+  {
+    "via": [
+      150.8,
+      114.65
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "C2.2",
+    "padnet": "HV_BOTTOM",
+    "drill_to_mask_mm": 0.375091,
+    "annulus_to_mask_mm": 0.225035
+  },
+  {
+    "via": [
+      146.35,
+      112.65
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "C6.2",
+    "padnet": "HV_BOTTOM",
+    "drill_to_mask_mm": 0.375091,
+    "annulus_to_mask_mm": 0.225035
+  },
+  {
+    "via": [
+      141.7,
+      115.5
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "C3.2",
+    "padnet": "HV_BOTTOM",
+    "drill_to_mask_mm": 0.375091,
+    "annulus_to_mask_mm": 0.225035
+  },
+  {
+    "via": [
+      154.3,
+      110.2
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "R3.2",
+    "padnet": "HV_BOTTOM",
+    "drill_to_mask_mm": 0.375091,
+    "annulus_to_mask_mm": 0.225035
+  },
+  {
+    "via": [
+      149.7,
+      114.65
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "R2.2",
+    "padnet": "HV_BOTTOM",
+    "drill_to_mask_mm": 0.375091,
+    "annulus_to_mask_mm": 0.225035
+  },
+  {
+    "via": [
+      156.4,
+      97.2
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "R10.2",
+    "padnet": "HV_BOTTOM",
+    "drill_to_mask_mm": 0.375091,
+    "annulus_to_mask_mm": 0.225035
+  },
+  {
+    "via": [
+      153.1,
+      108.55
+    ],
+    "net": "VCC_BOOST",
+    "pad": "R7.2",
+    "padnet": "VCC_BOOST",
+    "drill_to_mask_mm": 0.375183,
+    "annulus_to_mask_mm": 0.225218
+  },
+  {
+    "via": [
+      146.6,
+      107.2
+    ],
+    "net": "/GATE",
+    "pad": "C4.2",
+    "padnet": "HV_BOTTOM",
+    "drill_to_mask_mm": 0.380034,
+    "annulus_to_mask_mm": 0.230071
+  },
+  {
+    "via": [
+      151.35,
+      108.55
+    ],
+    "net": "/PGOOD",
+    "pad": "R7.1",
+    "padnet": "/PGOOD",
+    "drill_to_mask_mm": 0.384062,
+    "annulus_to_mask_mm": 0.234008
+  },
+  {
+    "via": [
+      150.45,
+      106.3
+    ],
+    "net": "/PGOOD",
+    "pad": "U1.12",
+    "padnet": "/UVLO",
+    "drill_to_mask_mm": 0.393309,
+    "annulus_to_mask_mm": 0.243346
+  },
+  {
+    "via": [
+      133.65,
+      111.0
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "C9.2",
+    "padnet": "HV_BOTTOM",
+    "drill_to_mask_mm": 0.400084,
+    "annulus_to_mask_mm": 0.250028
+  },
+  {
+    "via": [
+      133.65,
+      110.0
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "C9.2",
+    "padnet": "HV_BOTTOM",
+    "drill_to_mask_mm": 0.400084,
+    "annulus_to_mask_mm": 0.250028
+  },
+  {
+    "via": [
+      149.7,
+      114.65
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "C2.1",
+    "padnet": "/COMP",
+    "drill_to_mask_mm": 0.412352,
+    "annulus_to_mask_mm": 0.262389
+  },
+  {
+    "via": [
+      140.9,
+      106.8375
+    ],
+    "net": "/SENSE_RAW",
+    "pad": "R9.2",
+    "padnet": "/SENSE_RAW",
+    "drill_to_mask_mm": 0.425078,
+    "annulus_to_mask_mm": 0.275023
+  },
+  {
+    "via": [
+      150.8,
+      114.65
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "R2.1",
+    "padnet": "/FB",
+    "drill_to_mask_mm": 0.440092,
+    "annulus_to_mask_mm": 0.290038
+  },
+  {
+    "via": [
+      155.6,
+      101.0
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "C8.2",
+    "padnet": "HV_BOTTOM",
+    "drill_to_mask_mm": 0.450072,
+    "annulus_to_mask_mm": 0.300016
+  },
+  {
+    "via": [
+      146.35,
+      112.65
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "R5.2",
+    "padnet": "/SENSE_FILT",
+    "drill_to_mask_mm": 0.475066,
+    "annulus_to_mask_mm": 0.325011
+  },
+  {
+    "via": [
+      155.6,
+      101.8
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "C8.2",
+    "padnet": "HV_BOTTOM",
+    "drill_to_mask_mm": 0.506651,
+    "annulus_to_mask_mm": 0.356596
+  },
+  {
+    "via": [
+      146.9,
+      103.9
+    ],
+    "net": "/GATE",
+    "pad": "Q1.4",
+    "padnet": "/GATE",
+    "drill_to_mask_mm": 0.515075,
+    "annulus_to_mask_mm": 0.365019
+  },
+  {
+    "via": [
+      144.0,
+      109.7625
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "R9.1",
+    "padnet": "HV_BOTTOM",
+    "drill_to_mask_mm": 0.525053,
+    "annulus_to_mask_mm": 0.375091
+  },
+  {
+    "via": [
+      144.0,
+      110.4
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "R4.1",
+    "padnet": "/SENSE_FILT",
+    "drill_to_mask_mm": 0.527343,
+    "annulus_to_mask_mm": 0.377379
+  },
+  {
+    "via": [
+      150.45,
+      106.3
+    ],
+    "net": "/PGOOD",
+    "pad": "U1.10",
+    "padnet": "/FREQ_SET",
+    "drill_to_mask_mm": 0.559386,
+    "annulus_to_mask_mm": 0.409423
+  },
+  {
+    "via": [
+      145.4,
+      107.2
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "C4.2",
+    "padnet": "HV_BOTTOM",
+    "drill_to_mask_mm": 0.569182,
+    "annulus_to_mask_mm": 0.419128
+  },
+  {
+    "via": [
+      144.0,
+      110.4
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "R9.1",
+    "padnet": "HV_BOTTOM",
+    "drill_to_mask_mm": 0.576963,
+    "annulus_to_mask_mm": 0.427001
+  },
+  {
+    "via": [
+      143.05,
+      103.25
+    ],
+    "net": "ISO_12V_TO_BOTTOM",
+    "pad": "Q1.1",
+    "padnet": "/SENSE_RAW",
+    "drill_to_mask_mm": 0.620817,
+    "annulus_to_mask_mm": 0.470763
+  },
+  {
+    "via": [
+      143.05,
+      103.25
+    ],
+    "net": "ISO_12V_TO_BOTTOM",
+    "pad": "Q1.5",
+    "padnet": "/SW",
+    "drill_to_mask_mm": 0.64041,
+    "annulus_to_mask_mm": 0.490355
+  },
+  {
+    "via": [
+      145.4,
+      107.2
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "C4.1",
+    "padnet": "VCC_BOOST",
+    "drill_to_mask_mm": 0.698271,
+    "annulus_to_mask_mm": 0.548217
+  },
+  {
+    "via": [
+      146.6,
+      107.2
+    ],
+    "net": "/GATE",
+    "pad": "U1.3",
+    "padnet": "/GATE",
+    "drill_to_mask_mm": 0.708525,
+    "annulus_to_mask_mm": 0.558471
+  },
+  {
+    "via": [
+      146.6,
+      107.2
+    ],
+    "net": "/GATE",
+    "pad": "U1.4",
+    "padnet": "HV_BOTTOM",
+    "drill_to_mask_mm": 0.708525,
+    "annulus_to_mask_mm": 0.558471
+  },
+  {
+    "via": [
+      148.7,
+      109.4
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "U1.13",
+    "padnet": "HV_BOTTOM",
+    "drill_to_mask_mm": 0.725005,
+    "annulus_to_mask_mm": 0.575041
+  },
+  {
+    "via": [
+      149.7,
+      114.65
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "C2.2",
+    "padnet": "HV_BOTTOM",
+    "drill_to_mask_mm": 0.741484,
+    "annulus_to_mask_mm": 0.59152
+  },
+  {
+    "via": [
+      144.0,
+      110.4
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "R4.2",
+    "padnet": "/SENSE_RAW",
+    "drill_to_mask_mm": 0.766752,
+    "annulus_to_mask_mm": 0.616789
+  },
+  {
+    "via": [
+      150.8,
+      114.65
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "R2.2",
+    "padnet": "HV_BOTTOM",
+    "drill_to_mask_mm": 0.805754,
+    "annulus_to_mask_mm": 0.655791
+  },
+  {
+    "via": [
+      146.5,
+      108.75
+    ],
+    "net": "VCC_BOOST",
+    "pad": "U1.6",
+    "padnet": "/COMP",
+    "drill_to_mask_mm": 0.815184,
+    "annulus_to_mask_mm": 0.665129
+  },
+  {
+    "via": [
+      148.7,
+      104.9
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "U1.13",
+    "padnet": "HV_BOTTOM",
+    "drill_to_mask_mm": 0.825072,
+    "annulus_to_mask_mm": 0.675016
+  },
+  {
+    "via": [
+      148.7,
+      109.4
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "U1.6",
+    "padnet": "/COMP",
+    "drill_to_mask_mm": 0.881193,
+    "annulus_to_mask_mm": 0.73123
+  },
+  {
+    "via": [
+      148.7,
+      109.4
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "U1.7",
+    "padnet": "HV_BOTTOM",
+    "drill_to_mask_mm": 0.881193,
+    "annulus_to_mask_mm": 0.73123
+  },
+  {
+    "via": [
+      146.6,
+      107.2
+    ],
+    "net": "/GATE",
+    "pad": "U1.2",
+    "padnet": "VCC_BOOST",
+    "drill_to_mask_mm": 0.895659,
+    "annulus_to_mask_mm": 0.745605
+  },
+  {
+    "via": [
+      146.6,
+      107.2
+    ],
+    "net": "/GATE",
+    "pad": "U1.5",
+    "padnet": "/CS",
+    "drill_to_mask_mm": 0.895659,
+    "annulus_to_mask_mm": 0.745605
+  },
+  {
+    "via": [
+      148.7,
+      104.9
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "U1.1",
+    "padnet": "ISO_12V_TO_BOTTOM",
+    "drill_to_mask_mm": 0.959563,
+    "annulus_to_mask_mm": 0.809599
+  },
+  {
+    "via": [
+      148.7,
+      104.9
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "U1.12",
+    "padnet": "/UVLO",
+    "drill_to_mask_mm": 0.959563,
+    "annulus_to_mask_mm": 0.809599
+  },
+  {
+    "via": [
+      150.45,
+      106.3
+    ],
+    "net": "/PGOOD",
+    "pad": "U1.9",
+    "padnet": "/SOFT_START",
+    "drill_to_mask_mm": 0.962584,
+    "annulus_to_mask_mm": 0.812528
+  },
+  {
+    "via": [
+      141.4,
+      111.5
+    ],
+    "net": "/SENSE_RAW",
+    "pad": "R4.2",
+    "padnet": "/SENSE_RAW",
+    "drill_to_mask_mm": 0.975035,
+    "annulus_to_mask_mm": 0.825072
+  },
+  {
+    "via": [
+      153.1,
+      108.55
+    ],
+    "net": "VCC_BOOST",
+    "pad": "R3.2",
+    "padnet": "HV_BOTTOM",
+    "drill_to_mask_mm": 0.975126,
+    "annulus_to_mask_mm": 0.825072
+  },
+  {
+    "via": [
+      150.45,
+      106.3
+    ],
+    "net": "/PGOOD",
+    "pad": "R7.1",
+    "padnet": "/PGOOD",
+    "drill_to_mask_mm": 0.979888,
+    "annulus_to_mask_mm": 0.829924
+  },
+  {
+    "via": [
+      151.35,
+      108.55
+    ],
+    "net": "/PGOOD",
+    "pad": "R3.1",
+    "padnet": "/FREQ_SET",
+    "drill_to_mask_mm": 0.980346,
+    "annulus_to_mask_mm": 0.830382
+  },
+  {
+    "via": [
+      146.5,
+      108.75
+    ],
+    "net": "VCC_BOOST",
+    "pad": "U1.5",
+    "padnet": "/CS",
+    "drill_to_mask_mm": 1.00653,
+    "annulus_to_mask_mm": 0.856566
+  },
+  {
+    "via": [
+      141.4,
+      111.5
+    ],
+    "net": "/SENSE_RAW",
+    "pad": "R9.1",
+    "padnet": "HV_BOTTOM",
+    "drill_to_mask_mm": 1.022734,
+    "annulus_to_mask_mm": 0.87277
+  },
+  {
+    "via": [
+      146.9,
+      103.9
+    ],
+    "net": "/GATE",
+    "pad": "Q1.5",
+    "padnet": "/SW",
+    "drill_to_mask_mm": 1.029143,
+    "annulus_to_mask_mm": 0.879089
+  },
+  {
+    "via": [
+      153.1,
+      108.55
+    ],
+    "net": "VCC_BOOST",
+    "pad": "R7.1",
+    "padnet": "/PGOOD",
+    "drill_to_mask_mm": 1.048918,
+    "annulus_to_mask_mm": 0.898954
+  },
+  {
+    "via": [
+      154.35,
+      112.8
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "C7.1",
+    "padnet": "/SOFT_START",
+    "drill_to_mask_mm": 1.050016,
+    "annulus_to_mask_mm": 0.900053
+  },
+  {
+    "via": [
+      150.45,
+      106.3
+    ],
+    "net": "/PGOOD",
+    "pad": "U1.13",
+    "padnet": "HV_BOTTOM",
+    "drill_to_mask_mm": 1.100005,
+    "annulus_to_mask_mm": 0.950041
+  },
+  {
+    "via": [
+      146.35,
+      112.65
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "C6.1",
+    "padnet": "/SENSE_FILT",
+    "drill_to_mask_mm": 1.101195,
+    "annulus_to_mask_mm": 0.951139
+  },
+  {
+    "via": [
+      144.0,
+      109.7625
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "R4.1",
+    "padnet": "/SENSE_FILT",
+    "drill_to_mask_mm": 1.122436,
+    "annulus_to_mask_mm": 0.972472
+  },
+  {
+    "via": [
+      149.7,
+      114.65
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "R8.1",
+    "padnet": "/COMP",
+    "drill_to_mask_mm": 1.125823,
+    "annulus_to_mask_mm": 0.975768
+  },
+  {
+    "via": [
+      146.9,
+      103.9
+    ],
+    "net": "/GATE",
+    "pad": "C4.2",
+    "padnet": "HV_BOTTOM",
+    "drill_to_mask_mm": 1.125823,
+    "annulus_to_mask_mm": 0.975768
+  },
+  {
+    "via": [
+      150.8,
+      114.65
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "C7.1",
+    "padnet": "/SOFT_START",
+    "drill_to_mask_mm": 1.137541,
+    "annulus_to_mask_mm": 0.987487
+  },
+  {
+    "via": [
+      150.8,
+      114.65
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "C2.1",
+    "padnet": "/COMP",
+    "drill_to_mask_mm": 1.144225,
+    "annulus_to_mask_mm": 0.994261
+  },
+  {
+    "via": [
+      146.35,
+      112.65
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "R5.1",
+    "padnet": "/CS",
+    "drill_to_mask_mm": 1.146422,
+    "annulus_to_mask_mm": 0.996367
+  },
+  {
+    "via": [
+      146.9,
+      103.9
+    ],
+    "net": "/GATE",
+    "pad": "Q1.3",
+    "padnet": "/SENSE_RAW",
+    "drill_to_mask_mm": 1.165007,
+    "annulus_to_mask_mm": 1.015044
+  },
+  {
+    "via": [
+      149.7,
+      114.65
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "R2.1",
+    "padnet": "/FB",
+    "drill_to_mask_mm": 1.22122,
+    "annulus_to_mask_mm": 1.071166
+  },
+  {
+    "via": [
+      146.6,
+      107.2
+    ],
+    "net": "/GATE",
+    "pad": "U1.1",
+    "padnet": "ISO_12V_TO_BOTTOM",
+    "drill_to_mask_mm": 1.24008,
+    "annulus_to_mask_mm": 1.090117
+  },
+  {
+    "via": [
+      146.6,
+      107.2
+    ],
+    "net": "/GATE",
+    "pad": "U1.6",
+    "padnet": "/COMP",
+    "drill_to_mask_mm": 1.24008,
+    "annulus_to_mask_mm": 1.090117
+  },
+  {
+    "via": [
+      143.05,
+      103.25
+    ],
+    "net": "ISO_12V_TO_BOTTOM",
+    "pad": "Q1.2",
+    "padnet": "/SENSE_RAW",
+    "drill_to_mask_mm": 1.246397,
+    "annulus_to_mask_mm": 1.096434
+  },
+  {
+    "via": [
+      151.35,
+      108.55
+    ],
+    "net": "/PGOOD",
+    "pad": "U1.7",
+    "padnet": "HV_BOTTOM",
+    "drill_to_mask_mm": 1.25006,
+    "annulus_to_mask_mm": 1.100005
+  },
+  {
+    "via": [
+      154.3,
+      110.2
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "C7.2",
+    "padnet": "HV_BOTTOM",
+    "drill_to_mask_mm": 1.273771,
+    "annulus_to_mask_mm": 1.123809
+  },
+  {
+    "via": [
+      144.0,
+      109.7625
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "R4.2",
+    "padnet": "/SENSE_RAW",
+    "drill_to_mask_mm": 1.278166,
+    "annulus_to_mask_mm": 1.128203
+  },
+  {
+    "via": [
+      148.7,
+      109.4
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "U1.5",
+    "padnet": "/CS",
+    "drill_to_mask_mm": 1.297851,
+    "annulus_to_mask_mm": 1.147795
+  },
+  {
+    "via": [
+      148.7,
+      109.4
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "U1.8",
+    "padnet": "/FB",
+    "drill_to_mask_mm": 1.297851,
+    "annulus_to_mask_mm": 1.147795
+  },
+  {
+    "via": [
+      151.35,
+      108.55
+    ],
+    "net": "/PGOOD",
+    "pad": "U1.8",
+    "padnet": "/FB",
+    "drill_to_mask_mm": 1.325041,
+    "annulus_to_mask_mm": 1.175078
+  },
+  {
+    "via": [
+      146.5,
+      108.75
+    ],
+    "net": "VCC_BOOST",
+    "pad": "U1.4",
+    "padnet": "HV_BOTTOM",
+    "drill_to_mask_mm": 1.342162,
+    "annulus_to_mask_mm": 1.192198
+  },
+  {
+    "via": [
+      146.35,
+      112.65
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "R4.1",
+    "padnet": "/SENSE_FILT",
+    "drill_to_mask_mm": 1.357268,
+    "annulus_to_mask_mm": 1.207214
+  },
+  {
+    "via": [
+      147.75,
+      103.9
+    ],
+    "net": "ISO_12V_TO_BOTTOM",
+    "pad": "Q1.4",
+    "padnet": "/GATE",
+    "drill_to_mask_mm": 1.36505,
+    "annulus_to_mask_mm": 1.215087
+  },
+  {
+    "via": [
+      148.7,
+      104.9
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "U1.2",
+    "padnet": "VCC_BOOST",
+    "drill_to_mask_mm": 1.386839,
+    "annulus_to_mask_mm": 1.236784
+  },
+  {
+    "via": [
+      148.7,
+      104.9
+    ],
+    "net": "HV_BOTTOM",
+    "pad": "U1.11",
+    "padnet": "/PGOOD",
+    "drill_to_mask_mm": 1.386839,
+    "annulus_to_mask_mm": 1.236784
+  },
+  {
+    "via": [
+      150.45,
+      106.3
+    ],
+    "net": "/PGOOD",
+    "pad": "U1.8",
+    "padnet": "/FB",
+    "drill_to_mask_mm": 1.420255,
+    "annulus_to_mask_mm": 1.270293
+  },
+  {
+    "via": [
+      153.1,
+      108.55
+    ],
+    "net": "VCC_BOOST",
+    "pad": "R3.1",
+    "padnet": "/FREQ_SET",
+    "drill_to_mask_mm": 1.440764,
+    "annulus_to_mask_mm": 1.290709
+  },
+  {
+    "via": [
+      146.6,
+      107.2
+    ],
+    "net": "/GATE",
+    "pad": "U1.13",
+    "padnet": "HV_BOTTOM",
+    "drill_to_mask_mm": 1.450011,
+    "annulus_to_mask_mm": 1.300048
+  }
+]

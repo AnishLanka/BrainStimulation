@@ -1,0 +1,48 @@
+LEGACY BOOST AND RAIL-SPLITTER — FINAL ASSEMBLY BOM SUPPLEMENT
+2026-10-17
+
+Scope: exact procurement selections for the existing dummy-load bench boards. This review made no PCB, schematic, value, pin mapping, footprint, routing or board-thickness changes. FINAL_ASSEMBLY_BOM.csv contains both boards; the two board-specific CSVs contain the same rows separately. Existing electrical qualification notes remain in force. Manufacturer catalog/order codes are verified; real-time stock, price and JLC assembly inventory are not promised.
+
+RAIL SPLITTER
+
+R1/R2: Vishay TNPW0805100KBEEA. Each is 100 kohm, 0.1%, 25 ppm/K, 0805. The current lead-free TNPW e3 datasheet gives 150 V maximum working voltage and general-operation P70 of 0.140 W for 0805; this supplement uses the conservative existing 0.125 W design limit. At nominal 80 V bus each resistor sees about 40 V and dissipates 16 mW. The native R0805 pads are 1.025 by 1.4 mm with 1.825 mm center spacing, compatible with the 2.0 by 1.25 mm package. Ordering syntax is 100K + B (0.1%) + E (25 ppm/K) + EA (lead-free reel).
+Use the same MPN and preferably one production lot for both positions. These remain two independent resistors, not a guaranteed ratio-tracking network: opposing 0.1% tolerances can shift the midpoint about 40 mV at an 80 V bus. Opposing 25 ppm/K coefficients can contribute about 1 mV/K. This selection does not change the existing midpoint accuracy claim or prove loaded regulation.
+Primary source, pages 1–4 and package dimensions:
+https://www.vishay.com/docs/28758/tnpw_e3.pdf
+
+R3: Vishay CRCW080549R9FKEA, 49.9 ohm, 1%, 100 ppm/K, 0805. Standard-operation rating is 0.125 W and 150 V. Native footprint is the same R0805 geometry. Keep feedback before this resistor as drawn. Nominal 5 mA gives 1.25 mW, but resistor dissipation depends on total midpoint current, not only electrode current; 50 mA would already give approximately 0.125 W. Existing stability/thermal bench checks remain necessary.
+Primary source, standard-operation ratings and order-code table:
+https://www.vishay.com/docs/20035/dcrcwe3.pdf
+
+C5: KEMET C0603C300J1GACTU. 30 pF, 5%, 100 VDC, C0G, 0603. Manufacturer code: 300 = 30 pF, J = 5%, 1 = 100 VDC, G = C0G, C = matte tin, TU = 7-inch reel. Body is 1.6 by 0.8 mm nominal; existing pads 0.90 by 0.95 mm at 1.55 mm center spacing accept this package. The 100 V rating preserves the existing requirement. No substitution to 50 V is implied.
+Primary source, ordering table page 1 and dimensions page 3:
+https://content.kemet.com/datasheets/KEM_C1003_C0G_SMD.pdf
+
+J1: Wurth Elektronik 691211720002, 2 positions, 5.00 mm pitch, 45-degree wire entry. The official recommended pattern is 5.00 mm pitch with 1.50 mm holes, exactly the native J1 geometry (footprint library name J2). Body nominal 10 by 13.7 mm, 15.5 mm high. Electrical rating is 300 VAC, 10 A. Pin 1 remains HV_TOP; pin 2 HV_BOTTOM. Accepts AWG24–12; torque 0.4 N m, strip 6–7 mm. Screw-clamp connection uses stripped wire directly and needs no mating plug.
+https://www.we-online.com/components/products/datasheet/691211720002.pdf
+https://www.we-online.com/en/components/products/TBL_5_00_211_45-DEGREE_ENTRY_MODULAR_69121172000X
+
+J2: Wurth Elektronik 691214110003, 3 positions, 3.50 mm pitch, horizontal wire entry. Recommended pattern is 3.50 mm pitch with 1.30 mm holes, exactly the native J2 geometry (footprint library name J3). Body nominal 10.5 by 7.4 mm, 8.5 mm high. Electrical rating is 300 VAC, 10 A. Pins 1/2/3 remain HV_TOP/MID/HV_BOTTOM. Accepts AWG24–16; torque 0.2 N m, strip 5–6 mm. No mating plug is required. Follow the physical pin-1 end in the drawings; the source footprint labels J2/J3 are library names, not the board reference numbers.
+https://www.we-online.com/components/products/datasheet/691214110003.pdf
+https://www.we-online.com/en/components/products/TBL_3_50_2141_HORIZONTAL_ENTRY_MODULAR_69121411000X
+
+Both terminal blocks are catalogued active by the manufacturer. Support the original thin board while tightening the clamps and provide harness strain relief. The connector ratings do not by themselves qualify the assembled isolation barrier or complete system.
+
+BOOST
+
+J1/J2: Samtec TSW-102-14-G-S, exact part identified by both existing footprint names. One row of two 0.64 mm square posts on 2.54 mm pitch; lead style -14, straight orientation, gold contact finish. Native pads are 1.57 mm diameter with 1.02 mm holes on 2.54 mm pitch, matching the manufacturer's through-hole pattern. The -14 post is 8.13 mm long and overall pin length 13.46 mm per product page; preserve the exact lead-style suffix. J1 remains pin 1 ISO_12V_TO_BOTTOM, pin 2 HV_BOTTOM. J2 remains pin 1 HV_TOP, pin 2 HV_BOTTOM.
+The manufacturer quotes 465 VAC and 4.7 A for its specified mated SSW/TSW configuration, not arbitrary loose jumper wires. This supplement selects the PCB header only. Use an insulated, labeled, strain-relieved bench harness; this unpolarized header does not prevent reversed connections or protect exposed energized contacts. No cable or mating socket was silently selected or added to the board BOM.
+https://www.samtec.com/products/tsw-102-14-g-s
+https://suddendocs.samtec.com/prints/tsw-xxx-xx-x-x-xx-xxx-footprint.pdf
+https://suddendocs.samtec.com/prints/tsw-xxx-xx-xxx-x-xx-xxx-mkt.pdf
+https://suddendocs.samtec.com/productspecs/tsw-sxx.pdf
+
+D1: retain Taiwan Semiconductor SS120. The current manufacturer C2305 datasheet ordering table explicitly lists order code SS120, DO-214AC (SMA), 7500/reel, so no speculative R3G suffix is appended. It is the 200 V / 1 A Schottky in the existing SMA footprint. Native pads are 2.5 by 1.8 mm at 4.0 mm centers; the existing pin 1 cathode convention and orientation must be retained. Distributor packaging suffixes should map to this exact manufacturer part and package.
+https://services.taiwansemi.com/storage/resources/datasheet/SS120_C2305.pdf
+
+All other boost positions already had complete MPNs. They were copied without substitution, including the exact S-suffix Panasonic bulk capacitor with 7.5 mm lead pitch. Earlier effective-capacitance, ESR, startup and loop-stability acceptance targets remain bench qualification items. All other rail-splitter positions likewise retain their exact existing MPNs.
+
+READ-ONLY NATIVE EVIDENCE
+Selection_Geometry_Audit.json records selected pad dimensions, holes and pitch plus original PCB/schematic SHA256 values. It asserts the native files were unchanged before versus after extraction. No Howland or signal-generator file was accessed or modified in this supplement.
+
+Samtec visual cross-check completed: official drawing revision A explicitly shows 2.54 mm pitch and 1.02 mm diameter holes. Local copy Samtec_TSW_Footprint.pdf preserves this primary drawing. No procurement placeholders remain in the 37 board-component rows.

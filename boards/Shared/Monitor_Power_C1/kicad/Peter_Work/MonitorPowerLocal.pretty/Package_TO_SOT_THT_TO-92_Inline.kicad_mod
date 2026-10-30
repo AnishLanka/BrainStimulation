@@ -1,0 +1,246 @@
+(footprint "Package_TO_SOT_THT_TO-92_Inline"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "TO-92 leads in-line, narrow, oval pads, drill 0.75mm (see NXP sot054_po.pdf)")
+	(tags "to-92 sc-43 sc-43a sot54 PA33 transistor")
+	(property "Reference" "U201"
+		(at 2 -4 0)
+		(layer "F.SilkS")
+		(uuid "04e9c809-a71b-4597-8519-2db767b72471")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "Value" "MCP1702_3V3"
+		(at 1.27 2.79 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "69532d22-e964-45bc-aef6-bc1913e66ee5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3da8eb58-c042-4e8b-92dc-42fc81bc3518")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1a86a148-5179-4549-bec4-82fad47498f1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "MCP1702-3302E/TO"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "81b13710-34a2-4866-a8b1-653e1a4537cf")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Design notes" "TO-92 pin numbering is 1 GND, 2 VIN, 3 VOUT. Budget 30 mA maximum total 3.3 V load for this prototype. Output regulation, load regulation and line regulation must all be included; do not use initial tolerance alone. Supply no existing ISOW7741 output in parallel."
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "8caefc4a-ca1a-4a4c-8549-14398334f0f5")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Footprint candidate" "MonitorPowerLocal:Package_TO_SOT_THT_TO-92_Inline"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "fa17a1c2-7dbd-40a4-9c17-e30b2acd8d50")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.53 1.85)
+		(end 3.07 1.85)
+		(stroke
+			(width 0.16)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e8286aa9-8291-49fc-9c29-b4ed838e9fd1")
+	)
+	(fp_arc
+		(start -0.568478 1.838478)
+		(mid -1.132087 -0.994977)
+		(end 1.27 -2.6)
+		(stroke
+			(width 0.16)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2b2ea588-51a9-4172-8abb-b78cfbf88f12")
+	)
+	(fp_arc
+		(start 1.27 -2.6)
+		(mid 3.672087 -0.994977)
+		(end 3.108478 1.838478)
+		(stroke
+			(width 0.16)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "afccf27d-8ea2-47f6-8311-d510836be036")
+	)
+	(fp_line
+		(start -1.46 -2.73)
+		(end -1.46 2.01)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "96b31b7d-cc24-4093-bc30-6cd0c13ae78d")
+	)
+	(fp_line
+		(start -1.46 -2.73)
+		(end 4 -2.73)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "e841ea0a-e848-4d6a-8ff5-de933fe27eb1")
+	)
+	(fp_line
+		(start 4 2.01)
+		(end -1.46 2.01)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "df1fb6ff-ff6b-4c58-8eb0-3c72f3851f00")
+	)
+	(fp_line
+		(start 4 2.01)
+		(end 4 -2.73)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a006aa9d-3c06-4a85-8ab5-ba3a5fb5b891")
+	)
+	(fp_line
+		(start -0.5 1.75)
+		(end 3 1.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "bae6c016-5800-42d1-b065-6f4ccbc90769")
+	)
+	(fp_arc
+		(start -0.483625 1.753625)
+		(mid -1.021221 -0.949055)
+		(end 1.27 -2.48)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "78f2615b-f9bf-4266-a485-ad311bb43302")
+	)
+	(fp_arc
+		(start 1.27 -2.48)
+		(mid 3.561221 -0.949055)
+		(end 3.023625 1.753625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "eab40be9-9376-453e-b061-64f3139c60e8")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 1.27 0 0)
+		(layer "F.Fab")
+		(uuid "bd79b1a5-066a-4245-9c3a-00ea11bb290d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.05 1.5)
+		(drill 0.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(clearance 0)
+		(uuid "0a33eaed-f876-49a0-ac93-c17e9670b43a")
+	)
+	(pad "2" thru_hole oval
+		(at 1.27 0)
+		(size 1.05 1.5)
+		(drill 0.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(clearance 0)
+		(uuid "62c5a5e0-aa32-49c4-a55b-b97ec6031ad8")
+	)
+	(pad "3" thru_hole oval
+		(at 2.54 0)
+		(size 1.05 1.5)
+		(drill 0.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(clearance 0)
+		(uuid "2efc8ecb-ecf6-4819-946b-cbc1b573536f")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_THT.3dshapes/TO-92_Inline.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

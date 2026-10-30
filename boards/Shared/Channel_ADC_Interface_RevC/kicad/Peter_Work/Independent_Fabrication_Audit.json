@@ -1,0 +1,59 @@
+{
+  "board": "Channel_ADC_Interface_REVIEW_ONLY",
+  "status": "Independent file/geometry audit PASS; not measured circuit performance",
+  "native_copper_layers": 2,
+  "native_thickness_mm": 0.41116,
+  "gerber_job_thickness_mm": 0.4112,
+  "job_finish_metadata": "None",
+  "outline_segment_count": 4,
+  "outline_centerline_mm": [
+    125.0,
+    85.0
+  ],
+  "outline_equal_to_board": true,
+  "drills_equal_to_board_within_mm": 0.00051,
+  "drill_counts": {
+    "PTH": 85,
+    "NPTH": 4
+  },
+  "common_auxiliary_origin_mm": [
+    20.0,
+    105.0
+  ],
+  "files": {
+    "Channel_ADC_Interface_REVIEW_ONLY-B_Cu.gbl": "63d1f3f061a4ab31d3b51aa5fb8c74ce2734deac9d1c2e2c16e811f3e742aeb0",
+    "Channel_ADC_Interface_REVIEW_ONLY-B_Mask.gbs": "37ad843a65b0083a61b1143b29fd76ad4df0b077e20db15324cbb4187a040847",
+    "Channel_ADC_Interface_REVIEW_ONLY-B_Silkscreen.gbo": "829f18e34f7e58a10872af25aa0c6ccf7cfbc8774da7af4c06ea4e893041911c",
+    "Channel_ADC_Interface_REVIEW_ONLY-Edge_Cuts.gm1": "31e11aef40d4249b408d4aea53e7277ee304fbcab66da19376864a637e7a77b6",
+    "Channel_ADC_Interface_REVIEW_ONLY-F_Cu.gtl": "4a5c09498b0a5409fc0dc228df6dd772fafc6777299571f29938d29741a3c041",
+    "Channel_ADC_Interface_REVIEW_ONLY-F_Mask.gts": "cc6cf12af5566279c5145991ab5306c9258d3167366fd39cde2c46f97261ec2f",
+    "Channel_ADC_Interface_REVIEW_ONLY-F_Silkscreen.gto": "6edd3fd587f8b8dce8973e8529ea9412a979682f7f0776e7980ec778a27af92b",
+    "Channel_ADC_Interface_REVIEW_ONLY-job.gbrjob": "f87014c8bc51529820641c6a434269e4fda914d4e83efa64d0c02b16a29acda3",
+    "Channel_ADC_Interface_REVIEW_ONLY-NPTH.drl": "90ae2891e82eeb317caee9a7bc84713f6d641479d5346e68f38c06546cc5d56d",
+    "Channel_ADC_Interface_REVIEW_ONLY-PTH.drl": "cbccfd59928ebf0ded639a8788dbe5c220b8b311ce373dbff38a4bf2736a53f9"
+  },
+  "zip": {
+    "path": "C:\\Users\\peter\\Documents\\Codex\\2026-10-17\\this\\outputs\\StimPrototype_Hardware_Revision_C\\adc_interface\\Channel_ADC_Interface_RevC_JLCPCB.zip",
+    "file_count": 9,
+    "sha256": "0e577e4b0d25c620e3e4b5fd1d3fb35c489a6cbdbccd10f411323d0a93831893",
+    "exact_fabrication_directory_match": true
+  },
+  "board_sha256": "856394338fb938e03f5373823c8fe32235f669e620815f5b782545d33732f6b4",
+  "fresh_native_export_matches_after_timestamp_normalization": {
+    "Channel_ADC_Interface_REVIEW_ONLY-B_Cu.gbl": true,
+    "Channel_ADC_Interface_REVIEW_ONLY-B_Mask.gbs": true,
+    "Channel_ADC_Interface_REVIEW_ONLY-B_Silkscreen.gbo": true,
+    "Channel_ADC_Interface_REVIEW_ONLY-Edge_Cuts.gm1": true,
+    "Channel_ADC_Interface_REVIEW_ONLY-F_Cu.gtl": true,
+    "Channel_ADC_Interface_REVIEW_ONLY-F_Mask.gts": true,
+    "Channel_ADC_Interface_REVIEW_ONLY-F_Silkscreen.gto": true,
+    "Channel_ADC_Interface_REVIEW_ONLY-job.gbrjob": true,
+    "Channel_ADC_Interface_REVIEW_ONLY-NPTH.drl": true,
+    "Channel_ADC_Interface_REVIEW_ONLY-PTH.drl": true
+  },
+  "independent_DRC_counts": {
+    "violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity": 0
+  }
+}

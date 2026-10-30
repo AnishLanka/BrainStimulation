@@ -1,0 +1,164 @@
+(footprint "R_1206_3216Metric"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Resistor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
+	(tags "resistor")
+	(property "Reference" "R41"
+		(at 3.5 0 270)
+		(layer "F.SilkS")
+		(uuid "c13b5754-8afd-46c0-a4d3-ad37290d4742")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "470R 1% 0.25W"
+		(at 0 1.83 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "81b6aebc-95ee-450f-85bf-f70d8e11bcd4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "52b7c0b6-071f-47e6-bfd2-1d8231439214")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9a21bf19-1cb7-4700-875f-09c1ba577e72")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "2303c7df-e91a-49a6-92cc-2273db2ab062")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "CRCW1206470RFKEA"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "59c0e7b2-2483-4093-95d6-4dc75f768080")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Design notes" "Rail bleeder/defined back-power load. 53.2 mW at 5 V. 5 mA bounded total fault injection yields <=2.374 V across maximum R; insufficient to pass +5 V power good. Not a substitute for surge absorption or arbitrary regulator failure protection."
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "a799607b-17cb-4241-a160-3dba8a25a273")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint candidate" "Resistor_SMD:R_1206_3216Metric"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "2c06bb47-1a50-497e-ae27-b9e4d25be745")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -2.28 -1.13)
+		(end 2.28 1.13)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "f2a3a501-5491-4053-9e42-169e94bae3f1")
+	)
+	(fp_rect
+		(start -1.6 -0.8)
+		(end 1.6 0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "d92702a7-978d-4a6e-b3d1-06153c3387ea")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "274319f2-0cfb-4fd4-b2f7-47ac99d15d0c")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -1.4625 0)
+		(size 1.125 1.75)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.222222)
+		(clearance 0)
+		(uuid "b91a1062-02b9-4330-9d23-cf1b4a634713")
+	)
+	(pad "2" smd roundrect
+		(at 1.4625 0)
+		(size 1.125 1.75)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.222222)
+		(clearance 0)
+		(uuid "8df274dd-e174-4d72-9552-71444f0cf741")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

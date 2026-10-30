@@ -1,0 +1,3153 @@
+(kicad_symbol_lib 
+	(version 20251024) 
+	(generator "kicad_symbol_editor") 
+	(symbol "1029c3af85768c4190bb7ad29bc67b5_1" 
+		(pin_names 
+			(hide yes)) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "110k 1%" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "BoostDraft:R0603" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "UVLO upper; startup 9.174V typ, fall 8.318V typ; minimum regulated input remains 10V" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "1029c3af85768c4190bb7ad29bc67b5_1_1_0" 
+			(polyline 
+				(pts 
+					(xy 5.08 0) 
+					(xy 4.318 0)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 5.08 0) 
+					(xy 5.842 1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 5.842 1.27) 
+					(xy 7.112 -1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 7.112 -1.27) 
+					(xy 8.382 1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 8.382 1.27) 
+					(xy 9.652 -1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 9.652 -1.27) 
+					(xy 10.922 1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 10.922 1.27) 
+					(xy 12.192 -1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 12.192 -1.27) 
+					(xy 12.7 0)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 12.7 0) 
+					(xy 13.462 0)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(pin passive line 
+				(at 0 0 0) 
+				(length 5.08) 
+				(name "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at 17.78 0 180) 
+				(length 5.08) 
+				(name "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "1029c3af85768c4190bb7ad29bc67b5_2" 
+		(pin_names 
+			(hide yes)) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "191k 1%" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "BoostDraft:R0805" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Provisional TypeII compensation;500Hz simplified target; unvalidated" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "1029c3af85768c4190bb7ad29bc67b5_2_1_0" 
+			(polyline 
+				(pts 
+					(xy 5.08 0) 
+					(xy 4.318 0)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 5.08 0) 
+					(xy 5.842 1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 5.842 1.27) 
+					(xy 7.112 -1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 7.112 -1.27) 
+					(xy 8.382 1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 8.382 1.27) 
+					(xy 9.652 -1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 9.652 -1.27) 
+					(xy 10.922 1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 10.922 1.27) 
+					(xy 12.192 -1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 12.192 -1.27) 
+					(xy 12.7 0)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 12.7 0) 
+					(xy 13.462 0)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(pin passive line 
+				(at 0 0 0) 
+				(length 5.08) 
+				(name "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at 17.78 0 180) 
+				(length 5.08) 
+				(name "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "1029c3af85768c4190bb7ad29bc67b5_3" 
+		(pin_names 
+			(hide yes)) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "10k 0.1%" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "BoostDraft:R0603" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Lower feedback;80.0V nominal setpoint; exact MPN pending" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "1029c3af85768c4190bb7ad29bc67b5_3_1_0" 
+			(polyline 
+				(pts 
+					(xy 5.08 0) 
+					(xy 4.318 0)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 5.08 0) 
+					(xy 5.842 1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 5.842 1.27) 
+					(xy 7.112 -1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 7.112 -1.27) 
+					(xy 8.382 1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 8.382 1.27) 
+					(xy 9.652 -1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 9.652 -1.27) 
+					(xy 10.922 1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 10.922 1.27) 
+					(xy 12.192 -1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 12.192 -1.27) 
+					(xy 12.7 0)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 12.7 0) 
+					(xy 13.462 0)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(pin passive line 
+				(at 0 0 0) 
+				(length 5.08) 
+				(name "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at 17.78 0 180) 
+				(length 5.08) 
+				(name "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "88c1139f9d239099ffebecbe3f7647a_1" 
+		(pin_names 
+			(hide yes)) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "80V OUTPUT" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "BoostDraft:OUT_FP-TSW-102-14-G-S-MFG" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "1=HV_TOP;2=HV_BOTTOM; source connector remains provisional" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "88c1139f9d239099ffebecbe3f7647a_1_1_0" 
+			(rectangle 
+				(start -10.16 5.08) 
+				(end -5.08 -10.16) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 128 0 0 1)) 
+				(fill 
+					(type background))) 
+			(rectangle 
+				(start -9.144 0.762) 
+				(end -6.858 -0.762) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type outline))) 
+			(rectangle 
+				(start -9.144 -4.318) 
+				(end -6.858 -5.842) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type outline))) 
+			(polyline 
+				(pts 
+					(xy -6.858 0) 
+					(xy -5.08 0)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy -6.858 -5.08) 
+					(xy -5.08 -5.08)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(text "1" 
+				(at -6.858 3.048 0) 
+				(effects 
+					(font 
+						(size 1.27 1.27)) 
+					(justify right top))) 
+			(text "2" 
+				(at -6.858 -2.032 0) 
+				(effects 
+					(font 
+						(size 1.27 1.27)) 
+					(justify right top))) 
+			(pin passive line 
+				(at 0 0 180) 
+				(length 5.08) 
+				(name "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at 0 -5.08 180) 
+				(length 5.08) 
+				(name "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "CAP-NP-2" 
+		(pin_names 
+			(hide yes)) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "47u 16V" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "BoostDraft:C1210" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Soft-start; effective minimum33uF over0-1V after bias,tolerance,temp; exact MPN pending" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "CAP-NP-2_1_0" 
+			(polyline 
+				(pts 
+					(xy 2.54 0) 
+					(xy 3.302 0)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 3.302 -2.032) 
+					(xy 3.302 2.032)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 4.318 2.032) 
+					(xy 4.318 -2.032)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 5.08 0) 
+					(xy 4.318 0)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(pin passive line 
+				(at 0 0 0) 
+				(length 2.54) 
+				(name "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at 7.62 0 180) 
+				(length 2.54) 
+				(name "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "CAP-P-2" 
+		(pin_names 
+			(hide yes)) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "100u 160V" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "BoostDraft:C_BULK" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Bulk output;100uF +/-20%;ESR/ripple and exact MPN pending" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "CAP-P-2_1_0" 
+			(polyline 
+				(pts 
+					(xy -2.032 -3.302) 
+					(xy 2.032 -3.302)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy -1.587 -2.476) 
+					(xy -0.952 -2.476)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy -1.27 -2.159) 
+					(xy -1.27 -2.794)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 0 -2.54) 
+					(xy 0 -3.302)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 0 -4.318) 
+					(xy 0 -5.08)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(arc 
+				(start -2.0163 -4.8535) 
+				(mid -1.0431 -4.4542) 
+				(end 0 -4.318) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(arc 
+				(start 0 -4.318) 
+				(mid 1.0431 -4.4541) 
+				(end 2.0163 -4.8535) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(pin passive line 
+				(at 0 0 270) 
+				(length 2.54) 
+				(name "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at 0 -7.62 90) 
+				(length 2.54) 
+				(name "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "RES-2" 
+		(pin_names 
+			(hide yes)) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "909R 1%" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "BoostDraft:R0603" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Extra slope compensation; total sense series1009ohm including R4" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "RES-2_1_0" 
+			(polyline 
+				(pts 
+					(xy 10.16 0) 
+					(xy 9.398 0.762) 
+					(xy 8.636 0) 
+					(xy 7.874 -0.762) 
+					(xy 6.35 0.762) 
+					(xy 4.826 -0.762) 
+					(xy 3.302 0.762) 
+					(xy 2.54 0)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(pin passive line 
+				(at 0 0 0) 
+				(length 2.54) 
+				(name "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at 12.7 0 180) 
+				(length 2.54) 
+				(name "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "1029c3af85768c4190bb7ad29bc67b5" 
+		(pin_names 
+			(hide yes)) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "54.9k 1%" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "BoostDraft:R0603" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Frequency395.67kHz nominal" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "1029c3af85768c4190bb7ad29bc67b5_1_0" 
+			(polyline 
+				(pts 
+					(xy 5.08 0) 
+					(xy 4.318 0)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 5.08 0) 
+					(xy 5.842 1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 5.842 1.27) 
+					(xy 7.112 -1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 7.112 -1.27) 
+					(xy 8.382 1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 8.382 1.27) 
+					(xy 9.652 -1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 9.652 -1.27) 
+					(xy 10.922 1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 10.922 1.27) 
+					(xy 12.192 -1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 12.192 -1.27) 
+					(xy 12.7 0)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 12.7 0) 
+					(xy 13.462 0)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(pin passive line 
+				(at 0 0 0) 
+				(length 5.08) 
+				(name "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at 17.78 0 180) 
+				(length 5.08) 
+				(name "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "88c1139f9d239099ffebecbe3f7647a" 
+		(pin_names 
+			(hide yes)) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "12V INPUT" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "BoostDraft:IN_FP-TSW-102-14-G-S-MFG" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "1=ISO_12V_TO_BOTTOM;2=HV_BOTTOM; source connector remains provisional" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "88c1139f9d239099ffebecbe3f7647a_1_0" 
+			(rectangle 
+				(start -6.858 0.762) 
+				(end -9.144 -0.762) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type outline))) 
+			(polyline 
+				(pts 
+					(xy -6.858 0) 
+					(xy -5.08 0)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(rectangle 
+				(start -6.858 -4.318) 
+				(end -9.144 -5.842) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type outline))) 
+			(polyline 
+				(pts 
+					(xy -6.858 -5.08) 
+					(xy -5.08 -5.08)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(rectangle 
+				(start -5.08 5.08) 
+				(end -10.16 -10.16) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 128 0 0 1)) 
+				(fill 
+					(type background))) 
+			(text "1" 
+				(at -6.858 3.048 0) 
+				(effects 
+					(font 
+						(size 1.27 1.27)) 
+					(justify right top))) 
+			(text "2" 
+				(at -6.858 -2.032 0) 
+				(effects 
+					(font 
+						(size 1.27 1.27)) 
+					(justify right top))) 
+			(pin passive line 
+				(at 0 0 180) 
+				(length 5.08) 
+				(name "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at 0 -5.08 180) 
+				(length 5.08) 
+				(name "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "ONSC-D-K1A2-2_A" 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "SS120 200V" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "BoostDraft:D_SMA" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "https://services.taiwansemi.com/storage/resources/datasheet/SS120_C2305.pdf" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "200V,1A Schottky; verify order suffix" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "ONSC-D-K1A2-2_A_1_0" 
+			(rectangle 
+				(start 10.16 0) 
+				(end 0 -5.08) 
+				(stroke 
+					(width 0.0254) 
+					(type solid) 
+					(color 128 0 0 1)) 
+				(fill 
+					(type background))) 
+			(pin passive line 
+				(at 15.24 -2.54 180) 
+				(length 5.08) 
+				(name "K" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at -5.08 -2.54 0) 
+				(length 5.08) 
+				(name "A" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "RES" 
+		(pin_numbers 
+			(hide yes)) 
+		(pin_names 
+			(hide yes)) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "21.5k 1%" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "BoostDraft:R0603" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "UVLO lower resistor" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "RES_1_0" 
+			(polyline 
+				(pts 
+					(xy 5.08 -2.54) 
+					(xy 4.064 -2.54) 
+					(xy 3.81 -3.048) 
+					(xy 3.302 -2.032) 
+					(xy 2.794 -3.048) 
+					(xy 2.286 -2.032) 
+					(xy 1.778 -3.048) 
+					(xy 1.27 -2.032) 
+					(xy 1.016 -2.54) 
+					(xy 0 -2.54)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(pin passive line 
+				(at -2.54 -2.54 0) 
+				(length 2.54) 
+				(name "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at 7.62 -2.54 180) 
+				(length 2.54) 
+				(name "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "b4654b650e69147ec39a6b967a45e02" 
+		(pin_names 
+			(hide yes)) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "47n 50V" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "BoostDraft:C0603" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Provisional compensation zero17.7Hz" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "b4654b650e69147ec39a6b967a45e02_1_0" 
+			(polyline 
+				(pts 
+					(xy 0 -1.778) 
+					(xy 0 -1.016)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 0 -3.556) 
+					(xy 0 -3.81)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 2.54 -1.778) 
+					(xy -2.54 -1.778)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 2.54 -3.302) 
+					(xy -2.54 -3.302)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(pin passive line 
+				(at 0 0 270) 
+				(length 1.778) 
+				(name "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at 0 -5.08 90) 
+				(length 1.524) 
+				(name "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "12V_BAR" 
+		(power global) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "#PWR" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "ISO_12V_TO_BOTTOM" 
+			(at 0 -3.81 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "12V_BAR_0_0" 
+			(polyline 
+				(pts 
+					(xy -1.27 -2.54) 
+					(xy 1.27 -2.54)) 
+				(stroke 
+					(width 0.254) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 0 0) 
+					(xy 0 -2.54)) 
+				(stroke 
+					(width 0.254) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(pin power_in line 
+				(at 0 0 0) 
+				(length 0) 
+				(hide yes) 
+				(name "ISO_12V_TO_BOTTOM" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "GND_POWER_GROUND" 
+		(power global) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "#PWR" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "HV_BOTTOM" 
+			(at 0 -6.35 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "GND_POWER_GROUND_0_0" 
+			(polyline 
+				(pts 
+					(xy -2.54 -2.54) 
+					(xy 2.54 -2.54)) 
+				(stroke 
+					(width 0.254) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy -1.778 -3.302) 
+					(xy 1.778 -3.302)) 
+				(stroke 
+					(width 0.254) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy -1.016 -4.064) 
+					(xy 1.016 -4.064)) 
+				(stroke 
+					(width 0.254) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy -0.254 -4.826) 
+					(xy 0.254 -4.826)) 
+				(stroke 
+					(width 0.254) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 0 0) 
+					(xy 0 -2.54)) 
+				(stroke 
+					(width 0.254) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(pin power_in line 
+				(at 0 0 0) 
+				(length 0) 
+				(hide yes) 
+				(name "HV_BOTTOM" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "VCC_BAR" 
+		(power global) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "#PWR" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "VCC_BOOST" 
+			(at 0 -3.81 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "VCC_BAR_0_0" 
+			(polyline 
+				(pts 
+					(xy -1.27 -2.54) 
+					(xy 1.27 -2.54)) 
+				(stroke 
+					(width 0.254) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 0 0) 
+					(xy 0 -2.54)) 
+				(stroke 
+					(width 0.254) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(pin power_in line 
+				(at 0 0 0) 
+				(length 0) 
+				(hide yes) 
+				(name "VCC_BOOST" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "CAP-NP-2_1" 
+		(pin_names 
+			(hide yes)) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "100p 50V" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "BoostDraft:C0603" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Sense filter" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "CAP-NP-2_1_1_0" 
+			(polyline 
+				(pts 
+					(xy 2.54 0) 
+					(xy 3.302 0)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 3.302 -2.032) 
+					(xy 3.302 2.032)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 4.318 2.032) 
+					(xy 4.318 -2.032)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 5.08 0) 
+					(xy 4.318 0)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(pin passive line 
+				(at 0 0 0) 
+				(length 2.54) 
+				(name "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at 7.62 0 180) 
+				(length 2.54) 
+				(name "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "LM5155DSSR" 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "LM5155DSSR" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "BoostDraft:U1_DSS0012B" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lm5155.pdf" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Nonisolated boost controller; all grounds=HV_BOTTOM" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "LM5155DSSR_1_0" 
+			(rectangle 
+				(start 15.24 30.48) 
+				(end -15.24 -30.48) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type background))) 
+			(pin power_in line 
+				(at -20.32 25.4 0) 
+				(length 5.08) 
+				(name "BIAS" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin power_out line 
+				(at 20.32 25.4 180) 
+				(length 5.08) 
+				(name "VCC_BOOST" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin output line 
+				(at 20.32 17.78 180) 
+				(length 5.08) 
+				(name "GATE" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "3" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin power_in line 
+				(at 20.32 -5.08 180) 
+				(length 5.08) 
+				(name "PGND" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "4" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin input line 
+				(at 20.32 5.08 180) 
+				(length 5.08) 
+				(name "CS" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "5" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin output line 
+				(at -20.32 -25.4 0) 
+				(length 5.08) 
+				(name "COMP" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "6" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin power_in line 
+				(at 20.32 -25.4 180) 
+				(length 5.08) 
+				(name "AGND" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "7" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin input line 
+				(at 20.32 -15.24 180) 
+				(length 5.08) 
+				(name "FB" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "8" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin input line 
+				(at -20.32 -15.24 0) 
+				(length 5.08) 
+				(name "SS" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "9" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at -20.32 -5.08 0) 
+				(length 5.08) 
+				(name "RT" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "10" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin open_collector line 
+				(at -20.32 5.08 0) 
+				(length 5.08) 
+				(name "PGOOD" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "11" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin input line 
+				(at -20.32 15.24 0) 
+				(length 5.08) 
+				(name "UVLO_SYNC" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "12" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at 20.32 -22.86 180) 
+				(length 5.08) 
+				(name "EP" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "13" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "RES-2_1" 
+		(pin_names 
+			(hide yes)) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "100R 1%" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "BoostDraft:R0603" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Current-sense filter;10ns with100pF" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "RES-2_1_1_0" 
+			(polyline 
+				(pts 
+					(xy 10.16 0) 
+					(xy 9.398 0.762) 
+					(xy 8.636 0) 
+					(xy 7.874 -0.762) 
+					(xy 6.35 0.762) 
+					(xy 4.826 -0.762) 
+					(xy 3.302 0.762) 
+					(xy 2.54 0)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(pin passive line 
+				(at 0 0 0) 
+				(length 2.54) 
+				(name "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at 12.7 0 180) 
+				(length 2.54) 
+				(name "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "RES_1" 
+		(pin_numbers 
+			(hide yes)) 
+		(pin_names 
+			(hide yes)) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "24.9k 1%" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "BoostDraft:R0603" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "LOCAL PGOOD pullup to VCC_BOOST; not3.3V logic" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "RES_1_1_0" 
+			(polyline 
+				(pts 
+					(xy 5.08 -2.54) 
+					(xy 4.064 -2.54) 
+					(xy 3.81 -3.048) 
+					(xy 3.302 -2.032) 
+					(xy 2.794 -3.048) 
+					(xy 2.286 -2.032) 
+					(xy 1.778 -3.048) 
+					(xy 1.27 -2.032) 
+					(xy 1.016 -2.54) 
+					(xy 0 -2.54)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(pin passive line 
+				(at -2.54 -2.54 0) 
+				(length 2.54) 
+				(name "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at 7.62 -2.54 180) 
+				(length 2.54) 
+				(name "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "RES_2" 
+		(pin_numbers 
+			(hide yes)) 
+		(pin_names 
+			(hide yes)) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "790k 0.1%" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "BoostDraft:R1206" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Upper feedback;79V nominal stress; exact MPN pending" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "RES_2_1_0" 
+			(polyline 
+				(pts 
+					(xy 5.08 -2.54) 
+					(xy 4.064 -2.54) 
+					(xy 3.81 -3.048) 
+					(xy 3.302 -2.032) 
+					(xy 2.794 -3.048) 
+					(xy 2.286 -2.032) 
+					(xy 1.778 -3.048) 
+					(xy 1.27 -2.032) 
+					(xy 1.016 -2.54) 
+					(xy 0 -2.54)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(pin passive line 
+				(at -2.54 -2.54 0) 
+				(length 2.54) 
+				(name "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at 7.62 -2.54 180) 
+				(length 2.54) 
+				(name "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "RES_3" 
+		(pin_numbers 
+			(hide yes)) 
+		(pin_names 
+			(hide yes)) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "0R270 1%" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "BoostDraft:R1206" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Peak switch current sensing; not a precision output-current limit" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "RES_3_1_0" 
+			(polyline 
+				(pts 
+					(xy 5.08 -2.54) 
+					(xy 4.064 -2.54) 
+					(xy 3.81 -3.048) 
+					(xy 3.302 -2.032) 
+					(xy 2.794 -3.048) 
+					(xy 2.286 -2.032) 
+					(xy 1.778 -3.048) 
+					(xy 1.27 -2.032) 
+					(xy 1.016 -2.54) 
+					(xy 0 -2.54)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(pin passive line 
+				(at -2.54 -2.54 0) 
+				(length 2.54) 
+				(name "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at 7.62 -2.54 180) 
+				(length 2.54) 
+				(name "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "SQJA70EP-T1_GE3" 
+		(pin_numbers 
+			(hide yes)) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "FDMC86240" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "BoostDraft:Q_FDMC86240_CASE511DH" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/fdmc86240-d.pdf" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "S1/2/3,G4,D5/6/7/8; verified CASE511DH copper lands; EP common with D" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "SQJA70EP-T1_GE3_1_0" 
+			(polyline 
+				(pts 
+					(xy 2.54 0) 
+					(xy 4.445 0)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 4.445 0) 
+					(xy 4.445 5.08)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 5.08 4.445) 
+					(xy 6.985 4.445)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 5.08 1.905) 
+					(xy 5.08 3.175)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 5.08 0.635) 
+					(xy 6.985 0.635)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 5.08 0) 
+					(xy 5.08 1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 6.35 3.175) 
+					(xy 5.08 2.54) 
+					(xy 6.35 1.905) 
+					(xy 6.35 3.175)) 
+				(stroke 
+					(width 0.0254) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type background))) 
+			(polyline 
+				(pts 
+					(xy 6.35 2.54) 
+					(xy 6.985 2.54)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(circle 
+				(center 6.35 2.54) 
+				(radius 3.81) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 6.985 5.08) 
+					(xy 8.255 5.08)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 6.985 4.445) 
+					(xy 6.985 5.08)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(circle 
+				(center 6.985 0.635) 
+				(radius 0.025) 
+				(stroke 
+					(width 0.762) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 6.985 0) 
+					(xy 6.985 2.54)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 6.985 0) 
+					(xy 8.255 0)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 7.62 7.62) 
+					(xy 7.645 5.08)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(circle 
+				(center 7.62 5.08) 
+				(radius 0.025) 
+				(stroke 
+					(width 0.762) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(circle 
+				(center 7.62 0) 
+				(radius 0.025) 
+				(stroke 
+					(width 0.762) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 7.62 -2.54) 
+					(xy 7.62 0)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 8.255 3.175) 
+					(xy 8.255 5.08)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 8.255 0) 
+					(xy 8.255 1.905)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 8.89 3.175) 
+					(xy 7.62 3.175)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 8.89 1.905) 
+					(xy 7.62 1.905) 
+					(xy 8.255 3.175) 
+					(xy 8.89 1.905)) 
+				(stroke 
+					(width 0.0254) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type background))) 
+			(pin passive line 
+				(at 7.62 -5.08 90) 
+				(length 2.54) 
+				(name "S" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at 0 0 0) 
+				(length 2.54) 
+				(name "G" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "4" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at 7.62 10.16 270) 
+				(length 2.54) 
+				(name "D" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "5" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at 7.62 -5.08 90) 
+				(length 2.54) 
+				(name "S" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) hide) 
+			(pin passive line 
+				(at 7.62 -5.08 90) 
+				(length 2.54) 
+				(name "S" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "3" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) hide) 
+			(pin passive line 
+				(at 7.62 10.16 270) 
+				(length 2.54) 
+				(name "D" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "6" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) hide) 
+			(pin passive line 
+				(at 7.62 10.16 270) 
+				(length 2.54) 
+				(name "D" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "7" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) hide) 
+			(pin passive line 
+				(at 7.62 10.16 270) 
+				(length 2.54) 
+				(name "D" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "8" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) hide)) 
+		(embedded_fonts no)) 
+	(symbol "VLS6045EX-151M" 
+		(pin_numbers 
+			(hide yes)) 
+		(pin_names 
+			(hide yes)) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "1mH SRR1280-102K" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "BoostDraft:L_BOURNS" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/SRR1280.pdf" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "1mH10%;DCR1.7ohm max;Irms0.68A;Isat0.80A typ at25%Ldrop" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "VLS6045EX-151M_1_0" 
+			(polyline 
+				(pts 
+					(xy -5.08 0) 
+					(xy -7.62 0)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(arc 
+				(start -5.08 0) 
+				(mid -3.81 1.27) 
+				(end -2.54 0) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(arc 
+				(start -2.54 0) 
+				(mid -1.27 1.27) 
+				(end 0 0) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(arc 
+				(start 0 0) 
+				(mid 1.27 1.27) 
+				(end 2.54 0) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(arc 
+				(start 2.54 0) 
+				(mid 3.81 1.27) 
+				(end 5.08 0) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 5.08 0) 
+					(xy 7.62 0)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(pin passive line 
+				(at -12.7 0 0) 
+				(length 5.08) 
+				(name "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at 12.7 0 180) 
+				(length 5.08) 
+				(name "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "b4654b650e69147ec39a6b967a45e02_1" 
+		(pin_names 
+			(hide yes)) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "68p 50V" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "BoostDraft:C0603" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Provisional compensation HF pole 12.25kHz" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "b4654b650e69147ec39a6b967a45e02_1_1_0" 
+			(polyline 
+				(pts 
+					(xy 0 -1.778) 
+					(xy 0 -1.016)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 0 -3.556) 
+					(xy 0 -3.81)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 2.54 -1.778) 
+					(xy -2.54 -1.778)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 2.54 -3.302) 
+					(xy -2.54 -3.302)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(pin passive line 
+				(at 0 0 270) 
+				(length 1.778) 
+				(name "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at 0 -5.08 90) 
+				(length 1.524) 
+				(name "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "C" 
+		(pin_numbers 
+			(hide yes)) 
+		(pin_names 
+			(offset 0.254)) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "C" 
+			(at 0.635 2.54 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) 
+				(justify left))) 
+		(property "Value" "C" 
+			(at 0.635 -2.54 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) 
+				(justify left))) 
+		(property "Footprint" "" 
+			(at 0.9652 -3.81 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Unpolarized capacitor" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "ki_keywords" "cap capacitor" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "ki_fp_filters" "C_*" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "C_0_1" 
+			(polyline 
+				(pts 
+					(xy -2.032 0.762) 
+					(xy 2.032 0.762)) 
+				(stroke 
+					(width 0.508) 
+					(type default)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy -2.032 -0.762) 
+					(xy 2.032 -0.762)) 
+				(stroke 
+					(width 0.508) 
+					(type default)) 
+				(fill 
+					(type none)))) 
+		(symbol "C_1_1" 
+			(pin passive line 
+				(at 0 3.81 270) 
+				(length 2.794) 
+				(name "" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at 0 -3.81 90) 
+				(length 2.794) 
+				(name "" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "PWR_FLAG" 
+		(power global) 
+		(pin_numbers 
+			(hide yes)) 
+		(pin_names 
+			(offset 0) 
+			(hide yes)) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "#FLG" 
+			(at 0 1.905 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "PWR_FLAG" 
+			(at 0 3.81 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Special symbol for telling ERC where power comes from" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "ki_keywords" "flag power" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "PWR_FLAG_0_0" 
+			(pin power_out line 
+				(at 0 0 90) 
+				(length 0) 
+				(name "" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(symbol "PWR_FLAG_0_1" 
+			(polyline 
+				(pts 
+					(xy 0 0) 
+					(xy 0 1.27) 
+					(xy -1.016 1.905) 
+					(xy 0 2.54) 
+					(xy 1.016 1.905) 
+					(xy 0 1.27)) 
+				(stroke 
+					(width 0) 
+					(type default)) 
+				(fill 
+					(type none)))) 
+		(embedded_fonts no)))

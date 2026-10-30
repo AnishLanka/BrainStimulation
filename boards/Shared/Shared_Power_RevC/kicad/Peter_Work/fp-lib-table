@@ -1,0 +1,1 @@
+(fp_lib_table (version 7) (lib (name "PowerLocal") (type "KiCad") (uri "${KIPRJMOD}/PowerLocal.pretty") (options "") (descr "Verified manufacturer land patterns and local standard footprints")))

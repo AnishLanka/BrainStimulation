@@ -1,0 +1,1 @@
+Finished bare-board bench-prototype package. Open Integration_Guide.html for current wiring and power alternatives. Release_Checks.json records the fresh packaged-project checks. The complete portable engineering archive is outputs/StimPrototype_Prototype_Package_RevC.zip. Howland and SignalGen designs are unchanged; no hardware was powered or ordered.

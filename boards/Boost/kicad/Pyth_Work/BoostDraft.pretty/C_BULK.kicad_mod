@@ -1,0 +1,232 @@
+(footprint "C_BULK"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "CP, Radial series, Radial, pin pitch=7.50mm, diameter=16mm, height=25mm, Electrolytic Capacitor")
+	(tags "CP Radial series Radial pin pitch 7.50mm diameter 16mm height 25mm Electrolytic Capacitor")
+	(property "Reference" "C5"
+		(at 4 -9.8 0)
+		(layer "F.SilkS")
+		(uuid "6903ece5-d7e2-450b-9fe7-3bcbf456705d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.16)
+			)
+		)
+	)
+	(property "Value" "100u 160V"
+		(at 3.75 9.25 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b22d8e46-a7e7-4333-b9fe-4e06b4291862")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/RDF0000C1270.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6c1ea24b-693d-4703-974f-7fac29c3ba93")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Bulk output;10000h105C;1700mArms100kHz105C;maxbody16.5x22mm;verify actual HF ESR"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "45be5311-909a-480b-a786-c751ff73619c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "capacitor/THT/other"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "82f4c775-569f-4de1-b635-b66ccb23018a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Function_Name" "COUT"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "de0220bf-9bab-414b-9b2a-b7fbbc0258c4")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Function" "Bulk output;10000h105C;1700mArms100kHz105C;maxbody16.5x22mm;verify actual HF ESR"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "e6aaf6ab-4283-4d7d-8140-65f8d4c25a9e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Rating" "100uF20%;160V;105C;D16mm;H20mm;P7.5mm;lead0.8mm"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "be99db74-f919-498e-8b9e-9ba11994d73a")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Manufacturer" "Panasonic"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "126df962-45cf-4965-9daa-ed7043445a77")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "EEUEE2C101S"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "3c55ff01-6eda-457d-86e6-8c6e03c96303")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Dielectric" "Aluminum electrolytic"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "31c14ba6-de69-4fa3-bc72-bebc0d84fe8e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_circle
+		(center 3.75 0)
+		(end 12 0)
+		(stroke
+			(width 0.16)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "310a1795-89e7-4f3d-ac4e-6390f0e1ee43")
+	)
+	(fp_circle
+		(center 3.75 0)
+		(end 12 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "7803acc1-a37f-44ab-a0b1-94027528d6e9")
+	)
+	(fp_line
+		(start -3.125168 -3.5075)
+		(end -1.525168 -3.5075)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b33ffd39-1ae1-4728-97fd-18860924ccb8")
+	)
+	(fp_line
+		(start -2.325168 -4.3075)
+		(end -2.325168 -2.7075)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "40c20e66-3228-4dda-bce6-cfeba7b30220")
+	)
+	(fp_circle
+		(center 3.75 0)
+		(end 11.75 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "8d3c3a19-e144-45a4-aca3-6b48dd6f8a4c")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 3.75 0 0)
+		(layer "F.Fab")
+		(uuid "f3d0b9f0-46ba-40fe-b8e9-7127bf6d3730")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole roundrect
+		(at 0 0)
+		(size 2.4 2.4)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.104167)
+		(solder_paste_margin 0)
+		(solder_paste_margin_ratio 0)
+		(clearance 0)
+		(uuid "2179f6e5-e63f-45f1-93e9-73f007fb4fa1")
+	)
+	(pad "2" thru_hole circle
+		(at 7.5 0)
+		(size 2.4 2.4)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_paste_margin 0)
+		(solder_paste_margin_ratio 0)
+		(clearance 0)
+		(uuid "cc85242b-d447-4f40-a766-844bac2c5474")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/CP_Radial_D16.0mm_P7.50mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

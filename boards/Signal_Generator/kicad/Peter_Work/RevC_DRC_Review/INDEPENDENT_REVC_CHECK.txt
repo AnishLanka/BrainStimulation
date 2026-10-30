@@ -1,0 +1,32 @@
+SIGNALGEN REVC — INDEPENDENT DRC AND LAND-PATTERN CHECK
+2026-10-17; KiCad CLI/Python 10.0.6
+
+PCB SHA256:
+a0ca47e2defd2acfd99b982c89b8ac2458e4972c07420558737fded42b71e50b
+
+Complete project snapshot: 0 DRC violations, 0 unconnected, 0 schematic parity
+differences. --severity-all included excluded violations; none were present.
+The project rule-severity configuration is unchanged from the prior release.
+Both old and new project exclusion lists are empty.
+
+Standalone PCB-only test with zones refilled: 0 copper errors, 0 unconnected.
+77 expected warnings remain only because this deliberate negative test omits
+the SignalGenLocal footprint library. A complete portable project is necessary
+to resolve library checks and run schematic parity checks.
+
+All 16 U4/U7 pads checked using KiCad native geometry:
+size 1.400 x 0.450 mm, corner radius 0.050 mm; row centers x=-2.2/+2.2 mm;
+pin centers y=-0.975,-0.325,+0.325,+0.975 mm, with counterclockwise numbering.
+Adjacent pad-edge gap is 0.650-0.450 = 0.200 mm.
+This agrees with TI's OPA2192 DGK0008A example land pattern:
+https://www.ti.com/lit/ds/symlink/opa2192.pdf
+The 0.18 mm U4/U7 rule has been removed; project minimum clearance is 0.2 mm.
+Machine geometry details: Pad_Rule_Check.json.
+
+Fresh full-project Boost and Rail checks also remain 0 DRC / 0 unconnected /
+0 schematic parity, at their original unchanged PCB hashes recorded in
+Summary.json. No released PCB files or libraries were edited by this reviewer.
+
+This check covers native geometry, connectivity, rule consistency, and the
+specific screenshot reproduction. It is not a fabrication ZIP comparison or
+measured circuit-performance qualification.

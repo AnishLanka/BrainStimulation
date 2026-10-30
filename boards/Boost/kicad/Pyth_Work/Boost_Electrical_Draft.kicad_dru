@@ -1,0 +1,5 @@
+(version 1)
+# Bench engineering constraints; not qualified insulation rules.
+(rule "High voltage and switch-node spacing"
+  (condition "A.NetName == '/HV_TOP' || B.NetName == '/HV_TOP' || A.NetName == '/SW' || B.NetName == '/SW'")
+  (constraint clearance (min 0.5mm)))

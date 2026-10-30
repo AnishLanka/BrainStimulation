@@ -1,0 +1,35 @@
+Read-only power-board status review — 2026-10-17
+
+Fresh KiCad 10.0.6 results
+                           ERC   DRC   Unconnected   Schematic parity
+BuckBoost Rev B               0     0       0                0
+Boost electrical prototype   0     0       0                0
+Rail-splitter prototype      0     0       0                0
+
+Both the saved zone fills and an in-memory fresh refill pass DRC. No project or PCB was saved or changed. These older projects retain default ignored-check categories; Native_Status_Summary.json records the exact lists. Zero findings means zero findings among enabled checks, not a claim that every KiCad category was enabled. The fresh checks establish internally consistent prototype fabrication files; they do not establish powered performance.
+
+BuckBoost Rev B
+The repaired TPS63001 board is a usable prototype candidate for its own 3.3 V rail. The original requested input was 2.8–3.7 V with more than 200 mA output. No physical maximum-load, startup, ripple or thermal test has been performed; the existing 250 mA starting test point is not a rated maximum. Use the corrected Coilcraft XFL4020-222MEC inductor and the selected capacitors. TI describes up to 800 mA output in boost mode above 2.4 V input and 1.2 A in buck mode from 3.6–5.5 V; the 1.8 A figure is switch current, not a universal output-current rating. This board is not the complete four-channel power supply. The newer shared-power adapter has a different architecture; do not combine its capacity claims with this board.
+Primary source: https://www.ti.com/lit/ds/symlink/tps63001.pdf
+
+Boost prototype
+The board is nominal 79.7 V, with calculated reference/resistor-only corners 78.747–80.656 V. The stated 15 mA is a conditional controlled-bench target, not a proven output rating. The 10–16 V input analysis window is an assumption, not a guarantee of any unregulated module output. The provisional Type II network is R8=191 kohm, C3=47 nF, C2=68 pF, targeting about 500 Hz crossover. No phase/gain margin has been established with the actual 100 uF electrolytic ESR, active midpoint buffer, Howland load and isolated source impedance. The conditional slope calculation has 1.29 margin under its stated assumptions; this is not a substitute for checking switching waveforms and stability. Startup assumes sufficient soft-start effective capacitance and actual downstream loading. Verify startup, line/load steps, ringing, current limit, efficiency and temperature. Disable leaves the diode input-to-output path and stored high-voltage charge.
+The old GAPTEC 2 W plus 200 ohm preload analysis in Draft_Review.txt belongs to the previous supply architecture. It must not be presented as a limit of the newer RECOM R3M supply, nor may the new source be treated as validating this converter's compensation/current capability. The 15 mA bench target remains unmeasured regardless of source choice.
+Sources: existing boost Draft_Review.txt and Design_Calculations.json; https://www.ti.com/lit/ds/symlink/lm5155.pdf
+
+Rail splitter
+The buffered midpoint wiring, enable reference, exposed pad and 100 V capacitor ratings are consistent in the source and PCB. R3=49.9 ohm isolates the amplifier from nominal 20.2 uF total midpoint capacitance. Feedback is before R3, so 5 mA DC imbalance produces 249.5 mV nominal midpoint shift. Stability with real capacitor bias, rail impedance, full load and startup has not been established. Measure midpoint transients and thermal rise; the full-bus 100 V bypass has no overvoltage clamp. The older Draft_BOM.csv still leaves exact purchasing MPNs for divider/isolation resistors, 30 pF C5 and connector verification open; these are assembly/procurement tasks, not a newly discovered bare-board connectivity defect. Original connector geometry is preserved. Keep MID distinct from HV_BOTTOM and keep all four isolated channels separate.
+Sources: existing rail Draft_Review.txt, PCB_Draft_Notes.txt and Draft_BOM.csv; https://www.ti.com/lit/ds/symlink/opa455.pdf
+
+Original Anish Howland — no changes
+Assembly clarification received after the initial audit: the schematic's Rload1=2 kohm test placeholder will NOT be populated. External 2–5 kohm dummy loads will be used. The hypothetical parallel-load headroom calculation below therefore does not apply to the intended assembly and is withdrawn as a current assembly concern. The original PCB/BOM design remains unchanged; this is the user's population intent.
+A fresh export of the original Downloads schematic confirms U1 pin 3 is the noninverting input, pin 2 the inverting input and pin 6 the output, consistent with TI. R5/R6=100 kohm gives nominal gain 2. R1=100 kohm connects the command to pin 3. The output-to-pin-3 chain has five 9.1 kohm resistors plus 20 kohm and 30 kohm, totaling 95.5 kohm. Output sense resistors R4+R13 total 500 ohm. Thus the previously reported balance mismatch is a real nominal calculation mismatch in this exact schematic, not a misread pin topology. It does not prove which values are physically fitted on an independently ordered board.
+
+With an ideal linear op amp, Iload = 0.0019590793*Vin +0.000040920716*Vload amperes. The nonzero Vload coefficient means current depends on load voltage. Equivalent incremental output resistance is approximately -24.44 kohm. For an isolated 2 kohm total load, the nominal transconductance is 2.1337 mA/V. See Howland_Original_Balance_Audit.json for equations and exact nets. No Howland modifications are proposed here.
+
+Rload1=2 kohm is directly across the output and MID if fitted. It draws 15 mA at 30 V. With the new monitor's 100 ohm return shunt, an external 30 V / 5 mA load would put the internal positive node at 30.5 V and require about 40.678 V at the OPA462 output including the feedback-chain current. That exceeds the authoritative +40 V rail even before real amplifier headroom. Consequently simultaneous 30 V / 5 mA external operation cannot be claimed with this onboard 2 kohm load fitted. The monitor measures external current separately; that does not remove the parallel load or provide extra amplifier headroom.
+
+The current active OPA462 datasheet table specifies 32 V/us typical slew rate, with no guaranteed minimum in that row. A 30 V-peak, 40 kHz sine requires 7.54 V/us at the external port; amplifier swing/current and closed-loop stability require separate checks. An old 6.5 V/us narrative is not the current slew-rate table specification.
+Primary pinout/specification source: https://www.ti.com/lit/ds/symlink/opa462.pdf
+
+Handoff conclusion: the three layouts pass fresh native prototype-fabrication checks. They are not verified as a complete powered system; boost/rail stability and the actual load budget are the primary remaining bench validations. The Howland onboard 2 kohm placeholder is DNP in the intended assembly, so the hypothetical parallel-load voltage limit above is not an active concern. The independently verified nominal resistor-balance finding remains informational and does not authorize a design change.

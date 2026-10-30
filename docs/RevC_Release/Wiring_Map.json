@@ -1,0 +1,991 @@
+{
+  "title": "Revision C logical integration and harness map",
+  "status": "Native pin definitions checked; physical Howland output access and complete harness remain unverified",
+  "date": "2026-10-17",
+  "requirements": {
+    "channels": 4,
+    "first_build_channels": 1,
+    "frequency_hz": [
+      0.5,
+      40000
+    ],
+    "nominal_rails_V_relative_to_MID": [
+      -40,
+      40
+    ],
+    "normal_current_target_mA": [
+      0,
+      5
+    ],
+    "external_dummy_load_ohm": [
+      2000,
+      5000
+    ],
+    "additional_independent_5mA_limiter": "excluded per user"
+  },
+  "boards": {
+    "shared_power": {
+      "native_file": "StimPrototype_Hardware_Revision_C/shared_power/Shared_Power_Adapter_RevC.kicad_pcb",
+      "sha256": "cffe4fa3e631e34b5c930e2075eefe2149c586fba26e1cda877d22a6f76d18c1",
+      "outline_mm": [
+        105.0,
+        90.0
+      ],
+      "native_thickness_mm": 0.41116,
+      "connectors": {
+        "J8": {
+          "value": "AUX5V MONITORS",
+          "footprint": "PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical",
+          "MPN": "B2P-VH",
+          "pins": {
+            "1": "AUX5V",
+            "2": "SYS_GND"
+          }
+        },
+        "J4": {
+          "value": "CHANNEL 1 12 V",
+          "footprint": "PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical",
+          "MPN": "B2P-VH",
+          "pins": {
+            "1": "CH1_12V",
+            "2": "CH1_HV_BOTTOM"
+          }
+        },
+        "J5": {
+          "value": "CHANNEL 2 12 V",
+          "footprint": "PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical",
+          "MPN": "B2P-VH",
+          "pins": {
+            "1": "CH2_12V",
+            "2": "CH2_HV_BOTTOM"
+          }
+        },
+        "J2": {
+          "value": "3.3 V BANK A",
+          "footprint": "PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical",
+          "MPN": "B2P-VH",
+          "pins": {
+            "1": "3V3_A",
+            "2": "SYS_GND"
+          }
+        },
+        "J7": {
+          "value": "CHANNEL 4 12 V",
+          "footprint": "PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical",
+          "MPN": "B2P-VH",
+          "pins": {
+            "1": "CH4_12V",
+            "2": "CH4_HV_BOTTOM"
+          }
+        },
+        "J1": {
+          "value": "5 V INPUT",
+          "footprint": "PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical",
+          "MPN": "B2P-VH",
+          "pins": {
+            "1": "P5V_RAW",
+            "2": "SYS_GND"
+          }
+        },
+        "J3": {
+          "value": "3.3 V BANK B",
+          "footprint": "PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical",
+          "MPN": "B2P-VH",
+          "pins": {
+            "1": "3V3_B",
+            "2": "SYS_GND"
+          }
+        },
+        "J6": {
+          "value": "CHANNEL 3 12 V",
+          "footprint": "PowerLocal:JST_VH_B2P-VH_1x02_P3.96mm_Vertical",
+          "MPN": "B2P-VH",
+          "pins": {
+            "1": "CH3_12V",
+            "2": "CH3_HV_BOTTOM"
+          }
+        }
+      }
+    },
+    "monitor_power": {
+      "native_file": "StimPrototype_Hardware_Revision_C/monitor_power/Monitor_Power_C1.kicad_pcb",
+      "sha256": "6df11dc536e993520866675ea80c10f3ac029d781b8046ce19df095916471e14",
+      "outline_mm": [
+        100.0,
+        60.0
+      ],
+      "native_thickness_mm": 0.41116,
+      "connectors": {
+        "J202": {
+          "value": "LOCAL_MONITOR_POWER",
+          "footprint": "MonitorPowerLocal:Connector_JST_JST_VH_B4P-VH_1x04_P3.96mm_Vertical",
+          "MPN": "B4P-VH(LF)(SN)",
+          "pins": {
+            "1": "P5_CH",
+            "2": "MID_CH",
+            "3": "N5_CH",
+            "4": "P3V3_CH"
+          }
+        },
+        "J201": {
+          "value": "SYSTEM_5V_INPUT",
+          "footprint": "MonitorPowerLocal:Connector_JST_JST_VH_B2P-VH_1x02_P3.96mm_Vertical",
+          "MPN": "B2P-VH(LF)(SN)",
+          "pins": {
+            "1": "SYS5V",
+            "2": "SYS_GND"
+          }
+        }
+      }
+    },
+    "monitor_core": {
+      "native_file": "StimPrototype_Hardware_Revision_C/monitor_core/Channel_Monitor_C1.kicad_pcb",
+      "sha256": "1f7298b5252813e290627964680c2acf05d32bd53b8ba58bf8af6828c3f79b51",
+      "outline_mm": [
+        180.0,
+        145.0
+      ],
+      "native_thickness_mm": 0.41116,
+      "connectors": {
+        "J5": {
+          "value": "SIMULTANEOUS_ADC_MODULE",
+          "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical",
+          "MPN": "TSW-107-07-G-S",
+          "pins": {
+            "1": "MID_CH",
+            "2": "I_MON",
+            "3": "V_MON",
+            "4": "REF_4V096",
+            "5": "P5_CH",
+            "6": "P3V3_CH",
+            "7": "FAULT_N"
+          }
+        },
+        "J8": {
+          "value": "COMMAND_MONITOR",
+          "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+          "MPN": "TSW-102-07-G-S",
+          "pins": {
+            "1": "CMD_FROM_SIGNAL",
+            "2": "MID_CH"
+          }
+        },
+        "J2": {
+          "value": "HOWLAND_OUTPUT_INPUT",
+          "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+          "MPN": "TSW-102-07-G-S",
+          "pins": {
+            "1": "INTERNAL_P",
+            "2": "MID_CH"
+          }
+        },
+        "J6": {
+          "value": "FAULT_STATUS",
+          "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+          "MPN": "TSW-103-07-G-S",
+          "pins": {
+            "1": "FAULT_CLEAR_N",
+            "2": "MID_CH",
+            "3": "P3V3_CH"
+          }
+        },
+        "J4": {
+          "value": "HOWLAND_ENABLE",
+          "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+          "MPN": "TSW-102-07-G-S",
+          "pins": {
+            "1": "OPA_ENABLE",
+            "2": "MID_CH"
+          }
+        },
+        "J7": {
+          "value": "HV_RAIL_MONITOR",
+          "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+          "MPN": "TSW-103-07-G-S",
+          "pins": {
+            "1": "HV_TOP",
+            "2": "MID_CH",
+            "3": "HV_BOTTOM"
+          }
+        },
+        "J101": {
+          "value": "EXTERNAL_DUMMY_LOAD",
+          "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+          "MPN": "TSW-102-07-G-S",
+          "pins": {
+            "1": "EXTERNAL_P",
+            "2": "EXTERNAL_N"
+          }
+        },
+        "J3": {
+          "value": "ISOLATED_CONTROL",
+          "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
+          "MPN": "TSW-106-07-G-S",
+          "pins": {
+            "1": "MID_CH",
+            "2": "RUN_REQUEST",
+            "3": "ARM_EDGE",
+            "4": "HEARTBEAT",
+            "5": "FAULT_N",
+            "6": "INHIBITED"
+          }
+        },
+        "J1": {
+          "value": "ISOLATED_LOCAL_POWER",
+          "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+          "MPN": "TSW-104-07-G-S",
+          "pins": {
+            "1": "P5_CH",
+            "2": "MID_CH",
+            "3": "N5_CH",
+            "4": "P3V3_CH"
+          }
+        }
+      }
+    },
+    "adc": {
+      "native_file": "StimPrototype_Hardware_Revision_C/adc_interface/Channel_ADC_Interface_REVIEW_ONLY.kicad_pcb",
+      "sha256": "856394338fb938e03f5373823c8fe32235f669e620815f5b782545d33732f6b4",
+      "outline_mm": [
+        125.0,
+        85.0
+      ],
+      "native_thickness_mm": 0.41116,
+      "connectors": {
+        "J202": {
+          "value": "CORE_ADC_CONTROL_LINK",
+          "footprint": "Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical",
+          "MPN": "TSW-107-07-G-D",
+          "pins": {
+            "1": "P5_CH",
+            "2": "MID_CH_GND",
+            "3": "P3V3_CH",
+            "4": "MID_CH_GND",
+            "5": "I_MON",
+            "6": "V_MON",
+            "7": "unconnected-(J202-Pad7)",
+            "8": "RUN_REQUEST",
+            "9": "ARM_EDGE",
+            "10": "HEARTBEAT",
+            "11": "FAULT_CLEAR_N",
+            "12": "INHIBITED",
+            "13": "unconnected-(J202-Pad13)",
+            "14": "unconnected-(J202-Pad14)"
+          }
+        },
+        "J201": {
+          "value": "HOST_CONTROL_TELEMETRY",
+          "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical",
+          "MPN": "TSW-108-07-G-S",
+          "pins": {
+            "1": "HOST_3V3",
+            "2": "HOST_GND",
+            "3": "HOST_RUN",
+            "4": "HOST_ARM",
+            "5": "HOST_HB",
+            "6": "HOST_FAULT_OK",
+            "7": "HOST_UART_TX",
+            "8": "HOST_UART_RX"
+          }
+        }
+      }
+    },
+    "signalgen": {
+      "native_file": "StimPrototype_Integration/signalgen_draft/SignalGen_Electrical_Draft.kicad_pcb",
+      "sha256": "a0ca47e2defd2acfd99b982c89b8ac2458e4972c07420558737fded42b71e50b",
+      "outline_mm": [
+        74.676,
+        95.902
+      ],
+      "native_thickness_mm": 0.41116,
+      "connectors": {
+        "J2": {
+          "value": "SS-107-T-1A",
+          "footprint": "SignalGenLocal:J2_SAMTEC_SS-107-T-1A",
+          "MPN": "",
+          "pins": {
+            "01": "VBUS_5V_2",
+            "02": "SYS_3V3",
+            "03": "SYS_GND",
+            "04": "SPI_SCLK_SYS",
+            "05": "SPI_MOSI_SYS",
+            "06": "SPI_CS_SYS_2",
+            "07": "FAULT_TO_PICO_2"
+          }
+        },
+        "J3": {
+          "value": "1716030000",
+          "footprint": "SignalGenLocal:J3_CONN_LM_5.080390_WED",
+          "MPN": "",
+          "pins": {
+            "1": "BIPOLAR_OUT",
+            "2": "ISO_3V3_CLEAN",
+            "3": "ISO_GND_ISOW"
+          }
+        },
+        "J4": {
+          "value": "1716030000",
+          "footprint": "SignalGenLocal:J4_CONN_LM_5.080390_WED",
+          "MPN": "",
+          "pins": {
+            "1": "BIPOLAR_OUT_2",
+            "2": "ISO_3V3_CLEAN_2",
+            "3": "ISO_GND_ISOW_2"
+          }
+        },
+        "J1": {
+          "value": "SS-107-T-1A",
+          "footprint": "SignalGenLocal:J1_SAMTEC_SS-107-T-1A",
+          "MPN": "",
+          "pins": {
+            "01": "VBUS_5V",
+            "02": "SYS_3V3",
+            "03": "SYS_GND",
+            "04": "SPI_SCLK_SYS",
+            "05": "SPI_MOSI_SYS",
+            "06": "SPI_CS_SYS",
+            "07": "FAULT_TO_PICO"
+          }
+        }
+      }
+    },
+    "boost": {
+      "native_file": "StimPrototype_Integration/boost_draft/Boost_Electrical_Draft.kicad_pcb",
+      "sha256": "d329fe12e2790f448aebf86053afe83f5395b52f0572ed989d25742532b22fd3",
+      "outline_mm": [
+        54.229,
+        26.543
+      ],
+      "native_thickness_mm": 0.41116,
+      "connectors": {
+        "J2": {
+          "value": "80V OUTPUT",
+          "footprint": "BoostDraft:OUT_FP-TSW-102-14-G-S-MFG",
+          "MPN": "",
+          "pins": {
+            "1": "HV_TOP",
+            "2": "HV_BOTTOM"
+          }
+        },
+        "J1": {
+          "value": "12V INPUT",
+          "footprint": "BoostDraft:IN_FP-TSW-102-14-G-S-MFG",
+          "MPN": "",
+          "pins": {
+            "1": "ISO_12V_TO_BOTTOM",
+            "2": "HV_BOTTOM"
+          }
+        }
+      }
+    },
+    "splitter": {
+      "native_file": "StimPrototype_Integration/railsplitter_draft/RailSplitter_Electrical_Draft.kicad_pcb",
+      "sha256": "0a6469ec5593e9f603f7f2c1237c84ea7e760c88014318f333de363a92a8864c",
+      "outline_mm": [
+        50.673,
+        19.431
+      ],
+      "native_thickness_mm": 0.41116,
+      "connectors": {
+        "J1": {
+          "value": "80 V INPUT",
+          "footprint": "RailSplitterLocal:J2",
+          "MPN": "",
+          "pins": {
+            "1": "HV_TOP",
+            "2": "HV_BOTTOM"
+          }
+        },
+        "J2": {
+          "value": "+40 / MID / -40",
+          "footprint": "RailSplitterLocal:J3",
+          "MPN": "",
+          "pins": {
+            "1": "HV_TOP",
+            "2": "MID",
+            "3": "HV_BOTTOM"
+          }
+        }
+      }
+    },
+    "buckboost": {
+      "native_file": "BuckBoost_RevB/BuckBoost_RevB.kicad_pcb",
+      "sha256": "254a79a8537299e081462e889d707ce6b0238f3eb09f3971d4ccd1216448959d",
+      "outline_mm": [
+        58.928,
+        17.018
+      ],
+      "native_thickness_mm": 0.4112,
+      "connectors": {
+        "J2": {
+          "value": "691211720002",
+          "footprint": "BuckBoostLocal:OUT_691211720002",
+          "MPN": "691211720002",
+          "pins": {
+            "1": "NetC2_1",
+            "2": "GND"
+          }
+        },
+        "J1": {
+          "value": "691211720002",
+          "footprint": "BuckBoostLocal:IN_691211720002",
+          "MPN": "691211720002",
+          "pins": {
+            "1": "NetC1_1",
+            "2": "GND"
+          }
+        }
+      }
+    },
+    "howland": {
+      "source_file": "StimPrototype_Integration/source_inputs/Howland_Ordered_SOURCE.kicad_sch",
+      "source_sha256": "0afacd19144895e19be0b6325c56c05c6384847d03a774d3cd594d9f049bfffa",
+      "ordered_PCB_available": false,
+      "population": {
+        "Rload1": "DNP per user: schematic test-load placeholder"
+      },
+      "unchanged": [
+        "PCB copper",
+        "R11=20k and other resistor values",
+        "E/D wiring"
+      ],
+      "connectors": {
+        "J1": {
+          "physical_terminal_or_mate": "unverified on ordered board",
+          "pins": {
+            "1": "HV_TOP",
+            "2": "MID_CH",
+            "3": "HV_BOTTOM"
+          }
+        },
+        "J2": {
+          "physical_terminal_or_mate": "unverified on ordered board",
+          "pins": {
+            "1": "CMD_FROM_SIGNAL",
+            "2": "MID_CH"
+          }
+        }
+      },
+      "output_node": {
+        "aliases": [
+          "R2.2",
+          "R4.1",
+          "Rload1.2"
+        ],
+        "type": "schematic node, NOT an established physical output connector",
+        "physical_access_status": "unverified; use an existing output terminal only after continuity identifies it"
+      }
+    }
+  },
+  "channels": [
+    {
+      "channel": 1,
+      "signal_board": "SG_A",
+      "signal_digital_header": "J1",
+      "signal_analog_header": "J3",
+      "isolation_reference": "CH1.MID_CH"
+    },
+    {
+      "channel": 2,
+      "signal_board": "SG_A",
+      "signal_digital_header": "J2",
+      "signal_analog_header": "J4",
+      "isolation_reference": "CH2.MID_CH"
+    },
+    {
+      "channel": 3,
+      "signal_board": "SG_B",
+      "signal_digital_header": "J1",
+      "signal_analog_header": "J3",
+      "isolation_reference": "CH3.MID_CH"
+    },
+    {
+      "channel": 4,
+      "signal_board": "SG_B",
+      "signal_digital_header": "J2",
+      "signal_analog_header": "J4",
+      "isolation_reference": "CH4.MID_CH"
+    }
+  ],
+  "per_channel_connections": [
+    {
+      "from": "BOOST.J2.1",
+      "to": "SPLITTER.J1.1",
+      "function": "HV_TOP",
+      "scope": "per_channel",
+      "status": "native_pin_map_verified",
+      "note": ""
+    },
+    {
+      "from": "BOOST.J2.2",
+      "to": "SPLITTER.J1.2",
+      "function": "HV_BOTTOM",
+      "scope": "per_channel",
+      "status": "native_pin_map_verified",
+      "note": ""
+    },
+    {
+      "from": "SPLITTER.J2.1",
+      "to": "HOWLAND.J1.1",
+      "function": "HV_TOP",
+      "scope": "per_channel",
+      "status": "Howland schematic pin verified; ordered connector/copper unverified",
+      "note": ""
+    },
+    {
+      "from": "SPLITTER.J2.1",
+      "to": "CORE.J7.1",
+      "function": "HV_TOP",
+      "scope": "per_channel",
+      "status": "native_pin_map_verified",
+      "note": ""
+    },
+    {
+      "from": "SPLITTER.J2.2",
+      "to": "HOWLAND.J1.2",
+      "function": "MID_CH",
+      "scope": "per_channel",
+      "status": "Howland schematic pin verified; ordered connector/copper unverified",
+      "note": ""
+    },
+    {
+      "from": "SPLITTER.J2.2",
+      "to": "CORE.J7.2",
+      "function": "MID_CH",
+      "scope": "per_channel",
+      "status": "native_pin_map_verified",
+      "note": ""
+    },
+    {
+      "from": "SPLITTER.J2.3",
+      "to": "HOWLAND.J1.3",
+      "function": "HV_BOTTOM",
+      "scope": "per_channel",
+      "status": "Howland schematic pin verified; ordered connector/copper unverified",
+      "note": ""
+    },
+    {
+      "from": "SPLITTER.J2.3",
+      "to": "CORE.J7.3",
+      "function": "HV_BOTTOM",
+      "scope": "per_channel",
+      "status": "native_pin_map_verified",
+      "note": ""
+    },
+    {
+      "from": "SIGNAL.ANALOG.1",
+      "to": "HOWLAND.J2.1",
+      "function": "CMD_FROM_SIGNAL",
+      "scope": "per_channel",
+      "status": "Howland schematic pin verified; ordered connector/copper unverified",
+      "note": ""
+    },
+    {
+      "from": "SIGNAL.ANALOG.1",
+      "to": "CORE.J8.1",
+      "function": "CMD_FROM_SIGNAL",
+      "scope": "per_channel",
+      "status": "native_pin_map_verified",
+      "note": ""
+    },
+    {
+      "from": "SIGNAL.ANALOG.3",
+      "to": "HOWLAND.J2.2",
+      "function": "MID_CH",
+      "scope": "per_channel",
+      "status": "Howland physical check pending",
+      "note": ""
+    },
+    {
+      "from": "SIGNAL.ANALOG.3",
+      "to": "SPLITTER.J2.2",
+      "function": "MID_CH",
+      "scope": "per_channel",
+      "status": "native_pin_map_verified",
+      "note": ""
+    },
+    {
+      "from": "SIGNAL.ANALOG.3",
+      "to": "CORE.J8.2",
+      "function": "MID_CH",
+      "scope": "per_channel",
+      "status": "native_pin_map_verified",
+      "note": ""
+    },
+    {
+      "from": "HOWLAND.EXISTING_OUTPUT_NODE",
+      "to": "CORE.J2.1",
+      "function": "INTERNAL_P",
+      "scope": "per_channel",
+      "status": "UNVERIFIED PHYSICAL ACCESS",
+      "note": "Logical node R2.2/R4.1/Rload1.2. No output terminal or mate invented; no PCB rework requested. If no existing terminal is accessible, this harness connection remains unverified."
+    },
+    {
+      "from": "SPLITTER.J2.2",
+      "to": "CORE.J2.2",
+      "function": "MID_CH",
+      "scope": "per_channel",
+      "status": "native_pin_map_verified",
+      "note": ""
+    },
+    {
+      "from": "CORE.J101.1",
+      "to": "DUMMY_LOAD.1",
+      "function": "EXTERNAL_P",
+      "scope": "per_channel",
+      "status": "native_pin_map_verified",
+      "note": ""
+    },
+    {
+      "from": "CORE.J101.2",
+      "to": "DUMMY_LOAD.2",
+      "function": "EXTERNAL_N",
+      "scope": "per_channel",
+      "status": "native_pin_map_verified",
+      "note": "Do not bypass this return to MID; the board includes the100ohm measurement shunt in the return path."
+    },
+    {
+      "from": "MONITOR_POWER.J202.1",
+      "to": "CORE.J1.1",
+      "function": "P5_CH",
+      "scope": "per_channel",
+      "status": "native_pin_map_verified",
+      "note": "JST VH to2.54mm header: mapped harness, not a direct mating pair."
+    },
+    {
+      "from": "MONITOR_POWER.J202.2",
+      "to": "CORE.J1.2",
+      "function": "MID_CH",
+      "scope": "per_channel",
+      "status": "native_pin_map_verified",
+      "note": "JST VH to2.54mm header: mapped harness, not a direct mating pair."
+    },
+    {
+      "from": "MONITOR_POWER.J202.3",
+      "to": "CORE.J1.3",
+      "function": "N5_CH",
+      "scope": "per_channel",
+      "status": "native_pin_map_verified",
+      "note": "JST VH to2.54mm header: mapped harness, not a direct mating pair."
+    },
+    {
+      "from": "MONITOR_POWER.J202.4",
+      "to": "CORE.J1.4",
+      "function": "P3V3_CH",
+      "scope": "per_channel",
+      "status": "native_pin_map_verified",
+      "note": "JST VH to2.54mm header: mapped harness, not a direct mating pair."
+    },
+    {
+      "from": "ADC.J202.1",
+      "to": "CORE.J5.5",
+      "function": "P5_CH",
+      "scope": "per_channel",
+      "status": "native_pin_map_verified",
+      "note": "ADC MID_CH_GND aliases this channel MID_CH. Pin11 is a conditioned status input; never drive it as reset."
+    },
+    {
+      "from": "ADC.J202.2",
+      "to": "CORE.J5.1",
+      "function": "MID_CH",
+      "scope": "per_channel",
+      "status": "native_pin_map_verified",
+      "note": "ADC MID_CH_GND aliases this channel MID_CH. Pin11 is a conditioned status input; never drive it as reset."
+    },
+    {
+      "from": "ADC.J202.3",
+      "to": "CORE.J5.6",
+      "function": "P3V3_CH",
+      "scope": "per_channel",
+      "status": "native_pin_map_verified",
+      "note": "ADC MID_CH_GND aliases this channel MID_CH. Pin11 is a conditioned status input; never drive it as reset."
+    },
+    {
+      "from": "ADC.J202.4",
+      "to": "CORE.J3.1",
+      "function": "MID_CH",
+      "scope": "per_channel",
+      "status": "native_pin_map_verified",
+      "note": "ADC MID_CH_GND aliases this channel MID_CH. Pin11 is a conditioned status input; never drive it as reset."
+    },
+    {
+      "from": "ADC.J202.5",
+      "to": "CORE.J5.2",
+      "function": "I_MON",
+      "scope": "per_channel",
+      "status": "native_pin_map_verified",
+      "note": "ADC MID_CH_GND aliases this channel MID_CH. Pin11 is a conditioned status input; never drive it as reset."
+    },
+    {
+      "from": "ADC.J202.6",
+      "to": "CORE.J5.3",
+      "function": "V_MON",
+      "scope": "per_channel",
+      "status": "native_pin_map_verified",
+      "note": "ADC MID_CH_GND aliases this channel MID_CH. Pin11 is a conditioned status input; never drive it as reset."
+    },
+    {
+      "from": "ADC.J202.8",
+      "to": "CORE.J3.2",
+      "function": "RUN_REQUEST",
+      "scope": "per_channel",
+      "status": "native_pin_map_verified",
+      "note": "ADC MID_CH_GND aliases this channel MID_CH. Pin11 is a conditioned status input; never drive it as reset."
+    },
+    {
+      "from": "ADC.J202.9",
+      "to": "CORE.J3.3",
+      "function": "ARM_EDGE",
+      "scope": "per_channel",
+      "status": "native_pin_map_verified",
+      "note": "ADC MID_CH_GND aliases this channel MID_CH. Pin11 is a conditioned status input; never drive it as reset."
+    },
+    {
+      "from": "ADC.J202.10",
+      "to": "CORE.J3.4",
+      "function": "HEARTBEAT",
+      "scope": "per_channel",
+      "status": "native_pin_map_verified",
+      "note": "ADC MID_CH_GND aliases this channel MID_CH. Pin11 is a conditioned status input; never drive it as reset."
+    },
+    {
+      "from": "ADC.J202.11",
+      "to": "CORE.J6.1",
+      "function": "FAULT_CLEAR_N",
+      "scope": "per_channel",
+      "status": "native_pin_map_verified",
+      "note": "ADC MID_CH_GND aliases this channel MID_CH. Pin11 is a conditioned status input; never drive it as reset."
+    },
+    {
+      "from": "ADC.J202.12",
+      "to": "CORE.J3.6",
+      "function": "INHIBITED",
+      "scope": "per_channel",
+      "status": "native_pin_map_verified",
+      "note": "ADC MID_CH_GND aliases this channel MID_CH. Pin11 is a conditioned status input; never drive it as reset."
+    },
+    {
+      "from": "ADC.J201.1",
+      "to": "HOST.HOST_3V3",
+      "function": "HOST_3V3",
+      "scope": "per_channel",
+      "status": "3.3V logic interface; host physical GPIO assignment belongs to user firmware",
+      "note": "TX/RX names are from host perspective; pin7 receives hostTX and pin8 goes to hostRX."
+    },
+    {
+      "from": "ADC.J201.2",
+      "to": "HOST.HOST_GND",
+      "function": "HOST_GND",
+      "scope": "per_channel",
+      "status": "3.3V logic interface; host physical GPIO assignment belongs to user firmware",
+      "note": "TX/RX names are from host perspective; pin7 receives hostTX and pin8 goes to hostRX."
+    },
+    {
+      "from": "ADC.J201.3",
+      "to": "HOST.HOST_RUN",
+      "function": "HOST_RUN",
+      "scope": "per_channel",
+      "status": "3.3V logic interface; host physical GPIO assignment belongs to user firmware",
+      "note": "TX/RX names are from host perspective; pin7 receives hostTX and pin8 goes to hostRX."
+    },
+    {
+      "from": "ADC.J201.4",
+      "to": "HOST.HOST_ARM",
+      "function": "HOST_ARM",
+      "scope": "per_channel",
+      "status": "3.3V logic interface; host physical GPIO assignment belongs to user firmware",
+      "note": "TX/RX names are from host perspective; pin7 receives hostTX and pin8 goes to hostRX."
+    },
+    {
+      "from": "ADC.J201.5",
+      "to": "HOST.HOST_HB",
+      "function": "HOST_HB",
+      "scope": "per_channel",
+      "status": "3.3V logic interface; host physical GPIO assignment belongs to user firmware",
+      "note": "TX/RX names are from host perspective; pin7 receives hostTX and pin8 goes to hostRX."
+    },
+    {
+      "from": "ADC.J201.6",
+      "to": "HOST.HOST_FAULT_OK",
+      "function": "HOST_FAULT_OK",
+      "scope": "per_channel",
+      "status": "3.3V logic interface; host physical GPIO assignment belongs to user firmware",
+      "note": "TX/RX names are from host perspective; pin7 receives hostTX and pin8 goes to hostRX."
+    },
+    {
+      "from": "ADC.J201.7",
+      "to": "HOST.HOST_UART_TX",
+      "function": "HOST_UART_TX",
+      "scope": "per_channel",
+      "status": "3.3V logic interface; host physical GPIO assignment belongs to user firmware",
+      "note": "TX/RX names are from host perspective; pin7 receives hostTX and pin8 goes to hostRX."
+    },
+    {
+      "from": "ADC.J201.8",
+      "to": "HOST.HOST_UART_RX",
+      "function": "HOST_UART_RX",
+      "scope": "per_channel",
+      "status": "3.3V logic interface; host physical GPIO assignment belongs to user firmware",
+      "note": "TX/RX names are from host perspective; pin7 receives hostTX and pin8 goes to hostRX."
+    }
+  ],
+  "power_options": {
+    "four_original_battery_branches": {
+      "status": "candidate architecture, not a qualified battery supply",
+      "quantity_for_four_channels": {
+        "TPS63001_RevB": 4,
+        "GAPTEC_2S7BE_0312S3U": 4,
+        "Boost": 4,
+        "RailSplitter": 4
+      },
+      "chain": [
+        "protected battery (not selected)",
+        "one TPS63001 per branch",
+        "one GAPTEC3.3-to12V per branch with its existing200ohm preload",
+        "one boost",
+        "one splitter"
+      ],
+      "connections": [
+        {
+          "from": "BATTERY.PROTECTED_POS",
+          "to": "BUCKBOOST.J1.1"
+        },
+        {
+          "from": "BATTERY.PROTECTED_NEG",
+          "to": "BUCKBOOST.J1.2"
+        },
+        {
+          "from": "BUCKBOOST.J2.1",
+          "to": "GAPTEC.1"
+        },
+        {
+          "from": "BUCKBOOST.J2.2",
+          "to": "GAPTEC.2"
+        },
+        {
+          "from": "GAPTEC.7",
+          "to": "BOOST.J1.1"
+        },
+        {
+          "from": "GAPTEC.5",
+          "to": "BOOST.J1.2"
+        }
+      ],
+      "constraints": [
+        "Do not parallel TPS63001 outputs.",
+        "A separately budgeted3.3V source is still required for each SignalGen board.",
+        "Monitor-power boards still require an appropriate regulated5V source; raw Li-ion is not connected to them.",
+        "One complete chain must be load/startup tested at2.8V before qualifying four branches.",
+        "Calculated0.62-0.72A per3.3V branch excludes SignalGen and monitor loads and leaves limited margin against the approximate800mA boost capability.",
+        "Battery capacity, discharge rating, protection and charging remain unselected."
+      ]
+    },
+    "shared_5V_bench_adapter": {
+      "status": "optional completed bare-PCB bench adapter; regulated5V only",
+      "quantity_for_four_channels": {
+        "shared_power_PCB": 1,
+        "Boost": 4,
+        "RailSplitter": 4
+      },
+      "input": "regulated nominal5V8A external source; never above5.25V;>=4.5V at module inputs after all drops",
+      "replaces": [
+        "four TPS63001 power branches",
+        "four GAPTEC modules and their200ohm preloads"
+      ],
+      "connections": [
+        {
+          "from": "SHARED.J4.1",
+          "to": "CH1.BOOST.J1.1"
+        },
+        {
+          "from": "SHARED.J5.1",
+          "to": "CH2.BOOST.J1.1"
+        },
+        {
+          "from": "SHARED.J6.1",
+          "to": "CH3.BOOST.J1.1"
+        },
+        {
+          "from": "SHARED.J7.1",
+          "to": "CH4.BOOST.J1.1"
+        },
+        {
+          "from": "SHARED.J4.2",
+          "to": "CH1.BOOST.J1.2"
+        },
+        {
+          "from": "SHARED.J5.2",
+          "to": "CH2.BOOST.J1.2"
+        },
+        {
+          "from": "SHARED.J6.2",
+          "to": "CH3.BOOST.J1.2"
+        },
+        {
+          "from": "SHARED.J7.2",
+          "to": "CH4.BOOST.J1.2"
+        },
+        {
+          "from": "SHARED.J2.1",
+          "to": "SG_A.J1.02"
+        },
+        {
+          "from": "SHARED.J2.2",
+          "to": "SG_A.J1.03"
+        },
+        {
+          "from": "SHARED.J3.1",
+          "to": "SG_B.J1.02"
+        },
+        {
+          "from": "SHARED.J3.2",
+          "to": "SG_B.J1.03"
+        },
+        {
+          "from": "SHARED.J8.1",
+          "to": "all MONITOR_POWER.J201.1 via distribution harness"
+        },
+        {
+          "from": "SHARED.J8.2",
+          "to": "all MONITOR_POWER.J201.2 via distribution harness"
+        }
+      ],
+      "constraints": [
+        "Two3.3V banks remain separate: one per SignalGen board.",
+        "AUX4A is the combined four-monitor-board allocation.",
+        "No raw1S cell, battery charger or battery protection is on this PCB.",
+        "Do not combine this option with powered original branches at the same outputs."
+      ]
+    }
+  },
+  "leave_open": [
+    "CORE.J4.1 and CORE.J4.2 (no Howland E/D connection)",
+    "CORE.J3.5 and CORE.J5.7 rawFAULT_N for this ADC harness",
+    "CORE.J5.4 REF_4V096 (ADC uses internal2.5V references)",
+    "ADC.J202.7/.13/.14",
+    "SIGNAL.J3.2 and SIGNAL.J4.2 isolated3.3V taps",
+    "SIGNAL.J1.01 and SIGNAL.J2.01 legacyVBUS pins"
+  ],
+  "prohibited_connections": [
+    "MID_CH to HV_BOTTOM",
+    "MID of different channels together",
+    "MID_CH_GND to HOST_GND",
+    "PICO_3V3 to P3V3_CH",
+    "Different TPS63001 outputs together",
+    "Different shared3.3V banks together",
+    "Different sources to SignalGenJ1.02 andJ2.02 (internally common)"
+  ],
+  "Howland_population_statement": "Rload1=2k is NOT populated, per user; use external2k-5k dummyloads. No removal or PCB modification is instructed.",
+  "Howland_known_calculation": {
+    "basis": "Unchanged nominal resistors, Rload1 DNP, ideal linear unsaturated low-frequency op amp model; not measured hardware",
+    "positive_feedback_R_ohm": 95500,
+    "balanced_positive_feedback_R_ohm": 99500,
+    "command_gain_mA_per_V_without_monitor_at_2k": 2.1337047353760443,
+    "command_gain_mA_per_V_without_monitor_at_5k": 2.463022508038585,
+    "fixed_command_current_increase_percent_2k_to_5k": 15.434083601286176,
+    "with_monitor_return_shunt_ohm": 100,
+    "command_gain_mA_per_V_with_monitor_at_2k": 2.1432568550643536,
+    "command_gain_mA_per_V_with_monitor_at_5k": 2.475759534583064,
+    "action": "Measure current versus external load; no resistor or PCB modification authorized."
+  }
+}

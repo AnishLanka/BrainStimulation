@@ -1,0 +1,25 @@
+{
+  "board_sha256": "6df11dc536e993520866675ea80c10f3ac029d781b8046ce19df095916471e14",
+  "fresh_export_match_excluding_creation_timestamp_only": {
+    "Monitor_Power_C1-B_Cu.gbl": true,
+    "Monitor_Power_C1-B_Mask.gbs": true,
+    "Monitor_Power_C1-B_Silkscreen.gbo": true,
+    "Monitor_Power_C1-Edge_Cuts.gm1": true,
+    "Monitor_Power_C1-F_Cu.gtl": true,
+    "Monitor_Power_C1-F_Mask.gts": true,
+    "Monitor_Power_C1-F_Silkscreen.gto": true,
+    "Monitor_Power_C1-job.gbrjob": true,
+    "Monitor_Power_C1-NPTH.drl": true,
+    "Monitor_Power_C1-PTH.drl": true
+  },
+  "actual_gerber_file_functions": {
+    "Monitor_Power_C1-B_Cu.gbl": "Copper,L2,Bot",
+    "Monitor_Power_C1-B_Mask.gbs": "Soldermask,Bot",
+    "Monitor_Power_C1-B_Silkscreen.gbo": "Legend,Bot",
+    "Monitor_Power_C1-Edge_Cuts.gm1": "Profile,NP",
+    "Monitor_Power_C1-F_Cu.gtl": "Copper,L1,Top",
+    "Monitor_Power_C1-F_Mask.gts": "Soldermask,Top",
+    "Monitor_Power_C1-F_Silkscreen.gto": "Legend,Top"
+  },
+  "native_board_unchanged_by_exports": true
+}

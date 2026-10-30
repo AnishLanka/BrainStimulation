@@ -1,0 +1,2114 @@
+(kicad_symbol_lib 
+	(version 20251024) 
+	(generator "kicad_symbol_editor") 
+	(symbol "1716030000_1716030000" 
+		(pin_names 
+			(hide yes)) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Description" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "ki_fp_filters" "*CONN_LM{space}5.080390_WED*" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "1716030000_1716030000_1_0" 
+			(polyline 
+				(pts 
+					(xy 10.16 0) 
+					(xy 5.08 0)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 10.16 0) 
+					(xy 8.89 0.847)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 10.16 0) 
+					(xy 8.89 -0.847)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 10.16 -2.54) 
+					(xy 5.08 -2.54)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 10.16 -2.54) 
+					(xy 8.89 -1.693)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 10.16 -2.54) 
+					(xy 8.89 -3.387)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 10.16 -5.08) 
+					(xy 5.08 -5.08)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 10.16 -5.08) 
+					(xy 8.89 -4.233)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 10.16 -5.08) 
+					(xy 8.89 -5.927)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(rectangle 
+				(start 12.7 2.54) 
+				(end 5.08 -7.62) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type background))) 
+			(pin passive line 
+				(at 0 0 0) 
+				(length 5.08) 
+				(name "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at 0 -2.54 0) 
+				(length 5.08) 
+				(name "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at 0 -5.08 0) 
+				(length 5.08) 
+				(name "3" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "3" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "2026-10-17_16-46-22_DAC8830IBD" 
+		(pin_names 
+			(offset 0.254)) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "U" 
+			(at 0 2.54 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.524 1.524)))) 
+		(property "Value" "DAC8830IBD" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.524 1.524)))) 
+		(property "Footprint" "D0008A_N" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27) 
+					(italic yes)))) 
+		(property "Datasheet" "https://www.ti.com/lit/gpn/dac8830" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27) 
+					(italic yes)))) 
+		(property "Description" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "ki_locked" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "ki_keywords" "DAC8830IBD" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "ki_fp_filters" "D0008A_N D0008A_M D0008A_L" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "2026-10-17_16-46-22_DAC8830IBD_0_1" 
+			(polyline 
+				(pts 
+					(xy -12.7 12.7) 
+					(xy -12.7 -12.7)) 
+				(stroke 
+					(width 0.2032) 
+					(type default)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy -12.7 -12.7) 
+					(xy 12.7 -12.7)) 
+				(stroke 
+					(width 0.2032) 
+					(type default)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 12.7 12.7) 
+					(xy -12.7 12.7)) 
+				(stroke 
+					(width 0.2032) 
+					(type default)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 12.7 -12.7) 
+					(xy 12.7 12.7)) 
+				(stroke 
+					(width 0.2032) 
+					(type default)) 
+				(fill 
+					(type none))) 
+			(pin output line 
+				(at 17.78 7.62 180) 
+				(length 5.08) 
+				(name "VOUT" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin power_in line 
+				(at 17.78 -2.54 180) 
+				(length 5.08) 
+				(name "AGND" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin input line 
+				(at -17.78 2.54 0) 
+				(length 5.08) 
+				(name "VREF" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "3" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin input line 
+				(at -17.78 -7.62 0) 
+				(length 5.08) 
+				(name "CS_N" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "4" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin input line 
+				(at -17.78 -2.54 0) 
+				(length 5.08) 
+				(name "SCLK" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "5" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin input line 
+				(at -17.78 -5.08 0) 
+				(length 5.08) 
+				(name "SDI" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "6" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin power_in line 
+				(at 17.78 -7.62 180) 
+				(length 5.08) 
+				(name "DGND" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "7" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin power_in line 
+				(at -17.78 7.62 0) 
+				(length 5.08) 
+				(name "VDD" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "8" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "5016_5016" 
+		(pin_numbers 
+			(hide yes)) 
+		(pin_names 
+			(hide yes)) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Test Point Compact SMT Phos Bronze/Silver 1000pc Tape & Reel ¦ Keystone Electronics 5016" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "ki_fp_filters" "*KEYSTONE_5016*" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "5016_5016_1_0" 
+			(circle 
+				(center 0 0) 
+				(radius 0.635) 
+				(stroke 
+					(width 0.762) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(pin passive line 
+				(at -5.08 0 0) 
+				(length 5.08) 
+				(name "TP" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "TP" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "C1608X7R1H474K080AC_C1608X7R1H474K080AC" 
+		(pin_numbers 
+			(hide yes)) 
+		(pin_names 
+			(hide yes)) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "CAPACITOR; SMT (0603); CERAMIC CHIP; 0.47UF; 50V; TOL=10%; TG=-55 DEGC TO +125 DEGC; TC=X7R; AUTO" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "ki_fp_filters" "*CAP_1608_TDK*" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "C1608X7R1H474K080AC_C1608X7R1H474K080AC_1_0" 
+			(polyline 
+				(pts 
+					(xy 2.54 0) 
+					(xy 3.48 0)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 3.48 -1.905) 
+					(xy 3.48 1.905)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 4.115 0) 
+					(xy 5.08 0)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 4.115 -1.905) 
+					(xy 4.115 1.905)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(pin passive line 
+				(at 0 0 0) 
+				(length 2.54) 
+				(name "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at 7.62 0 180) 
+				(length 2.54) 
+				(name "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "CC0603KRX7R8BB104_CC0603KRX7R8BB104" 
+		(pin_numbers 
+			(hide yes)) 
+		(pin_names 
+			(hide yes)) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0603 125C T/R" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "ki_fp_filters" "*CAPC1608X90N*" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "CC0603KRX7R8BB104_CC0603KRX7R8BB104_1_0" 
+			(polyline 
+				(pts 
+					(xy 5.588 0) 
+					(xy 5.08 0)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 5.588 -2.54) 
+					(xy 5.588 2.54)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 7.112 -2.54) 
+					(xy 7.112 2.54)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 7.62 0) 
+					(xy 7.112 0)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(pin passive line 
+				(at 0 0 0) 
+				(length 5.08) 
+				(name "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at 12.7 0 180) 
+				(length 5.08) 
+				(name "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "GRM21BR61E106KA73L_GRM21BR61E106KA73L" 
+		(pin_numbers 
+			(hide yes)) 
+		(pin_names 
+			(hide yes)) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Description" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "ki_fp_filters" "*G-21_MUR*" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "GRM21BR61E106KA73L_GRM21BR61E106KA73L_1_0" 
+			(polyline 
+				(pts 
+					(xy 2.54 0) 
+					(xy 3.48 0)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 3.48 -1.905) 
+					(xy 3.48 1.905)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 4.115 0) 
+					(xy 5.08 0)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 4.115 -1.905) 
+					(xy 4.115 1.905)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(pin passive line 
+				(at 0 0 0) 
+				(length 2.54) 
+				(name "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at 7.62 0 180) 
+				(length 2.54) 
+				(name "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "IA0305S_IA0305S" 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "PS1" 
+			(at -10.16 5.08 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) 
+				(justify left bottom))) 
+		(property "Value" "IA0305S" 
+			(at -10.16 -7.62 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) 
+				(justify left bottom))) 
+		(property "Footprint" "SignalGen_V5_Single_Channel-import-fps:XP_IA0305S" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "DC DC CONVERTER +/-5V 1W" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "MF" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) 
+				(justify left bottom))) 
+		(property "PACKAGE" "None" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) 
+				(justify left bottom))) 
+		(property "PRICE" "None" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) 
+				(justify left bottom))) 
+		(property "ALTIUM_VALUE" "*" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) 
+				(justify left bottom))) 
+		(property "MP" "IA0305S" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) 
+				(justify left bottom))) 
+		(property "AVAILABILITY" "Unavailable" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) 
+				(justify left bottom))) 
+		(property "ki_fp_filters" "*XP_IA0305S*" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "IA0305S_IA0305S_1_0" 
+			(rectangle 
+				(start 10.16 5.08) 
+				(end -10.16 -5.08) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 128 0 0 1)) 
+				(fill 
+					(type background))) 
+			(pin input line 
+				(at -15.24 2.54 0) 
+				(length 5.08) 
+				(name "+VIN" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin input line 
+				(at -15.24 -2.54 0) 
+				(length 5.08) 
+				(name "-VIN" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin power_out line 
+				(at 15.24 -2.54 180) 
+				(length 5.08) 
+				(name "-VOUT" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "4" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin power_out line 
+				(at 15.24 0 180) 
+				(length 5.08) 
+				(name "0" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "5" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin power_out line 
+				(at 15.24 2.54 180) 
+				(length 5.08) 
+				(name "+VOUT" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "6" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "ISOW7741DFM_ISOW7741DFM" 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "U6" 
+			(at 7.62 5.08 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) 
+				(justify left bottom))) 
+		(property "Value" "ISOW7741DFM" 
+			(at 7.62 -30.48 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) 
+				(justify left bottom))) 
+		(property "Footprint" "SignalGen_V5_Single_Channel-import-fps:SOIC20_DFM_TEX" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Low-emissions, low-ripple, quad-channel, 3/1, reinforced digital isolator with integrated power 20-SOIC -40 to 125" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "COPYRIGHT" "Copyright (C) 2026 Ultra Librarian. All rights reserved." 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) 
+				(justify left bottom))) 
+		(property "MANUFACTURER_NAME" "Texas Instruments" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) 
+				(justify left bottom))) 
+		(property "MANUFACTURER_PART_NUMBER" "ISOW7741DFM" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) 
+				(justify left bottom))) 
+		(property "REFDES" "RefDes" 
+			(at 25.4 10.16 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) 
+				(justify left bottom))) 
+		(property "TYPE" "Type" 
+			(at 25.4 7.62 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)) 
+				(justify left bottom))) 
+		(property "ki_fp_filters" "*SOIC20_DFM_TEX*" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "ISOW7741DFM_ISOW7741DFM_1_0" 
+			(rectangle 
+				(start 43.18 5.08) 
+				(end 7.62 -27.94) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type background))) 
+			(pin power_in line 
+				(at 0 0 0) 
+				(length 7.62) 
+				(name "VIO" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin input line 
+				(at 0 -2.54 0) 
+				(length 7.62) 
+				(name "INA" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin input line 
+				(at 0 -5.08 0) 
+				(length 7.62) 
+				(name "INB" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "3" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin input line 
+				(at 0 -7.62 0) 
+				(length 7.62) 
+				(name "INC" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "4" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin output line 
+				(at 0 -10.16 0) 
+				(length 7.62) 
+				(name "OUTD" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "5" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin power_in line 
+				(at 0 -12.7 0) 
+				(length 7.62) 
+				(name "GNDIO" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "6" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin input line 
+				(at 0 -15.24 0) 
+				(length 7.62) 
+				(name "EN_IO1" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "7" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin bidirectional line 
+				(at 0 -17.78 0) 
+				(length 7.62) 
+				(name "EN_FLT" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "8" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin power_in line 
+				(at 0 -20.32 0) 
+				(length 7.62) 
+				(name "VDD" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "9" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin power_in line 
+				(at 0 -22.86 0) 
+				(length 7.62) 
+				(name "GND1" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "10" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin power_in line 
+				(at 50.8 -22.86 180) 
+				(length 7.62) 
+				(name "GND2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "11" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin power_out line 
+				(at 50.8 -20.32 180) 
+				(length 7.62) 
+				(name "VISOOUT" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "12" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin input line 
+				(at 50.8 -17.78 180) 
+				(length 7.62) 
+				(name "VSEL" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "13" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin input line 
+				(at 50.8 -15.24 180) 
+				(length 7.62) 
+				(name "EN_IO2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "14" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin power_in line 
+				(at 50.8 -12.7 180) 
+				(length 7.62) 
+				(name "GISOIN" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "15" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin input line 
+				(at 50.8 -10.16 180) 
+				(length 7.62) 
+				(name "IND" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "16" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin output line 
+				(at 50.8 -7.62 180) 
+				(length 7.62) 
+				(name "OUTC" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "17" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin output line 
+				(at 50.8 -5.08 180) 
+				(length 7.62) 
+				(name "OUTB" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "18" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin output line 
+				(at 50.8 -2.54 180) 
+				(length 7.62) 
+				(name "OUTA" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "19" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin power_in line 
+				(at 50.8 0 180) 
+				(length 7.62) 
+				(name "VISOIN" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "20" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "MBASE168SB7105KTNA18_MBASE168SB7105KTNA18" 
+		(pin_numbers 
+			(hide yes)) 
+		(pin_names 
+			(hide yes)) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Taiyo Yuden CAP, MLCC, 0603, 16V, X7R, 1 uF 10 %, T&R" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "ki_fp_filters" "*INDC1608X90N*" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "MBASE168SB7105KTNA18_MBASE168SB7105KTNA18_1_0" 
+			(polyline 
+				(pts 
+					(xy 5.588 0) 
+					(xy 5.08 0)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 5.588 -2.54) 
+					(xy 5.588 2.54)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 7.112 -2.54) 
+					(xy 7.112 2.54)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 7.62 0) 
+					(xy 7.112 0)) 
+				(stroke 
+					(width 0) 
+					(type solid)) 
+				(fill 
+					(type none))) 
+			(pin passive line 
+				(at 0 0 0) 
+				(length 5.08) 
+				(name "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at 12.7 0 180) 
+				(length 5.08) 
+				(name "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "OPA2192IDGKR_OPA2192IDGKR" 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "36-V, Precision, RRIO, Low Offset Voltage, Low Input Bias Current Op Amp With e-trim 8-VSSOP -40 to 125" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "ki_fp_filters" "*DGK0008A_N_TEX*" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "OPA2192IDGKR_OPA2192IDGKR_1_0" 
+			(rectangle 
+				(start 33.02 7.62) 
+				(end 7.62 -27.94) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type background))) 
+			(pin output line 
+				(at 40.64 2.54 180) 
+				(length 7.62) 
+				(name "OUT" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin input line 
+				(at 0 0 0) 
+				(length 7.62) 
+				(name "IN-" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin input line 
+				(at 0 -5.08 0) 
+				(length 7.62) 
+				(name "IN+" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "3" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin power_in line 
+				(at 0 -20.32 0) 
+				(length 7.62) 
+				(name "V-" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "4" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin input line 
+				(at 0 -7.62 0) 
+				(length 7.62) 
+				(name "IN+" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "5" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin input line 
+				(at 0 -2.54 0) 
+				(length 7.62) 
+				(name "IN-" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "6" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin output line 
+				(at 40.64 0 180) 
+				(length 7.62) 
+				(name "OUT" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "7" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin power_in line 
+				(at 0 -22.86 0) 
+				(length 7.62) 
+				(name "V+" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "8" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "RC0603FR-0710KL_RC0603FR-0710KL" 
+		(pin_numbers 
+			(hide yes)) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "RES SMD 10kO 1% 1/10W 0603" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "ki_fp_filters" "*RC0603N_YAG*" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "RC0603FR-0710KL_RC0603FR-0710KL_1_0" 
+			(polyline 
+				(pts 
+					(xy 2.54 0) 
+					(xy 3.175 1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 3.175 1.27) 
+					(xy 4.445 -1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 4.445 -1.27) 
+					(xy 5.715 1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 5.715 1.27) 
+					(xy 6.985 -1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 6.985 -1.27) 
+					(xy 8.255 1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 8.255 1.27) 
+					(xy 9.525 -1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 9.525 -1.27) 
+					(xy 10.16 0)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(pin passive line 
+				(at 0 0 0) 
+				(length 2.54) 
+				(name "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at 12.7 0 180) 
+				(length 2.54) 
+				(name "2" 
+					(effects 
+						(font 
+							(size 0 0)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "RC0603FR-0720KL_RC0603FR-0720KL" 
+		(pin_numbers 
+			(hide yes)) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Description" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "ki_fp_filters" "*RC0603N_YAG*" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "RC0603FR-0720KL_RC0603FR-0720KL_1_0" 
+			(polyline 
+				(pts 
+					(xy 2.54 0) 
+					(xy 3.175 1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 3.175 1.27) 
+					(xy 4.445 -1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 4.445 -1.27) 
+					(xy 5.715 1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 5.715 1.27) 
+					(xy 6.985 -1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 6.985 -1.27) 
+					(xy 8.255 1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 8.255 1.27) 
+					(xy 9.525 -1.27)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(polyline 
+				(pts 
+					(xy 9.525 -1.27) 
+					(xy 10.16 0)) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 0 0 0 1)) 
+				(fill 
+					(type none))) 
+			(pin passive line 
+				(at 12.7 0 180) 
+				(length 2.54) 
+				(name "1" 
+					(effects 
+						(font 
+							(size 0 0)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at 0 0 0) 
+				(length 2.54) 
+				(name "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "2" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "SS-107-T-1A_SS-107-T-1A" 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "ki_fp_filters" "*SAMTEC_SS-107-T-1A*" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "SS-107-T-1A_SS-107-T-1A_1_0" 
+			(rectangle 
+				(start 7.62 10.16) 
+				(end -7.62 -10.16) 
+				(stroke 
+					(width 0) 
+					(type solid) 
+					(color 128 0 0 1)) 
+				(fill 
+					(type background))) 
+			(pin passive line 
+				(at -12.7 7.62 0) 
+				(length 5.08) 
+				(name "01" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "01" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at -12.7 5.08 0) 
+				(length 5.08) 
+				(name "02" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "02" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at -12.7 2.54 0) 
+				(length 5.08) 
+				(name "03" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "03" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at -12.7 0 0) 
+				(length 5.08) 
+				(name "04" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "04" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at -12.7 -2.54 0) 
+				(length 5.08) 
+				(name "05" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "05" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at -12.7 -5.08 0) 
+				(length 5.08) 
+				(name "06" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "06" 
+					(effects 
+						(font 
+							(size 1.27 1.27))))) 
+			(pin passive line 
+				(at -12.7 -7.62 0) 
+				(length 5.08) 
+				(name "07" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "07" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(embedded_fonts no)) 
+	(symbol "power_PWR_FLAG" 
+		(power global) 
+		(pin_numbers 
+			(hide yes)) 
+		(pin_names 
+			(offset 0) 
+			(hide yes)) 
+		(exclude_from_sim no) 
+		(in_bom yes) 
+		(on_board yes) 
+		(in_pos_files yes) 
+		(duplicate_pin_numbers_are_jumpers no) 
+		(property "Reference" "#FLG" 
+			(at 0 1.905 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Value" "PWR_FLAG" 
+			(at 0 3.81 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Footprint" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Datasheet" "" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "Description" "Special symbol for telling ERC where power comes from" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(property "ki_keywords" "flag power" 
+			(at 0 0 0) 
+			(show_name no) 
+			(do_not_autoplace no) 
+			(hide yes) 
+			(effects 
+				(font 
+					(size 1.27 1.27)))) 
+		(symbol "power_PWR_FLAG_0_0" 
+			(pin power_out line 
+				(at 0 0 90) 
+				(length 0) 
+				(name "" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))) 
+				(number "1" 
+					(effects 
+						(font 
+							(size 1.27 1.27)))))) 
+		(symbol "power_PWR_FLAG_0_1" 
+			(polyline 
+				(pts 
+					(xy 0 0) 
+					(xy 0 1.27) 
+					(xy -1.016 1.905) 
+					(xy 0 2.54) 
+					(xy 1.016 1.905) 
+					(xy 0 1.27)) 
+				(stroke 
+					(width 0) 
+					(type default)) 
+				(fill 
+					(type none)))) 
+		(embedded_fonts no)))

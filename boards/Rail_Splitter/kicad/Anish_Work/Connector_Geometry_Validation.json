@@ -1,0 +1,133 @@
+{
+  "J2": {
+    "original_reference": "IN",
+    "source_value": "691211720002",
+    "source_position_mm": [
+      165.0746,
+      105.7021
+    ],
+    "source_rotation_deg": 90.0,
+    "source_pad_positions_mm": {
+      "1": [
+        164.42459,
+        108.20209
+      ],
+      "2": [
+        164.42459,
+        103.2021
+      ]
+    },
+    "restored_pad_positions_mm": {
+      "1": [
+        164.42459,
+        108.20209
+      ],
+      "2": [
+        164.42459,
+        103.2021
+      ]
+    },
+    "pad_numbers_match": true,
+    "sha256": "f8c79e41ac8b65ae9ac8683d7984d9313cfc684e0a570036d007c91624b98c72",
+    "pads": [
+      {
+        "number": "1",
+        "size_mm": [
+          2.25,
+          2.25
+        ],
+        "drill_mm": [
+          1.5,
+          1.5
+        ]
+      },
+      {
+        "number": "2",
+        "size_mm": [
+          2.25,
+          2.25
+        ],
+        "drill_mm": [
+          1.5,
+          1.5
+        ]
+      }
+    ]
+  },
+  "J3": {
+    "original_reference": "OUT",
+    "source_value": "691214110003",
+    "source_position_mm": [
+      127.5286,
+      106.5911
+    ],
+    "source_rotation_deg": -90.0,
+    "source_pad_positions_mm": {
+      "1": [
+        127.2286,
+        103.0911
+      ],
+      "2": [
+        127.2286,
+        106.5911
+      ],
+      "3": [
+        127.2286,
+        110.0911
+      ]
+    },
+    "restored_pad_positions_mm": {
+      "1": [
+        127.2286,
+        103.0911
+      ],
+      "2": [
+        127.2286,
+        106.5911
+      ],
+      "3": [
+        127.2286,
+        110.0911
+      ]
+    },
+    "pad_numbers_match": true,
+    "sha256": "04c0354de12b6d9ef7b6fec3ba0bed7c4370916cc42ef44228301ebf63e99fb6",
+    "pads": [
+      {
+        "number": "1",
+        "size_mm": [
+          1.95,
+          1.95
+        ],
+        "drill_mm": [
+          1.3,
+          1.3
+        ]
+      },
+      {
+        "number": "2",
+        "size_mm": [
+          1.95,
+          1.95
+        ],
+        "drill_mm": [
+          1.3,
+          1.3
+        ]
+      },
+      {
+        "number": "3",
+        "size_mm": [
+          1.95,
+          1.95
+        ],
+        "drill_mm": [
+          1.3,
+          1.3
+        ]
+      }
+    ]
+  },
+  "source_pcb_sha256": "1e3d49db8d165336f4da11c96870495be3986dfab727720b530213d2b23d21b6",
+  "note": "Physical source geometry preserved; source labels are not an approved purchase BOM. Electrical connector mapping remains J1 1=HV_TOP,2=HV_BOTTOM; J2 1=HV_TOP,2=MID,3=HV_BOTTOM."
+}
