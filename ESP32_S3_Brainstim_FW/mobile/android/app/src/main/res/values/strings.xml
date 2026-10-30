@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">R2D2 Controller</string>
+    <string name="title_activity_main">R2D2 Controller</string>
+    <string name="package_name">com.example.r2d2controller</string>
+    <string name="custom_url_scheme">com.example.r2d2controller</string>
+</resources>

@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Research Lab / Signal Bench</title>
+  <link rel="icon" href="data:," />
+  <style>
+    :root {
+      --bg:      #0c0c0d;
+      --panel:   #111113;
+      --inset:   #0a0a0b;
+      --border:  #222226;
+      --accent:  #00d4b4;
+      --green:   #00e676;
+      --red:     #ff4444;
+      --amber:   #ffcc44;
+      --dim:     #52525b;
+      --text:    #d4d4d8;
+      --text-2:  #71717a;
+      --r:       4px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body { height: 100%; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 14px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Mode visibility ─────────────────────────────────────── */
+    body[data-mode="student"] .dev-only, body[data-mode="dev"] .student-only { display: none !important; }
+
+    /* ── Top bar ─────────────────────────────────────────────── */
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16px;
+      height: 48px;
+      background: var(--panel);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .topbar-left { display: flex; align-items: center; gap: 10px; }
+
+    .topbar-title {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text);
+    }
+
+    .demo-chip {
+      display: none;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      padding: 2px 7px;
+      border: 1px solid var(--amber);
+      border-radius: 3px;
+      color: var(--amber);
+      background: rgba(255,204,68,0.08);
+    }
+
+    /* Mode toggle */
+    .mode-toggle {
+      display: flex;
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .mode-opt {
+      padding: 5px 14px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      background: transparent;
+      color: var(--dim);
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .mode-opt + .mode-opt { border-left: 1px solid var(--border); }
+    .mode-opt.active { background: var(--accent); color: #000; }
+
+    /* ── Layout ──────────────────────────────────────────────── */
+    main {
+      max-width: 560px;
+      margin: 0 auto;
+      padding: 16px 12px 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    /* ── Blocks ──────────────────────────────────────────────── */
+    .block {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+    }
+
+    .block-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .block-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--dim);
+    }
+
+    /* ── Connection ──────────────────────────────────────────── */
+    .conn-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px;
+      gap: 10px;
+    }
+
+    .conn-status-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    #status-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--dim);
+      flex-shrink: 0;
+      transition: background 0.3s;
+    }
+    #status-dot.connected  { background: var(--green); }
+    #status-dot.connecting { background: var(--accent); animation: blink 0.8s infinite; }
+    #status-dot.disconnected { background: var(--red); }
+
+    @keyframes blink { 50% { opacity: 0.2; } }
+
+    #status-text { font-size: 13px; font-weight: 500; }
+    #info-name   { font-size: 11px; color: var(--accent); font-weight: 600; font-family: monospace; }
+
+    .conn-btns { display: flex; gap: 8px; flex-shrink: 0; }
+
+    /* ── Buttons ─────────────────────────────────────────────── */
+    .btn {
+      padding: 7px 16px;
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      background: var(--inset);
+      color: var(--text);
+      transition: border-color 0.15s, background 0.15s;
+      white-space: nowrap;
+    }
+    .btn:hover:not(:disabled) { border-color: var(--dim); }
+    .btn:active:not(:disabled) { transform: scale(0.97); }
+    .btn:disabled { opacity: 0.35; cursor: not-allowed; }
+
+    .btn-accent { background: var(--accent); color: #000; border-color: var(--accent); font-weight: 700; }
+    .btn-accent:hover:not(:disabled) { background: #00f0ce; border-color: #00f0ce; }
+
+    .btn-danger { color: var(--red); border-color: rgba(255,68,68,0.4); }
+    .btn-danger:hover:not(:disabled) { border-color: var(--red); background: rgba(255,68,68,0.08); }
+
+    .btn-sm { padding: 5px 10px; font-size: 11px; }
+
+    .sim-row {
+      display: flex; align-items: center; gap: 8px;
+      padding: 8px 12px; border-top: 1px solid var(--border);
+      font-size: 11px; color: var(--text-2); cursor: pointer;
+    }
+    .sim-row input { accent-color: var(--amber); }
+    .sim-row:has(input:disabled) { opacity: 0.5; cursor: not-allowed; }
+
+    /* ── Device details (dev) ────────────────────────────────── */
+    .dev-info {
+      padding: 8px 12px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      gap: 20px;
+      font-size: 11px;
+      font-family: monospace;
+      color: var(--text-2);
+    }
+    .dev-info-item { display: flex; gap: 6px; }
+    .dev-info-key  { color: var(--dim); }
+
+    /* ── Oscilloscope ────────────────────────────────────────── */
+    .scope-wrap {
+      position: relative;
+      background: #030805;
+      border-bottom: 1px solid var(--border);
+      /* inner inset shadow for depth */
+      box-shadow: inset 0 2px 8px rgba(0,0,0,0.6);
+    }
+
+    #wave-canvas {
+      display: block;
+      width: 100%;
+      height: 160px;
+    }
+
+    #wave-info {
+      position: absolute;
+      top: 8px;
+      right: 10px;
+      font-size: 10px;
+      font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+      font-weight: 600;
+      color: rgba(0,230,118,0.65);
+      letter-spacing: 0.04em;
+      pointer-events: none;
+    }
+
+    /* ── DDS body ────────────────────────────────────────────── */
+    .dds-body { padding: 12px; }
+
+    /* Channel tabs */
+    .ch-tabs {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 12px;
+    }
+
+    .ch-tab {
+      flex: 1;
+      padding: 7px 4px;
+      background: var(--inset);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: var(--dim);
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s, background 0.15s;
+    }
+    .ch-tab.active   { border-color: var(--accent); color: var(--accent); background: rgba(0,212,180,0.08); }
+    .ch-tab:disabled { opacity: 0.35; cursor: not-allowed; }
+    .ch-tab:hover:not(:disabled):not(.active) { border-color: var(--dim); color: var(--text-2); }
+
+    /* Waveform buttons */
+    .wave-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      margin-bottom: 14px;
+    }
+
+    @media (max-width: 360px) { .wave-row { grid-template-columns: repeat(2, 1fr); } }
+
+    .wave-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      padding: 8px 4px;
+      background: var(--inset);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      color: var(--dim);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      cursor: pointer;
+      transition: all 0.12s;
+    }
+    .wave-btn svg { width: 40px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: square; stroke-linejoin: miter; }
+    .wave-btn:hover:not(:disabled) { border-color: var(--dim); color: var(--text); }
+    .wave-btn.active { border-color: var(--accent); color: var(--accent); background: rgba(0,212,180,0.08); }
+    .wave-btn:disabled { opacity: 0.35; cursor: not-allowed; }
+    .wave-btn:active:not(:disabled) { transform: scale(0.97); }
+
+    /* ── Control rows ────────────────────────────────────────── */
+    .ctrl-section { margin-bottom: 14px; }
+
+    .ctrl-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    }
+
+    .ctrl-name {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--dim);
+    }
+
+    .ctrl-readout {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .num-in {
+      width: 72px;
+      background: var(--inset);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      color: var(--accent);
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 3px 7px;
+      text-align: right;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .num-in:focus { border-color: var(--accent); }
+    .num-in:disabled { opacity: 0.4; cursor: not-allowed; }
+    .num-in.amp { color: var(--green); }
+    .num-in.amp:focus { border-color: var(--green); }
+
+    .ctrl-out { margin-left: 10px; font-family: 'SF Mono', 'Fira Code', monospace; font-size: 10px; color: var(--dim); }
+    .ctrl-out.slewing { color: var(--amber); }
+
+    .unit { font-size: 10px; color: var(--dim); min-width: 18px; font-weight: 600; letter-spacing: 0.05em; }
+
+    /* Range */
+    input[type="range"] {
+      -webkit-appearance: none; appearance: none;
+      width: 100%; height: 4px;
+      background: var(--border);
+      border-radius: 2px;
+      outline: none;
+      cursor: pointer;
+      margin: 4px 0 8px;
+    }
+    input[type="range"]:disabled { opacity: 0.35; cursor: not-allowed; }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none; appearance: none;
+      width: 16px; height: 16px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 2px solid var(--bg);
+      cursor: pointer;
+      transition: transform 0.1s;
+    }
+    input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.2); }
+    input[type="range"]::-moz-range-thumb {
+      width: 16px; height: 16px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 2px solid var(--bg);
+      cursor: pointer;
+    }
+
+    #amp-slider::-webkit-slider-thumb { background: var(--green); }
+    #amp-slider::-moz-range-thumb     { background: var(--green); }
+
+    /* Presets */
+    .presets { display: flex; flex-wrap: wrap; gap: 4px; }
+
+    .preset {
+      padding: 3px 9px;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      color: var(--text-2);
+      cursor: pointer;
+      transition: all 0.12s;
+    }
+    .preset:hover:not(:disabled) { border-color: var(--dim); color: var(--text-2); }
+    .preset.fp:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+    .preset.ap:hover:not(:disabled) { border-color: var(--green);  color: var(--green); }
+    .preset:disabled { opacity: 0.35; cursor: not-allowed; }
+
+    .sep { height: 1px; background: var(--border); margin: 14px 0; }
+
+    /* Output row */
+    .out-row { display: flex; gap: 8px; }
+
+    .out-btn {
+      flex: 1;
+      padding: 12px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border-radius: var(--r);
+      border: 1px solid;
+      cursor: pointer;
+      transition: all 0.12s;
+    }
+    .out-btn:disabled { opacity: 0.35; cursor: not-allowed; }
+    .out-btn:active:not(:disabled) { transform: scale(0.98); }
+
+    .out-on  { background: rgba(0,230,118,0.12); color: var(--green); border-color: rgba(0,230,118,0.4); }
+    .out-on:hover:not(:disabled)  { background: rgba(0,230,118,0.2); border-color: var(--green); }
+    .out-off { background: rgba(255,68,68,0.08); color: var(--red); border-color: rgba(255,68,68,0.3); }
+    .out-off:hover:not(:disabled) { background: rgba(255,68,68,0.16); border-color: var(--red); }
+
+    /* Channel status grid */
+    .ch-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      margin-top: 12px;
+    }
+
+    .ch-cell {
+      background: var(--inset);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      padding: 8px 4px;
+      text-align: center;
+    }
+    .ch-cell.active  { border-color: rgba(0,230,118,0.5);  background: rgba(0,230,118,0.05); }
+    .ch-cell.ramping { border-color: rgba(255,204,68,0.5); background: rgba(255,204,68,0.05); }
+
+    .ch-cell.fault   { border-color: rgba(255,68,68,0.6);  background: rgba(255,68,68,0.06); }
+    .ch-cell.fault .ch-cell-dot { background: var(--red); }
+    .ch-cell.fault .ch-cell-st  { color: var(--red); }
+
+    .ch-cell-id  { font-size: 9px; font-weight: 700; letter-spacing: 0.1em; color: var(--dim); margin-bottom: 5px; }
+    .ch-cell-dot {
+      width: 7px; height: 7px; border-radius: 50%;
+      background: var(--border); margin: 0 auto 4px;
+      transition: background 0.3s;
+    }
+    .ch-cell.active .ch-cell-dot  { background: var(--green); box-shadow: 0 0 6px rgba(0,230,118,0.7); }
+    .ch-cell.ramping .ch-cell-dot { background: var(--amber); box-shadow: 0 0 6px rgba(255,204,68,0.7); animation: blink 0.6s infinite; }
+
+    .ch-cell-st { font-size: 9px; font-weight: 700; color: var(--dim); }
+    .ch-cell.active  .ch-cell-st { color: var(--green); }
+    .ch-cell.ramping .ch-cell-st { color: var(--amber); }
+    .ch-cell-hz { font-size: 9px; font-family: monospace; color: var(--text-2); min-height: 1em; }
+
+    .status-line { font-family: monospace; font-size: 10px; color: var(--dim); margin-top: 8px; min-height: 1em; }
+
+    /* ── Log ─────────────────────────────────────────────────── */
+    #log {
+      height: 200px;
+      overflow-y: auto;
+      padding: 10px 12px;
+      font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+      font-size: 11px;
+      line-height: 1.7;
+    }
+    #log::-webkit-scrollbar { width: 4px; }
+    #log::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+    .log-entry { display: flex; gap: 8px; }
+    .log-ts  { color: var(--dim); flex-shrink: 0; }
+    .log-tag { flex-shrink: 0; font-weight: 700; min-width: 40px; }
+    .log-msg { word-break: break-all; color: var(--text-2); }
+
+    .log-tag.rx   { color: #00e676; }
+    .log-tag.tx   { color: #00d4b4; }
+    .log-tag.hb   { color: #a78bfa; }
+    .log-tag.dds  { color: #ffcc44; }
+    .log-tag.info { color: var(--dim); }
+    .log-tag.err  { color: var(--red); }
+
+    /* ── Send row ─────────────────────────────────────────────── */
+    .send-row {
+      display: flex;
+      gap: 8px;
+      padding: 10px 12px;
+    }
+    .cmd-in {
+      flex: 1;
+      background: var(--inset);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      color: var(--text);
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 12px;
+      padding: 7px 10px;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .cmd-in:focus { border-color: var(--accent); }
+    .cmd-in:disabled { opacity: 0.4; }
+    .send-btn {
+      background: var(--accent); color: #000;
+      font-size: 12px; font-weight: 700;
+      padding: 7px 16px;
+      border: none; border-radius: var(--r);
+      cursor: pointer;
+    }
+    .send-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+    /* ── UUID table ───────────────────────────────────────────── */
+    .uuid-table { width: 100%; border-collapse: collapse; font-family: monospace; font-size: 10px; }
+    .uuid-table th { text-align: left; padding: 7px 12px; font-size: 9px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dim); border-bottom: 1px solid var(--border); }
+    .uuid-table td { padding: 7px 12px; color: var(--text-2); word-break: break-all; }
+    .uuid-table tr:nth-child(even) td { background: rgba(255,255,255,0.015); }
+    body[data-mode="student"] main { max-width: 1080px; gap: 18px; padding: 22px 24px 60px; }
+    body[data-mode="student"] .conn-row { padding: 18px 20px; }
+    body[data-mode="student"] .dds-body { padding: 22px; }
+    body[data-mode="student"] .ctrl-section { padding-block: 18px; }
+    body[data-mode="student"] .ch-cell { padding: 14px 8px; border-radius: var(--r); }
+    body[data-mode="student"] .ch-cell-id,
+    body[data-mode="student"] .ch-cell-st,
+    body[data-mode="student"] .ch-cell-hz { font-size: 12px; }
+    body[data-mode="student"] .ch-tabs,
+    body[data-mode="student"] .wave-row { gap: 8px; }
+    body[data-mode="student"] .scope-wrap { border-radius: var(--r) var(--r) 0 0; }
+    body[data-mode="student"] .out-btn { min-height: 52px; font-size: 14px; }
+
+    .hero, .mode-intro { max-width: 1080px; margin: 0 auto; }
+    .hero { padding: 42px 24px 12px; }
+    .eyebrow { color: var(--accent); font-size: 11px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+    .hero h1 { color: var(--text); font-size: clamp(30px, 5vw, 56px); line-height: 1.03; letter-spacing: -.055em; margin-top: 10px; max-width: 700px; }
+    .hero p { color: var(--text-2); font-size: 16px; line-height: 1.55; max-width: 640px; margin-top: 14px; }
+    .hero strong { color: var(--text); }
+    .brand-sub { color: var(--text-2); font-size: 11px; margin-left: 4px; }
+    .mode-toggle { flex-shrink: 0; }
+    .mode-opt { min-height: 32px; }
+    .mode-opt:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+    body[data-mode="student"] .block-head.student-head { padding: 14px 20px; }
+    .student-head .block-label { font-size: 12px; color: var(--text-2); }
+    .student-overview { display: grid; grid-template-columns: 1.4fr 1fr; gap: 18px; }
+    .overview-main, .overview-guide { border: 1px solid var(--border); border-radius: var(--r); padding: 22px; background: var(--panel); }
+    .overview-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+    .overview-heading h2 { font-size: 22px; letter-spacing: -.03em; }
+    .state-pill { display: inline-flex; align-items: center; border-radius: 999px; padding: 7px 11px; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .07em; background: rgba(255,255,255,.06); color: var(--text-2); }
+    .state-pill.active { background: rgba(0,230,118,.12); color: var(--green); }
+    .state-pill.ramping { background: rgba(255,204,68,.12); color: var(--amber); }
+    .state-pill.fault { background: rgba(255,68,68,.12); color: var(--red); }
+    .overview-metrics { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-top: 22px; }
+    .metric { border: 1px solid var(--border); border-radius: var(--r); padding: 13px; background: var(--inset); min-width: 0; }
+    .metric span { display: block; color: var(--text-2); font-size: 11px; line-height: 1.3; }
+    .metric strong { display: block; color: var(--text); font-size: clamp(16px,2.5vw,23px); letter-spacing: -.03em; margin-top: 7px; }
+    .student-notice { margin-top: 14px; color: var(--text-2); font-size: 12px; line-height: 1.45; min-height: 1.3em; }
+    .student-notice.error { color: var(--red); font-weight: 700; }
+    .overview-guide h2 { font-size: 14px; }
+    .overview-guide ol { list-style: decimal-leading-zero; margin-top: 14px; padding-left: 2em; display: grid; gap: 10px; }
+    .overview-guide li { color: var(--text-2); font-size: 13px; line-height: 1.35; padding-left: 3px; }
+    .overview-guide li::marker { color: var(--accent); font-size: 12px; font-weight: 700; }
+    .overview-guide strong { color: var(--text); }
+    .student-hint { color: var(--text-2); font-size: 12px; line-height: 1.4; margin-top: 8px; }
+    .mode-intro { max-width: 560px; padding: 20px 12px 0; color: var(--text-2); }
+    .mode-intro h1 { color: var(--text); font-size: 24px; margin-top: 6px; }
+    .mode-intro p { margin-top: 5px; line-height: 1.45; }
+    .ch-cell.stale { border-style: dashed; }
+    .ch-cell.stale .ch-cell-st { color: var(--amber); }
+    .ch-cell-current { font-size: 10px; color: var(--text-2); margin-top: 4px; }
+    @media (max-width: 720px) {
+      body[data-mode="student"] main { padding: 14px 12px 44px; }
+      .hero { padding: 30px 16px 6px; }
+      .student-overview { grid-template-columns: 1fr; }
+      .overview-metrics { grid-template-columns: repeat(3,minmax(0,1fr)); }
+      .brand-sub { display: none; }
+      .mode-opt { padding-inline: 10px; }
+      .topbar { padding-inline: 10px; }
+    }
+    @media (max-width: 430px) {
+      .overview-metrics { grid-template-columns: 1fr 1fr; }
+      .metric:last-child { grid-column: 1 / -1; }
+      .student-overview { gap: 10px; }
+      .overview-main,.overview-guide { padding: 16px; }
+      .mode-opt { font-size: 10px; padding-inline: 8px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+    }
+
+    /* Instrument panel: one palette for both views, borders instead of elevation. */
+    :root {
+      --bg: #0d0e11; --panel: #14161a; --inset: #101216;
+      --border: #30343b; --accent: #66d9e4; --green: #a8dd7b;
+      --red: #de7777; --amber: #e4b866; --dim: #828d97;
+      --text: #e2e6e9; --text-2: #aab3bc; --r: 0px;
+    }
+    *, *::before, *::after { border-radius: 0 !important; box-shadow: none !important; transition: none !important; }
+    body { background: var(--bg); }
+    .topbar { min-height: 54px; height: auto; padding: 8px 20px; background: var(--panel); }
+    .topbar-title, .brand-sub, .demo-chip, .mode-opt, .eyebrow, .block-label,
+    .ctrl-name, .ctrl-out, .unit, .preset, .status-line, .ch-cell,
+    .overview-metrics strong, .state-pill, .control-label, .telemetry-panel,
+    .ch-tab, .out-btn, #status-text, #info-name { font-family: 'SF Mono', 'Cascadia Code', Consolas, monospace; }
+    .topbar-title { font-size: 12px; letter-spacing: .12em; }
+    .brand-sub { font-size: 11px; color: var(--dim); }
+    .demo-chip { background: transparent; padding: 4px 7px; font-size: 10px; }
+    .mode-opt { font-size: 11px; padding: 8px 14px; }
+    .mode-opt.active { color: #071115; }
+    .hero, .mode-intro { max-width: 1240px; padding: 22px 20px 0; }
+    .hero h1, .mode-intro h1 { font-size: clamp(22px, 3vw, 30px); margin-top: 7px; letter-spacing: -.03em; font-weight: 650; }
+    .hero p, .mode-intro p { max-width: 800px; font-size: 13px; margin-top: 6px; line-height: 1.45; }
+    body[data-mode="student"] main, body[data-mode="dev"] main { max-width: 1240px; padding: 16px 20px 48px; gap: 12px; }
+    .block, .overview-main, .overview-guide { background: var(--panel); }
+    .block-head { padding: 10px 14px; }
+    .block-label, .eyebrow { color: var(--dim); font-size: 10px; }
+    .conn-row, body[data-mode="student"] .conn-row { padding: 11px 14px; }
+    #status-text { font-size: 12px; font-weight: 700; text-transform: uppercase; }
+    #info-name { color: var(--text-2); font-size: 10px; font-weight: 400; }
+    #status-dot { width: 7px; height: 7px; }
+    .btn, .out-btn, .preset, .wave-btn, .ch-tab, .send-btn { font-family: 'SF Mono', 'Cascadia Code', Consolas, monospace; text-transform: uppercase; letter-spacing: .04em; }
+    .btn:active:not(:disabled), .out-btn:active:not(:disabled), .wave-btn:active:not(:disabled) { transform: none; background: var(--border); }
+    .btn-accent { background: var(--accent); border-color: var(--accent); color: #071115; }
+    .btn-accent:hover:not(:disabled) { background: #8fe4ec; border-color: #8fe4ec; }
+    .scope-wrap { background: #0b1216; border: 1px solid var(--border); margin: 0 0 15px; }
+    #wave-canvas { height: 142px; }
+    #wave-info { color: var(--accent); }
+    body[data-mode="student"] .dds-body, body[data-mode="dev"] .dds-body { padding: 14px; }
+    .student-overview { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 0; border: 1px solid var(--border); }
+    .overview-main, .overview-guide { padding: 14px 16px; border: 0; }
+    .overview-guide { border-left: 1px solid var(--border); }
+    .overview-heading h2 { font-size: 18px; }
+    .overview-metrics { margin-top: 13px; gap: 0; }
+    .metric { background: transparent; border: 0; border-top: 1px solid var(--border); border-right: 1px solid var(--border); padding: 10px 12px 6px 0; }
+    .metric + .metric { padding-left: 12px; }
+    .metric:last-child { border-right: 0; }
+    .metric strong { font-size: 17px; font-variant-numeric: tabular-nums; }
+    .metric span, .student-notice, .student-hint { font-size: 11px; }
+    .student-notice { border-top: 1px solid var(--border); padding-top: 9px; margin-top: 10px; }
+    .state-pill { border: 1px solid var(--border); background: var(--inset); color: var(--text-2); font-size: 10px; }
+    .state-pill.active { border-color: var(--green); }
+    .state-pill.ramping { border-color: var(--amber); }
+    .state-pill.fault { border-color: var(--red); }
+    .overview-guide h2 { margin-top: 4px; font-size: 13px; }
+    .overview-guide ol { grid-template-columns: 1fr 1fr; gap: 6px 18px; margin-top: 11px; }
+    .overview-guide li { font-size: 11px; }
+    .control-label { display: flex; justify-content: space-between; gap: 10px; color: var(--dim); font-size: 10px; letter-spacing: .08em; margin-bottom: 8px; }
+    body[data-mode="student"] .ch-tabs { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); margin-bottom: 15px; }
+    body[data-mode="student"] .ch-tab { border: 0; background: var(--inset); text-align: left; padding: 12px; min-width: 0; color: var(--text); }
+    body[data-mode="student"] .ch-tab.active { outline: 2px solid var(--accent); outline-offset: -2px; background: #182126; }
+    body[data-mode="student"] .ch-tab:disabled { opacity: 1; cursor: not-allowed; }
+    body[data-mode="student"] .ch-tab:hover:not(:disabled):not(.active) { background: #1d2227; color: var(--text); }
+    body[data-mode="student"] .ch-all { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: center; min-height: 36px; padding: 8px 12px; }
+    .ch-all-meta { color: var(--dim); font-size: 10px; font-weight: 400; }
+    .ch-strip-head { display: flex; justify-content: space-between; align-items: center; gap: 6px; }
+    .ch-name { color: var(--text); white-space: nowrap; }
+    .ch-state { color: var(--dim); font-size: 9px; text-align: right; }
+    .ch-tab[data-state="ACTIVE"] .ch-state { color: var(--green); }
+    .ch-tab[data-state="RAMP_UP"] .ch-state, .ch-tab[data-state="RAMP_DOWN"] .ch-state,
+    .ch-tab[data-state="STALE"] .ch-state { color: var(--amber); }
+    .ch-tab[data-state="FAULT"] .ch-state { color: var(--red); }
+    .strip-wave { display: block; width: 100%; height: 50px; margin: 13px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); overflow: visible; }
+    .strip-wave path { stroke: var(--accent); stroke-width: 1.6; fill: none; vector-effect: non-scaling-stroke; }
+    .ch-tab:disabled .strip-wave path { stroke: var(--dim); }
+    .strip-readouts { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 5px; }
+    .strip-readouts > span { display: block; min-width: 0; }
+    .strip-readouts small { display: block; color: var(--dim); font-size: 9px; }
+    .strip-readouts strong { display: block; color: var(--text); font-size: 11px; font-weight: 600; margin-top: 4px; overflow: hidden; text-overflow: ellipsis; font-variant-numeric: tabular-nums; }
+    body[data-mode="student"] .ch-grid { display: none; }
+    body[data-mode="dev"] .ch-tabs { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 0; border: 1px solid var(--border); }
+    body[data-mode="dev"] .ch-tab { border: 0; border-right: 1px solid var(--border); background: var(--inset); }
+    body[data-mode="dev"] .ch-tab:last-child { border-right: 0; }
+    body[data-mode="dev"] .ch-tab.active { background: var(--accent); color: #071115; }
+    body[data-mode="dev"] .ch-tab.active .ch-name { color: #071115; }
+    body[data-mode="dev"] .ch-all-meta, body[data-mode="dev"] .ch-state,
+    body[data-mode="dev"] .strip-wave, body[data-mode="dev"] .strip-readouts { display: none; }
+    body[data-mode="dev"] .ch-strip-head { display: block; }
+    .wave-row { gap: 1px; background: var(--border); border: 1px solid var(--border); }
+    .wave-btn { border: 0; background: var(--inset); }
+    .wave-btn.active { background: var(--accent); color: #071115; }
+    .wave-btn.active svg { color: #071115; }
+    .num-in, .cmd-in, .preset { background: var(--inset); }
+    input[type="range"] { background: var(--border); height: 3px; }
+    input[type="range"]::-webkit-slider-thumb, input[type="range"]::-moz-range-thumb { width: 12px; height: 20px; background: var(--accent); border: 1px solid var(--bg); }
+    .out-btn { font-size: 11px; }
+    .out-on { background: transparent; color: var(--green); border-color: var(--border); }
+    .out-off { background: transparent; color: var(--red); border-color: var(--border); }
+    .out-on.engaged { border-color: var(--green); background: #1c281d; }
+    .ch-grid { gap: 0; border: 1px solid var(--border); }
+    .ch-cell { border: 0; border-right: 1px solid var(--border); padding: 10px 6px; background: var(--inset); }
+    .ch-cell:last-child { border-right: 0; }
+    .ch-cell.active, .ch-cell.ramping, .ch-cell.fault { background: var(--inset); }
+    .ch-cell-dot { width: 6px; height: 6px; }
+    .telemetry-panel { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); border: 1px solid var(--border); background: var(--panel); }
+    .telemetry-panel > div { min-width: 0; padding: 11px 13px; border-right: 1px solid var(--border); }
+    .telemetry-panel > div:last-child { border-right: 0; }
+    .telemetry-panel span { display: block; color: var(--dim); font-size: 10px; letter-spacing: .08em; }
+    .telemetry-panel strong { display: block; color: var(--accent); font-size: 13px; margin-top: 6px; font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .telemetry-panel strong.stale { color: var(--amber); }
+    body[data-mode="student"] .telemetry-panel { display: none; }
+    #log { height: 310px; padding: 0; background: #0b0d10; line-height: 1.4; }
+    .log-entry { display: grid; grid-template-columns: 82px 48px minmax(0,1fr) 170px; gap: 10px; padding: 5px 12px; border-bottom: 1px solid #20242a; align-items: start; }
+    .log-entry:nth-child(even) { background: #111418; }
+    .log-ts, .log-tag, .log-hex { font-variant-numeric: tabular-nums; }
+    .log-tag { min-width: 0; }
+    .log-tag.hb { color: var(--dim); }
+    .log-tag.rx, .log-tag.tx, .log-tag.ack { color: var(--accent); }
+    .log-msg { color: var(--text-2); word-break: break-word; }
+    .log-hex { color: var(--dim); font-size: 10px; word-break: break-all; }
+    @media (max-width: 900px) {
+      body[data-mode="student"] .ch-tabs { grid-template-columns: repeat(2,minmax(0,1fr)); }
+      .student-overview { grid-template-columns: 1fr; }
+      .overview-guide { border-left: 0; border-top: 1px solid var(--border); }
+    }
+    @media (max-width: 620px) {
+      .topbar { padding: 8px 12px; }
+      .topbar-left { gap: 5px; }
+      .brand-sub { display: none; }
+      .hero, .mode-intro { padding: 17px 12px 0; }
+      body[data-mode="student"] main, body[data-mode="dev"] main { padding: 12px 12px 40px; }
+      .overview-guide ol { grid-template-columns: 1fr; }
+      body[data-mode="student"] .ch-tabs { grid-template-columns: 1fr; }
+      .telemetry-panel { grid-template-columns: 1fr 1fr; }
+      .telemetry-panel > div:nth-child(2) { border-right: 0; }
+      .telemetry-panel > div:nth-child(-n+2) { border-bottom: 1px solid var(--border); }
+      #log { overflow-x: auto; }
+      .log-entry { min-width: 700px; }
+      .control-label span:last-child { display: none; }
+    }
+  </style>
+</head>
+<body data-mode="student">
+
+<header class="topbar">
+  <div class="topbar-left">
+    <span class="topbar-title">Research Lab</span><span class="brand-sub">/ BLE control</span>
+    <span class="demo-chip" id="demo-chip">DEMO MODE</span>
+  </div>
+  <div class="mode-toggle" role="group" aria-label="View">
+    <button class="mode-opt active" data-mode="student" type="button" aria-pressed="true">Student View</button>
+    <button class="mode-opt" data-mode="dev" type="button" aria-pressed="false">Dev View</button>
+  </div>
+</header>
+<section class="hero student-only" aria-labelledby="student-title">
+  <span class="eyebrow">INSTRUMENT 01 / FOUR-CHANNEL CONTROLLER</span>
+  <h1 id="student-title">Signal bench</h1>
+  <p>Select a channel, set a waveform, and read back the output state. Waveforms on this page are previews.</p>
+</section>
+<section class="mode-intro dev-only" aria-labelledby="dev-title">
+  <span class="eyebrow">INSTRUMENT 01 / DIAGNOSTICS</span>
+  <h1 id="dev-title">Device telemetry</h1>
+  <p>Link health, channel readback, and command traffic.</p>
+</section>
+
+<main>
+  <section class="student-overview student-only" aria-label="Experiment overview">
+    <div class="overview-main">
+      <div class="overview-heading">
+        <div><span class="eyebrow">Selected output</span><h2 id="student-channel">All channels</h2></div>
+        <span class="state-pill" id="student-state">Disconnected</span>
+      </div>
+      <div class="overview-metrics">
+        <div class="metric"><span>Frequency setpoint</span><strong id="student-frequency">1,000 Hz</strong></div>
+        <div class="metric"><span>Requested peak current</span><strong id="student-requested">0.00 mA</strong></div>
+        <div class="metric"><span>Highest reported ramp setpoint</span><strong id="student-applied">?</strong></div>
+      </div>
+      <p class="student-notice" id="student-notice" role="status" aria-live="polite">Demo disconnected. Output status is unavailable.</p>
+    </div>
+    <div class="overview-guide">
+      <span class="eyebrow">STARTUP</span><h2>Operating order</h2>
+      <ol>
+        <li><strong>Connect</strong> to the demo or a device.</li>
+        <li><strong>Select</strong> one channel or all four.</li>
+        <li><strong>Set</strong> waveform, frequency, and peak current.</li>
+        <li><strong>Start</strong> and watch the output state. Stop to ramp down.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Connection -->
+  <div class="block">
+    <div class="block-head student-head"><span class="block-label">Device connection</span></div>
+    <div class="conn-row">
+      <div class="conn-status-group">
+        <div id="status-dot"></div>
+        <div>
+          <div id="status-text">Demo disconnected</div>
+          <div id="info-name">Simulated device - no hardware</div>
+        </div>
+      </div>
+      <div class="conn-btns">
+        <button class="btn btn-accent" id="btn-connect">Connect to demo</button>
+        <button class="btn btn-danger" id="btn-disconnect" disabled>Disconnect</button>
+      </div>
+    </div>
+    <label class="sim-row dev-only">
+      <input type="checkbox" id="sim-toggle" /> Simulated device (no hardware)
+    </label>
+    <div class="dev-info dev-only" id="device-details" style="display:none">
+      <div class="dev-info-item"><span class="dev-info-key">ID</span><span id="info-id">—</span></div>
+      <div class="dev-info-item"><span class="dev-info-key">MTU</span><span id="info-mtu">—</span></div>
+    </div>
+  </div>
+
+  <section class="telemetry-panel dev-only" aria-label="Connection telemetry">
+    <div><span>LINK</span><strong id="dev-link">SIM / OFFLINE</strong></div>
+    <div><span>STATUS AGE</span><strong id="dev-status-age">--</strong></div>
+    <div><span>LAST WRITE / completion</span><strong id="dev-write-ms">--</strong></div>
+    <div><span>RX FRAMES</span><strong id="dev-rx-frames">0000</strong></div>
+  </section>
+  <!-- DDS generator -->
+  <div class="block" id="dac-card">
+
+    <div class="dds-body">
+
+      <!-- Channel tabs -->
+      <div class="control-label student-only"><span>01 / CHANNEL SELECT</span><span>Choose a strip to edit its setpoint</span></div>
+      <div class="ch-tabs" role="group" aria-label="Select channel">
+        <button class="ch-tab ch-all active" data-ch="ALL" disabled><span class="ch-name">ALL CHANNELS</span><span class="ch-all-meta">Group control / changes apply to all four outputs</span></button>
+        <button class="ch-tab ch-strip" data-ch="0" disabled><span class="ch-strip-head"><span class="ch-name">CH 01</span><span class="ch-state" id="strip-state-0">OFFLINE</span></span><svg class="strip-wave" viewBox="0 0 160 48" preserveAspectRatio="none" aria-hidden="true"><path id="strip-wave-0" d="M0 24 H160"/></svg><span class="strip-readouts"><span><small>FREQ</small><strong id="strip-freq-0">--</strong></span><span><small>SET</small><strong id="strip-set-0">--</strong></span><span><small>RAMP</small><strong id="strip-ramp-0">--</strong></span></span></button>
+        <button class="ch-tab ch-strip" data-ch="1" disabled><span class="ch-strip-head"><span class="ch-name">CH 02</span><span class="ch-state" id="strip-state-1">OFFLINE</span></span><svg class="strip-wave" viewBox="0 0 160 48" preserveAspectRatio="none" aria-hidden="true"><path id="strip-wave-1" d="M0 24 H160"/></svg><span class="strip-readouts"><span><small>FREQ</small><strong id="strip-freq-1">--</strong></span><span><small>SET</small><strong id="strip-set-1">--</strong></span><span><small>RAMP</small><strong id="strip-ramp-1">--</strong></span></span></button>
+        <button class="ch-tab ch-strip" data-ch="2" disabled><span class="ch-strip-head"><span class="ch-name">CH 03</span><span class="ch-state" id="strip-state-2">OFFLINE</span></span><svg class="strip-wave" viewBox="0 0 160 48" preserveAspectRatio="none" aria-hidden="true"><path id="strip-wave-2" d="M0 24 H160"/></svg><span class="strip-readouts"><span><small>FREQ</small><strong id="strip-freq-2">--</strong></span><span><small>SET</small><strong id="strip-set-2">--</strong></span><span><small>RAMP</small><strong id="strip-ramp-2">--</strong></span></span></button>
+        <button class="ch-tab ch-strip" data-ch="3" disabled><span class="ch-strip-head"><span class="ch-name">CH 04</span><span class="ch-state" id="strip-state-3">OFFLINE</span></span><svg class="strip-wave" viewBox="0 0 160 48" preserveAspectRatio="none" aria-hidden="true"><path id="strip-wave-3" d="M0 24 H160"/></svg><span class="strip-readouts"><span><small>FREQ</small><strong id="strip-freq-3">--</strong></span><span><small>SET</small><strong id="strip-set-3">--</strong></span><span><small>RAMP</small><strong id="strip-ramp-3">--</strong></span></span></button>
+      </div>
+
+      <div class="control-label student-only"><span>02 / WAVEFORM PREVIEW</span><span>Preview only / not a device measurement</span></div>
+      <div class="scope-wrap">
+        <canvas id="wave-canvas" height="160"></canvas>
+        <span id="wave-info"></span>
+      </div>
+      <!-- Waveform selector -->
+      <div class="wave-row">
+        <button class="wave-btn active" data-wave="SINE" disabled>
+          <svg viewBox="0 0 40 18"><path d="M0,9 C3,9 3,1 7,1 S11,17 15,17 S19,1 23,1 S27,17 31,17 S35,1 38,1 S40,9 40,9"/></svg>
+          SINE</button>
+        <button class="wave-btn" data-wave="SQUARE" disabled>
+          <svg viewBox="0 0 40 18" style="stroke-linecap:butt"><path d="M0,14 L0,4 L10,4 L10,14 L20,14 L20,4 L30,4 L30,14 L40,14"/></svg>
+          SQUARE</button>
+        <button class="wave-btn" data-wave="TRIANGLE" disabled>
+          <svg viewBox="0 0 40 18"><path d="M0,14 L7,4 L13,14 L20,4 L27,14 L33,4 L40,14"/></svg>
+          TRI</button>
+        <button class="wave-btn" data-wave="SAWTOOTH" disabled>
+          <svg viewBox="0 0 40 18" style="stroke-linecap:butt"><path d="M0,14 L13,4 M13,4 L13,14 L26,4 M26,4 L26,14 L40,4"/></svg>
+          SAW</button>
+      </div>
+
+      <p class="student-hint student-only">The waveform above is a visual preview, not a measurement from the device.</p>
+
+      <!-- Frequency -->
+      <div class="ctrl-section">
+        <div class="ctrl-header">
+          <div><span class="ctrl-name">Frequency</span><span class="ctrl-out" id="freq-out"></span></div>
+          <div class="ctrl-readout">
+            <input class="num-in" id="freq-number" type="number" min="500" max="30000" step="1" value="1000" disabled />
+            <span class="unit">HZ</span>
+          </div>
+        </div>
+        <p class="student-hint student-only">How quickly the waveform repeats: 500 Hz to 30 kHz.</p>
+        <input id="freq-slider" type="range" min="0" max="1000" step="1" value="169" disabled />
+        <div class="presets">
+          <button class="preset fp" data-freq="500"   disabled>500</button>
+          <button class="preset fp" data-freq="1000"  disabled>1k</button>
+          <button class="preset fp" data-freq="2000"  disabled>2k</button>
+          <button class="preset fp" data-freq="5000"  disabled>5k</button>
+          <button class="preset fp" data-freq="7500"  disabled>7.5k</button>
+          <button class="preset fp" data-freq="10000" disabled>10k</button>
+          <button class="preset fp" data-freq="20000" disabled>20k</button>
+          <button class="preset fp" data-freq="30000" disabled>30k</button>
+        </div>
+      </div>
+
+      <div class="sep"></div>
+
+      <!-- Amplitude -->
+      <div class="ctrl-section">
+        <div class="ctrl-header">
+          <div><span class="ctrl-name">Amplitude (peak)</span><span class="ctrl-out" id="amp-out"></span></div>
+          <div class="ctrl-readout">
+            <input class="num-in amp" id="amp-number" type="number" min="0" max="5" step="0.01" value="0.00" disabled />
+            <span class="unit">MA</span>
+          </div>
+        </div>
+        <p class="student-hint student-only">Target peak current. The device ramps toward this setpoint.</p>
+        <input id="amp-slider" type="range" min="0" max="5" step="0.01" value="0" disabled />
+        <div class="presets">
+          <button class="preset ap" data-amp="0.00" disabled>0</button>
+          <button class="preset ap" data-amp="0.50" disabled>0.5</button>
+          <button class="preset ap" data-amp="1.00" disabled>1</button>
+          <button class="preset ap" data-amp="1.50" disabled>1.5</button>
+          <button class="preset ap" data-amp="2.00" disabled>2</button>
+          <button class="preset ap" data-amp="3.00" disabled>3</button>
+          <button class="preset ap" data-amp="5.00" disabled>5 mA</button>
+        </div>
+      </div>
+
+      <div class="sep"></div>
+
+      <!-- Output control -->
+      <div class="out-row">
+        <button class="out-btn out-on"  id="btn-dac-on"  disabled>Output ON</button>
+        <button class="out-btn out-off" id="btn-dac-off" disabled>Output OFF</button>
+        <button class="btn btn-sm dev-only" id="btn-dac-status" disabled style="flex-shrink:0">Status</button>
+      </div>
+
+      <p class="student-hint student-only">Start and stop requests are confirmed by the device status shown above.</p>
+
+      <!-- Channel grid -->
+      <div class="ch-grid" id="channel-status-list" aria-label="Channel status"></div>
+
+      <div class="status-line dev-only" id="dac-status-line">—</div>
+
+    </div>
+  </div>
+
+  <!-- Serial-style log (dev) -->
+  <div class="block dev-only">
+    <div class="block-head">
+      <span class="block-label">Log</span>
+      <button class="btn btn-sm" id="btn-clear">Clear</button>
+    </div>
+    <div id="log"></div>
+  </div>
+
+  <!-- Send (dev) -->
+  <div class="block dev-only">
+    <div class="block-head"><span class="block-label">Send Command</span></div>
+    <div class="send-row">
+      <input class="cmd-in" id="msg-input" type="text" placeholder="DDS ALL STATUS" disabled />
+      <button class="send-btn" id="btn-send" disabled>Send</button>
+    </div>
+  </div>
+
+  <!-- UUID reference (dev) -->
+  <div class="block dev-only">
+    <div class="block-head"><span class="block-label">UUID Reference</span></div>
+    <table class="uuid-table">
+      <thead><tr><th>Role</th><th>UUID</th><th>Dir</th></tr></thead>
+      <tbody>
+        <tr><td>NUS Service</td><td>6e400001-b5a3-f393-e0a9-e50e24dcca9e</td><td>—</td></tr>
+        <tr><td>TX notify</td>  <td>6e400003-b5a3-f393-e0a9-e50e24dcca9e</td><td>ESP32→App</td></tr>
+        <tr><td>RX write</td>   <td>6e400002-b5a3-f393-e0a9-e50e24dcca9e</td><td>App→ESP32</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</main>
+
+<script src="./app.js" defer></script>
+</body>
+</html>

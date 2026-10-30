@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["ES2020", "DOM"],
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "../web/web-bluetooth.d.ts",
+    "../web/ble_transport.ts",
+    "../web/mock_adapter.ts",
+    "../web/controller.ts",
+    "src/native.ts"
+  ]
+}

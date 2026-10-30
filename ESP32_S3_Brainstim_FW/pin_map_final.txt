@@ -1,0 +1,45 @@
+================================================================================
+             FINAL SYSTEM LAYOUT — ESP32-S3-DevKitC-1-N8R8
+================================================================================
+
+           LEFT SIDE (J1)                      RIGHT SIDE (J3)
+          ____________________                ____________________
+SYS_3V3  |        3V3         |              |        GND         |
+         |        3V3         |              |    43 (U0TXD)      | UART TX
+         |        RST         |              |    44 (U0RXD)      | UART RX
+CH1_LV_EN|  4  (ADC1_3)       |              |    1  (ADC1_0)     | V_BAT_MEAS
+CH2_LV_EN|  5  (ADC1_4)       |              |    2  (RTC)        | -- SPARE --
+CH3_LV_EN|  6  (ADC1_5)       |              |    42 (MTMS)       | -- SPARE --
+CH4_LV_EN|  7  (ADC1_6)       |              |    41 (MTDI)       | -- SPARE --
+--SPARE--|  15 (ADC2_4)       |              |    40 (MTDO)       | -- SPARE --
+OLED_SDA |  16 (ADC2_5)       |              |    39 (MTCK)       | -- SPARE --
+OLED_SCL |  17 (ADC2_6)       |              |    38 (FSPIWP)     | -- SPARE --
+DDS_SCL  |  18 (ADC2_7)       |              |    37 (SPIDQS)     | PSRAM (X)
+DDS_SDA  |  8  (ADC1_7)       |              |    36 (SPIIO7)     | PSRAM (X)
+--SPARE--|  3  (ADC1_2)       |              |    35 (SPIIO6)     | PSRAM (X)
+--STRAP--|  46 (LOG)          |              |    0  (BOOT)       | STRAP/BOOT
+SOFT_STP |  9  (ADC1_8)       |              |    45 (STRAP)      | -- SPARE --
+--SPARE--|  10 (ADC1_9)       |              |    48 (SPICLK_N)   | -- SPARE --
+--SPARE--|  11 (ADC2_0)       |              |    47 (SPICLK_P)   | -- SPARE --
+--SPARE--|  12 (ADC2_1)       |              |    21 (RTC)        | -- SPARE --
+--SPARE--|  13 (ADC2_2)       |              |    20 (USB_D+)     | NATIVE USB
+--SPARE--|  14 (ADC2_3)       |              |    19 (USB_D-)     | NATIVE USB
+         |        5V0         |              |        GND         |
+         |        GND         |              |        GND         | SYS_GND
+         |____________________|              |____________________|
+
+================================================================================
+HARDWARE MAPPING SUMMARY
+================================================================================
+I2C BUS 0 (DDS Master):  SCL: GPIO 18 | SDA: GPIO 8 (**Requires 2.2k external pullups**)
+I2C BUS 1 (OLED):        SCL: GPIO 17 | SDA: GPIO 16
+LV ENABLE OUTPUTS:       CH1: 4| CH2: 5| CH3: 6| CH4: 7
+ANALOG/INPUT:            Soft Stop: 9 | V_Bat: 1 (**Requires resistor divider -> R1 = 30k, R2 = 10k**)
+================================================================================
+CRITICAL RESTRICTIONS
+================================================================================
+* FLASH/PSRAM (X): GPIO 26-32 are internal. DO NOT USE.
+* STRAPPING PINS:  GPIO 0, 3, 45, 46 affect boot mode.
+* NATIVE USB:      GPIO 19, 20 are reserved for USB interface.
+* UART0:           GPIO 43, 44 are used for Serial/USB bridge.
+================================================================================

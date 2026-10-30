@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ESP32-S3 BLE Control</title>
+  <!--
+    Web Bluetooth client for the ESP32-S3 NimBLE NUS proof-of-concept.
+
+    Requirements:
+      - Chrome or Edge (v56+) on desktop/Android
+        Safari and Firefox do NOT support Web Bluetooth.
+      - Served from HTTPS, localhost, or opened with the
+        chrome://flags/#enable-experimental-web-platform-features flag.
+
+    Quick local server (from project root):
+      python3 -m http.server 8080
+    Then open: http://localhost:8080/web/ble_test.html
+
+    Nordic UART Service (NUS) UUIDs — must match main.c exactly:
+      Service  6e400001-b5a3-f393-e0a9-e50e24dcca9e
+      RX char  6e400002-b5a3-f393-e0a9-e50e24dcca9e  (we write here)
+      TX char  6e400003-b5a3-f393-e0a9-e50e24dcca9e  (we subscribe here)
+
+    DDS command format (sent to RX):
+      DDS <ch> FREQ <hz>          ch = 0-7 or ALL
+      DDS <ch> WAVE SINE|SQUARE|TRIANGLE|SAWTOOTH
+      DDS <ch> AMP <mA>           0.00 – 5.00 mA peak
+      DDS <ch> ON / OFF
+      DDS <ch> STATUS
+  -->
+  <style>
+    :root {
+      --bg:        #0d1117;
+      --surface:   #161b22;
+      --border:    #30363d;
+      --green:     #3fb950;
+      --green-dim: #238636;
+      --red:       #f85149;
+      --blue:      #58a6ff;
+      --orange:    #ffa657;
+      --purple:    #d2a8ff;
+      --text:      #c9d1d9;
+      --muted:     #8b949e;
+      --rx-color:  #3fb950;
+      --tx-color:  #58a6ff;
+      --hb-color:  #d2a8ff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 16px;
+    }
+
+    header {
+      width: 100%;
+      max-width: 720px;
+      margin-bottom: 24px;
+    }
+
+    header h1 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    header p {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+      width: 100%;
+      max-width: 720px;
+      margin-bottom: 16px;
+    }
+
+    .card h2 {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    /* Status row */
+    .status-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    #status-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--muted);
+      flex-shrink: 0;
+      transition: background 0.3s;
+    }
+
+    #status-dot.connected    { background: var(--green); }
+    #status-dot.connecting   { background: var(--blue);  animation: pulse 1s infinite; }
+    #status-dot.disconnected { background: var(--red);   }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0.3; }
+    }
+
+    #status-text { font-size: 0.95rem; flex: 1; }
+
+    /* Buttons */
+    .btn-row { display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
+
+    button {
+      padding: 8px 18px;
+      border: none;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: opacity 0.15s, transform 0.1s;
+    }
+
+    button:active { transform: scale(0.97); }
+    button:disabled { opacity: 0.4; cursor: not-allowed; }
+
+    #btn-connect    { background: var(--green-dim); color: #fff; }
+    #btn-disconnect { background: #21262d; color: var(--red); border: 1px solid var(--red); }
+    #btn-clear      { background: #21262d; color: var(--muted); border: 1px solid var(--border); margin-left: auto; }
+
+    /* Device info */
+    .info-grid {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      gap: 4px 12px;
+      font-size: 0.82rem;
+    }
+
+    .info-grid .label { color: var(--muted); }
+    .info-grid .value { color: var(--text); font-family: monospace; word-break: break-all; }
+
+    /* Message log */
+    #log {
+      height: 260px;
+      overflow-y: auto;
+      font-family: 'Consolas', 'Fira Code', monospace;
+      font-size: 0.82rem;
+      line-height: 1.6;
+      padding: 4px 0;
+    }
+
+    #log::-webkit-scrollbar { width: 6px; }
+    #log::-webkit-scrollbar-track { background: transparent; }
+    #log::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+    .log-entry { display: flex; gap: 8px; padding: 1px 0; }
+
+    .log-ts   { color: var(--muted); flex-shrink: 0; }
+    .log-tag  { flex-shrink: 0; font-weight: 600; }
+    .log-msg  { word-break: break-all; }
+
+    .log-tag.rx   { color: var(--rx-color); }
+    .log-tag.tx   { color: var(--tx-color); }
+    .log-tag.hb   { color: var(--hb-color); }
+    .log-tag.dds  { color: #ffa657; }
+    .log-tag.info { color: var(--muted); }
+    .log-tag.err  { color: var(--red); }
+
+    /* Send row */
+    .send-row {
+      display: flex;
+      gap: 8px;
+    }
+
+    #msg-input {
+      flex: 1;
+      background: #0d1117;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text);
+      font-size: 0.9rem;
+      padding: 8px 12px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    #msg-input:focus { border-color: var(--blue); }
+
+    #btn-send {
+      background: var(--blue);
+      color: #0d1117;
+      font-weight: 600;
+      padding: 8px 20px;
+    }
+
+    /* ── DDS Signal Generator Card ──────────────────────────────────────────── */
+
+    /* Channel selector */
+    .channel-select-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .channel-select-row .slider-label {
+      flex-shrink: 0;
+    }
+
+    #channel-select {
+      flex: 1;
+      background: #0d1117;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--blue);
+      font-family: monospace;
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 6px 10px;
+      outline: none;
+      cursor: pointer;
+      transition: border-color 0.2s;
+      appearance: none;
+      -webkit-appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%238b949e' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      padding-right: 30px;
+    }
+
+    #channel-select:focus  { border-color: var(--blue); }
+    #channel-select:disabled { opacity: 0.4; cursor: not-allowed; }
+
+    .channel-badge {
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 4px;
+      background: rgba(88,166,255,0.15);
+      color: var(--blue);
+      border: 1px solid rgba(88,166,255,0.3);
+      white-space: nowrap;
+    }
+
+    /* Waveform selector buttons with SVG icons */
+    .wave-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+
+    @media (max-width: 480px) { .wave-row { grid-template-columns: repeat(2, 1fr); } }
+
+    .wave-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      background: #21262d;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      padding: 10px 6px;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s, color 0.15s, transform 0.1s;
+      user-select: none;
+    }
+
+    .wave-btn svg {
+      width: 48px;
+      height: 24px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      transition: stroke 0.15s;
+    }
+
+    .wave-btn:hover:not(:disabled) {
+      background: #2d333b;
+      border-color: var(--blue);
+      color: var(--blue);
+    }
+
+    .wave-btn.active {
+      background: rgba(88, 166, 255, 0.15);
+      color: var(--blue);
+      border-color: var(--blue);
+      border-width: 2px;
+    }
+
+    .wave-btn:active:not(:disabled) { transform: scale(0.97); }
+    .wave-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+    /* Waveform canvas preview */
+    .wave-preview-wrap {
+      margin: 14px 0;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+      background: #0d1117;
+      position: relative;
+    }
+
+    #wave-canvas {
+      display: block;
+      width: 100%;
+      height: 100px;
+    }
+
+    .wave-preview-label {
+      position: absolute;
+      top: 6px;
+      right: 10px;
+      font-size: 0.72rem;
+      color: var(--muted);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    /* Slider groups */
+    .dac-slider-section {
+      margin-top: 16px;
+    }
+
+    .dac-slider-section + .dac-slider-section {
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+    }
+
+    .slider-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .slider-label {
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-weight: 600;
+    }
+
+    .slider-value-group {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .slider-number-input {
+      width: 72px;
+      background: #0d1117;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      color: var(--blue);
+      font-family: monospace;
+      font-size: 0.88rem;
+      font-weight: 600;
+      padding: 3px 6px;
+      text-align: right;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .slider-number-input:focus { border-color: var(--blue); }
+    .slider-number-input:disabled { opacity: 0.4; cursor: not-allowed; }
+
+    .slider-unit {
+      font-size: 0.78rem;
+      color: var(--muted);
+      min-width: 24px;
+    }
+
+    /* Custom range slider */
+    input[type="range"] {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 100%;
+      height: 6px;
+      border-radius: 3px;
+      background: var(--border);
+      outline: none;
+      cursor: pointer;
+      margin: 4px 0 10px;
+    }
+
+    input[type="range"]:disabled { opacity: 0.4; cursor: not-allowed; }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--blue);
+      cursor: pointer;
+      border: 2px solid #0d1117;
+      box-shadow: 0 0 0 1px var(--blue);
+      transition: box-shadow 0.15s, transform 0.1s;
+    }
+
+    input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.15); }
+    input[type="range"]::-moz-range-thumb {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--blue);
+      cursor: pointer;
+      border: 2px solid #0d1117;
+      box-shadow: 0 0 0 1px var(--blue);
+    }
+
+    /* Amp slider — green accent */
+    #amp-slider::-webkit-slider-thumb { background: var(--green); box-shadow: 0 0 0 1px var(--green); }
+    #amp-slider::-moz-range-thumb     { background: var(--green); box-shadow: 0 0 0 1px var(--green); }
+    #amp-number { color: var(--green); }
+    #amp-number:focus { border-color: var(--green); }
+
+    /* Preset buttons (quick-select) */
+    .preset-row {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .preset-btn {
+      padding: 4px 10px;
+      background: transparent;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
+    }
+
+    .preset-btn:hover:not(:disabled) {
+      background: #21262d;
+      color: var(--text);
+      border-color: var(--muted);
+    }
+
+    .preset-btn.freq-preset:hover:not(:disabled) { color: var(--blue); border-color: var(--blue); }
+    .preset-btn.amp-preset:hover:not(:disabled)  { color: var(--green); border-color: var(--green); }
+    .preset-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+    /* Output control row */
+    .dac-toggle-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 18px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      flex-wrap: wrap;
+    }
+
+    #btn-dac-on     { background: var(--green-dim); color: #fff; }
+    #btn-dac-off    { background: #21262d; color: var(--red); border: 1px solid var(--red); }
+    #btn-dac-status { background: #21262d; color: var(--muted); border: 1px solid var(--border); margin-left: auto; }
+
+    .dac-status-line {
+      margin-top: 10px;
+      font-family: monospace;
+      font-size: 0.8rem;
+      color: var(--muted);
+      min-height: 1.2em;
+    }
+
+    /* UUID reference */
+    .uuid-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.8rem;
+      font-family: monospace;
+    }
+
+    .uuid-table th {
+      text-align: left;
+      color: var(--muted);
+      font-weight: 500;
+      padding: 4px 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .uuid-table td {
+      padding: 4px 8px;
+      color: var(--text);
+      word-break: break-all;
+    }
+
+    .uuid-table tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+
+    footer {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 8px;
+      max-width: 720px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ESP32-S3 BLE Control</h1>
+  <p>Control and configure stimulation parameters for the ESP32-S3 device.</p>
+</header>
+
+<!-- Connection card -->
+<div class="card">
+  <h2>Connection</h2>
+  <div class="status-row">
+    <div id="status-dot"></div>
+    <span id="status-text">Disconnected</span>
+  </div>
+  <div class="btn-row">
+    <button id="btn-connect">Connect</button>
+    <button id="btn-disconnect" disabled>Disconnect</button>
+  </div>
+</div>
+
+<!-- Device info card (hidden until connected) -->
+<div class="card" id="device-card" style="display:none">
+  <h2>Device</h2>
+  <div class="info-grid">
+    <span class="label">Name</span>      <span class="value" id="info-name">—</span>
+    <span class="label">ID</span>        <span class="value" id="info-id">—</span>
+    <span class="label">MTU</span>       <span class="value" id="info-mtu">—</span>
+  </div>
+</div>
+
+<!-- Message log -->
+<div class="card">
+  <h2>Log <button id="btn-clear">Clear</button></h2>
+  <div id="log"></div>
+</div>
+
+<!-- Send message -->
+<div class="card">
+  <h2>Send to ESP32 (RX characteristic)</h2>
+  <div class="send-row">
+    <input id="msg-input" type="text" placeholder="Type a message…" disabled />
+    <button id="btn-send" disabled>Send</button>
+  </div>
+</div>
+
+<!-- DDS Signal Generator -->
+<div class="card" id="dac-card">
+  <h2>DDS Signal Generator — Per-Channel Control</h2>
+
+  <!-- Channel selector -->
+  <div class="channel-select-row">
+    <span class="slider-label">Channel</span>
+    <select id="channel-select" disabled>
+      <option value="ALL">ALL — Broadcast to all 8 channels</option>
+      <option value="0">Channel 0</option>
+      <option value="1">Channel 1</option>
+      <option value="2">Channel 2</option>
+      <option value="3">Channel 3</option>
+      <option value="4">Channel 4</option>
+      <option value="5">Channel 5</option>
+      <option value="6">Channel 6</option>
+      <option value="7">Channel 7</option>
+    </select>
+    <span class="channel-badge" id="channel-badge">ALL</span>
+  </div>
+
+  <!-- Waveform shape selector -->
+  <div style="margin-bottom:4px">
+    <span class="slider-label">Waveform Shape</span>
+  </div>
+  <div class="wave-row">
+
+    <button class="wave-btn active" data-wave="SINE" disabled>
+      <!-- Sine SVG -->
+      <svg viewBox="0 0 48 24" aria-hidden="true">
+        <path d="M0,12 C4,12 4,2 8,2 S12,22 16,22 S20,2 24,2 S28,22 32,22 S36,2 40,2 S44,12 48,12"/>
+      </svg>
+      SINE
+    </button>
+
+    <button class="wave-btn" data-wave="SQUARE" disabled>
+      <!-- Square SVG -->
+      <svg viewBox="0 0 48 24" aria-hidden="true">
+        <path d="M0,18 L0,6 L12,6 L12,18 L24,18 L24,6 L36,6 L36,18 L48,18"/>
+      </svg>
+      SQUARE
+    </button>
+
+    <button class="wave-btn" data-wave="TRIANGLE" disabled>
+      <!-- Triangle SVG -->
+      <svg viewBox="0 0 48 24" aria-hidden="true">
+        <path d="M0,18 L8,6 L16,18 L24,6 L32,18 L40,6 L48,18"/>
+      </svg>
+      TRIANGLE
+    </button>
+
+    <button class="wave-btn" data-wave="SAWTOOTH" disabled>
+      <!-- Sawtooth SVG -->
+      <svg viewBox="0 0 48 24" aria-hidden="true">
+        <path d="M0,18 L16,6 L16,18 L32,6 L32,18 L48,6"/>
+      </svg>
+      SAWTOOTH
+    </button>
+
+  </div>
+
+  <!-- Live waveform canvas preview -->
+  <div class="wave-preview-wrap">
+    <canvas id="wave-canvas" height="100"></canvas>
+    <span class="wave-preview-label" id="wave-preview-label">SINE · 1000 Hz · 0.00 mA</span>
+  </div>
+
+  <!-- Frequency control — 500 Hz to 30 kHz -->
+  <div class="dac-slider-section">
+    <div class="slider-header">
+      <span class="slider-label">Frequency</span>
+      <div class="slider-value-group">
+        <input id="freq-number" class="slider-number-input" type="number"
+               min="500" max="30000" step="1" value="1000" disabled />
+        <span class="slider-unit">Hz</span>
+      </div>
+    </div>
+    <input id="freq-slider" type="range" min="500" max="30000" step="1" value="1000" disabled />
+    <div class="preset-row">
+      <button class="preset-btn freq-preset" data-freq="500"   disabled>500 Hz</button>
+      <button class="preset-btn freq-preset" data-freq="1000"  disabled>1 kHz</button>
+      <button class="preset-btn freq-preset" data-freq="2000"  disabled>2 kHz</button>
+      <button class="preset-btn freq-preset" data-freq="5000"  disabled>5 kHz</button>
+      <button class="preset-btn freq-preset" data-freq="7500"  disabled>7.5 kHz</button>
+      <button class="preset-btn freq-preset" data-freq="10000" disabled>10 kHz</button>
+      <button class="preset-btn freq-preset" data-freq="20000" disabled>20 kHz</button>
+      <button class="preset-btn freq-preset" data-freq="30000" disabled>30 kHz</button>
+    </div>
+  </div>
+
+  <!-- Amplitude control — 0 to 5 mA peak -->
+  <div class="dac-slider-section">
+    <div class="slider-header">
+      <span class="slider-label">Amplitude (peak)</span>
+      <div class="slider-value-group">
+        <input id="amp-number" class="slider-number-input" type="number"
+               min="0" max="5" step="0.01" value="0.00" disabled />
+        <span class="slider-unit">mA</span>
+      </div>
+    </div>
+    <input id="amp-slider" type="range" min="0" max="5" step="0.01" value="0" disabled />
+    <div class="preset-row">
+      <button class="preset-btn amp-preset" data-amp="0.00" disabled>0 mA</button>
+      <button class="preset-btn amp-preset" data-amp="0.50" disabled>0.5 mA</button>
+      <button class="preset-btn amp-preset" data-amp="1.00" disabled>1 mA</button>
+      <button class="preset-btn amp-preset" data-amp="1.50" disabled>1.5 mA</button>
+      <button class="preset-btn amp-preset" data-amp="2.00" disabled>2 mA</button>
+      <button class="preset-btn amp-preset" data-amp="3.00" disabled>3 mA</button>
+      <button class="preset-btn amp-preset" data-amp="5.00" disabled>5 mA</button>
+    </div>
+  </div>
+
+  <!-- Output on/off -->
+  <div class="dac-toggle-row">
+    <button id="btn-dac-on"     disabled>Output ON</button>
+    <button id="btn-dac-off"    disabled>Output OFF</button>
+    <button id="btn-dac-status" disabled>Get Status</button>
+  </div>
+
+  <div class="dac-status-line" id="dac-status-line">—</div>
+</div>
+
+<!-- UUID reference -->
+<div class="card">
+  <h2>UUID Reference</h2>
+  <table class="uuid-table">
+    <thead>
+      <tr><th>Role</th><th>UUID</th><th>Direction</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>NUS Service</td>
+        <td>6e400001-b5a3-f393-e0a9-e50e24dcca9e</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>TX (notify)</td>
+        <td>6e400003-b5a3-f393-e0a9-e50e24dcca9e</td>
+        <td>ESP32 → Browser</td>
+      </tr>
+      <tr>
+        <td>RX (write)</td>
+        <td>6e400002-b5a3-f393-e0a9-e50e24dcca9e</td>
+        <td>Browser → ESP32</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<footer>
+  Requires Chrome / Edge on desktop or Android. Safari and Firefox do not support Web Bluetooth.
+</footer>
+
+<script>
+  'use strict';
+
+  /* ── NUS UUIDs — must match main.c ───────────────────────────────────── */
+  const NUS_SERVICE = '6e400001-b5a3-f393-e0a9-e50e24dcca9e';
+  const NUS_TX      = '6e400003-b5a3-f393-e0a9-e50e24dcca9e'; // ESP32 notifies
+  const NUS_RX      = '6e400002-b5a3-f393-e0a9-e50e24dcca9e'; // we write
+
+  /* ── Frequency range limits ───────────────────────────────────────────── */
+  const FREQ_MIN = 500;
+  const FREQ_MAX = 30000; // Match DDS_MAX_FREQ_HZ in i2c_dds_master.h.
+
+  /* ── Amplitude range limits ───────────────────────────────────────────── */
+  const AMP_MIN = 0.00;
+  const AMP_MAX = 5.00; // Match DDS_MAX_AMPLITUDE_MA in i2c_dds_master.h.
+
+  /* ── State ────────────────────────────────────────────────────────────── */
+  let bleDevice  = null;
+  let gattServer = null;
+  let txChar     = null;  // we subscribe to this
+  let rxChar     = null;  // we write to this
+
+  /* ── DOM refs ─────────────────────────────────────────────────────────── */
+  const dot           = document.getElementById('status-dot');
+  const statusText    = document.getElementById('status-text');
+  const btnConnect    = document.getElementById('btn-connect');
+  const btnDisconn    = document.getElementById('btn-disconnect');
+  const btnClear      = document.getElementById('btn-clear');
+  const btnSend       = document.getElementById('btn-send');
+  const msgInput      = document.getElementById('msg-input');
+  const logEl         = document.getElementById('log');
+  const deviceCard    = document.getElementById('device-card');
+  const infoName      = document.getElementById('info-name');
+  const infoId        = document.getElementById('info-id');
+  const infoMtu       = document.getElementById('info-mtu');
+  const channelSelect = document.getElementById('channel-select');
+  const channelBadge  = document.getElementById('channel-badge');
+
+  /* ── Logging ──────────────────────────────────────────────────────────── */
+  function log(tag, msg) {
+    const ts    = new Date().toLocaleTimeString('en', { hour12: false });
+    const entry = document.createElement('div');
+    entry.className = 'log-entry';
+
+    let cls = tag.toLowerCase();
+    if (tag === 'RX' && msg.startsWith('HB#'))       cls = 'hb';
+    else if (tag === 'RX' && msg.startsWith('DDS ')) cls = 'dds';
+
+    entry.innerHTML =
+      `<span class="log-ts">${ts}</span>` +
+      `<span class="log-tag ${cls}">[${tag}]</span>` +
+      `<span class="log-msg">${escHtml(msg)}</span>`;
+
+    logEl.appendChild(entry);
+    logEl.scrollTop = logEl.scrollHeight;
+  }
+
+  function escHtml(s) {
+    return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+
+  /* ── UI helpers ───────────────────────────────────────────────────────── */
+  function setStatus(state, text) {
+    dot.className = state;
+    statusText.textContent = text;
+  }
+
+  function setConnected(connected) {
+    btnConnect.disabled  = connected;
+    btnDisconn.disabled  = !connected;
+    btnSend.disabled     = !connected;
+    msgInput.disabled    = !connected;
+    deviceCard.style.display = connected ? '' : 'none';
+    if (!connected) {
+      infoName.textContent = '—';
+      infoId.textContent   = '—';
+      infoMtu.textContent  = '—';
+    }
+    setDacPanelEnabled(connected);
+  }
+
+  /* ── Connect ──────────────────────────────────────────────────────────── */
+  btnConnect.addEventListener('click', async () => {
+    if (!navigator.bluetooth) {
+      log('ERR', 'Web Bluetooth is not available. Use Chrome or Edge on desktop/Android.');
+      return;
+    }
+
+    try {
+      setStatus('connecting', 'Scanning…');
+      log('INFO', 'Opening device picker…');
+
+      bleDevice = await navigator.bluetooth.requestDevice({
+        filters: [{ services: [NUS_SERVICE] }],
+        optionalServices: [NUS_SERVICE],
+      });
+
+      bleDevice.addEventListener('gattserverdisconnected', onDisconnected);
+
+      setStatus('connecting', `Connecting to ${bleDevice.name}…`);
+      log('INFO', `Connecting to "${bleDevice.name}"…`);
+
+      gattServer = await bleDevice.gatt.connect();
+
+      log('INFO', 'Connected – discovering NUS service…');
+      const service = await gattServer.getPrimaryService(NUS_SERVICE);
+
+      txChar = await service.getCharacteristic(NUS_TX);
+      rxChar = await service.getCharacteristic(NUS_RX);
+
+      /* Subscribe to TX notifications (ESP32 → browser) */
+      await txChar.startNotifications();
+      txChar.addEventListener('characteristicvaluechanged', onNotify);
+
+      setStatus('connected', `Connected to ${bleDevice.name}`);
+      setConnected(true);
+
+      infoName.textContent = bleDevice.name || '(unknown)';
+      infoId.textContent   = bleDevice.id   || '(unknown)';
+      infoMtu.textContent  = 'negotiated by stack';
+
+      log('INFO', `NUS service ready. Subscribed to TX notifications.`);
+
+    } catch (err) {
+      setStatus('disconnected', 'Connection error');
+      log('ERR', err.message || String(err));
+      cleanup();
+    }
+  });
+
+  /* ── Disconnect ───────────────────────────────────────────────────────── */
+  btnDisconn.addEventListener('click', async () => {
+    if (bleDevice && bleDevice.gatt.connected) {
+      log('INFO', 'Disconnecting…');
+      bleDevice.gatt.disconnect();   // triggers gattserverdisconnected event
+    }
+  });
+
+  function onDisconnected() {
+    setStatus('disconnected', 'Disconnected');
+    log('INFO', 'Device disconnected.');
+    setConnected(false);
+    cleanup();
+  }
+
+  function cleanup() {
+    if (txChar) {
+      try { txChar.removeEventListener('characteristicvaluechanged', onNotify); } catch(_) {}
+    }
+    txChar     = null;
+    rxChar     = null;
+    gattServer = null;
+    bleDevice  = null;
+  }
+
+  /* ── Receive data from ESP32 (TX characteristic notifications) ─────────── */
+  function onNotify(event) {
+    const decoder = new TextDecoder('utf-8');
+    const value   = decoder.decode(event.target.value);
+
+    let tag = 'RX';
+    if (value.startsWith('HB#'))  tag = 'HB';
+    else if (value.startsWith('DDS ')) tag = 'DDS';
+    log(tag, value);
+
+    /* Sync panel from DDS status replies: "DDS S<n> FREQ=... WAVE=... AMP=... STATE=..." */
+    if (/^DDS S\d+ FREQ=/.test(value)) parseDdsStatus(value);
+  }
+
+  /* ── Send data to ESP32 (write to RX characteristic) ──────────────────── */
+  async function sendMessage() {
+    const text = msgInput.value.trim();
+    if (!text || !rxChar) return;
+
+    try {
+      const encoder = new TextEncoder();
+      const data    = encoder.encode(text);
+      await rxChar.writeValueWithoutResponse(data);
+      log('TX', text);
+      msgInput.value = '';
+    } catch (err) {
+      log('ERR', 'Send failed: ' + (err.message || String(err)));
+    }
+  }
+
+  btnSend.addEventListener('click', sendMessage);
+
+  msgInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') sendMessage();
+  });
+
+  /* ── Clear log ────────────────────────────────────────────────────────── */
+  btnClear.addEventListener('click', () => { logEl.innerHTML = ''; });
+
+  /* ── DDS panel ─────────────────────────────────────────────────────────── */
+  const dacCard        = document.getElementById('dac-card');
+  const freqSlider     = document.getElementById('freq-slider');
+  const freqNumber     = document.getElementById('freq-number');
+  const ampSlider      = document.getElementById('amp-slider');
+  const ampNumber      = document.getElementById('amp-number');
+  const waveBtns       = document.querySelectorAll('.wave-btn');
+  const freqPresets    = document.querySelectorAll('.freq-preset');
+  const ampPresets     = document.querySelectorAll('.amp-preset');
+  const btnDacOn       = document.getElementById('btn-dac-on');
+  const btnDacOff      = document.getElementById('btn-dac-off');
+  const btnDacStatus   = document.getElementById('btn-dac-status');
+  const dacStatusLine  = document.getElementById('dac-status-line');
+  const waveCanvas     = document.getElementById('wave-canvas');
+  const wavePreviewLbl = document.getElementById('wave-preview-label');
+  const ctx            = waveCanvas.getContext('2d');
+
+  let freqSendTimer = null;
+  let ampSendTimer  = null;
+
+  /* Current DDS state (local UI copy) */
+  let currentWave    = 'SINE';
+  let currentFreq    = 1000;
+  let currentAmp     = 0.00;
+  let currentChannel = 'ALL';
+
+  /* ── Channel selector ────────────────────────────────────────────────── */
+  channelSelect.addEventListener('change', () => {
+    currentChannel = channelSelect.value;
+    channelBadge.textContent = currentChannel === 'ALL' ? 'ALL' : `CH ${currentChannel}`;
+    log('INFO', `Channel set to: ${currentChannel === 'ALL' ? 'ALL (broadcast)' : 'Channel ' + currentChannel}`);
+  });
+
+  /* Build the DDS command prefix for the selected channel */
+  function ddsPrefix() {
+    return 'DDS ' + currentChannel + ' ';
+  }
+
+  async function sendCmd(text) {
+    if (!rxChar) return;
+    try {
+      await rxChar.writeValueWithoutResponse(new TextEncoder().encode(text));
+      log('TX', text);
+    } catch (err) {
+      log('ERR', 'Send failed: ' + (err.message || String(err)));
+    }
+  }
+
+  /* ── Waveform canvas preview ─────────────────────────────────────────── */
+  function drawWaveform() {
+    const w = waveCanvas.width;
+    const h = waveCanvas.height;
+    ctx.clearRect(0, 0, w, h);
+
+    /* Background grid */
+    ctx.strokeStyle = 'rgba(48,54,61,0.7)';
+    ctx.lineWidth = 1;
+    ctx.setLineDash([4, 4]);
+    ctx.beginPath(); ctx.moveTo(0, h / 2); ctx.lineTo(w, h / 2); ctx.stroke();
+    [0.25, 0.5, 0.75].forEach(f => {
+      ctx.beginPath(); ctx.moveTo(w * f, 0); ctx.lineTo(w * f, h); ctx.stroke();
+    });
+    ctx.setLineDash([]);
+
+    const ampFrac  = currentAmp / AMP_MAX;          // 0–1 normalised
+    const halfAmp  = (h / 2) * ampFrac;
+    const cy       = h / 2;
+    const cycles   = Math.min(Math.max(2, Math.round(currentFreq / 1000)), 6);
+    const pts      = w * 2;
+
+    ctx.beginPath();
+    ctx.strokeStyle = '#58a6ff';
+    ctx.lineWidth   = 2;
+    ctx.shadowColor = 'rgba(88,166,255,0.4)';
+    ctx.shadowBlur  = 6;
+
+    for (let i = 0; i <= pts; i++) {
+      const t  = i / pts;
+      const ph = (t * cycles) % 1;
+      let y;
+
+      switch (currentWave) {
+        case 'SINE':
+          y = cy - halfAmp * Math.sin(ph * 2 * Math.PI);
+          break;
+        case 'SQUARE':
+          y = cy - halfAmp * (ph < 0.5 ? 1 : -1);
+          break;
+        case 'TRIANGLE':
+          y = cy - halfAmp * (ph < 0.5 ? (4 * ph - 1) : (3 - 4 * ph));
+          break;
+        case 'SAWTOOTH':
+          y = cy - halfAmp * (1 - 2 * ph);
+          break;
+        default:
+          y = cy;
+      }
+
+      if (i === 0) ctx.moveTo(i / 2, y);
+      else         ctx.lineTo(i / 2, y);
+    }
+    ctx.stroke();
+    ctx.shadowBlur = 0;
+
+    const chLabel = currentChannel === 'ALL' ? 'ALL CH' : `CH ${currentChannel}`;
+    wavePreviewLbl.textContent =
+      `${chLabel} · ${currentWave} · ${currentFreq} Hz · ${currentAmp.toFixed(2)} mA`;
+  }
+
+  function resizeCanvas() {
+    waveCanvas.width  = waveCanvas.offsetWidth;
+    waveCanvas.height = waveCanvas.offsetHeight;
+    drawWaveform();
+  }
+
+  window.addEventListener('resize', resizeCanvas);
+
+  /* ── Frequency controls (500 Hz – 30 kHz) ───────────────────────────── */
+  function applyFreq(val, sendNow) {
+    val = Math.max(FREQ_MIN, Math.min(FREQ_MAX, parseInt(val, 10) || FREQ_MIN));
+    currentFreq           = val;
+    freqSlider.value      = val;
+    freqNumber.value      = val;
+    drawWaveform();
+    clearTimeout(freqSendTimer);
+    if (sendNow) {
+      sendCmd(ddsPrefix() + 'FREQ ' + val);
+    } else {
+      freqSendTimer = setTimeout(() => sendCmd(ddsPrefix() + 'FREQ ' + val), 300);
+    }
+  }
+
+  freqSlider.addEventListener('input', () => applyFreq(freqSlider.value, false));
+
+  freqNumber.addEventListener('input',  () => applyFreq(freqNumber.value, false));
+  freqNumber.addEventListener('change', () => applyFreq(freqNumber.value, true));
+  freqNumber.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') applyFreq(freqNumber.value, true);
+  });
+
+  freqPresets.forEach(btn => {
+    btn.addEventListener('click', () => applyFreq(btn.dataset.freq, true));
+  });
+
+  /* ── Amplitude controls (0 – 5 mA peak) ──────────────────────────────── */
+  function applyAmp(val, sendNow) {
+    val = Math.max(AMP_MIN, Math.min(AMP_MAX, parseFloat(val) || 0));
+    currentAmp           = val;
+    ampSlider.value      = val;
+    ampNumber.value      = val.toFixed(2);
+    drawWaveform();
+    clearTimeout(ampSendTimer);
+    if (sendNow) {
+      sendCmd(ddsPrefix() + 'AMP ' + val.toFixed(2));
+    } else {
+      ampSendTimer = setTimeout(() => sendCmd(ddsPrefix() + 'AMP ' + val.toFixed(2)), 300);
+    }
+  }
+
+  ampSlider.addEventListener('input', () => applyAmp(parseFloat(ampSlider.value), false));
+
+  ampNumber.addEventListener('input',  () => applyAmp(parseFloat(ampNumber.value), false));
+  ampNumber.addEventListener('change', () => applyAmp(parseFloat(ampNumber.value), true));
+  ampNumber.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') applyAmp(parseFloat(ampNumber.value), true);
+  });
+
+  ampPresets.forEach(btn => {
+    btn.addEventListener('click', () => applyAmp(parseFloat(btn.dataset.amp), true));
+  });
+
+  /* ── Waveform buttons ────────────────────────────────────────────────── */
+  waveBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      waveBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentWave = btn.dataset.wave;
+      drawWaveform();
+      sendCmd(ddsPrefix() + 'WAVE ' + currentWave);
+    });
+  });
+
+  /* ── Output toggle / status ──────────────────────────────────────────── */
+  btnDacOn.addEventListener('click',     () => sendCmd(ddsPrefix() + 'ON'));
+  btnDacOff.addEventListener('click',    () => sendCmd(ddsPrefix() + 'OFF'));
+  btnDacStatus.addEventListener('click', () => sendCmd(ddsPrefix() + 'STATUS'));
+
+  /* ── Parse DDS STATUS replies to sync the panel ──────────────────────── */
+  function parseDdsStatus(msg) {
+    /* "DDS S<n> FREQ=1000.000 WAVE=SINE AMP=0.50 STATE=ON" */
+    const m = msg.match(/DDS S(\d+)\s+FREQ=([\d.]+).*?WAVE=(\w+).*?AMP=([\d.]+).*?STATE=(\w+)/);
+    if (!m) return;
+    const [, ch, freq, wave, amp, state] = m;
+
+    /* Only sync UI if this status matches the selected channel (or ALL) */
+    if (currentChannel !== 'ALL' && currentChannel !== ch) return;
+
+    currentFreq = Math.round(parseFloat(freq));
+    currentAmp  = parseFloat(amp);
+    currentWave = wave;
+
+    freqSlider.value = currentFreq;
+    freqNumber.value = currentFreq;
+    ampSlider.value  = currentAmp;
+    ampNumber.value  = currentAmp.toFixed(2);
+
+    waveBtns.forEach(b => {
+      b.classList.toggle('active', b.dataset.wave === wave);
+    });
+
+    drawWaveform();
+    dacStatusLine.textContent =
+      `CH${ch}: ${currentFreq} Hz · ${wave} · ${currentAmp.toFixed(2)} mA · ${state}`;
+  }
+
+  /* ── Enable / disable all DDS controls ──────────────────────────────── */
+  function setDacPanelEnabled(enabled) {
+    dacCard.style.opacity  = enabled ? '1' : '0.45';
+    channelSelect.disabled = !enabled;
+    freqSlider.disabled    = !enabled;
+    freqNumber.disabled    = !enabled;
+    ampSlider.disabled     = !enabled;
+    ampNumber.disabled     = !enabled;
+    waveBtns.forEach(b    => { b.disabled = !enabled; });
+    freqPresets.forEach(b => { b.disabled = !enabled; });
+    ampPresets.forEach(b  => { b.disabled = !enabled; });
+    btnDacOn.disabled      = !enabled;
+    btnDacOff.disabled     = !enabled;
+    btnDacStatus.disabled  = !enabled;
+    if (!enabled) dacStatusLine.textContent = '—';
+
+    if (enabled) {
+      requestAnimationFrame(resizeCanvas);
+    }
+  }
+
+  /* ── Initial state ────────────────────────────────────────────────────── */
+  setStatus('', 'Disconnected');
+  setConnected(false);
+
+  if (!navigator.bluetooth) {
+    log('ERR', 'This browser does not support Web Bluetooth. Please use Chrome or Edge.');
+  } else {
+    log('INFO', 'Web Bluetooth available. Click Connect to scan for "R2D2".');
+  }
+
+  requestAnimationFrame(resizeCanvas);
+</script>
+</body>
+</html>

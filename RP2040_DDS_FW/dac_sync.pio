@@ -1,0 +1,17 @@
+.program dac_sync
+; SPI0 produces two 12-bit words per sample, DMA timer paced.
+; CS remains low over both words. Count physical falling edges, then pulse CS.
+; A MOV PINS instruction toggles the optional debug pad after every sample.
+; The CPU replaces it with NOP when the debug pin is disabled.
+.wrap_target
+set y, 23
+set pins, 0
+bits:
+wait 1 pin 0
+wait 0 pin 0
+jmp y-- bits
+set pins, 1 [7]
+mov x, ~x
+mov pins, x
+nop [23]
+.wrap
