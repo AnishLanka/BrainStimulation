@@ -56,3 +56,37 @@ the high-voltage chain. No existing code has been certified by this review.
 
 Primary interface reference: TI DAC8830 datasheet, serial interface and
 timing diagram: https://www.ti.com/lit/gpn/dac8830
+
+RESOLUTION
+30 October 2026 — decision recorded; firmware retargeted by source edit only
+
+The next build targets the DAC8830 on a Raspberry Pi Pico 2 W. The repository
+firmware in firmware/RP2040_DDS_FW (which, unlike the Desktop copies above,
+drove an AD5662 on a XIAO RP2040 with two 12-bit words per 24-bit frame in
+SPI mode 2) was changed as follows:
+- CMake PICO_BOARD pico2_w; target renamed pico2w_dds.
+- One 16-bit code per sample, MSB first, SPI mode 0 (CPOL=0, CPHA=0). The
+  DMA timer now paces one word per 3.2 us sample; the PL022 divides the
+  125 MHz system clock to 15.625 MHz SCLK.
+- PIO counts 16 falling edges with CS low, then raises CS to load the DAC
+  (CS high for 8 cycles = 64 ns before the next frame, above the 30 ns
+  minimum). The old PIO counted 24 edges for SYNC.
+- Both DACs are written to midpoint (0x8000) at boot through separate CS
+  lines, because power-on code 0 is -VREF on the bipolar stage. Channel 1
+  (J1/J3) is streamed; channel 2 (J2/J4) is parked at midpoint. This write is
+  not a startup inhibit; the physical inhibit is still required.
+- AD5662 power-down commands were removed; DAC8830 has none.
+- EN/FLT (J1.07) is read as an input with no MCU pull or drive. Low while the
+  output is not OFF ramps down and latches fault bit 8 (FAULT_ISO_SUPPLY);
+  while OFF it only blocks enabling.
+- Pico 2 W GPIO: GP2 SCLK, GP3 MOSI, GP4 CS (J1.06), GP5 CS2 (J2.06),
+  GP8 FLT (J1.07), GP9 FLT2 (J2.07), GP6/GP7 I2C1 to the ESP32, GP26-28
+  address, GP0/GP1 OUT_EN/DUMMY_EN (switch wiring unconfirmed). GP23/24/25/29
+  are the radio and are rejected at compile time. The Rev C release keeps MCU
+  pins symbolic; the harness must be wired to this map or the map changed.
+
+Not done: no Pico SDK build, no host simulation run, no flashing, no scope
+measurement of the DAC pins after the isolator, no two-channel engine, no
+calibration against the +/-5 % isolated reference rail. The items under
+REQUIRED SYSTEM-FIRMWARE WORK other than the serial format remain open.
+See docs/Firmware.md (OPEN TODOS 5) and firmware/RP2040_DDS_FW/README.md.

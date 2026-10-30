@@ -87,8 +87,9 @@ firmware/                         Peter Zhao
   ESP32_S3_Brainstim_FW/            ESP32-S3 main controller (ESP-IDF 5.4): BLE control,
                                     4-channel FSM, OLED, battery/ADC; web/ BLE test UI;
                                     mobile/ Capacitor Android app; tests/ host simulations
-  RP2040_DDS_FW/                    RP2040 DDS daughter card (Pico SDK 2.2.0): DMA-paced
-                                    SPI DAC streaming, waveform tables, I2C slave
+  RP2040_DDS_FW/                    DDS daughter card, now Pico 2 W + DAC8830 (Pico SDK
+                                    2.2.0; folder name is historical): DMA-paced SPI DAC
+                                    streaming, waveform tables, I2C slave
 releases/
   StimPrototype_Prototype_Package_RevC.zip   Original Rev C archive, unmodified
 ```
@@ -192,7 +193,9 @@ geometry, not powered performance.
 4. Battery, charger and protection not yet selected; runtime unknown.
 5. Do not parallel separate 3.3 V outputs. The two primary supply connectors on
    each SignalGen board are internally tied together.
-6. Firmware/hardware DAC mismatch: the RP2040 firmware drives an **AD5662**, but the
-   Signal Generator Rev C board uses a **DAC8830** with a Pico 2 W
-   (`boards/Signal_Generator/FIRMWARE_COMPATIBILITY.txt`). Confirm which DAC and
-   controller the next build targets.
+6. Firmware/hardware DAC mismatch — **resolved 2026-10-30**: the next build targets
+   the **DAC8830 on a Pico 2 W**, and `firmware/RP2040_DDS_FW` was retargeted
+   accordingly (16-bit mode-0 frames, PIO CS framing, Rev C pin map, EN/FLT fault
+   bit). Still open: compile with the Pico SDK, re-run the host tests, scope the
+   DAC interface, and decide how the board's second channel is driven
+   (`boards/Signal_Generator/FIRMWARE_COMPATIBILITY.txt`, `docs/Firmware.md`).

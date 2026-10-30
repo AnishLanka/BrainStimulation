@@ -17,8 +17,7 @@ void dds_request_write(const dds_request_t *in){req=*in;}
 void dds_status_read(dds_status_t *out){*out=stat;}
 void dds_status_write(const dds_status_t *in){stat=*in;}
 void spi_dac_init(void){}
-void spi_dac_powerdown(void){}
-void spi_dac_wakeup(void){}
+bool spi_dac_iso_fault(void){return false;}
 void spi_dac_stream_start(uint32_t i,const uint16_t*l){}
 bool spi_dac_stream_service(uint32_t i,const uint16_t*l,uint32_t s){applied=s;applied_inc=i;return true;}
 void set_freq(uint32_t mHz){req.freq_mHz=mHz;}

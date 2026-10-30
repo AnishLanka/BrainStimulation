@@ -18,32 +18,38 @@ static volatile uint32_t completed;
 static bool stream_failed;
 static uint32_t zero_since;
 
-static void boot_transfer(uint16_t value, uint8_t powerdown) {
-    uint16_t words[2] = { (uint16_t)(((uint16_t)powerdown << 4) | (value >> 12)),
-                          (uint16_t)(value & 0xfffU) };
-    gpio_put(SPI_SYNC_PIN, 0);
-    spi_write16_blocking(spi0, words, 2);
-    gpio_put(SPI_SYNC_PIN, 1);
+/* DAC8830 wire format: one 16-bit code, MSB first, sampled on rising SCLK,
+ * loaded into the DAC on the CS rising edge. spi_write16_blocking returns only
+ * after the serializer is idle, so CS rises after the last bit. */
+static void write_code(uint cs_pin, uint16_t code) {
+    gpio_put(cs_pin, 0);
+    spi_write16_blocking(spi0, &code, 1);
+    gpio_put(cs_pin, 1);
 }
+static void cs_init(uint pin) { gpio_init(pin); gpio_put(pin, 1); gpio_set_dir(pin, GPIO_OUT); }
+static void flt_init(uint pin) { gpio_init(pin); gpio_set_dir(pin, GPIO_IN); gpio_disable_pulls(pin); }
 void spi_dac_init(void) {
-    gpio_init(SPI_SYNC_PIN); gpio_put(SPI_SYNC_PIN, 1); gpio_set_dir(SPI_SYNC_PIN, GPIO_OUT);
+    cs_init(DAC_CS_PIN); cs_init(DAC_CS2_PIN);
+    /* ISOW7741 EN/FLT has an external 10k pull-up; never drive it from the MCU. */
+    flt_init(DAC_FLT_PIN); flt_init(DAC_FLT2_PIN);
     spi_init(spi0, SPI_BAUD_HZ);
-    /* AD5662 samples falling SCLK edges: CPOL=1, CPHA=0 (mode 2). */
-    spi_set_format(spi0, SPI_WORD_BITS, SPI_CPOL_1, SPI_CPHA_0, SPI_MSB_FIRST);
+    spi_set_format(spi0, SPI_WORD_BITS, SPI_CPOL_0, SPI_CPHA_0, SPI_MSB_FIRST);
     gpio_set_function(SPI_SCK_PIN, GPIO_FUNC_SPI);
     gpio_set_function(SPI_MOSI_PIN, GPIO_FUNC_SPI);
-    boot_transfer(DAC_MIDPOINT, 0);
+    /* Both DACs reset to code 0, which is -VREF on the bipolar output stage.
+     * Load midpoint on the streamed channel and park the second channel there.
+     * This is not a startup inhibit; hardware must hold the output off until
+     * rails are valid and this write has landed. */
+    write_code(DAC_CS_PIN, DAC_MIDPOINT);
+    write_code(DAC_CS2_PIN, DAC_MIDPOINT);
 }
-void spi_dac_write(uint16_t value) { boot_transfer(value, 0); }
-void spi_dac_powerdown(void) { boot_transfer(DAC_MIDPOINT, 3); }
-void spi_dac_wakeup(void) { boot_transfer(DAC_MIDPOINT, 0); }
+void spi_dac_write(uint16_t value) { write_code(DAC_CS_PIN, value); }
+bool spi_dac_iso_fault(void) { return !gpio_get(DAC_FLT_PIN); }
 
 static void __not_in_flash_func(fill)(unsigned b, uint32_t inc, const uint16_t *lut, uint32_t scale) {
     for (unsigned i = 0; i < DMA_SAMPLES; ++i) {
         phase += inc;
-        uint16_t code = scale_sample(lut[phase >> LUT_SHIFT], scale);
-        buffers[b][2*i] = code >> 12; /* upper eight command bits are zero */
-        buffers[b][2*i+1] = code & 0xfffU;
+        buffers[b][i] = scale_sample(lut[phase >> LUT_SHIFT], scale);
     }
     buffer_scale[b] = scale;
 }
@@ -56,8 +62,8 @@ static void __isr dma_done(void) {
     __sev();
 }
 void spi_dac_stream_start(uint32_t inc, const uint16_t *lut) {
-    /* Hardware timer delivers one 12-bit word every 1.6 us at 125 MHz.
-     * SPI drains each word in < 0.7 us, leaving room for SYNC framing. */
+    /* Hardware timer delivers one 16-bit word every 3.2 us at 125 MHz.
+     * SPI drains each word in about 1 us, leaving room for CS framing. */
     hard_assert(clock_get_hz(clk_sys) == SYS_CLOCK_KHZ * 1000UL);
     sync_sm = pio_claim_unused_sm(pio0, true);
     uint16_t instructions[dac_sync_program.length];
@@ -70,14 +76,14 @@ void spi_dac_stream_start(uint32_t inc, const uint16_t *lut) {
     uint offset = pio_add_program(pio0, &program);
     pio_sm_config cfg = dac_sync_program_get_default_config(offset);
     sm_config_set_in_pins(&cfg, SPI_SCK_PIN);
-    sm_config_set_set_pins(&cfg, SPI_SYNC_PIN, 1);
+    sm_config_set_set_pins(&cfg, DAC_CS_PIN, 1);
 #if SAMPLE_DEBUG_PIN >= 0
     pio_gpio_init(pio0, SAMPLE_DEBUG_PIN);
     sm_config_set_out_pins(&cfg, SAMPLE_DEBUG_PIN, 1);
     pio_sm_set_consecutive_pindirs(pio0, sync_sm, SAMPLE_DEBUG_PIN, 1, true);
 #endif
-    pio_gpio_init(pio0, SPI_SYNC_PIN);
-    pio_sm_set_consecutive_pindirs(pio0, sync_sm, SPI_SYNC_PIN, 1, true);
+    pio_gpio_init(pio0, DAC_CS_PIN);
+    pio_sm_set_consecutive_pindirs(pio0, sync_sm, DAC_CS_PIN, 1, true);
     pio_sm_init(pio0, sync_sm, offset, &cfg);
     pio_sm_exec(pio0, sync_sm, pio_encode_set(pio_x, 0));
     pio_sm_set_enabled(pio0, sync_sm, true);

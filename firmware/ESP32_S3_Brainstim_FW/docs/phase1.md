@@ -4,6 +4,14 @@ Both firmware projects must be updated together. The ESP32 refuses legacy status
 packets and refuses stimulation until HV GPIO assignments/polarity are confirmed.
 `sdkconfig` was not modified. Nothing has been flashed.
 
+> **2026-10-30 retarget.** The DDS card now targets the DAC8830 on a Raspberry Pi
+> Pico 2 W (Signal Generator Rev C) instead of the AD5662 on a XIAO RP2040. The
+> paragraphs below were written for the AD5662 build; where they differ, the
+> current wire format is: one bare 16-bit code per sample, SPI mode 0, CS framed
+> by PIO over 16 falling edges and raised to load the DAC. Pin map and status are
+> in `../../RP2040_DDS_FW/README.md` and `docs/Firmware.md`. The retarget has not
+> been compiled or host-tested yet.
+
 ## Sample timing and output generation
 
 The old RP2040 path did **not** have a fixed sample clock: each iteration called
@@ -14,21 +22,22 @@ establish its physical update rate; the old rate must be measured if a before/af
 comparison is wanted.
 
 The new path uses SAMPLE_RATE_HZ = 312500, with a 125 MHz system clock. A DMA timer
-requests one 12-bit SPI0 word every 200 system clocks (1.6 us); two words form each
-24-bit AD5662 frame, yielding a nominal 3.2 us/sample. The six upper command bits
-and two power-mode bits are zero during streaming. SPI mode 2 sends data for
-sampling on falling SCLK edges. SPI runs at the divider-selected rate near
-20 MHz, leaving ample time between words. PIO counts the actual 24 falling edges,
-then pulses SYNC high. DMA alternates two 257-sample buffers and interrupts once
-per buffer. Core 0 computes the inactive buffer and sleeps between events.
+requests one 16-bit SPI0 word every 400 system clocks (3.2 us); that word is the
+bare DAC8830 code (no command or power-mode bits exist). SPI mode 0 sends data for
+sampling on rising SCLK edges at the divider-selected 15.625 MHz, about 1 us of
+wire time per sample. PIO counts the 16 falling edges, then raises CS so the DAC
+loads the code. DMA alternates two 256-sample buffers and interrupts once per
+buffer. Core 0 computes the inactive buffer and sleeps between events.
+(Pre-retarget: two 12-bit words per 24-bit AD5662 frame, mode 2, 24 edges, SYNC.)
 
 This gives 10.42 samples per 30 kHz cycle. DMA arbitration, clock accuracy,
 SYNC timing, analog bandwidth and spectral quality still need bench measurement;
 a passing software build does not prove these. The PIO debug output toggles once
 per sample (square-wave frequency Fs/2) when SAMPLE_DEBUG_PIN is assigned.
-It defaults to -1 because all exposed XIAO pins are allocated and ADC3/GPIO29 is
-reserved. SYNC itself is always available as a once-per-sample scope signal.
-Do not assign a debug pin until an unused pad is confirmed.
+It defaults to -1; on the Pico 2 W, GP23/24/25/29 belong to the radio and the
+rest of the header is only partly allocated, so assign a debug pin only after the
+harness wiring is fixed. CS itself is always available as a once-per-sample
+scope signal.
 
 The amplitude scale spans 0..65536 for 0..5000 uA. LUTs are generated once in RAM
 at boot with exact mean 32768 and extrema within 1..65535. Scaling uses a signed
@@ -147,7 +156,9 @@ Its one-second UI status polls are separate from the firmware heartbeat.
 ## Validation and remaining bench work
 
 - Pico SDK 2.2.0, Arm GNU 14.2: Release build linked successfully for
-  seeed_xiao_rp2040. ELF/BIN/HEX built; picotool/UF2 was disabled for this check.
+  seeed_xiao_rp2040 **before** the 2026-10-30 DAC8830 / Pico 2 W retarget.
+  ELF/BIN/HEX built; picotool/UF2 was disabled for this check. The `pico2_w`
+  build and the host tests have not yet been run after the retarget.
 - Host tests compile actual RP2040 control/LUT/I2C code and actual ESP32 driver/FSM
   to WebAssembly with mocked hardware. Normal shutdown, timeout, early stop, reset,
   timer wrap, midpoint symmetry, range checks, wire bytes, malformed I2C writes,
@@ -161,12 +172,13 @@ Its one-second UI status polls are separate from the firmware heartbeat.
   Host tests do not validate NimBLE/FreeRTOS integration or GPIO electrical behavior.
 - No flashing, scope measurements, analog measurements or patient testing.
   Host tests mock DMA/GPIO; they do not prove DMA timing, pipeline drain or physical
-  switch release. Verify 312.5 ksample/s SYNC, optional debug Fs/2, all 24 SPI bits,
+  switch release. Verify 312.5 ksample/s CS, optional debug Fs/2, all 16 SPI bits,
   buffer continuity under load, 30 kHz output quality, DAC midpoint during ramps,
   full-scale current and both-direction ramp slope on a bench dummy load.
   Exercise OFF during each sequence state, BLE/I2C loss and watchdog reset.
 
-Sources used for implementation: [AD5662 data sheet](https://www.analog.com/media/en/technical-documentation/data-sheets/AD5662.pdf),
+Sources used for implementation: [DAC8830 data sheet](https://www.ti.com/lit/gpn/dac8830)
+(current target), [AD5662 data sheet](https://www.analog.com/media/en/technical-documentation/data-sheets/AD5662.pdf) (original target),
 [Pico hardware APIs](https://www.raspberrypi.com/documentation/pico-sdk/hardware.html),
 [ESP-IDF 5.4 I2C API](https://docs.espressif.com/projects/esp-idf/en/release-v5.4/esp32s3/api-reference/peripherals/i2c.html).
 
@@ -220,7 +232,7 @@ Sources used for implementation: [AD5662 data sheet](https://www.analog.com/medi
 - `dds_tables.h`: RAM table declarations and initialization interface.
 - `spi_dac.c`: Timer-paced SPI0 DMA buffers, midpoint boot and stream/drain checks.
 - `spi_dac.h`: Boot and streaming DAC interfaces.
-- `dac_sync.pio`: 24-edge SYNC framing and optional per-sample debug toggle.
+- `dac_sync.pio`: 16-edge DAC8830 CS framing and optional per-sample debug toggle.
 - `i2c_slave.c`: Validated commands, mHz preservation, heartbeat and 15-byte status.
 - `i2c_slave.h`: Core 1 I2C initialization/task interface.
 - `CMakeLists.txt`: DMA/PIO/shared-state sources, libraries and generated PIO header.

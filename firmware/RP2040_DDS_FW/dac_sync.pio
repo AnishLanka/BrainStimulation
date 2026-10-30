@@ -1,10 +1,12 @@
 .program dac_sync
-; SPI0 produces two 12-bit words per sample, DMA timer paced.
-; CS remains low over both words. Count physical falling edges, then pulse CS.
+; DAC8830 chip select. SPI0 produces one 16-bit word per sample, DMA timer paced
+; (SPI mode 0, SCLK idle low). Count the 16 physical falling edges with CS low,
+; then raise CS: the DAC loads the code on that rising edge. CS stays high for
+; 8 cycles (64 ns at 125 MHz) before the loop, above the 30 ns minimum.
 ; A MOV PINS instruction toggles the optional debug pad after every sample.
 ; The CPU replaces it with NOP when the debug pin is disabled.
 .wrap_target
-set y, 23
+set y, 15
 set pins, 0
 bits:
 wait 1 pin 0

@@ -16,20 +16,21 @@ if (EXISTS ${picoVscode})
 endif()
 # ====================================================================================
 
-set(PICO_BOARD seeed_xiao_rp2040 CACHE STRING "Board type")
+# Signal Generator Rev C: Raspberry Pi Pico 2 W (RP2350) driving DAC8830.
+set(PICO_BOARD pico2_w CACHE STRING "Board type")
 
 cmake_minimum_required(VERSION 3.13)
 
 # Pull in the Pico SDK (must be set before project())
 include($ENV{PICO_SDK_PATH}/external/pico_sdk_import.cmake)
 
-project(rp2040_dds C CXX ASM)
+project(pico2w_dds C CXX ASM)
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
 
 pico_sdk_init()
 
-add_executable(rp2040_dds
+add_executable(pico2w_dds
     main.c
     dds_shared.c
     spi_dac.c
@@ -37,11 +38,11 @@ add_executable(rp2040_dds
     i2c_slave.c
 )
 
-target_include_directories(rp2040_dds PRIVATE
+target_include_directories(pico2w_dds PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
-target_link_libraries(rp2040_dds
+target_link_libraries(pico2w_dds
     pico_stdlib
     pico_multicore
     pico_i2c_slave
@@ -53,11 +54,11 @@ target_link_libraries(rp2040_dds
     hardware_i2c
     hardware_watchdog 
 )
-pico_generate_pio_header(rp2040_dds ${CMAKE_CURRENT_LIST_DIR}/dac_sync.pio)
+pico_generate_pio_header(pico2w_dds ${CMAKE_CURRENT_LIST_DIR}/dac_sync.pio)
 
 # Enable USB serial for debugging; disable UART serial
-pico_enable_stdio_usb(rp2040_dds 1)
-pico_enable_stdio_uart(rp2040_dds 0)
+pico_enable_stdio_usb(pico2w_dds 1)
+pico_enable_stdio_uart(pico2w_dds 0)
 
 # Generate UF2, bin, hex outputs
-pico_add_extra_outputs(rp2040_dds)
+pico_add_extra_outputs(pico2w_dds)

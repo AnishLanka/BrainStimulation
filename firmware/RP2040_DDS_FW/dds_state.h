@@ -9,7 +9,7 @@
 #define FREQ_MAX_HZ 30000UL
 #define DEFAULT_FREQ_MHZ 1000000UL
 #define DAC_IOUT_MAX_UA 5000U
-#define DAC_REFERENCE_MV 3000U
+#define DAC_REFERENCE_MV 3300U /* DAC8830 VREF = isolated 3.3 V rail (3.135-3.465 V), nominal only */
 #define DAC_MIDPOINT 32768U
 #define AMP_Q16_ONE 65536UL
 #define RAMP_UA_PER_SEC 95UL
@@ -23,22 +23,39 @@
 #define WATCHDOG_TIMEOUT_MS 500U
 #define DDS_CONTROL_US 1000UL
 #define SYS_CLOCK_KHZ 125000UL
+/* DAC8830 (Signal Generator Rev C): one bare 16-bit code per sample, MSB first,
+ * sampled on rising SCLK (SPI mode 0), loaded on the CS rising edge. No command
+ * or power-down bits exist. The PL022 divides 125 MHz down to 15.625 MHz for a
+ * 20 MHz request; the DAC allows 50 MHz and the ISOW7741 100 Mbps. */
 #define SPI_BAUD_HZ 20000000UL
-#define SPI_WORD_BITS 12U
+#define SPI_WORD_BITS 16U
 #define DMA_SAMPLES 256U
-#define DMA_WORDS (DMA_SAMPLES * 2U)
-#define DMA_TIMER_DENOM (SYS_CLOCK_KHZ * 1000UL / (SAMPLE_RATE_HZ * 2UL))
+#define DMA_WORDS DMA_SAMPLES /* one SPI word per sample */
+#define DMA_TIMER_DENOM (SYS_CLOCK_KHZ * 1000UL / SAMPLE_RATE_HZ)
 #define DAC_DRAIN_US 100UL /* More than SPI FIFO + serializer latency. */
-#define SPI_SCK_PIN 2U
-#define SPI_MOSI_PIN 3U
-#define SPI_SYNC_PIN 4U
-#define OUT_EN_PIN 0U /* TODO: confirm XIAO D6 against final schematic. */
-#define DUMMY_EN_PIN 1U /* TODO: confirm XIAO D7 against final schematic. */
-#define RESERVED_SENSE_PIN 29U /* A3 / ADC3: do not configure. */
-/* TODO: route an unused test pad; all exposed XIAO pins are allocated.
- * Set to an UNUSED GPIO after checking schematic. Disabled by default.
- * When enabled, toggles once per complete DAC sample (scope frequency Fs/2).
- * SYNC already pulses once per sample and can always be probed. */
+/* Raspberry Pi Pico 2 W GPIO. The Rev C signal board exposes two channels on
+ * J1/J2 (pins: 04 SCLK, 05 MOSI shared; 06 CS and 07 EN/FLT per channel).
+ * Board-side MCU pins are symbolic in the Rev C release; these are the firmware
+ * assignments and must match the harness wiring. */
+#define SPI_SCK_PIN 2U   /* J1.04 / J2.04 SPI_SCLK_SYS */
+#define SPI_MOSI_PIN 3U  /* J1.05 / J2.05 SPI_MOSI_SYS */
+#define DAC_CS_PIN 4U    /* J1.06 SPI_CS_SYS: streamed channel, CS framed by PIO */
+#define DAC_CS2_PIN 5U   /* J2.06 SPI_CS_SYS_2: parked at midpoint, GPIO driven */
+#define DAC_FLT_PIN 8U   /* J1.07 FAULT_TO_PICO: ISOW7741 EN/FLT, 10k pull-up, low = fault; input only */
+#define DAC_FLT2_PIN 9U  /* J2.07 FAULT_TO_PICO_2: input only, not yet evaluated */
+/* TODO: Rev C has no PhotoMOS. Output disconnect is the monitor core's two-pole
+ * relay, driven through the ADC board host header J201 (RUN, ARM edge,
+ * HEARTBEAT out; FAULT_OK in; UART). The DUMMY->OUT precharge sequence below
+ * therefore has no hardware behind it yet; these pins are placeholders until
+ * the controller side of that interface is assigned (docs/RevC_Release/
+ * Integration_Guide.html, "Primary-side controller interface"). */
+#define OUT_EN_PIN 0U
+#define DUMMY_EN_PIN 1U
+/* GP23/24/25/29 belong to the CYW43 radio on the Pico 2 W and are not on the header. */
+#define RADIO_PIN(p) ((p) == 23 || (p) == 24 || (p) == 25 || (p) == 29)
+/* Optional per-sample debug toggle (scope frequency Fs/2). Disabled by default;
+ * CS already pulses once per sample and can always be probed. Set to an unused
+ * header GPIO after checking the harness wiring. */
 #define SAMPLE_DEBUG_PIN (-1)
 #define I2C_SDA_PIN 6U
 #define I2C_SCL_PIN 7U
@@ -64,11 +81,12 @@
 #define FAULT_COMM_TIMEOUT 1U
 #define FAULT_STREAM 2U
 #define FAULT_WATCHDOG 4U
+#define FAULT_ISO_SUPPLY 8U /* ISOW7741 EN/FLT asserted while current could flow */
 
 _Static_assert(DAC_IOUT_MAX_UA == 5000U, "5 mA full scale required");
 _Static_assert(DAC_IOUT_MAX_UA * 1000000ULL <= 100ULL * AMP_Q16_ONE * RAMP_STEP_US, "Ramp exceeds 100 uA/s");
 _Static_assert(SAMPLE_RATE_HZ >= 10UL * FREQ_MAX_HZ, "Need 10 samples/cycle");
-_Static_assert((SYS_CLOCK_KHZ * 1000UL) % (SAMPLE_RATE_HZ * 2UL) == 0, "Exact DMA timer divider required");
+_Static_assert((SYS_CLOCK_KHZ * 1000UL) % SAMPLE_RATE_HZ == 0, "Exact DMA timer divider required");
 _Static_assert(DMA_TIMER_DENOM <= 65535U, "DMA divider exceeds 16 bits");
 _Static_assert(FREQ_MAX_HZ * 1000ULL <= (UINT64_MAX >> 32), "Phase numerator overflow");
 
@@ -122,12 +140,17 @@ void dds_request_write(const dds_request_t *request);
 void dds_status_read(dds_status_t *out);
 void dds_status_write(const dds_status_t *status);
 
-_Static_assert(OUT_EN_PIN != DUMMY_EN_PIN && OUT_EN_PIN != RESERVED_SENSE_PIN &&
-               DUMMY_EN_PIN != RESERVED_SENSE_PIN, "Output pin conflict");
-_Static_assert(SAMPLE_DEBUG_PIN < 0 || (SAMPLE_DEBUG_PIN < 30 &&
+_Static_assert(OUT_EN_PIN != DUMMY_EN_PIN && DAC_CS_PIN != DAC_CS2_PIN &&
+               DAC_FLT_PIN != DAC_FLT2_PIN, "Output pin conflict");
+_Static_assert(!RADIO_PIN(SPI_SCK_PIN) && !RADIO_PIN(SPI_MOSI_PIN) &&
+    !RADIO_PIN(DAC_CS_PIN) && !RADIO_PIN(DAC_CS2_PIN) && !RADIO_PIN(DAC_FLT_PIN) &&
+    !RADIO_PIN(DAC_FLT2_PIN) && !RADIO_PIN(OUT_EN_PIN) && !RADIO_PIN(DUMMY_EN_PIN) &&
+    !RADIO_PIN(I2C_SDA_PIN) && !RADIO_PIN(I2C_SCL_PIN) && !RADIO_PIN(ADDR_PIN_0) &&
+    !RADIO_PIN(ADDR_PIN_1) && !RADIO_PIN(ADDR_PIN_2), "GPIO reserved for the CYW43 radio");
+_Static_assert(SAMPLE_DEBUG_PIN < 0 || (SAMPLE_DEBUG_PIN < 23 &&
     SAMPLE_DEBUG_PIN != OUT_EN_PIN && SAMPLE_DEBUG_PIN != DUMMY_EN_PIN &&
     SAMPLE_DEBUG_PIN != SPI_SCK_PIN && SAMPLE_DEBUG_PIN != SPI_MOSI_PIN &&
-    SAMPLE_DEBUG_PIN != SPI_SYNC_PIN && SAMPLE_DEBUG_PIN != I2C_SDA_PIN &&
-    SAMPLE_DEBUG_PIN != I2C_SCL_PIN && SAMPLE_DEBUG_PIN != ADDR_PIN_0 &&
-    SAMPLE_DEBUG_PIN != ADDR_PIN_1 && SAMPLE_DEBUG_PIN != ADDR_PIN_2 &&
-    SAMPLE_DEBUG_PIN != RESERVED_SENSE_PIN), "Debug GPIO conflicts with hardware");
+    SAMPLE_DEBUG_PIN != DAC_CS_PIN && SAMPLE_DEBUG_PIN != DAC_CS2_PIN &&
+    SAMPLE_DEBUG_PIN != DAC_FLT_PIN && SAMPLE_DEBUG_PIN != DAC_FLT2_PIN &&
+    SAMPLE_DEBUG_PIN != I2C_SDA_PIN && SAMPLE_DEBUG_PIN != I2C_SCL_PIN),
+    "Debug GPIO conflicts with hardware");

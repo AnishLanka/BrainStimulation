@@ -37,9 +37,8 @@ int main(void) {
     gpio_init(OUT_EN_PIN); gpio_put(OUT_EN_PIN, 0); gpio_set_dir(OUT_EN_PIN, GPIO_OUT);
     gpio_init(DUMMY_EN_PIN); gpio_put(DUMMY_EN_PIN, 0); gpio_set_dir(DUMMY_EN_PIN, GPIO_OUT);
     set_sys_clock_khz(SYS_CLOCK_KHZ, true);
-    spi_dac_init(); /* DAC at 32768 as soon as SPI is available. */
+    spi_dac_init(); /* Both DACs at 32768 as soon as SPI is available. */
     bool watchdog_reset = watchdog_caused_reboot();
-    if (watchdog_reset) { spi_dac_powerdown(); spi_dac_wakeup(); }
     dds_shared_init();
     dds_tables_init();
     multicore_launch_core1(core1_entry);
@@ -67,6 +66,13 @@ int main(void) {
             fault |= FAULT_COMM_TIMEOUT;
             stopping = true;
         }
+        /* ISOW7741 EN/FLT low means the isolated DAC rail is not trusted. Only
+         * latch while current could flow; at boot the line may still be settling. */
+        bool iso_fault = spi_dac_iso_fault();
+        if (state != OUTPUT_OFF && iso_fault) {
+            fault |= FAULT_ISO_SUPPLY;
+            stopping = true;
+        }
         if (!request.enabled && state != OUTPUT_OFF) stopping = true;
         if (stopping && state != OUTPUT_DISCONNECT) state = OUTPUT_RAMP_DOWN;
         /* Frequency may jump only while no current flows; otherwise it slews.
@@ -87,7 +93,7 @@ int main(void) {
         switch (state) {
         case OUTPUT_OFF:
             if (pending_reset) { fault = 0; pending_reset = false; }
-            if (request.enabled && !fault && !stopping) {
+            if (request.enabled && !fault && !stopping && !iso_fault) {
                 gpio_put(DUMMY_EN_PIN, 1);
                 state = OUTPUT_PRECHARGE; state_since = now;
             }
